@@ -201,7 +201,7 @@ fun SettingsScreen(
                     }
                     ToggleRow("Match start", alerts.started, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(started = on) } }, "When the feed says it is under way — the reminder fires on the scheduled time, this on a delayed one actually starting")
                     ToggleRow("Goals and runs", alerts.goals, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(goals = on) } }, "Polls followed games every few minutes while they run")
-                    ToggleRow("Cards and penalties", alerts.cards, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(cards = on) } }, "Bookings, and the penalties hockey books a player with; costs a request per game per poll")
+                    ToggleRow("Cards and penalties", alerts.cards, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(cards = on) } }, "Bookings, and hockey's majors and misconducts (not every minor); costs a request per game per poll")
                     ToggleRow("Half time and breaks", alerts.breaks, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(breaks = on) } }, "Only leagues whose feed reports a break")
                     ToggleRow("Final result", alerts.results, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(results = on) } }, "The score when a followed game finishes")
                 }

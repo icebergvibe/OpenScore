@@ -63,8 +63,15 @@ object AlertRules {
     /** Stoppage plus the lag between the final whistle and the feed saying so. */
     private const val STOPPAGE_ALLOWANCE_MINUTES = 4
 
-    /** The events a card watch announces: football's cards, and the penalties hockey books a player with instead. */
-    private val CARD_KEYS = setOf("yellow-card", "second-yellow", "red-card", "penalty")
+    /** Football's cards, all of which a card watch announces. */
+    private val CARD_KEYS = setOf("yellow-card", "second-yellow", "red-card")
+
+    /**
+     * A hockey penalty is announced from this many minutes: a major or a misconduct is the
+     * booking that changes a game, where a minor comes every few minutes and is not news. A
+     * feed that does not say how long (CHL) announces none.
+     */
+    private const val ANNOUNCED_PENALTY_MINUTES = 5
 
     /** Kick-off to the final whistle, generously; the result check is first due this long after kick-off. */
     fun typicalDurationMinutes(sport: Sport): Int = when (sport) {
@@ -227,7 +234,7 @@ object AlertRules {
         val later = alert.later(now)
         if (game == null || !alert.hasStarted(game)) return Outcome(later)
         val score = game.score ?: return Outcome(later)
-        val cards = events?.filter { it.type.key in CARD_KEYS }
+        val cards = events?.filter { it.isAnnouncedCard() }
 
         if (!alert.seeded) {
             if (settings.cards && canEvents && cards == null) return Outcome(later)
@@ -296,14 +303,18 @@ object AlertRules {
         }
     }
 
-    /** `🟨 Yellow card for Arsenal`; a hockey penalty goes to the team whose player sits. */
+    /** Football's cards, and of hockey's penalties only the majors and misconducts. */
+    private fun GameEvent.isAnnouncedCard(): Boolean =
+        type.key in CARD_KEYS || (type.key == "penalty" && ((details as? PenaltyDetails)?.minutes ?: 0) >= ANNOUNCED_PENALTY_MINUTES)
+
+    /** `🟨 Yellow card for Arsenal`; a hockey penalty (`⏱ 5 min penalty to Toronto`) goes to the team whose player sits. */
     private fun cardHeadline(event: GameEvent): String {
         val team = event.team?.name
         return when (event.type.key) {
             "yellow-card" -> "🟨 Yellow card" + team?.let { " for $it" }.orEmpty()
             "second-yellow" -> "🟨🟥 Second yellow" + team?.let { " for $it" }.orEmpty()
             "red-card" -> "🟥 Red card" + team?.let { " for $it" }.orEmpty()
-            else -> "⏱ Penalty" + team?.let { " to $it" }.orEmpty()
+            else -> "⏱ " + ((event.details as? PenaltyDetails)?.minutes?.let { "$it min penalty" } ?: "Penalty") + team?.let { " to $it" }.orEmpty()
         }
     }
 

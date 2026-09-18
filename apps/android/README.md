@@ -18,7 +18,7 @@ Four destinations on a bottom bar, three of them feeds over one timeline:
 
 | Destination | What it is |
 |---|---|
-| **Scores** | A day-by-day timeline of every league the core covers for the selected sport (Hockey · Football · Baseball · Motorsport). Each day is a sticky heading, then one band per league with its games under it. |
+| **Scores** | A day-by-day timeline of every league the core covers for the selected sport (Hockey · Football · Baseball · Motorsport · MMA). Each day is a sticky heading, then one band per league with its games under it. |
 | **Live** | The same timeline cut to one day and to games in play, polled while on screen. |
 | **Following** | Games of followed teams and leagues across every sport, filtered on the device from the same day listings. |
 | **Settings** | Dark mode, the followed list with a bell per favourite, notification choices, the offline scores store, and where the scores come from. |
@@ -31,6 +31,15 @@ lineups side by side, stats with bars, and the key events (goals, cards, penalti
 shoot-out kicks) pushed to the side they belong to. Match, table and team pages have an explicit
 back action and preserve the detail stack. Tapping a league band opens its table.
 Long-pressing a card follows either side or the league.
+
+A fight has no score, so its card shows the division and whether a belt is on the line where
+the clock would go and, once decided, `W` / `L` / `D` / `NC` beside each corner with the method
+(`KO/TKO R1`, `Sub R2`, `UD`) in the status pill; the league band's subtitle is the event
+(`UFC 331: Van vs. Pantoja 2`). The match page adds a Bout/Result section — division, rounds,
+belt, card slot, then how it ended and the judges' cards — and the card's tracked timeline and
+per-fight strike/takedown stats once a fight has started. Fights on a card share their
+segment's start time and the main event walks out hours later, so the score poll keeps a fight
+that has not begun as due for six hours rather than the usual three.
 
 The filter sheet (the tune icon) narrows a sport to some of its leagues, searches the days
 already loaded, and follows leagues. **Umbrella feeds are opt-in**: Fogis carries every Swedish
@@ -81,13 +90,16 @@ the rows open nothing — the classification is on the season view once a sessio
 
 ## Notifications
 
-Pre-game reminders, match start, goals (runs in baseball), cards and penalties, half time and
-breaks, final results, and a game being called off, for the favourites whose bell is on —
+Pre-game reminders, match start, goals (runs in baseball), cards (in hockey the majors and
+misconducts, not every minor), half time and breaks, final results, and a game being called
+off, for the favourites whose bell is on —
 posted by the app itself, with no push service and no Google Play services. The `alerts` package:
 
 - `AlertScheduler` rebuilds the queue once a day (3 a.m.) and whenever the bells or kinds
   change: one read of yesterday, today and tomorrow's listings for the followed leagues turns
-  every followed game into `PendingAlert` rows. Exactly one `AlarmManager` alarm is
+  every followed game into `PendingAlert` rows (a fight queues only its start and its result —
+  there are no goals, cards or breaks to announce, and its start is its card segment's, so the
+  reminder is filed under the card and segment). Exactly one `AlarmManager` alarm is
   outstanding at a time (`setAndAllowWhileIdle`, so no exact-alarm permission); it fires,
   delivers what is due, and arms the next. `AlertReceiver` runs the work with `goAsync` under a
   20 s budget; `BootReceiver` rebuilds after a reboot or an update. Resuming the app is a free
@@ -148,7 +160,7 @@ MainActivity ─ MainScreen (NavDisplay) ─┬─ HomeKey  ─ HomeScreen ─�
   through the league's provider. Every call runs on `Dispatchers.Default`, so parsing never
   happens on the main thread. Politeness — the 10 s floor, the per-URL cache, ETags — lives in
   the core's fetcher, which is why there is exactly one of it (`OpenScoreApp`).
-- Room stores two normalized things, and nothing else (`RoomScoresCache`, one class behind the
+- Room stores three normalized things, and nothing else (`RoomScoresCache`, one class behind the
   core's `SeasonScheduleStore` and `DayListingStore`):
   - **every league's day listings as last read.** The core's `CachedDayListingProvider` wraps
     each provider and answers a day from the store while nothing in it can have changed: a day
@@ -161,6 +173,9 @@ MainActivity ─ MainScreen (NavDisplay) ─┬─ HomeKey  ─ HomeScreen ─�
     re-reads the 127 KB gzipped season page after six hours, re-reads games that are due, live or
     recently over through the ~700 B game route, and writes a final back with its period scores
     and decision, so a restored result is as complete as a fetched one.
+  - **UFC's known cards**, the other league without a listing route (`seasonId` `cards`). The
+    core's `UfcProvider` restores them on start instead of re-sweeping the id space, and re-reads
+    a restored card once because the rows keep a fight's state but not its result.
 
   Match details (events, lineups, stats) and response bodies are never persisted. The database
   is a cache: a schema change drops it and the data is read again on first use.

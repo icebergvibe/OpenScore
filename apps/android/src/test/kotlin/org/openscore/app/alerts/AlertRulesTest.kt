@@ -20,6 +20,7 @@ import org.openscore.model.football.FootballGoalDetails
 import org.openscore.model.football.GoalKind
 import org.openscore.model.hockey.GoalDetails
 import org.openscore.model.hockey.HockeyEventType
+import org.openscore.model.hockey.PenaltyDetails
 import org.openscore.model.hockey.Strength
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -185,6 +186,21 @@ class AlertRulesTest {
         )
         val out = AlertRules.pollLive(nhl, Sport.HOCKEY, game, listOf(goal), all.copy(cards = false), canEvents = true, now = kickoffMs + 600_000L)
         assertEquals("🏒 Goal for home-1 · Matthews (PP) 12:34 · NHL", out.posts.single().text)
+    }
+
+    @Test
+    fun `a hockey penalty is announced only when it is a major or worse`() {
+        val nhl = PendingAlert("nhl", "1", "2026-09-13", AlertKind.LIVE, kickoffMs, kickoffMs, "home-1", "away-1", "NHL", seeded = true, seenScore = "0-0")
+        val game = Fixtures.game(leagueId = "nhl", state = GameState.LIVE, score = Score(0, 0), startTime = kickoff, clock = Fixtures.clock(Fixtures.period(2, "2"), remaining = 7.minutes))
+        fun penalty(id: String, who: String, minutes: Int?) = GameEvent(
+            id = id, type = HockeyEventType.PENALTY, rawType = "penalty", time = GameTime(Fixtures.period(2, "2"), elapsed = 12.minutes + 34.seconds),
+            team = Fixtures.team("nhl", "home-1"), details = PenaltyDetails(PlayerRef("nhl", "p$id", who), minutes = minutes), sortOrder = id.toInt(),
+        )
+        val events = listOf(penalty("1", "Marner", 2), penalty("2", "Reaves", 5), penalty("3", "Rielly", 10), penalty("4", "Tavares", null))
+        val out = AlertRules.pollLive(nhl, Sport.HOCKEY, game, events, all, canEvents = true, now = kickoffMs + 600_000L)
+        assertEquals(listOf("⏱ 5 min penalty to home-1 · Reaves 12:34 · NHL", "⏱ 10 min penalty to home-1 · Rielly 12:34 · NHL"), out.posts.map { it.text })
+        // The minors are not remembered either: nothing to compare them against later.
+        assertEquals(setOf("2", "3"), out.next!!.seen)
     }
 
     @Test
