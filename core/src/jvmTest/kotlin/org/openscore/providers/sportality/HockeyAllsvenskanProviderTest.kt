@@ -12,6 +12,7 @@ import org.openscore.net.FetchResponse
 import org.openscore.net.Fetcher
 import org.openscore.net.HttpException
 import org.openscore.provider.Capability
+import org.openscore.provider.NotFoundException
 import org.openscore.testing.HockeyAllsvenskanSamples
 import org.openscore.testing.SampleFetcher
 import java.io.File
@@ -183,6 +184,62 @@ class HockeyAllsvenskanProviderTest {
         assertFalse(provider.supports(Capability.EVENTS))
         assertFalse(provider.supports(Capability.LIVE_UPDATES))
         assertNull(HockeyAllsvenskanProvider(SampleFetcher(), clock = clock).let { runCatching { it.game("nope") }.getOrNull() })
+    }
+
+    /** AIK v MoDo captured in the first period on the opening night (`currentPeriod: "P1"`). */
+    @Test
+    fun mapsALiveGameFromTheGameRoute() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        val game = provider.game(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+
+        assertEquals(GameState.LIVE, game.state)
+        assertEquals("P1", game.rawState)
+        assertEquals(Score(0, 0), game.score)
+        assertEquals(listOf("1"), game.periodScores.map { it.period.label }, "only the period under way has a score yet")
+        assertNull(game.ending)
+        assertNull(game.clock, "the game route has no clock")
+        assertEquals("Avicii Arena", game.venue)
+    }
+
+    /** The lineup component of the game page, captured 17:35Z for the 17:00Z game: 22 home and 26 away rows including four officials. */
+    @Test
+    fun lineupsComeFromTheGamePageInLineOrder() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertTrue(provider.supports(Capability.LINEUPS))
+        assertTrue(provider.supports(Capability.LINE_GROUPS))
+        provider.gamesOn(openingDay)
+
+        val lineups = provider.lineups(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(2, lineups.size)
+        val home = lineups.first()
+        assertEquals("AIK", home.team.id)
+        assertEquals(22, home.players.size, "two goalies and twenty skaters, the extra fourth-line forward among them")
+        val goalies = home.groups.first()
+        assertEquals("Goalies", goalies.label)
+        assertEquals(listOf("Jhonas Enroth", "Leon Contreras"), goalies.players.map { it.name }, "the starter first")
+        assertEquals("GK", goalies.players.first().position)
+        assertEquals(listOf("Goalies", "Line 1", "Pairing 1", "Line 2", "Pairing 2", "Line 3", "Pairing 3", "Line 4", "Pairing 4"), home.groups.map { it.label })
+        val line1 = home.groups[1]
+        assertEquals(listOf("LW", "CE", "RW"), line1.players.map { it.position })
+        assertEquals(listOf(12, 23, 71), line1.players.map { it.jerseyNumber })
+        assertEquals("Scott Pooley", line1.players.first().name)
+        assertEquals("5731", line1.players.first().id, "StatNet player id, the one the play-by-play uses")
+        assertTrue(line1.players.first().headshotUrl!!.startsWith("https://ha-media.hadigital.se/"))
+        assertEquals(4, home.groups[7].players.size, "the fourth line carries the extra forward")
+        assertEquals(2, home.groups[2].players.size)
+
+        val away = lineups.last()
+        assertEquals("MODO", away.team.id)
+        assertEquals(22, away.players.size, "the four officials in the away array are not players")
+        assertTrue(away.players.none { it.name.contains("Granrud") }, "referees are left out")
+        assertEquals(listOf(HockeyAllsvenskanSamples.PAGE, HockeyAllsvenskanSamples.VIEW), fetcher.requests, "the snapshot names the sides; the page is one read")
+
+        // A page rendered without the lineup component (the sheets are not out yet) is an empty answer, not an error.
+        fetcher.route("${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/games/20260925-modo-aik/view?_rsc=openscore", File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "matcher.rsc.txt"), "text/x-component")
+        assertTrue(provider.lineups("20260925-modo-aik").isEmpty())
+        assertFailsWith<NotFoundException> { provider.lineups("20261231-no-such") }
     }
 
     private fun samplePage(): String =

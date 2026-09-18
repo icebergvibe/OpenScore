@@ -8,6 +8,7 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
+import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
 import org.openscore.cache.NoopSeasonScheduleStore
@@ -17,9 +18,14 @@ import org.openscore.model.Game
 import org.openscore.model.GameEnding
 import org.openscore.model.GameState
 import org.openscore.model.League
+import org.openscore.model.Lineup
+import org.openscore.model.LineupGroup
+import org.openscore.model.LineupGroupKind
 import org.openscore.model.Period
 import org.openscore.model.PeriodScore
 import org.openscore.model.PeriodType
+import org.openscore.model.PlayerNames
+import org.openscore.model.PlayerRef
 import org.openscore.model.Score
 import org.openscore.model.Sport
 import org.openscore.model.StageKind
@@ -56,6 +62,11 @@ import kotlin.time.Instant
  *   season import never regresses such a game (the page can lag the game route);
  * - when the page cannot be read, the old snapshot is served rather than an error, and the
  *   page is not retried for [REFRESH_RETRY].
+ *
+ * Lineups come from the game's own page (`/games/{slug}/view`, ~20 KB gzipped, `no-store`),
+ * whose server-rendered lineup component lists every dressed player with today's position,
+ * line, number and letters, about two hours before the puck drop; read on demand and kept
+ * [LINEUP_MAX_AGE] in the fetcher. Play-by-play is a POST route and stays unmapped.
  */
 public class HockeyAllsvenskanProvider(
     private val fetcher: Fetcher,
@@ -69,6 +80,8 @@ public class HockeyAllsvenskanProvider(
         Capability.GAMES_BY_DATE,
         Capability.GAME,
         Capability.PERIOD_SCORES,
+        Capability.LINEUPS,
+        Capability.LINE_GROUPS,
     )
 
     /** The season as last imported, games keyed by slug in schedule order. */
@@ -109,6 +122,51 @@ public class HockeyAllsvenskanProvider(
         val held = scheduleLock.withLock { held()?.games?.get(id) }
         if (held != null && held.state.isTerminal) return held
         throw fetched.exceptionOrNull()!!
+    }
+
+    /**
+     * The dressed players of both sides from the game page, in the site's line structure:
+     * goalies (the starter first), then one LINE per forward line and one PAIRING per defence
+     * pair; officials are listed in the same arrays and left out. Empty until the club sheets
+     * are published (about two hours before the game).
+     */
+    override suspend fun lineups(gameId: String): List<Lineup> {
+        val game = scheduleLock.withLock { held()?.games?.get(gameId) } ?: game(gameId)
+        val response = fetcher.get("$baseUrl/games/$gameId/view?_rsc=openscore", headers = mapOf("RSC" to "1"), maxAge = LINEUP_MAX_AGE)
+        if (response.status == 404) throw NotFoundException("${league.name} game '$gameId' has no page", league.id)
+        response.requireSuccess()
+        // The page is rendered without the lineup component until the sheets exist.
+        if (!response.body.contains("\"homeLineups\":")) return emptyList()
+        val home = decodeArray(response.body, "\"homeLineups\":", ListSerializer(HaLineupEntry.serializer()))
+        val away = decodeArray(response.body, "\"awayLineups\":", ListSerializer(HaLineupEntry.serializer()))
+        return listOfNotNull(lineup(gameId, game.home, home), lineup(gameId, game.away, away))
+    }
+
+    private fun lineup(gameId: String, team: TeamRef, entries: List<HaLineupEntry>): Lineup? {
+        val dressed = entries.filter { !it.isReferee && !it.isLinePerson && it.positionToday != null }
+        if (dressed.isEmpty()) return null
+        fun ref(e: HaLineupEntry): PlayerRef = PlayerRef(
+            leagueId = league.id,
+            id = e.playerStatNetId ?: e.player?.statNetId ?: e.documentId ?: "?",
+            name = PlayerNames.fromParts(e.firstName, e.familyName, fallback = e.playerStatNetId ?: "?"),
+            jerseyNumber = e.jerseyToday?.toIntOrNull() ?: e.player?.jerseyNumber?.toIntOrNull(),
+            position = e.positionToday,
+            headshotUrl = e.player?.headshots?.small ?: e.player?.headshots?.medium,
+        )
+        val groups = ArrayList<LineupGroup>()
+        val goalies = dressed.filter { it.positionToday == "GK" }.sortedWith(compareBy({ !it.isStarting }, { it.line?.toIntOrNull() ?: 99 }))
+        if (goalies.isNotEmpty()) groups += LineupGroup(LineupGroupKind.GOALIES, "Goalies", goalies.map(::ref))
+        val skaters = dressed.filter { it.positionToday != "GK" }
+        for (line in skaters.mapNotNull { it.line?.toIntOrNull() }.distinct().sorted()) {
+            val onLine = skaters.filter { it.line?.toIntOrNull() == line }
+            val forwards = onLine.filter { it.positionToday in FORWARD_POSITIONS }.sortedBy { FORWARD_POSITIONS.indexOf(it.positionToday) }
+            val defence = onLine.filter { it.positionToday in DEFENCE_POSITIONS }.sortedBy { DEFENCE_POSITIONS.indexOf(it.positionToday) }
+            if (forwards.isNotEmpty()) groups += LineupGroup(LineupGroupKind.LINE, "Line $line", forwards.map(::ref))
+            if (defence.isNotEmpty()) groups += LineupGroup(LineupGroupKind.PAIRING, "Pairing $line", defence.map(::ref))
+        }
+        val rest = skaters.filter { it.line?.toIntOrNull() == null || it.positionToday !in FORWARD_POSITIONS + DEFENCE_POSITIONS }
+        if (rest.isNotEmpty()) groups += LineupGroup(LineupGroupKind.OTHER, "Other", rest.map(::ref))
+        return Lineup(gameId, team, groups)
     }
 
     private suspend fun fetchGame(id: String): Game {
@@ -188,12 +246,14 @@ public class HockeyAllsvenskanProvider(
         if (settled.isNotEmpty()) scheduleStore.update(league.id, season, settled)
     }
 
-    private fun decodeGamesArray(body: String): List<HaGame> {
-        val marker = "\"games\":"
+    private fun decodeGamesArray(body: String): List<HaGame> = decodeArray(body, "\"games\":", ListSerializer(HaGame.serializer()))
+
+    /** The JSON array that follows [marker] in a React Server Components payload, found by bracket matching. */
+    private fun <T> decodeArray(body: String, marker: String, strategy: DeserializationStrategy<T>): T {
         val markerAt = body.indexOf(marker)
-        if (markerAt < 0) throw ProviderException("${league.name} match page contained no games payload", leagueId = league.id)
+        if (markerAt < 0) throw ProviderException("${league.name} page contained no $marker payload", leagueId = league.id)
         val start = body.indexOf('[', markerAt + marker.length)
-        if (start < 0) throw ProviderException("${league.name} games payload was malformed", leagueId = league.id)
+        if (start < 0) throw ProviderException("${league.name} $marker payload was malformed", leagueId = league.id)
         var depth = 0
         var inString = false
         var escaped = false
@@ -209,13 +269,13 @@ public class HockeyAllsvenskanProvider(
                     '[' -> depth++
                     ']' -> if (--depth == 0) {
                         val json = body.substring(start, index + 1)
-                        return runCatching { OpenScoreJson.decodeFromString(ListSerializer(HaGame.serializer()), json) }
-                            .getOrElse { throw ProviderException("${league.name} games payload could not be decoded", it, league.id) }
+                        return runCatching { OpenScoreJson.decodeFromString(strategy, json) }
+                            .getOrElse { throw ProviderException("${league.name} $marker payload could not be decoded", it, league.id) }
                     }
                 }
             }
         }
-        throw ProviderException("${league.name} games payload was truncated", leagueId = league.id)
+        throw ProviderException("${league.name} $marker payload was truncated", leagueId = league.id)
     }
 
     private fun HaGame.toGame(): Game {
@@ -229,7 +289,8 @@ public class HockeyAllsvenskanProvider(
             id = slug,
             seasonId = season,
             stage = if (playOffGame != null || playOffGameLevel != null) StageKind.PLAYOFF else StageKind.REGULAR,
-            competition = gameType,
+            // `HA` is the regular season, every game this season; only another type is worth a label.
+            competition = gameType?.takeUnless { it == "HA" },
             startTime = start,
             scheduleDate = start.toLocalDateTime(SWEDEN).date,
             venue = venue ?: homeTeam?.teamArena,
@@ -288,6 +349,10 @@ public class HockeyAllsvenskanProvider(
         private val RESULT_WINDOW = 24.hours
         /** With a snapshot to serve, a page that could not be read is not asked again sooner. */
         private val REFRESH_RETRY = 5.minutes
+        /** Sheets are published about two hours before the game and rarely change after. */
+        private val LINEUP_MAX_AGE = 10.minutes
+        private val FORWARD_POSITIONS = listOf("LW", "CE", "RW")
+        private val DEFENCE_POSITIONS = listOf("LD", "RD")
     }
 }
 
@@ -335,3 +400,38 @@ private data class HaTeam(
 )
 
 @Serializable private data class HaLogo(val url: String? = null)
+
+/** One row of the game page's lineup component: a dressed player, or an official (`isReferee` / `isLinePerson`). */
+@Serializable
+private data class HaLineupEntry(
+    val documentId: String? = null,
+    val firstName: String? = null,
+    val familyName: String? = null,
+    /** GK | LD | RD | LW | CE | RW; null for officials. */
+    val positionToday: String? = null,
+    /** Forward line or defence pair, `"1"`-`"4"`; the goalies' order. */
+    val line: String? = null,
+    val jerseyToday: String? = null,
+    val isCaptain: Boolean = false,
+    val isAssistant: Boolean = false,
+    /** The starting goalie. */
+    val isStarting: Boolean = false,
+    val playerStatNetId: String? = null,
+    val isExtraPlayer: Boolean = false,
+    val isReferee: Boolean = false,
+    val isLinePerson: Boolean = false,
+    /** The player's profile, when the CMS has one (null for a few call-ups). */
+    val player: HaLineupPlayer? = null,
+)
+
+@Serializable
+private data class HaLineupPlayer(
+    val statNetId: String? = null,
+    val jerseyNumber: String? = null,
+    val positionCode: String? = null,
+    val slug: String? = null,
+    val headshots: HaHeadshots? = null,
+)
+
+@Serializable
+private data class HaHeadshots(val small: String? = null, val medium: String? = null, val large: String? = null)

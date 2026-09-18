@@ -20,7 +20,9 @@ import org.openscore.model.Sport.HOCKEY
  * Id namespaces are league ids; `ucl` also covers `uel`/`uecl`, `shl` covers
  * `hockeyallsvenskan` (Sportality uuids are platform-wide), and `fogis` covers `allsvenskan`,
  * `superettan` and `svenska-cupen` (the Swedish leagues carry Fogis team ids) — see
- * [Clubs.namespace]. `sportomedia` is the abbreviation allsvenskan.se keys its tables and squads
+ * [Clubs.namespace]. `efl` is the Gamechanger team id (`t43`) behind `championship` and
+ * `carabao-cup`: every English club has one, so a Premier League line carries it next to its
+ * Pulselive id (the same Opta number without the `t`, paired here by hand, never derived). `sportomedia` is the abbreviation allsvenskan.se keys its tables and squads
  * by; the feed's own `fogisId` bridge is verified against these lines by `ClubsCoverageLiveTest`,
  * which also prints new qualifiers as ready-to-paste lines. `espn` is ESPN's team id, carried
  * only by clubs whose squad comes from ESPN (the Bundesliga and the UEFA entrants without a
@@ -161,27 +163,53 @@ internal object ClubTable {
         club("red-bull-salzburg", "Red Bull Salzburg", HOCKEY, "AUT", "chl" to "aa8d051910780a557dc4a37f"),
         club("storhamar", "Storhamar", HOCKEY, "NOR", "chl" to "e5e5ff0d908f9cc719344e3e"),
 
-        // ── Premier League (UEFA ids for this season's European entrants) ───────────────
-        club("arsenal", "Arsenal", FOOTBALL, "ENG", "premier-league" to "3", "ucl" to "52280"),
-        club("aston-villa", "Aston Villa", FOOTBALL, "ENG", "premier-league" to "7", "ucl" to "52683"),
-        club("bournemouth", "Bournemouth", FOOTBALL, "ENG", "premier-league" to "91", "ucl" to "2601124"),
-        club("brentford", "Brentford", FOOTBALL, "ENG", "premier-league" to "94"),
-        club("brighton", "Brighton & Hove Albion", FOOTBALL, "ENG", "premier-league" to "36", "ucl" to "2601105"),
-        club("chelsea", "Chelsea", FOOTBALL, "ENG", "premier-league" to "8"),
-        club("coventry-city", "Coventry City", FOOTBALL, "ENG", "premier-league" to "9"),
-        club("crystal-palace", "Crystal Palace", FOOTBALL, "ENG", "premier-league" to "31", "ucl" to "52916"),
-        club("everton", "Everton", FOOTBALL, "ENG", "premier-league" to "11"),
-        club("fulham", "Fulham", FOOTBALL, "ENG", "premier-league" to "54"),
-        club("hull-city", "Hull City", FOOTBALL, "ENG", "premier-league" to "88"),
-        club("ipswich-town", "Ipswich Town", FOOTBALL, "ENG", "premier-league" to "40"),
-        club("leeds-united", "Leeds United", FOOTBALL, "ENG", "premier-league" to "2"),
-        club("liverpool", "Liverpool", FOOTBALL, "ENG", "premier-league" to "14", "ucl" to "7889"),
-        club("manchester-city", "Manchester City", FOOTBALL, "ENG", "premier-league" to "43", "ucl" to "52919"),
-        club("manchester-united", "Manchester United", FOOTBALL, "ENG", "premier-league" to "1", "ucl" to "52682"),
-        club("newcastle-united", "Newcastle United", FOOTBALL, "ENG", "premier-league" to "4"),
-        club("nottingham-forest", "Nottingham Forest", FOOTBALL, "ENG", "premier-league" to "17"),
-        club("sunderland", "Sunderland", FOOTBALL, "ENG", "premier-league" to "56", "ucl" to "53360"),
-        club("tottenham-hotspur", "Tottenham Hotspur", FOOTBALL, "ENG", "premier-league" to "6"),
+        // ── Premier League (UEFA ids for this season's European entrants; `efl` ids for the Carabao Cup) ──
+        club("arsenal", "Arsenal", FOOTBALL, "ENG", "premier-league" to "3", "efl" to "t3", "ucl" to "52280"),
+        club("aston-villa", "Aston Villa", FOOTBALL, "ENG", "premier-league" to "7", "efl" to "t7", "ucl" to "52683"),
+        club("bournemouth", "Bournemouth", FOOTBALL, "ENG", "premier-league" to "91", "efl" to "t91", "ucl" to "2601124"),
+        club("brentford", "Brentford", FOOTBALL, "ENG", "premier-league" to "94", "efl" to "t94"),
+        club("brighton", "Brighton & Hove Albion", FOOTBALL, "ENG", "premier-league" to "36", "efl" to "t36", "ucl" to "2601105"),
+        club("chelsea", "Chelsea", FOOTBALL, "ENG", "premier-league" to "8", "efl" to "t8"),
+        club("coventry-city", "Coventry City", FOOTBALL, "ENG", "premier-league" to "9", "efl" to "t9"),
+        club("crystal-palace", "Crystal Palace", FOOTBALL, "ENG", "premier-league" to "31", "efl" to "t31", "ucl" to "52916"),
+        club("everton", "Everton", FOOTBALL, "ENG", "premier-league" to "11", "efl" to "t11"),
+        club("fulham", "Fulham", FOOTBALL, "ENG", "premier-league" to "54", "efl" to "t54"),
+        club("hull-city", "Hull City", FOOTBALL, "ENG", "premier-league" to "88", "efl" to "t88"),
+        club("ipswich-town", "Ipswich Town", FOOTBALL, "ENG", "premier-league" to "40", "efl" to "t40"),
+        club("leeds-united", "Leeds United", FOOTBALL, "ENG", "premier-league" to "2", "efl" to "t2"),
+        club("liverpool", "Liverpool", FOOTBALL, "ENG", "premier-league" to "14", "efl" to "t14", "ucl" to "7889"),
+        club("manchester-city", "Manchester City", FOOTBALL, "ENG", "premier-league" to "43", "efl" to "t43", "ucl" to "52919"),
+        club("manchester-united", "Manchester United", FOOTBALL, "ENG", "premier-league" to "1", "efl" to "t1", "ucl" to "52682"),
+        club("newcastle-united", "Newcastle United", FOOTBALL, "ENG", "premier-league" to "4", "efl" to "t4"),
+        club("nottingham-forest", "Nottingham Forest", FOOTBALL, "ENG", "premier-league" to "17", "efl" to "t17"),
+        club("sunderland", "Sunderland", FOOTBALL, "ENG", "premier-league" to "56", "efl" to "t56", "ucl" to "53360"),
+        club("tottenham-hotspur", "Tottenham Hotspur", FOOTBALL, "ENG", "premier-league" to "6", "efl" to "t6"),
+
+        // ── Championship (EFL ids, shared with the Carabao Cup) ─────────────────────────
+        club("birmingham-city", "Birmingham City", FOOTBALL, "ENG", "efl" to "t41"),
+        club("blackburn-rovers", "Blackburn Rovers", FOOTBALL, "ENG", "efl" to "t5"),
+        club("bolton-wanderers", "Bolton Wanderers", FOOTBALL, "ENG", "efl" to "t30"),
+        club("bristol-city", "Bristol City", FOOTBALL, "ENG", "efl" to "t113"),
+        club("burnley", "Burnley", FOOTBALL, "ENG", "efl" to "t90"),
+        club("cardiff-city", "Cardiff City", FOOTBALL, "WAL", "efl" to "t97"),
+        club("charlton-athletic", "Charlton Athletic", FOOTBALL, "ENG", "efl" to "t33"),
+        club("derby-county", "Derby County", FOOTBALL, "ENG", "efl" to "t24"),
+        club("lincoln-city", "Lincoln City", FOOTBALL, "ENG", "efl" to "t83"),
+        club("middlesbrough", "Middlesbrough", FOOTBALL, "ENG", "efl" to "t25"),
+        club("millwall", "Millwall", FOOTBALL, "ENG", "efl" to "t103"),
+        club("norwich-city", "Norwich City", FOOTBALL, "ENG", "efl" to "t45"),
+        club("portsmouth", "Portsmouth", FOOTBALL, "ENG", "efl" to "t47"),
+        club("preston-north-end", "Preston North End", FOOTBALL, "ENG", "efl" to "t107"),
+        club("queens-park-rangers", "Queens Park Rangers", FOOTBALL, "ENG", "efl" to "t52"),
+        club("sheffield-united", "Sheffield United", FOOTBALL, "ENG", "efl" to "t49"),
+        club("southampton", "Southampton", FOOTBALL, "ENG", "efl" to "t20"),
+        club("stoke-city", "Stoke City", FOOTBALL, "ENG", "efl" to "t110"),
+        club("swansea-city", "Swansea City", FOOTBALL, "WAL", "efl" to "t80"),
+        club("watford", "Watford", FOOTBALL, "ENG", "efl" to "t57"),
+        club("west-bromwich-albion", "West Bromwich Albion", FOOTBALL, "ENG", "efl" to "t35"),
+        club("west-ham-united", "West Ham United", FOOTBALL, "ENG", "efl" to "t21"),
+        club("wolverhampton-wanderers", "Wolverhampton Wanderers", FOOTBALL, "ENG", "efl" to "t39"),
+        club("wrexham", "Wrexham", FOOTBALL, "WAL", "efl" to "t109"),
 
         // ── LaLiga ───────────────────────────────────────────────────────────────────────
         club("alaves", "Deportivo Alavés", FOOTBALL, "ESP", "la-liga" to "d-alaves"),

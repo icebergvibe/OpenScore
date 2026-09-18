@@ -1,0 +1,368 @@
+{
+  "game_info": {
+    "game_finished": false,
+    "game_finished_at": null,
+    "decided_in": null,
+    "game_time": {}
+  },
+  "game_events": [
+    {
+      "Period": "1",
+      "period_label": "Period 1",
+      "StartTime": "2026-09-18T17:05:46.231642Z",
+      "EndTime": null,
+      "Finisehd": false,
+      "Events": [
+        {
+          "type": "GoalkeeperEvent",
+          "time": "0",
+          "isEntering": true,
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "6531",
+            "firstName": "Tobias",
+            "familyName": "Johansen Breivold",
+            "jerseyNumber": "57"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "0",
+          "isEntering": true,
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4582",
+            "firstName": "Hampus",
+            "familyName": "Hedman",
+            "jerseyNumber": "90"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "0",
+          "isEntering": true,
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "6531",
+            "firstName": "Tobias",
+            "familyName": "Johansen Breivold",
+            "jerseyNumber": "57"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "26",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "7043",
+            "firstName": "Patrick",
+            "familyName": "Rørbu Elvsveen",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "48",
+          "eventDescription": "outside",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "7043",
+            "firstName": "Patrick",
+            "familyName": "Rørbu Elvsveen",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "102",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "5912",
+            "firstName": "Loa",
+            "familyName": "Milfors",
+            "jerseyNumber": "13"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "135",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "2682",
+            "firstName": "Tobias",
+            "familyName": "Ekberg",
+            "jerseyNumber": "50"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "226",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4275",
+            "firstName": "Maksims",
+            "familyName": "Semjonovs",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "248",
+          "eventDescription": "outside",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4275",
+            "firstName": "Maksims",
+            "familyName": "Semjonovs",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "259",
+          "eventDescription": "save",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "6545",
+            "firstName": "Hampus",
+            "familyName": "Larsson",
+            "jerseyNumber": "27"
+          }
+        },
+        {
+          "type": "Goal",
+          "time": "320",
+          "eventDescription": "EQ",
+          "runningScore": "1-0",
+          "scorerSeasonGoals": "1",
+          "isPenaltyShot": "false",
+          "Assist1": {
+            "name": "Anton Klint",
+            "jerseyToday": "59",
+            "seasonAssists": "1"
+          },
+          "Assist2": {
+            "name": "William Proos",
+            "jerseyToday": "91",
+            "seasonAssists": "1"
+          },
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4727",
+            "firstName": "Albert",
+            "familyName": "Sjöberg",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "385",
+          "isEntering": true,
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4582",
+            "firstName": "Hampus",
+            "familyName": "Hedman",
+            "jerseyNumber": "90"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "385",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4710",
+            "firstName": "Olle",
+            "familyName": "Norberg",
+            "jerseyNumber": "36"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "397",
+          "eventDescription": "outside",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "5503",
+            "firstName": "William",
+            "familyName": "Proos",
+            "jerseyNumber": "91"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "440",
+          "eventDescription": "save",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "7043",
+            "firstName": "Patrick",
+            "familyName": "Rørbu Elvsveen",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "601",
+          "eventDescription": "save",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "7055",
+            "firstName": "Brett",
+            "familyName": "Budgell",
+            "jerseyNumber": "10"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "646",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "7056",
+            "firstName": "Joachim Lunde",
+            "familyName": "Hermansen",
+            "jerseyNumber": "21"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "724",
+          "eventDescription": "outside",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "6027",
+            "firstName": "Albin",
+            "familyName": "Udd",
+            "jerseyNumber": "8"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "807",
+          "eventDescription": "outside",
+          "team": {
+            "name": "Östersund IK",
+            "code": "ÖIK",
+            "statNetId": "OSIK"
+          },
+          "player": {
+            "statNetId": "4506",
+            "firstName": "Alexander",
+            "familyName": "Ljungkrantz",
+            "jerseyNumber": "14"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "819",
+          "eventDescription": "save",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "7045",
+            "firstName": "Ryland",
+            "familyName": "Mosley",
+            "jerseyNumber": "77"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "826",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "Mora IK",
+            "code": "MORA",
+            "statNetId": "MIK"
+          },
+          "player": {
+            "statNetId": "5717",
+            "firstName": "August",
+            "familyName": "Skiöld",
+            "jerseyNumber": "23"
+          }
+        }
+      ]
+    }
+  ]
+}

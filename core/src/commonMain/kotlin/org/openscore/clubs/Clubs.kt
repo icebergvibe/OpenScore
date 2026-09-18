@@ -28,12 +28,16 @@ public object Clubs {
         "uel" to "ucl",
         "uecl" to "ucl",
         // The Swedish leagues are served from the Fogis feed and carry Fogis team ids throughout —
-        // games, tables and team pages alike; `sportomedia` (allsvenskan.se's abbreviations) is
-        // the one namespace that is not a league id.
+        // games, tables and team pages alike; `sportomedia` (allsvenskan.se's abbreviations) and
+        // `efl` below are the namespaces that are not league ids.
         "allsvenskan" to "fogis",
         "superettan" to "fogis",
         "svenska-cupen" to "fogis",
         "hockeyallsvenskan" to "shl",
+        // The Championship and the Carabao Cup come from one EFL API with one team-id space;
+        // `efl` is not a league id because the same ids will serve League One and Two too.
+        "championship" to "efl",
+        "carabao-cup" to "efl",
     )
 
     /** The team-id namespace [leagueId] uses in [Club.ids]. */

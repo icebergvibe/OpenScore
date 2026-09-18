@@ -18,17 +18,17 @@ No API keys. No accounts. No paid data providers. No analytics.
 
 ## What's here
 
-- **21 leagues** — 6 hockey, 14 football, 1 baseball — each documented under [`apis/`](apis)
-  with the exact requests, captured responses and a health check per endpoint, plus
-  Formula 1 on a small racing surface of its own.
+- **24 leagues**: 6 hockey, 16 football, 1 baseball, 1 MMA (the UFC), each documented under
+  [`apis/`](apis) with the exact requests, captured responses and a health check per endpoint,
+  plus Formula 1 on a small racing surface of its own.
 - [`core/`](core/README.md): one sport-agnostic model and a provider per league, sharing a
   polite HTTP layer, a club crosswalk that links the same club across competitions, team
   pages, and durable stores an app can plug in. Every provider is replay-tested against the
   checked-in samples.
 - [`apps/android`](apps/android/README.md): a Compose app over `core/` that talks to the
-  leagues directly — day timeline, Live and Following feeds, match pages with lineups, stats
-  and events, league tables, one page per club, an F1 season view, offline scores, and
-  notifications without any push service.
+  leagues directly: day timeline, Live and Following feeds, match pages with lineups, stats
+  and events, league tables, one page per club, UFC fight cards with results and scorecards,
+  an F1 season view, offline scores, and notifications without any push service.
 - [`apps/feed-server`](apps/feed-server/README.md): the same data as one JSON contract,
   [Feed v1](docs/feed-v1.md), over HTTP and SSE — also the proxy a browser app needs for
   the feeds without CORS.
@@ -44,12 +44,12 @@ No API keys. No accounts. No paid data providers. No analytics.
 | Hockey | NHL | [apis/hockey/nhl](apis/hockey/nhl/README.md) | `nhl` | api-web.nhle.com. Play-by-play with coordinates, positional lineups. No CORS (proxy for web). |
 | Hockey | Liiga (FIN) | [apis/hockey/liiga](apis/hockey/liiga/README.md) | `liiga` | CORS open. No running flag on the clock. |
 | Hockey | SHL (SWE) | [apis/hockey/shl](apis/hockey/shl/README.md) | `shl` | Sportality platform. SSE push documented, still polled. |
-| Hockey | HockeyAllsvenskan (SWE) | [apis/hockey/hockeyallsvenskan](apis/hockey/hockeyallsvenskan/README.md) | `hockeyallsvenskan` | The site has no day route: the season is read from the match page and kept as a normalized snapshot; due and live games are re-read one by one. Schedule, results and period scores only so far. |
+| Hockey | HockeyAllsvenskan (SWE) | [apis/hockey/hockeyallsvenskan](apis/hockey/hockeyallsvenskan/README.md) | `hockeyallsvenskan` | The site has no day route: the season is read from the match page and kept as a normalized snapshot; due and live games are re-read one by one. Schedule, results, period scores and lineups (lines and pairings from the game page). Play-by-play is a POST route, push is MQTT: both documented, neither wired. |
 | Hockey | CHL (Champions Hockey League) | [apis/hockey/chl](apis/hockey/chl/README.md) | `chl` | Static JSON files on S3. No clock, no shots. |
 | Hockey | KHL | [apis/hockey/khl](apis/hockey/khl/README.md) | `khl` | Via the official mobile-app API (webcaster.pro), CORS open. khl.ru itself is geo-blocked — out of scope. |
 | Baseball | MLB | [apis/baseball/mlb](apis/baseball/mlb/README.md) | `mlb` | statsapi.mlb.com. Every live state sampled; per-pitch data, JSON-Patch diff feed, `fields=` trimming. Team pages with schedule, roster and season stats. |
 | Football | Premier League (ENG) | [apis/football/premier-league](apis/football/premier-league/README.md) | `premier-league` | Pulselive API behind premierleague.com. CORS open, kick-offs in local time. |
-| Football | EFL — Championship · Carabao Cup (ENG) | [apis/football/efl](apis/football/efl/README.md) | ⏳ docs only | EFL Digital's Gamechanger API behind efl.com (also serves League One, League Two, EFL Trophy). Key-less Firestore push for live. No provider yet. |
+| Football | EFL — Championship · Carabao Cup (ENG) | [apis/football/efl](apis/football/efl/README.md) | `championship`, `carabao-cup` | EFL Digital's Gamechanger API behind efl.com (also serves League One, League Two, EFL Trophy). One document per match with lineups and events, CORS open, nothing edge-cached. Key-less Firestore push documented, still polled. In-play states pending. |
 | Football | Malta Premier (MLT) | [apis/football/malta-premier](apis/football/malta-premier/README.md) | `malta-premier` | MFA match centre over COMET. Minute-level events; no match stats or reliable squads. |
 | Football | Serie A (ITA) | [apis/football/serie-a](apis/football/serie-a/README.md) | `serie-a` | Deltatre API behind legaseriea.it. 40 s edge cache. |
 | Football | Bundesliga (GER) | [apis/football/bundesliga](apis/football/bundesliga/README.md) | `bundesliga` | Public Firebase Realtime Database behind bundesliga.com (also 2. Bundesliga, DFB-Pokal). All live states sampled, SSE push verified. xG per goal. Squads come from ESPN (the DFL's own are key-gated). |
@@ -64,8 +64,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 | MMA | UFC (+ Contender Series, Road to UFC) | [apis/mma/ufc](apis/mma/ufc/README.md) | `ufc` | The key-less live-stats JSON behind ufc.com's event pages (CloudFront). One document per card with results, scorecards and a tracked timeline; per-fight strike/takedown stats. No listing route — cards are discovered by sweeping the dense id space and kept as a snapshot. Live states pending. |
 | Football | NFL | — | ⛔ | No key-less league API (`api.nfl.com` needs credentials). |
 
-**Core** = the league id(s) a `LeagueProvider` in `core/` serves. ⏳ documented, no provider yet ·
-⛔ no usable key-less API. Which live states each league has been sampled in is in its README;
+**Core** = the league id(s) a `LeagueProvider` in `core/` serves · ⛔ no usable key-less API. Which live states each league has been sampled in is in its README;
 the weekly [API health](.github/workflows/api-health.yml) run says whether an endpoint is broken.
 
 ## Principles
@@ -82,9 +81,9 @@ the weekly [API health](.github/workflows/api-health.yml) run says whether an en
    demonstrably lacks, and only after it has been mapped, health-checked and tested like any
    other feed. Ids are never joined by name; clubs are linked across leagues through a
    hand-curated crosswalk.
-5. **Sport-agnostic core.** One data model for hockey, football and baseball; a new league is
-   a new provider, not a rewrite. Racing, which has no two-team game, gets its own small
-   surface rather than a forced fit.
+5. **Sport-agnostic core.** One data model for hockey, football, baseball and MMA; a new
+   league is a new provider, not a rewrite. Racing, which has no two-team game, gets its own
+   small surface rather than a forced fit.
 
 The full contract is [docs/principles.md](docs/principles.md); the model is
 [docs/data-model.md](docs/data-model.md).
@@ -97,6 +96,7 @@ apis/                One folder per feed: README.md + health.json (endpoint chec
   football/          premier-league  efl  malta-premier  serie-a  bundesliga  ligue-1  la-liga
                      allsvenskan  fogis-livescore  uefa  mls  espn
   baseball/          mlb
+  mma/               ufc
 docs/                principles (how we treat the APIs), data-model, the Feed v1 contract, screenshots
 core/                Kotlin Multiplatform library: model, providers, HTTP layer, club crosswalk, stores, Feed v1 mapper
 apps/android/        The Android app: Jetpack Compose over core/, no server in between

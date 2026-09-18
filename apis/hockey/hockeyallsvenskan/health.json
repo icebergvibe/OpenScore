@@ -6,7 +6,9 @@
     {
       "name": "matcher — complete season RSC",
       "path": "/pages/matcher?_rsc=openscore",
-      "headers": { "RSC": "1" },
+      "headers": {
+        "RSC": "1"
+      },
       "format": "text",
       "note": "Must remain non-empty; typed extraction is covered by provider replay tests."
     },
@@ -24,6 +26,19 @@
       ]
     },
     {
+      "name": "api/game — live shape (first-period capture 2026-09-18)",
+      "path": "/api/game?slug=20260918-aik-modo",
+      "sample": "game.new.live.json",
+      "keys": [
+        "data[].currentPeriod",
+        "data[].currentPeriodStart",
+        "data[].homeScoreP1",
+        "data[].isCompleted",
+        "data[].updatedAt"
+      ],
+      "note": "The sample is the in-play document; live the same route answers whatever state the game is in now"
+    },
+    {
       "name": "api/game — completed",
       "path": "/api/game?slug=20250919-ssk-bik",
       "sample": "game.new.final.json",
@@ -34,6 +49,26 @@
         "data[].decidedIn",
         "data[].isCompleted"
       ]
+    },
+    {
+      "name": "api/games — several games by document id",
+      "path": "/api/games?documentIds=sftwwgo7jg0avrwgpgt79ny9,xlxhq1q2g1vklg77oa9dpm0m",
+      "sample": "games.by-document-ids.live.json",
+      "keys": [
+        "data[].slug",
+        "data[].documentId",
+        "data[].currentPeriod",
+        "data[].homeScore"
+      ]
+    },
+    {
+      "name": "games/{slug}/view — game page RSC with lineups",
+      "path": "/games/20260918-aik-modo/view?_rsc=openscore",
+      "headers": {
+        "RSC": "1"
+      },
+      "format": "text",
+      "note": "Must stay non-empty and carry \"homeLineups\"; the typed extraction is covered by the provider replay test"
     }
   ]
 }

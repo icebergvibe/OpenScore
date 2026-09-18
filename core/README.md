@@ -23,7 +23,8 @@ org.openscore.feed           Feed v1: the JSON contract (docs/feed-v1.md) + Feed
 org.openscore.OpenScore      Aggregator: all providers behind one door, cross-league gamesOn()
 org.openscore.providers.*    One package per platform — each DTOs + Mapper + Provider:
                              hockey: nhl, liiga, sportality (SHL, and HockeyAllsvenskan's own provider), chl, khl
-                             football: ligue1, bundesliga, premierleague, seriea, laliga, mls, malta,
+                             football: ligue1, bundesliga, premierleague, efl (Championship, Carabao Cup),
+                                       seriea, laliga, mls, malta,
                                        fogis (all Swedish tiers, XML; SwedishLeagueProvider cuts Allsvenskan,
                                        Superettan and Svenska Cupen out of it, tables from sportomedia),
                                        uefa (Champions / Europa / Conference League)
@@ -42,12 +43,13 @@ org.openscore.testing (jvm)  SampleFetcher + per-league sample routes, for tests
 | `nhl` | `NhlProvider` | positional lineups only |
 | `liiga` | `LiigaProvider` | no running flag on the clock; intermission is a heuristic |
 | `shl` | `ShlProvider` (`SportalityProvider`) | SSE push not wired yet; event/lineup player ids are Statnet ids, roster ids are athlete UUIDs |
-| `hockeyallsvenskan` | `HockeyAllsvenskanProvider` | the site has no day route: the whole season is read from the match page and kept as a normalized snapshot (`SeasonScheduleStore`), refreshed after six hours, with due/live/just-finished games re-read one by one; schedule, game and period scores only — no standings, events, lineups or live detail yet |
+| `hockeyallsvenskan` | `HockeyAllsvenskanProvider` | the site has no day route: the whole season is read from the match page and kept as a normalized snapshot (`SeasonScheduleStore`), refreshed after six hours, with due/live/just-finished games re-read one by one; lineups in line/pairing structure from the game page (`LINE_GROUPS`, about two hours before the puck drop); the game document says the period and score in play but has no clock and lagged the ice on the opening night — no standings, events or `LIVE_UPDATES` (play-by-play is a POST route, push is MQTT with handed-out credentials) |
 | `chl` | `ChlProvider` | no clock, no shots/coordinates, penalty details only as text |
 | `khl` | `KhlProvider` | no clock (period only), no roster/player endpoints, MQTT push not wired |
 | `ligue1` | `Ligue1Provider` | second-precision clock; 150–500 KB match resource → live() polls at 20 s |
 | `bundesliga` | `BundesligaProvider` | Firebase RTDB; whole-minute clock; squads from ESPN through the crosswalk (the DFL's own are key-gated), no player endpoint; SSE not wired |
 | `premier-league` | `PremierLeagueProvider` | five small calls per game; own goals credited to the beneficiary from the `events` grouping (the timeline attributes them to the scorer's team) |
+| `championship`, `carabao-cup` | `ChampionshipProvider`, `CarabaoCupProvider` (shared `EflProvider`) | one match document carries header, lineups and events (plus the five-column stats route once started); minute-only clock; the play-offs are `PLAYOFF` rounds of the Championship, cup ties are `OTHER` with the round as `Game.competition`; no squad or player route, no table for the cup; `live()` polls at 15 s (nothing is edge-cached); in-play states not yet observed. Team ids `t{opta}` under the crosswalk namespace `efl` |
 | `serie-a` | `SerieAProvider` | 40 s edge cache; roster = the season's registrations (`?seasonId=`); no player endpoint |
 | `la-liga` | `LaLigaProvider` | needs the public page-embedded keys (`LaLigaKeys.discover`); second-precision period timestamps |
 | `mls` | `MlsProvider` | first-party `stats-api` (`no-store`, honoured) + `sportapi` pre-game metadata; no live capability until a live sample is captured; club schedule spans every competition the club plays |
@@ -127,6 +129,7 @@ season and filters to the range:
 | League | Route | Budget |
 |---|---|---|
 | Premier League | `/v2/matches?…&team={id}&_limit=100` (`teams=` is the parameter the API ignores) | 1 call, ~20 KB |
+| Championship / Carabao Cup | `/matches?seasonID=&teamID=&page.size=100` — every competition the club plays, each provider keeping its own `competitionID` | 1 call shared by both, ~66 KB |
 | Ligue 1 | `championship-club-summary/{id}` — the club pack the roster comes from carries the season's fixtures | 1 call |
 | LaLiga | `matches?subscriptionSlug=&teamSlug=` | 1 call |
 | Serie A | the whole-season `seasons/{id}/matches` (380 rows, 126 KB gzipped, ignores `teamId`) kept 10 min, filtered | 1 call |

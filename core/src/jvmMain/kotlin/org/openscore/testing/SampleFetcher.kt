@@ -90,6 +90,7 @@ public class SampleFetcher : Fetcher {
             Ligue1Samples.register(it, root)
             BundesligaSamples.register(it, root = root)
             PremierLeagueSamples.register(it, root)
+            EflSamples.register(it, root)
             SerieASamples.register(it, root)
             LaLigaSamples.register(it, root)
             MlsSamples.register(it, root)

@@ -22,6 +22,8 @@ import org.openscore.provider.RacingProvider
 import org.openscore.provider.runCatchingUnlessCancelled
 import org.openscore.providers.bundesliga.BundesligaProvider
 import org.openscore.providers.chl.ChlProvider
+import org.openscore.providers.efl.CarabaoCupProvider
+import org.openscore.providers.efl.ChampionshipProvider
 import org.openscore.providers.espn.EspnRosters
 import org.openscore.providers.fogis.FogisProvider
 import org.openscore.providers.fogis.SwedishLeagueProvider
@@ -178,6 +180,8 @@ public class OpenScore(
                 Ligue1Provider(fetcher),
                 BundesligaProvider(fetcher, rosters = espnRosters),
                 PremierLeagueProvider(fetcher),
+                ChampionshipProvider(fetcher),
+                CarabaoCupProvider(fetcher),
                 SerieAProvider(fetcher),
                 LaLigaProvider(fetcher),
                 MlsProvider(fetcher),

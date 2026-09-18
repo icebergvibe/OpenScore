@@ -12,7 +12,7 @@
 | **Live push** | **Yes** — Firestore collection `live-feed` (goals, red cards, HT, FT, end of 90 before pens) that efl.com subscribes to with `onSnapshot`. Readable key-less over Firestore's REST `runQuery`, ~20 s behind Opta's event timestamp |
 | **WAF / UA requirement** | None. AWS API Gateway behind CloudFront; a request with no `User-Agent` succeeds |
 | **Last full verification** | 2026-09-17 |
-| **Status** | ✅ verified pre-match, full-time, penalty shoot-out, extra time, two-leg play-offs · 🚧 in-play REST states not yet observed (next: Bristol City v Watford 2026-09-18 19:00Z, Championship round 8 on 2026-09-19) |
+| **Status** | ✅ verified pre-match, full-time, penalty shoot-out, extra time, two-leg play-offs; `ChampionshipProvider` / `CarabaoCupProvider` in `core` · 🚧 in-play REST states not yet observed (next: Bristol City v Watford 2026-09-18 19:00Z, Championship round 8 on 2026-09-19) |
 
 ## Overview
 
@@ -137,7 +137,7 @@ EFL Trophy, `EN_LC` League Cup. `links.self` points at `multi-club-matches.gc.ef
 data[] { type "match", id "g2685170",
   attributes {
     kickOffDateUTC "2026-09-17 18:30:00"     – UTC, no zone marker
-    TBC null | true                          – kick-off time not fixed
+    TBC null | "DATE_AND_TIME"               – what is still to be confirmed (a placeholder `kickOffDateUTC` stands in)
     homeTeam / awayTeam { crest, name, officialName, shortName, initials, score, halfScore,
                           penaltyScore, liveStreamingUrl, teamURL }
     matchMinutes 93, matchPeriod "FullTime", formattedMatchTime "90' +3'"
@@ -425,9 +425,10 @@ postponed" — only `period`/`resultType == "Postponed"` does.
 - **Empty day = 404** `"No matches found"`. Treat 404 on `/matches` as an empty list.
 - **Bare `to=` date is exclusive** — it is parsed as midnight. Always send
   `to=YYYY-MM-DD 23:59:59Z` (or the next day).
-- **`matchTeams` may contain more than two teams.** The play-off final document still holds
-  the two semi-final placeholders (`t20` Southampton and `t9830` TBC with null scores and
-  no players) beside Hull and Middlesbrough. Pick the entries whose `teamID` equals
+- **`matchTeams` may contain more than two teams, and is not in home/away order.** The
+  play-off final document still holds the two semi-final placeholders (`t20` Southampton and
+  `t9830` TBC with null scores and no players) beside Hull and Middlesbrough, and the
+  shoot-out sample lists the away side first. Pick the entries whose `teamID` equals
   `homeTeamID`/`awayTeamID`.
 - **`formattedMatchTime` does not understand extra time**: a 127-minute match reads
   `"90' +37'"`; use `matchTime`/`matchMinutes` plus `ninetyScore`/`extraScore` instead.
@@ -476,23 +477,26 @@ postponed" — only `period`/`resultType == "Postponed"` does.
 
 | Core concept | Source endpoint | Field(s) | Notes / gaps |
 |---|---|---|---|
-| League / season | constant | `competitionID` 10 / 2, `seasonID` 2026 | Season is the start year; `/matches/firstlast` gives the span. Two `League`s (`championship`, `carabao-cup`) over one API; play-offs are stage `PLAYOFF` inside competition 10 (`matchType` `2nd Leg`/`Cup`, `matchDay` ≥ 47) |
-| Game (id, teams, start time) | `/matches` list | `id`, `homeTeam`/`awayTeam` (names, crest), `kickOffDateUTC` (+`Z`) | Team ids only in the detail (`homeTeamID`) — the list gives names and crest URLs, whose file name `t{id}.png` carries the id |
-| GameState | list `matchPeriod`, `resultType`; detail `period` | `PreMatch`→SCHEDULED, `FirstHalf`/`SecondHalf`/`Extra*`/`ShootOut`/`FullTime90`/`FullTimePens`→LIVE, `HalfTime`→INTERMISSION (opt-in), `FullTime`→FINAL, `Postponed`→POSTPONED | `TBC: true` still SCHEDULED; abandoned/cancelled unverified |
-| Score by period | detail `matchTeams[]` | `halfScore`, `ninetyScore`, `extraScore`, `score`, `penaltyScore` | Period scores for 1H/2H/ET derivable; `GameEnding` from `resultType` + `extraScore` |
-| Clock / period | list `matchMinutes` (int), detail `matchDetails.matchTime` | minute only, no seconds, no running flag | Same class of clock as the Premier League: elapsed minute, `running` null |
-| GameEvent (goal, card, sub, shoot-out, VAR) | detail `matchTeams[].events` | `eventID`, `eventTime`, `eventPeriod`, `goalType`, `card`/`cardType`, `subOnID`/`subOffID`, shoot-out `outcome` | Own goal side = beneficiary (like Ligue 1/UEFA) — normalise per data-model.md; resolve players through lineups; `varEvents` shape unknown |
-| Lineups | detail `matchTeams[].players.Start/Sub` | `formation`, `formationPlace`, `playerPosition`, `shirtNumber`, names | STARTERS + BENCH; no coach/manager, no substitutes-used flag (derive from `subs`) |
-| Team | `/teams` | `teamID`, `teamName`, `teamShortName`, `crestURL`, `stadiumName`, URLs | No abbreviation; kit colours per match in the detail |
-| Player | detail lineups only | `playerID`, `firstName`/`lastName`/`knownName`, position, shirt | No player route, no bio, no headshots; season stats are name-keyed |
-| Standings | `/league-tables` | all standard columns + `form`, `startDayPosition` | Snapshot, not live; none for the cup |
-| Match stats | `/stats/match/{id}` | possession, shots, on target, corners, fouls | Nothing per player |
-| Live push | Firestore `live-feed` | `Goal`/`Booking`/`HalfTime`/`FullTimePens`/`FullTime` | Cheap delta probe; no kick-off/2nd-half-start doc, so period starts still need the REST document |
-| Broadcast | `/broadcasters?includeBroadcasters=true`, detail `isBroadcast` | `broadcasters[].name` | Probably geo-resolved |
-| Club crosswalk | — | `t{n}` = Opta team id = Premier League API `"{n}"` | A shared `opta` namespace would cover both leagues, but the [crosswalk](../../../docs/data-model.md#clubs-across-leagues) rules out external ids — keep an `efl` namespace and let the curated table pair them |
+| League / season | constant | `competitionID` 10 / 2, `seasonID` 2026 | Season is the start year (July split); `/matches/firstlast` gives the span. Two `League`s (`championship`, `carabao-cup`) over one `EflProvider`; play-offs are stage `PLAYOFF` inside competition 10 (`matchType` `2nd Leg`/`Cup`, `matchDay` ≥ 47) with `Game.competition` "Play-off semi-final, 2nd leg" / "Play-off final"; cup ties are stage `OTHER` with "Round {matchDay}" |
+| Game (id, teams, start time) | `/matches` list (UTC day bounds) | `id`, `homeTeam`/`awayTeam` (names, crest), `kickOffDateUTC` (+`Z`) | Team ids only in the detail (`homeTeamID`) — the list gives names and crest URLs, whose file name `t{id}.png` carries the id. A 404 day is an empty list |
+| GameState | list `matchPeriod`, `resultType`; detail `matchDetails.period` | `PreMatch`/null→SCHEDULED, `FirstHalf`/`SecondHalf`/`Extra*`/`ShootOut`→LIVE, `HalfTime`/`ExtraHalfTime`/`FullTime90`/`FullTimePens`→INTERMISSION, `FullTime`→FINAL, `Postponed`→POSTPONED, `Abandoned`→SUSPENDED, `Cancelled`→CANCELLED | `TBC` → `startTimeTbd`; an unknown `period` with a minute alongside stays LIVE; abandoned/cancelled unverified |
+| Score by period | detail `matchTeams[].events.goals` per `eventPeriod`; list `halfScore`/`score`/`penaltyScore` | 1H/2H/ET1/ET2 counted from the goal events (filed under the side they count for), PENS from `penaltyScore` | The list gives halves only (its `score` includes extra time); `GameEnding` from `resultType`, `extraScore` (list: `matchMinutes` > 105) |
+| Clock / period | list `matchMinutes` (int), detail `matchDetails.matchTime` | minute only, no seconds | Same class of clock as the Premier League: cumulative minute in the period, `running` = LIVE vs INTERMISSION |
+| GameEvent (goal, card, sub, shoot-out, VAR) | detail `matchTeams[].events` | `eventID`, `eventMinute`/`eventSecond`, `eventPeriod`, `goalType`, `card`/`cardType`/`reason`, `subOnID`/`subOffID`, shoot-out `outcome` | Own goal side = beneficiary (like Ligue 1/UEFA), which is the core's convention; players resolved through the lineups; both sides merged in `eventTimestamp` order; `varEvents` shape unknown (mapped to `VAR`) |
+| Lineups | detail `matchTeams[].players.Start/Sub` | `formation`, `formationPlace`, `playerPosition`/`playerSubPosition`, `shirtNumber`, names | STARTERS (by `formationPlace`) + BENCH; no coach/manager, no substitutes-used flag (derive from `subs`) |
+| Team | `/teams?competitionID=&seasonID=` (kept a day) | `teamID`, `teamName`, `teamShortName` (`commonName`), `crestURL`, `stadiumName` | No abbreviation; kit colours per match in the detail. The cup's list knows the Premier League clubs too |
+| Team schedule | `/matches?seasonID=&teamID=&page.size=100` | every competition the club plays | Each provider keeps its own `competitionID`, the fetcher coalesces the shared read |
+| Player | detail lineups only | `playerID`, `firstName`/`lastName`/`knownName`, position, shirt | No player route, no bio, no headshots; season stats are name-keyed — `ROSTER`/`PLAYER` unsupported |
+| Standings | `/league-tables` | all standard columns + `form` (reversed to oldest first), `startDayPosition` (`startingPosition`) | Snapshot, not live; none for the cup (`STANDINGS` unsupported there) |
+| Match stats | `/stats/match/{id}` (only once started) | possession, shots, on target (`null` → 0), corners, fouls | Nothing per player |
+| Live | polled `/matches/{id}` + stats at ≥ 15 s | | No edge cache, so never faster |
+| Live push | Firestore `live-feed` | `Goal`/`Booking`/`HalfTime`/`FullTimePens`/`FullTime` | Documented, not wired: cheap delta probe; no kick-off/2nd-half-start doc, so period starts still need the REST document |
+| Broadcast | `/broadcasters?includeBroadcasters=true`, detail `isBroadcast` | `broadcasters[].name` | Probably geo-resolved; not mapped |
+| Club crosswalk | — | `t{n}` = Opta team id = Premier League API `"{n}"` | Namespace `efl` (shared by `championship` and `carabao-cup`) in the curated table: every Premier League line carries its `efl` id next to the Pulselive one, the 24 Championship clubs have their own lines; League One/Two clubs in the cup stay unlinked |
 
 ## Changelog
 
 | Date | Change |
 |---|---|
 | 2026-09-17 | Initial mapping from the efl.com Nuxt bundle: `multi-club-matches` v2 (11 routes, 24 samples incl. shoot-out, extra time and play-off final), Firestore `live-feed` (4 samples), enum survey over 25 finished matches; health checks pass live (23/23 on 2026-09-18). In-play REST states pending. |
+| 2026-09-18 | `EflProvider` in `core` (`ChampionshipProvider`, `CarabaoCupProvider`) replaying every sample; `TBC` corrected to the string `"DATE_AND_TIME"` (seen on the round-4 cup ties with a placeholder kick-off), `matchTeams` noted as unordered; `efl` crosswalk namespace. Provider discovery passes live (27/27 with the endpoint checks). |
