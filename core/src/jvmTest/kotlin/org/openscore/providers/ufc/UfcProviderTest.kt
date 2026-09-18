@@ -252,6 +252,31 @@ class UfcProviderTest {
     }
 
     @Test
+    fun anInProgressStatusIsInferredFromTheTrackedRounds() {
+        // The in-progress statuses are guesses until UFC 331 is captured: whatever the feed says,
+        // a fight whose rounds are tracked is live, and only a status with no evidence is unknown.
+        val event = UfcEvent(EventId = 1335, Status = "Upcoming")
+        val walkout = UfcAction(1, Type = "walkout", RoundNumber = 0)
+        val roundStart = UfcAction(2, Type = "round_start", RoundNumber = 1, RoundTime = "5:00")
+        val over = UfcAction(3, Type = "fight_over", RoundNumber = 2, RoundTime = "1:12")
+        fun state(status: String?, vararg actions: UfcAction, e: UfcEvent = event) =
+            UfcMapper.state(e, UfcFight(FightId = 13017, Status = status, FightNightTracking = actions.toList()))
+
+        assertEquals(GameState.SCHEDULED, state("Upcoming"))
+        assertEquals(GameState.PRE_GAME, state("Upcoming", walkout))
+        assertEquals(GameState.PRE_GAME, state("Upcoming", e = event.copy(LiveFightId = 13017)))
+        assertEquals(GameState.LIVE, state("Upcoming", walkout, roundStart))
+        assertEquals(GameState.LIVE, state("Live"))
+        assertEquals(GameState.LIVE, state("Over", walkout, roundStart, over))
+        assertEquals(GameState.LIVE, state("In Progress", walkout, roundStart), "an unforeseen status with a round under way")
+        assertEquals(GameState.LIVE, state("Started", roundStart, over))
+        assertEquals(GameState.UNKNOWN, state("Postponed"))
+        assertEquals(GameState.UNKNOWN, state("Postponed", walkout))
+        assertEquals(GameState.FINAL, state("Final", walkout, roundStart, over))
+        assertEquals(GameState.CANCELLED, state("Live", roundStart, e = event.copy(Status = "Canceled")))
+    }
+
+    @Test
     fun aCanceledCardHasNoFights() = runTest {
         val canceled = OpenScoreJson.decodeFromString(UfcEventResponse.serializer(), File(SampleFetcher.samplesDir("mma", "ufc"), "event.live.canceled.json").readText()).LiveEventDetail
         assertEquals("Canceled", canceled.Status)

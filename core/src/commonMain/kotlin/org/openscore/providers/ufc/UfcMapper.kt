@@ -149,7 +149,9 @@ internal object UfcMapper {
                 actions.isNotEmpty() || (e.LiveFightId != null && e.LiveFightId == f.FightId) -> GameState.PRE_GAME
                 else -> GameState.SCHEDULED
             }
-            else -> GameState.UNKNOWN
+            // The in-progress statuses are read off ufc.com's script, not yet observed: a fight
+            // under a status this mapper does not know is still live once a round has started.
+            else -> if (started || actions.any { it.Type in OVER_ACTIONS }) GameState.LIVE else GameState.UNKNOWN
         }
     }
 
