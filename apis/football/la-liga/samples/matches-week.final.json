@@ -1,0 +1,2824 @@
+{
+  "total": 10,
+  "matches": [
+    {
+      "id": 102281,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Betis - Real Madrid - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-real-betis-real-madrid-4",
+      "date": "2026-09-04T19:00:00+00:00",
+      "time": "2026-09-04T19:00:00+00:00",
+      "hashtag": "RealBetisRealMadrid",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "status": "FullTime",
+      "home_team": {
+        "id": 5,
+        "slug": "real-betis",
+        "name": "Real Betis Balompié SAD",
+        "nickname": "Real Betis",
+        "boundname": "Real Betis",
+        "shortname": "BET",
+        "color": "#038316",
+        "color_secondary": "#ffffff",
+        "foundation": "1907-09-12T00:00:00+00:00",
+        "web": "http://www.realbetisbalompie.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 627565,
+          "name": "LOGO BETIS OK",
+          "url": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2022/09/15/xsmall/e4a09419d3bd115b8f3dab73d480e146.png",
+            "small": "https://assets.laliga.com/assets/2022/09/15/small/e4a09419d3bd115b8f3dab73d480e146.png",
+            "medium": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png",
+            "large": "https://assets.laliga.com/assets/2022/09/15/large/e4a09419d3bd115b8f3dab73d480e146.png",
+            "xlarge": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t185",
+        "lde_id": 81
+      },
+      "away_team": {
+        "id": 15,
+        "slug": "real-madrid",
+        "name": "Real Madrid Club de Fútbol",
+        "nickname": "Real Madrid",
+        "boundname": "Real Madrid",
+        "shortname": "RMA",
+        "foundation": "1902-03-06T00:00:00+00:00",
+        "web": "http://www.realmadrid.com",
+        "sprite_status": "created",
+        "shield": {
+          "id": 149,
+          "name": "Escudo RMA",
+          "caption": "Escudo RMA",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t186",
+        "lde_id": 82
+      },
+      "match_winner_team": {
+        "id": 5,
+        "slug": "real-betis",
+        "name": "Real Betis Balompié SAD",
+        "nickname": "Real Betis",
+        "boundname": "Real Betis",
+        "shortname": "BET",
+        "color": "#038316",
+        "color_secondary": "#ffffff",
+        "foundation": "1907-09-12T00:00:00+00:00",
+        "web": "http://www.realbetisbalompie.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 627565,
+          "name": "LOGO BETIS OK",
+          "url": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2022/09/15/xsmall/e4a09419d3bd115b8f3dab73d480e146.png",
+            "small": "https://assets.laliga.com/assets/2022/09/15/small/e4a09419d3bd115b8f3dab73d480e146.png",
+            "medium": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png",
+            "large": "https://assets.laliga.com/assets/2022/09/15/large/e4a09419d3bd115b8f3dab73d480e146.png",
+            "xlarge": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t185",
+        "lde_id": 81
+      },
+      "home_formation": "4231",
+      "away_formation": "4231",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 402,
+        "name": "Estadio La Cartuja",
+        "latitude": "37.3771483",
+        "longitude": "-6.0147061",
+        "capacity": 60000,
+        "address": "Isla de la Cartuja, 41092",
+        "timezone": "Europe/Madrid",
+        "city": "Sevilla",
+        "slug": "estadio-la-cartuja",
+        "opta_id": "v3354",
+        "lde_id": 600
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9822,
+            "name": "Alejandro José Hernández Hernández",
+            "nickname": "Alejandro José Hernández Hernández",
+            "firstname": "Alejandro José",
+            "lastname": "Hernández Hernández",
+            "gender": "male",
+            "international": false,
+            "slug": "alejandro-jose-hernandez-hernandez"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o42055",
+          "lde_id": 405
+        },
+        {
+          "person": {
+            "id": 9952,
+            "name": "Juan Antonio Campos Salinas",
+            "nickname": "Juan Antonio Campos Salinas",
+            "firstname": "Juan Antonio",
+            "lastname": "Campos Salinas",
+            "gender": "male",
+            "international": false,
+            "slug": "juan-antonio-campos-salinas"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9974,
+            "name": "Javier Iglesias Villanueva",
+            "nickname": "Javier Iglesias Villanueva",
+            "firstname": "Javier",
+            "lastname": "Iglesias Villanueva",
+            "gender": "male",
+            "international": false,
+            "slug": "javier-iglesias-villanueva"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9863,
+            "name": "Juan Luis Pulido Santana",
+            "nickname": "Juan Luis Pulido Santana",
+            "firstname": "Juan Luis",
+            "lastname": "Pulido Santana",
+            "gender": "male",
+            "international": false,
+            "slug": "juan-luis-pulido-santana"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10023,
+            "name": "José Enrique Naranjo Pérez",
+            "nickname": "José Enrique Naranjo Pérez",
+            "firstname": "José Enrique",
+            "lastname": "Naranjo Pérez",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-enrique-naranjo-perez"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10068,
+            "name": "Diego Sánchez Rojo",
+            "nickname": "Diego Sánchez Rojo",
+            "firstname": "Diego",
+            "lastname": "Sánchez Rojo",
+            "gender": "male",
+            "international": false,
+            "slug": "diego-sanchez-rojo"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650794",
+      "lde_id": 240608
+    },
+    {
+      "id": 102280,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Athletic Club - Atlético de Madrid - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-athletic-club-atletico-de-madrid-4",
+      "date": "2026-09-05T14:15:00+00:00",
+      "time": "2026-09-05T14:15:00+00:00",
+      "hashtag": "AthleticAtleti",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 3,
+      "away_score": 0,
+      "status": "FullTime",
+      "home_team": {
+        "id": 3,
+        "slug": "athletic-club",
+        "name": "Athletic Club",
+        "nickname": "Athletic Club",
+        "boundname": "Athletic Club",
+        "shortname": "ATH",
+        "color": "#f21e27",
+        "color_secondary": "#ffffff",
+        "foundation": "1898-12-31T00:00:00+00:00",
+        "web": "https://www.athletic-club.eus",
+        "sprite_status": "created",
+        "shield": {
+          "id": 125,
+          "name": "Escudo ATH",
+          "caption": "Escudo ATH",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/athletic.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/athletic.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/athletic.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/athletic.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/athletic.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/athletic.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t174",
+        "lde_id": 68
+      },
+      "away_team": {
+        "id": 2,
+        "slug": "atletico-de-madrid",
+        "name": "Club Atlético de Madrid SAD",
+        "nickname": "Atlético de Madrid",
+        "boundname": "Atlético de Madrid",
+        "shortname": "ATM",
+        "foundation": "1903-04-26T00:00:00+00:00",
+        "web": "http://www.atleticodemadrid.com/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 812970,
+          "name": "atletico_v2_512x512.png",
+          "url": "https://assets.laliga.com/assets/2024/06/17/xlarge/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2024/06/17/xsmall/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "small": "https://assets.laliga.com/assets/2024/06/17/small/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "medium": "https://assets.laliga.com/assets/2024/06/17/medium/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "large": "https://assets.laliga.com/assets/2024/06/17/large/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "xlarge": "https://assets.laliga.com/assets/2024/06/17/xlarge/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "hl": "https://assets.laliga.com/assets/2024/06/17/hl/cbc5c8cc8c3e8abd0e175c00ee53b723.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t175",
+        "lde_id": 70
+      },
+      "match_winner_team": {
+        "id": 3,
+        "slug": "athletic-club",
+        "name": "Athletic Club",
+        "nickname": "Athletic Club",
+        "boundname": "Athletic Club",
+        "shortname": "ATH",
+        "color": "#f21e27",
+        "color_secondary": "#ffffff",
+        "foundation": "1898-12-31T00:00:00+00:00",
+        "web": "https://www.athletic-club.eus",
+        "sprite_status": "created",
+        "shield": {
+          "id": 125,
+          "name": "Escudo ATH",
+          "caption": "Escudo ATH",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/athletic.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/athletic.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/athletic.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/athletic.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/athletic.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/athletic.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t174",
+        "lde_id": 68
+      },
+      "home_formation": "4231",
+      "away_formation": "442",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 3,
+        "name": "Estadio San Mamés",
+        "latitude": "43.2641",
+        "longitude": "-2.94704",
+        "capacity": 53332,
+        "address": "Felipe Serrate s/n. Bilbao 48013",
+        "timezone": "Europe/Madrid",
+        "city": "Bilbo",
+        "slug": "estadio-san-mames",
+        "opta_id": "v8973",
+        "lde_id": 922
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9840,
+            "name": "José Luis Munuera Montero",
+            "nickname": "José Luis Munuera Montero",
+            "firstname": "José Luis",
+            "lastname": "Munuera Montero",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-luis-munuera-montero"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o43607",
+          "lde_id": 400
+        },
+        {
+          "person": {
+            "id": 11541,
+            "name": "Néstor Holgueras Castellanos",
+            "nickname": "Néstor Holgueras Castellanos",
+            "firstname": "Néstor",
+            "lastname": "Holgueras Castellanos",
+            "gender": "male",
+            "international": false,
+            "slug": "nestor-holgueras-castellanos"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9863,
+            "name": "Juan Luis Pulido Santana",
+            "nickname": "Juan Luis Pulido Santana",
+            "firstname": "Juan Luis",
+            "lastname": "Pulido Santana",
+            "gender": "male",
+            "international": false,
+            "slug": "juan-luis-pulido-santana"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9974,
+            "name": "Javier Iglesias Villanueva",
+            "nickname": "Javier Iglesias Villanueva",
+            "firstname": "Javier",
+            "lastname": "Iglesias Villanueva",
+            "gender": "male",
+            "international": false,
+            "slug": "javier-iglesias-villanueva"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10026,
+            "name": "Iñigo Prieto López de",
+            "nickname": "Iñigo Prieto López de Ceraín",
+            "firstname": "Iñigo Prieto",
+            "lastname": "López de",
+            "gender": "male",
+            "international": false,
+            "slug": "inigo-prieto-lopez-de-cerain"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10051,
+            "name": "Antonio Martínez Moreno",
+            "nickname": "Antonio Martínez Moreno",
+            "firstname": "Antonio",
+            "lastname": "Martínez Moreno",
+            "gender": "male",
+            "international": false,
+            "slug": "antonio-martinez-moreno"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        },
+        {
+          "id": "70",
+          "name": "Movistar Plus+",
+          "slug": "movistar-plus",
+          "local": false,
+          "residential": false,
+          "residential_secondary": false,
+          "image": {
+            "id": 714617,
+            "name": "MicrosoftTeams-image (42).png",
+            "url": "https://assets.laliga.com/assets/2023/07/26/xlarge/e4e14d9bb877f01c3919c7d653ce9443.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2023/07/26/xsmall/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "small": "https://assets.laliga.com/assets/2023/07/26/small/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "medium": "https://assets.laliga.com/assets/2023/07/26/medium/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "large": "https://assets.laliga.com/assets/2023/07/26/large/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "xlarge": "https://assets.laliga.com/assets/2023/07/26/xlarge/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "hl": "https://assets.laliga.com/assets/2023/07/26/hl/e4e14d9bb877f01c3919c7d653ce9443.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 3,
+          "countries": []
+        },
+        {
+          "id": "75",
+          "name": "Orange Fútbol 1",
+          "slug": "futbol-1",
+          "local": false,
+          "residential": false,
+          "residential_secondary": false,
+          "image": {
+            "id": 965255,
+            "name": "ORANGE_FUTBOL_1_POSITIVO.png",
+            "url": "https://assets.laliga.com/assets/2026/04/09/xlarge/5cc2f175c04975c54139f7166301aff7.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2026/04/09/xsmall/5cc2f175c04975c54139f7166301aff7.png",
+              "small": "https://assets.laliga.com/assets/2026/04/09/small/5cc2f175c04975c54139f7166301aff7.png",
+              "medium": "https://assets.laliga.com/assets/2026/04/09/medium/5cc2f175c04975c54139f7166301aff7.png",
+              "large": "https://assets.laliga.com/assets/2026/04/09/large/5cc2f175c04975c54139f7166301aff7.png",
+              "xlarge": "https://assets.laliga.com/assets/2026/04/09/xlarge/5cc2f175c04975c54139f7166301aff7.png",
+              "hl": "https://assets.laliga.com/assets/2026/04/09/hl/5cc2f175c04975c54139f7166301aff7.png"
+            }
+          },
+          "priority": 4,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650793",
+      "lde_id": 240559
+    },
+    {
+      "id": 102286,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Rayo Vallecano - R. Racing Club - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-rayo-vallecano-r-racing-club-4",
+      "date": "2026-09-05T16:30:00+00:00",
+      "time": "2026-09-05T16:30:00+00:00",
+      "hashtag": "RayoRacing",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 3,
+      "away_score": 2,
+      "status": "FullTime",
+      "home_team": {
+        "id": 14,
+        "slug": "rayo-vallecano",
+        "name": "Rayo Vallecano de Madrid SAD",
+        "nickname": "Rayo Vallecano",
+        "boundname": "Rayo Vallecano",
+        "shortname": "RAY",
+        "color": "#f21e27",
+        "color_secondary": "#ffffff",
+        "foundation": "1924-05-20T00:00:00+00:00",
+        "web": "http://www.rayovallecano.es",
+        "sprite_status": "created",
+        "shield": {
+          "id": 691708,
+          "name": "Escudo Rayo",
+          "caption": "Escudo Rayo",
+          "url": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2023/04/27/xsmall/57d9950a8745ead226c04d37235c0786.png",
+            "small": "https://assets.laliga.com/assets/2023/04/27/small/57d9950a8745ead226c04d37235c0786.png",
+            "medium": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png",
+            "large": "https://assets.laliga.com/assets/2023/04/27/large/57d9950a8745ead226c04d37235c0786.png",
+            "xlarge": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+            "hl": "https://assets.laliga.com/assets/2023/04/27/hl/57d9950a8745ead226c04d37235c0786.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t184",
+        "lde_id": 80
+      },
+      "away_team": {
+        "id": 49,
+        "slug": "r-racing-club",
+        "name": "Real Racing Club SAD",
+        "nickname": "R. Racing Club",
+        "boundname": "R. Racing Club",
+        "shortname": "RAC",
+        "foundation": "1913-02-23T00:00:00+00:00",
+        "web": "http://www.realracingclub.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 215,
+          "name": "Escudo RAC",
+          "caption": "Escudo RAC",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/racing.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/racing.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/racing.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/racing.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/racing.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/racing.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t189",
+        "lde_id": 85
+      },
+      "match_winner_team": {
+        "id": 14,
+        "slug": "rayo-vallecano",
+        "name": "Rayo Vallecano de Madrid SAD",
+        "nickname": "Rayo Vallecano",
+        "boundname": "Rayo Vallecano",
+        "shortname": "RAY",
+        "color": "#f21e27",
+        "color_secondary": "#ffffff",
+        "foundation": "1924-05-20T00:00:00+00:00",
+        "web": "http://www.rayovallecano.es",
+        "sprite_status": "created",
+        "shield": {
+          "id": 691708,
+          "name": "Escudo Rayo",
+          "caption": "Escudo Rayo",
+          "url": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2023/04/27/xsmall/57d9950a8745ead226c04d37235c0786.png",
+            "small": "https://assets.laliga.com/assets/2023/04/27/small/57d9950a8745ead226c04d37235c0786.png",
+            "medium": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png",
+            "large": "https://assets.laliga.com/assets/2023/04/27/large/57d9950a8745ead226c04d37235c0786.png",
+            "xlarge": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+            "hl": "https://assets.laliga.com/assets/2023/04/27/hl/57d9950a8745ead226c04d37235c0786.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t184",
+        "lde_id": 80
+      },
+      "home_formation": "433",
+      "away_formation": "4231",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 53,
+        "name": "Estadio Ontime Butarque",
+        "latitude": "40.35316",
+        "longitude": "-3.7511985",
+        "capacity": 12450,
+        "address": "C/ Arquitectura, s/n. 28914 Leganés (Madrid)",
+        "timezone": "Europe/Madrid",
+        "city": "Leganés",
+        "slug": "estadio-ontime-butarque",
+        "opta_id": "v6791",
+        "lde_id": 890
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 14900,
+            "name": "Alejandro Quintero González",
+            "nickname": "Alejandro Quintero González",
+            "firstname": "Alejandro",
+            "lastname": "Quintero González",
+            "gender": "male",
+            "international": false,
+            "slug": "alejandro-quintero-gonzalez"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o58136",
+          "lde_id": 6227
+        },
+        {
+          "person": {
+            "id": 41293,
+            "name": "José María Aranda Delgado",
+            "nickname": "José María Aranda",
+            "firstname": "José María",
+            "lastname": "Aranda Delgado",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-maria-aranda"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9860,
+            "name": "Guillermo Cuadra Fernández",
+            "nickname": "Guillermo Cuadra Fernández",
+            "firstname": "Guillermo",
+            "lastname": "Cuadra Fernández",
+            "gender": "male",
+            "international": false,
+            "slug": "guillermo-cuadra-fernandez"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 10103,
+            "name": "Alejandro Muñiz Ruiz",
+            "nickname": "Alejandro Muñiz Ruiz",
+            "firstname": "Alejandro",
+            "lastname": "Muñiz Ruiz",
+            "gender": "male",
+            "international": false,
+            "slug": "alejandro-muniz-ruiz"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10069,
+            "name": "Guillermo Santiago Sacristán",
+            "nickname": "Guillermo Santiago Sacristán",
+            "firstname": "Guillermo",
+            "lastname": "Santiago Sacristán",
+            "gender": "male",
+            "international": false,
+            "slug": "guillermo-santiago-sacristan"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 14883,
+            "name": "José Francisco García Lozano",
+            "nickname": "José Francisco García Lozano",
+            "firstname": "José Francisco",
+            "lastname": "García Lozano",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-francisco-garcia-lozano"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650799",
+      "lde_id": 240571
+    },
+    {
+      "id": 102288,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Villarreal CF - RC Deportivo - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-villarreal-cf-rc-deportivo-4",
+      "date": "2026-09-05T19:00:00+00:00",
+      "time": "2026-09-05T19:00:00+00:00",
+      "hashtag": "VillarrealDépor",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 2,
+      "away_score": 3,
+      "status": "FullTime",
+      "home_team": {
+        "id": 20,
+        "slug": "villarreal-cf",
+        "name": "Villarreal Club de Fútbol SAD",
+        "nickname": "Villarreal CF",
+        "boundname": "Villarreal CF",
+        "shortname": "VIL",
+        "color": "#ffd301",
+        "color_secondary": "#ffffff",
+        "foundation": "1923-03-10T00:00:00+00:00",
+        "web": "http://www.villarrealcf.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 159,
+          "name": "Escudo VIL",
+          "caption": "Escudo VIL",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/villarreal.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/villarreal.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/villarreal.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/villarreal.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/villarreal.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/villarreal.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t449",
+        "lde_id": 189
+      },
+      "away_team": {
+        "id": 26,
+        "slug": "rc-deportivo",
+        "name": "Real Club Deportivo de A Coruña SAD",
+        "nickname": "RC Deportivo",
+        "boundname": "RC Deportivo",
+        "shortname": "DEP",
+        "foundation": "1906-01-01T00:00:00+00:00",
+        "web": "http://www.rcdeportivo.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 994863,
+          "name": "26_ESCUDO_RGB_COLOR-CONTORNO.png",
+          "url": "https://assets.laliga.com/assets/2026/06/24/xlarge/6b88661529a2c06840c8bf6bddd90970.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2026/06/24/xsmall/6b88661529a2c06840c8bf6bddd90970.png",
+            "small": "https://assets.laliga.com/assets/2026/06/24/small/6b88661529a2c06840c8bf6bddd90970.png",
+            "medium": "https://assets.laliga.com/assets/2026/06/24/medium/6b88661529a2c06840c8bf6bddd90970.png",
+            "large": "https://assets.laliga.com/assets/2026/06/24/large/6b88661529a2c06840c8bf6bddd90970.png",
+            "xlarge": "https://assets.laliga.com/assets/2026/06/24/xlarge/6b88661529a2c06840c8bf6bddd90970.png",
+            "hl": "https://assets.laliga.com/assets/2026/06/24/hl/6b88661529a2c06840c8bf6bddd90970.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t180",
+        "lde_id": 76
+      },
+      "match_winner_team": {
+        "id": 26,
+        "slug": "rc-deportivo",
+        "name": "Real Club Deportivo de A Coruña SAD",
+        "nickname": "RC Deportivo",
+        "boundname": "RC Deportivo",
+        "shortname": "DEP",
+        "foundation": "1906-01-01T00:00:00+00:00",
+        "web": "http://www.rcdeportivo.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 994863,
+          "name": "26_ESCUDO_RGB_COLOR-CONTORNO.png",
+          "url": "https://assets.laliga.com/assets/2026/06/24/xlarge/6b88661529a2c06840c8bf6bddd90970.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2026/06/24/xsmall/6b88661529a2c06840c8bf6bddd90970.png",
+            "small": "https://assets.laliga.com/assets/2026/06/24/small/6b88661529a2c06840c8bf6bddd90970.png",
+            "medium": "https://assets.laliga.com/assets/2026/06/24/medium/6b88661529a2c06840c8bf6bddd90970.png",
+            "large": "https://assets.laliga.com/assets/2026/06/24/large/6b88661529a2c06840c8bf6bddd90970.png",
+            "xlarge": "https://assets.laliga.com/assets/2026/06/24/xlarge/6b88661529a2c06840c8bf6bddd90970.png",
+            "hl": "https://assets.laliga.com/assets/2026/06/24/hl/6b88661529a2c06840c8bf6bddd90970.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t180",
+        "lde_id": 76
+      },
+      "home_formation": "442",
+      "away_formation": "442",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 20,
+        "name": "Estadio de la Cerámica",
+        "latitude": "39.94481",
+        "longitude": "-0.1035",
+        "capacity": 24500,
+        "address": "Estadio de la Cerámica. Calle Blasco Ibáñez, 2. 12540",
+        "timezone": "Europe/Madrid",
+        "city": "Vila-real",
+        "slug": "estadio-de-la-ceramica",
+        "opta_id": "v1366",
+        "lde_id": 734
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9821,
+            "name": "Jesús Gil Manzano",
+            "nickname": "Jesús Gil Manzano",
+            "firstname": "Jesús",
+            "lastname": "Gil Manzano",
+            "gender": "male",
+            "international": false,
+            "slug": "jesus-gil-manzano"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o42061",
+          "lde_id": 285
+        },
+        {
+          "person": {
+            "id": 30866,
+            "name": "Victor Manuel Broncano Suarez",
+            "nickname": "Victor Manuel Broncano Suarez",
+            "firstname": "Victor Manuel",
+            "lastname": "Broncano Suarez",
+            "gender": "male",
+            "international": false,
+            "slug": "victor-manuel-broncano-suarez"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9950,
+            "name": "Luis Mario Milla Alvendiz",
+            "nickname": "Luis Mario Milla Alvendiz",
+            "firstname": "Luis Mario",
+            "lastname": "Milla Alvendiz",
+            "gender": "male",
+            "international": false,
+            "slug": "luis-mario-milla-alvendiz"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9934,
+            "name": "José Antonio López Toca",
+            "nickname": "José Antonio López Toca",
+            "firstname": "José Antonio",
+            "lastname": "López Toca",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-antonio-lopez-toca"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10059,
+            "name": "Guadalupe Porras Ayuso",
+            "nickname": "Guadalupe Porras Ayuso",
+            "firstname": "Guadalupe",
+            "lastname": "Porras Ayuso",
+            "gender": "female",
+            "international": false,
+            "slug": "guadalupe-porras-ayuso"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10018,
+            "name": "Javier Martínez Nicolás",
+            "nickname": "Javier Martínez Nicolás",
+            "firstname": "Javier",
+            "lastname": "Martínez Nicolás",
+            "gender": "male",
+            "international": false,
+            "slug": "javier-martinez-nicolas"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650801",
+      "lde_id": 240616
+    },
+    {
+      "id": 102287,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Valencia CF - FC Barcelona - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-valencia-cf-fc-barcelona-4",
+      "date": "2026-09-06T14:15:00+00:00",
+      "time": "2026-09-06T14:15:00+00:00",
+      "hashtag": "ValenciaBarça",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 0,
+      "away_score": 5,
+      "status": "FullTime",
+      "home_team": {
+        "id": 18,
+        "slug": "valencia-cf",
+        "name": "Valencia Club de Fútbol SAD",
+        "nickname": "Valencia CF",
+        "boundname": "Valencia CF",
+        "shortname": "VAL",
+        "color": "#000000",
+        "color_secondary": "#ffffff",
+        "foundation": "1919-03-18T00:00:00+00:00",
+        "web": "http://www.valenciacf.com",
+        "sprite_status": "created",
+        "shield": {
+          "id": 155,
+          "name": "Escudo VCF",
+          "caption": "Escudo VCF",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/valencia.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/valencia.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/valencia.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/valencia.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/valencia.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/valencia.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t191",
+        "lde_id": 88
+      },
+      "away_team": {
+        "id": 4,
+        "slug": "fc-barcelona",
+        "name": "Fútbol Club Barcelona",
+        "nickname": "FC Barcelona",
+        "boundname": "FC Barcelona",
+        "shortname": "BAR",
+        "foundation": "1899-11-29T00:00:00+00:00",
+        "web": "http://www.fcbarcelona.es",
+        "sprite_status": "created",
+        "shield": {
+          "id": 127,
+          "name": "Escudo BAR",
+          "caption": "Escudo BAR",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/barcelona.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/barcelona.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/barcelona.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/barcelona.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/barcelona.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/barcelona.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t178",
+        "lde_id": 74
+      },
+      "match_winner_team": {
+        "id": 4,
+        "slug": "fc-barcelona",
+        "name": "Fútbol Club Barcelona",
+        "nickname": "FC Barcelona",
+        "boundname": "FC Barcelona",
+        "shortname": "BAR",
+        "foundation": "1899-11-29T00:00:00+00:00",
+        "web": "http://www.fcbarcelona.es",
+        "sprite_status": "created",
+        "shield": {
+          "id": 127,
+          "name": "Escudo BAR",
+          "caption": "Escudo BAR",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/barcelona.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/barcelona.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/barcelona.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/barcelona.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/barcelona.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/barcelona.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t178",
+        "lde_id": 74
+      },
+      "home_formation": "541",
+      "away_formation": "433",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 18,
+        "name": "Camp de Mestalla",
+        "latitude": "38.85427",
+        "longitude": "-0.49981",
+        "capacity": 49677,
+        "address": "\"Camp de Mestalla\". Avenida de Suecia s/n. 46010 Valencia",
+        "timezone": "Europe/Madrid",
+        "city": "València",
+        "slug": "camp-de-mestalla",
+        "opta_id": "v1365",
+        "lde_id": 516
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9864,
+            "name": "Isidro Díaz de Mera",
+            "nickname": "Isidro Díaz de Mera Escuderos",
+            "firstname": "Isidro Díaz",
+            "lastname": "de Mera",
+            "gender": "male",
+            "international": false,
+            "slug": "isidro-diaz-de-mera-escuderos"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o44869",
+          "lde_id": 820
+        },
+        {
+          "person": {
+            "id": 14888,
+            "name": "Aleksandar Ivaylov Angelov",
+            "nickname": "Angelov Borisov",
+            "firstname": "Aleksandar",
+            "lastname": "Ivaylov Angelov",
+            "gender": "male",
+            "international": false,
+            "slug": "aleksandar-ivaylov-angelov"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 10103,
+            "name": "Alejandro Muñiz Ruiz",
+            "nickname": "Alejandro Muñiz Ruiz",
+            "firstname": "Alejandro",
+            "lastname": "Muñiz Ruiz",
+            "gender": "male",
+            "international": false,
+            "slug": "alejandro-muniz-ruiz"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9934,
+            "name": "José Antonio López Toca",
+            "nickname": "José Antonio López Toca",
+            "firstname": "José Antonio",
+            "lastname": "López Toca",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-antonio-lopez-toca"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10034,
+            "name": "Diego Santaúrsula Aguado",
+            "nickname": "Diego Santaúrsula Aguado",
+            "firstname": "Diego",
+            "lastname": "Santaúrsula Aguado",
+            "gender": "male",
+            "international": false,
+            "slug": "diego-santaursula-aguado"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10136,
+            "name": "Rubén Campo Hernández",
+            "nickname": "Rubén Campo Hernández",
+            "firstname": "Rubén",
+            "lastname": "Campo Hernández",
+            "gender": "male",
+            "international": false,
+            "slug": "ruben-campo-hernandez"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650800",
+      "lde_id": 240583
+    },
+    {
+      "id": 102279,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Deportivo Alavés - CA Osasuna - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-deportivo-alaves-ca-osasuna-4",
+      "date": "2026-09-06T16:30:00+00:00",
+      "time": "2026-09-06T16:30:00+00:00",
+      "hashtag": "AlavésOsasuna",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 5,
+      "away_score": 2,
+      "status": "FullTime",
+      "home_team": {
+        "id": 21,
+        "slug": "d-alaves",
+        "name": "Deportivo Alavés SAD",
+        "nickname": "Deportivo Alavés",
+        "boundname": "Deportivo Alavés",
+        "shortname": "ALA",
+        "color": "#0f39b8",
+        "color_secondary": "#ffffff",
+        "foundation": "1921-01-23T00:00:00+00:00",
+        "web": "http://www.deportivoalaves.com/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 467523,
+          "name": "Escudo Deportivo Alavés",
+          "caption": "Escudo Deportivo Alavés",
+          "url": "https://assets.laliga.com/assets/2020/09/01/xlarge/27002754a98bf535807fe49a24cc63ea.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2020/09/01/xsmall/27002754a98bf535807fe49a24cc63ea.png",
+            "small": "https://assets.laliga.com/assets/2020/09/01/small/27002754a98bf535807fe49a24cc63ea.png",
+            "medium": "https://assets.laliga.com/assets/2020/09/01/medium/27002754a98bf535807fe49a24cc63ea.png",
+            "large": "https://assets.laliga.com/assets/2020/09/01/large/27002754a98bf535807fe49a24cc63ea.png",
+            "xlarge": "https://assets.laliga.com/assets/2020/09/01/xlarge/27002754a98bf535807fe49a24cc63ea.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t173",
+        "lde_id": 66
+      },
+      "away_team": {
+        "id": 13,
+        "slug": "c-a-osasuna",
+        "name": "Club Atlético Osasuna",
+        "nickname": "CA Osasuna",
+        "boundname": "CA Osasuna",
+        "shortname": "OSA",
+        "foundation": "1920-11-17T00:00:00+00:00",
+        "web": "http://www.osasuna.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 145,
+          "name": "Escudo OSA",
+          "caption": "Escudo OSA",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/osasuna.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/osasuna.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/osasuna.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/osasuna.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/osasuna.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/osasuna.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t450",
+        "lde_id": 190
+      },
+      "match_winner_team": {
+        "id": 21,
+        "slug": "d-alaves",
+        "name": "Deportivo Alavés SAD",
+        "nickname": "Deportivo Alavés",
+        "boundname": "Deportivo Alavés",
+        "shortname": "ALA",
+        "color": "#0f39b8",
+        "color_secondary": "#ffffff",
+        "foundation": "1921-01-23T00:00:00+00:00",
+        "web": "http://www.deportivoalaves.com/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 467523,
+          "name": "Escudo Deportivo Alavés",
+          "caption": "Escudo Deportivo Alavés",
+          "url": "https://assets.laliga.com/assets/2020/09/01/xlarge/27002754a98bf535807fe49a24cc63ea.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2020/09/01/xsmall/27002754a98bf535807fe49a24cc63ea.png",
+            "small": "https://assets.laliga.com/assets/2020/09/01/small/27002754a98bf535807fe49a24cc63ea.png",
+            "medium": "https://assets.laliga.com/assets/2020/09/01/medium/27002754a98bf535807fe49a24cc63ea.png",
+            "large": "https://assets.laliga.com/assets/2020/09/01/large/27002754a98bf535807fe49a24cc63ea.png",
+            "xlarge": "https://assets.laliga.com/assets/2020/09/01/xlarge/27002754a98bf535807fe49a24cc63ea.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t173",
+        "lde_id": 66
+      },
+      "home_formation": "352",
+      "away_formation": "4222",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 21,
+        "name": "Mendizorroza",
+        "latitude": "42.85711",
+        "longitude": "-2.6682",
+        "capacity": 19840,
+        "address": "Paseo Cervantes, s/n. 01013 Vitoria-Gastéiz (Álava)",
+        "timezone": "Europe/Madrid",
+        "city": "Vitoria-Gasteiz",
+        "slug": "mendizorroza",
+        "opta_id": "v1346",
+        "lde_id": 720
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9845,
+            "name": "José María Sánchez Martínez",
+            "nickname": "José María Sánchez Martínez",
+            "firstname": "José María",
+            "lastname": "Sánchez Martínez",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-maria-sanchez-martinez"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o42129",
+          "lde_id": 404
+        },
+        {
+          "person": {
+            "id": 14612,
+            "name": "Armando Ramo Andrés",
+            "nickname": "Armando Ramo Andrés",
+            "firstname": "Armando",
+            "lastname": "Ramo Andrés",
+            "gender": "male",
+            "international": false,
+            "slug": "armando-ramo-andres"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9930,
+            "name": "David Gálvez Rascón",
+            "nickname": "David Gálvez Rascón",
+            "firstname": "David",
+            "lastname": "Gálvez Rascón",
+            "gender": "male",
+            "international": false,
+            "slug": "david-galvez-rascon"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9950,
+            "name": "Luis Mario Milla Alvendiz",
+            "nickname": "Luis Mario Milla Alvendiz",
+            "firstname": "Luis Mario",
+            "lastname": "Milla Alvendiz",
+            "gender": "male",
+            "international": false,
+            "slug": "luis-mario-milla-alvendiz"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10005,
+            "name": "Raul Cabañero Martínez",
+            "nickname": "Raul Cabañero Martínez",
+            "firstname": "Raul",
+            "lastname": "Cabañero Martínez",
+            "gender": "male",
+            "international": false,
+            "slug": "raul-cabanero-martinez"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10049,
+            "name": "Juan José López Mir",
+            "nickname": "Juan José López Mir",
+            "firstname": "Juan José",
+            "lastname": "López Mir",
+            "gender": "male",
+            "international": false,
+            "slug": "juan-jose-lopez-mir"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650792",
+      "lde_id": 240568
+    },
+    {
+      "id": 102285,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Málaga CF - Levante UD - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-malaga-cf-levante-ud-4",
+      "date": "2026-09-06T16:30:00+00:00",
+      "time": "2026-09-06T16:30:00+00:00",
+      "hashtag": "MálagaLevanteUD",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "status": "FullTime",
+      "home_team": {
+        "id": 12,
+        "slug": "malaga-cf",
+        "name": "Málaga Club de Fútbol SAD",
+        "nickname": "Málaga CF",
+        "boundname": "Málaga CF",
+        "shortname": "MGA",
+        "color": "#1476c4",
+        "foundation": "1994-06-29T00:00:00+00:00",
+        "web": "http://www.malagacf.com/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 143,
+          "name": "Escudo MCF",
+          "caption": "Escudo MCF",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/malaga.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/malaga.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/malaga.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/malaga.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/malaga.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/malaga.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t182",
+        "lde_id": 78
+      },
+      "away_team": {
+        "id": 11,
+        "slug": "levante-ud",
+        "name": "Levante Unión Deportiva SAD",
+        "nickname": "Levante UD",
+        "boundname": "Levante UD",
+        "shortname": "LEV",
+        "foundation": "1909-09-07T00:00:00+00:00",
+        "web": "https://www.levanteud.com/es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 141,
+          "name": "Escudo LUD",
+          "caption": "Escudo LUD",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/levante.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/levante.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/levante.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/levante.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/levante.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/levante.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t855",
+        "lde_id": 244
+      },
+      "home_formation": "433",
+      "away_formation": "4141",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 12,
+        "name": "La Rosaleda",
+        "latitude": "36.73008",
+        "longitude": "-4.42694",
+        "capacity": 30044,
+        "address": "Paseo de Martiricos s/n. 29011 Málaga",
+        "timezone": "Europe/Madrid",
+        "city": "Málaga",
+        "slug": "la-rosaleda",
+        "opta_id": "v1354",
+        "lde_id": 722
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 14389,
+            "name": "Luis Bestard Servera",
+            "nickname": "Luis Bestard Servera",
+            "firstname": "Luis",
+            "lastname": "Bestard Servera",
+            "gender": "male",
+            "international": false,
+            "slug": "luis-bestard-servera"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o56723",
+          "lde_id": 3297
+        },
+        {
+          "person": {
+            "id": 13859,
+            "name": "Federico Javier Saiz de Villares",
+            "nickname": "Federico Javier Saiz de Villares",
+            "firstname": "Federico Javier",
+            "lastname": "Saiz de Villares",
+            "gender": "male",
+            "international": false,
+            "slug": "federico-javier-saiz-de-villares"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9856,
+            "name": "Valentín Pizarro Gómez",
+            "nickname": "Valentín Pizarro Gómez",
+            "firstname": "Valentín",
+            "lastname": "Pizarro Gómez",
+            "gender": "male",
+            "international": false,
+            "slug": "valentin-pizarro-gomez"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9860,
+            "name": "Guillermo Cuadra Fernández",
+            "nickname": "Guillermo Cuadra Fernández",
+            "firstname": "Guillermo",
+            "lastname": "Cuadra Fernández",
+            "gender": "male",
+            "international": false,
+            "slug": "guillermo-cuadra-fernandez"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 14887,
+            "name": "Álvaro Granel Peiró",
+            "nickname": "Álvaro Granel Peiró",
+            "firstname": "Álvaro",
+            "lastname": "Granel Peiró",
+            "gender": "male",
+            "international": false,
+            "slug": "alvaro-granel-peiro"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10045,
+            "name": "Samuel García Aguilera",
+            "nickname": "Samuel García Aguilera",
+            "firstname": "Samuel",
+            "lastname": "García Aguilera",
+            "gender": "male",
+            "international": false,
+            "slug": "samuel-garcia-aguilera"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650798",
+      "lde_id": 240591
+    },
+    {
+      "id": 102283,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - RCD Espanyol de Barcelona - Sevilla FC - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-rcd-espanyol-de-barcelona-sevilla-fc-4",
+      "date": "2026-09-06T19:00:00+00:00",
+      "time": "2026-09-06T19:00:00+00:00",
+      "hashtag": "EspanyolSevilla",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "status": "FullTime",
+      "home_team": {
+        "id": 8,
+        "slug": "rcd-espanyol",
+        "name": "RCD Espanyol de Barcelona",
+        "nickname": "RCD Espanyol de Barcelona",
+        "boundname": "RCD Espanyol de Barcelona",
+        "shortname": "ESP",
+        "color": "#5a7cf1",
+        "color_secondary": "#ffffff",
+        "foundation": "1900-10-23T00:00:00+00:00",
+        "web": "http://www.rcdespanyol.com",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891385,
+          "name": "Escudos Individuales_LALIGA EA SPORTS_T25-26_04_RCD Espanyol_color.png",
+          "url": "https://assets.laliga.com/assets/2025/07/02/xlarge/e9177f6edd72c6360602adbca85e442f.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2025/07/02/xsmall/e9177f6edd72c6360602adbca85e442f.png",
+            "small": "https://assets.laliga.com/assets/2025/07/02/small/e9177f6edd72c6360602adbca85e442f.png",
+            "medium": "https://assets.laliga.com/assets/2025/07/02/medium/e9177f6edd72c6360602adbca85e442f.png",
+            "large": "https://assets.laliga.com/assets/2025/07/02/large/e9177f6edd72c6360602adbca85e442f.png",
+            "xlarge": "https://assets.laliga.com/assets/2025/07/02/xlarge/e9177f6edd72c6360602adbca85e442f.png",
+            "hl": "https://assets.laliga.com/assets/2025/07/02/hl/e9177f6edd72c6360602adbca85e442f.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t177",
+        "lde_id": 72
+      },
+      "away_team": {
+        "id": 17,
+        "slug": "sevilla-fc",
+        "name": "Sevilla Fútbol Club SAD",
+        "nickname": "Sevilla FC",
+        "boundname": "Sevilla FC",
+        "shortname": "SEV",
+        "foundation": "1890-01-20T00:00:00+00:00",
+        "web": "http://www.sevillafc.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 153,
+          "name": "Escudo SFC",
+          "caption": "Escudo SFC",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/sevilla.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/sevilla.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/sevilla.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/sevilla.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/sevilla.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/sevilla.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t179",
+        "lde_id": 75
+      },
+      "home_formation": "4231",
+      "away_formation": "433",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 8,
+        "name": "RCDE Stadium",
+        "latitude": "41.36977",
+        "longitude": "2.07891",
+        "capacity": 40500,
+        "address": "Avenida Baix Llobregat, 100 Cornellá Llobregat (Barcelona)",
+        "timezone": "Europe/Madrid",
+        "city": "Cornellà de Llobregat",
+        "slug": "rcde-stadium",
+        "opta_id": "v6360",
+        "lde_id": 879
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 10083,
+            "name": "Miguel Sesma Espinosa",
+            "nickname": "Miguel Sesma Espinosa",
+            "firstname": "Miguel",
+            "lastname": "Sesma Espinosa",
+            "gender": "male",
+            "international": false,
+            "slug": "miguel-sesma-espinosa"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o52244",
+          "lde_id": 868
+        },
+        {
+          "person": {
+            "id": 14902,
+            "name": "Álvaro Rodriguez Recio",
+            "nickname": "Álvaro Rodriguez Recio",
+            "firstname": "Álvaro",
+            "lastname": "Rodriguez Recio",
+            "gender": "male",
+            "international": false,
+            "slug": "alvaro-rodriguez-recio"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9833,
+            "name": "Daniel Jesús Trujillo Suárez",
+            "nickname": "Daniel Jesús Trujillo Suárez",
+            "firstname": "Daniel Jesús",
+            "lastname": "Trujillo Suárez",
+            "gender": "male",
+            "international": false,
+            "slug": "daniel-jesus-trujillo-suarez"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9908,
+            "name": "Rubén Ávalos Barrera",
+            "nickname": "Rubén Ávalos Barrera",
+            "firstname": "Rubén",
+            "lastname": "Ávalos Barrera",
+            "gender": "male",
+            "international": false,
+            "slug": "ruben-avalos-barrera"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 19581,
+            "name": "Ion Rodríguez Portela",
+            "nickname": "Rodríguez Portela",
+            "firstname": "Ion",
+            "lastname": "Rodríguez Portela",
+            "gender": "male",
+            "international": false,
+            "slug": "rodriguez-portela"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 14396,
+            "name": "Mario Martin Consuegra",
+            "nickname": "Mario Martin Consuegra",
+            "firstname": "Mario Martin",
+            "lastname": "Consuegra",
+            "gender": "male",
+            "international": false,
+            "slug": "mario-martin-consuegra"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        },
+        {
+          "id": "80",
+          "name": "DAZN EN ABIERTO",
+          "slug": "dazn-en-abierto",
+          "local": false,
+          "residential": false,
+          "residential_secondary": false,
+          "image": {
+            "id": 891596,
+            "name": "Logo DAZN EN ABIERTO.png",
+            "url": "https://assets.laliga.com/assets/2025/08/12/xlarge/df7ac602abf3119cc14d2d30c125787d.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/08/12/xsmall/df7ac602abf3119cc14d2d30c125787d.png",
+              "small": "https://assets.laliga.com/assets/2025/08/12/small/df7ac602abf3119cc14d2d30c125787d.png",
+              "medium": "https://assets.laliga.com/assets/2025/08/12/medium/df7ac602abf3119cc14d2d30c125787d.png",
+              "large": "https://assets.laliga.com/assets/2025/08/12/large/df7ac602abf3119cc14d2d30c125787d.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/08/12/xlarge/df7ac602abf3119cc14d2d30c125787d.png",
+              "hl": "https://assets.laliga.com/assets/2025/08/12/hl/df7ac602abf3119cc14d2d30c125787d.png"
+            }
+          },
+          "web": "https://prf.hn/click/camref:1011lLNLn/ar:LaLiga-Web-PartidoAbierto/destination:https://www.dazn.com/es-ES/competition/Competition:34pl8szyvrbwcmfkuocjm3r6t",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650796",
+      "lde_id": 240590
+    },
+    {
+      "id": 102284,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Getafe CF - Celta - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-celta-4",
+      "date": "2026-09-07T17:00:00+00:00",
+      "time": "2026-09-07T17:00:00+00:00",
+      "hashtag": "GetafeCelta",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "status": "FullTime",
+      "home_team": {
+        "id": 9,
+        "slug": "getafe-cf",
+        "name": "Getafe Club de Fútbol SAD",
+        "nickname": "Getafe CF",
+        "boundname": "Getafe CF",
+        "shortname": "GET",
+        "color": "#0f39b8",
+        "color_secondary": "#ffffff",
+        "foundation": "1983-03-30T00:00:00+00:00",
+        "web": "http://www.getafecf.com/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 695837,
+          "name": "Escudo Getafe",
+          "caption": "Escudo Getafe",
+          "url": "https://assets.laliga.com/assets/2023/05/12/xlarge/dc59645c96bc2c9010341c16dd6d4bfa.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2023/05/12/xsmall/dc59645c96bc2c9010341c16dd6d4bfa.png",
+            "small": "https://assets.laliga.com/assets/2023/05/12/small/dc59645c96bc2c9010341c16dd6d4bfa.png",
+            "medium": "https://assets.laliga.com/assets/2023/05/12/medium/dc59645c96bc2c9010341c16dd6d4bfa.png",
+            "large": "https://assets.laliga.com/assets/2023/05/12/large/dc59645c96bc2c9010341c16dd6d4bfa.png",
+            "xlarge": "https://assets.laliga.com/assets/2023/05/12/xlarge/dc59645c96bc2c9010341c16dd6d4bfa.png",
+            "hl": "https://assets.laliga.com/assets/2023/05/12/hl/dc59645c96bc2c9010341c16dd6d4bfa.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t1450",
+        "lde_id": 51
+      },
+      "away_team": {
+        "id": 6,
+        "slug": "rc-celta",
+        "name": "Real Club Celta de Vigo SAD",
+        "nickname": "Celta",
+        "boundname": "Celta",
+        "shortname": "CEL",
+        "foundation": "1923-08-23T00:00:00+00:00",
+        "web": "https://www.celta.gal",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891421,
+          "name": "Nuevo escudo Celta",
+          "caption": "Nuevo escudo Celta",
+          "url": "https://assets.laliga.com/assets/2025/07/11/xlarge/0a796827f9e758d7d750db805adde7c5.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2025/07/11/xsmall/0a796827f9e758d7d750db805adde7c5.png",
+            "small": "https://assets.laliga.com/assets/2025/07/11/small/0a796827f9e758d7d750db805adde7c5.png",
+            "medium": "https://assets.laliga.com/assets/2025/07/11/medium/0a796827f9e758d7d750db805adde7c5.png",
+            "large": "https://assets.laliga.com/assets/2025/07/11/large/0a796827f9e758d7d750db805adde7c5.png",
+            "xlarge": "https://assets.laliga.com/assets/2025/07/11/xlarge/0a796827f9e758d7d750db805adde7c5.png",
+            "hl": "https://assets.laliga.com/assets/2025/07/11/hl/0a796827f9e758d7d750db805adde7c5.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t176",
+        "lde_id": 71
+      },
+      "home_formation": "532",
+      "away_formation": "343",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 9,
+        "name": "Coliseum",
+        "latitude": "40.32431",
+        "longitude": "-3.7147",
+        "capacity": 17000,
+        "address": "Avenida Teresa de Calcuta s/n. 28903 Getafe",
+        "timezone": "Europe/Madrid",
+        "city": "Getafe",
+        "slug": "coliseum",
+        "opta_id": "v2719",
+        "lde_id": 777
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9903,
+            "name": "César Soto Grado",
+            "nickname": "César Soto Grado",
+            "firstname": "César",
+            "lastname": "Soto Grado",
+            "gender": "male",
+            "international": false,
+            "slug": "cesar-soto-grado"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o44154",
+          "lde_id": 459
+        },
+        {
+          "person": {
+            "id": 24321,
+            "name": "Alejandro Clemente Ortuño",
+            "nickname": "Alejandro Clemente Ortuño",
+            "firstname": "Alejandro",
+            "lastname": "Clemente Ortuño",
+            "gender": "male",
+            "international": false,
+            "slug": "alejandro-clemente-ortuno"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9830,
+            "name": "Jorge Figueroa Vázquez",
+            "nickname": "Jorge Figueroa Vázquez",
+            "firstname": "Jorge",
+            "lastname": "Figueroa Vázquez",
+            "gender": "male",
+            "international": false,
+            "slug": "jorge-figueroa-vazquez"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9833,
+            "name": "Daniel Jesús Trujillo Suárez",
+            "nickname": "Daniel Jesús Trujillo Suárez",
+            "firstname": "Daniel Jesús",
+            "lastname": "Trujillo Suárez",
+            "gender": "male",
+            "international": false,
+            "slug": "daniel-jesus-trujillo-suarez"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10003,
+            "name": "Rubén Becerril Gómez",
+            "nickname": "Rubén Becerril Gómez",
+            "firstname": "Rubén",
+            "lastname": "Becerril Gómez",
+            "gender": "male",
+            "international": false,
+            "slug": "ruben-becerril-gomez"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 10036,
+            "name": "Ignacio Alonso López",
+            "nickname": "Ignacio Alonso López",
+            "firstname": "Ignacio",
+            "lastname": "Alonso López",
+            "gender": "male",
+            "international": false,
+            "slug": "ignacio-alonso-lopez"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650797",
+      "lde_id": 240615
+    },
+    {
+      "id": 102282,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Elche CF - Real Sociedad - 4",
+      "slug": "temporada-2026-2027-laliga-ea-sports-elche-cf-real-sociedad-4",
+      "date": "2026-09-07T19:30:00+00:00",
+      "time": "2026-09-07T19:30:00+00:00",
+      "hashtag": "ElcheRealSociedad",
+      "competition": {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true,
+        "opta_id": "23",
+        "lde_id": 5
+      },
+      "home_score": 2,
+      "away_score": 3,
+      "status": "FullTime",
+      "home_team": {
+        "id": 7,
+        "slug": "elche-c-f",
+        "name": "Elche Club de Fútbol SAD",
+        "nickname": "Elche CF",
+        "boundname": "Elche CF",
+        "shortname": "ELC",
+        "color": "#038316",
+        "color_secondary": "#ffffff",
+        "foundation": "1923-03-01T00:00:00+00:00",
+        "web": "http://www.elchecf.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 133,
+          "name": "Escudo ECF",
+          "caption": "Escudo ECF",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/elche.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/elche.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/elche.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/elche.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t954",
+        "lde_id": 262
+      },
+      "away_team": {
+        "id": 16,
+        "slug": "real-sociedad",
+        "name": "Real Sociedad de Fútbol SAD",
+        "nickname": "Real Sociedad",
+        "boundname": "Real Sociedad",
+        "shortname": "RSO",
+        "foundation": "1909-09-07T00:00:00+00:00",
+        "web": "http://www.realsociedad.com",
+        "sprite_status": "created",
+        "shield": {
+          "id": 151,
+          "name": "Escudo RSO",
+          "caption": "Escudo RSO",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-sociedad.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-sociedad.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/real-sociedad.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-sociedad.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/real-sociedad.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-sociedad.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t188",
+        "lde_id": 84
+      },
+      "match_winner_team": {
+        "id": 16,
+        "slug": "real-sociedad",
+        "name": "Real Sociedad de Fútbol SAD",
+        "nickname": "Real Sociedad",
+        "boundname": "Real Sociedad",
+        "shortname": "RSO",
+        "foundation": "1909-09-07T00:00:00+00:00",
+        "web": "http://www.realsociedad.com",
+        "sprite_status": "created",
+        "shield": {
+          "id": 151,
+          "name": "Escudo RSO",
+          "caption": "Escudo RSO",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-sociedad.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-sociedad.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/real-sociedad.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-sociedad.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/real-sociedad.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-sociedad.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t188",
+        "lde_id": 84
+      },
+      "home_formation": "352",
+      "away_formation": "442",
+      "gameweek": {
+        "id": 10378,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-06T00:00:00+00:00"
+      },
+      "venue": {
+        "id": 7,
+        "name": "Estadio Martínez Valero",
+        "latitude": "38.26661",
+        "longitude": "-0.66477",
+        "capacity": 33722,
+        "address": "Avda. Manuel Martínez Valero, 3. 03208 Elche (Alicante)",
+        "timezone": "Europe/Madrid",
+        "city": "Elche",
+        "slug": "estadio-martinez-valero",
+        "opta_id": "v3670",
+        "lde_id": 329
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 9920,
+            "name": "Miguel Ángel Ortiz Arias",
+            "nickname": "Miguel Ángel Ortiz Arias",
+            "firstname": "Miguel Ángel",
+            "lastname": "Ortiz Arias",
+            "gender": "male",
+            "international": false,
+            "slug": "miguel-angel-ortiz-arias"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o46048",
+          "lde_id": 460
+        },
+        {
+          "person": {
+            "id": 15975,
+            "name": "Pol Arenas Mora",
+            "nickname": "Pol Arenas Mora",
+            "firstname": "Pol",
+            "lastname": "Arenas Mora",
+            "gender": "male",
+            "international": false,
+            "slug": "pol-arenas-mora"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 9908,
+            "name": "Rubén Ávalos Barrera",
+            "nickname": "Rubén Ávalos Barrera",
+            "firstname": "Rubén",
+            "lastname": "Ávalos Barrera",
+            "gender": "male",
+            "international": false,
+            "slug": "ruben-avalos-barrera"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 9856,
+            "name": "Valentín Pizarro Gómez",
+            "nickname": "Valentín Pizarro Gómez",
+            "firstname": "Valentín",
+            "lastname": "Pizarro Gómez",
+            "gender": "male",
+            "international": false,
+            "slug": "valentin-pizarro-gomez"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        },
+        {
+          "person": {
+            "id": 10048,
+            "name": "José Antonio Garrido Romero",
+            "nickname": "José Antonio Garrido Romero",
+            "firstname": "José Antonio",
+            "lastname": "Garrido Romero",
+            "gender": "male",
+            "international": false,
+            "slug": "jose-antonio-garrido-romero"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 12095,
+            "name": "Alejandro Estévez Iglesias",
+            "nickname": "Estévez Iglesias",
+            "firstname": "Alejandro",
+            "lastname": "Estévez Iglesias",
+            "gender": "male",
+            "international": false,
+            "slug": "estevez-iglesias"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        }
+      ],
+      "channels": [
+        {
+          "id": "69",
+          "name": "Movistar LALIGA",
+          "slug": "movistar-laliga-tv",
+          "local": false,
+          "residential": true,
+          "residential_secondary": false,
+          "image": {
+            "id": 891488,
+            "name": "M_LaLiga_Negro_RGB.png",
+            "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+              "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+              "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+              "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+              "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+            }
+          },
+          "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+          "priority": 2,
+          "countries": []
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      },
+      "opta_id": "g2650795",
+      "lde_id": 240570
+    }
+  ]
+}

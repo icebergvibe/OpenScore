@@ -1,0 +1,285 @@
+{
+  "league": "nhl",
+  "name": "NHL",
+  "baseUrl": "https://api-web.nhle.com/v1",
+  "checks": [
+    {
+      "name": "score/{date}",
+      "path": "/score/{today}",
+      "sample": "score.json",
+      "keys": [
+        "games[]",
+        "gameWeek[]"
+      ]
+    },
+    {
+      "name": "score/now",
+      "path": "/score/now",
+      "sample": "score.json",
+      "keys": [
+        "games[]"
+      ]
+    },
+    {
+      "name": "score/{date} — finished day",
+      "path": "/score/2026-06-14",
+      "sample": "score.final.json",
+      "keys": [
+        "games[].gameState",
+        "games[].homeTeam.score"
+      ]
+    },
+    {
+      "name": "schedule/{date}",
+      "path": "/schedule/{today}",
+      "keys": [
+        "gameWeek[]",
+        "regularSeasonStartDate"
+      ],
+      "depth": 0
+    },
+    {
+      "name": "schedule/now",
+      "path": "/schedule/now",
+      "sample": "schedule.json",
+      "keys": [
+        "gameWeek[]"
+      ]
+    },
+    {
+      "name": "schedule-calendar/{date}",
+      "path": "/schedule-calendar/{today}",
+      "sample": "schedule-calendar.json",
+      "keys": [
+        "teams[]"
+      ]
+    },
+    {
+      "name": "club-schedule-season/{team}/{season}",
+      "path": "/club-schedule-season/TOR/20252026",
+      "sample": "club-schedule-season.json",
+      "keys": [
+        "games[].id"
+      ]
+    },
+    {
+      "name": "club-schedule/{team}/week/now",
+      "path": "/club-schedule/TOR/week/now",
+      "sample": "club-schedule-week.json",
+      "keys": [
+        "games[]"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/play-by-play — pre",
+      "path": "/gamecenter/2026020001/play-by-play",
+      "sample": "gamecenter-play-by-play.pre.json",
+      "keys": [
+        "gameState",
+        "homeTeam.abbrev",
+        "plays[]"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/play-by-play — final",
+      "path": "/gamecenter/2025030416/play-by-play",
+      "sample": "gamecenter-play-by-play.final.json",
+      "keys": [
+        "plays[].typeDescKey",
+        "plays[].periodDescriptor",
+        "rosterSpots[]"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/play-by-play — shootout",
+      "path": "/gamecenter/2025020444/play-by-play",
+      "sample": "gamecenter-play-by-play.final-shootout.json",
+      "keys": [
+        "plays[]"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/boxscore — pre",
+      "path": "/gamecenter/2026020001/boxscore",
+      "sample": "gamecenter-boxscore.pre.json",
+      "keys": [
+        "gameState"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/boxscore — final",
+      "path": "/gamecenter/2025030416/boxscore",
+      "sample": "gamecenter-boxscore.final.json",
+      "keys": [
+        "playerByGameStats.homeTeam",
+        "playerByGameStats.awayTeam"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/landing — pre",
+      "path": "/gamecenter/2026020001/landing",
+      "sample": "gamecenter-landing.pre.json",
+      "keys": [
+        "gameState"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/landing — final",
+      "path": "/gamecenter/2025030416/landing",
+      "sample": "gamecenter-landing.final.json",
+      "keys": [
+        "summary"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/landing — shootout",
+      "path": "/gamecenter/2025020444/landing",
+      "sample": "gamecenter-landing.final-shootout.json",
+      "keys": [
+        "summary"
+      ]
+    },
+    {
+      "name": "gamecenter/{id}/right-rail — pre",
+      "path": "/gamecenter/2026020001/right-rail",
+      "sample": "gamecenter-right-rail.pre.json"
+    },
+    {
+      "name": "gamecenter/{id}/right-rail — final",
+      "path": "/gamecenter/2025030416/right-rail",
+      "sample": "gamecenter-right-rail.final.json"
+    },
+    {
+      "name": "wsc/game-story/{id}",
+      "path": "/wsc/game-story/2025030416",
+      "sample": "wsc-game-story.final.json",
+      "keys": [
+        "summary"
+      ]
+    },
+    {
+      "name": "wsc/play-by-play/{id}",
+      "path": "/wsc/play-by-play/2025030416",
+      "note": "Alternative event feed; not sampled"
+    },
+    {
+      "name": "roster/{team}/current",
+      "path": "/roster/TOR/current",
+      "sample": "roster-current.json",
+      "keys": [
+        "forwards[].id",
+        "defensemen[]",
+        "goalies[]"
+      ]
+    },
+    {
+      "name": "roster/{team}/{season}",
+      "path": "/roster/TOR/20252026",
+      "sample": "roster-current.json",
+      "keys": [
+        "forwards[]"
+      ]
+    },
+    {
+      "name": "roster-season/{team}",
+      "path": "/roster-season/TOR",
+      "sample": "roster-season.json"
+    },
+    {
+      "name": "player/{id}/landing",
+      "path": "/player/8478403/landing",
+      "sample": "player-landing.json",
+      "keys": [
+        "playerId",
+        "firstName",
+        "seasonTotals[]"
+      ]
+    },
+    {
+      "name": "player/{id}/game-log/{season}/{gameType}",
+      "path": "/player/8478403/game-log/20252026/2",
+      "sample": "player-game-log.json",
+      "keys": [
+        "gameLog[]"
+      ]
+    },
+    {
+      "name": "standings/now",
+      "path": "/standings/now",
+      "sample": "standings.json",
+      "keys": [
+        "standings[]"
+      ]
+    },
+    {
+      "name": "standings/{date}",
+      "path": "/standings/2026-04-17",
+      "sample": "standings.json",
+      "keys": [
+        "standings[].teamAbbrev",
+        "standings[].points"
+      ]
+    },
+    {
+      "name": "standings-season",
+      "path": "/standings-season",
+      "sample": "standings-season.json",
+      "keys": [
+        "seasons[]"
+      ]
+    },
+    {
+      "name": "skater-stats-leaders/{season}/{gameType}",
+      "path": "/skater-stats-leaders/20252026/2",
+      "sample": "skater-stats-leaders.json"
+    },
+    {
+      "name": "goalie-stats-leaders/{season}/{gameType}",
+      "path": "/goalie-stats-leaders/20252026/2",
+      "sample": "goalie-stats-leaders.json"
+    },
+    {
+      "name": "season",
+      "path": "/season",
+      "sample": "season.json"
+    },
+    {
+      "name": "club-stats/{team}/now",
+      "path": "/club-stats/TOR/now",
+      "sample": "club-stats.json",
+      "keys": [
+        "skaters[]",
+        "goalies[]"
+      ]
+    },
+    {
+      "name": "playoff-bracket/{year}",
+      "path": "/playoff-bracket/2026",
+      "sample": "playoff-bracket.json",
+      "keys": [
+        "series[]"
+      ]
+    },
+    {
+      "name": "playoff-series/carousel/{season}",
+      "path": "/playoff-series/carousel/20252026",
+      "sample": "playoff-series-carousel.json"
+    },
+    {
+      "name": "location",
+      "path": "/location",
+      "keys": [
+        "country"
+      ]
+    },
+    {
+      "name": "stats REST: team",
+      "url": "https://api.nhle.com/stats/rest/en/team",
+      "keys": [
+        "data[]",
+        "total"
+      ],
+      "note": "Secondary stats API (Cayenne queries); not sampled"
+    }
+  ]
+}

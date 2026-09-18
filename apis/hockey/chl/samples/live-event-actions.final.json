@@ -1,0 +1,367 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "4f36a358a795d91b2fbb0c9b",
+    "_modifyDate": "2026-09-11T06:25:16.929Z",
+    "externalId": "3012",
+    "startDate": "2026-09-10T15:30:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "finished",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "results": {
+      "_type": "Corebine.Core.Sport.Match.Results",
+      "periods": [
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "3rd Period",
+          "shortName": "3rd",
+          "number": 3,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "event-end",
+              "externalId": "event-end",
+              "message": {
+                "title": "Game end",
+                "description": ""
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "jjXaVDMEiF8",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/jjXaVDMEiF8/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14745",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3335
+              },
+              "message": {
+                "title": "",
+                "description": "NIT Dmytro Timashov called for Cross-checking. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "8675",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3304
+              },
+              "message": {
+                "title": "Goal - 1:4. NIT Power Play Goal.",
+                "description": "Goal by Michal Krištof assisted by Adrián Holešinský and Tomáš Hrnka."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "xWfbtTys8YA",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/xWfbtTys8YA/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14744",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3294
+              },
+              "message": {
+                "title": "",
+                "description": "KOO Santeri Sulku called for Tripping. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14742",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3164
+              },
+              "message": {
+                "title": "",
+                "description": "NIT Tomáš Hrnka called for Tripping. Penalty results in a penalty shot."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "8672",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2671
+              },
+              "message": {
+                "title": "Goal - 1:3. NIT Short Handed Goal.",
+                "description": "Goal by Jakub Lacka assisted by Martin Vitaloš and Marko Stacha."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "-nbXbq2Zens",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/-nbXbq2Zens/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14738",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2594
+              },
+              "message": {
+                "title": "",
+                "description": "NIT Matej Bača called for Interference. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "3rd Period Start",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "2nd Period",
+          "shortName": "2nd",
+          "number": 2,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "2nd Period End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "8664",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2120
+              },
+              "message": {
+                "title": "Goal - 1:2. NIT Equal Strength.",
+                "description": "Goal by Ondrej Molnár assisted by Marko Stacha and Matej Bača."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "4BomVK5xhsY",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/4BomVK5xhsY/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "8663",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1955
+              },
+              "message": {
+                "title": "Goal - 1:1. NIT Power Play Goal.",
+                "description": "Goal by Michal Krištof assisted by Adrián Holešinský and Tomáš Hrnka."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "tk0KEZDusT4",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/tk0KEZDusT4/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14729",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1923
+              },
+              "message": {
+                "title": "",
+                "description": "KOO Ville Puhakka called for Holding. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14728",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1580
+              },
+              "message": {
+                "title": "",
+                "description": "NIT Shikhabutdin Gadzhiev called for Interference. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "8660",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1491
+              },
+              "message": {
+                "title": "Goal - 1:0. KOO Equal Strength.",
+                "description": "Goal by Roope Tossavainen assisted by Santeri Sulku and Verner Miettinen."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "ZtFJCGpgG9w",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/ZtFJCGpgG9w/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "2nd Period Start",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "1st Period",
+          "shortName": "1st",
+          "number": 1,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "1st Period End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14727",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1041
+              },
+              "message": {
+                "title": "",
+                "description": "KOO Arttu Pelli called for Tripping. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "14725",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 823
+              },
+              "message": {
+                "title": "",
+                "description": "NIT Zach Osburn called for Cross-checking. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "externalId": "11703",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "message": {
+                "title": "",
+                "description": "Goalie in! NIT Shikhabutdin Gadzhiev in."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "externalId": "11702",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "message": {
+                "title": "",
+                "description": "Goalie in! KOO Jasper Patrikainen in."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "event-start",
+              "externalId": "event-start",
+              "message": {
+                "title": "Game start",
+                "description": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "includes": []
+}

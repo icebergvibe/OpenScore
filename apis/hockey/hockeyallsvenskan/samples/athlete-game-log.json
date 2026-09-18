@@ -1,0 +1,1359 @@
+[
+  {
+    "dataColumns": [
+      {
+        "name": "Season",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Series",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "GameType",
+        "type": "string",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Team",
+        "type": "string",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "GP",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "G",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "A",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "TP",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "PlusMinus",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "PIM",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      }
+    ],
+    "defaultSortKey": {
+      "name": "TP",
+      "order": "DESC"
+    },
+    "players": {
+      "6035": {
+        "type": "athlete",
+        "id": 6035,
+        "firstName": "Gustav",
+        "lastName": "Sjöqvist",
+        "jerseyNumber": 66,
+        "position": "D",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qcx-3av312OaBI",
+        "fullName": "Gustav Sjöqvist",
+        "dateOfBirth": "2006-02-24",
+        "nationality": "SE",
+        "gender": "",
+        "weight": 95,
+        "height": 191,
+        "playerMedia": {
+          "id": 41518,
+          "mediaString": "image|ramses_sports|player_portrait_afc371b6-5f77-4f04-a201-7a622eebbd5fGustav Sjqvist.png",
+          "type": "portrait",
+          "sortOrder": 0
+        },
+        "teamPlayers": {
+          "id": 25819,
+          "active": true,
+          "assistant": false,
+          "captain": false,
+          "defaultJersey": 66,
+          "primaryTeam": null,
+          "sortOrder": null,
+          "loanedFromInstanceId": null,
+          "loanedAt": null,
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "gender": "",
+            "graphicsLibrary": "aik1-aik-f535b",
+            "lastModified": "2024-11-18T14:53:34.000Z",
+            "nationality": "SE",
+            "ownerInstanceId": "aik1_aik",
+            "ownersite": "AIK",
+            "teamCode": "AIK",
+            "teamInfo": {
+              "founded": "1891",
+              "golds": "7 st (1934, 1935, 1938, 1946, 1947, 1982, 1984)",
+              "finals": "4 st (1978, 1981, 1982, 1984)",
+              "retiredNumbers": "# 1 Leif Holmqvist\r\n# 2 Mats Thelin\r\n# 5 Bert-Ola Nordlander\r\n# 11 Peter Gradin\r\n# 18 Leif Holmgren",
+              "address": "Gårdsvägen 4\r\n169 70 Solna",
+              "phone": "08-18 91 00",
+              "email": "ishockey@aikhockey.se",
+              "chairman": "Johan Palmgren",
+              "manager": "Anders Olson"
+            },
+            "teamNames": {
+              "code": "AIK",
+              "short": "AIK",
+              "long": "AIK",
+              "full": "Allmänna Idrottsklubben"
+            },
+            "sport": [
+              {
+                "uuid": "qQ9-bd0dSLh6k",
+                "code": "hockey",
+                "createdAt": null,
+                "createdBy": null,
+                "deleted": false,
+                "lastModified": "2022-09-28T13:18:06.000Z",
+                "names": [
+                  {
+                    "language": "sv",
+                    "translation": "Ishockey"
+                  },
+                  {
+                    "language": "en",
+                    "translation": "Ice hockey"
+                  }
+                ]
+              }
+            ],
+            "teamExtIds": [
+              {
+                "id": 1,
+                "extId": "AIK",
+                "locked": true
+              },
+              {
+                "id": 2,
+                "extId": "4",
+                "locked": true
+              },
+              {
+                "id": 125,
+                "extId": "36815",
+                "locked": true
+              },
+              {
+                "id": 228,
+                "extId": "42841",
+                "locked": true
+              },
+              {
+                "id": 504,
+                "extId": "49097",
+                "locked": true
+              },
+              {
+                "id": 834,
+                "extId": "55967",
+                "locked": true
+              },
+              {
+                "id": 1442,
+                "extId": "62512",
+                "locked": true
+              },
+              {
+                "id": 2308,
+                "extId": "69617",
+                "locked": false
+              }
+            ],
+            "teamMedia": [
+              {
+                "id": 925,
+                "mediaString": "image|ramses|21/09/967ba49ca5ffce98aaada05d0d23a2c0",
+                "sortOrder": 0,
+                "type": "squad"
+              }
+            ],
+            "series": [
+              {
+                "uuid": "qQ9-594cW8OWD",
+                "code": "HA",
+                "createdAt": null,
+                "createdBy": null,
+                "deleted": false,
+                "lastModified": "2024-02-15T08:21:41.000Z",
+                "names": [
+                  {
+                    "language": "sv",
+                    "translation": "HockeyAllsvenskan"
+                  },
+                  {
+                    "language": "en",
+                    "translation": "HockeyAllsvenskan"
+                  },
+                  {
+                    "language": "display",
+                    "translation": "HA"
+                  }
+                ]
+              }
+            ]
+          },
+          "player": {
+            "uuid": "qcx-3av312OaBI",
+            "contactInfo": null,
+            "createdAt": "2023-03-10T22:01:45.000Z",
+            "createdBy": "sportality",
+            "creatorSite": null,
+            "height": 191,
+            "dateOfBirth": "2006-02-24",
+            "deleted": false,
+            "firstName": "Gustav",
+            "gender": "",
+            "lastModified": "2024-09-03T03:01:06.000Z",
+            "lastName": "Sjöqvist",
+            "longDescription": null,
+            "metadata": [],
+            "nationality": "SE",
+            "shortDescription": null,
+            "shoots": "Left",
+            "weight": 95,
+            "playerExtIds": [
+              {
+                "id": 142444,
+                "extId": "6035",
+                "locked": true,
+                "extIdType": {
+                  "uuid": "165a-d5bcMnEuq",
+                  "code": "isa",
+                  "createdAt": null,
+                  "createdBy": null,
+                  "deleted": false,
+                  "lastModified": null,
+                  "names": [
+                    {
+                      "language": "en",
+                      "translation": "ISA / Statnet"
+                    }
+                  ],
+                  "visible": true
+                }
+              }
+            ]
+          },
+          "sportPosition": {
+            "uuid": "qbR-9zKA12hf66",
+            "createdAt": "2022-09-28T13:18:06.000Z",
+            "createdBy": "unknown",
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z",
+            "positionCode": "D",
+            "positionNames": [
+              {
+                "language": "sv",
+                "translation": "Back",
+                "translationPlural": "Backar"
+              },
+              {
+                "language": "en",
+                "translation": "Defender",
+                "translationPlural": "Defender"
+              }
+            ],
+            "teamPartCode": "D",
+            "teamPartNames": [
+              {
+                "language": "sv",
+                "translation": "Back",
+                "translationPlural": "Backar"
+              },
+              {
+                "language": "en",
+                "translation": "Defence",
+                "translationPlural": "Defencemen"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "provider": "statnet",
+    "seasonSeriesGameTypes": {
+      "qbO-5CILxOBn9": {
+        "type": "seasonSeriesGameType",
+        "id": "2022_HA_HA",
+        "name": "2022 - HA",
+        "uuid": "qbO-5CILxOBn9",
+        "active": false,
+        "createdAt": "2022-06-15T08:08:25.000Z",
+        "createdBy": "ha1_ha",
+        "defaultForSeries": false,
+        "deleted": false,
+        "lastModified": "2023-05-10T10:30:00.000Z",
+        "names": [
+          {
+            "language": "en",
+            "translation": "Hockeyallsvenskan 2022/2023"
+          },
+          {
+            "language": "sv",
+            "translation": "Hockeyallsvenskan 2022/2023"
+          }
+        ],
+        "state": "closed",
+        "seasonSeriesGameTypeExtIds": [
+          {
+            "id": 604,
+            "extId": "2022_HA_HA",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "names": [
+                {
+                  "language": "en",
+                  "translation": "ISA / Statnet"
+                }
+              ],
+              "visible": true
+            }
+          }
+        ],
+        "gameType": {
+          "uuid": "qQ9-af37Ti40B",
+          "code": "regular",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": null,
+          "names": [
+            {
+              "language": "sv",
+              "translation": "Grundserie"
+            },
+            {
+              "language": "en",
+              "translation": "Regular season"
+            }
+          ]
+        },
+        "season": {
+          "uuid": "qbN-XMFfjGVt",
+          "code": "2022",
+          "createdAt": "2022-05-02T11:37:11.000Z",
+          "createdBy": "shl1_shl",
+          "deleted": false,
+          "lastModified": "2022-05-02T11:37:11.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "2022/2023"
+            }
+          ]
+        },
+        "series": {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      },
+      "qcz-8S9YZClRG": {
+        "type": "seasonSeriesGameType",
+        "id": "2023_HA_HA",
+        "name": "2023 - HA",
+        "uuid": "qcz-8S9YZClRG",
+        "active": false,
+        "createdAt": "2023-05-24T07:40:48.000Z",
+        "createdBy": "Sportality G2",
+        "defaultForSeries": false,
+        "deleted": false,
+        "lastModified": "2024-05-22T10:03:44.000Z",
+        "names": [
+          {
+            "language": "sv",
+            "translation": "HockeyAllsvenskan 2023/2024"
+          }
+        ],
+        "state": "closed",
+        "seasonSeriesGameTypeExtIds": [
+          {
+            "id": 709,
+            "extId": "2023_HA_HA",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "names": [
+                {
+                  "language": "en",
+                  "translation": "ISA / Statnet"
+                }
+              ],
+              "visible": true
+            }
+          }
+        ],
+        "gameType": {
+          "uuid": "qQ9-af37Ti40B",
+          "code": "regular",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": null,
+          "names": [
+            {
+              "language": "sv",
+              "translation": "Grundserie"
+            },
+            {
+              "language": "en",
+              "translation": "Regular season"
+            }
+          ]
+        },
+        "season": {
+          "uuid": "qcz-3NvSZ2Cmh",
+          "code": "2023",
+          "createdAt": "2023-05-10T08:09:18.000Z",
+          "createdBy": "Sportality G2",
+          "deleted": false,
+          "lastModified": "2023-05-10T08:09:18.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "2023/2024"
+            }
+          ]
+        },
+        "series": {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      },
+      "qeb-7Ut8mmFTf": {
+        "type": "seasonSeriesGameType",
+        "id": "2024_HA_HA",
+        "name": "2024 - HA",
+        "uuid": "qeb-7Ut8mmFTf",
+        "active": false,
+        "createdAt": "2024-05-21T16:23:54.000Z",
+        "createdBy": "Sportality G2",
+        "defaultForSeries": false,
+        "deleted": false,
+        "lastModified": "2025-06-11T08:24:21.000Z",
+        "names": [
+          {
+            "language": "sv",
+            "translation": "HockeyAllsvenskan 2024/2025"
+          }
+        ],
+        "state": "closed",
+        "seasonSeriesGameTypeExtIds": [
+          {
+            "id": 842,
+            "extId": "2024_HA_HA",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "names": [
+                {
+                  "language": "en",
+                  "translation": "ISA / Statnet"
+                }
+              ],
+              "visible": true
+            }
+          }
+        ],
+        "gameType": {
+          "uuid": "qQ9-af37Ti40B",
+          "code": "regular",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": null,
+          "names": [
+            {
+              "language": "sv",
+              "translation": "Grundserie"
+            },
+            {
+              "language": "en",
+              "translation": "Regular season"
+            }
+          ]
+        },
+        "season": {
+          "uuid": "qeb-73bZkIm9A",
+          "code": "2024",
+          "createdAt": "2024-05-20T11:15:57.000Z",
+          "createdBy": "Sportality G2",
+          "deleted": false,
+          "lastModified": "2024-05-20T11:16:57.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "2024/2025"
+            }
+          ]
+        },
+        "series": {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      },
+      "yla6wtlldd": {
+        "type": "seasonSeriesGameType",
+        "id": "2024_HA_HAPlayoff",
+        "name": "2024 - HAPlayoff",
+        "uuid": "yla6wtlldd",
+        "active": false,
+        "createdAt": "2025-02-24T10:36:28.000Z",
+        "createdBy": "ha1_ha",
+        "defaultForSeries": false,
+        "deleted": false,
+        "lastModified": "2025-06-11T08:24:24.000Z",
+        "names": [
+          {
+            "language": "sv",
+            "translation": "Slutspel HockeyAllsvenskan 2024/2025"
+          }
+        ],
+        "state": "closed",
+        "seasonSeriesGameTypeExtIds": [
+          {
+            "id": 899,
+            "extId": "2024_HA_HAPlayoff",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "names": [
+                {
+                  "language": "en",
+                  "translation": "ISA / Statnet"
+                }
+              ],
+              "visible": true
+            }
+          }
+        ],
+        "gameType": {
+          "uuid": "qQ9-7debq38kX",
+          "code": "playoff",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": null,
+          "names": [
+            {
+              "language": "sv",
+              "translation": "Slutspel"
+            },
+            {
+              "language": "en",
+              "translation": "Playoff"
+            }
+          ]
+        },
+        "season": {
+          "uuid": "qeb-73bZkIm9A",
+          "code": "2024",
+          "createdAt": "2024-05-20T11:15:57.000Z",
+          "createdBy": "Sportality G2",
+          "deleted": false,
+          "lastModified": "2024-05-20T11:16:57.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "2024/2025"
+            }
+          ]
+        },
+        "series": {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      },
+      "uy2zvu6xaa": {
+        "type": "seasonSeriesGameType",
+        "id": "2025_HA_HA",
+        "name": "2025 - HA",
+        "uuid": "uy2zvu6xaa",
+        "active": false,
+        "createdAt": "2025-06-11T06:48:15.000Z",
+        "createdBy": "ha1_ha",
+        "defaultForSeries": false,
+        "deleted": false,
+        "lastModified": "2026-04-28T09:45:46.000Z",
+        "names": [
+          {
+            "language": "sv",
+            "translation": "HockeyAllsvenskan 2025/2026"
+          }
+        ],
+        "state": "closed",
+        "seasonSeriesGameTypeExtIds": [
+          {
+            "id": 922,
+            "extId": "2025_HA_HA",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "names": [
+                {
+                  "language": "en",
+                  "translation": "ISA / Statnet"
+                }
+              ],
+              "visible": true
+            }
+          }
+        ],
+        "gameType": {
+          "uuid": "qQ9-af37Ti40B",
+          "code": "regular",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": null,
+          "names": [
+            {
+              "language": "sv",
+              "translation": "Grundserie"
+            },
+            {
+              "language": "en",
+              "translation": "Regular season"
+            }
+          ]
+        },
+        "season": {
+          "uuid": "xs4m9qupsi",
+          "code": "2025",
+          "createdAt": "2025-05-15T15:00:00.000Z",
+          "createdBy": "shl1_shl",
+          "deleted": false,
+          "lastModified": "2025-05-15T15:00:00.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "2025/2026"
+            }
+          ]
+        },
+        "series": {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      }
+    },
+    "stats": [
+      {
+        "Season": 0,
+        "Series": 0,
+        "GameType": 0,
+        "Team": 0,
+        "GP": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "PlusMinus": -1,
+        "PIM": 0,
+        "info": {
+          "uuid": "qcx-3av312OaBI",
+          "fullName": "Gustav Sjöqvist",
+          "firstName": "Gustav",
+          "lastName": "Sjöqvist",
+          "birthDate": "2006-02-24",
+          "nationality": "SE",
+          "gender": "",
+          "age": {
+            "value": 20,
+            "format": "years"
+          },
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 191,
+            "format": "cm"
+          },
+          "jerseyNumber": "N/A",
+          "position": "N/A",
+          "positionCode": "N/A",
+          "shoots": "L",
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "instanceId": "aik1_aik",
+            "name": "AIK",
+            "code": "AIK"
+          },
+          "seasonStats": [],
+          "careerStats": [],
+          "statisticsProvider": "statnet",
+          "isInSquad": true,
+          "playerId": 6035,
+          "ssgtUuid": "qbO-5CILxOBn9",
+          "teamId": "AIK"
+        }
+      },
+      {
+        "Season": 0,
+        "Series": 0,
+        "GameType": 0,
+        "Team": 0,
+        "GP": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "PlusMinus": -1,
+        "PIM": 0,
+        "info": {
+          "uuid": "qcx-3av312OaBI",
+          "fullName": "Gustav Sjöqvist",
+          "firstName": "Gustav",
+          "lastName": "Sjöqvist",
+          "birthDate": "2006-02-24",
+          "nationality": "SE",
+          "gender": "",
+          "age": {
+            "value": 20,
+            "format": "years"
+          },
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 191,
+            "format": "cm"
+          },
+          "jerseyNumber": "N/A",
+          "position": "N/A",
+          "positionCode": "N/A",
+          "shoots": "L",
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "instanceId": "aik1_aik",
+            "name": "AIK",
+            "code": "AIK"
+          },
+          "seasonStats": [],
+          "careerStats": [],
+          "statisticsProvider": "statnet",
+          "isInSquad": true,
+          "playerId": 6035,
+          "ssgtUuid": "qcz-8S9YZClRG",
+          "teamId": "AIK"
+        }
+      },
+      {
+        "Season": 0,
+        "Series": 0,
+        "GameType": 0,
+        "Team": 0,
+        "GP": 39,
+        "G": 3,
+        "A": 4,
+        "TP": 7,
+        "PlusMinus": 4,
+        "PIM": 8,
+        "info": {
+          "uuid": "qcx-3av312OaBI",
+          "fullName": "Gustav Sjöqvist",
+          "firstName": "Gustav",
+          "lastName": "Sjöqvist",
+          "birthDate": "2006-02-24",
+          "nationality": "SE",
+          "gender": "",
+          "age": {
+            "value": 20,
+            "format": "years"
+          },
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 191,
+            "format": "cm"
+          },
+          "jerseyNumber": "N/A",
+          "position": "N/A",
+          "positionCode": "N/A",
+          "shoots": "L",
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "instanceId": "aik1_aik",
+            "name": "AIK",
+            "code": "AIK"
+          },
+          "seasonStats": [],
+          "careerStats": [],
+          "statisticsProvider": "statnet",
+          "isInSquad": true,
+          "playerId": 6035,
+          "ssgtUuid": "qeb-7Ut8mmFTf",
+          "teamId": "AIK"
+        }
+      },
+      {
+        "Season": 0,
+        "Series": 0,
+        "GameType": 0,
+        "Team": 0,
+        "GP": 18,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "PlusMinus": -1,
+        "PIM": 2,
+        "info": {
+          "uuid": "qcx-3av312OaBI",
+          "fullName": "Gustav Sjöqvist",
+          "firstName": "Gustav",
+          "lastName": "Sjöqvist",
+          "birthDate": "2006-02-24",
+          "nationality": "SE",
+          "gender": "",
+          "age": {
+            "value": 20,
+            "format": "years"
+          },
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 191,
+            "format": "cm"
+          },
+          "jerseyNumber": "N/A",
+          "position": "N/A",
+          "positionCode": "N/A",
+          "shoots": "L",
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "instanceId": "aik1_aik",
+            "name": "AIK",
+            "code": "AIK"
+          },
+          "seasonStats": [],
+          "careerStats": [],
+          "statisticsProvider": "statnet",
+          "isInSquad": true,
+          "playerId": 6035,
+          "ssgtUuid": "yla6wtlldd",
+          "teamId": "AIK"
+        }
+      },
+      {
+        "Season": 0,
+        "Series": 0,
+        "GameType": 0,
+        "Team": 0,
+        "GP": 34,
+        "G": 3,
+        "A": 0,
+        "TP": 3,
+        "PlusMinus": -9,
+        "PIM": 14,
+        "info": {
+          "uuid": "qcx-3av312OaBI",
+          "fullName": "Gustav Sjöqvist",
+          "firstName": "Gustav",
+          "lastName": "Sjöqvist",
+          "birthDate": "2006-02-24",
+          "nationality": "SE",
+          "gender": "",
+          "age": {
+            "value": 20,
+            "format": "years"
+          },
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 191,
+            "format": "cm"
+          },
+          "jerseyNumber": "N/A",
+          "position": "N/A",
+          "positionCode": "N/A",
+          "shoots": "L",
+          "team": {
+            "uuid": "f7c8-f7c8isEb3",
+            "instanceId": "aik1_aik",
+            "name": "AIK",
+            "code": "AIK"
+          },
+          "seasonStats": [],
+          "careerStats": [],
+          "statisticsProvider": "statnet",
+          "isInSquad": true,
+          "playerId": 6035,
+          "ssgtUuid": "uy2zvu6xaa",
+          "teamId": "AIK"
+        }
+      }
+    ],
+    "teams": {
+      "AIK": {
+        "type": "team",
+        "id": "AIK",
+        "uuid": "f7c8-f7c8isEb3",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "",
+        "graphicsLibrary": "aik1-aik-f535b",
+        "lastModified": "2024-11-18T14:53:34.000Z",
+        "nationality": "SE",
+        "ownerInstanceId": "aik1_aik",
+        "ownersite": "AIK",
+        "teamCode": "AIK",
+        "series": [
+          {
+            "uuid": "qQ9-594cW8OWD",
+            "code": "HA",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2024-02-15T08:21:41.000Z",
+            "displayName": "HA",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "HockeyAllsvenskan"
+              },
+              "1": {
+                "language": "en",
+                "translation": "HockeyAllsvenskan"
+              },
+              "2": {
+                "language": "display",
+                "translation": "HA"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/aik1_aik.svg",
+        "teamNames": {
+          "code": "AIK",
+          "short": "AIK",
+          "long": "AIK",
+          "full": "Allmänna Idrottsklubben"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1891",
+          "golds": "7 st (1934, 1935, 1938, 1946, 1947, 1982, 1984)",
+          "finals": "4 st (1978, 1981, 1982, 1984)",
+          "retired_numbers": "# 1 Leif Holmqvist\r\n# 2 Mats Thelin\r\n# 5 Bert-Ola Nordlander\r\n# 11 Peter Gradin\r\n# 18 Leif Holmgren",
+          "address": "Gårdsvägen 4\r\n169 70 Solna",
+          "phone": "08-18 91 00",
+          "email": "ishockey@aikhockey.se",
+          "chairman": "Johan Palmgren",
+          "manager": "Anders Olson"
+        },
+        "teamExtIds": [
+          {
+            "id": 1,
+            "extId": "AIK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 2,
+            "extId": "4",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 125,
+            "extId": "36815",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 228,
+            "extId": "42841",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 504,
+            "extId": "49097",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 834,
+            "extId": "55967",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 1442,
+            "extId": "62512",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 2308,
+            "extId": "69617",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 1,
+            "extId": "AIK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 2,
+            "extId": "4",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 125,
+            "extId": "36815",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 228,
+            "extId": "42841",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 504,
+            "extId": "49097",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 834,
+            "extId": "55967",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 1442,
+            "extId": "62512",
+            "locked": true,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 2308,
+            "extId": "69617",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/aik1_aik.svg",
+        "socialMedia": [],
+        "displayName": ""
+      }
+    },
+    "totalCount": 5,
+    "type": "athlete_single"
+  }
+]

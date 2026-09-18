@@ -1,0 +1,866 @@
+{
+    "prevDate": "2026-09-26",
+    "currentDate": "2026-09-29",
+    "nextDate": "2026-09-30",
+    "gameWeek": [
+        {
+            "date": "2026-09-26",
+            "dayAbbrev": "SAT",
+            "numberOfGames": 14
+        },
+        {
+            "date": "2026-09-27",
+            "dayAbbrev": "SUN",
+            "numberOfGames": 0
+        },
+        {
+            "date": "2026-09-28",
+            "dayAbbrev": "MON",
+            "numberOfGames": 0
+        },
+        {
+            "date": "2026-09-29",
+            "dayAbbrev": "TUE",
+            "numberOfGames": 5
+        },
+        {
+            "date": "2026-09-30",
+            "dayAbbrev": "WED",
+            "numberOfGames": 3
+        },
+        {
+            "date": "2026-10-01",
+            "dayAbbrev": "THU",
+            "numberOfGames": 8
+        },
+        {
+            "date": "2026-10-02",
+            "dayAbbrev": "FRI",
+            "numberOfGames": 5
+        }
+    ],
+    "oddsPartners": [
+        {
+            "partnerId": 2,
+            "country": "SE",
+            "name": "Unibet",
+            "imageUrl": "https://assets.nhle.com/betting_partner/unibet.svg",
+            "siteUrl": "https://www.unibet.se/betting/sports/filter/ice_hockey/nhl/all/matches",
+            "bgColor": "#14805E",
+            "textColor": "#FFFFFF",
+            "accentColor": "#3AAA35"
+        },
+        {
+            "partnerId": 3,
+            "country": "CZ",
+            "name": "Tipsport",
+            "imageUrl": "https://assets.nhle.com/betting_partner/tipsport.svg",
+            "siteUrl": "https://www.tipsport.cz/PartnerRedirectAction.do?pid=16961&sid=20360&bid=34954&tid=11268",
+            "bgColor": "#2497F2",
+            "textColor": "#FFFFFF",
+            "accentColor": "#FFFFFF"
+        },
+        {
+            "partnerId": 6,
+            "country": "FI",
+            "name": "Veikkaus",
+            "imageUrl": "https://assets.nhle.com/betting_partner/veikkaus.svg",
+            "siteUrl": "https://www.veikkaus.fi/fi/vedonlyonti/pitkaveto?t=3-2-1_NHL",
+            "bgColor": "#0025F5",
+            "textColor": "#FFFFFF",
+            "accentColor": "#FFFFFF"
+        },
+        {
+            "partnerId": 7,
+            "country": "CA",
+            "name": "FanDuel",
+            "imageUrl": "https://assets.nhle.com/betting_partner/fanduel.svg",
+            "siteUrl": "https://fanduel.com",
+            "bgColor": "#0078ff",
+            "textColor": "#FFFFFF",
+            "accentColor": "#FFFFFF"
+        },
+        {
+            "partnerId": 8,
+            "country": "DE",
+            "name": "Sportradar",
+            "imageUrl": "https://assets.nhle.com/betting_partner/sportsradar.svg",
+            "siteUrl": "https://sportradar.com",
+            "bgColor": "#000000",
+            "textColor": "#FFFFFF",
+            "accentColor": "#E6E6E6"
+        },
+        {
+            "partnerId": 9,
+            "country": "US",
+            "name": "DraftKings",
+            "imageUrl": "https://assets.nhle.com/betting_partner/draftkings.svg",
+            "siteUrl": "https://dksb.sng.link/As9kz/3i4d?_dl=https%3A%2F%2Fsportsbook.draftkings.com%2Fgateway%3Fs%3D333653091&pcid=427326&psn=1320&pcn=NHL&pscn=OddsWidget&pcrn=NoOffer&pscid=SP&wpcid=427326&wpsrc=1320&wpcn=NHL&wpscn=OddsWidget&wpcrn=NoOffer&wpscid=SP&_forward_params=1",
+            "bgColor": "#000000",
+            "textColor": "#FFFFFF",
+            "accentColor": "#FFFFFF"
+        },
+        {
+            "partnerId": 10,
+            "country": "SK",
+            "name": "Doxxbet",
+            "imageUrl": "https://assets.nhle.com/betting_partner/doxxbet.svg",
+            "siteUrl": "https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/ladovy-hokej/usa/nhl/?msID=21&mbID=27",
+            "bgColor": "#f30d31",
+            "textColor": "#202020",
+            "accentColor": "#ffffff"
+        }
+    ],
+    "games": [
+        {
+            "id": 2026020001,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "Lenovo Center"
+            },
+            "startTimeUTC": "2026-09-29T21:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "tvBroadcasts": [
+                {
+                    "id": 309,
+                    "market": "N",
+                    "countryCode": "US",
+                    "network": "ESPN",
+                    "sequenceNumber": 10,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/309-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/309-dark.svg"
+                    }
+                }
+            ],
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 13,
+                "name": {
+                    "default": "Panthers"
+                },
+                "abbrev": "FLA",
+                "record": "40-38-4",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+            },
+            "homeTeam": {
+                "id": 12,
+                "name": {
+                    "default": "Hurricanes"
+                },
+                "abbrev": "CAR",
+                "record": "53-22-7",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/fla-vs-car/2026/09/29/2026020001",
+            "neutralSite": false,
+            "venueTimezone": "US/Eastern",
+            "ticketsLink": "https://www.ticketmaster.com/event/2D0064F4BD48D131?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCORES_PG_GM1",
+            "ticketsLinkFr": "https://www.ticketmaster.com/event/2D0064F4BD48D131?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCORES_PG_GM1",
+            "teamLeaders": [
+                {
+                    "id": 8477933,
+                    "firstName": {
+                        "default": "Sam"
+                    },
+                    "lastName": {
+                        "default": "Reinhart"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png",
+                    "teamAbbrev": "FLA",
+                    "sweaterNumber": 13,
+                    "position": "C",
+                    "category": "goals",
+                    "value": 29
+                },
+                {
+                    "id": 8482093,
+                    "firstName": {
+                        "default": "Seth"
+                    },
+                    "lastName": {
+                        "default": "Jarvis"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482093.png",
+                    "teamAbbrev": "CAR",
+                    "sweaterNumber": 24,
+                    "position": "R",
+                    "category": "goals",
+                    "value": 32
+                },
+                {
+                    "id": 8480801,
+                    "firstName": {
+                        "default": "Brady"
+                    },
+                    "lastName": {
+                        "default": "Tkachuk"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480801.png",
+                    "teamAbbrev": "FLA",
+                    "sweaterNumber": 8,
+                    "position": "L",
+                    "category": "assists",
+                    "value": 37
+                },
+                {
+                    "id": 8478427,
+                    "firstName": {
+                        "default": "Sebastian"
+                    },
+                    "lastName": {
+                        "default": "Aho"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478427.png",
+                    "teamAbbrev": "CAR",
+                    "sweaterNumber": 20,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 53
+                },
+                {
+                    "id": 8474593,
+                    "firstName": {
+                        "default": "Jacob"
+                    },
+                    "lastName": {
+                        "default": "Markstrom",
+                        "cs": "Markstr\u00f6m",
+                        "fi": "Markstr\u00f6m",
+                        "sk": "Markstr\u00f6m",
+                        "sv": "Markstr\u00f6m"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8474593.png",
+                    "teamAbbrev": "FLA",
+                    "sweaterNumber": 25,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 23
+                },
+                {
+                    "id": 8483548,
+                    "firstName": {
+                        "default": "Brandon"
+                    },
+                    "lastName": {
+                        "default": "Bussi"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8483548.png",
+                    "teamAbbrev": "CAR",
+                    "sweaterNumber": 32,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 31
+                }
+            ]
+        },
+        {
+            "id": 2026020002,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "Scotiabank Arena"
+            },
+            "startTimeUTC": "2026-09-29T23:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "tvBroadcasts": [
+                {
+                    "id": 282,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "SN",
+                    "sequenceNumber": 107,
+                    "parentId": 282,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+                    }
+                },
+                {
+                    "id": 281,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "TVAS",
+                    "sequenceNumber": 120,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/281-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/281-dark.svg"
+                    }
+                }
+            ],
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 8,
+                "name": {
+                    "default": "Canadiens"
+                },
+                "abbrev": "MTL",
+                "record": "48-24-10",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+            },
+            "homeTeam": {
+                "id": 10,
+                "name": {
+                    "default": "Maple Leafs"
+                },
+                "abbrev": "TOR",
+                "record": "32-36-14",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/mtl-vs-tor/2026/09/29/2026020002",
+            "neutralSite": false,
+            "venueTimezone": "America/Toronto",
+            "ticketsLink": "https://www.ticketmaster.ca/event/100064FECCC2F770?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_LEAGUE_TOR&utm_content=SCORES_PG_GM1",
+            "ticketsLinkFr": "https://www.ticketmaster.ca/event/100064FECCC2F770?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_LEAGUE_TOR&utm_content=SCORES_PG_GM1",
+            "teamLeaders": [
+                {
+                    "id": 8481540,
+                    "firstName": {
+                        "default": "Cole"
+                    },
+                    "lastName": {
+                        "default": "Caufield"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481540.png",
+                    "teamAbbrev": "MTL",
+                    "sweaterNumber": 13,
+                    "position": "R",
+                    "category": "goals",
+                    "value": 51
+                },
+                {
+                    "id": 8475166,
+                    "firstName": {
+                        "default": "John"
+                    },
+                    "lastName": {
+                        "default": "Tavares"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475166.png",
+                    "teamAbbrev": "TOR",
+                    "sweaterNumber": 91,
+                    "position": "C",
+                    "category": "goals",
+                    "value": 31
+                },
+                {
+                    "id": 8480018,
+                    "firstName": {
+                        "default": "Nick"
+                    },
+                    "lastName": {
+                        "default": "Suzuki"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480018.png",
+                    "teamAbbrev": "MTL",
+                    "sweaterNumber": 14,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 72
+                },
+                {
+                    "id": 8477939,
+                    "firstName": {
+                        "default": "William"
+                    },
+                    "lastName": {
+                        "default": "Nylander"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477939.png",
+                    "teamAbbrev": "TOR",
+                    "sweaterNumber": 88,
+                    "position": "R",
+                    "category": "assists",
+                    "value": 49
+                },
+                {
+                    "id": 8482487,
+                    "firstName": {
+                        "default": "Jakub"
+                    },
+                    "lastName": {
+                        "default": "Dobes"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482487.png",
+                    "teamAbbrev": "MTL",
+                    "sweaterNumber": 75,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 29
+                },
+                {
+                    "id": 8475683,
+                    "firstName": {
+                        "default": "Sergei",
+                        "cs": "Sergej",
+                        "sk": "Sergej"
+                    },
+                    "lastName": {
+                        "default": "Bobrovsky",
+                        "cs": "Bobrovskij",
+                        "fi": "Bobrovski",
+                        "sk": "Bobrovskij"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475683.png",
+                    "teamAbbrev": "TOR",
+                    "position": "G",
+                    "category": "wins",
+                    "value": 27
+                }
+            ]
+        },
+        {
+            "id": 2026020003,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "TD Garden"
+            },
+            "startTimeUTC": "2026-09-30T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "tvBroadcasts": [
+                {
+                    "id": 309,
+                    "market": "N",
+                    "countryCode": "US",
+                    "network": "ESPN",
+                    "sequenceNumber": 10,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/309-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/309-dark.svg"
+                    }
+                }
+            ],
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 3,
+                "name": {
+                    "default": "Rangers"
+                },
+                "abbrev": "NYR",
+                "record": "34-39-9",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+            },
+            "homeTeam": {
+                "id": 6,
+                "name": {
+                    "default": "Bruins"
+                },
+                "abbrev": "BOS",
+                "record": "45-27-10",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/nyr-vs-bos/2026/09/29/2026020003",
+            "neutralSite": false,
+            "venueTimezone": "US/Eastern",
+            "ticketsLink": "https://www.ticketmaster.com/event/010064EDC4E7797E?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=SCORES_PG_GM1",
+            "ticketsLinkFr": "https://www.ticketmaster.com/event/010064EDC4E7797E?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=SCORES_PG_GM1",
+            "teamLeaders": [
+                {
+                    "id": 8481604,
+                    "firstName": {
+                        "default": "Pavel"
+                    },
+                    "lastName": {
+                        "default": "Dorofeyev",
+                        "cs": "Dorofejev",
+                        "fi": "Dorofejev",
+                        "sk": "Dorofejev"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481604.png",
+                    "teamAbbrev": "NYR",
+                    "sweaterNumber": 16,
+                    "position": "R",
+                    "category": "goals",
+                    "value": 37
+                },
+                {
+                    "id": 8479987,
+                    "firstName": {
+                        "default": "Morgan"
+                    },
+                    "lastName": {
+                        "default": "Geekie"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479987.png",
+                    "teamAbbrev": "BOS",
+                    "sweaterNumber": 39,
+                    "position": "C",
+                    "category": "goals",
+                    "value": 39
+                },
+                {
+                    "id": 8476459,
+                    "firstName": {
+                        "default": "Mika"
+                    },
+                    "lastName": {
+                        "default": "Zibanejad"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476459.png",
+                    "teamAbbrev": "NYR",
+                    "sweaterNumber": 93,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 44
+                },
+                {
+                    "id": 8477956,
+                    "firstName": {
+                        "default": "David"
+                    },
+                    "lastName": {
+                        "default": "Pastrnak",
+                        "cs": "Pastr\u0148\u00e1k",
+                        "sk": "Pastr\u0148\u00e1k"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477956.png",
+                    "teamAbbrev": "BOS",
+                    "sweaterNumber": 88,
+                    "position": "R",
+                    "category": "assists",
+                    "value": 71
+                },
+                {
+                    "id": 8478048,
+                    "firstName": {
+                        "default": "Igor"
+                    },
+                    "lastName": {
+                        "default": "Shesterkin",
+                        "cs": "\u0160es\u0165orkin",
+                        "fi": "Shestjorkin",
+                        "sk": "\u0160es\u0165orkin"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478048.png",
+                    "teamAbbrev": "NYR",
+                    "sweaterNumber": 31,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 25
+                },
+                {
+                    "id": 8480280,
+                    "firstName": {
+                        "default": "Jeremy"
+                    },
+                    "lastName": {
+                        "default": "Swayman"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480280.png",
+                    "teamAbbrev": "BOS",
+                    "sweaterNumber": 1,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 31
+                }
+            ]
+        },
+        {
+            "id": 2026020004,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "Rogers Place"
+            },
+            "startTimeUTC": "2026-09-30T02:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-06:00",
+            "tvBroadcasts": [
+                {
+                    "id": 282,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "SN",
+                    "sequenceNumber": 107,
+                    "parentId": 282,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+                    }
+                }
+            ],
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 23,
+                "name": {
+                    "default": "Canucks"
+                },
+                "abbrev": "VAN",
+                "record": "25-49-8",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+            },
+            "homeTeam": {
+                "id": 22,
+                "name": {
+                    "default": "Oilers"
+                },
+                "abbrev": "EDM",
+                "record": "41-30-11",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/van-vs-edm/2026/09/29/2026020004",
+            "neutralSite": false,
+            "venueTimezone": "America/Edmonton",
+            "ticketsLink": "https://www.ticketmaster.ca/event/11006513A5DFA435?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_LEAGUE_EDM&utm_content=SCORES_PG_GM1",
+            "ticketsLinkFr": "https://www.ticketmaster.ca/event/11006513A5DFA435?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_SCORES_PG_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_LEAGUE_EDM&utm_content=SCORES_PG_GM1",
+            "teamLeaders": [
+                {
+                    "id": 8478498,
+                    "firstName": {
+                        "default": "Jake"
+                    },
+                    "lastName": {
+                        "default": "DeBrusk"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478498.png",
+                    "teamAbbrev": "VAN",
+                    "sweaterNumber": 74,
+                    "position": "L",
+                    "category": "goals",
+                    "value": 23
+                },
+                {
+                    "id": 8478402,
+                    "firstName": {
+                        "default": "Connor"
+                    },
+                    "lastName": {
+                        "default": "McDavid"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png",
+                    "teamAbbrev": "EDM",
+                    "sweaterNumber": 97,
+                    "position": "C",
+                    "category": "goals",
+                    "value": 48
+                },
+                {
+                    "id": 8479425,
+                    "firstName": {
+                        "default": "Filip"
+                    },
+                    "lastName": {
+                        "default": "Hronek"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8479425.png",
+                    "teamAbbrev": "VAN",
+                    "sweaterNumber": 17,
+                    "position": "D",
+                    "category": "assists",
+                    "value": 41
+                },
+                {
+                    "id": 8478402,
+                    "firstName": {
+                        "default": "Connor"
+                    },
+                    "lastName": {
+                        "default": "McDavid"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png",
+                    "teamAbbrev": "EDM",
+                    "sweaterNumber": 97,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 90
+                },
+                {
+                    "id": 8480947,
+                    "firstName": {
+                        "default": "Kevin"
+                    },
+                    "lastName": {
+                        "default": "Lankinen"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480947.png",
+                    "teamAbbrev": "VAN",
+                    "sweaterNumber": 32,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 11
+                },
+                {
+                    "id": 8477465,
+                    "firstName": {
+                        "default": "Tristan"
+                    },
+                    "lastName": {
+                        "default": "Jarry"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477465.png",
+                    "teamAbbrev": "EDM",
+                    "sweaterNumber": 35,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 18
+                }
+            ]
+        },
+        {
+            "id": 2026020005,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "T-Mobile Arena"
+            },
+            "startTimeUTC": "2026-09-30T02:30:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-07:00",
+            "tvBroadcasts": [
+                {
+                    "id": 309,
+                    "market": "N",
+                    "countryCode": "US",
+                    "network": "ESPN",
+                    "sequenceNumber": 10,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/309-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/309-dark.svg"
+                    }
+                },
+                {
+                    "id": 291,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "TVAS2",
+                    "sequenceNumber": 121,
+                    "logoUrls": {
+                        "light": "https://assets.nhle.com/logos/broadcast/291-light.svg",
+                        "dark": "https://assets.nhle.com/logos/broadcast/291-dark.svg"
+                    }
+                }
+            ],
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 16,
+                "name": {
+                    "default": "Blackhawks"
+                },
+                "abbrev": "CHI",
+                "record": "29-39-14",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
+            },
+            "homeTeam": {
+                "id": 54,
+                "name": {
+                    "default": "Golden Knights"
+                },
+                "abbrev": "VGK",
+                "record": "39-26-17",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/chi-vs-vgk/2026/09/29/2026020005",
+            "neutralSite": false,
+            "venueTimezone": "US/Pacific",
+            "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+            "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/",
+            "teamLeaders": [
+                {
+                    "id": 8477479,
+                    "firstName": {
+                        "default": "Tyler"
+                    },
+                    "lastName": {
+                        "default": "Bertuzzi"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477479.png",
+                    "teamAbbrev": "CHI",
+                    "sweaterNumber": 59,
+                    "position": "L",
+                    "category": "goals",
+                    "value": 32
+                },
+                {
+                    "id": 8475913,
+                    "firstName": {
+                        "default": "Mark"
+                    },
+                    "lastName": {
+                        "default": "Stone"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475913.png",
+                    "teamAbbrev": "VGK",
+                    "sweaterNumber": 61,
+                    "position": "R",
+                    "category": "goals",
+                    "value": 28
+                },
+                {
+                    "id": 8484144,
+                    "firstName": {
+                        "default": "Connor"
+                    },
+                    "lastName": {
+                        "default": "Bedard"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484144.png",
+                    "teamAbbrev": "CHI",
+                    "sweaterNumber": 98,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 45
+                },
+                {
+                    "id": 8478403,
+                    "firstName": {
+                        "default": "Jack"
+                    },
+                    "lastName": {
+                        "default": "Eichel"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478403.png",
+                    "teamAbbrev": "VGK",
+                    "sweaterNumber": 9,
+                    "position": "C",
+                    "category": "assists",
+                    "value": 63
+                },
+                {
+                    "id": 8481519,
+                    "firstName": {
+                        "default": "Spencer"
+                    },
+                    "lastName": {
+                        "default": "Knight"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481519.png",
+                    "teamAbbrev": "CHI",
+                    "sweaterNumber": 30,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 19
+                },
+                {
+                    "id": 8479394,
+                    "firstName": {
+                        "default": "Carter"
+                    },
+                    "lastName": {
+                        "default": "Hart"
+                    },
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479394.png",
+                    "teamAbbrev": "VGK",
+                    "sweaterNumber": 79,
+                    "position": "G",
+                    "category": "wins",
+                    "value": 11
+                }
+            ]
+        }
+    ]
+}

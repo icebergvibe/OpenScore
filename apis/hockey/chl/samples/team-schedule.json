@@ -1,0 +1,432 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_entityId": "2ebf4473496e819370b1b0f9",
+      "externalId": "2994",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-09-04T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "8866fcd19ed64e280847528f",
+        "name": "KVIK Hockey Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 1,
+          "name": "Game Day 1"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ef112cb0eed346d32a775fac",
+          "externalId": "109",
+          "name": "Herning Blue Fox",
+          "shortName": "HBF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2ebf4473496e819370b1b0f9/herning-blue-fox-vs-koo-koo-kouvola",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 2,
+          "away": 5
+        }
+      }
+    },
+    {
+      "_entityId": "d25d725c147cf4bc3cb4c5ff",
+      "externalId": "3008",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-09-06T13:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2123a7db9fa5545ed7fc15cc",
+        "name": "Frölundaborg"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 2,
+          "name": "Game Day 2"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/d25d725c147cf4bc3cb4c5ff/frolunda-gothenburg-vs-koo-koo-kouvola",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Overtime",
+        "shortName": "F/OT"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 2,
+          "away": 1
+        }
+      }
+    },
+    {
+      "_entityId": "4f36a358a795d91b2fbb0c9b",
+      "externalId": "3012",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-09-10T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2f944ab4055dcb2fb49be604",
+        "name": "Kouvolan jäähalli"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "11df2073083f06cccbb5132e",
+          "externalId": "55",
+          "name": "HK Nitra",
+          "shortName": "NIT",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 1,
+          "away": 4
+        }
+      }
+    },
+    {
+      "_entityId": "53e8968b596c13fabe0668bc",
+      "externalId": "3025",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-09-12T14:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2f944ab4055dcb2fb49be604",
+        "name": "Kouvolan jäähalli"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "3e2b15fb0e41329efc1f6237",
+          "externalId": "5",
+          "name": "Dynamo Pardubice",
+          "shortName": "PAR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/53e8968b596c13fabe0668bc/koo-koo-kouvola-vs-dynamo-pardubice",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 0,
+          "away": 0
+        }
+      }
+    },
+    {
+      "_entityId": "d7aa32e2ec7131a0a30e21a6",
+      "externalId": "3040",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-10-06T17:15:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "623f0e3060d241ac7acbee6f",
+        "name": "Heidi Horten-Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "954f0696fef5e714282a6d75",
+          "externalId": "51",
+          "name": "KAC Klagenfurt",
+          "shortName": "KAC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/d7aa32e2ec7131a0a30e21a6/kac-klagenfurt-vs-koo-koo-kouvola",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 0,
+          "away": 0
+        }
+      }
+    },
+    {
+      "_entityId": "9088e91e3fff07921da44eda",
+      "externalId": "3048",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-10-13T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2f944ab4055dcb2fb49be604",
+        "name": "Kouvolan jäähalli"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 6,
+          "name": "Game Day 6"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "9bd414328e8c2658731938a0",
+          "externalId": "8",
+          "name": "Adler Mannheim",
+          "shortName": "MAN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/9088e91e3fff07921da44eda/koo-koo-kouvola-vs-adler-mannheim",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 0,
+          "away": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

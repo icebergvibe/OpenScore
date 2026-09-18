@@ -1,0 +1,16 @@
+{
+  "league": "espn",
+  "name": "ESPN soccer rosters (squad supplement for Bundesliga and UEFA-only clubs)",
+  "baseUrl": "https://site.web.api.espn.com/apis/common/v3/sports/soccer",
+  "minDelayMs": 1000,
+  "checks": [
+    {"name": "roster — Bayern (ger.1, 2026/27)", "path": "/ger.1/teams/132/roster?season=2026", "sample": "roster.bayern.json",
+      "keys": ["team.id", "positionGroups[].athletes[].id", "positionGroups[].athletes[].jersey", "positionGroups[].athletes[].position.abbreviation"]},
+    {"name": "roster — Sturm Graz (uefa.europa, 2026/27)", "path": "/uefa.europa/teams/3746/roster?season=2026", "sample": "roster.sturm-graz.json",
+      "keys": ["team.id", "positionGroups[].athletes[].id", "positionGroups[].athletes[].displayName"]},
+    {"name": "teams — ger.1", "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/teams", "sample": "teams.ger.1.json",
+      "keys": ["sports[].leagues[].teams[].team.id", "sports[].leagues[].teams[].team.displayName"]},
+    {"name": "teams — uefa.europa.conf", "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/teams", "sample": "teams.uefa.europa.conf.json",
+      "keys": ["sports[].leagues[].teams[].team.id", "sports[].leagues[].teams[].team.displayName"]}
+  ]
+}

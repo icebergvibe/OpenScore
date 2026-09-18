@@ -1,0 +1,26 @@
+{
+  "league": "mls",
+  "name": "Major League Soccer",
+  "baseUrl": "https://stats-api.mlssoccer.com",
+  "minDelayMs": 1000,
+  "checks": [
+    {"name": "seasons", "path": "/competitions/MLS-COM-000001/seasons", "sample": "seasons.json",
+      "keys": ["seasons[].season_id", "seasons[].season"]},
+    {"name": "schedule — 2026-09-20",
+      "path": "/matches/seasons/MLS-SEA-0001KA?competition_id=MLS-COM-000001&match_date=2026-09-20&per_page=1000",
+      "sample": "matches.day.pre.json",
+      "keys": ["schedule[].match_id", "schedule[].planned_kickoff_time", "schedule[].match_status"]},
+    {"name": "match — finished", "path": "/matches/MLS-MAT-0009LH", "sample": "match.final.json",
+      "keys": ["match_information.match_id", "match_information.match_status", "home.players[].person_id", "away.players[].person_id"]},
+    {"name": "events — finished", "path": "/matches/MLS-MAT-0009LH/key_events", "sample": "match-events.final.json",
+      "keys": ["events[].type", "events[].event.event_id", "match_info.match_status"]},
+    {"name": "statistics — finished", "path": "/statistics/clubs/matches/MLS-MAT-0009LH", "sample": "match-stats.final.json",
+      "keys": ["match_statistics_list[].match_statistics.team_statistics[].team_role", "match_statistics_list[].match_statistics.team_statistics[].xG"]},
+    {"name": "standings — 2026", "path": "/competitions/MLS-COM-000001/seasons/MLS-SEA-0001KA/standings", "sample": "standings.2026.json",
+      "keys": ["tables[].season_id", "tables[].entries[].team_id", "tables[].entries[].points"]},
+    {"name": "roster — San Diego", "path": "/players/seasons/MLS-SEA-0001KA/clubs/MLS-CLU-000065?per_page=100", "sample": "roster.san-diego.json",
+      "keys": ["players[].player_id", "players[].birth_date", "players[].club_id"]},
+    {"name": "metadata — upcoming", "url": "https://sportapi.mlssoccer.com/api/matches/MLS-MAT-0009LX", "sample": "match-metadata.pre.json",
+      "keys": ["sportecId", "matchDate", "home.sportecId", "away.sportecId"]}
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "league": "ligue1",
+  "name": "Ligue 1",
+  "baseUrl": "https://ma-api.ligue1.fr",
+  "checks": [
+    {
+      "name": "championships-settings",
+      "path": "/championships-settings",
+      "sample": "championships-settings.json",
+      "keys": [
+        "championships"
+      ]
+    },
+    {
+      "name": "championships-order",
+      "path": "/championships-order",
+      "sample": "championships-order.json"
+    },
+    {
+      "name": "championship-calendar/{id}",
+      "path": "/championship-calendar/1",
+      "sample": "championship-calendar.json",
+      "keys": [
+        "gameWeeks"
+      ]
+    },
+    {
+      "name": "championship-calendar/{id}/nearest-game-weeks",
+      "path": "/championship-calendar/1/nearest-game-weeks",
+      "sample": "championship-calendar-nearest-game-weeks.json",
+      "keys": [
+        "nearestGameWeeks"
+      ]
+    },
+    {
+      "name": "championships-daily-calendars/matches",
+      "path": "/championships-daily-calendars/matches?timezone=Europe/Paris&daysLimit=1&lookAfter=true&fromDate={today}",
+      "sample": "championships-daily-calendars-matches.json",
+      "keys": [
+        "results",
+        "nextDate"
+      ]
+    },
+    {
+      "name": "championship-matches/championship/{id}/current",
+      "path": "/championship-matches/championship/1/current",
+      "sample": "championship-matches-current.final.json",
+      "keys": [
+        "currentMatches"
+      ]
+    },
+    {
+      "name": "championship-matches/championship/{id}/game-week/{n}",
+      "path": "/championship-matches/championship/1/game-week/3",
+      "sample": "championship-matches-game-week.final.json"
+    },
+    {
+      "name": "championship-match/{id} — final",
+      "path": "/championship-match/l1_championship_match_73845",
+      "sample": "championship-match.final.json",
+      "keys": [
+        "id",
+        "period",
+        "home",
+        "away",
+        "date",
+        "periodsDates",
+        "timeline"
+      ]
+    },
+    {
+      "name": "championship-match/{id} — live capture id",
+      "path": "/championship-match/l1_championship_match_73855",
+      "sample": "championship-match.final-fresh.json",
+      "keys": [
+        "id",
+        "period"
+      ],
+      "note": "Rennes–OM, captured live; now final"
+    },
+    {
+      "name": "championship-match/{id} — pre (Ligue 2)",
+      "path": "/championship-match/l1_championship_match_74174",
+      "sample": "championship-match.pre.json",
+      "keys": [
+        "id",
+        "period"
+      ]
+    },
+    {
+      "name": "championship-match/{id}/pre-live-stats",
+      "path": "/championship-match/l1_championship_match_73845/pre-live-stats",
+      "sample": "championship-match-pre-live-stats.json"
+    },
+    {
+      "name": "championship-match/{id}/oppositions",
+      "path": "/championship-match/l1_championship_match_73845/oppositions",
+      "sample": "championship-match-oppositions.json"
+    },
+    {
+      "name": "championship-match/{id}/story/man-of-the-match",
+      "path": "/championship-match/l1_championship_match_73845/story/man-of-the-match",
+      "sample": "championship-match-story-man-of-the-match.json"
+    },
+    {
+      "name": "videos/match/{id}",
+      "path": "/videos/match/l1_championship_match_73845",
+      "sample": "videos-match.json"
+    },
+    {
+      "name": "championship-standings/{id}/general",
+      "path": "/championship-standings/1/general",
+      "sample": "championship-standings.json",
+      "keys": [
+        "standings",
+        "season"
+      ]
+    },
+    {
+      "name": "championship-standings/{id}/home",
+      "path": "/championship-standings/1/home",
+      "sample": "championship-standings-home.json",
+      "keys": [
+        "standings"
+      ]
+    },
+    {
+      "name": "championship-players-ranking/{id}/scorers",
+      "path": "/championship-players-ranking/1/scorers",
+      "sample": "championship-players-ranking-scorers.json",
+      "keys": [
+        "scorers",
+        "clubsIdentities"
+      ]
+    },
+    {
+      "name": "championship-players-ranking/{id}/assists",
+      "path": "/championship-players-ranking/1/assists",
+      "sample": "championship-players-ranking-assists.json"
+    },
+    {
+      "name": "championship-players-advanced-rankings/{id}/top",
+      "path": "/championship-players-advanced-rankings/1/top",
+      "sample": "championship-players-advanced-rankings-top.json",
+      "keys": [
+        "rankings",
+        "playersData",
+        "statsIndexes"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "championship-players-advanced-rankings/{id}/stat/{stat}",
+      "path": "/championship-players-advanced-rankings/1/stat/goals?limit=5",
+      "sample": "championship-players-advanced-rankings-stat.json",
+      "keys": [
+        "stat",
+        "ranking"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "championship-clubs-advanced-rankings/{id}/top",
+      "path": "/championship-clubs-advanced-rankings/1/top",
+      "sample": "championship-clubs-advanced-rankings-top.json"
+    },
+    {
+      "name": "championship-clubs-advanced-rankings/{id}/stat/{stat}",
+      "path": "/championship-clubs-advanced-rankings/1/stat/totalGoals",
+      "sample": "championship-clubs-advanced-rankings-stat.json",
+      "keys": [
+        "stat"
+      ]
+    },
+    {
+      "name": "championship-clubs",
+      "path": "/championship-clubs",
+      "sample": "championship-clubs.json",
+      "keys": [
+        "championshipsClubs"
+      ]
+    },
+    {
+      "name": "championship-club/{id}",
+      "path": "/championship-club/l1_championship_club_2026_13",
+      "sample": "championship-club.json",
+      "keys": [
+        "id",
+        "name",
+        "shortId"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "championship-club/{id}/identity",
+      "path": "/championship-club/l1_championship_club_2026_13/identity",
+      "sample": "championship-club-identity.json"
+    },
+    {
+      "name": "championship-club-summary/{id}",
+      "path": "/championship-club-summary/l1_championship_club_2026_13",
+      "sample": "championship-club-summary.json"
+    },
+    {
+      "name": "championship-club-history/{id}",
+      "path": "/championship-club-history/l1_championship_club_2026_13",
+      "sample": "championship-club-history.json"
+    },
+    {
+      "name": "championship-player/{id}",
+      "path": "/championship-player/l1_championship_player_2026_13_77349",
+      "sample": "championship-player.json",
+      "keys": [
+        "id",
+        "firstName",
+        "lastName",
+        "championships"
+      ]
+    },
+    {
+      "name": "championship-player-stats/{id}",
+      "path": "/championship-player-stats/l1_championship_player_2026_13_77349",
+      "sample": "championship-player-stats.json"
+    },
+    {
+      "name": "championship-player-advanced-stats/{id}",
+      "path": "/championship-player-advanced-stats/l1_championship_player_2026_13_77349",
+      "sample": "championship-player-advanced-stats.json"
+    },
+    {
+      "name": "championship-player-history/{id}",
+      "path": "/championship-player-history/l1_championship_player_2026_13_77349",
+      "sample": "championship-player-history.json"
+    },
+    {
+      "name": "championship-players-pool/{id}",
+      "path": "/championship-players-pool/1",
+      "sample": "championship-players-pool.json"
+    },
+    {
+      "name": "championship-players-statuses/{id}/game-week/{n}",
+      "path": "/championship-players-statuses/1/game-week/4",
+      "sample": "championship-players-statuses.json"
+    }
+  ]
+}

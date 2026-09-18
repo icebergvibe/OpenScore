@@ -1,0 +1,220 @@
+{
+  "league": "chl",
+  "name": "CHL (Champions Hockey League)",
+  "baseUrl": "https://www.chl.hockey/api/s3",
+  "checks": [
+    {
+      "name": "live?q=live-events.json",
+      "path": "/live?q=live-events.json",
+      "sample": "live-events.json",
+      "keys": [
+        "data[]._entityId",
+        "data[].state",
+        "data[].teams"
+      ]
+    },
+    {
+      "name": "schedule-{C}-{S}.json",
+      "path": "?q=schedule-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "schedule.json",
+      "keys": [
+        "data[]._entityId",
+        "data[].startDate",
+        "data[].teams",
+        "data[].results"
+      ]
+    },
+    {
+      "name": "schedule — previous season",
+      "path": "?q=schedule-21ec9dad81abe2e0240460d0-3c5f99fa605394cc65733fc9.json",
+      "sample": "schedule.2025-26.json",
+      "keys": [
+        "data[]._entityId"
+      ]
+    },
+    {
+      "name": "team-schedule-{C}-{S}-{T}.json",
+      "path": "?q=team-schedule-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb-c9840a203093f97cae0a9495.json",
+      "sample": "team-schedule.json",
+      "keys": [
+        "data[]"
+      ]
+    },
+    {
+      "name": "live-event-{M}-scoreboard.json — pre",
+      "path": "/live?q=live-event-282628c3708fc7d1ce2d537d-scoreboard.json",
+      "sample": "live-event-scoreboard.pre.json",
+      "keys": [
+        "data._entityId",
+        "data.state",
+        "data.teams"
+      ]
+    },
+    {
+      "name": "live-event-{M}-scoreboard.json — final",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-scoreboard.json",
+      "sample": "live-event-scoreboard.final.json",
+      "keys": [
+        "data.results",
+        "data.status"
+      ]
+    },
+    {
+      "name": "live-event-{M}-scoreboard.json — overtime",
+      "path": "/live?q=live-event-2598d33681bd2c7bf1310768-scoreboard.json",
+      "sample": "live-event-scoreboard.final-overtime.json"
+    },
+    {
+      "name": "live-event-{M}-scoreboard.json — shootout",
+      "path": "/live?q=live-event-a0dedd257aff92689a14b8d3-scoreboard.json",
+      "sample": "live-event-scoreboard.final-shootout.json"
+    },
+    {
+      "name": "live-event-{M}-actions.json — final",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-actions.json",
+      "sample": "live-event-actions.final.json"
+    },
+    {
+      "name": "live-event-{M}-actions.json — shootout",
+      "path": "/live?q=live-event-a0dedd257aff92689a14b8d3-actions.json",
+      "sample": "live-event-actions.final-shootout.json"
+    },
+    {
+      "name": "live-event-{M}-actions.json — pre",
+      "path": "/live?q=live-event-282628c3708fc7d1ce2d537d-actions.json",
+      "sample": "live-event-actions.pre.json"
+    },
+    {
+      "name": "live-event-{M}-lineups.json — final",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-lineups.json",
+      "sample": "live-event-lineups.final.json",
+      "keys": [
+        "data.teams",
+        "data.officials"
+      ]
+    },
+    {
+      "name": "live-event-{M}-lineups.json — pre",
+      "path": "/live?q=live-event-282628c3708fc7d1ce2d537d-lineups.json",
+      "sample": "live-event-lineups.pre.json"
+    },
+    {
+      "name": "live-event-{M}-players-stats.json",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-players-stats.json",
+      "sample": "live-event-players-stats.final.json"
+    },
+    {
+      "name": "live-event-{M}-players.json",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-players.json",
+      "sample": "live-event-players.final.json"
+    },
+    {
+      "name": "live-event-{M}-teams.json — final",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-teams.json",
+      "sample": "live-event-teams.final.json"
+    },
+    {
+      "name": "live-event-{M}-teams.json — pre",
+      "path": "/live?q=live-event-282628c3708fc7d1ce2d537d-teams.json",
+      "sample": "live-event-teams.pre.json"
+    },
+    {
+      "name": "live-event-{M}-leaderboard-recap.json",
+      "path": "/live?q=live-event-4f36a358a795d91b2fbb0c9b-leaderboard-recap.json",
+      "sample": "live-event-leaderboard-recap.final.json"
+    },
+    {
+      "name": "standings-groups-{C}-{S}.json",
+      "path": "/live?q=standings-groups-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "standings-groups.json",
+      "keys": [
+        "data[].teams",
+        "data[].stage"
+      ]
+    },
+    {
+      "name": "standings-playoffs-{C}-{S}.json",
+      "path": "?q=standings-playoffs-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "standings-playoffs.empty.json",
+      "note": "Empty until the playoffs"
+    },
+    {
+      "name": "standings-playoffs — previous season",
+      "path": "?q=standings-playoffs-21ec9dad81abe2e0240460d0-3c5f99fa605394cc65733fc9.json",
+      "sample": "standings-playoffs.json"
+    },
+    {
+      "name": "teams-{C}-{S}.json",
+      "path": "?q=teams-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "teams.json",
+      "keys": [
+        "data[]._entityId",
+        "data[].name",
+        "data[].country"
+      ]
+    },
+    {
+      "name": "teams-stats-{C}-{S}.json",
+      "path": "?q=teams-stats-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "teams-stats.json"
+    },
+    {
+      "name": "team-info-{C}-{S}-{T}.json",
+      "path": "?q=team-info-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb-c9840a203093f97cae0a9495.json",
+      "sample": "team-info.json"
+    },
+    {
+      "name": "team-players-info-{C}-{S}-{T}.json",
+      "path": "?q=team-players-info-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb-c9840a203093f97cae0a9495.json",
+      "sample": "team-players-info.json"
+    },
+    {
+      "name": "team-players-stats-{C}-{S}-{T}.json",
+      "path": "?q=team-players-stats-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb-c9840a203093f97cae0a9495.json",
+      "sample": "team-players-stats.json"
+    },
+    {
+      "name": "team-stats-{C}-{S}-{T}.json",
+      "path": "?q=team-stats-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb-c9840a203093f97cae0a9495.json",
+      "sample": "team-stats.json"
+    },
+    {
+      "name": "player-{C}-{P}.json",
+      "path": "?q=player-21ec9dad81abe2e0240460d0-c0add44e7a2094c45b3e5fe9.json",
+      "sample": "player.json",
+      "keys": [
+        "data.firstName",
+        "data.lastName",
+        "data.team"
+      ]
+    },
+    {
+      "name": "statistic-players-{C}-{S}.json",
+      "path": "?q=statistic-players-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "statistic-players.json"
+    },
+    {
+      "name": "statistic-goalkeepers-{C}-{S}.json",
+      "path": "?q=statistic-goalkeepers-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "statistic-goalkeepers.json"
+    },
+    {
+      "name": "statistic-teams-{C}-{S}.json",
+      "path": "?q=statistic-teams-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "statistic-teams.json"
+    },
+    {
+      "name": "statistic-leaderboard-players-{C}-{S}.json",
+      "path": "?q=statistic-leaderboard-players-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "statistic-leaderboard-players.json",
+      "keys": [
+        "data[].items[]"
+      ]
+    },
+    {
+      "name": "statistic-leaderboard-goalkeepers-{C}-{S}.json",
+      "path": "?q=statistic-leaderboard-goalkeepers-21ec9dad81abe2e0240460d0-fc954f6d33272fdf4a8b95bb.json",
+      "sample": "statistic-leaderboard-goalkeepers.json"
+    }
+  ]
+}

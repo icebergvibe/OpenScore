@@ -1,0 +1,230 @@
+{
+    "previousStartDate": "2026-09-22",
+    "nextStartDate": "2026-10-06",
+    "calendarUrl": "https://nhl.ecal.com/tor",
+    "clubTimezone": "America/Toronto",
+    "clubUTCOffset": "-04:00",
+    "games": [
+        {
+            "id": 2026020002,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "venue": {
+                "default": "Scotiabank Arena"
+            },
+            "neutralSite": false,
+            "startTimeUTC": "2026-09-29T23:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "venueTimezone": "America/Toronto",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "tvBroadcasts": [
+                {
+                    "id": 282,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "SN",
+                    "sequenceNumber": 107
+                },
+                {
+                    "id": 281,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "TVAS",
+                    "sequenceNumber": 120
+                }
+            ],
+            "awayTeam": {
+                "id": 8,
+                "commonName": {
+                    "default": "Canadiens"
+                },
+                "placeName": {
+                    "default": "Montr\u00e9al"
+                },
+                "placeNameWithPreposition": {
+                    "default": "Montr\u00e9al",
+                    "fr": "de Montr\u00e9al"
+                },
+                "abbrev": "MTL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg",
+                "awaySplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/MTL/20262027/MTL-radio.m3u8"
+            },
+            "homeTeam": {
+                "id": 10,
+                "commonName": {
+                    "default": "Maple Leafs"
+                },
+                "placeName": {
+                    "default": "Toronto"
+                },
+                "placeNameWithPreposition": {
+                    "default": "Toronto",
+                    "fr": "de Toronto"
+                },
+                "abbrev": "TOR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_dark.svg",
+                "homeSplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TOR/20262027/TOR-radio.m3u8"
+            },
+            "periodDescriptor": {
+                "number": 1,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "ticketsLink": "https://www.ticketmaster.ca/event/100064FECCC2F770?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM1",
+            "ticketsLinkFr": "https://www.ticketmaster.ca/event/100064FECCC2F770?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM1&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM1",
+            "gameCenterLink": "/gamecenter/mtl-vs-tor/2026/09/29/2026020002"
+        },
+        {
+            "id": 2026020008,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-30",
+            "venue": {
+                "default": "Scotiabank Arena"
+            },
+            "neutralSite": false,
+            "startTimeUTC": "2026-09-30T23:30:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "venueTimezone": "America/Toronto",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "tvBroadcasts": [
+                {
+                    "id": 548,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "Prime",
+                    "sequenceNumber": 116
+                }
+            ],
+            "awayTeam": {
+                "id": 2,
+                "commonName": {
+                    "default": "Islanders"
+                },
+                "placeName": {
+                    "default": "New York"
+                },
+                "placeNameWithPreposition": {
+                    "default": "New York",
+                    "fr": "de New York"
+                },
+                "abbrev": "NYI",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/NYI_dark.svg",
+                "awaySplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/NYI/20262027/NYI-radio.m3u8",
+                "airlineLink": "https://www.jetblue.com/?utm_source=nyi_website&utm_medium=schedulepage&utm_campaign=nyi_belmontdepositcampaign&utm_content=jetblueicon",
+                "airlineDesc": "Fly JetBlue"
+            },
+            "homeTeam": {
+                "id": 10,
+                "commonName": {
+                    "default": "Maple Leafs"
+                },
+                "placeName": {
+                    "default": "Toronto"
+                },
+                "placeNameWithPreposition": {
+                    "default": "Toronto",
+                    "fr": "de Toronto"
+                },
+                "abbrev": "TOR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_dark.svg",
+                "homeSplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TOR/20262027/TOR-radio.m3u8"
+            },
+            "periodDescriptor": {
+                "number": 1,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "ticketsLink": "https://www.ticketmaster.ca/event/100064FECCC7F781?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM2&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM2",
+            "ticketsLinkFr": "https://www.ticketmaster.ca/event/100064FECCC7F781?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM2&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM2",
+            "gameCenterLink": "/gamecenter/nyi-vs-tor/2026/09/30/2026020008"
+        },
+        {
+            "id": 2026020023,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-10-03",
+            "venue": {
+                "default": "Scotiabank Arena"
+            },
+            "neutralSite": false,
+            "startTimeUTC": "2026-10-03T23:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "venueTimezone": "America/Toronto",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "tvBroadcasts": [
+                {
+                    "id": 282,
+                    "market": "N",
+                    "countryCode": "CA",
+                    "network": "SN",
+                    "sequenceNumber": 21
+                }
+            ],
+            "awayTeam": {
+                "id": 9,
+                "commonName": {
+                    "default": "Senators",
+                    "fr": "S\u00e9nateurs"
+                },
+                "placeName": {
+                    "default": "Ottawa"
+                },
+                "placeNameWithPreposition": {
+                    "default": "Ottawa",
+                    "fr": "d'Ottawa"
+                },
+                "abbrev": "OTT",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/OTT_dark.svg",
+                "awaySplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/OTT/20262027/OTT-radio.m3u8",
+                "airlineLink": "https://www.aircanada.com/home/ca/en/aco/flights",
+                "airlineDesc": "Book Flights with Air Canada",
+                "hotelLink": "https://www.brookstreethotel.com/?gad_source=1&gad_campaignid=361534260&gbraid=0AAAAAD7lh6gowt52ky_hNFfUfpIJrBOLt&gclid=CjwKCAjws_DTBhB_EiwAXZknGWgxgnsGfRdBp1sxO_Bjc5W4YaWOrsfOWgCMIIPHfxIA9-A04EYXdhoClb8QAvD_BwE",
+                "hotelDesc": "Brookstreet Hotel"
+            },
+            "homeTeam": {
+                "id": 10,
+                "commonName": {
+                    "default": "Maple Leafs"
+                },
+                "placeName": {
+                    "default": "Toronto"
+                },
+                "placeNameWithPreposition": {
+                    "default": "Toronto",
+                    "fr": "de Toronto"
+                },
+                "abbrev": "TOR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+                "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_dark.svg",
+                "homeSplitSquad": false,
+                "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TOR/20262027/TOR-radio.m3u8"
+            },
+            "periodDescriptor": {
+                "number": 1,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "ticketsLink": "https://www.ticketmaster.ca/event/100064FECCCDF79C?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM3&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM3",
+            "ticketsLinkFr": "https://www.ticketmaster.ca/event/100064FECCCDF79C?brand=torontomapleleafs&artistid=806033&wt.mc_id=NHL_TEAM_TOR_SCHEDULE_GM3&utm_source=NHL.com&utm_medium=client_PM&utm_campaign=NHL_TEAM_TOR&utm_content=SCHEDULE_GM3",
+            "gameCenterLink": "/gamecenter/ott-vs-tor/2026/10/03/2026020023"
+        }
+    ]
+}

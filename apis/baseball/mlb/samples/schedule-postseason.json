@@ -1,0 +1,4077 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "totalItems": 47,
+  "totalEvents": 0,
+  "totalGames": 47,
+  "totalGamesInProgress": 0,
+  "wait": 10,
+  "dates": [
+    {
+      "date": "2025-09-30",
+      "totalItems": 4,
+      "totalEvents": 0,
+      "totalGames": 4,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813072,
+          "gameGuid": "302be26b-38e4-4555-ad7c-b94b17ebd0eb",
+          "link": "/api/v1.1/game/813072/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-09-30T17:08:00Z",
+          "officialDate": "2025-09-30",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 2,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 114,
+                "name": "Cleveland Guardians",
+                "link": "/api/v1/teams/114"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 5,
+            "name": "Progressive Field",
+            "link": "/api/v1/venues/5"
+          },
+          "content": {
+            "link": "/api/v1/game/813072/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813072-2025-09-30",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "AL Wild Card 'A' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 1,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813066,
+          "gameGuid": "d7ea68a4-4e28-4a87-8707-c19dc8bc866a",
+          "link": "/api/v1.1/game/813066/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-09-30T19:08:00Z",
+          "officialDate": "2025-09-30",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 135,
+                "name": "San Diego Padres",
+                "link": "/api/v1/teams/135"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 17,
+            "name": "Wrigley Field",
+            "link": "/api/v1/venues/17"
+          },
+          "content": {
+            "link": "/api/v1/game/813066/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813066-2025-09-30",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NL Wild Card 'B' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 1,
+          "seriesDescription": "NL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813074,
+          "gameGuid": "3059bfc7-a4ee-4c0c-b304-286f8da36558",
+          "link": "/api/v1.1/game/813074/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-09-30T22:08:00Z",
+          "officialDate": "2025-09-30",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 111,
+                "name": "Boston Red Sox",
+                "link": "/api/v1/teams/111"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/813074/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813074-2025-09-30",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "AL Wild Card 'B' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 1,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813069,
+          "gameGuid": "f999f6b6-897a-4fde-8d24-15dcc316b64c",
+          "link": "/api/v1.1/game/813069/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-01T01:08:00Z",
+          "officialDate": "2025-09-30",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 113,
+                "name": "Cincinnati Reds",
+                "link": "/api/v1/teams/113"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 5,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 10,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813069/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813069-2025-09-30",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NL Wild Card 'A' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 1,
+          "seriesDescription": "NL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-01",
+      "totalItems": 4,
+      "totalEvents": 0,
+      "totalGames": 4,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813071,
+          "gameGuid": "fca403df-ecba-4340-b893-370ece3b6f7d",
+          "link": "/api/v1.1/game/813071/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-01T17:08:00Z",
+          "officialDate": "2025-10-01",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 114,
+                "name": "Cleveland Guardians",
+                "link": "/api/v1/teams/114"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 5,
+            "name": "Progressive Field",
+            "link": "/api/v1/venues/5"
+          },
+          "content": {
+            "link": "/api/v1/game/813071/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813071-2025-10-01",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "AL Wild Card 'A' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813064,
+          "gameGuid": "d6dd4508-e7ed-414b-8f5e-6c882f98d7fc",
+          "link": "/api/v1.1/game/813064/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-01T19:08:00Z",
+          "officialDate": "2025-10-01",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 135,
+                "name": "San Diego Padres",
+                "link": "/api/v1/teams/135"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 0,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 17,
+            "name": "Wrigley Field",
+            "link": "/api/v1/venues/17"
+          },
+          "content": {
+            "link": "/api/v1/game/813064/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813064-2025-10-01",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NL Wild Card 'B' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "NL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813070,
+          "gameGuid": "a926a76e-3277-4947-9095-bfa279baacc6",
+          "link": "/api/v1.1/game/813070/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-01T22:08:00Z",
+          "officialDate": "2025-10-01",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 111,
+                "name": "Boston Red Sox",
+                "link": "/api/v1/teams/111"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/813070/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813070-2025-10-01",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "AL Wild Card 'B' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813068,
+          "gameGuid": "ae770c1f-fec7-44d4-b87e-b3290aa31edd",
+          "link": "/api/v1.1/game/813068/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-02T01:08:00Z",
+          "officialDate": "2025-10-01",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 113,
+                "name": "Cincinnati Reds",
+                "link": "/api/v1/teams/113"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 4,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 8,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813068/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813068-2025-10-01",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NL Wild Card 'A' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "NL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-02",
+      "totalItems": 3,
+      "totalEvents": 0,
+      "totalGames": 3,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813073,
+          "gameGuid": "d69c1633-4f00-4b6d-b65d-55d29989a79c",
+          "link": "/api/v1.1/game/813073/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-02T19:08:00Z",
+          "officialDate": "2025-10-02",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 114,
+                "name": "Cleveland Guardians",
+                "link": "/api/v1/teams/114"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 5,
+            "name": "Progressive Field",
+            "link": "/api/v1/venues/5"
+          },
+          "content": {
+            "link": "/api/v1/game/813073/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813073-2025-10-02",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "AL Wild Card 'A' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 3,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813059,
+          "gameGuid": "f2e653d1-7c0a-44c2-9f6b-b2529121cdbe",
+          "link": "/api/v1.1/game/813059/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-02T21:08:00Z",
+          "officialDate": "2025-10-02",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 135,
+                "name": "San Diego Padres",
+                "link": "/api/v1/teams/135"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 17,
+            "name": "Wrigley Field",
+            "link": "/api/v1/venues/17"
+          },
+          "content": {
+            "link": "/api/v1/game/813059/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813059-2025-10-02",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NL Wild Card 'B' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 3,
+          "seriesDescription": "NL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813065,
+          "gameGuid": "dcc76f5c-baf9-4c77-a7d6-f60b63a8f7bc",
+          "link": "/api/v1.1/game/813065/feed/live",
+          "gameType": "F",
+          "season": "2025",
+          "gameDate": "2025-10-03T00:08:00Z",
+          "officialDate": "2025-10-02",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 111,
+                "name": "Boston Red Sox",
+                "link": "/api/v1/teams/111"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 0,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/813065/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813065-2025-10-02",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "AL Wild Card 'B' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 145,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 3,
+          "seriesDescription": "AL Wild Card Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-04",
+      "totalItems": 4,
+      "totalEvents": 0,
+      "totalGames": 4,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813047,
+          "gameGuid": "390e6924-36dc-4464-ac57-772ad2c94731",
+          "link": "/api/v1.1/game/813047/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-04T18:08:00Z",
+          "officialDate": "2025-10-04",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 9,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 32,
+            "name": "American Family Field",
+            "link": "/api/v1/venues/32"
+          },
+          "content": {
+            "link": "/api/v1/game/813047/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813047-2025-10-04",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NLDS 'A' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 1,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813063,
+          "gameGuid": "5b73310b-f18d-45ec-b7b0-956784a03c0b",
+          "link": "/api/v1.1/game/813063/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-04T20:08:00Z",
+          "officialDate": "2025-10-04",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 10,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813063/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813063-2025-10-04",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "ALDS 'A' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 1,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813051,
+          "gameGuid": "591246b3-fea5-49cf-b0ac-c36b66940594",
+          "link": "/api/v1.1/game/813051/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-04T22:38:00Z",
+          "officialDate": "2025-10-04",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 143,
+                "name": "Philadelphia Phillies",
+                "link": "/api/v1/teams/143"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 2681,
+            "name": "Citizens Bank Park",
+            "link": "/api/v1/venues/2681"
+          },
+          "content": {
+            "link": "/api/v1/game/813051/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813051-2025-10-04",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'B' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 1,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813058,
+          "gameGuid": "97a4f229-565c-4663-b3de-de2958dfb870",
+          "link": "/api/v1.1/game/813058/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-05T00:38:00Z",
+          "officialDate": "2025-10-04",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813058/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813058-2025-10-04",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALDS 'B' Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 1,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-05",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813062,
+          "gameGuid": "ca03936c-111d-4e4f-bb83-fc7e1aa80282",
+          "link": "/api/v1.1/game/813062/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-05T20:08:00Z",
+          "officialDate": "2025-10-05",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 7,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 13,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813062/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813062-2025-10-05",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "ALDS 'A' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 2,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813057,
+          "gameGuid": "c50f996f-5d3b-4940-9c7f-6dac679841e0",
+          "link": "/api/v1.1/game/813057/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-06T00:03:00Z",
+          "officialDate": "2025-10-05",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813057/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813057-2025-10-05",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALDS 'B' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 2,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-06",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813052,
+          "gameGuid": "d88f6617-78ad-47b1-bdf5-c61dbb8dff82",
+          "link": "/api/v1.1/game/813052/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-06T22:08:00Z",
+          "officialDate": "2025-10-06",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 143,
+                "name": "Philadelphia Phillies",
+                "link": "/api/v1/teams/143"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 2681,
+            "name": "Citizens Bank Park",
+            "link": "/api/v1/venues/2681"
+          },
+          "content": {
+            "link": "/api/v1/game/813052/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813052-2025-10-06",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'B' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 2,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813048,
+          "gameGuid": "eb48da86-59ef-4608-a5bb-dba9e32b671f",
+          "link": "/api/v1.1/game/813048/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-07T01:08:00Z",
+          "officialDate": "2025-10-06",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 7,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 32,
+            "name": "American Family Field",
+            "link": "/api/v1/venues/32"
+          },
+          "content": {
+            "link": "/api/v1/game/813048/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813048-2025-10-06",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'A' Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 2,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-07",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813056,
+          "gameGuid": "df3ca568-b723-453e-b7fa-2104fa0fe2ee",
+          "link": "/api/v1.1/game/813056/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-07T20:08:00Z",
+          "officialDate": "2025-10-07",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 8,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 4,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 2394,
+            "name": "Comerica Park",
+            "link": "/api/v1/venues/2394"
+          },
+          "content": {
+            "link": "/api/v1/game/813056/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813056-2025-10-07",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "ALDS 'B' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 3,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813061,
+          "gameGuid": "50c84fef-377d-4017-be35-c5c5c8065789",
+          "link": "/api/v1.1/game/813061/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-08T00:08:00Z",
+          "officialDate": "2025-10-07",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 6,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 9,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/813061/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813061-2025-10-07",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALDS 'A' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 3,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-08",
+      "totalItems": 4,
+      "totalEvents": 0,
+      "totalGames": 4,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813055,
+          "gameGuid": "9e608cee-f2ad-444d-9762-7192813a7a34",
+          "link": "/api/v1.1/game/813055/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-08T19:08:00Z",
+          "officialDate": "2025-10-08",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 9,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 2394,
+            "name": "Comerica Park",
+            "link": "/api/v1/venues/2394"
+          },
+          "content": {
+            "link": "/api/v1/game/813055/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813055-2025-10-08",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "ALDS 'B' Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 4,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813049,
+          "gameGuid": "b6eccae8-e54a-4965-b033-c2db6ac65182",
+          "link": "/api/v1.1/game/813049/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-08T21:08:00Z",
+          "officialDate": "2025-10-08",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 17,
+            "name": "Wrigley Field",
+            "link": "/api/v1/venues/17"
+          },
+          "content": {
+            "link": "/api/v1/game/813049/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813049-2025-10-08",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NLDS 'A' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 3,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813060,
+          "gameGuid": "4895b0bb-eef4-4633-9ddf-f57b9b5ddefd",
+          "link": "/api/v1.1/game/813060/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-08T23:08:00Z",
+          "officialDate": "2025-10-08",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".750"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".250"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/813060/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813060-2025-10-08",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALDS 'A' Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 4,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813041,
+          "gameGuid": "0159ed11-06f2-4222-80a7-cd383b4f1a47",
+          "link": "/api/v1.1/game/813041/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-09T01:08:00Z",
+          "officialDate": "2025-10-08",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 143,
+                "name": "Philadelphia Phillies",
+                "link": "/api/v1/teams/143"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 8,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813041/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813041-2025-10-08",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'B' Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 3,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-09",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813042,
+          "gameGuid": "2bcad792-e701-47b6-be24-c454f12aff13",
+          "link": "/api/v1.1/game/813042/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-09T22:08:00Z",
+          "officialDate": "2025-10-09",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 143,
+                "name": "Philadelphia Phillies",
+                "link": "/api/v1/teams/143"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".250"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 4
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".750"
+              },
+              "score": 2,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 4
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813042/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813042-2025-10-09",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NLDS 'B' Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 4,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813050,
+          "gameGuid": "f25593f9-5bc2-4bbb-8238-f3edb7b184bd",
+          "link": "/api/v1.1/game/813050/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-10T01:08:00Z",
+          "officialDate": "2025-10-09",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 0,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 17,
+            "name": "Wrigley Field",
+            "link": "/api/v1/venues/17"
+          },
+          "content": {
+            "link": "/api/v1/game/813050/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813050-2025-10-09",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'A' Game 4 ",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 4,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-10",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813054,
+          "gameGuid": "5f72c41d-6559-4fcc-ac61-5e3a545514e2",
+          "link": "/api/v1.1/game/813054/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-11T00:08:00Z",
+          "officialDate": "2025-10-10",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 116,
+                "name": "Detroit Tigers",
+                "link": "/api/v1/teams/116"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".400"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".600"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813054/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813054-2025-10-10",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALDS 'B' Game 5",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 5,
+          "seriesDescription": "AL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-11",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813046,
+          "gameGuid": "85a5e8ed-b84d-48b1-8512-fb3f07e469e7",
+          "link": "/api/v1.1/game/813046/feed/live",
+          "gameType": "D",
+          "season": "2025",
+          "gameDate": "2025-10-12T00:08:00Z",
+          "officialDate": "2025-10-11",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 112,
+                "name": "Chicago Cubs",
+                "link": "/api/v1/teams/112"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".400"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 3
+            },
+            "home": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".600"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 3
+            }
+          },
+          "venue": {
+            "id": 32,
+            "name": "American Family Field",
+            "link": "/api/v1/venues/32"
+          },
+          "content": {
+            "link": "/api/v1/game/813046/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813046-2025-10-11",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLDS 'A' Game 5",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 5,
+          "seriesGameNumber": 5,
+          "seriesDescription": "NL Division Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-12",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813040,
+          "gameGuid": "fb99d192-bf35-43fd-87ea-e59e90f1db16",
+          "link": "/api/v1.1/game/813040/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-13T00:03:00Z",
+          "officialDate": "2025-10-12",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813040/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813040-2025-10-12",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 1,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-13",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813044,
+          "gameGuid": "09c3f51c-e11d-459c-8f37-3dfe227425a2",
+          "link": "/api/v1.1/game/813044/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-13T21:03:00Z",
+          "officialDate": "2025-10-13",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 10,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813044/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813044-2025-10-13",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 2,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813036,
+          "gameGuid": "2616fd2f-53e9-4a23-90e5-8ebe481882cd",
+          "link": "/api/v1.1/game/813036/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-14T00:08:00Z",
+          "officialDate": "2025-10-13",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 2,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 32,
+            "name": "American Family Field",
+            "link": "/api/v1/venues/32"
+          },
+          "content": {
+            "link": "/api/v1/game/813036/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813036-2025-10-13",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLCS Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 1,
+          "seriesDescription": "NL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-14",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813034,
+          "gameGuid": "7569c2a1-4db4-4d5e-bf13-bfd43fbe025c",
+          "link": "/api/v1.1/game/813034/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-15T00:08:00Z",
+          "officialDate": "2025-10-14",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 32,
+            "name": "American Family Field",
+            "link": "/api/v1/venues/32"
+          },
+          "content": {
+            "link": "/api/v1/game/813034/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813034-2025-10-14",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLCS Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 2,
+          "seriesDescription": "NL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-15",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813043,
+          "gameGuid": "5dfe0d7e-a572-485b-be58-720eb70332fd",
+          "link": "/api/v1.1/game/813043/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-16T00:08:00Z",
+          "officialDate": "2025-10-15",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 13,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 4,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813043/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813043-2025-10-15",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 3,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-16",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813033,
+          "gameGuid": "b5055023-2e77-4540-9780-99f9d4a1b016",
+          "link": "/api/v1.1/game/813033/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-16T22:08:00Z",
+          "officialDate": "2025-10-16",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813033/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813033-2025-10-16",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "NLCS Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 3,
+          "seriesDescription": "NL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813035,
+          "gameGuid": "8422d819-fe44-455a-ad95-df133f722bad",
+          "link": "/api/v1.1/game/813035/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-17T00:33:00Z",
+          "officialDate": "2025-10-16",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 8,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813035/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813035-2025-10-16",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 4,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-17",
+      "totalItems": 2,
+      "totalEvents": 0,
+      "totalGames": 2,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813039,
+          "gameGuid": "64259e71-a012-4834-8dd3-f2fee799bf9d",
+          "link": "/api/v1.1/game/813039/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-17T22:08:00Z",
+          "officialDate": "2025-10-17",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".400"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".600"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 680,
+            "name": "T-Mobile Park",
+            "link": "/api/v1/venues/680"
+          },
+          "content": {
+            "link": "/api/v1/game/813039/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813039-2025-10-17",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "ALCS Game 5",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 5,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        },
+        {
+          "gamePk": 813031,
+          "gameGuid": "fd103759-d928-4c40-a7ee-88bb1a7d4ff4",
+          "link": "/api/v1.1/game/813031/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-18T00:38:00Z",
+          "officialDate": "2025-10-17",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 158,
+                "name": "Milwaukee Brewers",
+                "link": "/api/v1/teams/158"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 4,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 2
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 4,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 2
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813031/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813031-2025-10-17",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "NLCS Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 4,
+          "seriesDescription": "NL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-19",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813038,
+          "gameGuid": "b0e0ed2c-1df4-4755-8ff6-80f1d01a4293",
+          "link": "/api/v1.1/game/813038/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-20T00:03:00Z",
+          "officialDate": "2025-10-19",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813038/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813038-2025-10-19",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 6",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 6,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-20",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813037,
+          "gameGuid": "11233358-74ad-47ae-828d-3f025199e34a",
+          "link": "/api/v1.1/game/813037/feed/live",
+          "gameType": "L",
+          "season": "2025",
+          "gameDate": "2025-10-21T00:10:00Z",
+          "officialDate": "2025-10-20",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 136,
+                "name": "Seattle Mariners",
+                "link": "/api/v1/teams/136"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 4,
+                "ties": 0,
+                "pct": ".429"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 4,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".571"
+              },
+              "score": 4,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813037/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813037-2025-10-20",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "ALCS Game 7",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 7,
+          "seriesDescription": "AL Championship Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-24",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813027,
+          "gameGuid": "bf2011d0-67aa-41b5-8789-dbd87c74ea0b",
+          "link": "/api/v1.1/game/813027/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-10-25T00:00:00Z",
+          "officialDate": "2025-10-24",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".000"
+              },
+              "score": 4,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 0,
+                "ties": 0,
+                "pct": "1.000"
+              },
+              "score": 11,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813027/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813027-2025-10-24",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "World Series Game 1",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 1,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-25",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813026,
+          "gameGuid": "d6817775-be45-4d6f-b02c-28bde5658918",
+          "link": "/api/v1.1/game/813026/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-10-26T00:00:00Z",
+          "officialDate": "2025-10-25",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813026/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813026-2025-10-25",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "World Series Game 2",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 2,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-27",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813032,
+          "gameGuid": "d56cab71-5839-4a2c-ab4e-ecfbcb55721c",
+          "link": "/api/v1.1/game/813032/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-10-28T00:00:00Z",
+          "officialDate": "2025-10-27",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".333"
+              },
+              "score": 5,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 1,
+                "ties": 0,
+                "pct": ".667"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813032/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813032-2025-10-27",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "World Series Game 3",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 3,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-28",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813023,
+          "gameGuid": "8df855c5-238b-47b4-b019-f4f05455892a",
+          "link": "/api/v1.1/game/813023/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-10-29T00:00:00Z",
+          "officialDate": "2025-10-28",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 2,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813023/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813023-2025-10-28",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "World Series Game 4",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 4,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-29",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813022,
+          "gameGuid": "64e8fd6a-ef12-43ad-9d1e-261e7ddbe6c3",
+          "link": "/api/v1.1/game/813022/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-10-30T00:00:00Z",
+          "officialDate": "2025-10-29",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 2,
+                "ties": 0,
+                "pct": ".600"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".400"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 22,
+            "name": "Dodger Stadium",
+            "link": "/api/v1/venues/22"
+          },
+          "content": {
+            "link": "/api/v1/game/813022/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813022-2025-10-29",
+          "seasonDisplay": "2025",
+          "dayNight": "day",
+          "description": "World Series Game 5",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 5,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-10-31",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813025,
+          "gameGuid": "54300795-e8e4-4216-9839-7f66f2c96151",
+          "link": "/api/v1.1/game/813025/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-11-01T00:00:00Z",
+          "officialDate": "2025-10-31",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 3,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".500"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813025/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813025-2025-10-31",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "World Series Game 6",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 6,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2025-11-01",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 813024,
+          "gameGuid": "7ea8ca98-0eff-41ee-9a54-9ee5eb60941f",
+          "link": "/api/v1.1/game/813024/feed/live",
+          "gameType": "W",
+          "season": "2025",
+          "gameDate": "2025-11-02T00:00:00Z",
+          "officialDate": "2025-11-01",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 119,
+                "name": "Los Angeles Dodgers",
+                "link": "/api/v1/teams/119"
+              },
+              "leagueRecord": {
+                "wins": 4,
+                "losses": 3,
+                "ties": 0,
+                "pct": ".571"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 1
+            },
+            "home": {
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              },
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 4,
+                "ties": 0,
+                "pct": ".429"
+              },
+              "score": 4,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 1
+            }
+          },
+          "venue": {
+            "id": 14,
+            "name": "Rogers Centre",
+            "link": "/api/v1/venues/14"
+          },
+          "content": {
+            "link": "/api/v1/game/813024/content"
+          },
+          "isTie": false,
+          "isFeaturedGame": true,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-813024-2025-11-01",
+          "seasonDisplay": "2025",
+          "dayNight": "night",
+          "description": "World Series Game 7",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 175,
+          "gamesInSeries": 7,
+          "seriesGameNumber": 7,
+          "seriesDescription": "World Series",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    }
+  ]
+}

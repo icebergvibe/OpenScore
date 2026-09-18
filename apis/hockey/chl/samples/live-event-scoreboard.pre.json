@@ -1,0 +1,99 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "282628c3708fc7d1ce2d537d",
+    "_modifyDate": "2026-09-11T12:10:07.059Z",
+    "externalId": "3018",
+    "startDate": "2026-09-11T16:00:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "not-started",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/282628c3708fc7d1ce2d537d/bili-tygri-liberec-vs-herning-blue-fox",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "venue": {
+      "_type": "Corebine.Core.Sport.Arena",
+      "_entityId": "41eb4de512bd17d966b42ed5",
+      "name": "Home Credit Arena"
+    },
+    "stage": {
+      "_type": "Corebine.Core.Sport.Event.Stage",
+      "group": {
+        "order": 1,
+        "name": "Regular Season"
+      },
+      "round": {
+        "order": 3,
+        "name": "Game Day 3"
+      }
+    },
+    "teams": {
+      "home": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "865ec7e2959da256a2a97a8b",
+        "externalId": "3",
+        "name": "Bílí Tygři Liberec",
+        "shortName": "LIB",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+          "isWeb": false
+        }
+      },
+      "away": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "ef112cb0eed346d32a775fac",
+        "externalId": "109",
+        "name": "Herning Blue Fox",
+        "shortName": "HBF",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+          "isWeb": false
+        }
+      }
+    },
+    "state": {
+      "_type": "Corebine.Core.Sport.Event.State",
+      "name": "Before game",
+      "shortName": "BG"
+    },
+    "results": {
+      "_type": "Corebine.Core.Sport.Match.Results",
+      "scores": {
+        "_type": "Corebine.Core.Sport.Match.Scores",
+        "home": 0,
+        "away": 0
+      },
+      "periods": [
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "1st Period",
+          "shortName": "1st",
+          "status": "not-started",
+          "actions": []
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "2nd Period",
+          "shortName": "2nd",
+          "status": "not-started",
+          "actions": []
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "3rd Period",
+          "shortName": "3rd",
+          "status": "not-started",
+          "actions": []
+        }
+      ]
+    }
+  },
+  "errors": []
+}

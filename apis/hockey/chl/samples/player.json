@@ -1,0 +1,219 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Player",
+    "_entityId": "c0add44e7a2094c45b3e5fe9",
+    "externalId": "446173",
+    "firstName": "Roope",
+    "lastName": "Tossavainen",
+    "number": 72,
+    "source": {
+      "_type": "Corebine.Core.Feed.Sport",
+      "feedType": "player",
+      "competition": {
+        "_type": "Corebine.Core.Sport.Competition",
+        "_entityId": "21ec9dad81abe2e0240460d0",
+        "name": "Champions Hockey League"
+      },
+      "person": {
+        "_entityId": "c0add44e7a2094c45b3e5fe9",
+        "_type": "Corebine.Core.Sport.Player",
+        "firstName": "Roope",
+        "lastName": "Tossavainen"
+      },
+      "query": "player-21ec9dad81abe2e0240460d0-c0add44e7a2094c45b3e5fe9.json"
+    },
+    "nationality": {
+      "name": "Finland",
+      "code": "fin"
+    },
+    "position": {
+      "_type": "Corebine.Core.Sport.Athlete.Position",
+      "name": "Forward",
+      "shortName": "FW",
+      "category": "Forward",
+      "order": 1
+    },
+    "info": {
+      "_type": "Corebine.Core.Person.Info",
+      "properties": [
+        {
+          "_type": "Corebine.Core.Type.Property.Integer",
+          "name": "Height",
+          "shortName": "Ht",
+          "value": 181,
+          "units": "cm"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.Integer",
+          "name": "Weight",
+          "shortName": "Wt",
+          "value": 84,
+          "units": "kg"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Shoots",
+          "shortName": "Sht",
+          "value": "left",
+          "shortValue": "L"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.Date",
+          "name": "Birthday",
+          "shortName": "Bd",
+          "value": "2004-12-05T00:00:00.000Z"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.Country",
+          "name": "Nationality",
+          "shortName": "Nat",
+          "value": {
+            "name": "Finland",
+            "code": "fin"
+          }
+        }
+      ]
+    },
+    "team": {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "c9840a203093f97cae0a9495",
+      "externalId": "107",
+      "name": "KooKoo Kouvola",
+      "shortName": "KOO",
+      "country": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+        "isWeb": false
+      }
+    },
+    "stats": {
+      "_type": "Corebine.Core.Sport.Athlete.Stats",
+      "history": [
+        {
+          "_type": "Corebine.Core.Sport.Athlete.Stats",
+          "season": {
+            "_entityId": "fc954f6d33272fdf4a8b95bb",
+            "_type": "Corebine.Core.Sport.Season",
+            "name": "2026/27",
+            "year": 2026,
+            "startDate": "2026-05-10T00:00:00Z",
+            "endDate": "2027-05-31T00:00:00Z"
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "country": {
+              "name": "Finland",
+              "code": "fin"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          },
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Games Played",
+              "shortName": "GP",
+              "value": 3
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Goals",
+              "shortName": "G",
+              "value": 1
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Assists",
+              "shortName": "A",
+              "value": 1
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Points",
+              "shortName": "P",
+              "value": 2
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Number",
+              "name": "Expected Goals",
+              "shortName": "xG",
+              "value": 0.44
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty Infraction Minutes",
+              "shortName": "PIM",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Plus/Minus",
+              "shortName": "+/-",
+              "value": 3,
+              "units": "plus-minus"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Game Winning Goals",
+              "shortName": "GWG",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power Play Goals",
+              "shortName": "PPG",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Short Handed Goals",
+              "shortName": "SHG",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots on Goal",
+              "shortName": "SOG",
+              "value": 5
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Number",
+              "name": "Shot Percentage",
+              "shortName": "S%",
+              "value": 20,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Hits",
+              "shortName": "HITS",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Number",
+              "name": "Time On Ice per Game Played",
+              "shortName": "TOI/GP",
+              "value": 743,
+              "units": "sec"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errors": []
+}

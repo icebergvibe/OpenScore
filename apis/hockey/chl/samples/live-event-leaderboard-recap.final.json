@@ -1,0 +1,2118 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array.Group",
+  "data": [
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Points",
+      "shortName": "P",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "83506071d201df37c5d3ce7c",
+          "externalId": "4019",
+          "firstName": "Michal",
+          "lastName": "Krištof",
+          "number": 13,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "83506071d201df37c5d3ce7c",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Michal",
+              "lastName": "Krištof"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 6,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 2,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1254,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "3ccaaf357df53dd3d78a58bb",
+          "externalId": "446113",
+          "firstName": "Adrián",
+          "lastName": "Holešinský",
+          "number": 89,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "3ccaaf357df53dd3d78a58bb",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Adrián",
+              "lastName": "Holešinský"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-3ccaaf357df53dd3d78a58bb.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 2,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 2,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1009,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a6eec6c21183e460832775b5",
+          "externalId": "446100",
+          "firstName": "Marko",
+          "lastName": "Stacha",
+          "number": 16,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a6eec6c21183e460832775b5",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Marko",
+              "lastName": "Stacha"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 2,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 2,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1406,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 2,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Goals",
+      "shortName": "G",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "83506071d201df37c5d3ce7c",
+          "externalId": "4019",
+          "firstName": "Michal",
+          "lastName": "Krištof",
+          "number": 13,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "83506071d201df37c5d3ce7c",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Michal",
+              "lastName": "Krištof"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 6,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 2,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1254,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "29931aa82767ac7ceedd4df5",
+          "externalId": "446114",
+          "firstName": "Jakub",
+          "lastName": "Lacka",
+          "number": 39,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "29931aa82767ac7ceedd4df5",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Jakub",
+              "lastName": "Lacka"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-29931aa82767ac7ceedd4df5.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 1,
+                "description": "Point"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 3,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 1,
+                "description": "Goal"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 947,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "5e845301691d697d0ca06069",
+          "externalId": "446106",
+          "firstName": "Ondrej",
+          "lastName": "Molnár",
+          "number": 96,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "5e845301691d697d0ca06069",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Ondrej",
+              "lastName": "Molnár"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-5e845301691d697d0ca06069.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 1,
+                "description": "Point"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 1,
+                "description": "Shot"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 1,
+                "description": "Goal"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 656,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Shots On Goal",
+      "shortName": "SOG",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "83506071d201df37c5d3ce7c",
+          "externalId": "4019",
+          "firstName": "Michal",
+          "lastName": "Krištof",
+          "number": 13,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "83506071d201df37c5d3ce7c",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Michal",
+              "lastName": "Krištof"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 6,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 2,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1254,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "c3557b6652c8acdfec41b846",
+          "externalId": "446103",
+          "firstName": "Zach",
+          "lastName": "Osburn",
+          "number": 44,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "c3557b6652c8acdfec41b846",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Zach",
+              "lastName": "Osburn"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-c3557b6652c8acdfec41b846.json"
+          },
+          "nationality": {
+            "name": "USA",
+            "code": "usa"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 5,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1116,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a5347fea53e0721cc7f9c1fc",
+          "externalId": "3904",
+          "firstName": "Matej",
+          "lastName": "Paulovič",
+          "number": 67,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a5347fea53e0721cc7f9c1fc",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Matej",
+              "lastName": "Paulovič"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a5347fea53e0721cc7f9c1fc.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 4,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1363,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Time On Ice",
+      "shortName": "TOI/GP",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a99e821f5f87fff68677ecdd",
+          "externalId": "4667",
+          "firstName": "Jiri",
+          "lastName": "Pärssinen",
+          "number": 7,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a99e821f5f87fff68677ecdd",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Jiri",
+              "lastName": "Pärssinen"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a99e821f5f87fff68677ecdd.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 3,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1623,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "59d3e26aaeace58ecd9f1711",
+          "externalId": "444922",
+          "firstName": "Arttu",
+          "lastName": "Pelli",
+          "number": 3,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "59d3e26aaeace58ecd9f1711",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Arttu",
+              "lastName": "Pelli"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-59d3e26aaeace58ecd9f1711.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 2,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1506,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": -1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "479f48873014bb1d780404ef",
+          "externalId": "446169",
+          "firstName": "Aleksi",
+          "lastName": "Pakaslahti",
+          "number": 8,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "479f48873014bb1d780404ef",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Aleksi",
+              "lastName": "Pakaslahti"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-479f48873014bb1d780404ef.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1423,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": -1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Plus/Minus",
+      "shortName": "+/-",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a6eec6c21183e460832775b5",
+          "externalId": "446100",
+          "firstName": "Marko",
+          "lastName": "Stacha",
+          "number": 16,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a6eec6c21183e460832775b5",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Marko",
+              "lastName": "Stacha"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 2,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 2,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 2,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1406,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 2,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "dfb8af1c5619f9024f00e827",
+          "externalId": "446102",
+          "firstName": "Martin",
+          "lastName": "Vitaloš",
+          "number": 17,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "dfb8af1c5619f9024f00e827",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Martin",
+              "lastName": "Vitaloš"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-dfb8af1c5619f9024f00e827.json"
+          },
+          "nationality": {
+            "name": "Slovakia",
+            "code": "svk"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 1,
+                "description": "Point"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 1,
+                "description": "Shot"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 1,
+                "description": "Assist"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1223,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 2,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 0,
+                "description": "Hits"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "11df2073083f06cccbb5132e",
+            "externalId": "55",
+            "name": "HK Nitra",
+            "shortName": "NIT",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "108b8e4e8c52400e670f1443",
+          "externalId": "446164",
+          "firstName": "Verner",
+          "lastName": "Miettinen",
+          "number": 9,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "108b8e4e8c52400e670f1443",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Verner",
+              "lastName": "Miettinen"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-108b8e4e8c52400e670f1443.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 1,
+                "description": "Point"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 1,
+                "description": "Assist"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 820,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Hits",
+      "shortName": "HITS",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "108b8e4e8c52400e670f1443",
+          "externalId": "446164",
+          "firstName": "Verner",
+          "lastName": "Miettinen",
+          "number": 9,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "108b8e4e8c52400e670f1443",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Verner",
+              "lastName": "Miettinen"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-108b8e4e8c52400e670f1443.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 1,
+                "description": "Point"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 1,
+                "description": "Assist"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 820,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a99e821f5f87fff68677ecdd",
+          "externalId": "4667",
+          "firstName": "Jiri",
+          "lastName": "Pärssinen",
+          "number": 7,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a99e821f5f87fff68677ecdd",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Jiri",
+              "lastName": "Pärssinen"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a99e821f5f87fff68677ecdd.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Defenceman",
+            "shortName": "DE",
+            "category": "Defenceman",
+            "order": 2
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 3,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 1623,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": 0,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "0402ea737a44a7c76bc9512e",
+          "externalId": "446159",
+          "firstName": "Matěj",
+          "lastName": "Bělohlav",
+          "number": 89,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "0402ea737a44a7c76bc9512e",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Matěj",
+              "lastName": "Bělohlav"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-0402ea737a44a7c76bc9512e.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 0,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Forward",
+            "shortName": "FW",
+            "category": "Forward",
+            "order": 1
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 1,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Points",
+                "shortName": "P",
+                "value": 0,
+                "description": "Points"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 3,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Goals",
+                "shortName": "G",
+                "value": 0,
+                "description": "Goals"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Assists",
+                "shortName": "A",
+                "value": 0,
+                "description": "Assists"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Time On Ice",
+                "shortName": "TOI/GP",
+                "value": 814,
+                "units": "sec",
+                "description": "Minutes"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Plus/Minus",
+                "shortName": "+/-",
+                "value": -1,
+                "units": "plus-minus",
+                "description": ""
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Hits",
+                "shortName": "HITS",
+                "value": 1,
+                "description": "Hit"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "c9840a203093f97cae0a9495",
+            "externalId": "107",
+            "name": "KooKoo Kouvola",
+            "shortName": "KOO",
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+              "isWeb": false
+            }
+          }
+        }
+      ],
+      "season": {
+        "_entityId": "fc954f6d33272fdf4a8b95bb",
+        "_type": "Corebine.Core.Sport.Season",
+        "name": "2026/27",
+        "year": 2026,
+        "startDate": "2026-05-10T00:00:00Z",
+        "endDate": "2027-05-31T00:00:00Z"
+      }
+    }
+  ],
+  "errors": []
+}

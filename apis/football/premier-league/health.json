@@ -1,0 +1,326 @@
+{
+  "league": "premier-league",
+  "name": "Premier League",
+  "baseUrl": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api",
+  "checks": [
+    {
+      "name": "v1/…/matchweeks/{n}/matches — final",
+      "path": "/v1/competitions/8/seasons/2026/matchweeks/3/matches",
+      "sample": "matchweek-matches.final.json",
+      "keys": [
+        "data[].matchId",
+        "data[].period",
+        "data[].homeTeam",
+        "pagination"
+      ]
+    },
+    {
+      "name": "v1/…/matchweeks/{n}/matches — pre",
+      "path": "/v1/competitions/8/seasons/2026/matchweeks/4/matches",
+      "sample": "matchweek-matches.pre.json",
+      "keys": [
+        "data[].matchId",
+        "data[].kickoff"
+      ]
+    },
+    {
+      "name": "v2/matches",
+      "path": "/v2/matches?competition=8&season=2026",
+      "sample": "matches.json",
+      "keys": [
+        "data[].matchId",
+        "pagination"
+      ]
+    },
+    {
+      "name": "v2/matches — kickoff range",
+      "path": "/v2/matches?competition=8&season=2026&kickoff%3E{today}&kickoff%3C{today+1}&_limit=100",
+      "sample": "matches-daterange.json",
+      "note": "Empty on a day without matches"
+    },
+    {
+      "name": "v2/matches — team",
+      "path": "/v2/matches?competition=8&season=2026&team=3&_limit=5",
+      "sample": "matches-team.json",
+      "keys": [
+        "data[].matchId"
+      ]
+    },
+    {
+      "name": "v2/matches — period",
+      "path": "/v2/matches?competition=8&season=2026&period=FullTime&_limit=5",
+      "sample": "matches-period.json",
+      "keys": [
+        "data[].period"
+      ]
+    },
+    {
+      "name": "v2/matches/{id} — final",
+      "path": "/v2/matches/2645215",
+      "sample": "match.final.json",
+      "keys": [
+        "matchId",
+        "period",
+        "homeTeam",
+        "awayTeam",
+        "kickoff",
+        "clock"
+      ]
+    },
+    {
+      "name": "v2/matches/{id} — pre",
+      "path": "/v2/matches/2645225",
+      "sample": "match.pre.json",
+      "keys": [
+        "matchId",
+        "period"
+      ]
+    },
+    {
+      "name": "v2/matches/{id} — unknown → 404",
+      "path": "/v2/matches/1",
+      "status": [
+        404
+      ],
+      "sample": "match.404.json",
+      "depth": 0
+    },
+    {
+      "name": "v1/matches/{id}/timeline — final",
+      "path": "/v1/matches/2645215/timeline",
+      "sample": "timeline.final.json",
+      "keys": [
+        "[].eventType",
+        "[].minutes",
+        "[].teamId"
+      ]
+    },
+    {
+      "name": "v1/matches/{id}/timeline — pre",
+      "path": "/v1/matches/2645225/timeline",
+      "sample": "timeline.pre.json"
+    },
+    {
+      "name": "v1/matches/{id}/events — final",
+      "path": "/v1/matches/2645215/events",
+      "sample": "events.final.json"
+    },
+    {
+      "name": "v1/matches/{id}/events — pre",
+      "path": "/v1/matches/2645225/events",
+      "sample": "events.pre.json"
+    },
+    {
+      "name": "v3/matches/{id}/lineups — final",
+      "path": "/v3/matches/2645215/lineups",
+      "sample": "lineups.final.json",
+      "keys": [
+        "home_team",
+        "away_team"
+      ]
+    },
+    {
+      "name": "v3/matches/{id}/lineups — pre",
+      "path": "/v3/matches/2645225/lineups",
+      "sample": "lineups.pre.json"
+    },
+    {
+      "name": "v3/matches/{id}/stats",
+      "path": "/v3/matches/2645215/stats",
+      "sample": "stats.final.json"
+    },
+    {
+      "name": "v1/matches/{id}/momentum",
+      "path": "/v1/matches/2645215/momentum",
+      "sample": "momentum.final.json"
+    },
+    {
+      "name": "v2/matches/{id}/commentary",
+      "path": "/v2/matches/2645215/commentary?lang=en",
+      "sample": "commentary.final.json"
+    },
+    {
+      "name": "v1/matches/{id}/officials",
+      "path": "/v1/matches/2645215/officials",
+      "sample": "officials.final.json"
+    },
+    {
+      "name": "v2/matches/{id}/preview",
+      "path": "/v2/matches/2645225/preview",
+      "sample": "preview.pre.json"
+    },
+    {
+      "name": "v5/…/standings",
+      "path": "/v5/competitions/8/seasons/2026/standings",
+      "sample": "standings.json",
+      "keys": [
+        "tables",
+        "season",
+        "matchweek"
+      ]
+    },
+    {
+      "name": "v5/…/matchweeks/{n}/standings",
+      "path": "/v5/competitions/8/seasons/2026/matchweeks/3/standings",
+      "sample": "standings-matchweek.json",
+      "keys": [
+        "tables"
+      ]
+    },
+    {
+      "name": "v1/…/teamform",
+      "path": "/v1/competitions/8/seasons/2026/teamform",
+      "sample": "teamform.json"
+    },
+    {
+      "name": "v1/…/teams",
+      "path": "/v1/competitions/8/seasons/2026/teams?_limit=30",
+      "sample": "teams.json",
+      "keys": [
+        "data[].id",
+        "data[].name"
+      ]
+    },
+    {
+      "name": "v2/teams/{id}",
+      "path": "/v2/teams/3",
+      "sample": "team.json",
+      "keys": [
+        "id",
+        "name",
+        "shortName",
+        "abbr"
+      ]
+    },
+    {
+      "name": "v2/teams-by-id",
+      "path": "/v2/teams-by-id?id=3,8",
+      "sample": "teams-by-id.json"
+    },
+    {
+      "name": "v2/…/teams/{id}/squad",
+      "path": "/v2/competitions/8/seasons/2026/teams/3/squad",
+      "sample": "squad.json",
+      "keys": [
+        "players[]",
+        "team"
+      ]
+    },
+    {
+      "name": "v1/players/{id}/basic",
+      "path": "/v1/players/219847/basic",
+      "sample": "player-basic.json",
+      "keys": [
+        "id",
+        "name",
+        "position",
+        "currentTeam"
+      ]
+    },
+    {
+      "name": "v1/…/playerinfo/{id}",
+      "path": "/v1/competitions/8/seasons/2026/playerinfo/219847",
+      "sample": "playerinfo.json"
+    },
+    {
+      "name": "v1/players/{id}",
+      "path": "/v1/players/219847",
+      "sample": "player.json"
+    },
+    {
+      "name": "v1/players/{id}/career",
+      "path": "/v1/players/219847/career",
+      "sample": "player-career.json"
+    },
+    {
+      "name": "v2/players-by-id",
+      "path": "/v2/players-by-id?id=219847",
+      "sample": "players-by-id.json"
+    },
+    {
+      "name": "v2/…/players/{id}/stats",
+      "path": "/v2/competitions/8/seasons/2026/players/219847/stats",
+      "sample": "player-season-stats.json"
+    },
+    {
+      "name": "v1/…/players/{id}/matches/all",
+      "path": "/v1/competitions/8/seasons/2026/players/219847/matches/all",
+      "sample": "player-matches.json"
+    },
+    {
+      "name": "v1/…/players?_limit",
+      "path": "/v1/competitions/8/seasons/2026/players?_limit=5",
+      "sample": "players-season.json",
+      "keys": [
+        "data[]",
+        "pagination"
+      ]
+    },
+    {
+      "name": "v3/…/players/stats/leaderboard",
+      "path": "/v3/competitions/8/seasons/2026/players/stats/leaderboard?_sort=goals:desc&_limit=5",
+      "sample": "leaderboard.json",
+      "keys": [
+        "data[]"
+      ]
+    },
+    {
+      "name": "v2/competitions/8/details",
+      "path": "/v2/competitions/8/details",
+      "sample": "competition-details.json",
+      "keys": [
+        "seasons[]"
+      ]
+    },
+    {
+      "name": "v1/…/structure",
+      "path": "/v1/competitions/8/seasons/2026/structure",
+      "sample": "structure.json"
+    },
+    {
+      "name": "v1/…/teams/{id}/form",
+      "path": "/v1/competitions/8/seasons/2026/teams/3/form",
+      "sample": "team-form.json"
+    },
+    {
+      "name": "v1/…/teams/{id}/nextfixture",
+      "path": "/v1/competitions/8/seasons/2026/teams/3/nextfixture",
+      "sample": "team-nextfixture.json"
+    },
+    {
+      "name": "v2/…/teams/{id}/stats",
+      "path": "/v2/competitions/8/seasons/2026/teams/3/stats",
+      "sample": "team-season-stats.json"
+    },
+    {
+      "name": "v2/…/teams/{a}/headtohead/{b}",
+      "path": "/v2/competitions/8/teams/3/headtohead/8",
+      "sample": "headtohead.json"
+    },
+    {
+      "name": "v1/…/meetings/{a}/{b}",
+      "path": "/v1/competitions/8/meetings/3/8",
+      "sample": "meetings.json"
+    },
+    {
+      "name": "v2/…/teams/stats/leaderboard",
+      "path": "/v2/competitions/8/teams/stats/leaderboard?_sort=goals:desc",
+      "sample": "team-leaderboard.json"
+    },
+    {
+      "name": "v1/…/managers",
+      "path": "/v1/competitions/8/seasons/2026/managers",
+      "sample": "managers.json"
+    },
+    {
+      "name": "legacy footballapi fixtures",
+      "url": "https://footballapi.pulselive.com/football/fixtures?comps=1&pageSize=2&statuses=C&sort=desc&altIds=true",
+      "sample": "legacy-fixtures.json",
+      "keys": [
+        "content[]",
+        "pageInfo"
+      ],
+      "note": "Retired site's API, kept as a clock fallback"
+    }
+  ]
+}

@@ -1,0 +1,1162 @@
+# Introspected from https://gql.sportomedia.se/graphql on 2026-09-12 (117 types). Regenerate with a standard introspection query; see README "Transport".
+
+type LeaderPlayer {
+  id: Int
+  smcId: Int
+  fogisId: Int
+  givenName: String
+  surName: String
+  displayName: String
+  image: String
+  teamName: String
+  teamAbbrv: String
+  statsValue: Int
+  matchesPlayed: Int
+  toplistNumber: Int
+  number: Int
+}
+
+type Leaders {
+  type: String
+  leaders: [LeaderPlayer]
+}
+
+type LineupPlayer {
+  id: Int
+  displayName: String
+  givenName: String
+  surName: String
+  shirtNumber: Int
+  hasBeenSubstituted: Boolean
+  hasScored: Boolean
+  hasWarning: Boolean
+  hasRedCard: Boolean
+  image: String
+  position: String
+  positionIndexFromBackRight: Int
+  maxSpeed: Float
+  sprints: Int
+  sprintDistance: Float
+  highIntensityRuns: Int
+  highIntensityRunDistance: Float
+  midIntensityRuns: Int
+  midIntensityRunDistance: Float
+  lowIntensityRuns: Int
+  lowIntensityRunDistance: Float
+  shotsOnTarget: Int
+  shotsOffTarget: Int
+  receivedFreeKicks: Int
+  givenFreeKicks: Int
+  savedShots: Int
+  savePercentage: Float
+  distance: Float
+  positionText: String
+}
+
+type TeamLineup {
+  abbrv: String
+  formation: String
+  starting: [LineupPlayer]
+  substitutes: [LineupPlayer]
+}
+
+type Lineups {
+  homeTeam: TeamLineup
+  visitingTeam: TeamLineup
+}
+
+type PeriodStats {
+  homeTeamYellowCards: Int
+  homeTeamRedCards: Int
+  visitingTeamYellowCards: Int
+  visitingTeamRedCards: Int
+  homeTeamShotsOnTarget: Int
+  visitingTeamShotsOnTarget: Int
+  homeTeamPossesion: Float
+  visitingTeamPossesion: Float
+  homeTeamShotsOffTarget: Int
+  visitingTeamShotsOffTarget: Int
+  homeTeamShots: Int
+  visitingTeamShots: Int
+  homeTeamSubstitutions: Int
+  visitingTeamSubstitutions: Int
+  homeTeamOffsides: Int
+  visitingTeamOffsides: Int
+  homeTeamDistance: Int
+  visitingTeamDistance: Int
+  homeTeamCorners: Int
+  visitingTeamCorners: Int
+}
+
+type MatchStats {
+  id: Int
+  firstPeriodStats: PeriodStats
+  secondPeriodStats: PeriodStats
+  totalStats: PeriodStats
+}
+
+type MatchUpMatch {
+  id: Int
+  fogisId: Int
+  everysportId: Int
+  smcId: Int
+  date: String
+  configLeagueName: String
+  configSeasonStartYear: Int
+  round: Int
+  homeTeamName: String
+  visitingTeamName: String
+  smcHomeTeamId: Int
+  smcVisitingTeamId: Int
+  everysportHomeTeamId: Int
+  everysportVisitingTeamId: Int
+  homeTeamScore: Int
+  visitingTeamScore: Int
+}
+
+type MatchUp {
+  homeTeamName: String
+  visitingTeamName: String
+  matches: [MatchUpMatch]
+}
+
+type GameStats {
+  goals: Int
+  assists: Int
+  yellowCards: Int
+  redCards: Int
+  matchesPlayed: Int
+  matchesStarted: Int
+  matchesSubstituted: Int
+}
+
+type PlayerStats {
+  id: String
+  configLeagueName: String
+  configSeasonStartYear: Int
+  competitionDisplayName: String
+  teamName: String
+  source: String
+  gameStats: GameStats
+}
+
+type Player {
+  givenName: String
+  surName: String
+  displayName: String
+  image: String
+  nationality: String
+  birthDate: String
+  weight: Int
+  height: Int
+  instagram: String
+  facebook: String
+  twitter: String
+  isGoalkeeper: Boolean
+  youthClub: String
+  position: String
+  stats: [PlayerStats]
+  currentSeasonStats: PlayerCurrentSeasonStats
+  shirtNumber: Int
+  teamLogo: String
+}
+
+type PlayerCurrentSeasonStats {
+  matchesPlayed: Int
+  goals: Int
+  assists: Int
+  yellowCards: Int
+  redCards: Int
+  matchesStarted: Int
+  configSeasonStartYear: Int
+  configLeagueName: String
+  competitionDisplayName: String
+  teamName: String
+}
+
+scalar DateTime
+
+scalar JSON
+
+type Query {
+  matchStats(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): MatchStats
+  matchUp(homeTeamName: String, visitingTeamName: String): MatchUp
+  lineups(configLeagueName: String!, configSeasonStartYear: Int!, id: Int!): Lineups
+  player(id: Int): Player
+  leaders(configLeagueName: String!, configSeasonStartYear: Int!, type: String!, abbrv: String): Leaders
+  squad(abbrv: String, configSeasonStartYear: Int): Squad
+  standingsForTeam(teamAbbrv: String, configSeasonStartYear: Int, type: String): Standings
+  standingsForLeague(configLeagueName: String, configSeasonStartYear: Int, type: String): Standings
+  matchesForTeam(abbrv: String!, configSeasonStartYear: Int!, startDate: String, endDate: String): Matches
+  matchesForLeague(configLeagueName: String!, configSeasonStartYear: Int!, startDate: String, endDate: String): Matches
+  match(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): MatchDetails
+  teamsForLeague(configLeagueName: String, configSeasonStartYear: Int): Teams
+  team(abbrv: String): Team
+  teamNews(abbrv: String, limit: Int): News
+  leagueNews(configLeagueName: String, limit: Int): News
+  playerCurrentSeasonStats(id: Int, season: Int): PlayerCurrentSeasonStats
+  latestHighlightsFromMatches(configLeagueName: String, configSeasonStartYear: Int, team: String, type: String): LatestHighlightsFromMatches
+  matchCardForTeam(team: String): MatchCardForTeam
+  teamLogos(ids: [String]): TeamLogos
+  teamStaff(abbrv: String, configSeasonStartYear: Int): TeamStaff
+  teamsAppConfig: [TeamAppConfig]!
+  teamForm(abbrv: String!, limit: Int!): [TeamFormMatch]!
+  matchConfig(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): MatchConfig!
+  poll(id: String!): Poll
+  activePolls(abbrv: String!, types: [PollType!]): [Poll!]!
+  contentReactions(contentId: String!, contentType: String!): [ContentReaction!]!
+  contentReactionCount(contentId: String!, contentType: String!): Int!
+  comments(contentId: String, contentType: String, abbrv: String): [Comment!]!
+  commentCount(contentId: String!, contentType: String!): Int!
+  engagement(abbrv: String!): [Engagement!]!
+  countedVotes(id: String!, onlyVotesOnWinner: Boolean!): [CountedPersonVote]
+  stories(abbrv: String!, limit: Int!): [Stories!]!
+  quizResult(quizId: String!): [QuizResult]
+  fotbollPlayVideos(channels: [Int]!, category: String, includeVideosFromProducts: [String]!, page: Int!): FotbollPlayVideos
+  ticketConfig(abbrv: String!): TicketConfig
+  affiliateLinks(abbrv: String!): AffiliateLinks
+  appPromos(abbrv: String): [AppPromo]
+  appTheme(abbrv: String): AppTheme
+  fotbollPlayMatchEventVideos(team: String, type: String, page: Int!): FotbollPlayMatchEventVideos
+  article(id: String!): EditorialArticle
+  articles(abbrv: String!): [EditorialArticle!]!
+  onboarding(abbrv: String!): Onboarding
+  seasons(configLeagueName: String!, sort: String): [Season]
+  valuestats(configLeagueName: String!, configSeasonStartYear: Int!, homeTeamUnibetId: Int!, visitingTeamUnibetId: Int!, favoriteTeamUnibetId: Int!): Valuestats
+  statistics(configLeagueName: String!, configSeasonStartYear: Int!): Statistics
+  fotbollPlayConfig(abbrv: String!): FotbollPlayConfig
+  officialHighlightsReels(configLeagueName: String!, configSeasonStartYear: Int!): [OfficialHighlightsReel]
+  fotbollPlaySceneConfig(abbrv: String!): FotbollPlaySceneConfig
+  announcements(abbrv: String): [Announcement]
+  faq: FAQ
+}
+
+type Mutation {
+  commentHide(id: Int!, hide: Boolean!): Comment
+}
+
+type SquadPlayer {
+  birthDate: String
+  displayName: String
+  fogisId: Int
+  givenName: String
+  surName: String
+  weight: Int
+  height: Int
+  instagram: String
+  facebook: String
+  twitter: String
+  id: Int
+  isGoalkeeper: Boolean
+  youthClub: String
+  nationality: String
+  image: String
+  shirtNumber: Int
+  position: String
+  smcId: Int
+  teamAbbrv: String
+  teamName: String
+  currentSeasonStats: PlayerCurrentSeasonStats
+}
+
+type Squad {
+  goalkeepers: [SquadPlayer]
+  defenders: [SquadPlayer]
+  midfields: [SquadPlayer]
+  forwards: [SquadPlayer]
+}
+
+type Stats {
+  name: String
+  value: String
+}
+
+type StandingsForm {
+  configLeagueName: String
+  configSeasonStartYear: Int
+  homeTeamAbbrv: String
+  homeTeamDisplayName: String
+  homeTeamName: String
+  homeTeamScore: Int
+  id: Int
+  matchResult: String
+  round: Int
+  startDate: String
+  visitingTeamAbbrv: String
+  visitingTeamDisplayName: String
+  visitingTeamName: String
+  visitingTeamScore: Int
+}
+
+type StandingsRow {
+  borderType: String
+  id: String
+  teamName: String
+  position: Int
+  previousPosition: Int
+  stats: [Stats]
+  teamAbbrv: String
+  teamId: Int
+  form: [StandingsForm]
+  officialAbbrv: String
+  logoImageUrl: String
+}
+
+type Standings {
+  type: String
+  standings: [StandingsRow]
+}
+
+enum MatchStatus {
+  UPCOMING
+  FINISHED
+  ONGOING
+  INTERRUPTED
+  POSTPONED
+}
+
+enum MatchExtendedStatus {
+  POSTPONED
+  UPCOMING
+  UPCOMING_STARTING_SOON
+  UPCOMING_STARTING
+  ONGOING
+  INTERRUPTED
+  FINISHED_RECENTLY
+  FINISHED
+  CANCELED
+}
+
+enum MatchPeriods {
+  PERIOD_FIRST_HALF
+  PERIOD_SECOND_HALF
+  PERIOD_FIRST_OVERTIME
+  PERIOD_SECOND_OVERTIME
+  PERIOD_PENALTIES
+}
+
+type MinimizedMatch {
+  id: Int!
+  startDate: String!
+  homeTeamName: String!
+  visitingTeamName: String!
+  homeTeamScore: Int!
+  visitingTeamScore: Int!
+  status: MatchStatus!
+  extendedStatus: MatchExtendedStatus!
+  period: MatchPeriods
+  round: Int
+  configLeagueName: String!
+  homeTeamAbbrv: String!
+  visitingTeamAbbrv: String!
+  leagueName: String!
+  matchMinute: Int
+  everySportId: Int
+  fogisId: Int
+  homeTeamEverySportId: Int
+  homeTeamFogisId: Int
+  visitingTeamEverySportId: Int
+  visitingTeamFogisId: Int
+  homeTeamNameFormatted: String!
+  visitingTeamNameFormatted: String!
+  cacheVersion: String!
+  arenaName: String
+  configSeasonStartYear: Int
+}
+
+type Matches {
+  matches: [MinimizedMatch]
+}
+
+type MatchVideo {
+  creatorName: String
+  date: String
+  description: String
+  duration: String
+  id: String
+  isAvailablePublicly: Boolean
+  isLive: Boolean
+  streamUrl: String
+  thumbnail: String
+  webUrl: String
+}
+
+type MatchEvent {
+  type: String
+  typeString: String
+  gameTime: Int
+  period: String
+  description: String
+  teamName: String
+  playerName: String
+  homeTeamScore: Int
+  homeTeamPeriodScore: Int
+  visitingTeamScore: Int
+  visitingTeamPeriodScore: Int
+  byHomeTeam: Boolean
+  source: String
+  key: String
+  pushHash: String
+  isPrivate: Boolean
+  rating: Int
+  minuteWithStoppageTime: String
+  inPlayerName: String
+  outPlayerName: String
+  assistPlayerName: String
+  assistPlayerId: Int
+  video: MatchVideo
+}
+
+type FutsalLineupPlayer {
+  id: Int
+  configLeagueName: String
+  configLeagueStartYear: Int
+  fogisId: Int
+  number: Int
+  givenName: String
+  surName: String
+  position: String
+  isCaptain: Boolean
+  isGoalkeeper: Boolean
+  goals: Int
+  assists: Int
+  shots: Int
+  shotsOnGoal: Int
+  freekicksAwarded: Int
+  freekicksAgainst: Int
+  bookings: Int
+  redCard: Int
+  substitution: Int
+  shotsPost: Int
+  goalsNormal: Int
+  goalsPenalty: Int
+  goalsCorner: Int
+  goalsFreekick: Int
+  offsides: Int
+  penaltiesAwarded: Int
+  penaltiesAgainst: Int
+  imageFull750: String
+  imageHalf200: String
+}
+
+type FutsalLineup {
+  formationDescription: String
+  formationId: Int
+  starting: [FutsalLineupPlayer]
+  substitutes: [FutsalLineupPlayer]
+}
+
+type Match {
+  id: Int!
+  startDate: String!
+  homeTeamName: String!
+  visitingTeamName: String!
+  homeTeamScore: Int!
+  visitingTeamScore: Int!
+  status: MatchStatus!
+  extendedStatus: MatchExtendedStatus!
+  period: MatchPeriods
+  round: Int
+  configLeagueName: String!
+  homeTeamAbbrv: String!
+  visitingTeamAbbrv: String!
+  homeTeamLogo: String
+  visitingTeamLogo: String
+  leagueName: String!
+  matchMinute: Int!
+  matchMinuteWithStoppageTime: String!
+  everySportId: Int
+  fogisId: Int
+  homeTeamEverySportId: Int
+  homeTeamFogisId: Int
+  visitingTeamEverySportId: Int
+  visitingTeamFogisId: Int
+  homeTeamNameFormatted: String!
+  visitingTeamNameFormatted: String!
+  cacheVersion: String!
+  arenaName: String
+  matchEvents: [MatchEvent]
+  isAvailablePublicly: Boolean
+  homeTeamLineup: FutsalLineup
+  visitingTeamLineup: FutsalLineup
+  referees: [String]!
+  spectators: Int!
+}
+
+type MatchDetails {
+  match: Match
+}
+
+type Arena {
+  built: Int
+  name: String
+  spectators: Int
+  originalImageUrl: String
+}
+
+type Link {
+  imageUrl: String
+  targetUrl: String
+}
+
+type InfoRow {
+  name: String
+  value: String
+}
+
+type Team {
+  abbrv: String
+  everySportId: Int
+  fogisId: Int
+  gender: String
+  sport: String
+  logoImageUrl: String
+  displayName: String
+  smcId: Int
+  name: String
+  topbarLogoImageUrl: String
+  arena: Arena
+  ticketType: String
+  squadImage: String
+  links: [Link]
+  info: [InfoRow]
+}
+
+type Teams {
+  configLeagueName: String
+  configSeasonStartYear: Int
+  teams: [Team]
+}
+
+type Article {
+  title: String
+  everySportId: Int
+  abbrv: String
+  teamName: String
+  articleUrl: String
+  configLeagueName: String
+  image: String
+  description: String
+  dateTime: String
+  logoImageUrl: String
+  iconUrl: String
+  id: String
+}
+
+type News {
+  news: [Article]
+}
+
+type HighlightVideo {
+  id: String
+  matchId: Int
+  minuteWithStoppageTime: String
+  homeTeamName: String
+  visitingTeamName: String
+  isAvailablePublicly: Boolean
+  thumbnail: String
+  videoUrl: String
+  streamUrl: String
+  duration: String
+  date: String
+  type: String
+  typeAsText: String
+  title: String
+  description: String
+}
+
+type LatestHighlightsFromMatches {
+  videos: [HighlightVideo]
+}
+
+type FotbollPlayVideo {
+  id: String
+  isAvailablePublicly: Boolean
+  thumbnail: String
+  description: String
+  date: String
+  durationInMs: String
+  rating: Int
+  videoUrl: String
+  webviewUrl: String
+  viewCount: Int
+  channels: [Int]
+  products: [String]
+  category: String
+  isPaymentRequired: Boolean
+  durationAsText: String
+  channelName: String
+}
+
+type FotbollPlayHeroVideo {
+  id: String
+  isAvailablePublicly: Boolean
+  thumbnail: String
+  description: String
+  date: String
+  durationInMs: String
+  rating: Int
+  videoUrl: String
+  webviewUrl: String
+  viewCount: Int
+  channels: [Int]
+  products: [String]
+  category: String
+  isPaymentRequired: Boolean
+  durationAsText: String
+  channelName: String
+  loopStart: Float!
+  loopEnd: Float!
+}
+
+type FotbollPlayVideos {
+  videos: [FotbollPlayVideo]
+}
+
+type FotbollPlayChannel {
+  id: Int!
+  name: String!
+}
+
+type FotbollPlayConfig {
+  abbrv: String
+  categories: [String!]!
+  channels: [FotbollPlayChannel!]!
+}
+
+type FotbollPlayMatchEventVideo {
+  id: String!
+  rating: Int
+  type: String
+  matchId: Int
+  configLeagueName: String
+  configSeasonStartYear: Int
+  matchStartDate: String
+  videoUrl: String
+  thumbnailUrl: String
+  thumbnail: String
+  playerId: Int
+  assistPlayerId: Int
+  description: String
+  duration: Int
+  minuteWithStoppageTime: String
+  gameTime: String
+  isAvailablePublicly: Boolean
+  period: String
+  byTeam: String
+  homeTeamAbbrv: String
+  visitingTeamAbbrv: String
+  homeTeamName: String
+  visitingTeamName: String
+  playerName: String
+  teamName: String
+}
+
+type FotbollPlayMatchEventVideos {
+  videos: [FotbollPlayMatchEventVideo]
+}
+
+type OfficialHighlightsReel {
+  id: String
+  title: String
+  description: String
+  thumbnail: String
+  videoUrl: String
+  duration: Int
+  createdAt: String
+  homeTeamName: String
+  visitingTeamName: String
+  matchStartDate: String
+  round: String
+  homeTeamScore: Int
+  visitingTeamScore: Int
+  homeTeamAbbrv: String
+  visitingTeamAbbrv: String
+  configLeagueName: String
+  configSeasonStartYear: Int
+  durationAsText: String
+}
+
+type FotbollPlayHeroImage {
+  url: String
+}
+
+type FotbollPlaySpecificSceneConfig {
+  hero: FotbollPlayHero!
+  moduleOrder: [FotbollPlayModule!]!
+}
+
+type FotbollPlayCustomCarousel {
+  id: String
+  title: String
+  videos: [FotbollPlayVideo]
+}
+
+enum FotbollPlayModuleType {
+  category
+  customCarousel
+  matchEvent
+}
+
+type FotbollPlaySettings {
+  showOtherTeamsMatchClips: Boolean!
+  showLogoOnThumbnails: Boolean!
+  playLogo: String!
+  standardCategoryClipCount: Int!
+}
+
+type FotbollPlayModule {
+  channelIds: [Int!]!
+  title: String!
+  type: FotbollPlayModuleType!
+  id: String!
+  category: String!
+  carouselId: String
+  matchEventType: String
+  team: String
+}
+
+type FotbollPlaySceneConfig {
+  start: FotbollPlaySpecificSceneConfig!
+  settings: FotbollPlaySettings!
+  customCarousels: [FotbollPlayCustomCarousel]
+}
+
+type MatchCard {
+  id: Int
+  configLeagueName: String
+  configSeasonStartYear: Int
+  status: String
+}
+
+type MatchCardForTeam {
+  matchCard: MatchCard
+}
+
+type TeamLogos {
+  logos: [String]
+}
+
+type TeamStaffPerson {
+  birthDay: String
+  fullName: String
+  givenName: String
+  surName: String
+  nationality: String
+  role: String
+  roleName: String
+  imageUrl: String
+}
+
+type TeamStaff {
+  staff: [TeamStaffPerson]
+}
+
+type TeamAppConfig {
+  Appstore: String
+  GooglePlay: String
+  abbrv: String
+  dynamicLinkApp: String
+  fallback: String
+}
+
+enum PollStatus {
+  UPCOMING
+  ONGOING
+  FINISHED
+}
+
+enum PollType {
+  free
+  playerofthematch
+  playerofthemonth
+  coachofthemonth
+  quiz
+}
+
+type PollResult {
+  pollId: String
+  id: Int
+  count: Int
+  displayName: String
+  shirtNumber: Int
+  image: String
+}
+
+type PollOption {
+  id: Int
+  text: String
+  displayName: String
+  shirtNumber: Int
+  image: String
+  fogisId: Int
+  teamAbbrv: String
+}
+
+type QuizResult {
+  id: String
+  quizId: String
+  score: Int
+  userId: String
+  name: String
+  email: String
+  createdAt: String
+}
+
+enum QuizQuestionAlternativeType {
+  PLAYER
+  TEXT
+}
+
+type QuizQuestionAlternative {
+  id: String
+  text: String
+  value: String
+  type: QuizQuestionAlternativeType
+  playerImage: String
+  shirtNumber: String
+}
+
+type QuizQuestion {
+  backgroundImage: String
+  question: String
+  answer: String
+  timeLimit: Int
+  alternatives: [QuizQuestionAlternative]
+}
+
+type Poll {
+  id: String
+  type: PollType
+  matchId: Int
+  configLeagueName: String
+  configSeasonStartYear: Int
+  status: PollStatus
+  title: String
+  backgroundImage: String
+  videoUrl: String
+  sponsorImage: String
+  result: [PollResult]
+  pollOptions: [PollOption]
+  homeTeamAbbrv: String
+  visitingTeamAbbrv: String
+  homeTeamName: String
+  visitingTeamName: String
+  matchTitle: String
+  matchStartDate: String
+  startDate: String
+  endDate: String
+  questions: [QuizQuestion]
+  description: String
+}
+
+type CountedPersonVote {
+  name: String
+  email: String
+  ceePersonId: String
+  personId: String
+  votedAlternative: String
+  date: String!
+  cellPhoneNumber: String
+  gender: String
+  birthDay: String
+  votedOnWinner: Boolean
+}
+
+enum ContentReactionType {
+  HEART
+}
+
+type ContentReaction {
+  contentId: ID!
+  contentType: String!
+  reaction: ContentReactionType!
+  count: Int!
+}
+
+type Comment {
+  id: Int!
+  contentId: ID!
+  contentType: String!
+  contentTitle: String!
+  userId: String!
+  fullName: String!
+  text: String!
+  isHidden: Boolean!
+  createdAt: String!
+}
+
+enum StoriesType {
+  VIDEO
+}
+
+type Stories {
+  id: String!
+  videoUrl: String!
+  viewCount: Int!
+  thumbnail: String!
+  buttonText: String
+  buttonUrl: String
+  caption: String
+  type: StoriesType!
+  createdAt: String!
+  contentId: String!
+  contentType: String!
+  disableComments: Boolean!
+  disableReactions: Boolean!
+}
+
+enum TeamFormResult {
+  WIN
+  DRAW
+  LOST
+}
+
+enum TeamFormType {
+  HOME
+  AWAY
+}
+
+type TeamFormMatch {
+  awayScore: Int
+  date: String
+  homeScore: Int
+  result: TeamFormResult
+  type: String
+  opponentId: String
+  opponentName: String
+}
+
+type HideStats {
+  ballPossesion: Boolean
+  distance: Boolean
+}
+
+type MatchConfig {
+  showInterruptedMatchInformation: Boolean
+  interruptedMatchText: String
+  hideMatchTime: Boolean
+  hideStats: HideStats
+}
+
+type Engagement {
+  contentId: ID!
+  contentType: String!
+  contentTitle: String
+  lastEngagementAt: String!
+  abbrv: String!
+  numberOfReactions: Int!
+}
+
+type Author {
+  id: String!
+  name: String!
+  email: String!
+  imageUrl: String
+}
+
+type EditorialArticle {
+  id: String!
+  title: String!
+  excerpt: String
+  content: String!
+  authors: [Author!]!
+  createdAt: String!
+  updatedAt: String!
+  publishedAt: String!
+  imageUrl: String
+}
+
+type Onboarding {
+  backgroundVideoUrl: String
+  privacyPolicyUrl: String
+  termsAndConditionsUrl: String
+  backgroundVideoStartInMs: Int
+  backgroundVideoEndInMs: Int
+}
+
+type Valuestats {
+  valuestats: [String]
+}
+
+type PlayerStatistics {
+  displayName: String!
+  givenName: String
+  surName: String
+  nationality: String
+  position: String
+  birthDate: String
+  teamAbbrv: String
+  teamDisplayName: String
+  teamLogo: String
+  height: Float
+  weight: Float
+  playerImage: String
+  fogisId: Int
+  clId: String
+  smcPlayerId: Int
+  goals: Int!
+  assists: Int!
+  matchesPlayed: Int
+  subin: Int!
+  subout: Int!
+  totalDistance: Float
+  sprints: Int!
+  springDistance: Float
+  highestSpeed: Float
+  highestDistanceInMatch: Float
+  averageDistancePerMatch: Float
+  penaltyGoals: Int
+  subinGoals: Int
+  allCornerGoals: Int
+  headerGoals: Int
+  cornerHeaderGoals: Int
+  freekickGoals: Int
+  shotsOnTarget: Int
+  shotsPostOrBar: Int
+  shots: Int
+  yellowCards: Int
+  redCards: Int
+}
+
+type TeamStatistics {
+  name: String!
+  displayName: String!
+  smcId: Int
+  abbrv: String!
+  fogisId: Int!
+  goals: Int!
+  shots: Int!
+  shotsOnTarget: Int!
+  shotsPostOrBar: Int!
+  penaltyGoals: Int!
+  subinGoals: Int!
+  headerGoals: Int!
+  cornerHeaderGoals: Int!
+  freekickGoals: Int!
+  allCornerGoals: Int!
+  setPieceGoals: Int!
+  concededCornerGoals: Int!
+  yellowCards: Int!
+  redCards: Int!
+  corners: Int!
+  distanceAsHomeTeam: Int!
+  distanceAsVisitingTeam: Int!
+  totalDistance: Int!
+  matchesPlayedAsHomeTeam: Int!
+  matchesPlayedAsVisitingTeam: Int!
+  matchesPlayed: Int!
+  concededGoalsSetPiece: Int!
+  homeTeamFirstPeriodAveragePossesion: Int!
+  homeTeamSecondPeriodAveragePossesion: Int!
+  visitingTeamFirstPeriodAveragePossesion: Int!
+  visitingTeamSecondPeriodAveragePossesion: Int!
+  averagePossesion: Int!
+  logoImage: String!
+  averageAttendees: Int!
+  totalAttendees: Int!
+}
+
+type Statistics {
+  player: [PlayerStatistics]
+  team: [TeamStatistics]
+}
+
+type Season {
+  configLeagueName: String
+  configSeasonStartYear: Int
+  startDate: String
+  endDate: String
+  everySportId: Int
+  id: String
+  name: String
+  years: String
+}
+
+type TicketConfig {
+  abbrv: String
+  backgroundImageUrl: String
+  everySportId: String
+  id: String
+  primaryColor: String
+  textColor: String
+  ticketUrl: String
+}
+
+type AffiliateLinks {
+  abbrv: String
+  tv4: String
+}
+
+enum PromoType {
+  IMAGE
+  FORZASYS_VIDEO
+  POLL
+  SUBSCRIPTION
+  FLARIE
+}
+
+type AppPromo {
+  index: Int!
+  id: String!
+  contentUrl: String!
+  targetUrl: String!
+  promo_age_restriction: Boolean!
+  promo_open_inapp: Boolean!
+  pollId: String
+  promo_type: String!
+  width: Int!
+  height: Int!
+}
+
+type AppThemePalette {
+  BUTTON_BACKGROUND: String
+  BUTTON_FOREGROUND: String
+  COMPONENT_BACKGROUND: String
+  COMPONENT_BORDER: String
+  COMPONENT_FOREGROUND: String
+  COMPONENT_FOREGROUND_ID: String
+  ID_CONTRAST: String
+  ID_FOREGROUND: String
+  ID_MAIN: String
+  SOCIAL_HEART: String
+  TOP_BAR_BACKGROUND: String
+  TOP_BAR_FOREGROUND: String
+  TOP_BAR_CONTRAST: String
+}
+
+type AppTheme {
+  isLight: Boolean!
+  topBarOverride: Boolean!
+  palette: AppThemePalette!
+}
+
+type Subscription {
+  matchSubscription(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): MatchDetails
+  lineupsSubscription(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): Lineups
+  matchStatsSubscription(id: Int!, configLeagueName: String!, configSeasonStartYear: Int!): MatchStats
+}
+
+type Announcement {
+  id: Int!
+  abbrv: String
+  scene: String
+  title: String!
+  body: String
+  link: String
+  linkText: String
+  type: String!
+}
+
+type FAQArticle {
+  sortIndex: Int
+  slug: String
+  title: String
+  content: String
+  html: String
+}
+
+type FAQ {
+  articles: [FAQArticle]
+  variables: JSON
+}

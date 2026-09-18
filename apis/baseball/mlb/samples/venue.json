@@ -1,0 +1,43 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "venues": [
+    {
+      "id": 3313,
+      "name": "Yankee Stadium",
+      "link": "/api/v1/venues/3313",
+      "location": {
+        "address1": "One East 161st Street",
+        "city": "Bronx",
+        "state": "New York",
+        "stateAbbrev": "NY",
+        "postalCode": "10451",
+        "defaultCoordinates": {
+          "latitude": 40.82919482,
+          "longitude": -73.9264977
+        },
+        "azimuthAngle": 75.0,
+        "elevation": 55,
+        "country": "USA",
+        "phone": "(718) 293-4300"
+      },
+      "timeZone": {
+        "tz": "EDT",
+        "id": "America/New_York",
+        "offset": -4,
+        "offsetAtGameTime": -4
+      },
+      "fieldInfo": {
+        "capacity": 46537,
+        "turfType": "Grass",
+        "roofType": "Open",
+        "leftLine": 318,
+        "leftCenter": 399,
+        "center": 408,
+        "rightCenter": 385,
+        "rightLine": 314
+      },
+      "active": true,
+      "season": "2026"
+    }
+  ]
+}

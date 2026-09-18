@@ -1,0 +1,127 @@
+{
+    "seasonSeries": [
+        {
+            "id": 2026020001,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2026-09-29",
+            "startTimeUTC": "2026-09-29T21:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 13,
+                "abbrev": "FLA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+            },
+            "homeTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/car-vs-fla/2026/09/29/2026020001",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        },
+        {
+            "id": 2026020800,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2027-01-21",
+            "startTimeUTC": "2027-01-22T00:00:00Z",
+            "easternUTCOffset": "-05:00",
+            "venueUTCOffset": "-05:00",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+            },
+            "homeTeam": {
+                "id": 13,
+                "abbrev": "FLA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/fla-vs-car/2027/01/21/2026020800",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        },
+        {
+            "id": 2026021334,
+            "season": 20262027,
+            "gameType": 2,
+            "gameDate": "2027-04-10",
+            "startTimeUTC": "2027-04-10T22:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "gameState": "FUT",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+            },
+            "homeTeam": {
+                "id": 13,
+                "abbrev": "FLA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+            },
+            "gameCenterLink": "/gamecenter/fla-vs-car/2027/04/10/2026021334",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        }
+    ],
+    "seasonSeriesWins": {
+        "awayTeamWins": 0,
+        "homeTeamWins": 0
+    },
+    "gameInfo": {
+        "referees": [],
+        "linesmen": [],
+        "awayTeam": {
+            "headCoach": {
+                "default": "Paul Maurice"
+            },
+            "scratches": []
+        },
+        "homeTeam": {
+            "headCoach": {
+                "default": "Rod Brind'Amour"
+            },
+            "scratches": []
+        }
+    },
+    "teamSeasonStats": {
+        "contextLabel": "regular_season",
+        "contextSeason": 20252026,
+        "awayTeam": {
+            "ppPctg": 0.195489,
+            "pkPctg": 0.809524,
+            "faceoffWinningPctg": 0.467549,
+            "goalsForPerGamePlayed": 3.0,
+            "goalsAgainstPerGamePlayed": 3.34,
+            "ppPctgRank": 19,
+            "pkPctgRank": 9,
+            "faceoffWinningPctgRank": 29,
+            "goalsForPerGamePlayedRank": 18,
+            "goalsAgainstPerGamePlayedRank": 28
+        },
+        "homeTeam": {
+            "ppPctg": 0.248963,
+            "pkPctg": 0.805195,
+            "faceoffWinningPctg": 0.501205,
+            "goalsForPerGamePlayed": 3.55,
+            "goalsAgainstPerGamePlayed": 2.88,
+            "ppPctgRank": 4,
+            "pkPctgRank": 11,
+            "faceoffWinningPctgRank": 16,
+            "goalsForPerGamePlayedRank": 2,
+            "goalsAgainstPerGamePlayedRank": 5
+        }
+    }
+}

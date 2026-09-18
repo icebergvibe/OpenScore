@@ -1,0 +1,155 @@
+{
+  "global_config_data": [
+    {
+      "key": "CHATBOT_CONFIG",
+      "value": {
+        "rateUser": 100,
+        "rateDaily": 33000,
+        "rateHourly": 9000,
+        "isRestricted": false,
+        "rateMinutely": 600
+      }
+    },
+    {
+      "key": "APP_CONFIG",
+      "value": {
+        "home": {
+          "state": "on_season"
+        },
+        "loginMode": {
+          "ios": "mandatory",
+          "android": "mandatory"
+        },
+        "minversion": {
+          "ios": "8.0.3",
+          "android": "9.0.3"
+        },
+        "appTriggers": {
+          "userFourthAccess": true,
+          "userSecondAccess": true,
+          "triggersResetTime": 10,
+          "twoContentsShared": true,
+          "newsThirdNavigation": true,
+          "matchThirdNavigation": true,
+          "videoThirdNavigation": true,
+          "statsTabThirdNavigation": true,
+          "playerOrTeamThirdNavigation": true
+        },
+        "transferConfig": {
+          "end": "2026-09-14",
+          "start": "2026-07-01",
+          "active": true
+        }
+      }
+    },
+    {
+      "key": "STATICS_TIMESTAMP",
+      "value": "20260729123500"
+    },
+    {
+      "key": "COMPETITION_CONFIG",
+      "value": {
+        "copa-del-rey": {
+          "filters": "2026",
+          "results": "2026",
+          "subscription_id": "413"
+        },
+        "europa-league": {
+          "filters": "2026",
+          "results": "2026",
+          "subscription_id": "411"
+        },
+        "uefa-eurocopa": {
+          "filters": "2023",
+          "results": "2023",
+          "subscription_id": "348"
+        },
+        "laliga-genuine": {
+          "filters": "2025",
+          "results": "2025",
+          "subscription_id": "389"
+        },
+        "champions-league": {
+          "filters": "2026",
+          "results": "2026",
+          "subscription_id": "410"
+        },
+        "copa-de-la-reina": {
+          "filters": "2025",
+          "results": "2025",
+          "subscription_id": "388"
+        },
+        "primera-division": {
+          "clubs": "2026",
+          "squad": "2026",
+          "stats": "2026",
+          "filters": "2026",
+          "leaders": "2026",
+          "results": "2026",
+          "standing": "2026",
+          "stats_team": "2026",
+          "subscription_id": "395",
+          "stats_competition": "2026"
+        },
+        "segunda-division": {
+          "clubs": "2026",
+          "squad": "2026",
+          "stats": "2026",
+          "filters": "2026",
+          "leaders": "2026",
+          "results": "2026",
+          "standing": "2026",
+          "stats_team": "2026",
+          "subscription_id": "396",
+          "stats_competition": "2026"
+        },
+        "supercopa-de-espana": {
+          "filters": "2025",
+          "results": "2025",
+          "subscription_id": "381"
+        },
+        "supercopa-de-europa": {
+          "filters": "2026",
+          "results": "2026",
+          "subscription_id": "398"
+        },
+        "copa-mundial-de-clubes": {
+          "filters": "2025",
+          "results": "2025",
+          "subscription_id": "392"
+        },
+        "europa-conference-league": {
+          "filters": "2026",
+          "results": "2026",
+          "subscription_id": "409"
+        },
+        "primera-division-femenina": {
+          "clubs": "2026",
+          "squad": "2026",
+          "stats": "2026",
+          "filters": "2026",
+          "leaders": "2026",
+          "results": "2026",
+          "standing": "2026",
+          "stats_team": "2026",
+          "subscription_id": "397",
+          "stats_competition": "2026"
+        },
+        "primera-nacional-femenina": {
+          "results": "2019",
+          "standing": "2019",
+          "subscription_id": "91"
+        },
+        "segunda-division-femenina": {
+          "results": "2019",
+          "standing": "2019",
+          "subscription_id": "90"
+        }
+      }
+    },
+    {
+      "key": "VERSION_SPRITE",
+      "value": "20260911113217018983"
+    }
+  ]
+}

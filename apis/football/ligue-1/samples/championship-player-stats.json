@@ -1,0 +1,385 @@
+{
+  "id": "l1_championship_player_stats_2026_77349",
+  "type": "l1_championship_player_stats",
+  "championships": {
+    "1": {
+      "l1_championship_club_2026_13": {
+        "stats": {
+          "totalTeamMatches": 3
+        },
+        "fl1Ratings": [],
+        "matchesIds": [
+          "l1_championship_match_73827",
+          "l1_championship_match_73832",
+          "l1_championship_match_73845"
+        ]
+      }
+    },
+    "6": {
+      "l1_championship_club_2026_13": {
+        "stats": {
+          "totalTeamMatches": 1
+        },
+        "fl1Ratings": [],
+        "matchesIds": [
+          "l1_championship_match_2685381"
+        ]
+      }
+    },
+    "15": {
+      "l1_championship_club_2026_13": {
+        "stats": {
+          "totalTeamMatches": 1
+        },
+        "fl1Ratings": [],
+        "matchesIds": [
+          "l1_championship_match_2636517"
+        ]
+      }
+    },
+    "allChampionships": {
+      "allClubs": {
+        "stats": {
+          "totalTeamMatches": 5
+        },
+        "fl1Ratings": [],
+        "matchesIds": [
+          "l1_championship_match_2636517",
+          "l1_championship_match_73827",
+          "l1_championship_match_73832",
+          "l1_championship_match_73845",
+          "l1_championship_match_2685381"
+        ]
+      }
+    }
+  },
+  "matches": {
+    "l1_championship_match_2636517": {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_2636517",
+      "championshipId": 15,
+      "gameWeekNumber": 1,
+      "date": "2026-08-16T18:45:00.000Z",
+      "period": "fullTime",
+      "matchTime": "90' +6",
+      "isLive": false,
+      "broadcasters": {
+        "local": [],
+        "international": []
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_2636517/poster_c65630fb9916ec35f774526e366b9003.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_2636517/thumbnail_4b1f45bb3da4cd05c2a269334d9ef03d.webp"
+      },
+      "roundType": "final",
+      "home": {
+        "clubId": "l1_championship_club_2026_6",
+        "score": 1
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_13",
+        "score": 0
+      }
+    },
+    "l1_championship_match_73832": {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73832",
+      "championshipId": 1,
+      "gameWeekNumber": 2,
+      "date": "2026-08-28T18:45:00.000Z",
+      "period": "fullTime",
+      "matchTime": "90' +6",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73832/poster_933e23b1fb971aa8f38c544d60867385.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73832/thumbnail_85a085e8c925a6dd57f4800dc2371522.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_158",
+        "score": 2
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_13",
+        "score": 2
+      }
+    },
+    "l1_championship_match_73845": {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73845",
+      "championshipId": 1,
+      "gameWeekNumber": 3,
+      "date": "2026-09-04T19:05:00.000Z",
+      "period": "fullTime",
+      "matchTime": "90' +6",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73845/poster_beafae3433c302bd4b2f42ae6b93a8f0.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73845/thumbnail_4d5221291da9d16e08122ac014adef76.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_13",
+        "score": 1
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_9",
+        "score": 2
+      }
+    },
+    "l1_championship_match_73827": {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73827",
+      "championshipId": 1,
+      "gameWeekNumber": 1,
+      "date": "2026-08-23T18:45:00.000Z",
+      "period": "fullTime",
+      "matchTime": "90' +5",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73827/poster_3cf9734119ed4e67d8de3cc34818e733.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73827/thumbnail_2475d258d0c8d006d7bab24310e2e361.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_14",
+        "score": 2
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_13",
+        "score": 2
+      }
+    },
+    "l1_championship_match_2685381": {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_2685381",
+      "championshipId": 6,
+      "gameWeekNumber": 1,
+      "date": "2026-09-09T19:00:00.000Z",
+      "period": "fullTime",
+      "matchTime": "90' +2",
+      "isLive": false,
+      "broadcasters": {
+        "local": [],
+        "international": []
+      },
+      "roundType": "round",
+      "home": {
+        "clubId": "l1_championship_club_2026_13",
+        "score": 6
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_9000000211",
+        "score": 1
+      }
+    }
+  },
+  "clubsIdentities": {
+    "l1_championship_club_2026_13": {
+      "id": "l1_championship_club_2026_13",
+      "shortId": 13,
+      "name": "Paris Saint-Germain",
+      "officialName": "Paris Saint-Germain",
+      "shortName": "PSG",
+      "displayName": "Paris Saint-Germain",
+      "businessName": "PSG",
+      "trigram": "PSG",
+      "countryImageUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/fr.png",
+      "primaryColor": "#004070",
+      "secondaryColor": "#E30613",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_149_128x128_bad5120ec74241070e4b66a7c8c9dc01.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_149_512x512_849b9f0e9781b7b8dd9c280611608be3.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_149_512x512_849b9f0e9781b7b8dd9c280611608be3.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_800x800_c1deacdf13fe719c1b9d6cca4185ca58.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_800x800_c1deacdf13fe719c1b9d6cca4185ca58.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_800x800_c1deacdf13fe719c1b9d6cca4185ca58.png"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": true
+    },
+    "l1_championship_club_2026_6": {
+      "id": "l1_championship_club_2026_6",
+      "shortId": 6,
+      "name": "RC Lens",
+      "officialName": "Lens",
+      "shortName": "RC Lens",
+      "displayName": "Rc Lens",
+      "businessName": "RC Lens",
+      "trigram": "RCL",
+      "primaryColor": "#FFD500",
+      "secondaryColor": "#C51315",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_128x128_0c59b9fd66a5c5256756a19fba1239ee.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_512x512_d08b45acce8a87d13b938cde8974362f.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_768x768_9a9e318ebf1e93428b8bab52abb1d705.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_128x128_8874ea37284e20ac7723d633b56b6d59.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_512x512_faecaf03c4e4ab02beb5fe01a2db1041.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_768x768_f468cbb89da6b4f18a8bf9c89a22b14f.png"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": true
+    },
+    "l1_championship_club_2026_158": {
+      "id": "l1_championship_club_2026_158",
+      "shortId": 158,
+      "name": "LOSC Lille",
+      "officialName": "Lille",
+      "shortName": "LOSC",
+      "displayName": "LOSC Lille",
+      "businessName": "LOSC",
+      "trigram": "LIL",
+      "primaryColor": "#E41B13",
+      "secondaryColor": "#211E5F",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_128x128_7bf9576cddda33d2c1ebd966f44779d3.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_512x512_39a605746d9cf4eb12d9cd4f63adb27c.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_768x768_94fd86e26028c4bb869925a35e8d901a.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_128x128_102d4146c2293181a53afac9ea79cd90.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_512x512_73cd15f2ed622b7add8c45d36ff70663.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_768x768_f3a30e0b1e98dad02e576283da10d8df.png"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": true,
+      "gameWeekStartingRank": 4
+    },
+    "l1_championship_club_2026_9": {
+      "id": "l1_championship_club_2026_9",
+      "shortId": 9,
+      "name": "AS Monaco",
+      "officialName": "Monaco",
+      "shortName": "AS Monaco",
+      "displayName": "As Monaco",
+      "businessName": "AS Monaco",
+      "trigram": "ASM",
+      "primaryColor": "#D70032",
+      "secondaryColor": "#FFFFFF",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_128x128_486e4b383509816f94f5ab9269a14449.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_512x512_ad7dd146950eee8eb68ea9588a674fe8.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_768x768_0f59d1cadcd741881109da1a49bb7a0d.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_128x128_e9478a4c3eb59d1e8eba6a26b38b614f.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_512x512_5dbc554fe872033a94563f73705e4995.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_768x768_04de42489490b5198687fb9920420661.png"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": true,
+      "gameWeekStartingRank": 1
+    },
+    "l1_championship_club_2026_14": {
+      "id": "l1_championship_club_2026_14",
+      "shortId": 14,
+      "name": "Stade Rennais FC",
+      "officialName": "Rennes",
+      "shortName": "Rennes",
+      "displayName": "Stade Rennais Fc",
+      "businessName": "Rennes",
+      "trigram": "REN",
+      "primaryColor": "#DA261B",
+      "secondaryColor": "#000000",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_128x128_e7371f8a913a19713876abf7cb92e131.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_512x512_28c7492293ca34c6e26d6cb71e858a57.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_768x768_e703d9e4e25cdfc639c91df88b3d0793.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_128x128_d8f0636fac557db80927cfffcd6a9169.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_512x512_6fe14edeef7960a8290247306a3aa6e4.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_768x768_23db67217eb240ffc79d7f0a2e2ebe16.png"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": true,
+      "gameWeekStartingRank": 5
+    },
+    "l1_championship_club_2026_9000000211": {
+      "id": "l1_championship_club_2026_9000000211",
+      "shortId": 9000000211,
+      "name": "Slovan Bratislava",
+      "officialName": "Slovan Bratislava",
+      "shortName": "Slovan",
+      "displayName": "Slovan Bratislava",
+      "businessName": "Slovan Bratislava",
+      "trigram": "SLO",
+      "primaryColor": "#62cae4",
+      "secondaryColor": "#00000f",
+      "assets": {
+        "logo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_6_9000000211_128x128_322b2bce83c5d7154d50232b74202425.png",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_6_9000000211_512x512_325590f0a0ae33c9f53d0440758ed12d.png",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_6_9000000211_768x768_bee028a5768bb7465d0552c04ed69465.png"
+        },
+        "whiteLogo": {
+          "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/9cefa869-a0e9-4616-8774-d69d14b2639b",
+          "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/9cefa869-a0e9-4616-8774-d69d14b2639b",
+          "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/9cefa869-a0e9-4616-8774-d69d14b2639b"
+        }
+      },
+      "preferMonochromeLogo": false,
+      "isInFrenchChampionship": false
+    }
+  }
+}

@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<game-info created="2026-08-19 10:00:23" supplier="FOGIS" livescorereporttype="2" status="200">
+  <game id="6827326" association-id="1" football-type-id="1" competition-id="137810" competition-category-id="742" date="2026-08-18" start="18:30:00">
+    <tournament id="137810" name="Svenska Cupen 2026/27 omg. 1-2" number="000350" competitionCategoryId="742" classname="svenska-cupen-2026-27-omg-1-2" supplier="FOGIS"/>
+    <teams>
+      <team id="214473" short-name="Athletic Eskilstuna" long-name="Athletic Eskilstuna" home-team="true" participationId="1419397" teamImageUrl="https://staticcdn.svenskfotboll.se/img/teams/13019.png" teamImageSmUrl="https://staticcdn.svenskfotboll.se/img/teamssm/13019.png"/>
+      <team id="25552" short-name="IK Oddevold" long-name="IK Oddevold" home-team="false" participationId="1419451" teamImageUrl="https://staticcdn.svenskfotboll.se/img/teams/10500.png" teamImageSmUrl="https://staticcdn.svenskfotboll.se/img/teamssm/10500.png"/>
+    </teams>
+    <status id="6" desc="FINISHED"/>
+    <score home-team="10" away-team="11" home-team-half-time="2" away-team-half-time="1"/>
+    <referees name="Erik Mattsson" place="" referee-role-description="Domare" assistant1-name="Daniel Tekeste" assistant1-place="" assistant1-role-description="Ass. domare 1" assistant2-name="Mostafa Jalal" assistant2-place="" assistant2-role-description="Ass. domare 2"/>
+    <stadium name="Tunavallen" spectators="422"/>
+    <stats home-corners="0" home-ball-possession="0" home-offsides="0" home-yellow-cards="3" home-red-cards="0" home-red-cards-from-bookings="0" home-freekicks-awarded="0" home-finishes="4" home-shots-on-goal="4" home-shots-post="0" home-shots-missed="0" home-normal-goals="4" home-penalty-goals="0" home-freekick-goals="0" home-cornor-goals="0" home-assists="0" away-corners="0" away-ball-possession="0" away-offsides="0" away-yellow-cards="1" away-red-cards="0" away-red-cards-from-bookings="0" away-freekicks-awarded="0" away-finishes="4" away-shots-on-goal="4" away-shots-post="0" away-shots-missed="0" away-normal-goals="3" away-penalty-goals="1" away-freekick-goals="0" away-cornor-goals="0" away-assists="0"/>
+    <ball-possession/>
+  </game>
+  <events>
+    <event id="12020513" phase="5" game-time="134:00" game-minute-for-web="135" game-time-for-web="135" day-time="21:14:15" event-type-id="22" type="pm" type-desc="Penalty Shooting, miss" home-team="true" home-score="10" away-score="11" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="985937" player-guid="20310594-69d7-40d4-bf9b-eeecd881133b" number="2" given-name="Leond" surname="Mahmoud" event-type-id="22" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020503" phase="5" game-time="134:00" game-minute-for-web="135" game-time-for-web="135" day-time="21:13:33" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="10" away-score="11" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="866388" player-guid="b1cac07b-7d40-4617-b30d-7f5da194e0e9" number="22" given-name="Johan" surname="Albin" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020493" phase="5" game-time="133:00" game-minute-for-web="134" game-time-for-web="134" day-time="21:12:58" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="10" away-score="10" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="802813" player-guid="e74c41af-b56a-43ce-9d69-99a2ee613fb2" number="16" given-name="Sixten" surname="Sk&#xF6;ldqvist" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020482" phase="5" game-time="133:00" game-minute-for-web="134" game-time-for-web="134" day-time="21:12:20" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="9" away-score="10" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="713709" player-guid="f8dbc101-92ff-4693-8a47-e3cd94c5c9b6" number="3" given-name="Erik" surname="Hedenquist" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020472" phase="5" game-time="132:00" game-minute-for-web="133" game-time-for-web="133" day-time="21:11:48" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="9" away-score="9" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="914821" player-guid="10099145-240d-4eba-9dae-922fd4e48d0b" number="19" given-name="Amel" surname="Mazalovic" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020468" phase="5" game-time="131:00" game-minute-for-web="132" game-time-for-web="132" day-time="21:11:25" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="8" away-score="9" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="791439" player-guid="7abe8d4d-b7e4-4593-968d-2f2988660874" number="19" given-name="Hugo" surname="Engstr&#xF6;m" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020453" phase="5" game-time="130:00" game-minute-for-web="131" game-time-for-web="131" day-time="21:10:16" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="8" away-score="8" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="939762" player-guid="c7a72b41-26be-463b-9d07-967223513b44" number="9" given-name="Albin" surname="Flodkvist" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020441" phase="5" game-time="130:00" game-minute-for-web="131" game-time-for-web="131" day-time="21:09:35" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="7" away-score="8" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="695702" player-guid="5d950ce8-d808-4ff6-a026-301de19e166a" number="6" given-name="Jesper" surname="Merbom Adolfsson" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020433" phase="5" game-time="129:00" game-minute-for-web="130" game-time-for-web="130" day-time="21:08:48" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="7" away-score="7" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1092863" player-guid="4310b2b8-5f79-473e-a3da-882a42737497" number="24" given-name="Dmitry" surname="Zhuravlev" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020426" phase="5" game-time="128:00" game-minute-for-web="129" game-time-for-web="129" day-time="21:08:01" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="6" away-score="7" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1070290" player-guid="019183f3-3c70-4164-842f-91f19b1cf0b6" number="25" given-name="Jimi" surname="dos Reis Nikko" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020413" phase="5" game-time="127:00" game-minute-for-web="128" game-time-for-web="128" day-time="21:07:11" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="6" away-score="6" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="801118" player-guid="ab52ff58-fdf4-4f9d-b88c-8314cd8e4ff4" number="10" given-name="Emanuel" surname="Chabo" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020403" phase="5" game-time="126:00" game-minute-for-web="127" game-time-for-web="127" day-time="21:06:23" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="5" away-score="6" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="858711" player-guid="bc036497-5539-4a79-8fb8-85c8d8ff0c66" number="14" given-name="Gabriel" surname="Sandberg" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020386" phase="5" game-time="125:00" game-minute-for-web="126" game-time-for-web="126" day-time="21:05:24" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="true" home-score="5" away-score="5" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="856691" player-guid="d3c52976-55b3-4257-8da6-666b266b3b3e" number="8" given-name="Ibrahim" surname="Ahmed" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020364" phase="5" game-time="123:00" game-minute-for-web="124" game-time-for-web="124" day-time="21:04:33" event-type-id="21" type="pg" type-desc="Penalty Shooting, goal" home-team="false" home-score="4" away-score="5" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1481083" player-guid="86c495ea-ec28-4ed8-840b-dd25cf836c18" number="12" given-name="Morten" surname="S&#xE6;tra" event-type-id="21" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020324" phase="4" game-time="122:30" game-minute-for-web="120+3" game-time-for-web="120+3" day-time="21:01:47" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="4" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020280" phase="4" game-time="120:30" game-minute-for-web="120+1" game-time-for-web="120+1" day-time="20:59:09" event-type-id="39" type="G" type-desc="Goal" home-team="true" home-score="4" away-score="4" x-position="-1" y-position="-1" goal-type-ix="11" goal-type-desc="Normal(Header)">
+      <participants>
+        <participant id="939762" player-guid="c7a72b41-26be-463b-9d07-967223513b44" number="9" given-name="Albin" surname="Flodkvist" event-type-id="39" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020260" phase="4" game-time="118:00" game-minute-for-web="119" game-time-for-web="119" day-time="20:57:44" event-type-id="20" type="P" type-desc="Card" home-team="false" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1070290" player-guid="019183f3-3c70-4164-842f-91f19b1cf0b6" number="25" given-name="Jimi" surname="dos Reis Nikko" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020011" phase="4" game-time="107:00" game-minute-for-web="108" game-time-for-web="108" day-time="20:46:26" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="953420" player-guid="8ed13827-433a-4c0d-a516-deafc3559770" number="88" given-name="Hannes" surname="Brithon Brinck" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="809606" player-guid="3cad2607-fc8d-47b0-af18-b3063c50d26f" number="5" given-name="Taulant" surname="Parallangaj" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="953420" number="88" given-name="Hannes" surname="Brithon Brinck" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019972" phase="4" game-time="105:00" game-minute-for-web="106" game-time-for-web="106" day-time="20:43:52" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12020321" phase="4" game-time="104:00" game-minute-for-web="105" game-time-for-web="105" day-time="21:01:43" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="880982" player-guid="68977a2e-4c5a-4f96-8218-ecee3478a9e4" number="24" given-name="Mattias" surname="Bahno" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="582204" player-guid="af898889-6449-4b4a-8664-81ee16b332ee" number="8" given-name="Oscar" surname="Iglicar Berntsson" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="880982" number="24" given-name="Mattias" surname="Bahno" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019951" phase="3" game-time="106:30" game-minute-for-web="105+2" game-time-for-web="105+2" day-time="20:42:01" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019933" phase="3" game-time="103:00" game-minute-for-web="104" game-time-for-web="104" day-time="20:40:07" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1092863" player-guid="4310b2b8-5f79-473e-a3da-882a42737497" number="24" given-name="Dmitry" surname="Zhuravlev" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="1004469" player-guid="d288a2fd-f1ef-4b3a-a73e-17f0f1226ece" number="25" given-name="Vincent" surname="Lif" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1092863" number="24" given-name="Dmitry" surname="Zhuravlev" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019908" phase="3" game-time="102:00" game-minute-for-web="103" game-time-for-web="103" day-time="20:38:48" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="3" away-score="4" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="582204" player-guid="af898889-6449-4b4a-8664-81ee16b332ee" number="8" given-name="Oscar" surname="Iglicar Berntsson" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019845" phase="3" game-time="100:00" game-minute-for-web="101" game-time-for-web="101" day-time="20:36:28" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="989039" player-guid="7075adb3-e688-4385-a3f8-639a3b0f00c6" number="21" given-name="Oliver" surname="Thoreson" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="870896" player-guid="beb8235d-9288-46b6-bfb0-a032e29d4f91" number="10" given-name="Leonardo" surname="Farah Shahin" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="989039" number="21" given-name="Oliver" surname="Thoreson" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019659" phase="3" game-time="90:00" game-minute-for-web="91" game-time-for-web="91" day-time="20:25:48" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019638" phase="2" game-time="94:30" game-minute-for-web="90+5" game-time-for-web="90+5" day-time="20:22:51" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019592" phase="2" game-time="91:30" game-minute-for-web="90+2" game-time-for-web="90+2" day-time="20:20:16" event-type-id="20" type="P" type-desc="Card" home-team="true" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="809606" player-guid="3cad2607-fc8d-47b0-af18-b3063c50d26f" number="5" given-name="Taulant" surname="Parallangaj" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019551" phase="2" game-time="89:00" game-minute-for-web="90" game-time-for-web="90" day-time="20:18:08" event-type-id="20" type="P" type-desc="Card" home-team="true" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1109708" player-guid="14649969-ef4a-4edc-a8c2-12e6a9761110" number="55" given-name="Melvin" surname="Rydh" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019445" phase="2" game-time="78:00" game-minute-for-web="79" game-time-for-web="79" day-time="20:06:55" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1405594" player-guid="bbd321b3-4087-49fb-a119-54542fc685b3" number="13" given-name="Emmanuel" surname="Gono" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="1477193" player-guid="85e23030-46d3-42b2-bcf0-e470bc93e706" number="16" given-name="Awaka Franck Aurelien" surname="Djoro" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1405594" number="13" given-name="Emmanuel" surname="Gono" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019443" phase="2" game-time="77:00" game-minute-for-web="78" game-time-for-web="78" day-time="20:06:38" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1070290" player-guid="019183f3-3c70-4164-842f-91f19b1cf0b6" number="25" given-name="Jimi" surname="dos Reis Nikko" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="561213" player-guid="dde88d7e-1e7c-413c-a392-75bedc7f13cd" number="20" given-name="Adam" surname="Engelbrektsson" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1070290" number="25" given-name="Jimi" surname="dos Reis Nikko" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019436" phase="2" game-time="75:00" game-minute-for-web="76" game-time-for-web="76" day-time="20:03:48" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="3" away-score="3" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="791439" player-guid="7abe8d4d-b7e4-4593-968d-2f2988660874" number="19" given-name="Hugo" surname="Engstr&#xF6;m" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019409" phase="2" game-time="69:00" game-minute-for-web="70" game-time-for-web="70" day-time="19:58:35" event-type-id="6" type="G" type-desc="Goal" home-team="true" home-score="3" away-score="2" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="1493717" player-guid="8870f6c2-00de-4d00-a42d-93555f5b94b6" number="30" given-name="Ibrahima Cherif" surname="Fofana" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019400" phase="2" game-time="68:00" game-minute-for-web="69" game-time-for-web="69" day-time="19:56:58" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="858711" player-guid="bc036497-5539-4a79-8fb8-85c8d8ff0c66" number="14" given-name="Gabriel" surname="Sandberg" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="551962" player-guid="9b56941b-83de-4c37-ba73-b2f833d7f114" number="11" given-name="Daniel" surname="Krezic" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="858711" number="14" given-name="Gabriel" surname="Sandberg" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019398" phase="2" game-time="67:00" game-minute-for-web="68" game-time-for-web="68" day-time="19:56:42" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="939762" player-guid="c7a72b41-26be-463b-9d07-967223513b44" number="9" given-name="Albin" surname="Flodkvist" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="938223" player-guid="11a97286-e73b-4d03-8f1e-9b4780d14160" number="7" given-name="Lee" surname="Hansson" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="939762" number="9" given-name="Albin" surname="Flodkvist" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019361" phase="2" game-time="61:00" game-minute-for-web="62" game-time-for-web="62" day-time="19:50:14" event-type-id="20" type="P" type-desc="Card" home-team="true" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="802813" player-guid="e74c41af-b56a-43ce-9d69-99a2ee613fb2" number="16" given-name="Sixten" surname="Sk&#xF6;ldqvist" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019345" phase="2" game-time="57:00" game-minute-for-web="58" game-time-for-web="58" day-time="19:46:29" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="802813" player-guid="e74c41af-b56a-43ce-9d69-99a2ee613fb2" number="16" given-name="Sixten" surname="Sk&#xF6;ldqvist" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="804167" player-guid="d9b41cc6-f694-4bcb-8de6-b39e55705fc1" number="99" given-name="Aleksandar" surname="Azizovic" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="802813" number="16" given-name="Sixten" surname="Sk&#xF6;ldqvist" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019343" phase="2" game-time="57:00" game-minute-for-web="58" game-time-for-web="58" day-time="19:45:52" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1493717" player-guid="8870f6c2-00de-4d00-a42d-93555f5b94b6" number="30" given-name="Ibrahima Cherif" surname="Fofana" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="1381005" player-guid="d4ba193d-48c6-4466-a4d8-7f60e290c3e7" number="15" given-name="Umar Kurfi" surname="Amadi" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1493717" number="30" given-name="Ibrahima Cherif" surname="Fofana" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019341" phase="2" game-time="56:00" game-minute-for-web="57" game-time-for-web="57" day-time="19:45:39" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="801118" player-guid="ab52ff58-fdf4-4f9d-b88c-8314cd8e4ff4" number="10" given-name="Emanuel" surname="Chabo" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="729539" player-guid="42dc03e3-24ef-4eee-a10d-bad237374e43" number="6" given-name="Oliver" surname="Blomdahl" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="801118" number="10" given-name="Emanuel" surname="Chabo" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019313" phase="2" game-time="49:00" game-minute-for-web="50" game-time-for-web="50" day-time="19:37:51" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="2" away-score="2" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="870896" player-guid="beb8235d-9288-46b6-bfb0-a032e29d4f91" number="10" given-name="Leonardo" surname="Farah Shahin" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019285" phase="2" game-time="45:00" game-minute-for-web="46" game-time-for-web="46" day-time="19:33:34" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="2" away-score="1" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019288" phase="2" game-time="44:00" game-minute-for-web="45" game-time-for-web="45" day-time="19:34:05" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="2" away-score="1" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="582204" player-guid="af898889-6449-4b4a-8664-81ee16b332ee" number="8" given-name="Oscar" surname="Iglicar Berntsson" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="799316" player-guid="981d4ebb-d101-4499-966b-2294d6a6aa32" number="17" given-name="Olle" surname="Kjellman Olblad" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="582204" number="8" given-name="Oscar" surname="Iglicar Berntsson" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019208" phase="1" game-time="45:30" game-minute-for-web="45+1" game-time-for-web="45+1" day-time="19:17:54" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="2" away-score="1" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019196" phase="1" game-time="40:00" game-minute-for-web="41" game-time-for-web="41" day-time="19:12:44" event-type-id="6" type="G" type-desc="Goal" home-team="true" home-score="2" away-score="1" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="804167" player-guid="d9b41cc6-f694-4bcb-8de6-b39e55705fc1" number="99" given-name="Aleksandar" surname="Azizovic" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019189" phase="1" game-time="30:00" game-minute-for-web="31" game-time-for-web="31" day-time="19:02:57" event-type-id="14" type="g" type-desc="Penalty goal" home-team="false" home-score="1" away-score="1" x-position="-1" y-position="-1" goal-type-ix="5" goal-type-desc="Penalty">
+      <participants>
+        <participant id="870896" player-guid="beb8235d-9288-46b6-bfb0-a032e29d4f91" number="10" given-name="Leonardo" surname="Farah Shahin" event-type-id="14" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019163" phase="1" game-time="1:00" game-minute-for-web="2" game-time-for-web="2" day-time="18:34:15" event-type-id="6" type="G" type-desc="Goal" home-team="true" home-score="1" away-score="0" x-position="-1" y-position="-1" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="938223" player-guid="11a97286-e73b-4d03-8f1e-9b4780d14160" number="7" given-name="Lee" surname="Hansson" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12019159" phase="1" game-time="0:00" game-minute-for-web="1" game-time-for-web="1" day-time="18:31:54" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="0" away-score="0" x-position="-1" y-position="-1" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+  </events>
+</game-info>

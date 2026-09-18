@@ -1,0 +1,448 @@
+{
+  "home_team": {
+    "players": [
+      {
+        "firstName": "David",
+        "lastName": "Raya",
+        "shirtNum": "1",
+        "isCaptain": false,
+        "id": "154561",
+        "position": "Goalkeeper"
+      },
+      {
+        "firstName": "Ben",
+        "lastName": "White",
+        "shirtNum": "4",
+        "isCaptain": false,
+        "id": "198869",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Gabriel",
+        "lastName": "dos Santos Magalhães",
+        "shirtNum": "6",
+        "isCaptain": false,
+        "id": "226597",
+        "position": "Defender",
+        "knownName": "Gabriel Magalhães"
+      },
+      {
+        "firstName": "Bukayo",
+        "lastName": "Saka",
+        "shirtNum": "7",
+        "isCaptain": false,
+        "id": "223340",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Martin",
+        "lastName": "Ødegaard",
+        "shirtNum": "8",
+        "isCaptain": true,
+        "id": "184029",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Ezri",
+        "lastName": "Konsa",
+        "shirtNum": "15",
+        "isCaptain": false,
+        "id": "199798",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Christos",
+        "lastName": "Tzolis",
+        "shirtNum": "17",
+        "isCaptain": false,
+        "id": "439509",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Kai",
+        "lastName": "Havertz",
+        "shirtNum": "29",
+        "isCaptain": false,
+        "id": "219847",
+        "position": "Forward"
+      },
+      {
+        "firstName": "Riccardo",
+        "lastName": "Calafiori",
+        "shirtNum": "33",
+        "isCaptain": false,
+        "id": "466075",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Declan",
+        "lastName": "Rice",
+        "shirtNum": "41",
+        "isCaptain": false,
+        "id": "204480",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Myles",
+        "lastName": "Lewis-Skelly",
+        "shirtNum": "49",
+        "isCaptain": false,
+        "id": "499169",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Kepa",
+        "lastName": "Arrizabalaga",
+        "subPosition": "Goalkeeper",
+        "shirtNum": "13",
+        "isCaptain": false,
+        "id": "109745",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Piero",
+        "lastName": "Hincapié",
+        "subPosition": "Defender",
+        "shirtNum": "5",
+        "isCaptain": false,
+        "id": "448104",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Eberechi",
+        "lastName": "Eze",
+        "subPosition": "Midfielder",
+        "shirtNum": "10",
+        "isCaptain": false,
+        "id": "232413",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Viktor",
+        "lastName": "Gyökeres",
+        "subPosition": "Forward",
+        "shirtNum": "14",
+        "isCaptain": false,
+        "id": "224117",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Noni",
+        "lastName": "Madueke",
+        "subPosition": "Forward",
+        "shirtNum": "20",
+        "isCaptain": false,
+        "id": "248857",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Mikel",
+        "lastName": "Merino",
+        "subPosition": "Midfielder",
+        "shirtNum": "23",
+        "isCaptain": false,
+        "id": "195384",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Martín",
+        "lastName": "Zubimendi",
+        "subPosition": "Midfielder",
+        "shirtNum": "36",
+        "isCaptain": false,
+        "id": "481655",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Bruno",
+        "lastName": "Guimarães Rodriguez Moura",
+        "subPosition": "Midfielder",
+        "shirtNum": "39",
+        "isCaptain": false,
+        "id": "208706",
+        "position": "Substitute",
+        "knownName": "Bruno Guimarães"
+      },
+      {
+        "firstName": "Max",
+        "lastName": "Dowman",
+        "subPosition": "Midfielder",
+        "shirtNum": "56",
+        "isCaptain": false,
+        "id": "616077",
+        "position": "Substitute"
+      }
+    ],
+    "teamId": "3",
+    "formation": {
+      "subs": [
+        "109745",
+        "448104",
+        "232413",
+        "224117",
+        "248857",
+        "195384",
+        "481655",
+        "208706",
+        "616077"
+      ],
+      "teamId": "3",
+      "lineup": [
+        [
+          "154561"
+        ],
+        [
+          "198869",
+          "199798",
+          "226597",
+          "466075"
+        ],
+        [
+          "204480",
+          "499169"
+        ],
+        [
+          "223340",
+          "184029",
+          "439509"
+        ],
+        [
+          "219847"
+        ]
+      ],
+      "formation": "4-2-3-1"
+    },
+    "managers": [
+      {
+        "firstName": "Mikel",
+        "lastName": "Arteta",
+        "id": "51018",
+        "type": "Manager"
+      }
+    ]
+  },
+  "away_team": {
+    "players": [
+      {
+        "firstName": "Emiliano",
+        "lastName": "Martínez",
+        "shirtNum": "1",
+        "isCaptain": false,
+        "id": "98980",
+        "position": "Goalkeeper"
+      },
+      {
+        "firstName": "Wesley",
+        "lastName": "Fofana",
+        "shirtNum": "3",
+        "isCaptain": false,
+        "id": "444463",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Maxence",
+        "lastName": "Lacroix",
+        "shirtNum": "5",
+        "isCaptain": false,
+        "id": "437499",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Pedro",
+        "lastName": "Lomba Neto",
+        "shirtNum": "7",
+        "isCaptain": false,
+        "id": "247632",
+        "position": "Midfielder",
+        "knownName": "Pedro Neto"
+      },
+      {
+        "firstName": "João Pedro",
+        "lastName": "Junqueira de Jesus",
+        "shirtNum": "9",
+        "isCaptain": false,
+        "id": "475168",
+        "position": "Forward",
+        "knownName": "João Pedro"
+      },
+      {
+        "firstName": "Cole",
+        "lastName": "Palmer",
+        "shirtNum": "10",
+        "isCaptain": false,
+        "id": "244851",
+        "position": "Forward"
+      },
+      {
+        "firstName": "Morgan",
+        "lastName": "Rogers",
+        "shirtNum": "17",
+        "isCaptain": false,
+        "id": "244850",
+        "position": "Forward"
+      },
+      {
+        "firstName": "Jorrel",
+        "lastName": "Hato",
+        "shirtNum": "21",
+        "isCaptain": false,
+        "id": "551210",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Reece",
+        "lastName": "James",
+        "shirtNum": "24",
+        "isCaptain": true,
+        "id": "225796",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Josh",
+        "lastName": "Acheampong",
+        "shirtNum": "34",
+        "isCaptain": false,
+        "id": "577016",
+        "position": "Defender"
+      },
+      {
+        "firstName": "Roméo",
+        "lastName": "Lavia",
+        "shirtNum": "45",
+        "isCaptain": false,
+        "id": "514356",
+        "position": "Midfielder"
+      },
+      {
+        "firstName": "Mike",
+        "lastName": "Penders",
+        "subPosition": "Goalkeeper",
+        "shirtNum": "39",
+        "isCaptain": false,
+        "id": "549939",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Valentín",
+        "lastName": "Barco",
+        "subPosition": "Midfielder",
+        "shirtNum": "4",
+        "isCaptain": false,
+        "id": "543158",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Levi",
+        "lastName": "Colwill",
+        "subPosition": "Defender",
+        "shirtNum": "6",
+        "isCaptain": false,
+        "id": "460028",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Jamie",
+        "lastName": "Gittens",
+        "subPosition": "Forward",
+        "shirtNum": "11",
+        "isCaptain": false,
+        "id": "463936",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Danny",
+        "lastName": "Welbeck",
+        "subPosition": "Forward",
+        "shirtNum": "18",
+        "isCaptain": false,
+        "id": "50175",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Geovany",
+        "lastName": "Tcherno Quenda",
+        "subPosition": "Midfielder",
+        "shirtNum": "23",
+        "isCaptain": false,
+        "id": "593117",
+        "position": "Substitute",
+        "knownName": "Geovany Quenda"
+      },
+      {
+        "firstName": "Malo",
+        "lastName": "Gusto",
+        "subPosition": "Defender",
+        "shirtNum": "27",
+        "isCaptain": false,
+        "id": "482609",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Pep",
+        "lastName": "Chavarría",
+        "subPosition": "Defender",
+        "shirtNum": "29",
+        "isCaptain": false,
+        "id": "498444",
+        "position": "Substitute"
+      },
+      {
+        "firstName": "Estêvão Willian",
+        "lastName": "Almeida de Oliveira Gonçalves",
+        "subPosition": "Forward",
+        "shirtNum": "41",
+        "isCaptain": false,
+        "id": "624773",
+        "position": "Substitute",
+        "knownName": "Estêvão"
+      }
+    ],
+    "teamId": "8",
+    "formation": {
+      "subs": [
+        "549939",
+        "543158",
+        "460028",
+        "463936",
+        "50175",
+        "593117",
+        "482609",
+        "498444",
+        "624773"
+      ],
+      "teamId": "8",
+      "lineup": [
+        [
+          "98980"
+        ],
+        [
+          "577016",
+          "437499",
+          "444463"
+        ],
+        [
+          "247632",
+          "514356",
+          "225796",
+          "551210"
+        ],
+        [
+          "244851",
+          "244850"
+        ],
+        [
+          "475168"
+        ]
+      ],
+      "formation": "3-4-2-1"
+    },
+    "managers": [
+      {
+        "firstName": "Xabi",
+        "lastName": "Alonso",
+        "id": "48314",
+        "type": "Manager"
+      }
+    ]
+  }
+}

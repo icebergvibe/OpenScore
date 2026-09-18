@@ -1,0 +1,710 @@
+{
+  "homeTeam": {
+    "players": [
+      {
+        "id": 161935,
+        "name": "Patrik MOHOROVIC",
+        "number": "30",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=1430f98f-bbcb-4f40-b41f-7f161c460c55",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 162451,
+        "name": "Karlo BRUCIC",
+        "number": "2",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=0a4a1924-1ee7-44a0-bc63-446cab07b21b",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 161937,
+        "name": "Nicolas Francisco LANCIONI",
+        "number": "7",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=4536bd1b-490d-4a8c-a2bb-fe6aab94c4b6",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 158925,
+        "name": "M'MOMBWA Kokola Charles ",
+        "number": "8",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=d46d79a4-7573-4779-adea-cc7f3b8645db",
+        "events": [
+          {
+            "id": 53310089,
+            "type": "YELLOW",
+            "team": "HOME",
+            "time": "86'",
+            "playerName": "M'MOMBWA Kokola Charles",
+            "playerId": 158925
+          },
+          {
+            "id": 53310116,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "88'",
+            "playerName": "MELILLO Thomas",
+            "playerNameTwo": "M'MOMBWA Kokola Charles",
+            "playerId": 111048,
+            "playerIdTwo": 158925
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 162202,
+        "name": "Joao Henrique CAMARGO MAFRA",
+        "number": "10",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=a9efe95a-3c72-4aa2-b262-5c3205619428",
+        "events": [
+          {
+            "id": 53309914,
+            "type": "YELLOW",
+            "team": "HOME",
+            "time": "51'",
+            "playerName": "CAMARGO MAFRA Joao Henrique",
+            "playerId": 162202
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 99148,
+        "name": "Jake MICALLEF",
+        "number": "16",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=1c8ec2d8-96fb-4a4e-9599-848800d5b0b5",
+        "events": [
+          {
+            "id": 53310107,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "88'",
+            "playerName": "ELLARD Aston James",
+            "playerNameTwo": "MICALLEF Jake",
+            "playerId": 160810,
+            "playerIdTwo": 99148
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 84183,
+        "name": "Jurgen PISANI",
+        "number": "17",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=a4e5d78e-35b6-4748-9547-5f2293c0c3ba",
+        "events": [
+          {
+            "id": 53309947,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "67'",
+            "playerName": "MAGRI Shelom",
+            "playerNameTwo": "PISANI Jurgen",
+            "playerId": 111599,
+            "playerIdTwo": 84183
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 156319,
+        "name": "Strahinja JOVANCIC",
+        "number": "21",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=a6c88eb5-e01d-42c4-86a3-747cfdae7d11",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": true,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 99636,
+        "name": "Zean LEONARDI",
+        "number": "22",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=70e72e8e-6b19-44d3-ade9-32bc235da345",
+        "events": [
+          {
+            "id": 53310125,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "90+3'",
+            "playerName": "FENECH Kaiden",
+            "playerNameTwo": "LEONARDI Zean",
+            "playerId": 106963,
+            "playerIdTwo": 99636
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 162526,
+        "name": "Vinicius MENDONCA SANTA ROSA",
+        "number": "29",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=881adf1a-c6ef-4af2-94d5-ec4089373a67",
+        "events": [
+          {
+            "id": 53309897,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "46'",
+            "playerName": "GOUHON Pah Franck",
+            "playerNameTwo": "MENDONCA SANTA ROSA Vinicius",
+            "playerId": 162466,
+            "playerIdTwo": 162526
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 93172,
+        "name": "Mario FONTANELLA",
+        "number": "89",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=d911986e-e34b-4f96-9d9c-c115f57dac76",
+        "events": [
+          {
+            "id": 53309666,
+            "type": "PENALTY",
+            "team": "HOME",
+            "time": "16'",
+            "playerName": "FONTANELLA Mario",
+            "playerId": 93172
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 94830,
+        "name": "Leon SEISUN",
+        "number": "1",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=1798b028-7b81-4210-ad87-2f1cf5432503",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 162201,
+        "name": "Tiago GOMES DOS SANTOS",
+        "number": "91",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 111599,
+        "name": "Shelom MAGRI",
+        "number": "4",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=49029374-b940-473d-b61b-11df99b28d3d",
+        "events": [
+          {
+            "id": 53309947,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "67'",
+            "playerName": "MAGRI Shelom",
+            "playerNameTwo": "PISANI Jurgen",
+            "playerId": 111599,
+            "playerIdTwo": 84183
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 108821,
+        "name": "Nicholas James AGIUS",
+        "number": "11",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=15e4b0a3-b341-4d8c-aa66-c0bf2f72805b",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 162466,
+        "name": "Pah Franck GOUHON",
+        "number": "18",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=9a542fb9-be0f-4496-a8f3-33b8a8aa571c",
+        "events": [
+          {
+            "id": 53309897,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "46'",
+            "playerName": "GOUHON Pah Franck",
+            "playerNameTwo": "MENDONCA SANTA ROSA Vinicius",
+            "playerId": 162466,
+            "playerIdTwo": 162526
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 107111,
+        "name": "Zven POLIDANO",
+        "number": "23",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=561c107d-7b46-4caa-98c1-e641c6a00faa",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 110783,
+        "name": "Gabriel CASSAR",
+        "number": "31",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=8d7f7f32-a261-4d47-9176-7f020745faf7",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 161936,
+        "name": "Tobias Andre MORICEAU TERRAZAS",
+        "number": "32",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=205fede0-f13c-48d8-abc7-b930031c1f62",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 106963,
+        "name": "Kaiden FENECH",
+        "number": "70",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=2bbe783c-4f47-42c4-8cfc-d082ccff13b8",
+        "events": [
+          {
+            "id": 53310125,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "90+3'",
+            "playerName": "FENECH Kaiden",
+            "playerNameTwo": "LEONARDI Zean",
+            "playerId": 106963,
+            "playerIdTwo": 99636
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 111048,
+        "name": "Thomas MELILLO",
+        "number": "71",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=0af74ff6-2ce9-4e2b-b980-5b2b568f1e36",
+        "events": [
+          {
+            "id": 53310116,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "88'",
+            "playerName": "MELILLO Thomas",
+            "playerNameTwo": "M'MOMBWA Kokola Charles",
+            "playerId": 111048,
+            "playerIdTwo": 158925
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 160810,
+        "name": "Aston James ELLARD",
+        "number": "77",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=2836d444-aacd-4bea-addd-b0ff7d8febd5",
+        "events": [
+          {
+            "id": 53310107,
+            "type": "SUBSTITUTION",
+            "team": "HOME",
+            "time": "88'",
+            "playerName": "ELLARD Aston James",
+            "playerNameTwo": "MICALLEF Jake",
+            "playerId": 160810,
+            "playerIdTwo": 99148
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      }
+    ],
+    "coach": "AGIUS Gilbert"
+  },
+  "awayTeam": {
+    "players": [
+      {
+        "id": 162628,
+        "name": "MARCHEGIANI Gabriele",
+        "number": "1",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=b911ae09-66ed-40da-9b26-6b105b038bb1",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 158935,
+        "name": "PETRILIO COMPRI Rafael",
+        "number": "2",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=8e5b9d08-38e9-4b65-b327-a394df596cfe",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 89974,
+        "name": "GUILLAUMIER Matthew",
+        "number": "6",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=f5e29255-1d22-418f-89d5-1e3f3c1d4dc2",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 91267,
+        "name": "GRECH Jake",
+        "number": "8",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=f6ef5909-f246-4317-89de-22b3f2ce8618",
+        "events": [
+          {
+            "id": 53310080,
+            "type": "YELLOW",
+            "team": "AWAY",
+            "time": "80'",
+            "playerName": "GRECH Jake",
+            "playerId": 91267
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 109034,
+        "name": "SCICLUNA Kean",
+        "number": "15",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=6ef400d3-b960-4c54-a1bb-ff799f0ba6c7",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 143885,
+        "name": "BJELICIC Ognjen",
+        "number": "27",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=4656b2fe-0d19-491e-a4f5-64a68688d462",
+        "events": [
+          {
+            "id": 53310546,
+            "type": "YELLOW",
+            "team": "AWAY",
+            "time": "90+1'",
+            "playerName": "BJELICIC Ognjen",
+            "playerId": 143885
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 162467,
+        "name": "TROTTA Marcello",
+        "number": "29",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=64b89560-d8b5-459c-9d32-0d5b25fd2e7a",
+        "events": [
+          {
+            "id": 53310047,
+            "type": "GOAL",
+            "team": "AWAY",
+            "time": "74'",
+            "playerName": "TROTTA Marcello",
+            "playerId": 162467
+          },
+          {
+            "id": 53310098,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "88'",
+            "playerName": "POLITO Vincenzo",
+            "playerNameTwo": "TROTTA Marcello",
+            "playerId": 158946,
+            "playerIdTwo": 162467
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 162216,
+        "name": "AGUIAR DE ALVES Marcelo Caua",
+        "number": "77",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=16f0bfd7-998f-4841-8796-17d53b1e5397",
+        "events": [
+          {
+            "id": 53309676,
+            "type": "GOAL",
+            "team": "AWAY",
+            "time": "30'",
+            "playerName": "AGUIAR DE ALVES Marcelo Caua",
+            "playerId": 162216
+          },
+          {
+            "id": 53310062,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "79'",
+            "playerName": "CETER VALENCIA Damir",
+            "playerNameTwo": "AGUIAR DE ALVES Marcelo Caua",
+            "playerId": 161172,
+            "playerIdTwo": 162216
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 159064,
+        "name": "CORIC Ante",
+        "number": "88",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=b1b36018-e72d-48fe-adba-3a4b37190837",
+        "events": [
+          {
+            "id": 53310071,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "79'",
+            "playerName": "XERRI Sven",
+            "playerNameTwo": "CORIC Ante",
+            "playerId": 107081,
+            "playerIdTwo": 159064
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 95072,
+        "name": "MARCELINA Emerson",
+        "number": "91",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=5cba67fa-7aa3-4f86-a0ab-3eae62c590e4",
+        "events": [],
+        "startingLineup": true,
+        "isCaptain": true,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 81244,
+        "name": "CAMENZULI Ryan",
+        "number": "94",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=d2e6fa56-eac5-4720-953b-bba1fc082cfc",
+        "events": [
+          {
+            "id": 53309927,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "61'",
+            "playerName": "ATTARD Shaisen",
+            "playerNameTwo": "CAMENZULI Ryan",
+            "playerId": 97813,
+            "playerIdTwo": 81244
+          }
+        ],
+        "startingLineup": true,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 123611,
+        "name": "PACE BRINCAU Keane",
+        "number": "92",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=668001ac-2afe-4ab9-84a6-b100190cf619",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 152009,
+        "name": "DA PAZ SILVA FILHO Francisco Celio",
+        "number": "98",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=9a6c9f59-0ee5-49ea-a905-44bc54438073",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": true
+      },
+      {
+        "id": 107081,
+        "name": "XERRI Sven",
+        "number": "5",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=8622f7dc-9f42-4360-b084-91ec3a757312",
+        "events": [
+          {
+            "id": 53310071,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "79'",
+            "playerName": "XERRI Sven",
+            "playerNameTwo": "CORIC Ante",
+            "playerId": 107081,
+            "playerIdTwo": 159064
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 97813,
+        "name": "ATTARD Shaisen",
+        "number": "7",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=d972409f-1a45-4fcf-8c45-51149936a42b",
+        "events": [
+          {
+            "id": 53309927,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "61'",
+            "playerName": "ATTARD Shaisen",
+            "playerNameTwo": "CAMENZULI Ryan",
+            "playerId": 97813,
+            "playerIdTwo": 81244
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 161172,
+        "name": "CETER VALENCIA Damir",
+        "number": "9",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=03d77726-8d8a-4536-ad54-abdc4d364899",
+        "events": [
+          {
+            "id": 53310062,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "79'",
+            "playerName": "CETER VALENCIA Damir",
+            "playerNameTwo": "AGUIAR DE ALVES Marcelo Caua",
+            "playerId": 161172,
+            "playerIdTwo": 162216
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 158946,
+        "name": "POLITO Vincenzo",
+        "number": "13",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=0488280d-33c4-46fe-bf06-27ce9d1a44b7",
+        "events": [
+          {
+            "id": 53310098,
+            "type": "SUBSTITUTION",
+            "team": "AWAY",
+            "time": "88'",
+            "playerName": "POLITO Vincenzo",
+            "playerNameTwo": "TROTTA Marcello",
+            "playerId": 158946,
+            "playerIdTwo": 162467
+          }
+        ],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 139058,
+        "name": "CUTAJAR Yan",
+        "number": "17",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=87a4ca37-21d8-4204-adb2-fd2e819c8b88",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 107055,
+        "name": "LETHERBY Daniel",
+        "number": "21",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=5e079bb3-6a95-4e76-ac44-40f2556abfcc",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 123571,
+        "name": "CAMILLERI Scott",
+        "number": "24",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=6f37f16f-75f2-48ee-a94b-7ce0b54586d4",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 108906,
+        "name": "HILI Kydin",
+        "number": "25",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=1e62bf84-e59c-44ff-b5c7-58fb40740d5a",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      },
+      {
+        "id": 100757,
+        "name": "VIRANO Gonzalo Nicolas",
+        "number": "47",
+        "profilePhoto": "https://comet.mfa.com.mt/file?id=46b7e97c-ffb3-4c92-b546-5c6fcb21d61d",
+        "events": [],
+        "startingLineup": false,
+        "isCaptain": false,
+        "isGoalkeeper": false
+      }
+    ],
+    "coach": "AMELIA Marco"
+  }
+}

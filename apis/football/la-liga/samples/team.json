@@ -1,0 +1,97 @@
+{
+  "team": {
+    "id": 15,
+    "slug": "real-madrid",
+    "name": "Real Madrid Club de Fútbol",
+    "nickname": "Real Madrid",
+    "boundname": "Real Madrid",
+    "shortname": "RMA",
+    "color": "#0f39b8",
+    "color_secondary": "#ffffff",
+    "foundation": "1902-03-06T00:00:00+00:00",
+    "address": "Estadio Santiago Bernabéu, C/ Concha Espina, 1, 28036 Madrid",
+    "web": "http://www.realmadrid.com",
+    "twitter": "@RealMadrid",
+    "facebook": "https://www.facebook.com/RealMadrid",
+    "instagram": "https://instagram.com/realmadrid",
+    "mail": "mensajes@realmadrid.com",
+    "phone": "0034 913 984 300",
+    "fax": "0034 913 984 386",
+    "sprite_status": "created",
+    "club": {
+      "id": 15,
+      "slug": "real-madrid",
+      "name": "Real Madrid Club de Fútbol",
+      "nickname": "Real Madrid",
+      "boundname": "Real Madrid",
+      "shortname": "RMA",
+      "selector_name": "R. Madrid",
+      "address": "Estadio Santiago Bernabéu,C/ Concha Espina, 1,28036 Madrid",
+      "foundation": "1902-03-06T00:00:00+00:00",
+      "web": "http://www.realmadrid.com",
+      "twitter": "@RealMadrid",
+      "facebook": "https://www.facebook.com/RealMadrid",
+      "instagram": "https://instagram.com/realmadrid",
+      "mail": "mensajes@realmadrid.com",
+      "phone": "0034 913 984 300",
+      "fax": "0034 913 984 386",
+      "president": "Florentino Pérez Rodríguez"
+    },
+    "venue": {
+      "id": 15,
+      "name": "Bernabéu",
+      "image": {
+        "id": 823917,
+        "name": "Santiago Bernabéu",
+        "caption": "Santiago Bernabéu",
+        "url": "https://assets.laliga.com/assets/2024/10/01/xlarge/56d0813c5bfb8bbe24cdb241075ddaff.png",
+        "resizes": {
+          "xsmall": "https://assets.laliga.com/assets/2024/10/01/xsmall/56d0813c5bfb8bbe24cdb241075ddaff.png",
+          "small": "https://assets.laliga.com/assets/2024/10/01/small/56d0813c5bfb8bbe24cdb241075ddaff.png",
+          "medium": "https://assets.laliga.com/assets/2024/10/01/medium/56d0813c5bfb8bbe24cdb241075ddaff.png",
+          "large": "https://assets.laliga.com/assets/2024/10/01/large/56d0813c5bfb8bbe24cdb241075ddaff.png",
+          "xlarge": "https://assets.laliga.com/assets/2024/10/01/xlarge/56d0813c5bfb8bbe24cdb241075ddaff.png",
+          "hl": "https://assets.laliga.com/assets/2024/10/01/hl/56d0813c5bfb8bbe24cdb241075ddaff.png"
+        }
+      },
+      "slug": "bernabeu",
+      "opta_id": "v1360",
+      "lde_id": 515
+    },
+    "shield": {
+      "id": 149,
+      "name": "Escudo RMA",
+      "caption": "Escudo RMA",
+      "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+      "resizes": {
+        "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+        "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+        "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+        "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+        "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+      }
+    },
+    "competitions": [
+      {
+        "id": 1,
+        "name": "LALIGA EA SPORTS",
+        "slug": "primera-division",
+        "main": true
+      },
+      {
+        "id": 4,
+        "name": "UEFA Champions League",
+        "slug": "champions-league",
+        "main": false
+      }
+    ],
+    "last_main_competition": {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "main": true
+    },
+    "opta_id": "t186",
+    "lde_id": 82
+  }
+}

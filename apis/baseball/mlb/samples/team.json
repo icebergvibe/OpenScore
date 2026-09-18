@@ -1,0 +1,110 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "teams": [
+    {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
+      "id": 147,
+      "name": "New York Yankees",
+      "link": "/api/v1/teams/147",
+      "season": 2026,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313",
+        "active": true,
+        "season": "2026"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103",
+        "abbreviation": "AL",
+        "nameShort": "American",
+        "seasonState": "inseason",
+        "hasWildCard": true,
+        "hasSplitSeason": false,
+        "numGames": 162,
+        "hasPlayoffPoints": false,
+        "numTeams": 15,
+        "numWildcardTeams": 3,
+        "seasonDateInfo": {
+          "seasonId": "2026",
+          "preSeasonStartDate": "2026-01-01",
+          "preSeasonEndDate": "2026-02-19",
+          "seasonStartDate": "2026-02-20",
+          "springStartDate": "2026-02-20",
+          "springEndDate": "2026-03-24",
+          "regularSeasonStartDate": "2026-03-25",
+          "lastDate1stHalf": "2026-07-14",
+          "allStarDate": "2026-07-14",
+          "firstDate2ndHalf": "2026-07-19",
+          "regularSeasonEndDate": "2026-09-27",
+          "postSeasonStartDate": "2026-09-28",
+          "postSeasonEndDate": "2026-10-31",
+          "seasonEndDate": "2026-10-31",
+          "offseasonStartDate": "2026-11-01",
+          "offSeasonEndDate": "2026-12-31",
+          "seasonLevelGamedayType": "P",
+          "gameLevelGamedayType": "P",
+          "qualifierPlateAppearances": 3.1,
+          "qualifierOutsPitched": 3.0
+        },
+        "season": "2026",
+        "orgCode": "AL",
+        "conferencesInUse": false,
+        "divisionsInUse": true,
+        "sport": {
+          "id": 1,
+          "link": "/api/v1/sports/1"
+        },
+        "sortOrder": 21,
+        "active": true
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "season": "2026",
+        "nameShort": "AL East",
+        "link": "/api/v1/divisions/201",
+        "abbreviation": "ALE",
+        "league": {
+          "id": 103,
+          "link": "/api/v1/league/103"
+        },
+        "sport": {
+          "id": 1,
+          "link": "/api/v1/sports/1"
+        },
+        "hasWildcard": false,
+        "sortOrder": 22,
+        "numPlayoffTeams": 1,
+        "active": true
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
+    }
+  ]
+}

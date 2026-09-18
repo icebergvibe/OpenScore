@@ -1,0 +1,394 @@
+{
+  "league": "la-liga",
+  "name": "LaLiga",
+  "baseUrl": "https://apim.laliga.com/public-service",
+  "headers": {
+    "Ocp-Apim-Subscription-Key": "{secret.laliga.publicService}",
+    "Content-Language": "en"
+  },
+  "checks": [
+    {
+      "name": "laliga.com page carries the subscription keys",
+      "url": "https://www.laliga.com/en-GB",
+      "format": "text",
+      "note": "LaLigaKeys.discover reads backendSubscription/webviewSubscription from __NEXT_DATA__"
+    },
+    {
+      "name": "api/v1/competitions",
+      "path": "/api/v1/competitions",
+      "sample": "competitions.json",
+      "keys": [
+        "competitions[]"
+      ]
+    },
+    {
+      "name": "api/v1/competitions/{slug}",
+      "path": "/api/v1/competitions/primera-division?seasonYear=2026",
+      "sample": "competition.json"
+    },
+    {
+      "name": "api/v1/subscriptions?competitionSlug",
+      "path": "/api/v1/subscriptions?competitionSlug=primera-division",
+      "sample": "subscriptions.json",
+      "keys": [
+        "subscriptions[].slug",
+        "total"
+      ]
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}",
+      "path": "/api/v1/subscriptions/laliga-easports-2026",
+      "sample": "subscription.json",
+      "keys": [
+        "subscription"
+      ]
+    },
+    {
+      "name": "api/v1/subscriptions/{slug} — Hypermotion",
+      "path": "/api/v1/subscriptions/laliga-hypermotion-2026",
+      "sample": "subscriptions-hypermotion.json",
+      "keys": [
+        "subscription"
+      ]
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/current-gameweek",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/current-gameweek",
+      "sample": "subscription-current-gameweek.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/gameweeks",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/gameweeks",
+      "sample": "subscription-gameweeks.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/standing-gameweeks",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/standing-gameweeks",
+      "sample": "subscription-standing-gameweeks.json"
+    },
+    {
+      "name": "api/v1/calendar",
+      "path": "/api/v1/calendar?startDate={today}&endDate={today}&competitionSlug=primera-division",
+      "sample": "calendar.json",
+      "keys": [
+        "calendars"
+      ]
+    },
+    {
+      "name": "api/v1/matches?week — final",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-easports-2026&week=4&limit=100&orderField=date&orderType=asc",
+      "sample": "matches-week.final.json",
+      "keys": [
+        "matches[].slug",
+        "matches[].status",
+        "matches[].home_team",
+        "matches[].date",
+        "total"
+      ]
+    },
+    {
+      "name": "api/v1/matches?week — pre",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-easports-2026&week=5&limit=100&orderField=date&orderType=asc",
+      "sample": "matches-week.pre.json",
+      "keys": [
+        "matches[].slug"
+      ]
+    },
+    {
+      "name": "api/v1/matches?teamSlug",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-easports-2026&teamSlug=real-madrid&limit=3",
+      "sample": "matches-team.json",
+      "keys": [
+        "matches[]"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "api/v1/matches?status",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-easports-2026&status=PreMatch&limit=3",
+      "sample": "matches-status.json",
+      "depth": 1
+    },
+    {
+      "name": "api/v1/matches — last season",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-easports-2025&week=38&limit=100",
+      "sample": "matches-last-season.json",
+      "keys": [
+        "matches[]"
+      ]
+    },
+    {
+      "name": "api/v1/matches — Segunda",
+      "path": "/api/v1/matches?subscriptionSlug=laliga-hypermotion-2026&week=1&limit=100",
+      "sample": "matches-segunda.json",
+      "keys": [
+        "matches[]"
+      ]
+    },
+    {
+      "name": "api/v1/matches/{slug} — final",
+      "path": "/api/v1/matches/temporada-2026-2027-laliga-ea-sports-sevilla-fc-valencia-cf-5",
+      "sample": "match.final.json",
+      "keys": [
+        "match"
+      ]
+    },
+    {
+      "name": "api/v1/matches/{slug} — pre",
+      "path": "/api/v1/matches/temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+      "sample": "match.pre.json",
+      "keys": [
+        "match"
+      ]
+    },
+    {
+      "name": "api/web/matches/{slug} — final",
+      "url": "https://apim.laliga.com/webview/api/web/matches/temporada-2026-2027-laliga-ea-sports-sevilla-fc-valencia-cf-5",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match.final.json",
+      "keys": [
+        "match.status",
+        "match.home_score",
+        "match.period_started"
+      ]
+    },
+    {
+      "name": "api/web/matches/{slug} — pre",
+      "url": "https://apim.laliga.com/webview/api/web/matches/temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match.pre.json",
+      "keys": [
+        "match.status"
+      ]
+    },
+    {
+      "name": "api/web/matches/{id}/events — final",
+      "url": "https://apim.laliga.com/webview/api/web/matches/102297/events",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-events.final.json",
+      "keys": [
+        "match_events[]"
+      ]
+    },
+    {
+      "name": "api/web/matches/{id}/events — pre",
+      "url": "https://apim.laliga.com/webview/api/web/matches/102295/events",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-events.pre.json",
+      "keys": [
+        "match_events[]"
+      ]
+    },
+    {
+      "name": "api/web/matches/{id}/lineups — final",
+      "url": "https://apim.laliga.com/webview/api/web/matches/102297/lineups",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-lineups.final.json",
+      "keys": [
+        "home_team_lineups[]",
+        "away_team_lineups[]"
+      ]
+    },
+    {
+      "name": "api/web/matches/{id}/lineups — pre",
+      "url": "https://apim.laliga.com/webview/api/web/matches/102295/lineups",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-lineups.pre.json"
+    },
+    {
+      "name": "api/web/matches/{id}/comments",
+      "url": "https://apim.laliga.com/webview/api/web/matches/102297/comments",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-comments.final.json"
+    },
+    {
+      "name": "api/web/matches/opta/{opta}/stats",
+      "url": "https://apim.laliga.com/webview/api/web/matches/opta/g2650810/stats",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-match-stats.final.json",
+      "keys": [
+        "match_team_stats[]"
+      ]
+    },
+    {
+      "name": "api/web/subscriptions/{slug}/week/{n}/matches",
+      "url": "https://apim.laliga.com/webview/api/web/subscriptions/laliga-easports-2026/week/4/matches",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-subscription-week-matches.json"
+    },
+    {
+      "name": "api/v1/matches/nextmatcheswidget",
+      "path": "/api/v1/matches/nextmatcheswidget?subscriptionSlug=laliga-easports-2026",
+      "sample": "matches-nextmatcheswidget.json"
+    },
+    {
+      "name": "api/v1/matches/{teamSlug}/nextpreviousmatches",
+      "path": "/api/v1/matches/real-madrid/nextpreviousmatches?subscriptionSlug=laliga-easports-2026",
+      "sample": "team-nextpreviousmatches.json"
+    },
+    {
+      "name": "api/web/matches/tv",
+      "url": "https://apim.laliga.com/webview/api/web/matches/tv?matches[]=102297&matches[]=102295",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-matches-tv.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/standing",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/standing",
+      "sample": "subscription-standing.json",
+      "keys": [
+        "standings[].team",
+        "standings[].position",
+        "standings[].points"
+      ]
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/standing?week",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/standing?week=3",
+      "sample": "subscription-standing-week.json",
+      "keys": [
+        "standings[]"
+      ]
+    },
+    {
+      "name": "api/web/subscriptions/{slug}/standing",
+      "url": "https://apim.laliga.com/webview/api/web/subscriptions/laliga-easports-2026/standing",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-subscription-standing.json"
+    },
+    {
+      "name": "api/v1/teams/{slug}/standing",
+      "path": "/api/v1/teams/real-madrid/standing?competition=primera-division&season=2026",
+      "sample": "team-standing.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/players/stats",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/players/stats?stats=goals&limit=3",
+      "sample": "subscription-players-stats.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/teams/stats",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/teams/stats",
+      "sample": "subscription-teams-stats.json"
+    },
+    {
+      "name": "api/v1/subscriptions/{slug}/stats",
+      "path": "/api/v1/subscriptions/laliga-easports-2026/stats",
+      "sample": "subscription-stats.json"
+    },
+    {
+      "name": "api/v1/teams?subscriptionSlug",
+      "path": "/api/v1/teams?subscriptionSlug=laliga-easports-2026&limit=30",
+      "sample": "teams.json",
+      "keys": [
+        "teams[].slug",
+        "total"
+      ]
+    },
+    {
+      "name": "api/v1/teams/{slug}",
+      "path": "/api/v1/teams/real-madrid",
+      "sample": "team.json",
+      "keys": [
+        "team"
+      ]
+    },
+    {
+      "name": "api/v1/teams/{slug}/squad",
+      "path": "/api/v1/teams/real-madrid/squad?seasonYear=2026&limit=50",
+      "sample": "team-squad.json",
+      "keys": [
+        "squads[]"
+      ]
+    },
+    {
+      "name": "api/v1/teams/{slug}/squad-manager",
+      "path": "/api/v1/teams/real-madrid/squad-manager?seasonYear=2026",
+      "sample": "team-squad-manager.json"
+    },
+    {
+      "name": "api/v1/squads",
+      "path": "/api/v1/squads?teamSlug=real-madrid&seasonYear=2026",
+      "sample": "squads.json"
+    },
+    {
+      "name": "api/v1/teams/{slug}/stats",
+      "path": "/api/v1/teams/real-madrid/stats?subscriptionSlug=laliga-easports-2026",
+      "sample": "team-stats.json"
+    },
+    {
+      "name": "api/v1/players/{slug}",
+      "path": "/api/v1/players/jude-bellingham",
+      "sample": "player.json",
+      "keys": [
+        "player"
+      ]
+    },
+    {
+      "name": "api/v1/players/{slug}/stats",
+      "path": "/api/v1/players/jude-bellingham/stats?subscriptionSlug=laliga-easports-2026",
+      "sample": "player-stats.json"
+    },
+    {
+      "name": "api/v1/players/{slug}/matches",
+      "path": "/api/v1/players/jude-bellingham/matches?subscriptionSlug=laliga-easports-2026",
+      "sample": "player-matches.json"
+    },
+    {
+      "name": "api/web/players/{slug}",
+      "url": "https://apim.laliga.com/webview/api/web/players/jude-bellingham",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-player.json"
+    },
+    {
+      "name": "api/v1/players?q",
+      "path": "/api/v1/players?q=vinicius",
+      "sample": "players.json",
+      "keys": [
+        "players[]"
+      ]
+    },
+    {
+      "name": "api/v1/global-data",
+      "path": "/api/v1/global-data?v3",
+      "sample": "global-data.json"
+    },
+    {
+      "name": "api/v1/transfers",
+      "path": "/api/v1/transfers?competitionSlug=primera-division",
+      "sample": "transfers.json"
+    },
+    {
+      "name": "api/web/beyond-stats/header",
+      "url": "https://apim.laliga.com/webview/api/web/beyond-stats/header",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "{secret.laliga.webview}"
+      },
+      "sample": "wv-beyond-stats-header.json"
+    }
+  ]
+}

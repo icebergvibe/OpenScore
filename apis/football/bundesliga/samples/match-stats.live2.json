@@ -1,0 +1,703 @@
+{
+  "XGoals": {
+    "awayValue": 1.1841,
+    "homeValue": 0.3232,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "ballPossessionRatio": {
+    "awayValue": 39,
+    "homeValue": 61,
+    "lastUpdateDateTime": "2026-09-11T19:18:06.755Z"
+  },
+  "cornerKicks": {
+    "awayValue": 5,
+    "homeValue": 1,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "distanceCovered": {
+    "awayValue": 60.3,
+    "homeValue": 58.5,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "fantasyManagerRanking": {
+    "away": [
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J019PZ",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j019pz-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Robin Gosens",
+        "playerSlug": "robin-gosens",
+        "value": 224
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-0000X6",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-0000x6-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Loris Karius",
+        "playerSlug": "loris-karius",
+        "value": 183
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-002GN7",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-002gn7-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Soufiane El-Faouzi",
+        "playerSlug": "soufiane-el-faouzi",
+        "value": 131
+      }
+    ],
+    "home": [
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-0026TT",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-0026tt-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Felix Uduokhai",
+        "playerSlug": "felix-uduokhai",
+        "value": 109
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J0269J",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j0269j-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Emmanuel Latte Lath",
+        "playerSlug": "emmanuel-latte-lath",
+        "value": 87
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01KAI",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01kai-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Tom Rothe",
+        "playerSlug": "tom-rothe",
+        "value": 79
+      }
+    ],
+    "lastUpdateDateTime": "2026-09-11T19:30:52.849Z"
+  },
+  "fouls": {
+    "awayValue": 3,
+    "homeValue": 4,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "lastUpdateDateTime": "2026-09-11T19:33:54.636Z",
+  "offsides": {
+    "awayValue": 2,
+    "homeValue": 1,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "passAccuracy": {
+    "awayValue": 61,
+    "homeValue": 77,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "passEfficiency": {
+    "away": [
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01CXY",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01cxy-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Adil Aouchiche",
+        "playerSlug": "adil-aouchiche",
+        "value": 1.73
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-0001WU",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-0001wu-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Kenan Karaman",
+        "playerSlug": "kenan-karaman",
+        "value": 1.23
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01BI3",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01bi3-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Nikola Katić",
+        "playerSlug": "nikola-katic",
+        "value": 0.39
+      }
+    ],
+    "home": [
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J0269J",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j0269j-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Emmanuel Latte Lath",
+        "playerSlug": "emmanuel-latte-lath",
+        "value": 0.45
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01ND9",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01nd9-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Aljoscha Kemlein",
+        "playerSlug": "aljoscha-kemlein",
+        "value": 0.41
+      },
+      {
+        "dflDatalibraryObjectId": "DFL-OBJ-J020KQ",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j020kq-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Leopold Querfeld",
+        "playerSlug": "leopold-querfeld",
+        "value": 0.27
+      }
+    ],
+    "lastUpdateDateTime": "2026-09-11T19:31:25.625Z"
+  },
+  "passes": {
+    "awayValue": 125,
+    "homeValue": 248,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "playerRankings": {
+    "challengesWon": {
+      "away": {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01BI3",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01bi3-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Nikola Katić",
+        "playerSlug": "nikola-katic",
+        "value": 9
+      },
+      "home": {
+        "dflDatalibraryObjectId": "DFL-OBJ-0026TT",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-0026tt-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Felix Uduokhai",
+        "playerSlug": "felix-uduokhai",
+        "value": 9
+      },
+      "lastUpdateDateTime": "2026-07-02T08:58:45.820Z"
+    },
+    "lastUpdateDateTime": "2026-07-02T08:58:45.820Z",
+    "maximumSpeed": {
+      "away": {
+        "dflDatalibraryObjectId": "DFL-OBJ-002G7T",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-002g7t-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Timo Becker",
+        "playerSlug": "timo-becker",
+        "value": 32.69
+      },
+      "home": {
+        "dflDatalibraryObjectId": "DFL-OBJ-002FVR",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-002fvr-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Woo-yeong Jeong",
+        "playerSlug": "woo-yeong-jeong",
+        "value": 32.79
+      },
+      "lastUpdateDateTime": "2026-07-02T08:58:45.820Z"
+    },
+    "shots": {
+      "away": {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01CXY",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01cxy-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Adil Aouchiche",
+        "playerSlug": "adil-aouchiche",
+        "value": 4
+      },
+      "home": {
+        "dflDatalibraryObjectId": "DFL-OBJ-J017R0",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j017r0-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Michel Aebischer",
+        "playerSlug": "michel-aebischer",
+        "value": 1
+      },
+      "lastUpdateDateTime": "2026-07-02T08:58:45.820Z"
+    },
+    "totalDistanceCovered": {
+      "away": {
+        "dflDatalibraryObjectId": "DFL-OBJ-002GN7",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-002gn7-dfl-clu-000009-dfl-sea-0001ka.png",
+        "playerName": "Soufiane El-Faouzi",
+        "playerSlug": "soufiane-el-faouzi",
+        "value": 6.3
+      },
+      "home": {
+        "dflDatalibraryObjectId": "DFL-OBJ-J01ND9",
+        "playerImageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01nd9-dfl-clu-00000v-dfl-sea-0001ka.png",
+        "playerName": "Aljoscha Kemlein",
+        "playerSlug": "aljoscha-kemlein",
+        "value": 6.5
+      },
+      "lastUpdateDateTime": "2026-07-02T08:58:45.820Z"
+    }
+  },
+  "shotsOffTarget": {
+    "awayValue": 7,
+    "homeValue": 3,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "shotsOnTarget": {
+    "awayValue": 5,
+    "homeValue": 3,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "sprints": {
+    "awayValue": 70,
+    "homeValue": 79,
+    "lastUpdateDateTime": "2026-09-11T19:18:06.755Z"
+  },
+  "tacklesWon": {
+    "awayValue": 57,
+    "homeValue": 47,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "winProbability": {
+    "probability": [
+      {
+        "drawProbability": 27.1,
+        "guestTeamWinProbability": 32.7,
+        "homeTeamWinProbability": 40.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 0
+        }
+      },
+      {
+        "drawProbability": 26.3,
+        "guestTeamWinProbability": 32.8,
+        "homeTeamWinProbability": 40.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 1
+        }
+      },
+      {
+        "drawProbability": 26.4,
+        "guestTeamWinProbability": 32.6,
+        "homeTeamWinProbability": 41,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 2
+        }
+      },
+      {
+        "drawProbability": 26.6,
+        "guestTeamWinProbability": 33,
+        "homeTeamWinProbability": 40.5,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 3
+        }
+      },
+      {
+        "drawProbability": 26.7,
+        "guestTeamWinProbability": 32.9,
+        "homeTeamWinProbability": 40.4,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 4
+        }
+      },
+      {
+        "drawProbability": 26.8,
+        "guestTeamWinProbability": 32.8,
+        "homeTeamWinProbability": 40.4,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 5
+        }
+      },
+      {
+        "drawProbability": 27,
+        "guestTeamWinProbability": 32.8,
+        "homeTeamWinProbability": 40.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 6
+        }
+      },
+      {
+        "drawProbability": 27.2,
+        "guestTeamWinProbability": 33.1,
+        "homeTeamWinProbability": 39.7,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 7
+        }
+      },
+      {
+        "drawProbability": 27.3,
+        "guestTeamWinProbability": 33.3,
+        "homeTeamWinProbability": 39.4,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 8
+        }
+      },
+      {
+        "drawProbability": 27.3,
+        "guestTeamWinProbability": 33.1,
+        "homeTeamWinProbability": 39.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 9
+        }
+      },
+      {
+        "drawProbability": 27.4,
+        "guestTeamWinProbability": 33.3,
+        "homeTeamWinProbability": 39.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 10
+        }
+      },
+      {
+        "drawProbability": 27.6,
+        "guestTeamWinProbability": 33.3,
+        "homeTeamWinProbability": 39.1,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 11
+        }
+      },
+      {
+        "drawProbability": 27.8,
+        "guestTeamWinProbability": 33.4,
+        "homeTeamWinProbability": 38.8,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 12
+        }
+      },
+      {
+        "drawProbability": 28,
+        "guestTeamWinProbability": 33.4,
+        "homeTeamWinProbability": 38.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 13
+        }
+      },
+      {
+        "drawProbability": 28.2,
+        "guestTeamWinProbability": 33.3,
+        "homeTeamWinProbability": 38.5,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 14
+        }
+      },
+      {
+        "drawProbability": 28.2,
+        "guestTeamWinProbability": 32.9,
+        "homeTeamWinProbability": 39,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 15
+        }
+      },
+      {
+        "drawProbability": 28,
+        "guestTeamWinProbability": 32.5,
+        "homeTeamWinProbability": 39.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 16
+        }
+      },
+      {
+        "drawProbability": 28.1,
+        "guestTeamWinProbability": 32.4,
+        "homeTeamWinProbability": 39.5,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 17
+        }
+      },
+      {
+        "drawProbability": 27.8,
+        "guestTeamWinProbability": 32.1,
+        "homeTeamWinProbability": 40.1,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 18
+        }
+      },
+      {
+        "drawProbability": 28,
+        "guestTeamWinProbability": 32.2,
+        "homeTeamWinProbability": 39.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 19
+        }
+      },
+      {
+        "drawProbability": 27.8,
+        "guestTeamWinProbability": 31.5,
+        "homeTeamWinProbability": 40.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 20
+        }
+      },
+      {
+        "drawProbability": 28.1,
+        "guestTeamWinProbability": 31.6,
+        "homeTeamWinProbability": 40.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 21
+        }
+      },
+      {
+        "drawProbability": 28.3,
+        "guestTeamWinProbability": 31.7,
+        "homeTeamWinProbability": 40,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 22
+        }
+      },
+      {
+        "drawProbability": 28.5,
+        "guestTeamWinProbability": 31.7,
+        "homeTeamWinProbability": 39.7,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 23
+        }
+      },
+      {
+        "drawProbability": 28.8,
+        "guestTeamWinProbability": 31.8,
+        "homeTeamWinProbability": 39.4,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 24
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 56.4,
+        "homeTeamWinProbability": 19.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 25
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 56.7,
+        "homeTeamWinProbability": 19.5,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 26
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 57.1,
+        "homeTeamWinProbability": 19.1,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 27
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 57.3,
+        "homeTeamWinProbability": 18.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 28
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 57.6,
+        "homeTeamWinProbability": 18.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 29
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 57.8,
+        "homeTeamWinProbability": 18.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 30
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 58.2,
+        "homeTeamWinProbability": 17.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 31
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 58.6,
+        "homeTeamWinProbability": 17.5,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 32
+        }
+      },
+      {
+        "drawProbability": 23.7,
+        "guestTeamWinProbability": 58.9,
+        "homeTeamWinProbability": 17.4,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 33
+        }
+      },
+      {
+        "drawProbability": 23.7,
+        "guestTeamWinProbability": 59.4,
+        "homeTeamWinProbability": 16.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 34
+        }
+      },
+      {
+        "drawProbability": 23.6,
+        "guestTeamWinProbability": 59.8,
+        "homeTeamWinProbability": 16.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 35
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 59.3,
+        "homeTeamWinProbability": 16.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 36
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 59.6,
+        "homeTeamWinProbability": 16.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 37
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 59.9,
+        "homeTeamWinProbability": 16.2,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 38
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 60.3,
+        "homeTeamWinProbability": 15.9,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 39
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 60.6,
+        "homeTeamWinProbability": 15.6,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 40
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 60.9,
+        "homeTeamWinProbability": 15.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 41
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 61.1,
+        "homeTeamWinProbability": 15,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 42
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 61.4,
+        "homeTeamWinProbability": 14.7,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 43
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 61.8,
+        "homeTeamWinProbability": 14.3,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 44
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 62.1,
+        "homeTeamWinProbability": 14,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 45
+        }
+      },
+      {
+        "drawProbability": 23.9,
+        "guestTeamWinProbability": 62.5,
+        "homeTeamWinProbability": 13.7,
+        "minuteOfPlay": {
+          "injuryTime": 1,
+          "minute": 45
+        }
+      },
+      {
+        "drawProbability": 23.8,
+        "guestTeamWinProbability": 62.9,
+        "homeTeamWinProbability": 13.3,
+        "minuteOfPlay": {
+          "injuryTime": 2,
+          "minute": 45
+        }
+      },
+      {
+        "drawProbability": 23.7,
+        "guestTeamWinProbability": 63.5,
+        "homeTeamWinProbability": 12.7,
+        "minuteOfPlay": {
+          "injuryTime": 3,
+          "minute": 45
+        }
+      },
+      {
+        "drawProbability": 23.7,
+        "guestTeamWinProbability": 64.1,
+        "homeTeamWinProbability": 12.2,
+        "minuteOfPlay": {
+          "injuryTime": 4,
+          "minute": 45
+        }
+      },
+      {
+        "drawProbability": 23.7,
+        "guestTeamWinProbability": 64.5,
+        "homeTeamWinProbability": 11.8,
+        "minuteOfPlay": {
+          "injuryTime": 0,
+          "minute": 46
+        }
+      }
+    ]
+  },
+  "xGoals": {
+    "awayValue": 1.1841,
+    "homeValue": 0.3232,
+    "lastUpdateDateTime": "2026-09-11T19:33:54.636Z"
+  },
+  "xgoals": {
+    "lastUpdateDateTime": "2026-07-02T08:58:45.820Z"
+  }
+}

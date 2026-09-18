@@ -1,0 +1,684 @@
+{
+  "championships": {
+    "1": {
+      "_color": "#CDFB0A",
+      "availableAssets": {
+        "clubs": true,
+        "players": true
+      },
+      "clubsQuantity": 18,
+      "code": "fr_l1",
+      "color": "#085FFF",
+      "competitionType": "championship",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 1993,
+      "gameWeeks": 34,
+      "isLfpChampionship": true,
+      "isphereId": "yaWrNVyNMvz",
+      "l1PlusHighlightEnabled": true,
+      "l1PlusLinearPlayId": 296373,
+      "l1PlusLiveEnabled": true,
+      "l1PlusReplayEnabled": true,
+      "l1PlusTournamentId": 5367,
+      "lang": {
+        "en-GB": {
+          "name": "Ligue 1 McDonald's",
+          "shortName": "Ligue 1"
+        },
+        "es-ES": {
+          "name": "Ligue 1 McDonald's",
+          "shortName": "Ligue 1"
+        },
+        "fr-FR": {
+          "name": "Ligue 1 McDonald's",
+          "shortName": "Ligue 1"
+        }
+      },
+      "lastGameWeekNumber": 34,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/Ligue-1-nobrand.png",
+      "mpgId": 1,
+      "name": "Ligue 1 McDonald's",
+      "optaId": 24,
+      "optaUuid": "dm5ka0os1e3dxcp3vh05kmp33",
+      "season": 2026,
+      "seasonsHistory": {
+        "2023": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2024": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2025": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2026": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        }
+      },
+      "shortBrand": "L1",
+      "shortName": "Ligue 1",
+      "strapiId": 1,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 10,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendAverageRating": 3,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "4": {
+      "availableAssets": {
+        "clubs": true,
+        "players": false
+      },
+      "clubsQuantity": 18,
+      "code": "fr_l2",
+      "color": "#16FFD0",
+      "competitionType": "championship",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 1993,
+      "gameWeeks": 34,
+      "isLfpChampionship": true,
+      "isphereId": "DXxm4KRon8V",
+      "lang": {
+        "en-GB": {
+          "name": "Ligue 2 BKT",
+          "shortName": "Ligue 2"
+        },
+        "es-ES": {
+          "name": "Ligue 2 BKT",
+          "shortName": "Ligue 2"
+        },
+        "fr-FR": {
+          "name": "Ligue 2 BKT",
+          "shortName": "Ligue 2"
+        }
+      },
+      "lastGameWeekNumber": 34,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/Ligue-2-nobrand.png",
+      "mpgId": 4,
+      "name": "Ligue 2 BKT",
+      "optaId": 104,
+      "optaUuid": "4w7x0s5gfs5abasphlha5de8k",
+      "season": 2026,
+      "seasonsHistory": {
+        "2023": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2024": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2025": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        },
+        "2026": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        }
+      },
+      "shortBrand": "L2",
+      "shortName": "Ligue 2",
+      "strapiId": 3,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 10,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendAverageRating": 3,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "6": {
+      "availableAssets": {
+        "clubs": false,
+        "players": false
+      },
+      "clubsQuantity": 36,
+      "code": "eu_cl",
+      "color": "#D704E9",
+      "competitionType": "mixed",
+      "endDate": "2027-07-01T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2024,
+      "gameWeeks": 17,
+      "isLfpChampionship": false,
+      "lang": {
+        "en-GB": {
+          "name": "Champions",
+          "shortName": "Champions"
+        },
+        "es-ES": {
+          "name": "Champions",
+          "shortName": "Champions"
+        },
+        "fr-FR": {
+          "name": "Champions",
+          "shortName": "LDC"
+        }
+      },
+      "lastGameWeekNumber": 17,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/eu_cl.png",
+      "mpgId": 6,
+      "name": "Champions",
+      "optaId": 5,
+      "optaUuid": "4oogyu6o156iphvdvphwpck10",
+      "season": 2026,
+      "seasonsHistory": {
+        "2024": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        },
+        "2025": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        },
+        "2026": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        }
+      },
+      "shortBrand": "LDC",
+      "shortName": "LDC",
+      "startDate": "2026-08-31T00:00:00Z",
+      "strapiId": 2,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 20,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "10": {
+      "availableAssets": {
+        "clubs": false,
+        "players": false
+      },
+      "clubsQuantity": 64,
+      "code": "fr_fc",
+      "color": "#056aad",
+      "competitionType": "cup",
+      "endDate": "2026-07-01T00:00:00Z",
+      "firstGameWeekNumber": 9,
+      "firstSeason": 2024,
+      "gameWeeks": 14,
+      "isLfpChampionship": false,
+      "lang": {
+        "en-GB": {
+          "name": "French Cup",
+          "shortName": "French Cup"
+        },
+        "es-ES": {
+          "name": "Copa de Francia",
+          "shortName": "Copa de Francia"
+        },
+        "fr-FR": {
+          "name": "Coupe de France",
+          "shortName": "Coupe de France"
+        }
+      },
+      "lastGameWeekNumber": 14,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/064c6bc7493463f888363d92f994c169.png",
+      "mpgId": 10,
+      "name": "Coupe de France",
+      "optaId": 361,
+      "optaUuid": "esyxxkmsrcrd719ohjmhuaksy",
+      "season": 2025,
+      "seasonsHistory": {
+        "2024": {
+          "clubsQuantity": 64,
+          "firstGameWeekNumber": 9,
+          "gameWeeks": 14,
+          "lastGameWeekNumber": 14
+        },
+        "2025": {
+          "clubsQuantity": 64,
+          "firstGameWeekNumber": 9,
+          "gameWeeks": 14,
+          "lastGameWeekNumber": 14
+        }
+      },
+      "shortBrand": "Coupe de France",
+      "shortName": "Coupe de France",
+      "startDate": "2025-11-10T00:00:00Z",
+      "strapiId": 6,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 20,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "11": {
+      "availableAssets": {
+        "clubs": true,
+        "players": true
+      },
+      "clubsQuantity": 18,
+      "code": "fr_l3",
+      "color": "#FF8762",
+      "competitionType": "championship",
+      "endDate": "2027-05-30T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2026,
+      "gameWeeks": 34,
+      "isLfpChampionship": false,
+      "l1PlusHighlightEnabled": true,
+      "l1PlusLiveEnabled": true,
+      "l1PlusReplayEnabled": true,
+      "l1PlusTournamentId": 5740,
+      "lang": {
+        "en-GB": {
+          "name": "Ligue 3 Betclic",
+          "shortName": "Ligue 3"
+        },
+        "es-ES": {
+          "name": "Ligue 3 Betclic",
+          "shortName": "Ligue 3"
+        },
+        "fr-FR": {
+          "name": "Ligue 3 Betclic",
+          "shortName": "Ligue 3"
+        }
+      },
+      "lastGameWeekNumber": 34,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/2026_logo_l3.png",
+      "mpgId": 11,
+      "name": "Ligue 3",
+      "optaId": 608,
+      "optaUuid": "1qd0wvt30rlswa4g6nu4na660",
+      "season": 2026,
+      "seasonsHistory": {
+        "2026": {
+          "clubsQuantity": 18,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 34,
+          "lastGameWeekNumber": 34
+        }
+      },
+      "shortBrand": "L3",
+      "shortName": "Ligue 3",
+      "startDate": "2027-05-12T00:00:00Z",
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 10,
+          "minimumVotesToSendWinner": 10,
+          "numberOfPlayersOfEachTeam": 3
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 5,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 10
+        },
+        "matchTimeToOpen": 86400,
+        "matchTimeToSendPush": 3600,
+        "timeReamingAfterMatchEnd": 3600
+      }
+    },
+    "13": {
+      "availableAssets": {
+        "clubs": false,
+        "players": false
+      },
+      "clubsQuantity": 36,
+      "code": "eu_uc",
+      "color": "#D704E9",
+      "competitionType": "mixed",
+      "endDate": "2027-07-01T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2024,
+      "gameWeeks": 17,
+      "isLfpChampionship": false,
+      "lang": {
+        "en-GB": {
+          "name": "Europa League",
+          "shortName": "Europa"
+        },
+        "es-ES": {
+          "name": "Europa League",
+          "shortName": "Europa"
+        },
+        "fr-FR": {
+          "name": "Europa Ligue",
+          "shortName": "Europa"
+        }
+      },
+      "lastGameWeekNumber": 17,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/EUROPA.png",
+      "mpgId": 13,
+      "name": "Europa Ligue",
+      "optaId": 6,
+      "optaUuid": "4c1nfi2j1m731hcay25fcgndq",
+      "season": 2026,
+      "seasonsHistory": {
+        "2024": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        },
+        "2025": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        },
+        "2026": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 17,
+          "lastGameWeekNumber": 17
+        }
+      },
+      "shortBrand": "EUROPA",
+      "shortName": "Europa",
+      "startDate": "2026-08-31T00:00:00Z",
+      "strapiId": 4,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 20,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "14": {
+      "availableAssets": {
+        "clubs": false,
+        "players": false
+      },
+      "clubsQuantity": 36,
+      "code": "eu_cf",
+      "color": "#D704E9",
+      "competitionType": "mixed",
+      "endDate": "2027-07-01T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2024,
+      "gameWeeks": 15,
+      "isLfpChampionship": false,
+      "lang": {
+        "en-GB": {
+          "name": "Conference League",
+          "shortName": "Champions"
+        },
+        "es-ES": {
+          "name": "Conference League",
+          "shortName": "Champions"
+        },
+        "fr-FR": {
+          "name": "Europa Conference",
+          "shortName": "Conference"
+        }
+      },
+      "lastGameWeekNumber": 15,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/CONFERENCE.png",
+      "mpgId": 14,
+      "name": "Europa Conference",
+      "optaId": 1125,
+      "optaUuid": "c7b8o53flg36wbuevfzy3lb10",
+      "season": 2026,
+      "seasonsHistory": {
+        "2024": {
+          "clubsQuantity": 34,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 15,
+          "lastGameWeekNumber": 15
+        },
+        "2025": {
+          "clubsQuantity": 34,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 15,
+          "lastGameWeekNumber": 15
+        },
+        "2026": {
+          "clubsQuantity": 36,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 15,
+          "lastGameWeekNumber": 15
+        }
+      },
+      "shortBrand": "CONFERENCE",
+      "shortName": "Conference",
+      "startDate": "2026-08-31T00:00:00Z",
+      "strapiId": 5,
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 20,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "15": {
+      "availableAssets": {
+        "clubs": false,
+        "players": false
+      },
+      "clubsQuantity": 2,
+      "code": "fr_ct",
+      "color": "#DCA550",
+      "competitionType": "mixed",
+      "endDate": "2026-08-18T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2024,
+      "gameWeeks": 1,
+      "isLfpChampionship": false,
+      "l1PlusHighlightEnabled": true,
+      "l1PlusLiveEnabled": true,
+      "l1PlusReplayEnabled": true,
+      "l1PlusTournamentId": 5483,
+      "lang": {
+        "en-GB": {
+          "name": "Trophée des Champions",
+          "shortName": "Trophée des Champions"
+        },
+        "es-ES": {
+          "name": "Trophée des Champións",
+          "shortName": "Champions"
+        },
+        "fr-FR": {
+          "name": "Trophée des Champions",
+          "shortName": "Champions"
+        }
+      },
+      "lastGameWeekNumber": 1,
+      "logoUrl": "https://s3.eu-west-1.amazonaws.com/image.mpg/TDC.png",
+      "mpgId": 15,
+      "name": "Trophée des Champions",
+      "optaId": 354,
+      "optaUuid": "1nsu863daf68kns4l7ou69orf",
+      "season": 2026,
+      "seasonsHistory": {
+        "2024": {
+          "clubsQuantity": 2,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 1,
+          "lastGameWeekNumber": 1
+        },
+        "2025": {
+          "clubsQuantity": 2,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 1,
+          "lastGameWeekNumber": 1
+        },
+        "2026": {
+          "clubsQuantity": 2,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 1,
+          "lastGameWeekNumber": 1
+        }
+      },
+      "shortBrand": "TROPHÉE",
+      "shortName": "Trophée",
+      "startDate": "2026-08-04T00:00:00Z",
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 20,
+          "minimumVotesToSendWinner": 20,
+          "numberOfPlayersOfEachTeam": 5
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 20,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 20
+        },
+        "matchTimeToOpen": 80,
+        "matchTimeToSendPush": 80,
+        "timeReamingAfterMatchEnd": 0
+      }
+    },
+    "16": {
+      "availableAssets": {
+        "clubs": true,
+        "players": true
+      },
+      "clubsQuantity": 4,
+      "code": "fr_po",
+      "color": "#1D2F5D",
+      "competitionType": "cup",
+      "endDate": "2026-05-30T00:00:00Z",
+      "firstGameWeekNumber": 1,
+      "firstSeason": 2020,
+      "gameWeeks": 4,
+      "isLfpChampionship": false,
+      "lang": {
+        "en-GB": {
+          "name": "Ligue 1 / Ligue 2 Playoffs",
+          "shortName": "L1/L2 Playoffs"
+        },
+        "es-ES": {
+          "name": "Playoffs Ligue 1 / Ligue 2",
+          "shortName": "Playoffs L1/L2"
+        },
+        "fr-FR": {
+          "name": "Barrages Ligue 1 / Ligue 2",
+          "shortName": "Barrages L1/L2"
+        }
+      },
+      "lastGameWeekNumber": 4,
+      "logoUrl": "",
+      "mpgId": 16,
+      "name": "Barrages Ligue 1 / Ligue 2",
+      "optaId": 808,
+      "optaUuid": "5x72znp2e24y6hzqz6cdetxih",
+      "season": 2025,
+      "seasonsHistory": {
+        "2023": {
+          "clubsQuantity": 4,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 4,
+          "lastGameWeekNumber": 4
+        },
+        "2024": {
+          "clubsQuantity": 4,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 4,
+          "lastGameWeekNumber": 4
+        },
+        "2025": {
+          "clubsQuantity": 4,
+          "firstGameWeekNumber": 1,
+          "gameWeeks": 4,
+          "lastGameWeekNumber": 4
+        }
+      },
+      "shortBrand": "BAR L1/L2",
+      "shortName": "Barrages L1/L2",
+      "startDate": "2026-05-12T00:00:00Z",
+      "votes": {
+        "manOfTheMatch": {
+          "minimumVotesToSendVotesQuantity": 10,
+          "minimumVotesToSendWinner": 10,
+          "numberOfPlayersOfEachTeam": 3
+        },
+        "matchRating": {
+          "maximumRatingAllowed": 5,
+          "minimumRatingAllowed": 1,
+          "minimumVotesToSendVotesQuantity": 10
+        },
+        "matchTimeToOpen": 86400,
+        "matchTimeToSendPush": 3600,
+        "timeReamingAfterMatchEnd": 3600
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "teamHead2Head": [
+    {
+      "homeTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 1
+        },
+        "right": {
+          "type": "SOG",
+          "value": 22
+        },
+        "center": {
+          "type": "SEff",
+          "value": "4.55"
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 4
+        },
+        "right": {
+          "type": "SOG",
+          "value": 30
+        },
+        "center": {
+          "type": "SEff",
+          "value": "13.33"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "PPG",
+        "left": {
+          "type": "PPG",
+          "value": 1
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 1
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "100.00"
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "PPG",
+        "left": {
+          "type": "PPG",
+          "value": 1
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 3
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "33.33"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 8
+        },
+        "right": {
+          "type": "PIM",
+          "value": 8
+        },
+        "center": {
+          "type": "PIM",
+          "value": 8
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 2
+        },
+        "right": {
+          "type": "PIM",
+          "value": 2
+        },
+        "center": {
+          "type": "PIM",
+          "value": 2
+        }
+      }
+    }
+  ],
+  "teamPeriod": {
+    "caption": "G",
+    "overtime": false,
+    "shootout": false,
+    "stats": [
+      {
+        "periodName": 1,
+        "homeTeamValue": 0,
+        "awayTeamValue": 2
+      },
+      {
+        "periodName": 2,
+        "homeTeamValue": 0,
+        "awayTeamValue": 1
+      },
+      {
+        "periodName": 3,
+        "homeTeamValue": 1,
+        "awayTeamValue": 1
+      }
+    ]
+  },
+  "bestScorers": [
+    {
+      "uuid": "qee-4y8r4HcvR",
+      "fullName": "Eero Teräväinen",
+      "teamCode": "BIK",
+      "media": "https://sportality.cdn.s8y.se/team-logos/bik1_bik.svg",
+      "totalPoints": 2
+    },
+    {
+      "uuid": "qRo-6gu910BkpO",
+      "fullName": "Rikard Olsén",
+      "teamCode": "BIK",
+      "media": "https://sportality.cdn.s8y.se/team-logos/bik1_bik.svg",
+      "totalPoints": 2
+    },
+    {
+      "uuid": "qQ9-524fOdOpZ",
+      "fullName": "Henrik Björklund",
+      "teamCode": "BIK",
+      "media": "https://sportality.cdn.s8y.se/team-logos/bik1_bik.svg",
+      "totalPoints": 2
+    }
+  ],
+  "statisticsProvider": "statnet"
+}

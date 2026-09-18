@@ -1,0 +1,117 @@
+{
+  "matchId": "serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3",
+  "status": "UPCOMING",
+  "providerStatus": null,
+  "phase": "PRE_MATCH",
+  "events": null,
+  "scheduleStatus": "UNKNOWN",
+  "stadium": {
+    "stadiumId": "serie-a::Football_Stadium::204cf83710c9461ba0328c76032ef8d8",
+    "stadiumLabel": null,
+    "stadiumName": "Giuseppe Meazza",
+    "mapsGeoCodeLatitude": "",
+    "mapsGeoCodeLongitude": "",
+    "images": {
+      "stadiumImage": "stadiums/204cf83710c9461ba0328c76032ef8d8.webp"
+    }
+  },
+  "location": {
+    "locationLabel": null,
+    "cityName": "Milano"
+  },
+  "referees": [
+    {
+      "refereeId": "serie-a::Football_Referee::fe2f4f7048974b0b9a6994db06db5acb",
+      "roleLabel": "Referee",
+      "role": "Referee",
+      "section": "Nichelino",
+      "mediaFirstName": "Luca",
+      "mediaLastName": "Pairetto",
+      "shortName": "Luca Pairetto",
+      "displayName": "Pairetto",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:558"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::8f6d4d9083c94e66afd6ee6e72211acc",
+      "roleLabel": "Assistant Referee 1",
+      "role": "Assistant Referee 1",
+      "section": "Schio",
+      "mediaFirstName": "Davide",
+      "mediaLastName": "Moro",
+      "shortName": "Davide Moro",
+      "displayName": "Moro",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:223"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::15bbd7e8e74b4bbea53edfd3d36c37ab",
+      "roleLabel": "Assistant Referee 2",
+      "role": "Assistant Referee 2",
+      "section": "Roma 1",
+      "mediaFirstName": "Daisuke Emanuele",
+      "mediaLastName": "Yoshikawa",
+      "shortName": "Daisuke Emanuele Yoshikawa",
+      "displayName": "Yoshikawa",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:172"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::6ffb6a1e87ca43bb82487814dd726dba",
+      "roleLabel": "Fourth Official",
+      "role": "Fourth Official",
+      "section": "Como",
+      "mediaFirstName": "Andrea",
+      "mediaLastName": "Colombo",
+      "shortName": "Andrea Colombo",
+      "displayName": "Colombo",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:75"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::3bfc97d5182f40eab245121ede7cae35",
+      "roleLabel": "VAR",
+      "role": "VAR",
+      "section": "Roma 1",
+      "mediaFirstName": "Valerio",
+      "mediaLastName": "Marini",
+      "shortName": "Valerio Marini",
+      "displayName": "V. Marini",
+      "nationality": "",
+      "nationalityIsoCode": "SVK",
+      "providerId": "kama:Referee:929"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::0ad269f529414d27846e1521ea3c62c1",
+      "roleLabel": "Assistant VAR Official",
+      "role": "Assistant VAR Official",
+      "section": "Pinerolo",
+      "mediaFirstName": "Matteo",
+      "mediaLastName": "Gariglio",
+      "shortName": "Matteo Gariglio",
+      "displayName": "Gariglio",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:684"
+    }
+  ],
+  "enviroment": {
+    "airHumidity": null,
+    "airPressure": null,
+    "weatherDescription": null,
+    "temperature": null,
+    "precipitation": null,
+    "pitchErosion": null,
+    "roof": null,
+    "floodlight": null,
+    "numberOfSpectators": null,
+    "stadiumCapacity": null,
+    "soldOut": false,
+    "country": "1"
+  },
+  "apiCallRequestTime": "2026-09-11T17:17:34.2478506+00:00"
+}

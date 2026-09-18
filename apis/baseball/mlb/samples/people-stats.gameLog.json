@@ -1,0 +1,451 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "stats": [
+    {
+      "type": {
+        "displayName": "gameLog"
+      },
+      "group": {
+        "displayName": "hitting"
+      },
+      "exemptions": [],
+      "splits": [
+        {
+          "season": "2026",
+          "stat": {
+            "summary": "1-4 | BB, K, 2 RBI",
+            "gamesPlayed": 1,
+            "flyOuts": 0,
+            "groundOuts": 2,
+            "airOuts": 0,
+            "runs": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "strikeOuts": 1,
+            "baseOnBalls": 1,
+            "intentionalWalks": 0,
+            "hits": 1,
+            "hitByPitch": 0,
+            "avg": ".252",
+            "atBats": 4,
+            "obp": ".380",
+            "slg": ".549",
+            "ops": ".929",
+            "caughtStealing": 0,
+            "stolenBases": 0,
+            "stolenBasePercentage": ".---",
+            "caughtStealingPercentage": ".---",
+            "groundIntoDoublePlay": 0,
+            "groundIntoTriplePlay": 0,
+            "numberOfPitches": 25,
+            "plateAppearances": 5,
+            "totalBases": 1,
+            "rbi": 2,
+            "leftOnBase": 4,
+            "sacBunts": 0,
+            "sacFlies": 0,
+            "babip": ".333",
+            "groundOutsToAirouts": "2.00",
+            "catchersInterference": 0,
+            "atBatsPerHomeRun": "-.--"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "opponent": {
+            "id": 133,
+            "name": "Athletics",
+            "link": "/api/v1/teams/133"
+          },
+          "date": "2026-05-29",
+          "gameType": "R",
+          "isHome": false,
+          "isWin": true,
+          "positionsPlayed": [
+            {
+              "code": "9",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "RF"
+            }
+          ],
+          "game": {
+            "gamePk": 825002,
+            "link": "/api/v1.1/game/825002/feed/live",
+            "content": {
+              "link": "/api/v1/game/825002/content"
+            },
+            "gameNumber": 1,
+            "dayNight": "day"
+          }
+        },
+        {
+          "season": "2026",
+          "stat": {
+            "summary": "0-4 | BB, RBI",
+            "gamesPlayed": 1,
+            "flyOuts": 2,
+            "groundOuts": 2,
+            "airOuts": 2,
+            "runs": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "strikeOuts": 0,
+            "baseOnBalls": 1,
+            "intentionalWalks": 0,
+            "hits": 0,
+            "hitByPitch": 0,
+            "avg": ".248",
+            "atBats": 4,
+            "obp": ".376",
+            "slg": ".538",
+            "ops": ".914",
+            "caughtStealing": 0,
+            "stolenBases": 0,
+            "stolenBasePercentage": ".---",
+            "caughtStealingPercentage": ".---",
+            "groundIntoDoublePlay": 1,
+            "groundIntoTriplePlay": 0,
+            "numberOfPitches": 17,
+            "plateAppearances": 5,
+            "totalBases": 0,
+            "rbi": 1,
+            "leftOnBase": 2,
+            "sacBunts": 0,
+            "sacFlies": 0,
+            "babip": ".000",
+            "groundOutsToAirouts": "1.00",
+            "catchersInterference": 0,
+            "atBatsPerHomeRun": "-.--"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "opponent": {
+            "id": 133,
+            "name": "Athletics",
+            "link": "/api/v1/teams/133"
+          },
+          "date": "2026-05-30",
+          "gameType": "R",
+          "isHome": false,
+          "isWin": false,
+          "positionsPlayed": [
+            {
+              "code": "9",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "RF"
+            }
+          ],
+          "game": {
+            "gamePk": 825000,
+            "link": "/api/v1.1/game/825000/feed/live",
+            "content": {
+              "link": "/api/v1/game/825000/content"
+            },
+            "gameNumber": 1,
+            "dayNight": "day"
+          }
+        },
+        {
+          "season": "2026",
+          "stat": {
+            "summary": "1-4 | 2 K, RBI, R",
+            "gamesPlayed": 1,
+            "flyOuts": 1,
+            "groundOuts": 0,
+            "airOuts": 1,
+            "runs": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "strikeOuts": 2,
+            "baseOnBalls": 0,
+            "intentionalWalks": 0,
+            "hits": 1,
+            "hitByPitch": 0,
+            "avg": ".248",
+            "atBats": 4,
+            "obp": ".375",
+            "slg": ".533",
+            "ops": ".908",
+            "caughtStealing": 0,
+            "stolenBases": 0,
+            "stolenBasePercentage": ".---",
+            "caughtStealingPercentage": ".---",
+            "groundIntoDoublePlay": 0,
+            "groundIntoTriplePlay": 0,
+            "numberOfPitches": 18,
+            "plateAppearances": 4,
+            "totalBases": 1,
+            "rbi": 1,
+            "leftOnBase": 1,
+            "sacBunts": 0,
+            "sacFlies": 0,
+            "babip": ".500",
+            "groundOutsToAirouts": "0.00",
+            "catchersInterference": 0,
+            "atBatsPerHomeRun": "-.--"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "opponent": {
+            "id": 133,
+            "name": "Athletics",
+            "link": "/api/v1/teams/133"
+          },
+          "date": "2026-05-31",
+          "gameType": "R",
+          "isHome": false,
+          "isWin": true,
+          "positionsPlayed": [
+            {
+              "code": "9",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "RF"
+            }
+          ],
+          "game": {
+            "gamePk": 825001,
+            "link": "/api/v1.1/game/825001/feed/live",
+            "content": {
+              "link": "/api/v1/game/825001/content"
+            },
+            "gameNumber": 1,
+            "dayNight": "day"
+          }
+        },
+        {
+          "season": "2026",
+          "stat": {
+            "summary": "0-3 | 2 K",
+            "gamesPlayed": 1,
+            "flyOuts": 1,
+            "groundOuts": 0,
+            "airOuts": 1,
+            "runs": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "strikeOuts": 2,
+            "baseOnBalls": 0,
+            "intentionalWalks": 0,
+            "hits": 0,
+            "hitByPitch": 0,
+            "avg": ".244",
+            "atBats": 3,
+            "obp": ".370",
+            "slg": ".525",
+            "ops": ".895",
+            "caughtStealing": 0,
+            "stolenBases": 0,
+            "stolenBasePercentage": ".---",
+            "caughtStealingPercentage": ".---",
+            "groundIntoDoublePlay": 0,
+            "groundIntoTriplePlay": 0,
+            "numberOfPitches": 15,
+            "plateAppearances": 3,
+            "totalBases": 0,
+            "rbi": 0,
+            "leftOnBase": 1,
+            "sacBunts": 0,
+            "sacFlies": 0,
+            "babip": ".000",
+            "groundOutsToAirouts": "0.00",
+            "catchersInterference": 0,
+            "atBatsPerHomeRun": "-.--"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "opponent": {
+            "id": 115,
+            "name": "Colorado Rockies",
+            "link": "/api/v1/teams/115"
+          },
+          "date": "2026-09-08",
+          "gameType": "R",
+          "isHome": true,
+          "isWin": true,
+          "positionsPlayed": [
+            {
+              "code": "9",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "RF"
+            }
+          ],
+          "game": {
+            "gamePk": 823500,
+            "link": "/api/v1.1/game/823500/feed/live",
+            "content": {
+              "link": "/api/v1/game/823500/content"
+            },
+            "gameNumber": 1,
+            "dayNight": "day"
+          }
+        },
+        {
+          "season": "2026",
+          "stat": {
+            "summary": "2-4 | K, R",
+            "gamesPlayed": 1,
+            "flyOuts": 1,
+            "groundOuts": 0,
+            "airOuts": 1,
+            "runs": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "strikeOuts": 1,
+            "baseOnBalls": 0,
+            "intentionalWalks": 0,
+            "hits": 2,
+            "hitByPitch": 0,
+            "avg": ".249",
+            "atBats": 4,
+            "obp": ".372",
+            "slg": ".525",
+            "ops": ".897",
+            "caughtStealing": 0,
+            "stolenBases": 0,
+            "stolenBasePercentage": ".---",
+            "caughtStealingPercentage": ".---",
+            "groundIntoDoublePlay": 0,
+            "groundIntoTriplePlay": 0,
+            "numberOfPitches": 15,
+            "plateAppearances": 4,
+            "totalBases": 2,
+            "rbi": 0,
+            "leftOnBase": 0,
+            "sacBunts": 0,
+            "sacFlies": 0,
+            "babip": ".667",
+            "groundOutsToAirouts": "0.00",
+            "catchersInterference": 0,
+            "atBatsPerHomeRun": "-.--"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "opponent": {
+            "id": 115,
+            "name": "Colorado Rockies",
+            "link": "/api/v1/teams/115"
+          },
+          "date": "2026-09-09",
+          "gameType": "R",
+          "isHome": true,
+          "isWin": true,
+          "positionsPlayed": [
+            {
+              "code": "9",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "RF"
+            }
+          ],
+          "game": {
+            "gamePk": 823497,
+            "link": "/api/v1.1/game/823497/feed/live",
+            "content": {
+              "link": "/api/v1/game/823497/content"
+            },
+            "gameNumber": 1,
+            "dayNight": "day"
+          }
+        }
+      ]
+    }
+  ]
+}

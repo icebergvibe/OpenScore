@@ -1,0 +1,3281 @@
+[
+  {
+    "player": {
+      "id": 33797,
+      "height": 175,
+      "weight": 79,
+      "age": 28,
+      "shirt_number": 11,
+      "khl_id": 23248,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15546/23248.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Abramov Vitaly",
+      "birthday": 894585600,
+      "stick": "l",
+      "team": {
+        "id": 12,
+        "khl_id": 54,
+        "name": "Amur",
+        "location": "Khabarovsk",
+        "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdc/team_pics/12/original/amur_2015__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 19.3333333333333,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 21.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 31.03,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.32,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 4.8,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 12,
+          "khl_id": 54,
+          "name": "Amur",
+          "location": "Khabarovsk",
+          "seasons": "2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdc/team_pics/12/original/amur_2015__200x200.png"
+        },
+        {
+          "id": 16,
+          "khl_id": 2,
+          "name": "CSKA",
+          "location": "Moscow",
+          "seasons": "2021/2022,2022/2023,2023/2024,2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/16/original/cska_2016_rus__200x200.png"
+        },
+        {
+          "id": 28,
+          "khl_id": 25,
+          "name": "Traktor",
+          "location": "Chelyabinsk",
+          "seasons": "2021/2022",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/28/original/traktor_2020__200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2581104,
+          "start_ts": 1788882620487,
+          "finish_ts": 1788882750648,
+          "is_vertical_video": false,
+          "description": "Удаление. Абрамов Виталий (Амур). 2 мин. Задержка соперника клюшкой.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_7a95816ad3101ea80872abf6e4162274/q2581104/ff67e3b8032f31e712286c55d33a0ad3/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_7a95816ad3101ea80872abf6e4162274/q2581104/ff67e3b8032f31e712286c55d33a0ad3/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_7a95816ad3101ea80872abf6e4162274/q2581104/ff67e3b8032f31e712286c55d33a0ad3/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_7a95816ad3101ea80872abf6e4162274/q2581104/ff67e3b8032f31e712286c55d33a0ad3/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2581104/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751641",
+          "match_id": "901993",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2580788,
+          "start_ts": 1788878866820,
+          "finish_ts": 1788878922257,
+          "is_vertical_video": false,
+          "description": "Гол. 1:1. Абрамов Виталий (Амур) сравнивает счёт",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_1bbe90ca01a8303f701a15979d475925/q2580788/29add6cce57135bc7ac78151d0ec1831/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_1bbe90ca01a8303f701a15979d475925/q2580788/29add6cce57135bc7ac78151d0ec1831/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_1bbe90ca01a8303f701a15979d475925/q2580788/29add6cce57135bc7ac78151d0ec1831/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_1bbe90ca01a8303f701a15979d475925/q2580788/29add6cce57135bc7ac78151d0ec1831/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2580788/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751641",
+          "match_id": "901993",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2580664,
+          "start_ts": 1788877256587,
+          "finish_ts": 1788877338707,
+          "is_vertical_video": false,
+          "description": "Удаление. Абрамов Виталий (Амур). 2 мин. Задержка соперника.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_7420b288e3756df27d1aaf8c3fe1c77e/q2580664/dd00963c1708886fc88c86ceabed9717/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_7420b288e3756df27d1aaf8c3fe1c77e/q2580664/dd00963c1708886fc88c86ceabed9717/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_7420b288e3756df27d1aaf8c3fe1c77e/q2580664/dd00963c1708886fc88c86ceabed9717/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_7420b288e3756df27d1aaf8c3fe1c77e/q2580664/dd00963c1708886fc88c86ceabed9717/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2580664/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751641",
+          "match_id": "901993",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 6,
+        "team": 1
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 43535,
+      "height": 180,
+      "weight": 77,
+      "age": 25,
+      "shirt_number": 97,
+      "khl_id": 30941,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15556/30941.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Abramov Mikhail B.",
+      "birthday": 985564800,
+      "stick": "l",
+      "team": {
+        "id": 24,
+        "khl_id": 29,
+        "name": "Sibir",
+        "location": "Novosibirsk Region",
+        "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 16.7166666666667,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 21.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 18,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": -4,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 31.43,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.23,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 3.77,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 22,
+          "khl_id": 26,
+          "name": "Torpedo",
+          "location": "Nizhny Novgorod",
+          "seasons": "2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-1-1.webcaster.pro/fc/sda/team_pics/22/original/Torpedo_2025_200x200_NEW.png"
+        },
+        {
+          "id": 24,
+          "khl_id": 29,
+          "name": "Sibir",
+          "location": "Novosibirsk Region",
+          "seasons": "2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/24/original/sibir_rus__200x200.png"
+        }
+      ],
+      "quotes": [],
+      "seasons_count": {
+        "khl": 3,
+        "team": 2
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 35165,
+      "height": 177,
+      "weight": 82,
+      "age": 25,
+      "shirt_number": 17,
+      "khl_id": 30629,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15555/30629.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Abrosimov Ruslan",
+      "birthday": 989884800,
+      "stick": "l",
+      "team": null,
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 0.0,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 0.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": null,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 0,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 42,
+          "khl_id": 56,
+          "name": "Severstal",
+          "location": "Cherepovets",
+          "seasons": "2021/2022,2022/2023,2023/2024,2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/42/original/severstal_2021__200x200.png"
+        }
+      ],
+      "quotes": [],
+      "seasons_count": {
+        "khl": 5,
+        "team": 5
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 4993,
+      "height": 190,
+      "weight": 92,
+      "age": 32,
+      "shirt_number": 77,
+      "khl_id": 18961,
+      "role": "defensemen",
+      "role_key": "defensemen",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15542/18961.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Adamchuk Kirill",
+      "birthday": 769737600,
+      "stick": "l",
+      "team": {
+        "id": 10,
+        "khl_id": 34,
+        "name": "Avangard",
+        "location": "Omsk Region",
+        "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/10/original/Avangard_2026_500x500_NEW.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 17.1,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 28.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 2,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 2,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": -1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 29.88,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.21,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 2.62,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 8,
+          "khl_id": 719,
+          "name": "Dynamo Msk",
+          "location": "Moscow",
+          "seasons": "2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/8/original/dynamo_msk_2019__200x200.png"
+        },
+        {
+          "id": 10,
+          "khl_id": 34,
+          "name": "Avangard",
+          "location": "Omsk Region",
+          "seasons": "2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/10/original/Avangard_2026_500x500_NEW.png"
+        },
+        {
+          "id": 12,
+          "khl_id": 54,
+          "name": "Amur",
+          "location": "Khabarovsk",
+          "seasons": "2016/2017",
+          "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdc/team_pics/12/original/amur_2015__200x200.png"
+        },
+        {
+          "id": 40,
+          "khl_id": 53,
+          "name": "Ak Bars",
+          "location": "Kazan",
+          "seasons": "2019/2020,2021/2022,2022/2023,2023/2024",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/40/original/ak_bars_2022__200x200.png"
+        },
+        {
+          "id": 42,
+          "khl_id": 56,
+          "name": "Severstal",
+          "location": "Cherepovets",
+          "seasons": "2020/2021",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/42/original/severstal_2021__200x200.png"
+        },
+        {
+          "id": 58,
+          "khl_id": 213,
+          "name": "Ugra",
+          "location": "Khanty-Mansiysk",
+          "seasons": "2014/2015",
+          "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sdb/team_pics/58/original/ugra.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2575300,
+          "start_ts": 1788794770960,
+          "finish_ts": 1788794820569,
+          "is_vertical_video": false,
+          "description": "Удаление. Адамчук Кирилл (Авангард). 2 мин. Подножка.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_34116dccf0381a003884ece036550501/q2575300/317aeeedab95c8ca20d891a660ca81f6/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_34116dccf0381a003884ece036550501/q2575300/317aeeedab95c8ca20d891a660ca81f6/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_34116dccf0381a003884ece036550501/q2575300/317aeeedab95c8ca20d891a660ca81f6/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_34116dccf0381a003884ece036550501/q2575300/317aeeedab95c8ca20d891a660ca81f6/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2575300/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751597",
+          "match_id": "901989",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 10,
+        "team": 1
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 28477,
+      "height": 183,
+      "weight": 81,
+      "age": 24,
+      "shirt_number": 53,
+      "khl_id": 35353,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15557/35353.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Aimurzin Danil",
+      "birthday": 1019001600,
+      "stick": "r",
+      "team": {
+        "id": 44,
+        "khl_id": 24,
+        "name": "SKA",
+        "location": "Saint Petersburg",
+        "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sda/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png",
+        "division": "Bobrov division",
+        "division_key": "bobrov",
+        "conference": "West",
+        "conference_key": "west"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 11.9,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 18.5,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 12,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 32.76,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.36,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 5.61,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 32,
+          "khl_id": 38,
+          "name": "Salavat Yulaev",
+          "location": "Ufa",
+          "seasons": "2020/2021,2021/2022,2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png"
+        },
+        {
+          "id": 42,
+          "khl_id": 56,
+          "name": "Severstal",
+          "location": "Cherepovets",
+          "seasons": "2023/2024,2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/42/original/severstal_2021__200x200.png"
+        },
+        {
+          "id": 44,
+          "khl_id": 24,
+          "name": "SKA",
+          "location": "Saint Petersburg",
+          "seasons": "2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdd/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png"
+        },
+        {
+          "id": 487,
+          "khl_id": 591,
+          "name": "Tarasov",
+          "location": "",
+          "seasons": "2024/2025",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/487/original/Tarasov_div.png"
+        },
+        {
+          "id": 693,
+          "khl_id": 807,
+          "name": "KHL RUS Stars",
+          "location": "",
+          "seasons": "2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdm/team_pics/693/original/KHL_RUS_STARS_200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2589808,
+          "start_ts": 1789060921000,
+          "finish_ts": 1789060976000,
+          "is_vertical_video": false,
+          "description": "Удаление. Аймурзин Данил (СКА). 2 мин. Задержка соперника.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_af09f9e7843a077faa0bd84ea033eb22/q2589808/aaf8482c9ddb93b64613a75e1ee7aea1/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_af09f9e7843a077faa0bd84ea033eb22/q2589808/aaf8482c9ddb93b64613a75e1ee7aea1/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_af09f9e7843a077faa0bd84ea033eb22/q2589808/aaf8482c9ddb93b64613a75e1ee7aea1/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_af09f9e7843a077faa0bd84ea033eb22/q2589808/aaf8482c9ddb93b64613a75e1ee7aea1/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589808/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751542",
+          "match_id": "902002",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2586768,
+          "start_ts": 1788978726000,
+          "finish_ts": 1788978798691,
+          "is_vertical_video": false,
+          "description": "Гол. 1:1. Аймурзин Данил (СКА) сравнивает счёт",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_12a0d5cb5aa9ab03213db850585fadcb/q2586768/c23d5f2daadbb0122dc33d953943dc35/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_12a0d5cb5aa9ab03213db850585fadcb/q2586768/c23d5f2daadbb0122dc33d953943dc35/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_12a0d5cb5aa9ab03213db850585fadcb/q2586768/c23d5f2daadbb0122dc33d953943dc35/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_12a0d5cb5aa9ab03213db850585fadcb/q2586768/c23d5f2daadbb0122dc33d953943dc35/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2586768/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751681",
+          "match_id": "902036",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2568576,
+          "start_ts": 1788624724620,
+          "finish_ts": 1788624796671,
+          "is_vertical_video": false,
+          "description": "Гол. 3:3. Атанасов Василий (СКА) сравнивает счет",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_b1ab183da51a7b58e33d2af061ed3137/q2568576/0afbf8581e263dfe52a7bca6c5fd0161/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_b1ab183da51a7b58e33d2af061ed3137/q2568576/0afbf8581e263dfe52a7bca6c5fd0161/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_b1ab183da51a7b58e33d2af061ed3137/q2568576/0afbf8581e263dfe52a7bca6c5fd0161/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_b1ab183da51a7b58e33d2af061ed3137/q2568576/0afbf8581e263dfe52a7bca6c5fd0161/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2568576/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751536",
+          "match_id": "901981",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 7,
+        "team": 1
+      },
+      "positions": [
+        {
+          "id": "pts",
+          "pos": 125,
+          "title": "Points"
+        },
+        {
+          "id": "a",
+          "pos": 65,
+          "title": "Assists"
+        }
+      ]
+    }
+  },
+  {
+    "player": {
+      "id": 38403,
+      "height": 189,
+      "weight": 90,
+      "age": 24,
+      "shirt_number": 19,
+      "khl_id": 33710,
+      "role": "defensemen",
+      "role_key": "defensemen",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15546/33710.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Akmaldinov Raul",
+      "birthday": 1024444800,
+      "stick": "r",
+      "team": {
+        "id": 12,
+        "khl_id": 54,
+        "name": "Amur",
+        "location": "Khabarovsk",
+        "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/12/original/amur_2015__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 15.4,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 25.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": -1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 33.23,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.26,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 3.33,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 12,
+          "khl_id": 54,
+          "name": "Amur",
+          "location": "Khabarovsk",
+          "seasons": "2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdc/team_pics/12/original/amur_2015__200x200.png"
+        },
+        {
+          "id": 26,
+          "khl_id": 1,
+          "name": "Lokomotiv",
+          "location": "Yaroslavl",
+          "seasons": "2022/2023,2023/2024,2024/2025",
+          "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/26/original/lokomotiv_2022__200x200.png"
+        }
+      ],
+      "quotes": [],
+      "seasons_count": {
+        "khl": 5,
+        "team": 2
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 28149,
+      "height": 182,
+      "weight": 82,
+      "age": 25,
+      "shirt_number": 61,
+      "khl_id": 34493,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15554/34493.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alalykin Danil",
+      "birthday": 985651200,
+      "stick": "l",
+      "team": {
+        "id": 32,
+        "khl_id": 38,
+        "name": "Salavat Yulaev",
+        "location": "Ufa",
+        "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 16.8333333333333,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 22.5,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 1,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 33.73,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.49,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 6.54,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 32,
+          "khl_id": 38,
+          "name": "Salavat Yulaev",
+          "location": "Ufa",
+          "seasons": "2019/2020,2020/2021,2021/2022,2022/2023,2023/2024,2024/2025,2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2585768,
+          "start_ts": 1788971535804,
+          "finish_ts": 1788971607846,
+          "is_vertical_video": false,
+          "description": "Гол. 8:6. Алалыкин Данил (Салават Юлаев). оформляет дубль",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_b9c1a399935d203c5b2016764f1d3703/q2585768/c81c5f1ac7bf621931cab74f90c15a2a/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_b9c1a399935d203c5b2016764f1d3703/q2585768/c81c5f1ac7bf621931cab74f90c15a2a/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_b9c1a399935d203c5b2016764f1d3703/q2585768/c81c5f1ac7bf621931cab74f90c15a2a/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_b9c1a399935d203c5b2016764f1d3703/q2585768/c81c5f1ac7bf621931cab74f90c15a2a/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2585768/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751546",
+          "match_id": "901998",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2585576,
+          "start_ts": 1788970677655,
+          "finish_ts": 1788970730925,
+          "is_vertical_video": false,
+          "description": "Гол. 7:5. Алалыкин Данил (Салават Юлаев). забивает пятую шайбу за свою команду",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_fba85badfd0030b7482e7eaef9c5f484/q2585576/caab8c0956adac5781078a2d6003c806/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_fba85badfd0030b7482e7eaef9c5f484/q2585576/caab8c0956adac5781078a2d6003c806/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_fba85badfd0030b7482e7eaef9c5f484/q2585576/caab8c0956adac5781078a2d6003c806/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_fba85badfd0030b7482e7eaef9c5f484/q2585576/caab8c0956adac5781078a2d6003c806/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2585576/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751546",
+          "match_id": "901998",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2568552,
+          "start_ts": 1788624417653,
+          "finish_ts": 1788624432653,
+          "is_vertical_video": false,
+          "description": "Алалыкин Данил (Салават Юлаев) атаковал с пятака",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_1d88a3bc0039613090c6554d17566f96/q2568552/2301f185826737b17d2cc1c1825444e0/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_1d88a3bc0039613090c6554d17566f96/q2568552/2301f185826737b17d2cc1c1825444e0/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_1d88a3bc0039613090c6554d17566f96/q2568552/2301f185826737b17d2cc1c1825444e0/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_1d88a3bc0039613090c6554d17566f96/q2568552/2301f185826737b17d2cc1c1825444e0/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2568552/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751553",
+          "match_id": "901980",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2567940,
+          "start_ts": 1788618567956,
+          "finish_ts": 1788618584607,
+          "is_vertical_video": false,
+          "description": "Алалыкин Данил (Салават Юлаев) не попал с убойной",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_2d929568469255dfdb0ff9b657d06c80/q2567940/6dcd55e8862d3aabcf0b2b8922216ecd/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_2d929568469255dfdb0ff9b657d06c80/q2567940/6dcd55e8862d3aabcf0b2b8922216ecd/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_2d929568469255dfdb0ff9b657d06c80/q2567940/6dcd55e8862d3aabcf0b2b8922216ecd/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_2d929568469255dfdb0ff9b657d06c80/q2567940/6dcd55e8862d3aabcf0b2b8922216ecd/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2567940/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751553",
+          "match_id": "901980",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 8,
+        "team": 8
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 28509,
+      "height": 184,
+      "weight": 89,
+      "age": 25,
+      "shirt_number": 21,
+      "khl_id": 26698,
+      "role": "defensemen",
+      "role_key": "defensemen",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15556/26698.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alanov Yegor",
+      "birthday": 976924800,
+      "stick": "l",
+      "team": {
+        "id": 24,
+        "khl_id": 29,
+        "name": "Sibir",
+        "location": "Novosibirsk Region",
+        "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/24/original/sibir_rus__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 20.2666666666667,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 26.5,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 2,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 4,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": -1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 34.56,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.28,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 3.95,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 8,
+          "khl_id": 719,
+          "name": "Dynamo Msk",
+          "location": "Moscow",
+          "seasons": "2019/2020,2020/2021",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/8/original/dynamo_msk_2019__200x200.png"
+        },
+        {
+          "id": 24,
+          "khl_id": 29,
+          "name": "Sibir",
+          "location": "Novosibirsk Region",
+          "seasons": "2021/2022,2022/2023,2023/2024,2024/2025,2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/24/original/sibir_rus__200x200.png"
+        },
+        {
+          "id": 693,
+          "khl_id": 807,
+          "name": "KHL RUS Stars",
+          "location": "",
+          "seasons": "2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-2-5.webcaster.pro/fc/01/team_pics/693/original/KHL_RUS_STARS_200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2588900,
+          "start_ts": 1789051697815,
+          "finish_ts": 1789051760319,
+          "is_vertical_video": false,
+          "description": "Послематчевая раздевалка команды Сибирь",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_d8b01237feda7eb34b35edcc0df88fae/q2588900/313cfc51353f9ff324feb17919dbc413/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_d8b01237feda7eb34b35edcc0df88fae/q2588900/313cfc51353f9ff324feb17919dbc413/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_d8b01237feda7eb34b35edcc0df88fae/q2588900/313cfc51353f9ff324feb17919dbc413/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_d8b01237feda7eb34b35edcc0df88fae/q2588900/313cfc51353f9ff324feb17919dbc413/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2588900/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751599",
+          "match_id": "902003",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Интересные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2575572,
+          "start_ts": 1788797177370,
+          "finish_ts": 1788797234269,
+          "is_vertical_video": false,
+          "description": "Гол. 7:1. Валитов Даниил (Сибирь) забивает гол",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_9b6deb93c47e53f28f2c9a9542d20aaa/q2575572/72d782706606eb1655bf941db5ea1c2b/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_9b6deb93c47e53f28f2c9a9542d20aaa/q2575572/72d782706606eb1655bf941db5ea1c2b/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_9b6deb93c47e53f28f2c9a9542d20aaa/q2575572/72d782706606eb1655bf941db5ea1c2b/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_9b6deb93c47e53f28f2c9a9542d20aaa/q2575572/72d782706606eb1655bf941db5ea1c2b/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2575572/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751537",
+          "match_id": "901988",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2568596,
+          "start_ts": 1788624788950,
+          "finish_ts": 1788624840693,
+          "is_vertical_video": false,
+          "description": "Удаление. Аланов Егор (Сибирь). 2 мин. Задержка соперника клюшкой.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_527f9b280b26374de0cf3e8ec3ac9b5c/q2568596/6dfe9e9455ecb5b2a40d51567fd193e3/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_527f9b280b26374de0cf3e8ec3ac9b5c/q2568596/6dfe9e9455ecb5b2a40d51567fd193e3/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_527f9b280b26374de0cf3e8ec3ac9b5c/q2568596/6dfe9e9455ecb5b2a40d51567fd193e3/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_527f9b280b26374de0cf3e8ec3ac9b5c/q2568596/6dfe9e9455ecb5b2a40d51567fd193e3/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2568596/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751538",
+          "match_id": "901982",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2568140,
+          "start_ts": 1788620322950,
+          "finish_ts": 1788620384502,
+          "is_vertical_video": false,
+          "description": "Удаление. Аланов Егор (Сибирь). 2 мин. Задержка соперника клюшкой.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_3def0f22dc32cd785ffaaf8692f6d023/q2568140/8fd94204886af23a27b109f4f225a6ca/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_3def0f22dc32cd785ffaaf8692f6d023/q2568140/8fd94204886af23a27b109f4f225a6ca/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_3def0f22dc32cd785ffaaf8692f6d023/q2568140/8fd94204886af23a27b109f4f225a6ca/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_3def0f22dc32cd785ffaaf8692f6d023/q2568140/8fd94204886af23a27b109f4f225a6ca/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2568140/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751538",
+          "match_id": "901982",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 8,
+        "team": 6
+      },
+      "positions": [
+        {
+          "id": "pts",
+          "pos": 32,
+          "title": "Points (Defensemen)"
+        },
+        {
+          "id": "a",
+          "pos": 31,
+          "title": "Assists (Defensemen)"
+        }
+      ]
+    }
+  },
+  {
+    "player": {
+      "id": 49956,
+      "height": 185,
+      "weight": 80,
+      "age": 25,
+      "shirt_number": 59,
+      "khl_id": 39994,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15563/39994.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alexandrov Nikita I.",
+      "birthday": 969062400,
+      "stick": "l",
+      "team": {
+        "id": 315,
+        "khl_id": 568,
+        "name": "Dragons",
+        "location": "Shanghai",
+        "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdm/team_pics/315/original/Shanghai_Dragons_2026_500x500_NEW_(1).png",
+        "division": "Tarasov division",
+        "division_key": "tarasov",
+        "conference": "West",
+        "conference_key": "west"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 16.9833333333333,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 21.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": -1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 31.28,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.28,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 4.33,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 315,
+          "khl_id": 568,
+          "name": "Dragons",
+          "location": "Shanghai",
+          "seasons": "2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdh/team_pics/315/original/Shanghai_Dragons_2026_500x500_NEW_(1).png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2589916,
+          "start_ts": 1789061696000,
+          "finish_ts": 1789061801000,
+          "is_vertical_video": false,
+          "description": "Удаление. Александров Никита И. (Драконы). 2 мин. Подножка.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_1783a6b9dcae7850d4aa782f21ca3813/q2589916/03b80570a8be1e0775814fccfb07901f/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_1783a6b9dcae7850d4aa782f21ca3813/q2589916/03b80570a8be1e0775814fccfb07901f/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_1783a6b9dcae7850d4aa782f21ca3813/q2589916/03b80570a8be1e0775814fccfb07901f/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_1783a6b9dcae7850d4aa782f21ca3813/q2589916/03b80570a8be1e0775814fccfb07901f/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589916/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751569",
+          "match_id": "902004",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2589712,
+          "start_ts": 1789060276008,
+          "finish_ts": 1789060289000,
+          "is_vertical_video": false,
+          "description": "Александров Никита И. (Драконы) попадает в штангу ворот",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_5f3171be8fa15996894cc2ca0dc42df3/q2589712/49c465a6a7ee1b940e4ceaf78c0d2a9e/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_5f3171be8fa15996894cc2ca0dc42df3/q2589712/49c465a6a7ee1b940e4ceaf78c0d2a9e/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_5f3171be8fa15996894cc2ca0dc42df3/q2589712/49c465a6a7ee1b940e4ceaf78c0d2a9e/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_5f3171be8fa15996894cc2ca0dc42df3/q2589712/49c465a6a7ee1b940e4ceaf78c0d2a9e/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589712/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751569",
+          "match_id": "902004",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2589500,
+          "start_ts": 1789058744000,
+          "finish_ts": 1789058823000,
+          "is_vertical_video": false,
+          "description": "Гол. 1:1. Чичек Ник (Драконы) забивает первую шайбу для команды в матче",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_7367c3bca0e43f0625f7ff36b32767e2/q2589500/6bfc83e9b9384fa9df12037bbf848eb1/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_7367c3bca0e43f0625f7ff36b32767e2/q2589500/6bfc83e9b9384fa9df12037bbf848eb1/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_7367c3bca0e43f0625f7ff36b32767e2/q2589500/6bfc83e9b9384fa9df12037bbf848eb1/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_7367c3bca0e43f0625f7ff36b32767e2/q2589500/6bfc83e9b9384fa9df12037bbf848eb1/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589500/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751569",
+          "match_id": "902004",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2572564,
+          "start_ts": 1788710118003,
+          "finish_ts": 1788710151001,
+          "is_vertical_video": false,
+          "description": "Прессинг от хоккеистов команды Драконы",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_3f44577d464eaba9e0ba9a16bf4c1ad6/q2572564/1787f0e56414130b7bd3483edc245231/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_3f44577d464eaba9e0ba9a16bf4c1ad6/q2572564/1787f0e56414130b7bd3483edc245231/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_3f44577d464eaba9e0ba9a16bf4c1ad6/q2572564/1787f0e56414130b7bd3483edc245231/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_3f44577d464eaba9e0ba9a16bf4c1ad6/q2572564/1787f0e56414130b7bd3483edc245231/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2572564/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751539",
+          "match_id": "901983",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 1,
+        "team": 1
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 30893,
+      "height": 193,
+      "weight": 107,
+      "age": 26,
+      "shirt_number": 4,
+      "khl_id": 24511,
+      "role": "defensemen",
+      "role_key": "defensemen",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15554/24511.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alexeyev Alexander",
+      "birthday": 942624000,
+      "stick": "l",
+      "team": {
+        "id": 32,
+        "khl_id": 38,
+        "name": "Salavat Yulaev",
+        "location": "Ufa",
+        "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 4,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 4,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 17.5333333333333,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 22.5,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 1,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 34.42,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.48,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 6.36,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 32,
+          "khl_id": 38,
+          "name": "Salavat Yulaev",
+          "location": "Ufa",
+          "seasons": "2020/2021,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2585212,
+          "start_ts": 1788967287180,
+          "finish_ts": 1788967339867,
+          "is_vertical_video": false,
+          "description": "Гол. 4:3. Ремпал Шелдон (Салават Юлаев). переигрывает вратаря",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_3c2cd17edd337cc1631a38ec525be8b0/q2585212/85dd5506211a0f0334b440dc7c20b1f8/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_3c2cd17edd337cc1631a38ec525be8b0/q2585212/85dd5506211a0f0334b440dc7c20b1f8/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_3c2cd17edd337cc1631a38ec525be8b0/q2585212/85dd5506211a0f0334b440dc7c20b1f8/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_3c2cd17edd337cc1631a38ec525be8b0/q2585212/85dd5506211a0f0334b440dc7c20b1f8/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2585212/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751546",
+          "match_id": "901998",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2575408,
+          "start_ts": 1788795775038,
+          "finish_ts": 1788795847149,
+          "is_vertical_video": false,
+          "description": "Гол. 0:3. Шипачёв Вадим (Салават Юлаев) прошил вратаря",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_094e51cc698cf81930260401be66a21f/q2575408/8e1d6d050067845ceab0c2b7ac07d8f9/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_094e51cc698cf81930260401be66a21f/q2575408/8e1d6d050067845ceab0c2b7ac07d8f9/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_094e51cc698cf81930260401be66a21f/q2575408/8e1d6d050067845ceab0c2b7ac07d8f9/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_094e51cc698cf81930260401be66a21f/q2575408/8e1d6d050067845ceab0c2b7ac07d8f9/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2575408/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751597",
+          "match_id": "901989",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2575100,
+          "start_ts": 1788792134872,
+          "finish_ts": 1788792215229,
+          "is_vertical_video": false,
+          "description": "Гол. 0:1. Родуолд Джек (Салават Юлаев) открывает счёт",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_5ce70cc19c3138ba882abe2f9a6c5454/q2575100/8a18c6220a76a697220181249bb33080/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_5ce70cc19c3138ba882abe2f9a6c5454/q2575100/8a18c6220a76a697220181249bb33080/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_5ce70cc19c3138ba882abe2f9a6c5454/q2575100/8a18c6220a76a697220181249bb33080/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_5ce70cc19c3138ba882abe2f9a6c5454/q2575100/8a18c6220a76a697220181249bb33080/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2575100/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751597",
+          "match_id": "901989",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2568148,
+          "start_ts": 1788620366483,
+          "finish_ts": 1788620436616,
+          "is_vertical_video": false,
+          "description": "Гол. 1:3. Родуолд Джек (Салават Юлаев) оформил дубль",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_a930259641997252970e75f7219077dd/q2568148/3196e314b3b0460c21fcf83ad4ce1a78/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_a930259641997252970e75f7219077dd/q2568148/3196e314b3b0460c21fcf83ad4ce1a78/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_a930259641997252970e75f7219077dd/q2568148/3196e314b3b0460c21fcf83ad4ce1a78/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_a930259641997252970e75f7219077dd/q2568148/3196e314b3b0460c21fcf83ad4ce1a78/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2568148/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751553",
+          "match_id": "901980",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2567924,
+          "start_ts": 1788618750487,
+          "finish_ts": 1788618831049,
+          "is_vertical_video": false,
+          "description": "Гол. 1:2. Родуолд Джек (Салават Юлаев) замкнул на пятаке",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_99d3efd492e833ccf730ae45b89e2704/q2567924/386d68df0a9eaa66b7119da447acb061/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_99d3efd492e833ccf730ae45b89e2704/q2567924/386d68df0a9eaa66b7119da447acb061/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_99d3efd492e833ccf730ae45b89e2704/q2567924/386d68df0a9eaa66b7119da447acb061/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_99d3efd492e833ccf730ae45b89e2704/q2567924/386d68df0a9eaa66b7119da447acb061/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2567924/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751553",
+          "match_id": "901980",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 2,
+        "team": 2
+      },
+      "positions": [
+        {
+          "id": "pts",
+          "pos": 1,
+          "title": "Points (Defensemen)"
+        },
+        {
+          "id": "a",
+          "pos": 1,
+          "title": "Assists (Defensemen)"
+        }
+      ]
+    }
+  },
+  {
+    "player": {
+      "id": 18295,
+      "height": 183,
+      "weight": 84,
+      "age": 28,
+      "shirt_number": 91,
+      "khl_id": 21886,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15551/21886.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alexeyev Denis V.",
+      "birthday": 875664000,
+      "stick": "r",
+      "team": {
+        "id": 26,
+        "khl_id": 1,
+        "name": "Lokomotiv",
+        "location": "Yaroslavl",
+        "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/26/original/lokomotiv_2022__200x200.png",
+        "division": "Tarasov division",
+        "division_key": "tarasov",
+        "conference": "West",
+        "conference_key": "west"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 14.75,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 21.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 6,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 0,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 31.86,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.24,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 3.44,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 26,
+          "khl_id": 1,
+          "name": "Lokomotiv",
+          "location": "Yaroslavl",
+          "seasons": "2017/2018,2018/2019,2019/2020,2020/2021,2021/2022,2022/2023,2023/2024,2024/2025,2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdl/team_pics/26/original/lokomotiv_2022__200x200.png"
+        },
+        {
+          "id": 61,
+          "khl_id": 418,
+          "name": "Admiral",
+          "location": "Vladivostok",
+          "seasons": "2016/2017",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2582256,
+          "start_ts": 1788890004000,
+          "finish_ts": 1788890061000,
+          "is_vertical_video": false,
+          "description": "Удаление. Алексеев Денис В. (Локомотив). 2 мин. Подножка.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_7a6ca294516dc7c9dd3a99be69d34aa9/q2582256/15de9d4a51073c78939147904381788b/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_7a6ca294516dc7c9dd3a99be69d34aa9/q2582256/15de9d4a51073c78939147904381788b/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_7a6ca294516dc7c9dd3a99be69d34aa9/q2582256/15de9d4a51073c78939147904381788b/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_7a6ca294516dc7c9dd3a99be69d34aa9/q2582256/15de9d4a51073c78939147904381788b/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2582256/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751636",
+          "match_id": "901995",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 11,
+        "team": 10
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 50200,
+      "height": 182,
+      "weight": 73,
+      "age": 20,
+      "shirt_number": null,
+      "khl_id": 42907,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Kazakhstan",
+      "image": "https://www.khl.ru/img/teamplayers_db/15547/42907.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/KZ.png",
+      "name": "Alibek Abzal",
+      "birthday": 1143590400,
+      "stick": "l",
+      "team": null,
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 0.0,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 0.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": null,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 0,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [],
+      "quotes": [],
+      "seasons_count": null,
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 5491,
+      "height": 180,
+      "weight": 91,
+      "age": 31,
+      "shirt_number": 18,
+      "khl_id": 18488,
+      "role": "goaltender",
+      "role_key": "goaltender",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15543/18488.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Alikin Evgeny",
+      "birthday": 782438400,
+      "stick": "l",
+      "team": {
+        "id": 56,
+        "khl_id": 190,
+        "name": "Avtomobilist",
+        "location": "Ekaterinburg",
+        "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png",
+        "division": "Kharlamov division",
+        "division_key": "kharlamov",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "w",
+          "title": "Wins",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "l",
+          "title": "Losses",
+          "val": 1,
+          "max": 2
+        },
+        {
+          "id": "sop",
+          "title": "Shootouts played",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "ga",
+          "title": "Goals allowed",
+          "val": 5,
+          "max": 8
+        },
+        {
+          "id": "sv",
+          "title": "Saves",
+          "val": 59,
+          "max": 67
+        },
+        {
+          "id": "sv_pct",
+          "title": "Saves percentage",
+          "val": 92.2,
+          "max": 100.0
+        },
+        {
+          "id": "gaa",
+          "title": "Goals against average",
+          "val": 2.47,
+          "max": 4.9,
+          "min": 0.0,
+          "show_label": true
+        },
+        {
+          "id": "so",
+          "title": "Shutouts",
+          "val": 0,
+          "max": 1
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "toi",
+          "title": "Time on ice",
+          "val": 121,
+          "max": 125
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 2.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 12,
+          "khl_id": 54,
+          "name": "Amur",
+          "location": "Khabarovsk",
+          "seasons": "2015/2016,2016/2017,2017/2018,2018/2019,2019/2020,2020/2021,2021/2022,2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdc/team_pics/12/original/amur_2015__200x200.png"
+        },
+        {
+          "id": 56,
+          "khl_id": 190,
+          "name": "Avtomobilist",
+          "location": "Ekaterinburg",
+          "seasons": "2023/2024,2024/2025,2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png"
+        },
+        {
+          "id": 491,
+          "khl_id": 594,
+          "name": "Kharlamov",
+          "location": "",
+          "seasons": "2023/2024",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdj/team_pics/491/original/Kharlamov_div.png"
+        },
+        {
+          "id": 495,
+          "khl_id": 597,
+          "name": "Chernyshev",
+          "location": "",
+          "seasons": "2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/495/original/Chernyshev_div.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2575332,
+          "start_ts": 1788794805727,
+          "finish_ts": 1788794825716,
+          "is_vertical_video": false,
+          "description": "Аликин Евгений (Автомобилист) выручил в падении",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_a0803f9507455dd2aee40ea227826e99/q2575332/180837a7ac19950e38e94b2f1db39458/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_a0803f9507455dd2aee40ea227826e99/q2575332/180837a7ac19950e38e94b2f1db39458/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_a0803f9507455dd2aee40ea227826e99/q2575332/180837a7ac19950e38e94b2f1db39458/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_a0803f9507455dd2aee40ea227826e99/q2575332/180837a7ac19950e38e94b2f1db39458/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2575332/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751540",
+          "match_id": "901985",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Сэйвы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2567284,
+          "start_ts": 1788609887088,
+          "finish_ts": 1788609924038,
+          "is_vertical_video": false,
+          "description": "Опасный момент у ворот команды Автомобилист",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_b1847c5fb66a6abd0ab0fa6f399321a1/q2567284/47a9ec09037d2d429cc569ef4b49a29e/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_b1847c5fb66a6abd0ab0fa6f399321a1/q2567284/47a9ec09037d2d429cc569ef4b49a29e/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_b1847c5fb66a6abd0ab0fa6f399321a1/q2567284/47a9ec09037d2d429cc569ef4b49a29e/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_b1847c5fb66a6abd0ab0fa6f399321a1/q2567284/47a9ec09037d2d429cc569ef4b49a29e/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2567284/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751535",
+          "match_id": "901977",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 12,
+        "team": 4
+      },
+      "positions": [
+        {
+          "id": "gaa",
+          "pos": 10,
+          "title": "Goals Against Average"
+        },
+        {
+          "id": "sv_pct",
+          "pos": 10,
+          "title": "Saves Percentage"
+        }
+      ]
+    }
+  },
+  {
+    "player": {
+      "id": 30453,
+      "height": 189,
+      "weight": 88,
+      "age": 25,
+      "shirt_number": 72,
+      "khl_id": 34802,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Belarus",
+      "image": "https://www.khl.ru/img/teamplayers_db/15548/34802.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/BY.png",
+      "name": "Alistrov Vladimir",
+      "birthday": 981936000,
+      "stick": "l",
+      "team": {
+        "id": 40,
+        "khl_id": 53,
+        "name": "Ak Bars",
+        "location": "Kazan",
+        "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/40/original/ak_bars_2022__200x200.png",
+        "division": "Kharlamov division",
+        "division_key": "kharlamov",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 2,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 1,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 13.5,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 20.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 0,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 38,
+          "khl_id": 207,
+          "name": "Dinamo Mn",
+          "location": "Minsk",
+          "seasons": "2020/2021,2021/2022,2022/2023,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/38/original/dinamo_mn_2019_alternative__200x200.png"
+        },
+        {
+          "id": 40,
+          "khl_id": 53,
+          "name": "Ak Bars",
+          "location": "Kazan",
+          "seasons": "2025/2026,2026/2027",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/40/original/ak_bars_2022__200x200.png"
+        },
+        {
+          "id": 44,
+          "khl_id": 24,
+          "name": "SKA",
+          "location": "Saint Petersburg",
+          "seasons": "2023/2024,2024/2025",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdd/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png"
+        },
+        {
+          "id": 483,
+          "khl_id": 588,
+          "name": "Bobrov",
+          "location": "",
+          "seasons": "2023/2024",
+          "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sdb/team_pics/483/original/Bobrov_div.png"
+        }
+      ],
+      "quotes": [
+        {
+          "id": 2589724,
+          "start_ts": 1789060287000,
+          "finish_ts": 1789060337000,
+          "is_vertical_video": false,
+          "description": "Алистров Владимир (Динамо Мн) бросает с неудобной руки",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_21169b67b287a29f8970ebc91974bb67/q2589724/b9996c24ae2945c2494afff66a1a961f/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_21169b67b287a29f8970ebc91974bb67/q2589724/b9996c24ae2945c2494afff66a1a961f/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_21169b67b287a29f8970ebc91974bb67/q2589724/b9996c24ae2945c2494afff66a1a961f/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_21169b67b287a29f8970ebc91974bb67/q2589724/b9996c24ae2945c2494afff66a1a961f/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589724/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751569",
+          "match_id": "902004",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2589596,
+          "start_ts": 1789059153004,
+          "finish_ts": 1789059202000,
+          "is_vertical_video": false,
+          "description": "Интервью после первого периода. Алистров Владимир (Динамо Мн)",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_af00744bde9c47a401629157e367133c/q2589596/d12310eccc47a7673a79694c97f41d5f/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_af00744bde9c47a401629157e367133c/q2589596/d12310eccc47a7673a79694c97f41d5f/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_af00744bde9c47a401629157e367133c/q2589596/d12310eccc47a7673a79694c97f41d5f/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_af00744bde9c47a401629157e367133c/q2589596/d12310eccc47a7673a79694c97f41d5f/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2589596/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751569",
+          "match_id": "902004",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Интересные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        },
+        {
+          "id": 2576768,
+          "start_ts": 1788803258712,
+          "finish_ts": 1788803325697,
+          "is_vertical_video": false,
+          "description": "Гол. 1:0. Денисенко Григорий (Ак Барс) открывает счёт в матче",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Main"
+            },
+            {
+              "id": "a_noise",
+              "title": "Intersound"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_498d06af0d7af785a993e5d79278a60b/q2576768/ddf5ad5f049af1d414b0e325c415ed69/1789174376.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_498d06af0d7af785a993e5d79278a60b/q2576768/ddf5ad5f049af1d414b0e325c415ed69/1789174376?sr=109&locale=en&type_id=18",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_498d06af0d7af785a993e5d79278a60b/q2576768/ddf5ad5f049af1d414b0e325c415ed69/1789174376?sr=109&type_id=18&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_498d06af0d7af785a993e5d79278a60b/q2576768/ddf5ad5f049af1d414b0e325c415ed69/1789174376?sr=109&type_id=18&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2576768/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751616",
+          "match_id": "901992",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      ],
+      "seasons_count": {
+        "khl": 7,
+        "team": 2
+      },
+      "positions": [
+        {
+          "id": "pts",
+          "pos": 125,
+          "title": "Points"
+        },
+        {
+          "id": "a",
+          "pos": 93,
+          "title": "Assists"
+        }
+      ]
+    }
+  },
+  {
+    "player": {
+      "id": 18359,
+      "height": 180,
+      "weight": 91,
+      "age": 28,
+      "shirt_number": 84,
+      "khl_id": 22290,
+      "role": "forward",
+      "role_key": "forward",
+      "country": "Russia",
+      "image": "https://www.khl.ru/img/teamplayers_db/15550/22290.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/RU.png",
+      "name": "Altybarmakyan Andrei",
+      "birthday": 902188800,
+      "stick": "l",
+      "team": {
+        "id": 105,
+        "khl_id": 66,
+        "name": "Lada",
+        "location": "Togliatti",
+        "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdn/team_pics/105/original/Lada_logo_2026_200x200_NEW.png",
+        "division": "Bobrov division",
+        "division_key": "bobrov",
+        "conference": "West",
+        "conference_key": "west"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "pts",
+          "title": "Points",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "g",
+          "title": "Goals",
+          "val": 0,
+          "max": 3
+        },
+        {
+          "id": "a",
+          "title": "Assists",
+          "val": 0,
+          "max": 6
+        },
+        {
+          "id": "toi_avg",
+          "title": "Time on ice/Game",
+          "val": 0.0,
+          "max": 24.6
+        },
+        {
+          "id": "sft_avg",
+          "title": "Average Shifts/Game",
+          "val": 0.0,
+          "max": 33
+        },
+        {
+          "id": "fow",
+          "title": "Faceoff won",
+          "val": 0,
+          "max": 27
+        },
+        {
+          "id": "sds",
+          "title": "Shootouts deciding shots",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "pim_avg",
+          "title": "Penalty in minutes/Game",
+          "val": null,
+          "max": 10
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "pm",
+          "title": "+/-",
+          "val": 0,
+          "max": 4,
+          "min": -5
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 44,
+          "khl_id": 24,
+          "name": "SKA",
+          "location": "Saint Petersburg",
+          "seasons": "2017/2018,2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdd/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png"
+        },
+        {
+          "id": 105,
+          "khl_id": 66,
+          "name": "Lada",
+          "location": "Togliatti",
+          "seasons": "2023/2024,2024/2025,2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdn/team_pics/105/original/Lada_logo_2026_200x200_NEW.png"
+        },
+        {
+          "id": 113,
+          "khl_id": 451,
+          "name": "HC Sochi",
+          "location": "Sochi",
+          "seasons": "2018/2019,2019/2020,2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sda/team_pics/113/original/hc_sochi_2024__200x200_new.png"
+        },
+        {
+          "id": 483,
+          "khl_id": 588,
+          "name": "Bobrov",
+          "location": "",
+          "seasons": "2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sdb/team_pics/483/original/Bobrov_div.png"
+        },
+        {
+          "id": 495,
+          "khl_id": 597,
+          "name": "Chernyshev",
+          "location": "",
+          "seasons": "2016/2017",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdj/team_pics/495/original/Chernyshev_div.png"
+        }
+      ],
+      "quotes": [],
+      "seasons_count": {
+        "khl": 8,
+        "team": 3
+      },
+      "positions": []
+    }
+  },
+  {
+    "player": {
+      "id": 36691,
+      "height": 196,
+      "weight": 78,
+      "age": 23,
+      "shirt_number": 87,
+      "khl_id": 39266,
+      "role": "goaltender",
+      "role_key": "goaltender",
+      "country": "Kazakhstan",
+      "image": "https://www.khl.ru/img/teamplayers_db/15544/39266.jpg",
+      "flag_image_url": "https://www.webcaster.pro/images/flags_64x64/KZ.png",
+      "name": "Amirbekov Dzhelal-Ad-Din",
+      "birthday": 1032825600,
+      "stick": "l",
+      "team": {
+        "id": 61,
+        "khl_id": 418,
+        "name": "Admiral",
+        "location": "Vladivostok",
+        "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png",
+        "division": "Chernyshev division",
+        "division_key": "chernyshev",
+        "conference": "East",
+        "conference_key": "east"
+      },
+      "stats": [
+        {
+          "id": "gp",
+          "title": "Games played",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "w",
+          "title": "Wins",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "l",
+          "title": "Losses",
+          "val": 0,
+          "max": 2
+        },
+        {
+          "id": "sop",
+          "title": "Shootouts played",
+          "val": 0,
+          "max": 0
+        },
+        {
+          "id": "ga",
+          "title": "Goals allowed",
+          "val": 0,
+          "max": 8
+        },
+        {
+          "id": "sv",
+          "title": "Saves",
+          "val": 0,
+          "max": 67
+        },
+        {
+          "id": "so",
+          "title": "Shutouts",
+          "val": 0,
+          "max": 1
+        },
+        {
+          "id": "pim",
+          "title": "Penalty in minutes",
+          "val": 0,
+          "max": 10
+        },
+        {
+          "id": "toi",
+          "title": "Time on ice",
+          "val": 0,
+          "max": 125
+        },
+        {
+          "id": "top_speed",
+          "title": "Top speed, km/h",
+          "val": 0.0,
+          "max": 37.33
+        },
+        {
+          "id": "time_on_ice",
+          "title": "Time on ice, h",
+          "val": 0.0,
+          "max": 2.02
+        },
+        {
+          "id": "distance_travelled",
+          "title": "Total distance, km",
+          "val": 0.0,
+          "max": 10.29
+        }
+      ],
+      "teams": [
+        {
+          "id": 30,
+          "khl_id": 37,
+          "name": "Metallurg Mg",
+          "location": "Magnitogorsk",
+          "seasons": "2025/2026",
+          "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/30/original/metallurg_mg_2020__200x200.png"
+        },
+        {
+          "id": 46,
+          "khl_id": 198,
+          "name": "Barys",
+          "location": "Astana",
+          "seasons": "2022/2023",
+          "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/46/original/barys_2022_head_only__200x200.png"
+        }
+      ],
+      "quotes": [],
+      "seasons_count": {
+        "khl": 2,
+        "team": 0
+      },
+      "positions": []
+    }
+  }
+]

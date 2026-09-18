@@ -1,0 +1,905 @@
+{
+  "_openscore_note": "TRUNCATED to the sport-relevant keys (payment/user/SMS keys removed).",
+  "current_stage_id": 407,
+  "stages_v2": [
+    {
+      "id": 407,
+      "khl_id": 1436,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2026/2027",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 395,
+      "khl_id": 1370,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2025/2026",
+      "percent_points_scored": false,
+      "display_rule": "playoff_2024"
+    },
+    {
+      "id": 370,
+      "khl_id": 1369,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2025/2026",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 359,
+      "khl_id": 1289,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2024/2025",
+      "percent_points_scored": false,
+      "display_rule": "playoff_2024"
+    },
+    {
+      "id": 323,
+      "khl_id": 1288,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2024/2025",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 299,
+      "khl_id": 1218,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2023/2024",
+      "percent_points_scored": false,
+      "display_rule": "playoff_2024"
+    },
+    {
+      "id": 275,
+      "khl_id": 1217,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2023/2024",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 259,
+      "khl_id": 1155,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2022/2023",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 235,
+      "khl_id": 1154,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2022/2023",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 225,
+      "khl_id": 1098,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2021/2022",
+      "percent_points_scored": true,
+      "display_rule": "default"
+    },
+    {
+      "id": 209,
+      "khl_id": 1097,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2021/2022",
+      "percent_points_scored": true,
+      "display_rule": "default"
+    },
+    {
+      "id": 197,
+      "khl_id": 1046,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2020/2021",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 189,
+      "khl_id": 1045,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2020/2021",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 177,
+      "khl_id": 854,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2019/2020",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 157,
+      "khl_id": 851,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2019/2020",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 141,
+      "khl_id": 674,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2018/2019",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 105,
+      "khl_id": 671,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2018/2019",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 97,
+      "khl_id": 472,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2017/2018",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 89,
+      "khl_id": 468,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2017/2018",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 83,
+      "khl_id": 406,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2016/2017",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 75,
+      "khl_id": 405,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2016/2017",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 71,
+      "khl_id": 310,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2015/2016",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 23,
+      "khl_id": 309,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2015/2016",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 19,
+      "khl_id": 267,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2014/2015",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 15,
+      "khl_id": 266,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2014/2015",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 7,
+      "khl_id": 245,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2013/2014",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 11,
+      "khl_id": 265,
+      "title": "Кубок Надежды",
+      "type": "playoff",
+      "season": "2013/2014",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 3,
+      "khl_id": 244,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2013/2014",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 63,
+      "khl_id": 223,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2012/2013",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 67,
+      "khl_id": 237,
+      "title": "Кубок Надежды",
+      "type": "playoff",
+      "season": "2012/2013",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 59,
+      "khl_id": 222,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2012/2013",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 55,
+      "khl_id": 203,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2011/2012",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 51,
+      "khl_id": 202,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2011/2012",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 47,
+      "khl_id": 186,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2010/2011",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 43,
+      "khl_id": 185,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2010/2011",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 39,
+      "khl_id": 168,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2009/2010",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 35,
+      "khl_id": 167,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2009/2010",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 31,
+      "khl_id": 165,
+      "title": "Плей-офф",
+      "type": "playoff",
+      "season": "2008/2009",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    },
+    {
+      "id": 27,
+      "khl_id": 160,
+      "title": "Регулярный чемпионат",
+      "type": "regular",
+      "season": "2008/2009",
+      "percent_points_scored": false,
+      "display_rule": "default"
+    }
+  ],
+  "teams": [
+    {
+      "id": 10,
+      "khl_id": 34,
+      "name": "Авангард",
+      "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdh/team_pics/10/original/Avangard_2026_500x500_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=10"
+    },
+    {
+      "id": 56,
+      "khl_id": 190,
+      "name": "Автомобилист",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/56/original/avtomobilist__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=56"
+    },
+    {
+      "id": 61,
+      "khl_id": 418,
+      "name": "Адмирал",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=61"
+    },
+    {
+      "id": 40,
+      "khl_id": 53,
+      "name": "Ак Барс",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/40/original/ak_bars_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=40"
+    },
+    {
+      "id": 12,
+      "khl_id": 54,
+      "name": "Амур",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/12/original/amur_2015__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=12"
+    },
+    {
+      "id": 46,
+      "khl_id": 198,
+      "name": "Барыс",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/46/original/barys_2022_head_only__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=46"
+    },
+    {
+      "id": 8,
+      "khl_id": 719,
+      "name": "Динамо М",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/8/original/dynamo_msk_2019__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=8"
+    },
+    {
+      "id": 38,
+      "khl_id": 207,
+      "name": "Динамо Мн",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/38/original/dinamo_mn_2019_alternative__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=38"
+    },
+    {
+      "id": 315,
+      "khl_id": 568,
+      "name": "Драконы",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdm/team_pics/315/original/Shanghai_Dragons_2026_500x500_NEW_(1).png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=315"
+    },
+    {
+      "id": 105,
+      "khl_id": 66,
+      "name": "Лада",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdn/team_pics/105/original/Lada_logo_2026_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 26,
+      "khl_id": 1,
+      "name": "Локомотив",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/26/original/lokomotiv_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=26"
+    },
+    {
+      "id": 30,
+      "khl_id": 37,
+      "name": "Металлург Мг",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/30/original/metallurg_mg_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=30"
+    },
+    {
+      "id": 36,
+      "khl_id": 71,
+      "name": "Нефтехимик",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/36/original/neftekhimik_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=36"
+    },
+    {
+      "id": 32,
+      "khl_id": 38,
+      "name": "Салават Юлаев",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=32"
+    },
+    {
+      "id": 42,
+      "khl_id": 56,
+      "name": "Северсталь",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/42/original/severstal_2021__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=42"
+    },
+    {
+      "id": 24,
+      "khl_id": 29,
+      "name": "Сибирь",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=24"
+    },
+    {
+      "id": 44,
+      "khl_id": 24,
+      "name": "СКА",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdd/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=44"
+    },
+    {
+      "id": 18,
+      "khl_id": 7,
+      "name": "Спартак",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/18/original/spartak_2015__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=18"
+    },
+    {
+      "id": 22,
+      "khl_id": 26,
+      "name": "Торпедо",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/22/original/Torpedo_2025_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=22"
+    },
+    {
+      "id": 28,
+      "khl_id": 25,
+      "name": "Трактор",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdb/team_pics/28/original/traktor_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=28"
+    },
+    {
+      "id": 113,
+      "khl_id": 451,
+      "name": "ХК Сочи",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/113/original/hc_sochi_2024__200x200_new.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=113"
+    },
+    {
+      "id": 16,
+      "khl_id": 2,
+      "name": "ЦСКА",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/16/original/cska_2016_rus__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=16"
+    }
+  ],
+  "teams_for_filter": [
+    {
+      "id": 10,
+      "khl_id": 34,
+      "name": "Авангард",
+      "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdh/team_pics/10/original/Avangard_2026_500x500_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=10"
+    },
+    {
+      "id": 56,
+      "khl_id": 190,
+      "name": "Автомобилист",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/56/original/avtomobilist__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=56"
+    },
+    {
+      "id": 61,
+      "khl_id": 418,
+      "name": "Адмирал",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=61"
+    },
+    {
+      "id": 40,
+      "khl_id": 53,
+      "name": "Ак Барс",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/40/original/ak_bars_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=40"
+    },
+    {
+      "id": 12,
+      "khl_id": 54,
+      "name": "Амур",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/12/original/amur_2015__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=12"
+    },
+    {
+      "id": 46,
+      "khl_id": 198,
+      "name": "Барыс",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/46/original/barys_2022_head_only__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=46"
+    },
+    {
+      "id": 34,
+      "khl_id": 19,
+      "name": "Витязь",
+      "image": "https://thumbs.webcaster.pro/rec-2-2.webcaster.pro/fc/sdd/team_pics/34/original/vityaz_2015_rus__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=34"
+    },
+    {
+      "id": 483,
+      "khl_id": 588,
+      "name": "Див. Боброва",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/483/original/Bobrov_div.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 487,
+      "khl_id": 591,
+      "name": "Див. Тарасова",
+      "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/487/original/Tarasov_div.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 491,
+      "khl_id": 594,
+      "name": "Див. Харламова",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/491/original/Kharlamov_div.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 495,
+      "khl_id": 597,
+      "name": "Див. Чернышёва",
+      "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/495/original/Chernyshev_div.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 8,
+      "khl_id": 719,
+      "name": "Динамо М",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdi/team_pics/8/original/dynamo_msk_2019__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=8"
+    },
+    {
+      "id": 38,
+      "khl_id": 207,
+      "name": "Динамо Мн",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/38/original/dinamo_mn_2019_alternative__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=38"
+    },
+    {
+      "id": 54,
+      "khl_id": 208,
+      "name": "Динамо Р",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdk/team_pics/54/original/Dinamo_Riga_Logotype_Symbol_RGB.PNG",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=54"
+    },
+    {
+      "id": 315,
+      "khl_id": 568,
+      "name": "Драконы",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdm/team_pics/315/original/Shanghai_Dragons_2026_500x500_NEW_(1).png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=315"
+    },
+    {
+      "id": 109,
+      "khl_id": 450,
+      "name": "Йокерит",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdk/team_pics/109/original/Jokerit_2019.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=109"
+    },
+    {
+      "id": 105,
+      "khl_id": 66,
+      "name": "Лада",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdb/team_pics/105/original/Lada_logo_2026_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": null
+    },
+    {
+      "id": 26,
+      "khl_id": 1,
+      "name": "Локомотив",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdl/team_pics/26/original/lokomotiv_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=26"
+    },
+    {
+      "id": 65,
+      "khl_id": 419,
+      "name": "Медвешчак",
+      "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sdb/team_pics/65/original/medvescak.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=65"
+    },
+    {
+      "id": 30,
+      "khl_id": 37,
+      "name": "Металлург Мг",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/30/original/metallurg_mg_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=30"
+    },
+    {
+      "id": 20,
+      "khl_id": 31,
+      "name": "Металлург Нк",
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sda/team_pics/20/original/metallurgnk.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=20"
+    },
+    {
+      "id": 36,
+      "khl_id": 71,
+      "name": "Нефтехимик",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/36/original/neftekhimik_2022__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=36"
+    },
+    {
+      "id": 32,
+      "khl_id": 38,
+      "name": "Салават Юлаев",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sdc/team_pics/32/original/salavat_yulaev_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=32"
+    },
+    {
+      "id": 42,
+      "khl_id": 56,
+      "name": "Северсталь",
+      "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/42/original/severstal_2021__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=42"
+    },
+    {
+      "id": 24,
+      "khl_id": 29,
+      "name": "Сибирь",
+      "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=24"
+    },
+    {
+      "id": 44,
+      "khl_id": 24,
+      "name": "СКА",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdd/team_pics/44/original/SKA_logo_2025_RU_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=44"
+    },
+    {
+      "id": 48,
+      "khl_id": 246,
+      "name": "Слован",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sda/team_pics/48/original/slovan.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=48"
+    },
+    {
+      "id": 18,
+      "khl_id": 7,
+      "name": "Спартак",
+      "image": "https://thumbs.webcaster.pro/rec-1-7.webcaster.pro/fc/sdj/team_pics/18/original/spartak_2015__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=18"
+    },
+    {
+      "id": 22,
+      "khl_id": 26,
+      "name": "Торпедо",
+      "image": "https://thumbs.webcaster.pro/rec-1-1.webcaster.pro/fc/sda/team_pics/22/original/Torpedo_2025_200x200_NEW.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=22"
+    },
+    {
+      "id": 28,
+      "khl_id": 25,
+      "name": "Трактор",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdb/team_pics/28/original/traktor_2020__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=28"
+    },
+    {
+      "id": 521,
+      "khl_id": 608,
+      "name": "ХК Динамо М",
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdk/team_pics/521/original/dynamo_msk_2019.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=521"
+    },
+    {
+      "id": 113,
+      "khl_id": 451,
+      "name": "ХК Сочи",
+      "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sda/team_pics/113/original/hc_sochi_2024__200x200_new.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=113"
+    },
+    {
+      "id": 16,
+      "khl_id": 2,
+      "name": "ЦСКА",
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/16/original/cska_2016_rus__200x200.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=16"
+    },
+    {
+      "id": 58,
+      "khl_id": 213,
+      "name": "Югра",
+      "image": "https://thumbs.webcaster.pro/rec-2-13.webcaster.pro/fc/sdb/team_pics/58/original/ugra.png",
+      "tickets_site": null,
+      "about_team": "https://khl.api.webcaster.pro/api/khl_mobile/team_info?locale=ru&team_id=58"
+    }
+  ],
+  "server_time": 1789131074000,
+  "server_day": 1789074000,
+  "mqtt_broker": {
+    "host": "mq.webcaster.pro",
+    "port": 8883,
+    "secure": true,
+    "event_topic": "event_data"
+  },
+  "video_types": [
+    {
+      "id": "e_4",
+      "title": "Хайлайты"
+    },
+    {
+      "id": "e_6",
+      "title": "Моменты"
+    },
+    {
+      "id": "q_28",
+      "title": "Голы"
+    },
+    {
+      "id": "q_18",
+      "title": "Удаления"
+    },
+    {
+      "id": "q_30",
+      "title": "Опасные моменты"
+    },
+    {
+      "id": "q_32",
+      "title": "Сэйвы"
+    },
+    {
+      "id": "q_10",
+      "title": "Силовые приёмы"
+    },
+    {
+      "id": "q_34",
+      "title": "Драки"
+    },
+    {
+      "id": "q_45",
+      "title": "Интересные моменты"
+    },
+    {
+      "id": "q_36",
+      "title": "Буллит"
+    },
+    {
+      "id": "q_38",
+      "title": "Серия буллитов"
+    }
+  ],
+  "selections": [
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?q[type_id_in][]=4&not_only_matches=1",
+      "name": "Хайлайты"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?q[type_id_in][]=6&not_only_matches=1",
+      "name": "Моменты"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?not_only_matches=1&recommended=1",
+      "name": "Рекомендуемые"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?popular=1",
+      "name": "Популярные"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?q[type_id_in][]=37&not_only_matches=1&variable_name=Топ-10&variable_value=Гол",
+      "name": "Топ-10. Голы"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?q[type_id_in][]=37&not_only_matches=1&variable_name=Топ-10&variable_value=Сэйв",
+      "name": "Топ-10. Сэйвы"
+    },
+    {
+      "url": "https://webcaster.pro/api/khl_mobile/events_v2.json?q[type_id_in][]=37&not_only_matches=1&variable_name=Топ-10&variable_value=Силовой прием",
+      "name": "Топ-10. Силовые приемы"
+    }
+  ],
+  "stages": [
+    "13/14 | плей-офф",
+    "13/14 | рег.",
+    "13/14 | КН",
+    "14/15 | плей-офф",
+    "14/15 | рег.",
+    "15/16 | рег.",
+    "15/16 | плей-офф",
+    "16/17 | рег.",
+    "16/17 | плей-офф",
+    "17/18 | рег."
+  ]
+}

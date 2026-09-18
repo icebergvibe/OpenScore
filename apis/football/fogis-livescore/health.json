@@ -1,0 +1,129 @@
+{
+  "league": "fogis",
+  "name": "Swedish football (Fogis livescore XML)",
+  "baseUrl": "https://c01.fogis.se/fogistemplates.se/livescore/xml/",
+  "checks": [
+    {
+      "name": "overview-1-{today}.xml",
+      "path": "overview-1-{today|yyyyMMdd}.xml",
+      "format": "xml",
+      "sample": "overview.today.xml",
+      "keys": [
+        "todays-games"
+      ],
+      "note": "Empty <todays-games/> on a day without games"
+    },
+    {
+      "name": "overview-11-{today}.xml (district)",
+      "path": "overview-11-{today|yyyyMMdd}.xml",
+      "format": "xml",
+      "sample": "overview.district.xml",
+      "keys": [
+        "todays-games"
+      ]
+    },
+    {
+      "name": "overview — far future (empty)",
+      "path": "overview-1-20261231.xml",
+      "format": "xml",
+      "sample": "overview.future-empty.xml",
+      "keys": [
+        "todays-games"
+      ]
+    },
+    {
+      "name": "game-info-{id}.xml — final",
+      "path": "game-info-6536131.xml",
+      "format": "xml",
+      "sample": "game-info.final.xml",
+      "keys": [
+        "game-info/@status",
+        "game-info/game/@id",
+        "game-info/game/teams/team",
+        "game-info/game/status/@desc",
+        "game-info/events/event/@game-time"
+      ]
+    },
+    {
+      "name": "game-info-{id}.xml — cup shootout",
+      "path": "game-info-6827326.xml",
+      "format": "xml",
+      "sample": "game-info.final.cup-shootout.xml",
+      "keys": [
+        "game-info/game"
+      ]
+    },
+    {
+      "name": "game-info-{id}.xml — pre capture id",
+      "path": "game-info-6529989.xml",
+      "format": "xml",
+      "sample": "game-info.final.xml",
+      "keys": [
+        "game-info/game"
+      ],
+      "note": "AIK–Västerås, captured pre-game; now finished"
+    },
+    {
+      "name": "lineup-{id}.xml",
+      "path": "lineup-6536131.xml",
+      "format": "xml",
+      "sample": "lineup.final.xml",
+      "keys": [
+        "game/teams/team",
+        "game/teams/team/@formation-id"
+      ]
+    },
+    {
+      "name": "changes-1.xml",
+      "path": "changes-1.xml",
+      "format": "xml",
+      "sample": "changes.xml",
+      "keys": [
+        "change-files/file/@file-name"
+      ]
+    },
+    {
+      "name": "tournaments-1.xml",
+      "path": "tournaments-1.xml",
+      "format": "xml",
+      "sample": "tournaments.xml",
+      "keys": [
+        "tournaments/tournament/@id",
+        "tournaments/tournament/teams/team"
+      ]
+    },
+    {
+      "name": "tournaments-11.xml (district)",
+      "path": "tournaments-11.xml",
+      "format": "xml",
+      "sample": "tournaments.district.xml",
+      "keys": [
+        "tournaments/tournament"
+      ]
+    },
+    {
+      "name": "schedule-{tournamentId}.xml — Superettan",
+      "path": "schedule-133340.xml",
+      "format": "xml",
+      "sample": "schedule.superettan.xml",
+      "keys": [
+        "schedule/tournament/round/game",
+        "schedule/tournament/round/game/@status"
+      ]
+    },
+    {
+      "name": "schedule-{tournamentId}.xml — Svenska Cupen",
+      "path": "schedule-137810.xml",
+      "format": "xml",
+      "sample": "schedule.svenska-cupen.xml",
+      "keys": [
+        "schedule/tournament/round/game"
+      ]
+    },
+    {
+      "name": "svenskfotboll.se livescore-ticker",
+      "url": "https://www.svenskfotboll.se/api/livescore-ticker/",
+      "sample": "livescore-ticker.json"
+    }
+  ]
+}

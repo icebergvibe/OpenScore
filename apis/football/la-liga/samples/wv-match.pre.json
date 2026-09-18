@@ -1,0 +1,141 @@
+{
+  "match": {
+    "id": 102295,
+    "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Madrid - Rayo Vallecano - 5",
+    "slug": "temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+    "date": "2026-09-12T19:00:00+00:00",
+    "time": "2026-09-12T19:00:00+00:00",
+    "hashtag": "RealMadridRayo",
+    "competition": {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "opta_id": "23"
+    },
+    "status": "PreMatch",
+    "attempt_official": false,
+    "home_team": {
+      "id": 15,
+      "slug": "real-madrid",
+      "name": "Real Madrid Club de Fútbol",
+      "nickname": "Real Madrid",
+      "boundname": "Real Madrid",
+      "shortname": "RMA",
+      "color": "#0f39b8",
+      "color_secondary": "#ffffff",
+      "sprite_status": "created",
+      "shield": {
+        "id": 149,
+        "url": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png"
+      },
+      "competitions": [],
+      "opta_id": "t186"
+    },
+    "away_team": {
+      "id": 14,
+      "slug": "rayo-vallecano",
+      "name": "Rayo Vallecano de Madrid SAD",
+      "nickname": "Rayo Vallecano",
+      "boundname": "Rayo Vallecano",
+      "shortname": "RAY",
+      "color": "#f21e27",
+      "color_secondary": "#ffffff",
+      "sprite_status": "created",
+      "shield": {
+        "id": 691708,
+        "url": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png"
+      },
+      "competitions": [],
+      "opta_id": "t184"
+    },
+    "gameweek": {
+      "week": 5,
+      "name": "Matchday 5",
+      "shortname": "M5"
+    },
+    "venue": {
+      "name": "Bernabéu"
+    },
+    "persons_role": [
+      {
+        "person": {
+          "name": "Víctor García Verdura",
+          "nickname": "Víctor García Verdura",
+          "firstname": "Víctor",
+          "lastname": "García Verdura"
+        },
+        "role": {
+          "id": 5
+        }
+      },
+      {
+        "person": {
+          "name": "Javier Figueiredo Comesaña",
+          "nickname": "Javier Figueiredo Comesaña",
+          "firstname": "Javier",
+          "lastname": "Figueiredo Comesaña"
+        },
+        "role": {
+          "id": 8
+        }
+      },
+      {
+        "person": {
+          "name": "Juan Luis Pulido Santana",
+          "nickname": "Juan Luis Pulido Santana",
+          "firstname": "Juan Luis",
+          "lastname": "Pulido Santana"
+        },
+        "role": {
+          "id": 9
+        }
+      },
+      {
+        "person": {
+          "name": "Luis Mario Milla Alvendiz",
+          "nickname": "Luis Mario Milla Alvendiz",
+          "firstname": "Luis Mario",
+          "lastname": "Milla Alvendiz"
+        },
+        "role": {
+          "id": 10
+        }
+      },
+      {
+        "person": {
+          "name": "Diego Sánchez Rojo",
+          "nickname": "Diego Sánchez Rojo",
+          "firstname": "Diego",
+          "lastname": "Sánchez Rojo"
+        },
+        "role": {
+          "id": 6
+        }
+      },
+      {
+        "person": {
+          "name": "Julián Villaseñor Julián",
+          "nickname": "Julián Villaseñor Julián",
+          "firstname": "Julián",
+          "lastname": "Villaseñor Julián"
+        },
+        "role": {
+          "id": 7
+        }
+      }
+    ],
+    "season": {
+      "id": 102,
+      "name": "Season 2026/2027",
+      "opta_id": "2026"
+    },
+    "subscription": {
+      "id": 395,
+      "slug": "laliga-easports-2026",
+      "teams": [],
+      "rounds": []
+    },
+    "is_brand_day": false,
+    "opta_id": "g2650808"
+  }
+}

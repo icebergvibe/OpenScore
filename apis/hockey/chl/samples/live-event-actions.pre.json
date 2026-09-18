@@ -1,0 +1,24 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "282628c3708fc7d1ce2d537d",
+    "_modifyDate": "2026-09-11T12:10:07.217Z",
+    "externalId": "3018",
+    "startDate": "2026-09-11T16:00:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "not-started",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/282628c3708fc7d1ce2d537d/bili-tygri-liberec-vs-herning-blue-fox",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "results": {
+      "_type": "Corebine.Core.Sport.Match.Results",
+      "periods": []
+    }
+  },
+  "errors": [],
+  "includes": []
+}

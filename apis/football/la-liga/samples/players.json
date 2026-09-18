@@ -1,0 +1,169 @@
+{
+  "total": 29,
+  "players": [
+    {
+      "id": 45509,
+      "slug": "vinicius-nogueira",
+      "name": "Vinícius Nogueira de Oliveira",
+      "nickname": "Vinícius Nogueira",
+      "firstname": "Vinícius",
+      "lastname": "Nogueira de Oliveira",
+      "gender": "male",
+      "international": false,
+      "roles": [
+        {
+          "id": 1,
+          "name": "Jugador",
+          "female_name": "Jugadora",
+          "slug": "jugador",
+          "active": true,
+          "opta_id": "p608254",
+          "lde_id": 214203
+        }
+      ],
+      "squad": {}
+    },
+    {
+      "id": 41683,
+      "slug": "vinicius-lopes",
+      "name": "Vinícius Lopes da Silva",
+      "nickname": "Vinícius Lopes",
+      "firstname": "Vinícius",
+      "lastname": "Lopes da Silva",
+      "gender": "male",
+      "international": false,
+      "roles": [
+        {
+          "id": 1,
+          "name": "Jugador",
+          "female_name": "Jugadora",
+          "slug": "jugador",
+          "active": true,
+          "opta_id": "p495546",
+          "lde_id": 68179
+        }
+      ],
+      "squad": {}
+    },
+    {
+      "id": 40479,
+      "slug": "wesley-3",
+      "name": "Wesley Vinícius França Lima",
+      "nickname": "Wesley",
+      "firstname": "Wesley Vinícius",
+      "lastname": "França Lima",
+      "gender": "male",
+      "date_of_birth": "2003-09-06T00:00:00+00:00",
+      "place_of_birth": "Açailândia",
+      "weight": 73,
+      "height": 175,
+      "international": false,
+      "country": {
+        "id": "BR"
+      },
+      "roles": [
+        {
+          "id": 1,
+          "name": "Jugador",
+          "female_name": "Jugadora",
+          "slug": "jugador",
+          "active": true,
+          "opta_id": "p563663",
+          "lde_id": 109231
+        }
+      ],
+      "team": {
+        "id": 170,
+        "slug": "roma",
+        "name": "Associazione Sportiva Roma",
+        "nickname": "Roma",
+        "boundname": "AS Roma",
+        "shortname": "ROM",
+        "color": "#999999",
+        "web": "http://www.asroma.it",
+        "shield": {
+          "id": 423,
+          "name": "Escudo ROM",
+          "caption": "Escudo ROM",
+          "url": "https://assets.laliga.com/assets/2021/03/11/xlarge/8e97335915ab5e501e5e66f87de38e91.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2021/03/11/xsmall/8e97335915ab5e501e5e66f87de38e91.png",
+            "small": "https://assets.laliga.com/assets/2021/03/11/small/8e97335915ab5e501e5e66f87de38e91.png",
+            "medium": "https://assets.laliga.com/assets/2021/03/11/medium/8e97335915ab5e501e5e66f87de38e91.png",
+            "large": "https://assets.laliga.com/assets/2021/03/11/large/8e97335915ab5e501e5e66f87de38e91.png",
+            "xlarge": "https://assets.laliga.com/assets/2021/03/11/xlarge/8e97335915ab5e501e5e66f87de38e91.png"
+          }
+        },
+        "competitions": [
+          {
+            "id": 31,
+            "name": "Serie A",
+            "slug": "italian-serie-a",
+            "main": true
+          },
+          {
+            "id": 4,
+            "name": "UEFA Champions League",
+            "slug": "champions-league",
+            "main": false
+          }
+        ]
+      },
+      "squad": {
+        "shirt_number": 43,
+        "position": {
+          "id": 2,
+          "name": "Defensa",
+          "slug": "defensa",
+          "plural_name": "Defensas",
+          "female_name": "Defensa",
+          "female_plural_name": "Defensas"
+        }
+      }
+    },
+    {
+      "id": 37886,
+      "slug": "robert",
+      "name": "Robert Vinicius Rodrigues Silva",
+      "nickname": "Robert",
+      "firstname": "Robert Vinicius",
+      "lastname": "Rodrigues Silva",
+      "gender": "male",
+      "international": false,
+      "roles": [
+        {
+          "id": 1,
+          "name": "Jugador",
+          "female_name": "Jugadora",
+          "slug": "jugador",
+          "active": true,
+          "opta_id": "p622714",
+          "lde_id": 128588
+        }
+      ],
+      "squad": {}
+    },
+    {
+      "id": 35166,
+      "slug": "vinicius-1",
+      "name": "Vinícius dos Santos de Oliveira Paiva",
+      "nickname": "Vinícius",
+      "firstname": "Vinícius",
+      "lastname": "dos Santos de Oliveira Paiva",
+      "gender": "male",
+      "international": false,
+      "roles": [
+        {
+          "id": 1,
+          "name": "Jugador",
+          "female_name": "Jugadora",
+          "slug": "jugador",
+          "active": true,
+          "opta_id": "p488634",
+          "lde_id": 61878
+        }
+      ],
+      "squad": {}
+    }
+  ]
+}

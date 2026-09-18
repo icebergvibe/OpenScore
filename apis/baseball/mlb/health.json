@@ -1,0 +1,462 @@
+{
+  "league": "mlb",
+  "name": "MLB",
+  "baseUrl": "https://statsapi.mlb.com/api",
+  "checks": [
+    {
+      "name": "v1/schedule?date={today}",
+      "path": "/v1/schedule?sportId=1&date={today}&hydrate=team,linescore,probablePitcher,decisions",
+      "sample": "schedule.hydrated.json",
+      "keys": [
+        "dates[]",
+        "totalGames"
+      ],
+      "note": "dates[] is empty on an off-day"
+    },
+    {
+      "name": "v1/schedule — finished day, hydrated",
+      "path": "/v1/schedule?sportId=1&date=2026-09-10&hydrate=team,linescore,probablePitcher,decisions",
+      "sample": "schedule.hydrated.json",
+      "keys": [
+        "dates[].games[].gamePk",
+        "dates[].games[].status",
+        "dates[].games[].teams",
+        "dates[].games[].linescore"
+      ]
+    },
+    {
+      "name": "v1/schedule — plain",
+      "path": "/v1/schedule?sportId=1&date=2026-09-11",
+      "sample": "schedule.pre.json",
+      "keys": [
+        "dates[].games[].gamePk"
+      ]
+    },
+    {
+      "name": "v1/schedule — no games",
+      "path": "/v1/schedule?sportId=1&date=2026-12-25",
+      "sample": "schedule.no-games.json",
+      "keys": [
+        "totalGames"
+      ]
+    },
+    {
+      "name": "v1/schedule — postponed day",
+      "path": "/v1/schedule?sportId=1&date=2026-04-03&hydrate=team,linescore,probablePitcher,decisions",
+      "sample": "schedule.postponed.json",
+      "keys": [
+        "dates[].games[]"
+      ]
+    },
+    {
+      "name": "v1/schedule — doubleheader day",
+      "path": "/v1/schedule?sportId=1&date=2026-04-04&hydrate=team,linescore,probablePitcher,decisions",
+      "sample": "schedule.doubleheader.json",
+      "keys": [
+        "dates[].games[]"
+      ]
+    },
+    {
+      "name": "v1/schedule — team range",
+      "path": "/v1/schedule?sportId=1&teamId=147&startDate=2026-09-01&endDate=2026-09-10",
+      "sample": "schedule.team-range.json",
+      "keys": [
+        "dates[].games[]"
+      ]
+    },
+    {
+      "name": "v1/schedule — fields=",
+      "path": "/v1/schedule?sportId=1&date=2026-09-10&fields=dates,games,gamePk,status,abstractGameState,teams,home,away,score,team,name",
+      "sample": "schedule.fields.json",
+      "keys": [
+        "dates[].games[].gamePk"
+      ],
+      "depth": 0,
+      "note": "fields= trims the shape; only the requested keys are asserted"
+    },
+    {
+      "name": "v1/schedule/postseason",
+      "path": "/v1/schedule/postseason?season=2025",
+      "sample": "schedule-postseason.json",
+      "keys": [
+        "dates[]"
+      ]
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live — final",
+      "path": "/v1.1/game/823088/feed/live",
+      "sample": "feed-live.final.json",
+      "keys": [
+        "gamePk",
+        "metaData.timeStamp",
+        "gameData.status",
+        "liveData.plays",
+        "liveData.linescore",
+        "liveData.boxscore"
+      ]
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live — scheduled capture",
+      "path": "/v1.1/game/823498/feed/live",
+      "sample": "feed-live.pre.json",
+      "keys": [
+        "gameData.status.abstractGameState"
+      ]
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live — pre-game capture",
+      "path": "/v1.1/game/824224/feed/live",
+      "sample": "feed-live.pre-game.json",
+      "keys": [
+        "gameData.status.abstractGameState"
+      ]
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live?fields=",
+      "path": "/v1.1/game/823088/feed/live?fields=gamePk,gameData,status,abstractGameState,detailedState,liveData,linescore,currentInning,inningHalf,teams,home,away,runs",
+      "sample": "feed-live.fields.json",
+      "keys": [
+        "liveData.linescore"
+      ],
+      "depth": 0,
+      "note": "fields= trims the shape; only the requested keys are asserted"
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live?timecode=",
+      "path": "/v1.1/game/823088/feed/live?timecode=20260910_220000",
+      "sample": "feed-live.live.json",
+      "keys": [
+        "liveData.linescore.currentInning"
+      ]
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live/timestamps",
+      "path": "/v1.1/game/823088/feed/live/timestamps",
+      "sample": "feed-live-timestamps.final.json"
+    },
+    {
+      "name": "v1.1/game/{pk}/feed/live/diffPatch",
+      "path": "/v1.1/game/823088/feed/live/diffPatch?startTimecode=20260910_220000&endTimecode=20260910_224035",
+      "sample": "feed-live-diffPatch.final.json",
+      "depth": 0,
+      "note": "Array of patch sets while the timecode is recent; the full feed object once it has aged out (documented)"
+    },
+    {
+      "name": "v1/game/{pk}/boxscore — final",
+      "path": "/v1/game/823088/boxscore",
+      "sample": "boxscore.final.json",
+      "keys": [
+        "teams.home.players",
+        "teams.away.teamStats"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/boxscore — pre",
+      "path": "/v1/game/823498/boxscore",
+      "sample": "boxscore.pre.json",
+      "keys": [
+        "teams.home"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/linescore — final",
+      "path": "/v1/game/823088/linescore",
+      "sample": "linescore.final.json",
+      "keys": [
+        "innings[].num",
+        "teams.home.runs",
+        "currentInning"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/linescore?timecode= — live",
+      "path": "/v1/game/823088/linescore?timecode=20260910_220000",
+      "sample": "linescore.live.json",
+      "keys": [
+        "inningHalf",
+        "offense",
+        "defense"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/linescore?timecode= — inning break",
+      "path": "/v1/game/823088/linescore?timecode=20260910_214500",
+      "sample": "linescore.live-break.json",
+      "keys": [
+        "inningState"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/linescore — pre",
+      "path": "/v1/game/823498/linescore",
+      "sample": "linescore.pre.json"
+    },
+    {
+      "name": "v1/game/{pk}/playByPlay — final",
+      "path": "/v1/game/823088/playByPlay",
+      "sample": "playByPlay.final.json",
+      "keys": [
+        "allPlays[].result",
+        "allPlays[].about",
+        "playsByInning[]"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/playByPlay?fields=",
+      "path": "/v1/game/823088/playByPlay?fields=allPlays,result,type,event,eventType,description,rbi,awayScore,homeScore,about,atBatIndex,halfInning,inning,isScoringPlay,matchup,batter,pitcher,id,fullName",
+      "sample": "playByPlay.final.fields.json",
+      "keys": [
+        "allPlays[].result.event"
+      ],
+      "depth": 0,
+      "note": "fields= trims the shape; only the requested keys are asserted"
+    },
+    {
+      "name": "v1/game/{pk}/playByPlay — pre",
+      "path": "/v1/game/823498/playByPlay",
+      "sample": "playByPlay.pre.json",
+      "keys": [
+        "allPlays[]"
+      ]
+    },
+    {
+      "name": "v1/game/{pk}/contextMetrics",
+      "path": "/v1/game/823088/contextMetrics",
+      "sample": "contextMetrics.final.json"
+    },
+    {
+      "name": "v1/teams?sportId=1",
+      "path": "/v1/teams?sportId=1",
+      "sample": "teams.json",
+      "keys": [
+        "teams[].id",
+        "teams[].abbreviation",
+        "teams[].division"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}",
+      "path": "/v1/teams/147?hydrate=venue,division,league",
+      "sample": "team.json",
+      "keys": [
+        "teams[].id",
+        "teams[].venue"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}/roster",
+      "path": "/v1/teams/147/roster",
+      "sample": "roster.active.json",
+      "keys": [
+        "roster[].person",
+        "roster[].position",
+        "roster[].jerseyNumber"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}/roster?rosterType=40Man",
+      "path": "/v1/teams/147/roster?rosterType=40Man",
+      "sample": "roster.40man.json",
+      "keys": [
+        "roster[]"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}/roster?rosterType=depthChart",
+      "path": "/v1/teams/147/roster?rosterType=depthChart",
+      "sample": "roster.depthChart.json",
+      "keys": [
+        "roster[]"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}/coaches",
+      "path": "/v1/teams/147/coaches",
+      "sample": "coaches.json",
+      "keys": [
+        "roster[]"
+      ]
+    },
+    {
+      "name": "v1/people/{id}",
+      "path": "/v1/people/592450?hydrate=currentTeam,stats(group=[hitting,pitching],type=[season,career])",
+      "sample": "people.json",
+      "keys": [
+        "people[].id",
+        "people[].fullName",
+        "people[].currentTeam"
+      ]
+    },
+    {
+      "name": "v1/people/{id}/stats — season,career",
+      "path": "/v1/people/592450/stats?stats=season,career&group=hitting&season=2026",
+      "sample": "people-stats.season-career.json",
+      "keys": [
+        "stats[].splits[]"
+      ]
+    },
+    {
+      "name": "v1/people/{id}/stats — gameLog",
+      "path": "/v1/people/592450/stats?stats=gameLog&group=hitting&season=2026",
+      "sample": "people-stats.gameLog.json",
+      "keys": [
+        "stats[].splits[]"
+      ]
+    },
+    {
+      "name": "v1/standings",
+      "path": "/v1/standings?leagueId=103,104",
+      "sample": "standings.json",
+      "keys": [
+        "records[].teamRecords[].team",
+        "records[].teamRecords[].wins",
+        "records[].teamRecords[].gamesBack"
+      ]
+    },
+    {
+      "name": "v1/standings?hydrate=team,division",
+      "path": "/v1/standings?leagueId=103,104&hydrate=team,division",
+      "sample": "standings.hydrated.json",
+      "keys": [
+        "records[].division",
+        "records[].teamRecords[].team.abbreviation"
+      ]
+    },
+    {
+      "name": "v1/standings?standingsTypes=wildCard",
+      "path": "/v1/standings?leagueId=103,104&standingsTypes=wildCard",
+      "sample": "standings.wildCard.json",
+      "keys": [
+        "records[]"
+      ]
+    },
+    {
+      "name": "v1/stats/leaders",
+      "path": "/v1/stats/leaders?leaderCategories=homeRuns,battingAverage&season=2026&sportId=1&limit=5",
+      "sample": "stats-leaders.json",
+      "keys": [
+        "leagueLeaders[].leaders[]"
+      ]
+    },
+    {
+      "name": "v1/seasons?sportId=1",
+      "path": "/v1/seasons?sportId=1",
+      "sample": "seasons.json",
+      "keys": [
+        "seasons[].seasonId"
+      ]
+    },
+    {
+      "name": "v1/sports",
+      "path": "/v1/sports",
+      "sample": "sports.json",
+      "keys": [
+        "sports[]"
+      ]
+    },
+    {
+      "name": "v1/leagues?sportId=1",
+      "path": "/v1/leagues?sportId=1",
+      "sample": "leagues.json",
+      "keys": [
+        "leagues[]"
+      ]
+    },
+    {
+      "name": "v1/divisions?sportId=1",
+      "path": "/v1/divisions?sportId=1",
+      "sample": "divisions.json",
+      "keys": [
+        "divisions[]"
+      ]
+    },
+    {
+      "name": "v1/venues/{id}",
+      "path": "/v1/venues/3313?hydrate=location,fieldInfo,timezone",
+      "sample": "venue.json",
+      "keys": [
+        "venues[]"
+      ]
+    },
+    {
+      "name": "v1/gameTypes",
+      "path": "/v1/gameTypes",
+      "sample": "gameTypes.json"
+    },
+    {
+      "name": "v1/gameStatus",
+      "path": "/v1/gameStatus",
+      "sample": "gameStatus.json",
+      "keys": [
+        "[].abstractGameState",
+        "[].detailedState",
+        "[].statusCode"
+      ]
+    },
+    {
+      "name": "v1/eventTypes",
+      "path": "/v1/eventTypes",
+      "sample": "eventTypes.json",
+      "keys": [
+        "[].code"
+      ]
+    },
+    {
+      "name": "v1/positions",
+      "path": "/v1/positions",
+      "sample": "positions.json",
+      "keys": [
+        "[].code"
+      ]
+    },
+    {
+      "name": "v1/pitchTypes",
+      "path": "/v1/pitchTypes",
+      "sample": "pitchTypes.json",
+      "keys": [
+        "[].code"
+      ]
+    },
+    {
+      "name": "v1/hitTrajectories",
+      "path": "/v1/hitTrajectories",
+      "sample": "hitTrajectories.json"
+    },
+    {
+      "name": "v1/rosterTypes",
+      "path": "/v1/rosterTypes",
+      "sample": "rosterTypes.json"
+    },
+    {
+      "name": "v1/statTypes",
+      "path": "/v1/statTypes",
+      "sample": "statTypes.json"
+    },
+    {
+      "name": "v1/standingsTypes",
+      "path": "/v1/standingsTypes",
+      "sample": "standingsTypes.json"
+    },
+    {
+      "name": "v1/schedule — team season",
+      "path": "/v1/schedule?sportId=1&teamId=147&startDate=2026-01-01&endDate=2026-12-31&hydrate=team,linescore,probablePitcher,decisions",
+      "sample": "schedule.team-season.json",
+      "keys": [
+        "dates[].games[].gamePk",
+        "dates[].games[].teams",
+        "dates[].games[].officialDate"
+      ]
+    },
+    {
+      "name": "v1/teams/{id}/stats — team season totals",
+      "path": "/v1/teams/147/stats?stats=season&group=hitting,pitching&season=2026",
+      "sample": "team-stats.season.json",
+      "keys": [
+        "stats[].group.displayName",
+        "stats[].splits[].season",
+        "stats[].splits[].stat",
+        "stats[].splits[].team.id"
+      ]
+    }
+  ]
+}

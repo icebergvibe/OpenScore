@@ -1,0 +1,973 @@
+{
+  "total": 76,
+  "player_stats": [
+    {
+      "id": 2273,
+      "name": "Thomas Lemar",
+      "nickname": "Lemar",
+      "position": {
+        "id": 3,
+        "name": "Midfielder",
+        "slug": "centrocampista",
+        "plural_name": "Midfielders",
+        "female_name": "Midfielder",
+        "female_plural_name": "Midfielders"
+      },
+      "slug": "lemar",
+      "country": {
+        "id": "FR"
+      },
+      "team": {
+        "id": 7,
+        "slug": "elche-c-f",
+        "name": "Elche Club de Fútbol SAD",
+        "nickname": "Elche CF",
+        "boundname": "Elche CF",
+        "shortname": "ELC",
+        "color": "#038316",
+        "color_secondary": "#ffffff",
+        "foundation": "1923-03-01T00:00:00+0000",
+        "web": "http://www.elchecf.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 133,
+          "name": "Escudo ECF",
+          "caption": "Escudo ECF",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/elche.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/elche.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/elche.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/elche.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t954",
+        "lde_id": 262
+      },
+      "stats": [
+        {
+          "name": "aerial_duels",
+          "stat": 1
+        },
+        {
+          "name": "aerial_duels_lost",
+          "stat": 1
+        },
+        {
+          "name": "appearances",
+          "stat": 1
+        },
+        {
+          "name": "attempts_from_set_pieces",
+          "stat": 1
+        },
+        {
+          "name": "backward_passes",
+          "stat": 5
+        },
+        {
+          "name": "blocked_shots",
+          "stat": 1
+        },
+        {
+          "name": "carries",
+          "stat": 13
+        },
+        {
+          "name": "corners_taken_incl_short_corners",
+          "stat": 3
+        },
+        {
+          "name": "corners_won",
+          "stat": 1
+        },
+        {
+          "name": "duels",
+          "stat": 7
+        },
+        {
+          "name": "duels_lost",
+          "stat": 4
+        },
+        {
+          "name": "duels_won",
+          "stat": 3
+        },
+        {
+          "name": "final_third_touches",
+          "stat": 24
+        },
+        {
+          "name": "forward_passes",
+          "stat": 8
+        },
+        {
+          "name": "foul_attempted_tackle",
+          "stat": 1
+        },
+        {
+          "name": "games_played",
+          "stat": 1
+        },
+        {
+          "name": "goals",
+          "stat": 1
+        },
+        {
+          "name": "goals_conceded",
+          "stat": 1
+        },
+        {
+          "name": "goals_conceded_inside_box",
+          "stat": 1
+        },
+        {
+          "name": "goals_openplay",
+          "stat": 1
+        },
+        {
+          "name": "goals_from_outside_box",
+          "stat": 1
+        },
+        {
+          "name": "ground_duels",
+          "stat": 6
+        },
+        {
+          "name": "ground_duels_lost",
+          "stat": 3
+        },
+        {
+          "name": "ground_duels_won",
+          "stat": 3
+        },
+        {
+          "name": "key_passes_attempt_assists",
+          "stat": 1
+        },
+        {
+          "name": "leftside_passes",
+          "stat": 6
+        },
+        {
+          "name": "open_play_passes",
+          "stat": 26
+        },
+        {
+          "name": "progressive_carries",
+          "stat": 11
+        },
+        {
+          "name": "putthrough_blocked_distribution",
+          "stat": 1
+        },
+        {
+          "name": "recoveries",
+          "stat": 4
+        },
+        {
+          "name": "right_foot_goals",
+          "stat": 1
+        },
+        {
+          "name": "rightside_passes",
+          "stat": 9
+        },
+        {
+          "name": "shots_created",
+          "stat": 1
+        },
+        {
+          "name": "shots_off_target_inc_woodwork",
+          "stat": 1
+        },
+        {
+          "name": "shots_on_target_inc_goals",
+          "stat": 1
+        },
+        {
+          "name": "substitute_on",
+          "stat": 1
+        },
+        {
+          "name": "successful_crosses_corners",
+          "stat": 1
+        },
+        {
+          "name": "successful_crosses_open_play",
+          "stat": 1
+        },
+        {
+          "name": "successful_long_passes",
+          "stat": 1
+        },
+        {
+          "name": "successful_open_play_passes",
+          "stat": 23
+        },
+        {
+          "name": "successful_passes_opposition_half",
+          "stat": 21
+        },
+        {
+          "name": "successful_passes_own_half",
+          "stat": 5
+        },
+        {
+          "name": "successful_short_passes",
+          "stat": 24
+        },
+        {
+          "name": "tackles_lost",
+          "stat": 2
+        },
+        {
+          "name": "tackles_won",
+          "stat": 1
+        },
+        {
+          "name": "through_balls",
+          "stat": 1
+        },
+        {
+          "name": "time_played",
+          "stat": 35
+        },
+        {
+          "name": "total_big_chances_created",
+          "stat": 1
+        },
+        {
+          "name": "total_fouls_conceded",
+          "stat": 1
+        },
+        {
+          "name": "total_losses_of_possession",
+          "stat": 7
+        },
+        {
+          "name": "total_passes",
+          "stat": 28
+        },
+        {
+          "name": "total_shots",
+          "stat": 2
+        },
+        {
+          "name": "total_successful_passes_excl_crosses_corners",
+          "stat": 25
+        },
+        {
+          "name": "total_tackles",
+          "stat": 3
+        },
+        {
+          "name": "total_touches_in_opposition_box",
+          "stat": 2
+        },
+        {
+          "name": "total_unsuccessful_passes_excl_crosses_corners",
+          "stat": 3
+        },
+        {
+          "name": "touches",
+          "stat": 40
+        },
+        {
+          "name": "unsuccessful_corners_into_box",
+          "stat": 1
+        },
+        {
+          "name": "unsuccessful_crosses_corners",
+          "stat": 3
+        },
+        {
+          "name": "unsuccessful_crosses_open_play",
+          "stat": 1
+        },
+        {
+          "name": "unsuccessful_passes_opposition_half",
+          "stat": 6
+        },
+        {
+          "name": "unsuccessful_short_passes",
+          "stat": 3
+        },
+        {
+          "name": "yellow_cards",
+          "stat": 1
+        },
+        {
+          "name": "home_goals",
+          "stat": 1
+        },
+        {
+          "name": "away_goals",
+          "stat": 0
+        },
+        {
+          "name": "winning_goal",
+          "stat": 0
+        },
+        {
+          "name": "team_games_played",
+          "stat": 4
+        }
+      ],
+      "opta_id": "p167449",
+      "shirt_number": 18,
+      "extra_info": []
+    },
+    {
+      "id": 30581,
+      "name": "Lucas Stassin",
+      "nickname": "Stassin",
+      "position": {
+        "id": 4,
+        "name": "Forward",
+        "slug": "delantero",
+        "plural_name": "Forwards",
+        "female_name": "Forward",
+        "female_plural_name": "Forwards"
+      },
+      "slug": "lucas-stassin",
+      "country": {
+        "id": "BE"
+      },
+      "team": {
+        "id": 17,
+        "slug": "sevilla-fc",
+        "name": "Sevilla Fútbol Club SAD",
+        "nickname": "Sevilla FC",
+        "boundname": "Sevilla FC",
+        "shortname": "SEV",
+        "color": "#f21e27",
+        "color_secondary": "#ffffff",
+        "foundation": "1890-01-20T00:00:00+0000",
+        "web": "http://www.sevillafc.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 153,
+          "name": "Escudo SFC",
+          "caption": "Escudo SFC",
+          "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/sevilla.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/sevilla.png",
+            "small": "https://assets.laliga.com/assets/2019/06/07/small/sevilla.png",
+            "medium": "https://assets.laliga.com/assets/2019/06/07/medium/sevilla.png",
+            "large": "https://assets.laliga.com/assets/2019/06/07/large/sevilla.png",
+            "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/sevilla.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t179",
+        "lde_id": 75
+      },
+      "stats": [
+        {
+          "name": "aerial_duels",
+          "stat": 10
+        },
+        {
+          "name": "aerial_duels_lost",
+          "stat": 5
+        },
+        {
+          "name": "aerial_duels_won",
+          "stat": 5
+        },
+        {
+          "name": "appearances",
+          "stat": 2
+        },
+        {
+          "name": "backward_passes",
+          "stat": 6
+        },
+        {
+          "name": "carries",
+          "stat": 5
+        },
+        {
+          "name": "duels",
+          "stat": 18
+        },
+        {
+          "name": "duels_lost",
+          "stat": 10
+        },
+        {
+          "name": "duels_won",
+          "stat": 8
+        },
+        {
+          "name": "final_third_touches",
+          "stat": 25
+        },
+        {
+          "name": "forward_passes",
+          "stat": 2
+        },
+        {
+          "name": "games_played",
+          "stat": 2
+        },
+        {
+          "name": "goals",
+          "stat": 1
+        },
+        {
+          "name": "goals_conceded",
+          "stat": 1
+        },
+        {
+          "name": "goals_conceded_inside_box",
+          "stat": 1
+        },
+        {
+          "name": "goals_from_inside_box",
+          "stat": 1
+        },
+        {
+          "name": "ground_duels",
+          "stat": 8
+        },
+        {
+          "name": "ground_duels_lost",
+          "stat": 5
+        },
+        {
+          "name": "ground_duels_won",
+          "stat": 3
+        },
+        {
+          "name": "hit_woodwork",
+          "stat": 1
+        },
+        {
+          "name": "key_passes_attempt_assists",
+          "stat": 1
+        },
+        {
+          "name": "leftside_passes",
+          "stat": 4
+        },
+        {
+          "name": "open_play_passes",
+          "stat": 17
+        },
+        {
+          "name": "overruns",
+          "stat": 1
+        },
+        {
+          "name": "putthrough_blocked_distribution",
+          "stat": 1
+        },
+        {
+          "name": "recoveries",
+          "stat": 2
+        },
+        {
+          "name": "right_foot_goals",
+          "stat": 1
+        },
+        {
+          "name": "rightside_passes",
+          "stat": 6
+        },
+        {
+          "name": "shots_created",
+          "stat": 1
+        },
+        {
+          "name": "shots_off_target_inc_woodwork",
+          "stat": 1
+        },
+        {
+          "name": "shots_on_target_inc_goals",
+          "stat": 2
+        },
+        {
+          "name": "starts",
+          "stat": 1
+        },
+        {
+          "name": "substitute_off",
+          "stat": 1
+        },
+        {
+          "name": "substitute_on",
+          "stat": 1
+        },
+        {
+          "name": "successful_crosses_corners",
+          "stat": 1
+        },
+        {
+          "name": "successful_crosses_open_play",
+          "stat": 1
+        },
+        {
+          "name": "successful_dribbles",
+          "stat": 2
+        },
+        {
+          "name": "successful_layoffs",
+          "stat": 1
+        },
+        {
+          "name": "successful_long_passes",
+          "stat": 1
+        },
+        {
+          "name": "successful_open_play_passes",
+          "stat": 10
+        },
+        {
+          "name": "successful_passes_opposition_half",
+          "stat": 9
+        },
+        {
+          "name": "successful_passes_own_half",
+          "stat": 3
+        },
+        {
+          "name": "successful_short_passes",
+          "stat": 10
+        },
+        {
+          "name": "time_played",
+          "stat": 119
+        },
+        {
+          "name": "times_tackled",
+          "stat": 3
+        },
+        {
+          "name": "total_big_chances_missed",
+          "stat": 1
+        },
+        {
+          "name": "total_fouls_won",
+          "stat": 1
+        },
+        {
+          "name": "total_losses_of_possession",
+          "stat": 18
+        },
+        {
+          "name": "total_passes",
+          "stat": 18
+        },
+        {
+          "name": "total_shots",
+          "stat": 3
+        },
+        {
+          "name": "total_successful_passes_excl_crosses_corners",
+          "stat": 11
+        },
+        {
+          "name": "total_touches_in_opposition_box",
+          "stat": 7
+        },
+        {
+          "name": "total_unsuccessful_passes_excl_crosses_corners",
+          "stat": 7
+        },
+        {
+          "name": "touches",
+          "stat": 40
+        },
+        {
+          "name": "unsuccessful_dribbles",
+          "stat": 1
+        },
+        {
+          "name": "unsuccessful_passes_opposition_half",
+          "stat": 5
+        },
+        {
+          "name": "unsuccessful_passes_own_half",
+          "stat": 2
+        },
+        {
+          "name": "unsuccessful_short_passes",
+          "stat": 7
+        },
+        {
+          "name": "unsuccessful_layoffs",
+          "stat": 3
+        },
+        {
+          "name": "home_goals",
+          "stat": 0
+        },
+        {
+          "name": "away_goals",
+          "stat": 1
+        },
+        {
+          "name": "winning_goal",
+          "stat": 0
+        },
+        {
+          "name": "team_games_played",
+          "stat": 5
+        }
+      ],
+      "photos": {
+        "001": {
+          "1024x1113": "https://assets.laliga.com/squad/2026/t179/p513530/1024x1113/p513530_t179_2026_1_001_000.png",
+          "128x139": "https://assets.laliga.com/squad/2026/t179/p513530/128x139/p513530_t179_2026_1_001_000.png",
+          "2048x2225": "https://assets.laliga.com/squad/2026/t179/p513530/2048x2225/p513530_t179_2026_1_001_000.png",
+          "256x278": "https://assets.laliga.com/squad/2026/t179/p513530/256x278/p513530_t179_2026_1_001_000.png",
+          "512x556": "https://assets.laliga.com/squad/2026/t179/p513530/512x556/p513530_t179_2026_1_001_000.png",
+          "64x70": "https://assets.laliga.com/squad/2026/t179/p513530/64x70/p513530_t179_2026_1_001_000.png"
+        },
+        "002": {
+          "1024x1024": "https://assets.laliga.com/squad/2026/t179/p513530/1024x1024/p513530_t179_2026_1_002_000.jpg",
+          "128x128": "https://assets.laliga.com/squad/2026/t179/p513530/128x128/p513530_t179_2026_1_002_000.jpg",
+          "2048x2048": "https://assets.laliga.com/squad/2026/t179/p513530/2048x2048/p513530_t179_2026_1_002_000.jpg",
+          "256x256": "https://assets.laliga.com/squad/2026/t179/p513530/256x256/p513530_t179_2026_1_002_000.jpg",
+          "512x512": "https://assets.laliga.com/squad/2026/t179/p513530/512x512/p513530_t179_2026_1_002_000.jpg",
+          "64x64": "https://assets.laliga.com/squad/2026/t179/p513530/64x64/p513530_t179_2026_1_002_000.jpg"
+        },
+        "003": {
+          "1024x1024": "https://assets.laliga.com/squad/2026/t179/p513530/1024x1024/p513530_t179_2026_1_003_000.png",
+          "128x128": "https://assets.laliga.com/squad/2026/t179/p513530/128x128/p513530_t179_2026_1_003_000.png",
+          "2048x2048": "https://assets.laliga.com/squad/2026/t179/p513530/2048x2048/p513530_t179_2026_1_003_000.png",
+          "256x256": "https://assets.laliga.com/squad/2026/t179/p513530/256x256/p513530_t179_2026_1_003_000.png",
+          "512x512": "https://assets.laliga.com/squad/2026/t179/p513530/512x512/p513530_t179_2026_1_003_000.png",
+          "64x64": "https://assets.laliga.com/squad/2026/t179/p513530/64x64/p513530_t179_2026_1_003_000.png"
+        }
+      },
+      "opta_id": "p513530",
+      "shirt_number": 19,
+      "extra_info": []
+    },
+    {
+      "id": 13388,
+      "name": "Troy Parrott",
+      "nickname": "Parrott",
+      "position": {
+        "id": 4,
+        "name": "Forward",
+        "slug": "delantero",
+        "plural_name": "Forwards",
+        "female_name": "Forward",
+        "female_plural_name": "Forwards"
+      },
+      "slug": "troy-parrott",
+      "country": {
+        "id": "IE"
+      },
+      "team": {
+        "id": 5,
+        "slug": "real-betis",
+        "name": "Real Betis Balompié SAD",
+        "nickname": "Real Betis",
+        "boundname": "Real Betis",
+        "shortname": "BET",
+        "color": "#038316",
+        "color_secondary": "#ffffff",
+        "foundation": "1907-09-12T00:00:00+0000",
+        "web": "http://www.realbetisbalompie.es/",
+        "sprite_status": "created",
+        "shield": {
+          "id": 627565,
+          "name": "LOGO BETIS OK",
+          "url": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2022/09/15/xsmall/e4a09419d3bd115b8f3dab73d480e146.png",
+            "small": "https://assets.laliga.com/assets/2022/09/15/small/e4a09419d3bd115b8f3dab73d480e146.png",
+            "medium": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png",
+            "large": "https://assets.laliga.com/assets/2022/09/15/large/e4a09419d3bd115b8f3dab73d480e146.png",
+            "xlarge": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t185",
+        "lde_id": 81
+      },
+      "stats": [
+        {
+          "name": "aerial_duels",
+          "stat": 2
+        },
+        {
+          "name": "aerial_duels_lost",
+          "stat": 2
+        },
+        {
+          "name": "appearances",
+          "stat": 3
+        },
+        {
+          "name": "backward_passes",
+          "stat": 6
+        },
+        {
+          "name": "carries",
+          "stat": 9
+        },
+        {
+          "name": "duels",
+          "stat": 11
+        },
+        {
+          "name": "duels_lost",
+          "stat": 6
+        },
+        {
+          "name": "duels_won",
+          "stat": 5
+        },
+        {
+          "name": "final_third_touches",
+          "stat": 26
+        },
+        {
+          "name": "forward_passes",
+          "stat": 2
+        },
+        {
+          "name": "games_played",
+          "stat": 3
+        },
+        {
+          "name": "goals",
+          "stat": 1
+        },
+        {
+          "name": "goals_conceded",
+          "stat": 3
+        },
+        {
+          "name": "goals_conceded_inside_box",
+          "stat": 2
+        },
+        {
+          "name": "goals_conceded_outside_box",
+          "stat": 1
+        },
+        {
+          "name": "goals_from_inside_box",
+          "stat": 1
+        },
+        {
+          "name": "ground_duels",
+          "stat": 9
+        },
+        {
+          "name": "ground_duels_lost",
+          "stat": 4
+        },
+        {
+          "name": "ground_duels_won",
+          "stat": 5
+        },
+        {
+          "name": "key_passes_attempt_assists",
+          "stat": 2
+        },
+        {
+          "name": "leftside_passes",
+          "stat": 3
+        },
+        {
+          "name": "offsides",
+          "stat": 1
+        },
+        {
+          "name": "open_play_passes",
+          "stat": 20
+        },
+        {
+          "name": "progressive_carries",
+          "stat": 6
+        },
+        {
+          "name": "putthrough_blocked_distribution",
+          "stat": 2
+        },
+        {
+          "name": "recoveries",
+          "stat": 4
+        },
+        {
+          "name": "right_foot_goals",
+          "stat": 1
+        },
+        {
+          "name": "rightside_passes",
+          "stat": 9
+        },
+        {
+          "name": "shots_created",
+          "stat": 2
+        },
+        {
+          "name": "shots_off_target_inc_woodwork",
+          "stat": 3
+        },
+        {
+          "name": "shots_on_target_inc_goals",
+          "stat": 1
+        },
+        {
+          "name": "starts",
+          "stat": 1
+        },
+        {
+          "name": "substitute_off",
+          "stat": 1
+        },
+        {
+          "name": "substitute_on",
+          "stat": 2
+        },
+        {
+          "name": "successful_open_play_passes",
+          "stat": 16
+        },
+        {
+          "name": "successful_passes_opposition_half",
+          "stat": 12
+        },
+        {
+          "name": "successful_passes_own_half",
+          "stat": 4
+        },
+        {
+          "name": "successful_short_passes",
+          "stat": 16
+        },
+        {
+          "name": "tackles_lost",
+          "stat": 1
+        },
+        {
+          "name": "tackles_won",
+          "stat": 3
+        },
+        {
+          "name": "time_played",
+          "stat": 98
+        },
+        {
+          "name": "times_tackled",
+          "stat": 3
+        },
+        {
+          "name": "total_big_chances_missed",
+          "stat": 2
+        },
+        {
+          "name": "total_big_chances_scored",
+          "stat": 1
+        },
+        {
+          "name": "total_clearances",
+          "stat": 3
+        },
+        {
+          "name": "total_fouls_conceded",
+          "stat": 1
+        },
+        {
+          "name": "total_fouls_won",
+          "stat": 1
+        },
+        {
+          "name": "total_losses_of_possession",
+          "stat": 13
+        },
+        {
+          "name": "total_passes",
+          "stat": 20
+        },
+        {
+          "name": "total_shots",
+          "stat": 4
+        },
+        {
+          "name": "total_successful_passes_excl_crosses_corners",
+          "stat": 16
+        },
+        {
+          "name": "total_tackles",
+          "stat": 4
+        },
+        {
+          "name": "total_touches_in_opposition_box",
+          "stat": 11
+        },
+        {
+          "name": "total_unsuccessful_passes_excl_crosses_corners",
+          "stat": 4
+        },
+        {
+          "name": "touches",
+          "stat": 43
+        },
+        {
+          "name": "unsuccessful_passes_opposition_half",
+          "stat": 4
+        },
+        {
+          "name": "unsuccessful_short_passes",
+          "stat": 4
+        },
+        {
+          "name": "home_goals",
+          "stat": 1
+        },
+        {
+          "name": "away_goals",
+          "stat": 0
+        },
+        {
+          "name": "winning_goal",
+          "stat": 1
+        },
+        {
+          "name": "team_games_played",
+          "stat": 4
+        }
+      ],
+      "photos": {
+        "001": {
+          "1024x1113": "https://assets.laliga.com/squad/2026/t185/p447235/1024x1113/p447235_t185_2026_1_001_000.png",
+          "128x139": "https://assets.laliga.com/squad/2026/t185/p447235/128x139/p447235_t185_2026_1_001_000.png",
+          "2048x2225": "https://assets.laliga.com/squad/2026/t185/p447235/2048x2225/p447235_t185_2026_1_001_000.png",
+          "256x278": "https://assets.laliga.com/squad/2026/t185/p447235/256x278/p447235_t185_2026_1_001_000.png",
+          "512x556": "https://assets.laliga.com/squad/2026/t185/p447235/512x556/p447235_t185_2026_1_001_000.png",
+          "64x70": "https://assets.laliga.com/squad/2026/t185/p447235/64x70/p447235_t185_2026_1_001_000.png"
+        },
+        "002": {
+          "1024x1024": "https://assets.laliga.com/squad/2026/t185/p447235/1024x1024/p447235_t185_2026_1_002_000.jpg",
+          "128x128": "https://assets.laliga.com/squad/2026/t185/p447235/128x128/p447235_t185_2026_1_002_000.jpg",
+          "2048x2048": "https://assets.laliga.com/squad/2026/t185/p447235/2048x2048/p447235_t185_2026_1_002_000.jpg",
+          "256x256": "https://assets.laliga.com/squad/2026/t185/p447235/256x256/p447235_t185_2026_1_002_000.jpg",
+          "512x512": "https://assets.laliga.com/squad/2026/t185/p447235/512x512/p447235_t185_2026_1_002_000.jpg",
+          "64x64": "https://assets.laliga.com/squad/2026/t185/p447235/64x64/p447235_t185_2026_1_002_000.jpg"
+        },
+        "003": {
+          "1024x1024": "https://assets.laliga.com/squad/2026/t185/p447235/1024x1024/p447235_t185_2026_1_003_000.png",
+          "128x128": "https://assets.laliga.com/squad/2026/t185/p447235/128x128/p447235_t185_2026_1_003_000.png",
+          "2048x2048": "https://assets.laliga.com/squad/2026/t185/p447235/2048x2048/p447235_t185_2026_1_003_000.png",
+          "256x256": "https://assets.laliga.com/squad/2026/t185/p447235/256x256/p447235_t185_2026_1_003_000.png",
+          "512x512": "https://assets.laliga.com/squad/2026/t185/p447235/512x512/p447235_t185_2026_1_003_000.png",
+          "64x64": "https://assets.laliga.com/squad/2026/t185/p447235/64x64/p447235_t185_2026_1_003_000.png"
+        }
+      },
+      "opta_id": "p447235",
+      "shirt_number": 19,
+      "extra_info": []
+    }
+  ]
+}

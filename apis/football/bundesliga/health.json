@@ -1,0 +1,247 @@
+{
+  "league": "bundesliga",
+  "name": "Bundesliga",
+  "baseUrl": "https://bundesliga-web-prod.europe-west1.firebasedatabase.app",
+  "checks": [
+    {
+      "name": "config/configNode.json",
+      "url": "https://wapp.bapi.bundesliga.com/config/configNode.json",
+      "sample": "config.json",
+      "keys": [
+        "DFL-COM-000001",
+        "DFL-COM-000002"
+      ]
+    },
+    {
+      "name": "all/{comp}/seasons/{season}.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA.json?shallow=true",
+      "sample": "season-shallow.json",
+      "keys": [
+        "matches",
+        "matchdays",
+        "liveTable",
+        "stats"
+      ]
+    },
+    {
+      "name": "…/matches.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matches.json",
+      "sample": "matches.json",
+      "mapOfObjects": true
+    },
+    {
+      "name": "…/matches.json?orderBy=matchday",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matches.json?orderBy=%22matchday%22&equalTo=3",
+      "sample": "matches-matchday.final.json",
+      "mapOfObjects": true,
+      "keys": [
+        "DFL-MAT-J043GZ"
+      ]
+    },
+    {
+      "name": "…/matches.json?orderBy=teams/home/…",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matches.json?orderBy=%22teams/home/dflDatalibraryClubId%22&equalTo=%22DFL-CLU-000010%22",
+      "sample": "matches-club-home.json",
+      "mapOfObjects": true
+    },
+    {
+      "name": "…/matches/{matchId}.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matches/DFL-MAT-J043GZ.json",
+      "sample": "match-basic.final.json",
+      "keys": [
+        "matchId",
+        "matchStatus",
+        "kickOff",
+        "score",
+        "teams",
+        "minuteOfPlay"
+      ]
+    },
+    {
+      "name": "…/matches/{unknown}.json → null",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matches/DFL-MAT-000000.json",
+      "depth": 0,
+      "note": "Firebase answers 200 null for a missing path",
+      "sample": "match-basic.unknown.json"
+    },
+    {
+      "name": "…/matchdays.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays.json?shallow=true",
+      "sample": "matchdays-shallow.json",
+      "keys": [
+        "DFL-DAY-004CBV"
+      ]
+    },
+    {
+      "name": "…/matchdays/{matchday}/{match}.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ.json",
+      "sample": "match-data.final.json",
+      "keys": [
+        "lineup",
+        "stats",
+        "averagePositions",
+        "rankings"
+      ]
+    },
+    {
+      "name": "…/matchdays/{matchday}/{match}.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ.json?shallow=true",
+      "sample": "match-all-node-shallow.json"
+    },
+    {
+      "name": "…/{match}/lineup.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ/lineup.json",
+      "sample": "match-lineup.final.json",
+      "keys": [
+        "home",
+        "away",
+        "lastUpdateDateTime"
+      ]
+    },
+    {
+      "name": "…/{match}/stats.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ/stats.json",
+      "sample": "match-stats.final.json",
+      "keys": [
+        "ballPossessionRatio",
+        "shotsOnTarget",
+        "xGoals"
+      ]
+    },
+    {
+      "name": "{lang}/…/matchdays/{matchday}/{match}.json (ticker)",
+      "path": "/en/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ.json",
+      "sample": "match.final.json",
+      "keys": [
+        "matchId",
+        "matchStatus",
+        "liveBlogEntries",
+        "liveBlogInfos"
+      ]
+    },
+    {
+      "name": "{lang}/…/{match}/matchStatus.json",
+      "path": "/en/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ/matchStatus.json",
+      "sample": "match-matchStatus.pre.json",
+      "depth": 0
+    },
+    {
+      "name": "de/…/{match}/liveBlogInfos.json",
+      "path": "/de/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBV/DFL-MAT-J043GZ/liveBlogInfos.json",
+      "sample": "match-liveBlogInfos.de.final.json"
+    },
+    {
+      "name": "{lang}/…/matchdays/{matchday}.json?shallow",
+      "path": "/en/DFL-COM-000001/seasons/DFL-SEA-0001KA/matchdays/DFL-DAY-004CBU.json?shallow=true",
+      "sample": "matchday-detail-shallow.json",
+      "mapOfObjects": true
+    },
+    {
+      "name": "…/liveTable.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/liveTable.json",
+      "sample": "liveTable.json",
+      "keys": [
+        "entries",
+        "matchday",
+        "season"
+      ]
+    },
+    {
+      "name": "…/homeTable.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/homeTable.json",
+      "sample": "homeTable.json",
+      "keys": [
+        "entries"
+      ]
+    },
+    {
+      "name": "…/awayTable.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/awayTable.json",
+      "sample": "awayTable.json",
+      "keys": [
+        "entries"
+      ]
+    },
+    {
+      "name": "…/formTable.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/formTable.json",
+      "sample": "formTable.json",
+      "keys": [
+        "entries"
+      ]
+    },
+    {
+      "name": "2. Bundesliga liveTable.json",
+      "path": "/all/DFL-COM-000002/seasons/DFL-SEA-0001KA/liveTable.json",
+      "sample": "liveTable.2bl.json",
+      "keys": [
+        "entries"
+      ]
+    },
+    {
+      "name": "…/stats.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats.json?shallow=true",
+      "sample": "stats-shallow.json",
+      "keys": [
+        "clubRankings",
+        "playerRankings"
+      ]
+    },
+    {
+      "name": "…/stats/clubRankings.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/clubRankings.json?shallow=true",
+      "sample": "stats-clubRankings-shallow.json",
+      "keys": [
+        "goals"
+      ]
+    },
+    {
+      "name": "…/stats/clubRankings/goals.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/clubRankings/goals.json?orderBy=%22index%22&limitToFirst=10",
+      "sample": "stats-clubRankings-goals.json",
+      "mapOfObjects": true
+    },
+    {
+      "name": "…/stats/playerRankings.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/playerRankings.json?shallow=true",
+      "sample": "stats-playerRankings-shallow.json",
+      "keys": [
+        "assists"
+      ]
+    },
+    {
+      "name": "…/stats/playerRankings/shotsAtGoalSuccessful.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/playerRankings/shotsAtGoalSuccessful.json?orderBy=%22index%22&limitToFirst=10",
+      "sample": "stats-playerRankings-shotsAtGoalSuccessful.json",
+      "mapOfObjects": true
+    },
+    {
+      "name": "…/stats/playerPage/{player}/seasonStats.json",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/playerPage/DFL-OBJ-0026VB/seasonStats.json",
+      "sample": "stats-playerPage-seasonStats.json",
+      "keys": [
+        "matchesPlayed"
+      ]
+    },
+    {
+      "name": "…/stats/fantasyManagerRanking.json?shallow",
+      "path": "/all/DFL-COM-000001/seasons/DFL-SEA-0001KA/stats/fantasyManagerRanking.json?shallow=true",
+      "sample": "stats-fantasyManagerRanking-shallow.json"
+    },
+    {
+      "name": "Supercup matchdays.json?shallow",
+      "path": "/all/DFL-COM-000003/seasons/DFL-SEA-0001KA/matchdays.json?shallow=true",
+      "sample": "supercup-matchdays-shallow.json"
+    },
+    {
+      "name": "gated node → Permission denied",
+      "path": "/all/DFL-COM-000001.json?shallow=true",
+      "status": [
+        401
+      ],
+      "sample": "denied-competition.json",
+      "depth": 0,
+      "note": "Documents that the competition root stays key-gated"
+    }
+  ]
+}

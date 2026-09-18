@@ -1,0 +1,92 @@
+{
+  "player": {
+    "id": 15165,
+    "slug": "jude-bellingham",
+    "name": "Jude Bellingham",
+    "nickname": "Bellingham",
+    "firstname": "Jude",
+    "lastname": "Bellingham",
+    "date_of_birth": "2003-06-29T00:00:00+00:00",
+    "place_of_birth": "Stourbridge",
+    "weight": 75,
+    "height": 186,
+    "country": {
+      "id": "GB-ENG"
+    },
+    "roles": [
+      {
+        "id": 1,
+        "name": "Player",
+        "slug": "jugador",
+        "active": true
+      }
+    ],
+    "squads": [
+      {
+        "shirt_number": 5,
+        "position": {
+          "id": 3,
+          "name": "Midfielder",
+          "slug": "centrocampista"
+        },
+        "team": {
+          "id": 15,
+          "slug": "real-madrid",
+          "name": "Real Madrid Club de Fútbol",
+          "nickname": "Real Madrid",
+          "color": "#0f39b8",
+          "color_secondary": "#ffffff",
+          "sprite_status": "created",
+          "competitions": [
+            {
+              "id": 1,
+              "name": "LALIGA EA SPORTS",
+              "slug": "primera-division",
+              "main": true
+            },
+            {
+              "id": 4,
+              "name": "UEFA Champions League",
+              "slug": "champions-league",
+              "main": false
+            }
+          ]
+        },
+        "photos": {
+          "004": {
+            "1024x1024": "https://assets.laliga.com/squad/2026/t186/p244855/1024x1024/p244855_t186_2026_0_004_000.png",
+            "128x128": "https://assets.laliga.com/squad/2026/t186/p244855/128x128/p244855_t186_2026_0_004_000.png",
+            "2048x2048": "https://assets.laliga.com/squad/2026/t186/p244855/2048x2048/p244855_t186_2026_0_004_000.png",
+            "256x256": "https://assets.laliga.com/squad/2026/t186/p244855/256x256/p244855_t186_2026_0_004_000.png",
+            "512x512": "https://assets.laliga.com/squad/2026/t186/p244855/512x512/p244855_t186_2026_0_004_000.png",
+            "64x64": "https://assets.laliga.com/squad/2026/t186/p244855/64x64/p244855_t186_2026_0_004_000.png"
+          },
+          "001": {
+            "1024x1113": "https://assets.laliga.com/squad/2026/t186/p244855/1024x1113/p244855_t186_2026_1_001_000.png",
+            "128x139": "https://assets.laliga.com/squad/2026/t186/p244855/128x139/p244855_t186_2026_1_001_000.png",
+            "2048x2225": "https://assets.laliga.com/squad/2026/t186/p244855/2048x2225/p244855_t186_2026_1_001_000.png",
+            "256x278": "https://assets.laliga.com/squad/2026/t186/p244855/256x278/p244855_t186_2026_1_001_000.png",
+            "512x556": "https://assets.laliga.com/squad/2026/t186/p244855/512x556/p244855_t186_2026_1_001_000.png",
+            "64x70": "https://assets.laliga.com/squad/2026/t186/p244855/64x70/p244855_t186_2026_1_001_000.png"
+          },
+          "002": {
+            "1024x1024": "https://assets.laliga.com/squad/2026/t186/p244855/1024x1024/p244855_t186_2026_1_002_000.jpg",
+            "128x128": "https://assets.laliga.com/squad/2026/t186/p244855/128x128/p244855_t186_2026_1_002_000.jpg",
+            "2048x2048": "https://assets.laliga.com/squad/2026/t186/p244855/2048x2048/p244855_t186_2026_1_002_000.jpg",
+            "256x256": "https://assets.laliga.com/squad/2026/t186/p244855/256x256/p244855_t186_2026_1_002_000.jpg",
+            "512x512": "https://assets.laliga.com/squad/2026/t186/p244855/512x512/p244855_t186_2026_1_002_000.jpg",
+            "64x64": "https://assets.laliga.com/squad/2026/t186/p244855/64x64/p244855_t186_2026_1_002_000.jpg"
+          },
+          "003": {
+            "1024x1024": "https://assets.laliga.com/squad/2026/t186/p244855/1024x1024/p244855_t186_2026_1_003_000.png",
+            "128x128": "https://assets.laliga.com/squad/2026/t186/p244855/128x128/p244855_t186_2026_1_003_000.png",
+            "2048x2048": "https://assets.laliga.com/squad/2026/t186/p244855/2048x2048/p244855_t186_2026_1_003_000.png",
+            "256x256": "https://assets.laliga.com/squad/2026/t186/p244855/256x256/p244855_t186_2026_1_003_000.png",
+            "512x512": "https://assets.laliga.com/squad/2026/t186/p244855/512x512/p244855_t186_2026_1_003_000.png",
+            "64x64": "https://assets.laliga.com/squad/2026/t186/p244855/64x64/p244855_t186_2026_1_003_000.png"
+          }
+        }
+      }
+    ]
+  }
+}

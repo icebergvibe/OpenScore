@@ -1,0 +1,379 @@
+{
+    "seasonId": 20252026,
+    "currentRound": 4,
+    "rounds": [
+        {
+            "roundNumber": 1,
+            "roundLabel": "1st-round",
+            "roundAbbrev": "R1",
+            "series": [
+                {
+                    "seriesLetter": "A",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-a/bruins-vs-sabres",
+                    "bottomSeed": {
+                        "id": 6,
+                        "abbrev": "BOS",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg?season=20252026",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg?season=20252026"
+                    },
+                    "topSeed": {
+                        "id": 7,
+                        "abbrev": "BUF",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/BUF_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 7,
+                    "losingTeamId": 6
+                },
+                {
+                    "seriesLetter": "B",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-b/canadiens-vs-lightning",
+                    "bottomSeed": {
+                        "id": 8,
+                        "abbrev": "MTL",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 14,
+                        "abbrev": "TBL",
+                        "wins": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TBL_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 8,
+                    "losingTeamId": 14
+                },
+                {
+                    "seriesLetter": "C",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-c/senators-vs-hurricanes",
+                    "bottomSeed": {
+                        "id": 9,
+                        "abbrev": "OTT",
+                        "wins": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/OTT_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 12,
+                        "abbrev": "CAR",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 12,
+                    "losingTeamId": 9
+                },
+                {
+                    "seriesLetter": "D",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-d/flyers-vs-penguins",
+                    "bottomSeed": {
+                        "id": 4,
+                        "abbrev": "PHI",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/PHI_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 5,
+                        "abbrev": "PIT",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 4,
+                    "losingTeamId": 5
+                },
+                {
+                    "seriesLetter": "E",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-e/kings-vs-avalanche",
+                    "bottomSeed": {
+                        "id": 26,
+                        "abbrev": "LAK",
+                        "wins": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/LAK_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 21,
+                        "abbrev": "COL",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 21,
+                    "losingTeamId": 26
+                },
+                {
+                    "seriesLetter": "F",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-f/wild-vs-stars",
+                    "bottomSeed": {
+                        "id": 30,
+                        "abbrev": "MIN",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MIN_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 25,
+                        "abbrev": "DAL",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/DAL_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 30,
+                    "losingTeamId": 25
+                },
+                {
+                    "seriesLetter": "G",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-g/mammoth-vs-goldenknights",
+                    "bottomSeed": {
+                        "id": 68,
+                        "abbrev": "UTA",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg?season=20252026",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/UTA_dark.svg?season=20252026"
+                    },
+                    "topSeed": {
+                        "id": 54,
+                        "abbrev": "VGK",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 54,
+                    "losingTeamId": 68
+                },
+                {
+                    "seriesLetter": "H",
+                    "roundNumber": 1,
+                    "seriesLabel": "1st-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-h/ducks-vs-oilers",
+                    "bottomSeed": {
+                        "id": 24,
+                        "abbrev": "ANA",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 22,
+                        "abbrev": "EDM",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/EDM_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 24,
+                    "losingTeamId": 22
+                }
+            ]
+        },
+        {
+            "roundNumber": 2,
+            "roundLabel": "2nd-round",
+            "roundAbbrev": "R2",
+            "series": [
+                {
+                    "seriesLetter": "I",
+                    "roundNumber": 2,
+                    "seriesLabel": "2nd-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-i/canadiens-vs-sabres",
+                    "bottomSeed": {
+                        "id": 8,
+                        "abbrev": "MTL",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 7,
+                        "abbrev": "BUF",
+                        "wins": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/BUF_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 8,
+                    "losingTeamId": 7
+                },
+                {
+                    "seriesLetter": "J",
+                    "roundNumber": 2,
+                    "seriesLabel": "2nd-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-j/flyers-vs-hurricanes",
+                    "bottomSeed": {
+                        "id": 4,
+                        "abbrev": "PHI",
+                        "wins": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/PHI_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 12,
+                        "abbrev": "CAR",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 12,
+                    "losingTeamId": 4
+                },
+                {
+                    "seriesLetter": "K",
+                    "roundNumber": 2,
+                    "seriesLabel": "2nd-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-k/wild-vs-avalanche",
+                    "bottomSeed": {
+                        "id": 30,
+                        "abbrev": "MIN",
+                        "wins": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MIN_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 21,
+                        "abbrev": "COL",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 21,
+                    "losingTeamId": 30
+                },
+                {
+                    "seriesLetter": "L",
+                    "roundNumber": 2,
+                    "seriesLabel": "2nd-round",
+                    "seriesLink": "/schedule/playoff-series/2026/series-l/ducks-vs-goldenknights",
+                    "bottomSeed": {
+                        "id": 24,
+                        "abbrev": "ANA",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 54,
+                        "abbrev": "VGK",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 54,
+                    "losingTeamId": 24
+                }
+            ]
+        },
+        {
+            "roundNumber": 3,
+            "roundLabel": "conference-finals",
+            "roundAbbrev": "CF",
+            "series": [
+                {
+                    "seriesLetter": "M",
+                    "roundNumber": 3,
+                    "seriesLabel": "conference-finals",
+                    "seriesLink": "/schedule/playoff-series/2026/series-m/canadiens-vs-hurricanes",
+                    "bottomSeed": {
+                        "id": 8,
+                        "abbrev": "MTL",
+                        "wins": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 12,
+                        "abbrev": "CAR",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 12,
+                    "losingTeamId": 8
+                },
+                {
+                    "seriesLetter": "N",
+                    "roundNumber": 3,
+                    "seriesLabel": "conference-finals",
+                    "seriesLink": "/schedule/playoff-series/2026/series-n/goldenknights-vs-avalanche",
+                    "bottomSeed": {
+                        "id": 54,
+                        "abbrev": "VGK",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 21,
+                        "abbrev": "COL",
+                        "wins": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/COL_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 54,
+                    "losingTeamId": 21
+                }
+            ]
+        },
+        {
+            "roundNumber": 4,
+            "roundLabel": "stanley-cup-final",
+            "roundAbbrev": "SCF",
+            "series": [
+                {
+                    "seriesLetter": "O",
+                    "roundNumber": 4,
+                    "seriesLabel": "stanley-cup-final",
+                    "seriesLink": "/schedule/playoff-series/2026/series-o/goldenknights-vs-hurricanes",
+                    "bottomSeed": {
+                        "id": 54,
+                        "abbrev": "VGK",
+                        "wins": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/VGK_dark.svg"
+                    },
+                    "topSeed": {
+                        "id": 12,
+                        "abbrev": "CAR",
+                        "wins": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg"
+                    },
+                    "neededToWin": 4,
+                    "winningTeamId": 12,
+                    "losingTeamId": 54
+                }
+            ]
+        }
+    ]
+}

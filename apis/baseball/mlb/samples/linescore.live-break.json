@@ -1,0 +1,220 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "currentInning": 6,
+  "currentInningOrdinal": "6th",
+  "inningState": "End",
+  "inningHalf": "Bottom",
+  "isTopInning": false,
+  "scheduledInnings": 9,
+  "innings": [
+    {
+      "num": 1,
+      "ordinalNum": "1st",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 2,
+      "ordinalNum": "2nd",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 3,
+      "ordinalNum": "3rd",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 2,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 4,
+      "ordinalNum": "4th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 5,
+      "ordinalNum": "5th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 1,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 6,
+      "ordinalNum": "6th",
+      "home": {
+        "runs": 0,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    }
+  ],
+  "teams": {
+    "home": {
+      "runs": 0,
+      "hits": 1,
+      "errors": 1,
+      "leftOnBase": 1
+    },
+    "away": {
+      "runs": 3,
+      "hits": 3,
+      "errors": 0,
+      "leftOnBase": 1
+    }
+  },
+  "defense": {
+    "pitcher": {
+      "id": 669302,
+      "fullName": "Logan Gilbert",
+      "link": "/api/v1/people/669302"
+    },
+    "catcher": {
+      "id": 663728,
+      "fullName": "Cal Raleigh",
+      "link": "/api/v1/people/663728"
+    },
+    "first": {
+      "id": 647304,
+      "fullName": "Josh Naylor",
+      "link": "/api/v1/people/647304"
+    },
+    "second": {
+      "id": 702284,
+      "fullName": "Cole Young",
+      "link": "/api/v1/people/702284"
+    },
+    "third": {
+      "id": 801126,
+      "fullName": "Brock Rodden",
+      "link": "/api/v1/people/801126"
+    },
+    "shortstop": {
+      "id": 641487,
+      "fullName": "J.P. Crawford",
+      "link": "/api/v1/people/641487"
+    },
+    "left": {
+      "id": 668227,
+      "fullName": "Randy Arozarena",
+      "link": "/api/v1/people/668227"
+    },
+    "center": {
+      "id": 677594,
+      "fullName": "Julio Rodríguez",
+      "link": "/api/v1/people/677594"
+    },
+    "right": {
+      "id": 703155,
+      "fullName": "Lazaro Montes",
+      "link": "/api/v1/people/703155"
+    },
+    "batter": {
+      "id": 668227,
+      "fullName": "Randy Arozarena",
+      "link": "/api/v1/people/668227"
+    },
+    "onDeck": {
+      "id": 686527,
+      "fullName": "Dominic Canzone",
+      "link": "/api/v1/people/686527"
+    },
+    "inHole": {
+      "id": 663728,
+      "fullName": "Cal Raleigh",
+      "link": "/api/v1/people/663728"
+    },
+    "battingOrder": 2,
+    "team": {
+      "id": 136,
+      "name": "Seattle Mariners",
+      "link": "/api/v1/teams/136"
+    }
+  },
+  "offense": {
+    "batter": {
+      "id": 694671,
+      "fullName": "Wyatt Langford",
+      "link": "/api/v1/people/694671"
+    },
+    "onDeck": {
+      "id": 694497,
+      "fullName": "Evan Carter",
+      "link": "/api/v1/people/694497"
+    },
+    "inHole": {
+      "id": 669394,
+      "fullName": "Jake Burger",
+      "link": "/api/v1/people/669394"
+    },
+    "pitcher": {
+      "id": 594798,
+      "fullName": "Jacob deGrom",
+      "link": "/api/v1/people/594798"
+    },
+    "battingOrder": 5,
+    "team": {
+      "id": 140,
+      "name": "Texas Rangers",
+      "link": "/api/v1/teams/140"
+    }
+  },
+  "balls": 3,
+  "strikes": 2,
+  "outs": 3
+}

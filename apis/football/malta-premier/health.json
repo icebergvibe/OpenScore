@@ -1,0 +1,215 @@
+{
+  "league": "malta-premier",
+  "name": "Malta Premier",
+  "baseUrl": "https://api.mfa.com.mt/api",
+  "headers": {
+    "x-version": "2"
+  },
+  "checks": [
+    {
+      "name": "competitions/{type}/upcomingMatches",
+      "path": "/competitions/58539/upcomingMatches",
+      "sample": "upcomingMatches.json",
+      "keys": [
+        "[].id",
+        "[].startDate",
+        "[].homeTeam",
+        "[].status"
+      ]
+    },
+    {
+      "name": "competitions/{type}/pastMatches",
+      "path": "/competitions/58539/pastMatches",
+      "sample": "pastMatches.json",
+      "keys": [
+        "[].id",
+        "[].homeTeam",
+        "[].awayTeam"
+      ]
+    },
+    {
+      "name": "competitions/{type}/pastMatches?page=2",
+      "path": "/competitions/58539/pastMatches?page=2",
+      "sample": "pastMatches.page2.json"
+    },
+    {
+      "name": "competitions/{type}/pastMatches?date",
+      "path": "/competitions/58539/pastMatches?date=2026-09-06&pageSize=50",
+      "sample": "pastMatches.date.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "competitions/{type}/upcomingMatches?date={today}",
+      "path": "/competitions/58539/upcomingMatches?date={today}&pageSize=50",
+      "sample": "upcomingMatches.date.json",
+      "note": "Empty on a day without matches"
+    },
+    {
+      "name": "competitions/{type}/pastMatches?teamId",
+      "path": "/competitions/58539/pastMatches?teamId=39639",
+      "sample": "pastMatches.team.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "competitions/{type}/pastMatches?season=2026",
+      "path": "/competitions/58539/pastMatches?season=2026",
+      "sample": "pastMatches.season-2026.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "competitions/{type}/matches?status=live",
+      "path": "/competitions/58539/matches?status=live",
+      "sample": "matches.live-none.json"
+    },
+    {
+      "name": "matches/{id} — final",
+      "path": "/matches/53142564",
+      "sample": "match.final.json",
+      "keys": [
+        "id",
+        "status",
+        "homeTeam",
+        "awayTeam",
+        "startDate"
+      ]
+    },
+    {
+      "name": "matches/{id} — pre",
+      "path": "/matches/53142579",
+      "sample": "match.pre.json",
+      "keys": [
+        "id",
+        "status"
+      ]
+    },
+    {
+      "name": "matches/{id}/result — final",
+      "path": "/matches/53142564/result",
+      "sample": "result.final.json",
+      "keys": [
+        "homeScore",
+        "awayScore",
+        "events",
+        "status"
+      ]
+    },
+    {
+      "name": "matches/{id}/result — pre",
+      "path": "/matches/53142579/result",
+      "sample": "result.pre.json"
+    },
+    {
+      "name": "matches/{id}/lineup — final",
+      "path": "/matches/53142564/lineup",
+      "sample": "lineup.final.json",
+      "keys": [
+        "homeTeam",
+        "awayTeam"
+      ]
+    },
+    {
+      "name": "matches/{id}/lineup — pre",
+      "path": "/matches/53142579/lineup",
+      "sample": "lineup.pre.json"
+    },
+    {
+      "name": "matches/{id}/statistics — final",
+      "path": "/matches/53142564/statistics",
+      "status": [
+        200,
+        204
+      ],
+      "sample": "statistics.final.json"
+    },
+    {
+      "name": "matches/{id}/channel",
+      "path": "/matches/53142564/channel",
+      "sample": "channel.final.json"
+    },
+    {
+      "name": "competitions/{type}/standings",
+      "path": "/competitions/58539/standings",
+      "sample": "standings.json",
+      "keys": [
+        "competitionTypeId",
+        "phases"
+      ]
+    },
+    {
+      "name": "competitions/{type}/standings?season=2026",
+      "path": "/competitions/58539/standings?season=2026",
+      "sample": "standings.season-2026.json",
+      "keys": [
+        "phases"
+      ]
+    },
+    {
+      "name": "competitions/{type}/teams",
+      "path": "/competitions/58539/teams",
+      "sample": "teams.json",
+      "keys": [
+        "[].data"
+      ]
+    },
+    {
+      "name": "players/{id}/GetPlayerDetails",
+      "path": "/players/162467/GetPlayerDetails",
+      "sample": "player.json",
+      "keys": [
+        "id",
+        "playerName",
+        "details"
+      ]
+    },
+    {
+      "name": "players/{id}/GetPlayerStatistics",
+      "path": "/players/162467/GetPlayerStatistics?season=-1",
+      "sample": "player-statistics.empty.json"
+    },
+    {
+      "name": "competitions/{type}/topScorers",
+      "path": "/competitions/58539/topScorers?pageSize=5",
+      "sample": "topScorers.json",
+      "keys": [
+        "[].data"
+      ]
+    },
+    {
+      "name": "competitions/{type}/seasons",
+      "path": "/competitions/58539/seasons",
+      "sample": "seasons.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "competitions",
+      "path": "/competitions",
+      "sample": "competitions.json",
+      "keys": [
+        "[].competitionTypeId"
+      ]
+    },
+    {
+      "name": "cms: competitions/getCompetitionItemStub",
+      "url": "https://cms.mfa.com.mt/api/competitions/getCompetitionItemStub",
+      "sample": "cms-competitions.json"
+    },
+    {
+      "name": "cms: competitions/{type}",
+      "url": "https://cms.mfa.com.mt/api/competitions/58539",
+      "sample": "cms-competition.json"
+    },
+    {
+      "name": "cms: teams/{teamId}",
+      "url": "https://cms.mfa.com.mt/api/teams/39639",
+      "sample": "cms-team.json"
+    }
+  ]
+}

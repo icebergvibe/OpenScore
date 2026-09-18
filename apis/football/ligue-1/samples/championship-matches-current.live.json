@@ -1,0 +1,862 @@
+{
+  "currentMatches": [
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73855",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-11T18:45:00.000Z",
+      "period": "secondHalf",
+      "matchTime": "52'",
+      "isLive": true,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73855/poster_52d7291267fe96e3c25a5aef48ea49f8.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73855/thumbnail_85917454089a792e43d2e28cb6c628cd.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_14",
+        "score": 1,
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_14",
+          "shortId": 14,
+          "name": "Stade Rennais FC",
+          "officialName": "Rennes",
+          "shortName": "Rennes",
+          "displayName": "Stade Rennais Fc",
+          "businessName": "Rennes",
+          "trigram": "REN",
+          "primaryColor": "#DA261B",
+          "secondaryColor": "#000000",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_128x128_e7371f8a913a19713876abf7cb92e131.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_512x512_28c7492293ca34c6e26d6cb71e858a57.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_14_768x768_e703d9e4e25cdfc639c91df88b3d0793.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_128x128_d8f0636fac557db80927cfffcd6a9169.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_512x512_6fe14edeef7960a8290247306a3aa6e4.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_14_768x768_23db67217eb240ffc79d7f0a2e2ebe16.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 5
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_1",
+        "score": 0,
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_1",
+          "shortId": 1,
+          "name": "Olympique de Marseille",
+          "officialName": "Marseille",
+          "shortName": "OM",
+          "displayName": "Olympique De Marseille",
+          "businessName": "OM",
+          "trigram": "OM",
+          "primaryColor": "#0B4A89",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2025_1_1_128x128_0c05c0138f105c2fb1632d16a6e5a9e8.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2025_1_1_512x512_16ca4f08072a6b6d99169ba2b6a8b228.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2025_1_1_768x768_215f9db1232d520e22eef401962d1b12.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2025_1_1_128x128_1824e91151b2e2ed197047c313aac1b9.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2025_1_1_512x512_0981798b41da9749689be3ee628d422e.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2025_1_1_768x768_447aba7d6c284a2103257e2a8a91cfe5.png"
+            }
+          },
+          "preferMonochromeLogo": true,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 10
+        }
+      },
+      "l1Plus": {
+        "hasLive": true,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73856",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-12T15:15:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73856/poster_2a43eea0c43479f0166c762f0f908c46.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73856/thumbnail_6ce03807729b3141300ef64efe1a7575.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_15",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_15",
+          "shortId": 15,
+          "name": "RC Strasbourg Alsace",
+          "officialName": "Strasbourg",
+          "shortName": "Strasbourg",
+          "displayName": "Rc Strasbourg Alsace",
+          "businessName": "Strasbourg",
+          "trigram": "STR",
+          "primaryColor": "#009EE2",
+          "secondaryColor": "#DB2F34",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_15_128x128_b0690caabe8c7f44215d7664eed973b4.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_15_512x512_e9553990e86d8098a3cf94febe8b4b96.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_15_768x768_4350d32e5f679b44fbc16b8f5352e85e.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_15_128x128_e1a882abc582b8b9f86c35e934fb3278.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_15_512x512_a534ea0a2780e8278dfda235189ca5eb.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_15_768x768_5bb5654139490857654262d8b2686f0f.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 6
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_9",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_9",
+          "shortId": 9,
+          "name": "AS Monaco",
+          "officialName": "Monaco",
+          "shortName": "AS Monaco",
+          "displayName": "As Monaco",
+          "businessName": "AS Monaco",
+          "trigram": "ASM",
+          "primaryColor": "#D70032",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_128x128_486e4b383509816f94f5ab9269a14449.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_512x512_ad7dd146950eee8eb68ea9588a674fe8.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_9_768x768_0f59d1cadcd741881109da1a49bb7a0d.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_128x128_e9478a4c3eb59d1e8eba6a26b38b614f.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_512x512_5dbc554fe872033a94563f73705e4995.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_9_768x768_04de42489490b5198687fb9920420661.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 1
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73848",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-12T18:45:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+4",
+            "id": "l1_broadcaster_L+4",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 4",
+              "es-ES": "Ligue 1+ 4",
+              "fr-FR": "Ligue 1+ 4"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73848/poster_d1cbe5e0080ad19da35ecfca8d451b8b.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73848/thumbnail_7a21b1bb833b2a4a8cf8176b2f8ffc75.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_2",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_2",
+          "shortId": 2,
+          "name": "AJ Auxerre",
+          "officialName": "Auxerre",
+          "shortName": "AJ Auxerre",
+          "displayName": "Aj Auxerre",
+          "businessName": "AJ Auxerre",
+          "trigram": "AJA",
+          "primaryColor": "#2b2b2d",
+          "secondaryColor": "#073ba0",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_2_128x128_f25b3b461b1ed57875618ac6f3ea96e8.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_2_512x512_4bed22ddd777a8b0977284bee7f416a7.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_2_768x768_ed1502c12ee3e4ea6128a09326aaa2c2.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_2_128x128_7fad5191d1f4bc9016b1c17b651a51b4.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_2_512x512_a8a6eea2fc4f046ed9dc53186631624e.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_2_768x768_196eade76aa6e152557be7cd9df25d43.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 18
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_30",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_30",
+          "shortId": 30,
+          "name": "OGC Nice",
+          "officialName": "Nice",
+          "shortName": "OGC Nice",
+          "displayName": "Ogc Nice",
+          "businessName": "OGC Nice",
+          "trigram": "NIC",
+          "primaryColor": "#2C2A29",
+          "secondaryColor": "#DA2128",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_30_128x128_eb33f30ec2a8dfbebe1f8d5b49149451.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_30_512x512_2ccb89a2f1fbad23e693d1c5d101a25d.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_30_768x768_a5d6f891e9eee7d73adb04f17ca97289.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_30_128x128_946acfb794cbbefb055ed57558ba5147.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_30_512x512_7709b0c8fba1638f20be7d625dbb4aaf.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_30_768x768_335b184e4bdac0508feed8dd2faffc28.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 15
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73850",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-12T18:45:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+5",
+            "id": "l1_broadcaster_L+5",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 5",
+              "es-ES": "Ligue 1+ 5",
+              "fr-FR": "Ligue 1+ 5"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73850/poster_0901b5da28703240fd308e3e698044f1.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73850/thumbnail_277e02bb07dcad329cc10658c4389449.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_5",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_5",
+          "shortId": 5,
+          "name": "Havre Athletic Club",
+          "officialName": "Le Havre",
+          "shortName": "Havre AC",
+          "displayName": "Havre Athletic Club",
+          "businessName": "Havre AC",
+          "trigram": "HAC",
+          "primaryColor": "#79BDE8",
+          "secondaryColor": "#183360",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_5_128x128_08ea6f21e63bbc926a6b2e99a54d66b9.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_5_512x512_e9bf970697e022dcbd3d51e245f3682d.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_5_768x768_9ff4a4595ab434bdc1d5adf548b1d5d8.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_5_128x128_b02a397d09e5bd1c45ee4a71d4a3b409.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_5_512x512_4e25ab901531b75b04b7cc82564595d8.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_5_768x768_bf92306bb60edd511b056cb2a41c96b6.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 16
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_37",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_37",
+          "shortId": 37,
+          "name": "Angers SCO",
+          "officialName": "Angers",
+          "shortName": "Angers SCO",
+          "displayName": "Angers Sco",
+          "businessName": "Angers SCO",
+          "trigram": "SCO",
+          "primaryColor": "#000000",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_37_128x128_22f933b61100266bf7f510aad9b5ad28.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_37_512x512_b5149d8c4312c158b2975298205510eb.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_37_768x768_c4cece6a5c19ddae0e091591551e341c.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_37_128x128_9178b4aa49e5729540795ac2c162660f.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_37_512x512_0d3daec93935c39faa6c0c29527d7f7e.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_37_768x768_43b866677a58c8988e66459bdd00690e.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 12
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73853",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-12T18:45:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+6",
+            "id": "l1_broadcaster_L+6",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 6",
+              "es-ES": "Ligue 1+ 6",
+              "fr-FR": "Ligue 1+ 6"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73853/poster_87808dab1d6d2bd8c453b7adfdcb33f8.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73853/thumbnail_11c11a5c06417b50fa24356fd8ad2710.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_7",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_7",
+          "shortId": 7,
+          "name": "FC Lorient",
+          "officialName": "Lorient",
+          "shortName": "FC Lorient",
+          "displayName": "Fc Lorient",
+          "businessName": "FC Lorient",
+          "trigram": "FCL",
+          "primaryColor": "#EB740E",
+          "secondaryColor": "#2C2723",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_7_128x128_3d6b3608abb5b1dfa14a5e0c138c6c9d.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_7_512x512_7d0c497c5f41d0dcf5dabad2910699e3.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_7_768x768_adc618df59ba3373711281f407d5e990.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_7_128x128_27e1eb8e70e9131d5a2741ff4a4337da.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_7_512x512_9f79fc28f28df0661758706d2a880e6a.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_7_768x768_cf15cbf7c1860c8610683a01dcf264aa.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 8
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_16",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_16",
+          "shortId": 16,
+          "name": "Toulouse FC",
+          "officialName": "Toulouse",
+          "shortName": "Toulouse FC",
+          "displayName": "Toulouse Fc",
+          "businessName": "Toulouse FC",
+          "trigram": "TFC",
+          "primaryColor": "#2a1c6d",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_16_128x128_a5add8c2d780e5d231b1b2732e313eeb.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_16_512x512_a7be4e575396227614acc0ed47083503.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_16_768x768_a4cff640ab69e9471d89ba21b39a3e03.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_16_128x128_5f537fde304461624897801ca1823a9a.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_16_512x512_25195c2f3a53f0b636512dc39af30a63.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_16_768x768_20fdcf38f1431fa117ef41b2e0a7d137.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 17
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73854",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-12T18:45:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+3",
+            "id": "l1_broadcaster_L+3",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 3",
+              "es-ES": "Ligue 1+ 3",
+              "fr-FR": "Ligue 1+ 3"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73854/poster_a07c33ab33f3b8d471a6c8d7b2a94b3b.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73854/thumbnail_92c5df989bd9618011662267bf705dff.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_90",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_90",
+          "shortId": 90,
+          "name": "Paris FC",
+          "officialName": "Paris FC",
+          "shortName": "Paris FC",
+          "displayName": "Paris Fc",
+          "businessName": "Paris FC",
+          "trigram": "PFC",
+          "primaryColor": "#0A0E2D",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_90_128x128_dc9d2c4c7ba86ab318ff003c7a65cbf0.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_90_512x512_175b2336e893d20e113b3bbdf7217201.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_90_768x768_d498bcb3421e6a94740b2d6bbddc95f0.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_90_128x128_2de8ba49aeb7fe306c6c45bdde7052c2.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_90_512x512_7e6e29588c62c0eecd33d27def3e7a4a.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_4_90_768x768_c6acb54eb4391ba2419bda6bd8ee5c5e.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 2
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_159",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_159",
+          "shortId": 159,
+          "name": "Olympique Lyonnais",
+          "officialName": "Lyon",
+          "shortName": "OL",
+          "displayName": "Olympique Lyonnais",
+          "businessName": "OL",
+          "trigram": "OL",
+          "primaryColor": "#0F23AA",
+          "secondaryColor": "#E5202E",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_159_128x128_019eb4a1eab9b4c9b89829cbcbbeb1de.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_159_512x512_1a9c2cd8f58fba433bb5cd568b3de7d0.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_159_768x768_b150a2edf914d9beed162e1c40d00db4.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_159_128x128_7882d2a5ef4500c28d900929d2bbacd2.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_159_512x512_a1c764bf2f259fec9203b37c51c34a49.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_159_768x768_336109f324a909be13010cf201ba37e1.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 3
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73852",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-13T13:00:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+3",
+            "id": "l1_broadcaster_L+3",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 3",
+              "es-ES": "Ligue 1+ 3",
+              "fr-FR": "Ligue 1+ 3"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73852/poster_8a09e4fb116951fd7519474e802f36ee.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73852/thumbnail_0e7dff847824baae4b5a00ef6107302d.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_158",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_158",
+          "shortId": 158,
+          "name": "LOSC Lille",
+          "officialName": "Lille",
+          "shortName": "LOSC",
+          "displayName": "LOSC Lille",
+          "businessName": "LOSC",
+          "trigram": "LIL",
+          "primaryColor": "#E41B13",
+          "secondaryColor": "#211E5F",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_128x128_7bf9576cddda33d2c1ebd966f44779d3.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_512x512_39a605746d9cf4eb12d9cd4f63adb27c.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_158_768x768_94fd86e26028c4bb869925a35e8d901a.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_128x128_102d4146c2293181a53afac9ea79cd90.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_512x512_73cd15f2ed622b7add8c45d36ff70663.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_158_768x768_f3a30e0b1e98dad02e576283da10d8df.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 4
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_33",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_33",
+          "shortId": 33,
+          "name": "Estac Troyes",
+          "officialName": "Troyes",
+          "shortName": "Troyes",
+          "displayName": "Estac Troyes",
+          "businessName": "Troyes",
+          "trigram": "TRO",
+          "primaryColor": "#006CB5",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_33_128x128_fda89ec63ce6cd3429cf0d4c366bddee.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_33_512x512_fa84337aa111aaf34990dd2590ba1789.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_4_33_768x768_bec7d7958e78388e548c852236075e89.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/22a7829b-87a8-4392-bdd8-fd5d3bf829a2",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/a6d9dc75-ae90-422a-b4f6-00b69234ea98",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/26f95202-08bb-4688-a761-f0d5bdc2c66f"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 9
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73851",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-13T15:15:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+4",
+            "id": "l1_broadcaster_L+4",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 4",
+              "es-ES": "Ligue 1+ 4",
+              "fr-FR": "Ligue 1+ 4"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73851/poster_fd7f815387d865229e5ff3b793c46280.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73851/thumbnail_1dbfb85ecb1f611e0f8c93b185db8bd7.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_26",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_26",
+          "shortId": 26,
+          "name": "Le Mans FC",
+          "officialName": "Le Mans",
+          "shortName": "LE Mans FC",
+          "displayName": "Le Mans Fc",
+          "businessName": "LE Mans FC",
+          "trigram": "LEM",
+          "primaryColor": "#FF0000",
+          "secondaryColor": "#FFCC33",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/7f0c4f0c-37e4-411f-b765-fbe1b5f4732e",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/daabb8d9-230e-4fe2-8214-682fbbdedb5e",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/4201b154-511d-4128-ab82-9b619ecc6083"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/cf921608-d01d-4baa-a4dc-821dd87dd130",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/9bc3595a-fefc-415e-a26e-ca268e7020e1",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/8a6de459-0dd1-415e-90d7-b0972191b9c3"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 14
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_6",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_6",
+          "shortId": 6,
+          "name": "RC Lens",
+          "officialName": "Lens",
+          "shortName": "RC Lens",
+          "displayName": "Rc Lens",
+          "businessName": "RC Lens",
+          "trigram": "RCL",
+          "primaryColor": "#FFD500",
+          "secondaryColor": "#C51315",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_128x128_0c59b9fd66a5c5256756a19fba1239ee.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_512x512_d08b45acce8a87d13b938cde8974362f.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2026_1_6_768x768_9a9e318ebf1e93428b8bab52abb1d705.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_128x128_8874ea37284e20ac7723d633b56b6d59.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_512x512_faecaf03c4e4ab02beb5fe01a2db1041.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2026_1_6_768x768_f468cbb89da6b4f18a8bf9c89a22b14f.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 11
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    },
+    {
+      "unknownMatch": false,
+      "matchId": "l1_championship_match_73849",
+      "championshipId": 1,
+      "gameWeekNumber": 4,
+      "date": "2026-09-13T18:45:00.000Z",
+      "period": "preMatch",
+      "isLive": false,
+      "broadcasters": {
+        "international": [],
+        "local": [
+          {
+            "code": "L+2",
+            "id": "l1_broadcaster_L+2",
+            "link": "https://ligue1plus.fr/",
+            "name": {
+              "en-GB": "Ligue 1+ 2",
+              "es-ES": "Ligue 1+ 2",
+              "fr-FR": "Ligue 1+ 2"
+            }
+          }
+        ]
+      },
+      "poster": {
+        "full": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73849/poster_0fc6242790a3543a24366e8e11420f47.webp",
+        "isFallback": false,
+        "thumbnail": "https://s3.eu-west-1.amazonaws.com/image.mpg/match-posters/2026/l1_championship_match_73849/thumbnail_c5741a570a6e4b9bf1a4dfa9654f55d3.webp"
+      },
+      "home": {
+        "clubId": "l1_championship_club_2026_44",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_44",
+          "shortId": 44,
+          "name": "Stade Brestois 29",
+          "officialName": "Brest",
+          "shortName": "Brest",
+          "displayName": "Stade Brestois 29",
+          "businessName": "Brest",
+          "trigram": "BRE",
+          "primaryColor": "#D10A11",
+          "secondaryColor": "#FFFFFF",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_44_128x128_6e80f6db6cec2117be34cd65ab9edbd1.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_44_512x512_b8930455bc938de7b9f4e128e1036989.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_44_768x768_5b902ce45f1645c17e1710c4be3f0b1e.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_44_128x128_fc43007739733d43a64fbdd972956334.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_44_512x512_98925d294e919f027383c3eef30ca052.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_44_768x768_3e2378ed34d3a81bbf095b15e64c467f.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 7
+        }
+      },
+      "away": {
+        "clubId": "l1_championship_club_2026_13",
+        "clubIdentity": {
+          "id": "l1_championship_club_2026_13",
+          "shortId": 13,
+          "name": "Paris Saint-Germain",
+          "officialName": "Paris Saint-Germain",
+          "shortName": "PSG",
+          "displayName": "Paris Saint-Germain",
+          "businessName": "PSG",
+          "trigram": "PSG",
+          "primaryColor": "#004070",
+          "secondaryColor": "#E30613",
+          "assets": {
+            "logo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_13_128x128_71452974055596a4cdae24a2112ead57.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_13_512x512_4a9438034a011c1368c52d097a93b98f.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/logo/2023_1_13_768x768_c678b2679b5f96c5255c3fb5e912df5a.png"
+            },
+            "whiteLogo": {
+              "small": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_128x128_c4139f63a5add876fa55b583f9acefdd.png",
+              "medium": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_512x512_ffc362a296583161378d27df1ad7e109.png",
+              "large": "https://s3.eu-west-1.amazonaws.com/image.mpg/assets/clubs/whiteLogo/2023_1_13_768x768_e288557b43100c5212a3b6b748871e9c.png"
+            }
+          },
+          "preferMonochromeLogo": false,
+          "isInFrenchChampionship": true,
+          "gameWeekStartingRank": 13
+        }
+      },
+      "l1Plus": {
+        "hasLive": false,
+        "hasReplay": false,
+        "hasHighlights": false,
+        "hasExtendedHighlights": false
+      }
+    }
+  ]
+}

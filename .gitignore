@@ -1,0 +1,45 @@
+# Gradle / Kotlin
+.gradle/
+.gradle-local/
+build/
+*/build/
+.kotlin/
+local.properties
+
+# Android build artifacts and signing material
+*.apk
+*.aab
+*.ap_
+*.keystore
+*.jks
+*.p12
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+google-services.json
+service-account*.json
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Logs and local databases
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Scratch / captured raw traffic that is not a curated sample
+scratch/
+
+# Assistant tooling (Claude Code skills), local only
+.claude/
+
+# Local working notes for the maintainers, never committed
+/CLAUDE.md

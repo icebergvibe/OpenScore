@@ -1,0 +1,157 @@
+{
+  "match": {
+    "id": 102297,
+    "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Sevilla FC - Valencia CF - 5",
+    "slug": "temporada-2026-2027-laliga-ea-sports-sevilla-fc-valencia-cf-5",
+    "date": "2026-09-11T19:00:00+00:00",
+    "time": "2026-09-11T19:00:00+00:00",
+    "match_time": 98,
+    "hashtag": "SevillaValencia",
+    "competition": {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "opta_id": "23"
+    },
+    "home_score": 1,
+    "away_score": 0,
+    "status": "FullTime",
+    "attempt": 39939,
+    "attempt_official": false,
+    "home_team": {
+      "id": 17,
+      "slug": "sevilla-fc",
+      "name": "Sevilla Fútbol Club SAD",
+      "nickname": "Sevilla FC",
+      "boundname": "Sevilla FC",
+      "shortname": "SEV",
+      "color": "#f21e27",
+      "color_secondary": "#ffffff",
+      "sprite_status": "created",
+      "shield": {
+        "id": 153,
+        "url": "https://assets.laliga.com/assets/2019/06/07/medium/sevilla.png"
+      },
+      "competitions": [],
+      "opta_id": "t179"
+    },
+    "away_team": {
+      "id": 18,
+      "slug": "valencia-cf",
+      "name": "Valencia Club de Fútbol SAD",
+      "nickname": "Valencia CF",
+      "boundname": "Valencia CF",
+      "shortname": "VAL",
+      "color": "#000000",
+      "color_secondary": "#ffffff",
+      "sprite_status": "created",
+      "shield": {
+        "id": 155,
+        "url": "https://assets.laliga.com/assets/2019/06/07/medium/valencia.png"
+      },
+      "competitions": [],
+      "opta_id": "t191"
+    },
+    "home_formation": "4231",
+    "away_formation": "4411",
+    "gameweek": {
+      "week": 5,
+      "name": "Matchday 5",
+      "shortname": "M5"
+    },
+    "venue": {
+      "name": "Ramón Sánchez-Pizjuán"
+    },
+    "persons_role": [
+      {
+        "person": {
+          "name": "Mateo Busquets Ferrer",
+          "nickname": "Mateo Busquets Ferrer",
+          "firstname": "Mateo",
+          "lastname": "Busquets Ferrer"
+        },
+        "role": {
+          "id": 5
+        }
+      },
+      {
+        "person": {
+          "name": "Juan Francisco Roca Roblés",
+          "nickname": "Juan Francisco Roca Roblés",
+          "firstname": "Juan Francisco",
+          "lastname": "Roca Roblés"
+        },
+        "role": {
+          "id": 8
+        }
+      },
+      {
+        "person": {
+          "name": "Carlos del Cerro Grande",
+          "nickname": "Carlos del Cerro Grande",
+          "firstname": "Carlos",
+          "lastname": "del Cerro Grande"
+        },
+        "role": {
+          "id": 9
+        }
+      },
+      {
+        "person": {
+          "name": "Rubén Ávalos Barrera",
+          "nickname": "Rubén Ávalos Barrera",
+          "firstname": "Rubén",
+          "lastname": "Ávalos Barrera"
+        },
+        "role": {
+          "id": 10
+        }
+      },
+      {
+        "person": {
+          "name": "Gonzalo García González",
+          "nickname": "Gonzalo García González",
+          "firstname": "Gonzalo",
+          "lastname": "García González"
+        },
+        "role": {
+          "id": 6
+        }
+      },
+      {
+        "person": {
+          "name": "Guillermo Santiago Sacristán",
+          "nickname": "Guillermo Santiago Sacristán",
+          "firstname": "Guillermo",
+          "lastname": "Santiago Sacristán"
+        },
+        "role": {
+          "id": 7
+        }
+      }
+    ],
+    "season": {
+      "id": 102,
+      "name": "Season 2026/2027",
+      "opta_id": "2026"
+    },
+    "subscription": {
+      "id": 395,
+      "slug": "laliga-easports-2026",
+      "teams": [],
+      "rounds": []
+    },
+    "is_brand_day": false,
+    "period_started": {
+      "FirstHalf": {
+        "stop": "2026-09-11T19:53:41+00:00",
+        "start": "2026-09-11T19:02:36+00:00"
+      },
+      "SecondHalf": {
+        "stop": "2026-09-11T21:04:25+00:00",
+        "start": "2026-09-11T20:11:24+00:00"
+      }
+    },
+    "opta_id": "g2650810"
+  }
+}

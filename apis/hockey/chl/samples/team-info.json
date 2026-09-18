@@ -1,0 +1,101 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Team",
+    "_entityId": "c9840a203093f97cae0a9495",
+    "externalId": "107",
+    "name": "KooKoo Kouvola",
+    "shortName": "KOO",
+    "country": {
+      "name": "Finland",
+      "code": "fin"
+    },
+    "info": {
+      "_type": "Corebine.Core.Sport.Team.Info",
+      "properties": [
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Founded",
+          "value": "1965"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Country",
+          "value": "Finland"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Website",
+          "value": "https://www.kookoo.fi",
+          "url": "https://www.kookoo.fi/"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Home Venue",
+          "value": "Kouvolan jäähalli"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "National Titles",
+          "value": ""
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "CHL Titles",
+          "value": ""
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Head Coach",
+          "value": "Jouko Myrrä"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "President/Chairman",
+          "value": "Pulla Peltola"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "CEO",
+          "value": "Sakari Välimaa"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "General Manager",
+          "value": "Antti Tuomenoksa"
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Sports Director",
+          "value": ""
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Marketing Manager",
+          "value": ""
+        },
+        {
+          "_type": "Corebine.Core.Type.Property.String",
+          "name": "Communications Manager",
+          "value": ""
+        }
+      ],
+      "socialLinks": [
+        {
+          "source": "facebook",
+          "url": "https://www.facebook.com/KouvolanKooKoo"
+        },
+        {
+          "source": "instagram",
+          "url": "https://www.instagram.com/kouvolankookoo/"
+        },
+        {
+          "source": "youtube",
+          "url": "https://www.youtube.com/user/kouvolankiekko"
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "includes": []
+}

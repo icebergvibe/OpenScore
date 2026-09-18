@@ -1,0 +1,2902 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_entityId": "9fb849a99c2cbc255c2260e6",
+      "externalId": "0227ffc91eb0dd8ae566407e",
+      "_type": "Corebine.Core.Sport.Series",
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "round": {
+          "order": 1,
+          "name": "Round of 16",
+          "shortName": "R16"
+        }
+      },
+      "events": [
+        {
+          "_entityId": "846dc7c88fe86a18d25eff3e",
+          "externalId": "654ac1ccc45b3db484615cc1",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 1
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "973add0ee7ab1b8c38f4781e",
+              "externalId": "93",
+              "name": "Ilves Tampere",
+              "shortName": "ILV",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "49285797b88ef16234feb4ca",
+              "externalId": "97",
+              "name": "Pinguins Bremerhaven",
+              "shortName": "BRE",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/49285797b88ef16234feb4ca/pinguins-bremerhaven",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "0f7105e5b22fcbfb6c79a6dd",
+              "externalId": "2960",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-11T18:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "7115cd3daca2c6c8c75ed471",
+                "name": "Eisarena Bremerhaven"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "49285797b88ef16234feb4ca",
+                  "externalId": "97",
+                  "name": "Pinguins Bremerhaven",
+                  "shortName": "BRE",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/49285797b88ef16234feb4ca/pinguins-bremerhaven",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "973add0ee7ab1b8c38f4781e",
+                  "externalId": "93",
+                  "name": "Ilves Tampere",
+                  "shortName": "ILV",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/0f7105e5b22fcbfb6c79a6dd/pinguins-bremerhaven-vs-ilves-tampere",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 3
+                }
+              }
+            },
+            {
+              "_entityId": "06169709e9a8be4c81e984ee",
+              "externalId": "2971",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-19T15:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "9c4f3e134da1c0e380910250",
+                "name": "Nokia Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "973add0ee7ab1b8c38f4781e",
+                  "externalId": "93",
+                  "name": "Ilves Tampere",
+                  "shortName": "ILV",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "49285797b88ef16234feb4ca",
+                  "externalId": "97",
+                  "name": "Pinguins Bremerhaven",
+                  "shortName": "BRE",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/49285797b88ef16234feb4ca/pinguins-bremerhaven",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/06169709e9a8be4c81e984ee/ilves-tampere-vs-pinguins-bremerhaven",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 5,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "1e7dcef9a96d306724344bbb",
+          "externalId": "77b7e59407ee3bb8be15ab0a",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 2
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "70002ab8714596f91aa6a514",
+              "externalId": "71",
+              "name": "Kometa Brno",
+              "shortName": "KOM",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/70002ab8714596f91aa6a514/kometa-brno",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "cfdf4169f0c8e8ff93cf24da",
+              "externalId": "35",
+              "name": "Luleå Hockey",
+              "shortName": "LHF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "c149933620bc77c00eb4f877",
+              "externalId": "2958",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-11T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "192a1f4b9a61bd1782a5f66b",
+                "name": "Coop Norrbotten Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "70002ab8714596f91aa6a514",
+                  "externalId": "71",
+                  "name": "Kometa Brno",
+                  "shortName": "KOM",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/70002ab8714596f91aa6a514/kometa-brno",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/c149933620bc77c00eb4f877/lulea-hockey-vs-kometa-brno",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 6,
+                  "away": 1
+                }
+              }
+            },
+            {
+              "_entityId": "d096235b5367428242fb83ed",
+              "externalId": "2968",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-18T17:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "9205d63af8b36fd077b1bba7",
+                "name": "Winning Group Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "70002ab8714596f91aa6a514",
+                  "externalId": "71",
+                  "name": "Kometa Brno",
+                  "shortName": "KOM",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/70002ab8714596f91aa6a514/kometa-brno",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/d096235b5367428242fb83ed/kometa-brno-vs-lulea-hockey",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 5,
+                  "away": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "8de2c97485bb3cffe57e12f4",
+          "externalId": "6de1c3547905f4f138f0a938",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 3
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "8512eed920a9b68c84fbb7cc",
+              "externalId": "4",
+              "name": "Sparta Prague",
+              "shortName": "SPA",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/8512eed920a9b68c84fbb7cc/sparta-prague",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "4472b82fc7441fedc37b82e3",
+              "externalId": "20",
+              "name": "EV Zug",
+              "shortName": "EVZ",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "6dcdd2892fe8183ed3d53852",
+              "externalId": "2965",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-12T18:45:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "fb405c90e3e16e3580f813be",
+                "name": "OYM hall"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 3
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "8512eed920a9b68c84fbb7cc",
+                  "externalId": "4",
+                  "name": "Sparta Prague",
+                  "shortName": "SPA",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/8512eed920a9b68c84fbb7cc/sparta-prague",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/6dcdd2892fe8183ed3d53852/ev-zug-vs-sparta-prague",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 6,
+                  "away": 0
+                }
+              }
+            },
+            {
+              "_entityId": "59cced728c546de62ba44eaf",
+              "externalId": "2967",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-18T17:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "621908d1d0f0dbd72b422256",
+                "name": "Hala Fortuna"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 3
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "8512eed920a9b68c84fbb7cc",
+                  "externalId": "4",
+                  "name": "Sparta Prague",
+                  "shortName": "SPA",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/8512eed920a9b68c84fbb7cc/sparta-prague",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/59cced728c546de62ba44eaf/sparta-prague-vs-ev-zug",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "bdb8a72232453b4fbfa35c6a",
+          "externalId": "eb4c7bdc41c9fe08e63ea409",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 4
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "f2ed6494a199925e30e5061a",
+              "externalId": "29",
+              "name": "Lukko Rauma",
+              "shortName": "LUK",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "e5e5ff0d908f9cc719344e3e",
+              "externalId": "52",
+              "name": "Storhamar Hamar",
+              "shortName": "STO",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "9b53e3878e2932be5f09846a",
+              "externalId": "2963",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-12T17:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "8897a8e8bb083d93d1c8b9f9",
+                "name": "CC Amfi"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 4
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "e5e5ff0d908f9cc719344e3e",
+                  "externalId": "52",
+                  "name": "Storhamar Hamar",
+                  "shortName": "STO",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "f2ed6494a199925e30e5061a",
+                  "externalId": "29",
+                  "name": "Lukko Rauma",
+                  "shortName": "LUK",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/9b53e3878e2932be5f09846a/storhamar-hamar-vs-lukko-rauma",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 3
+                }
+              }
+            },
+            {
+              "_entityId": "17d8105913b0dfbe4b0571c1",
+              "externalId": "2966",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-18T16:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "f0b65870302aea8e85468688",
+                "name": "Kivikylän Areena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 4
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "f2ed6494a199925e30e5061a",
+                  "externalId": "29",
+                  "name": "Lukko Rauma",
+                  "shortName": "LUK",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "e5e5ff0d908f9cc719344e3e",
+                  "externalId": "52",
+                  "name": "Storhamar Hamar",
+                  "shortName": "STO",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/17d8105913b0dfbe4b0571c1/lukko-rauma-vs-storhamar-hamar",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 5,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "0e43bcc115b16e60321c9e19",
+          "externalId": "f22511b589a001d4c160de9d",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 5
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "2d5b2b3d2454b24e20ed42c6",
+              "externalId": "1",
+              "name": "ERC Ingolstadt",
+              "shortName": "ING",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "aa8d051910780a557dc4a37f",
+              "externalId": "13",
+              "name": "Red Bull Salzburg",
+              "shortName": "RBS",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "754a98c889abc3a94810645c",
+              "externalId": "2964",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-12T18:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "a9b6fb1838393c066525ba7c",
+                "name": "SATURN-Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 5
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "2d5b2b3d2454b24e20ed42c6",
+                  "externalId": "1",
+                  "name": "ERC Ingolstadt",
+                  "shortName": "ING",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "aa8d051910780a557dc4a37f",
+                  "externalId": "13",
+                  "name": "Red Bull Salzburg",
+                  "shortName": "RBS",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/754a98c889abc3a94810645c/erc-ingolstadt-vs-red-bull-salzburg",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 6,
+                  "away": 2
+                }
+              }
+            },
+            {
+              "_entityId": "6d780dc72bf8f6754aebf174",
+              "externalId": "2973",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-19T18:15:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "3e0e84b4ca636f7fd0a3443c",
+                "name": "Eisarena Salzburg"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 5
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "aa8d051910780a557dc4a37f",
+                  "externalId": "13",
+                  "name": "Red Bull Salzburg",
+                  "shortName": "RBS",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "2d5b2b3d2454b24e20ed42c6",
+                  "externalId": "1",
+                  "name": "ERC Ingolstadt",
+                  "shortName": "ING",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/6d780dc72bf8f6754aebf174/red-bull-salzburg-vs-erc-ingolstadt",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 4,
+                  "away": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "aabe0e2739161c88e9d259cf",
+          "externalId": "e848919dcd1eccbc2f1cf39c",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 6
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "ba55abe823bed83d7c12e7b3",
+              "externalId": "31",
+              "name": "Frölunda Gothenburg",
+              "shortName": "FHC",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "746a93e451109ca19a9fa485",
+              "externalId": "57",
+              "name": "Grenoble",
+              "shortName": "GRE",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/746a93e451109ca19a9fa485/grenoble",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "ba7357fda5a13e3f116ba87c",
+              "externalId": "2962",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-11T19:15:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "3b5348cca0e1229562c6092f",
+                "name": "Patinoire Polesud"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 6
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "746a93e451109ca19a9fa485",
+                  "externalId": "57",
+                  "name": "Grenoble",
+                  "shortName": "GRE",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/746a93e451109ca19a9fa485/grenoble",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/ba7357fda5a13e3f116ba87c/grenoble-vs-frolunda-gothenburg",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 1,
+                  "away": 3
+                }
+              }
+            },
+            {
+              "_entityId": "bdef327b6fb3bf6484d5e13b",
+              "externalId": "2969",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-18T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "b47638e8de347b2dd38c1e90",
+                "name": "Scandinavium"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 6
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "746a93e451109ca19a9fa485",
+                  "externalId": "57",
+                  "name": "Grenoble",
+                  "shortName": "GRE",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/746a93e451109ca19a9fa485/grenoble",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/bdef327b6fb3bf6484d5e13b/frolunda-gothenburg-vs-grenoble",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 1,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "e6e2b53492d28b329f3c7ae1",
+          "externalId": "ebcb9c5b35496d8d6ab3c74b",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 7
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "d782924e733c817e5af717fd",
+              "externalId": "17",
+              "name": "SC Bern",
+              "shortName": "SCB",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/d782924e733c817e5af717fd/sc-bern",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "199734faffe3b90bf3ecccce",
+              "externalId": "69",
+              "name": "Brynäs IF",
+              "shortName": "BIF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "4137301b8886e4752b31e17f",
+              "externalId": "2959",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-11T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "88ba11bdf53fa062e90e78f2",
+                "name": "Monitor ERP Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 7
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d782924e733c817e5af717fd",
+                  "externalId": "17",
+                  "name": "SC Bern",
+                  "shortName": "SCB",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d782924e733c817e5af717fd/sc-bern",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/4137301b8886e4752b31e17f/brynas-if-vs-sc-bern",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 1,
+                  "away": 2
+                }
+              }
+            },
+            {
+              "_entityId": "04d9eebeb3d2090876e69bec",
+              "externalId": "2970",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-18T18:45:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "ad29a23c3236645ee023813b",
+                "name": "PostFinance Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 7
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d782924e733c817e5af717fd",
+                  "externalId": "17",
+                  "name": "SC Bern",
+                  "shortName": "SCB",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d782924e733c817e5af717fd/sc-bern",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/04d9eebeb3d2090876e69bec/sc-bern-vs-brynas-if",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime/Overtime",
+                "shortName": "F/OT"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "a4e1545d45fdb1f7d134abe0",
+          "externalId": "9d88d6d3fcf19cec6faed70e",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 1,
+              "name": "Round of 16",
+              "shortName": "R16"
+            },
+            "series": {
+              "order": 8
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "d0017b49eaa2232d35e4939e",
+              "externalId": "25",
+              "name": "KalPa Kuopio",
+              "shortName": "KAL",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "b1dfe27dfb8fc9eb6ae5337a",
+              "externalId": "19",
+              "name": "ZSC Lions Zurich",
+              "shortName": "ZSC",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/b1dfe27dfb8fc9eb6ae5337a/zsc-lions-zurich",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "70dbb365d18b243fb8255021",
+              "externalId": "2961",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-11T18:45:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "616bfe124b1aeef2c758df53",
+                "name": "Swiss Life Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 8
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "b1dfe27dfb8fc9eb6ae5337a",
+                  "externalId": "19",
+                  "name": "ZSC Lions Zurich",
+                  "shortName": "ZSC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/b1dfe27dfb8fc9eb6ae5337a/zsc-lions-zurich",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d0017b49eaa2232d35e4939e",
+                  "externalId": "25",
+                  "name": "KalPa Kuopio",
+                  "shortName": "KAL",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/70dbb365d18b243fb8255021/zsc-lions-zurich-vs-kal-pa-kuopio",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 4,
+                  "away": 4
+                }
+              }
+            },
+            {
+              "_entityId": "4d2ad1c25f0310315391c8a1",
+              "externalId": "2972",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-11-19T16:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "5df6579d05164ed9c638ddff",
+                "name": "Olvi Areena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 1,
+                  "name": "Round of 16",
+                  "shortName": "R16"
+                },
+                "series": {
+                  "order": 8
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d0017b49eaa2232d35e4939e",
+                  "externalId": "25",
+                  "name": "KalPa Kuopio",
+                  "shortName": "KAL",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "b1dfe27dfb8fc9eb6ae5337a",
+                  "externalId": "19",
+                  "name": "ZSC Lions Zurich",
+                  "shortName": "ZSC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/b1dfe27dfb8fc9eb6ae5337a/zsc-lions-zurich",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/4d2ad1c25f0310315391c8a1/kal-pa-kuopio-vs-zsc-lions-zurich",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 4,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_entityId": "1161237508725540776e0805",
+      "externalId": "1ac928eacfec430caf54c01a",
+      "_type": "Corebine.Core.Sport.Series",
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "round": {
+          "order": 2,
+          "name": "Quarter-Finals",
+          "shortName": "QF"
+        }
+      },
+      "events": [
+        {
+          "_entityId": "f45ff78a8d201485766cf1ba",
+          "externalId": "005c1fd011f276fe6321bd0f",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 2,
+              "name": "Quarter-Finals",
+              "shortName": "QF"
+            },
+            "series": {
+              "order": 1
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "973add0ee7ab1b8c38f4781e",
+              "externalId": "93",
+              "name": "Ilves Tampere",
+              "shortName": "ILV",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "cfdf4169f0c8e8ff93cf24da",
+              "externalId": "35",
+              "name": "Luleå Hockey",
+              "shortName": "LHF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "76171ad75816e0907e4524d2",
+              "externalId": "2976",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-02T17:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "192a1f4b9a61bd1782a5f66b",
+                "name": "Coop Norrbotten Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "973add0ee7ab1b8c38f4781e",
+                  "externalId": "93",
+                  "name": "Ilves Tampere",
+                  "shortName": "ILV",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/76171ad75816e0907e4524d2/lulea-hockey-vs-ilves-tampere",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 2
+                }
+              }
+            },
+            {
+              "_entityId": "f983d5463abc36d71d2dd971",
+              "externalId": "2980",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-16T16:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "9c4f3e134da1c0e380910250",
+                "name": "Nokia Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "973add0ee7ab1b8c38f4781e",
+                  "externalId": "93",
+                  "name": "Ilves Tampere",
+                  "shortName": "ILV",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/973add0ee7ab1b8c38f4781e/ilves-tampere",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/f983d5463abc36d71d2dd971/ilves-tampere-vs-lulea-hockey",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 0,
+                  "away": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "56d32fbc0036db17f58df6e7",
+          "externalId": "c7ffa7a771e35cfb1f0834d7",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 2,
+              "name": "Quarter-Finals",
+              "shortName": "QF"
+            },
+            "series": {
+              "order": 2
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "4472b82fc7441fedc37b82e3",
+              "externalId": "20",
+              "name": "EV Zug",
+              "shortName": "EVZ",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "f2ed6494a199925e30e5061a",
+              "externalId": "29",
+              "name": "Lukko Rauma",
+              "shortName": "LUK",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "cd8c610240e7121798df260b",
+              "externalId": "2979",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-03T16:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "f0b65870302aea8e85468688",
+                "name": "Kivikylän Areena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "f2ed6494a199925e30e5061a",
+                  "externalId": "29",
+                  "name": "Lukko Rauma",
+                  "shortName": "LUK",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/cd8c610240e7121798df260b/lukko-rauma-vs-ev-zug",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 1
+                }
+              }
+            },
+            {
+              "_entityId": "9fff9eb42ffb73a05229faa7",
+              "externalId": "2983",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-16T18:45:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "fb405c90e3e16e3580f813be",
+                "name": "OYM hall"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "f2ed6494a199925e30e5061a",
+                  "externalId": "29",
+                  "name": "Lukko Rauma",
+                  "shortName": "LUK",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/f2ed6494a199925e30e5061a/lukko-rauma",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/9fff9eb42ffb73a05229faa7/ev-zug-vs-lukko-rauma",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "123f7eb9b2b6389249977ce5",
+          "externalId": "ae52cc2e1fcfc8e8018050ed",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 2,
+              "name": "Quarter-Finals",
+              "shortName": "QF"
+            },
+            "series": {
+              "order": 3
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "2d5b2b3d2454b24e20ed42c6",
+              "externalId": "1",
+              "name": "ERC Ingolstadt",
+              "shortName": "ING",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "ba55abe823bed83d7c12e7b3",
+              "externalId": "31",
+              "name": "Frölunda Gothenburg",
+              "shortName": "FHC",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "e1ad7e13e880fac3cd97055f",
+              "externalId": "2978",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-02T18:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "a9b6fb1838393c066525ba7c",
+                "name": "SATURN-Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 3
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "2d5b2b3d2454b24e20ed42c6",
+                  "externalId": "1",
+                  "name": "ERC Ingolstadt",
+                  "shortName": "ING",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/e1ad7e13e880fac3cd97055f/erc-ingolstadt-vs-frolunda-gothenburg",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 1,
+                  "away": 3
+                }
+              }
+            },
+            {
+              "_entityId": "81599a9ed75bacd3d085a51e",
+              "externalId": "2982",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-16T17:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "b47638e8de347b2dd38c1e90",
+                "name": "Scandinavium"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 3
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "2d5b2b3d2454b24e20ed42c6",
+                  "externalId": "1",
+                  "name": "ERC Ingolstadt",
+                  "shortName": "ING",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/2d5b2b3d2454b24e20ed42c6/erc-ingolstadt",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/81599a9ed75bacd3d085a51e/frolunda-gothenburg-vs-erc-ingolstadt",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "3683f321c38d9f13e45772c3",
+          "externalId": "680b64f663bc1b61dc4a013b",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 2,
+              "name": "Quarter-Finals",
+              "shortName": "QF"
+            },
+            "series": {
+              "order": 4
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "199734faffe3b90bf3ecccce",
+              "externalId": "69",
+              "name": "Brynäs IF",
+              "shortName": "BIF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "d0017b49eaa2232d35e4939e",
+              "externalId": "25",
+              "name": "KalPa Kuopio",
+              "shortName": "KAL",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "f857b63340fa52bed204c465",
+              "externalId": "2977",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-02T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "88ba11bdf53fa062e90e78f2",
+                "name": "Monitor ERP Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 4
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d0017b49eaa2232d35e4939e",
+                  "externalId": "25",
+                  "name": "KalPa Kuopio",
+                  "shortName": "KAL",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/f857b63340fa52bed204c465/brynas-if-vs-kal-pa-kuopio",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 5,
+                  "away": 1
+                }
+              }
+            },
+            {
+              "_entityId": "c4bc9f01bdb4bb20334237a0",
+              "externalId": "2981",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2025-12-16T16:30:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "5df6579d05164ed9c638ddff",
+                "name": "Olvi Areena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 2,
+                  "name": "Quarter-Finals",
+                  "shortName": "QF"
+                },
+                "series": {
+                  "order": 4
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "d0017b49eaa2232d35e4939e",
+                  "externalId": "25",
+                  "name": "KalPa Kuopio",
+                  "shortName": "KAL",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/d0017b49eaa2232d35e4939e/kal-pa-kuopio",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/c4bc9f01bdb4bb20334237a0/kal-pa-kuopio-vs-brynas-if",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_entityId": "c7238814c30519123d455ddb",
+      "externalId": "bf4bcea936d21ef313e34af9",
+      "_type": "Corebine.Core.Sport.Series",
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "round": {
+          "order": 3,
+          "name": "Semi-Finals",
+          "shortName": "SF"
+        }
+      },
+      "events": [
+        {
+          "_entityId": "658fefa831706cfd534285bc",
+          "externalId": "0212f036807c514aae571672",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 3,
+              "name": "Semi-Finals",
+              "shortName": "SF"
+            },
+            "series": {
+              "order": 1
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "cfdf4169f0c8e8ff93cf24da",
+              "externalId": "35",
+              "name": "Luleå Hockey",
+              "shortName": "LHF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "4472b82fc7441fedc37b82e3",
+              "externalId": "20",
+              "name": "EV Zug",
+              "shortName": "EVZ",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "634bb71f7a2c91d4071bf027",
+              "externalId": "2985",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2026-01-13T18:45:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "fb405c90e3e16e3580f813be",
+                "name": "OYM hall"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 3,
+                  "name": "Semi-Finals",
+                  "shortName": "SF"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/634bb71f7a2c91d4071bf027/ev-zug-vs-lulea-hockey",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 3
+                }
+              }
+            },
+            {
+              "_entityId": "dd079c473d183caadc2a8a50",
+              "externalId": "2987",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2026-01-20T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "192a1f4b9a61bd1782a5f66b",
+                "name": "Coop Norrbotten Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 3,
+                  "name": "Semi-Finals",
+                  "shortName": "SF"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "4472b82fc7441fedc37b82e3",
+                  "externalId": "20",
+                  "name": "EV Zug",
+                  "shortName": "EVZ",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/dd079c473d183caadc2a8a50/lulea-hockey-vs-ev-zug",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_entityId": "022eac3b16c7cd7f06f8d862",
+          "externalId": "143f0dca1fa368e35dc5d604",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 3,
+              "name": "Semi-Finals",
+              "shortName": "SF"
+            },
+            "series": {
+              "order": 2
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "ba55abe823bed83d7c12e7b3",
+              "externalId": "31",
+              "name": "Frölunda Gothenburg",
+              "shortName": "FHC",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "199734faffe3b90bf3ecccce",
+              "externalId": "69",
+              "name": "Brynäs IF",
+              "shortName": "BIF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "b7348744bc6de2943f78d1f2",
+              "externalId": "2984",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2026-01-13T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "88ba11bdf53fa062e90e78f2",
+                "name": "Monitor ERP Arena"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 3,
+                  "name": "Semi-Finals",
+                  "shortName": "SF"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/b7348744bc6de2943f78d1f2/brynas-if-vs-frolunda-gothenburg",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 0,
+                  "away": 2
+                }
+              }
+            },
+            {
+              "_entityId": "3c954c8d2126b49826448b38",
+              "externalId": "2986",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2026-01-20T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "2123a7db9fa5545ed7fc15cc",
+                "name": "Frölundaborg"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 2
+                },
+                "round": {
+                  "order": 3,
+                  "name": "Semi-Finals",
+                  "shortName": "SF"
+                },
+                "series": {
+                  "order": 2
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "199734faffe3b90bf3ecccce",
+                  "externalId": "69",
+                  "name": "Brynäs IF",
+                  "shortName": "BIF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/3c954c8d2126b49826448b38/frolunda-gothenburg-vs-brynas-if",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime",
+                "shortName": "F"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 2,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_entityId": "d1f43f4122feda02d8fc2e7b",
+      "externalId": "007b3c52d7f40cd12e631938",
+      "_type": "Corebine.Core.Sport.Series",
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "round": {
+          "order": 4,
+          "name": "Final",
+          "shortName": "Final"
+        }
+      },
+      "events": [
+        {
+          "_entityId": "f380ff52cc124afa4874cb4e",
+          "externalId": "d092eb7abd750cf9e12cef0d",
+          "_type": "Corebine.Core.Sport.Series",
+          "stage": {
+            "_type": "Corebine.Core.Sport.Event.Stage",
+            "round": {
+              "order": 4,
+              "name": "Final",
+              "shortName": "Final"
+            },
+            "series": {
+              "order": 1
+            }
+          },
+          "teams": [
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "cfdf4169f0c8e8ff93cf24da",
+              "externalId": "35",
+              "name": "Luleå Hockey",
+              "shortName": "LHF",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                "isWeb": false
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Team",
+              "_entityId": "ba55abe823bed83d7c12e7b3",
+              "externalId": "31",
+              "name": "Frölunda Gothenburg",
+              "shortName": "FHC",
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "pageEntityId": "1",
+                "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                "isWeb": false
+              }
+            }
+          ],
+          "events": [
+            {
+              "_entityId": "2598d33681bd2c7bf1310768",
+              "externalId": "2865",
+              "_type": "Corebine.Core.Sport.Match",
+              "startDate": "2026-03-03T18:00:00.000Z",
+              "startDateNotConfirmed": false,
+              "status": "finished",
+              "venue": {
+                "_type": "Corebine.Core.Sport.Arena",
+                "_entityId": "b47638e8de347b2dd38c1e90",
+                "name": "Scandinavium"
+              },
+              "stage": {
+                "_type": "Corebine.Core.Sport.Event.Stage",
+                "group": {
+                  "order": 1
+                },
+                "round": {
+                  "order": 4,
+                  "name": "Final",
+                  "shortName": "Final"
+                },
+                "series": {
+                  "order": 1
+                }
+              },
+              "teams": {
+                "home": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "ba55abe823bed83d7c12e7b3",
+                  "externalId": "31",
+                  "name": "Frölunda Gothenburg",
+                  "shortName": "FHC",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+                    "isWeb": false
+                  }
+                },
+                "away": {
+                  "_type": "Corebine.Core.Sport.Team",
+                  "_entityId": "cfdf4169f0c8e8ff93cf24da",
+                  "externalId": "35",
+                  "name": "Luleå Hockey",
+                  "shortName": "LHF",
+                  "link": {
+                    "_type": "Corebine.Core.Type.Link.Internal",
+                    "pageEntityId": "1",
+                    "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+                    "isWeb": false
+                  }
+                }
+              },
+              "link": {
+                "_type": "Corebine.Core.Type.Link.Internal",
+                "url": "/matches/2598d33681bd2c7bf1310768/frolunda-gothenburg-vs-lulea-hockey",
+                "isWeb": false,
+                "pageEntityId": "1"
+              },
+              "state": {
+                "_type": "Corebine.Core.Sport.Event.State",
+                "name": "Fulltime/Overtime",
+                "shortName": "F/OT"
+              },
+              "results": {
+                "_type": "Corebine.Core.Sport.Match.Results",
+                "scores": {
+                  "_type": "Corebine.Core.Sport.Match.Scores",
+                  "home": 3,
+                  "away": 2
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

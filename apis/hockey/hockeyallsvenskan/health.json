@@ -1,0 +1,39 @@
+{
+  "league": "hockeyallsvenskan",
+  "name": "HockeyAllsvenskan",
+  "baseUrl": "https://hockeyallsvenskan.se",
+  "checks": [
+    {
+      "name": "matcher — complete season RSC",
+      "path": "/pages/matcher?_rsc=openscore",
+      "headers": { "RSC": "1" },
+      "format": "text",
+      "note": "Must remain non-empty; typed extraction is covered by provider replay tests."
+    },
+    {
+      "name": "api/game — scheduled",
+      "path": "/api/game?slug=20260918-aik-modo",
+      "keys": [
+        "data[].slug",
+        "data[].season",
+        "data[].scheduledDateTime",
+        "data[].homeStatNetId",
+        "data[].awayStatNetId",
+        "data[].homeTeam.name",
+        "data[].awayTeam.name"
+      ]
+    },
+    {
+      "name": "api/game — completed",
+      "path": "/api/game?slug=20250919-ssk-bik",
+      "sample": "game.new.final.json",
+      "keys": [
+        "data[].homeScore",
+        "data[].awayScore",
+        "data[].homeScoreP1",
+        "data[].decidedIn",
+        "data[].isCompleted"
+      ]
+    }
+  ]
+}

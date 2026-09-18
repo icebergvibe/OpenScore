@@ -1,0 +1,202 @@
+{
+  "league": "serie-a",
+  "name": "Serie A",
+  "baseUrl": "https://api-sdp.legaseriea.it/v1/serie-a/football",
+  "checks": [
+    {
+      "name": "/competitions/{competition}/seasons",
+      "path": "/competitions/serie-a::Football_Competition::ec93b94f74294dc98ab5bcfd67fc0d88/seasons",
+      "sample": "competition-seasons.json",
+      "keys": [
+        "seasons[]"
+      ]
+    },
+    {
+      "name": "/seasons/{season}",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5",
+      "sample": "season.json",
+      "keys": [
+        "season"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matchdays",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matchdays",
+      "sample": "matchdays.json",
+      "keys": [
+        "matchdays[]"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches",
+      "sample": "matches.json",
+      "keys": [
+        "matches[]"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches?matchDayId={matchday} — matchday",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches?matchDayId=serie-a::Football_MatchDay::59bb8da36eca4ccc9296d6296c2d4654",
+      "sample": "matches-matchday.json",
+      "keys": [
+        "matches[].matchId",
+        "matches[].home",
+        "matches[].away",
+        "matches[].status"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches?relevantTeamIds={team}&matchStatus=All — team",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches?relevantTeamIds=serie-a::Football_Team::b7421caff23448c49134fa4f9095ee09&matchStatus=All",
+      "sample": "matches-team.json",
+      "keys": [
+        "matches[]"
+      ]
+    },
+    {
+      "name": "/seasons/multipleSeasonMatches?seasonIds={season}&relevantTeamIds={team}&matchStatus=All",
+      "path": "/seasons/multipleSeasonMatches?seasonIds=serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5&relevantTeamIds=serie-a::Football_Team::b7421caff23448c49134fa4f9095ee09&matchStatus=All",
+      "sample": "multiple-season-matches.json",
+      "keys": [
+        "matches"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/header — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/header",
+      "sample": "match-header.final.json",
+      "keys": [
+        "matchId",
+        "home",
+        "away",
+        "status",
+        "matchDateUtc"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/header — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/header",
+      "sample": "match-header.pre.json",
+      "keys": [
+        "matchId",
+        "status"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/summary — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/summary",
+      "sample": "match-summary.final.json",
+      "keys": [
+        "events",
+        "status",
+        "time"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/summary — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/summary",
+      "sample": "match-summary.pre.json"
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/feed — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/feed",
+      "sample": "match-feed.final.json",
+      "keys": [
+        "events",
+        "pagination"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/feed — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/feed",
+      "sample": "match-feed.pre.json"
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/lineups — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/lineups",
+      "sample": "match-lineups.final.json",
+      "keys": [
+        "home",
+        "away"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/matches/{match}/lineups — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/matches/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/lineups",
+      "sample": "match-lineups.pre.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/matchfacts — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/matchfacts",
+      "sample": "match-matchfacts.final.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/teamstats — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/teamstats",
+      "sample": "match-teamstats.final.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/teamstats — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/teamstats",
+      "sample": "match-teamstats.pre.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/ranking — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/ranking",
+      "sample": "match-ranking.final.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/momentum — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/momentum",
+      "sample": "match-momentum.final.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/advancedMatchEvents — final",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c/advancedMatchEvents",
+      "sample": "match-advancedmatchevents.final.json"
+    },
+    {
+      "name": "/seasons/{season}/match/{match}/matchpreview — pre",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/match/serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3/matchpreview",
+      "sample": "match-matchpreview.pre.json"
+    },
+    {
+      "name": "/seasons/{season}/standings",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/standings",
+      "sample": "standings.json",
+      "keys": [
+        "teams",
+        "competition"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/standings/overall",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/standings/overall",
+      "sample": "standings-overall.json"
+    },
+    {
+      "name": "/teams/{team}/roster",
+      "path": "/teams/serie-a::Football_Team::b7421caff23448c49134fa4f9095ee09/roster",
+      "sample": "team-roster.json",
+      "keys": [
+        "players",
+        "competition"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/stats/players?category=all&orderBy=Goals&direction=desc&page=1&pageNumElement=3",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/stats/players?category=all&orderBy=Goals&direction=desc&page=1&pageNumElement=3",
+      "sample": "stats-players.json",
+      "keys": [
+        "players",
+        "pagination"
+      ]
+    },
+    {
+      "name": "/seasons/{season}/stats/teams?category=all",
+      "path": "/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5/stats/teams?category=all",
+      "sample": "stats-teams.json"
+    }
+  ]
+}

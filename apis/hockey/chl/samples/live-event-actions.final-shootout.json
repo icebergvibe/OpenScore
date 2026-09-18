@@ -1,0 +1,569 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "a0dedd257aff92689a14b8d3",
+    "_modifyDate": "2026-09-03T11:57:58.192Z",
+    "externalId": "2872",
+    "startDate": "2025-08-29T15:30:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "finished",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/a0dedd257aff92689a14b8d3/mountfield-hk-vs-odense-bulldogs",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "results": {
+      "_type": "Corebine.Core.Sport.Match.Results",
+      "periods": [
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "Shootout",
+          "shortName": "SO",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "event-end",
+              "externalId": "event-end",
+              "message": {
+                "title": "Game end",
+                "description": ""
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "Npad6EBGpFU",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/Npad6EBGpFU/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7969",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3900
+              },
+              "message": {
+                "title": "Goal - 3:4. ODE Game Winning Shootout Goal.",
+                "description": "Goal by Joakim Thelin."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "RjS_rqW_no8",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/RjS_rqW_no8/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1272",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Alex Tamáši"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal-penalty",
+              "externalId": "1271",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Scored",
+                "description": "Penalty Shot by Joakim Thelin"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1270",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Sebastian Fakt"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1269",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Oskars Batna"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1268",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Daniel Baastrup Andersen"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1267",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by T.J. Melancon"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1266",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Maksim Popovic"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1265",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Markus Nenonen"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1264",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Jonathan Brinkman Andersen"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1263",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Aleš Jergl"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1262",
+              "teamType": "away",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Kristian Jensen"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "shot-penalty-miss",
+              "externalId": "1261",
+              "teamType": "home",
+              "message": {
+                "title": "Penalty Shot, Missed",
+                "description": "Penalty Shot by Lukáš Radil"
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "Shootout",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "Overtime",
+          "shortName": "OT",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "Overtime End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "timeout",
+              "externalId": "823",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3836
+              },
+              "message": {
+                "title": "Timeout, Odense Bulldogs",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13776",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3836
+              },
+              "message": {
+                "title": "",
+                "description": "MHK Kevin Klíma called for Tripping. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "Overtime Start",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "3rd Period",
+          "shortName": "3rd",
+          "number": 3,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "3rd Period End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7964",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3347
+              },
+              "message": {
+                "title": "Goal - 3:3. ODE Equal Strength.",
+                "description": "Goal by Jonathan Brinkman Andersen assisted by Radim Piroutek and Joakim Thelin."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "MorPnZq0l6Q",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/MorPnZq0l6Q/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7963",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3187
+              },
+              "message": {
+                "title": "Goal - 3:2. ODE Equal Strength.",
+                "description": "Goal by Jonathan Brinkman Andersen assisted by Markus Jensen and Daniel Nielsen."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "EbJ26DR7SNg",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/EbJ26DR7SNg/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13772",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3008
+              },
+              "message": {
+                "title": "",
+                "description": "ODE Martin Larsen called for Slashing. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13771",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3008
+              },
+              "message": {
+                "title": "",
+                "description": "MHK Kevin Klíma called for Slashing. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7960",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2467
+              },
+              "message": {
+                "title": "Goal - 3:1. MHK Equal Strength.",
+                "description": "Goal by Oskars Batna assisted by Connor Bunnaman and David Sýkora."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "nTDOL456_Y0",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/nTDOL456_Y0/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "3rd Period Start",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "2nd Period",
+          "shortName": "2nd",
+          "number": 2,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "2nd Period End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7956",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1586
+              },
+              "message": {
+                "title": "Goal - 2:1. MHK Power Play Goal.",
+                "description": "Goal by Aleš Jergl assisted by T.J. Melancon and Markus Nenonen."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "qoQrO0AFmG4",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/qoQrO0AFmG4/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13762",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1580
+              },
+              "message": {
+                "title": "",
+                "description": "ODE Arvid Bergström called for Holding. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13761",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1399
+              },
+              "message": {
+                "title": "",
+                "description": "MHK Petr Hašek called for Interference. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-start",
+              "externalId": "period-start",
+              "message": {
+                "title": "2nd Period Start",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "1st Period",
+          "shortName": "1st",
+          "number": 1,
+          "category": "Period",
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "period-end",
+              "externalId": "period-end",
+              "message": {
+                "title": "1st Period End",
+                "description": ""
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7955",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1087
+              },
+              "message": {
+                "title": "Goal - 1:1. ODE Equal Strength.",
+                "description": "Goal by Georgs Golovkovs assisted by Kristian Jensen and Arvid Bergström."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "_rhIbRyTlrw",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/_rhIbRyTlrw/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "externalId": "7951",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 501
+              },
+              "message": {
+                "title": "Goal - 1:0. MHK Equal Strength.",
+                "description": "Goal by Alex Tamáši assisted by Patrik Miškář and Lukáš Radil."
+              },
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "rnVyhNyGKyk",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/rnVyhNyGKyk/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "externalId": "13753",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 376
+              },
+              "message": {
+                "title": "",
+                "description": "ODE Maksim Popovic called for Roughing. 2 Minutes."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "externalId": "10752",
+              "teamType": "away",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "message": {
+                "title": "",
+                "description": "Goalie in! ODE Niklas Lundström in."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "externalId": "10751",
+              "teamType": "home",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "message": {
+                "title": "",
+                "description": "Goalie in! MHK Stanislav Škorvánek in."
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "event-start",
+              "externalId": "event-start",
+              "message": {
+                "title": "Game start",
+                "description": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "includes": []
+}

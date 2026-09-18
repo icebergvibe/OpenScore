@@ -1,0 +1,253 @@
+{
+  "league": "shl",
+  "name": "SHL",
+  "baseUrl": "https://www.shl.se/api",
+  "checks": [
+    {
+      "name": "gameday/gameheader",
+      "path": "/gameday/gameheader",
+      "sample": "gameheader.json",
+      "depth": 0,
+      "note": "Object keyed by date"
+    },
+    {
+      "name": "sports-v2/season-series-game-types-filter",
+      "path": "/sports-v2/season-series-game-types-filter?series=shl",
+      "sample": "season-series-game-types-filter.json",
+      "keys": [
+        "season[].uuid",
+        "series[].uuid",
+        "gameType[]",
+        "ssgtUuid"
+      ]
+    },
+    {
+      "name": "sports-v2/game-schedule",
+      "path": "/sports-v2/game-schedule?seasonUuid=ndcf81nlb3&seriesUuid=qQ9-bb0bzEWUk&gameTypeUuid=qQ9-af37Ti40B&gamePlace=all&played=all",
+      "sample": "game-schedule.json",
+      "keys": [
+        "gameInfo[].uuid",
+        "gameInfo[].startDateTime",
+        "teamList[]"
+      ]
+    },
+    {
+      "name": "sports-v2/game-info/{game} — pre",
+      "path": "/sports-v2/game-info/p2qoh7wot5",
+      "sample": "game-info.pre.json",
+      "keys": [
+        "gameInfo.gameUuid",
+        "gameInfo.state",
+        "gameInfo.startDateTime",
+        "homeTeam.uuid",
+        "awayTeam.uuid"
+      ]
+    },
+    {
+      "name": "sports-v2/game-info/{game} — final",
+      "path": "/sports-v2/game-info/bdhvuc5tex",
+      "sample": "game-info.final.json",
+      "keys": [
+        "homeTeam.score",
+        "awayTeam.score",
+        "gameInfo.overtime",
+        "gameInfo.shootout"
+      ]
+    },
+    {
+      "name": "gameday/play-by-play/{game} — final",
+      "path": "/gameday/play-by-play/bdhvuc5tex",
+      "sample": "play-by-play.final.json"
+    },
+    {
+      "name": "gameday/play-by-play/{game} — shootout",
+      "path": "/gameday/play-by-play/zfvdpfi2hk",
+      "sample": "play-by-play.final-shootout.json"
+    },
+    {
+      "name": "gameday/boxscore/{game}",
+      "path": "/gameday/boxscore/bdhvuc5tex",
+      "sample": "boxscore.final.json"
+    },
+    {
+      "name": "gameday/player-stats/{game}",
+      "path": "/gameday/player-stats/bdhvuc5tex",
+      "sample": "player-stats.final.json"
+    },
+    {
+      "name": "gameday/game-overview/{game}",
+      "path": "/gameday/game-overview/bdhvuc5tex",
+      "sample": "game-overview.final.json"
+    },
+    {
+      "name": "gameday/team-stats/{game}",
+      "path": "/gameday/team-stats/bdhvuc5tex",
+      "sample": "team-stats.final.json"
+    },
+    {
+      "name": "gameday/game-info/{game}",
+      "path": "/gameday/game-info/bdhvuc5tex",
+      "sample": "gameday-game-info.final.json"
+    },
+    {
+      "name": "gameday/post-game-data/team-stats/{game}",
+      "path": "/gameday/post-game-data/team-stats/bdhvuc5tex",
+      "sample": "post-game-team-stats.final.json"
+    },
+    {
+      "name": "statistics-v2/league-standings — current",
+      "path": "/statistics-v2/league-standings?ssgtUuid=qa98unlbd6",
+      "sample": "league-standings.empty.json",
+      "note": "Empty until the season opens; compared with the previous season's shape",
+      "depth": 1
+    },
+    {
+      "name": "statistics-v2/league-standings — previous season",
+      "path": "/statistics-v2/league-standings?ssgtUuid=iuzqg7dqk9",
+      "sample": "league-standings.json",
+      "keys": [
+        "leagueStandings[].Rank",
+        "leagueStandings[].Points",
+        "dataColumn[]"
+      ]
+    },
+    {
+      "name": "sports-v2/all-teams/{ssgt}",
+      "path": "/sports-v2/all-teams/qa98unlbd6",
+      "sample": "all-teams.json",
+      "keys": [
+        "[].teamCode",
+        "[].clubName"
+      ]
+    },
+    {
+      "name": "sports-v2/all-sites/{ssgt}",
+      "path": "/sports-v2/all-sites/qa98unlbd6",
+      "sample": "all-sites.json"
+    },
+    {
+      "name": "sports-v2/teams/{team}",
+      "path": "/sports-v2/teams/50e6-50e6DYeWM",
+      "sample": "team.json"
+    },
+    {
+      "name": "sports-v2/athletes/by-team-uuid/{team}",
+      "path": "/sports-v2/athletes/by-team-uuid/50e6-50e6DYeWM",
+      "sample": "athletes-by-team.json"
+    },
+    {
+      "name": "sports-v2/athlete-details/{athlete}",
+      "path": "/sports-v2/athlete-details/acnem5beey",
+      "sample": "athlete-details.json",
+      "keys": [
+        "athleteData.uuid",
+        "athleteData.playerExtIds[]"
+      ]
+    },
+    {
+      "name": "statistics-v2/athlete/profile-page",
+      "path": "/statistics-v2/athlete/profile-page?playerUuid=acnem5beey&masterSiteInstanceId=",
+      "sample": "athlete-profile-page.json",
+      "keys": [
+        "uuid",
+        "fullName"
+      ]
+    },
+    {
+      "name": "statistics-v2/athlete/profile",
+      "path": "/statistics-v2/athlete/profile?ssgtUuid=iuzqg7dqk9&playerUuid=acnem5beey&statisticsSubset=",
+      "sample": "athlete-profile.json",
+      "keys": [
+        "uuid"
+      ]
+    },
+    {
+      "name": "statistics-v2/athlete/playerProfile_gameLog",
+      "path": "/statistics-v2/athlete/playerProfile_gameLog?playerUuid=acnem5beey",
+      "sample": "athlete-game-log.json"
+    },
+    {
+      "name": "statistics-v2/stats-info/players_summary",
+      "path": "/statistics-v2/stats-info/players_summary?ssgtUuid=iuzqg7dqk9&count=5",
+      "sample": "stats-info.players_summary.json",
+      "keys": [
+        "[].dataColumns[]",
+        "[].stats[]"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "statistics-v2/stats-info/goalkeepers_summary",
+      "path": "/statistics-v2/stats-info/goalkeepers_summary?ssgtUuid=iuzqg7dqk9&count=5",
+      "sample": "stats-info.goalkeepers_summary.json",
+      "keys": [
+        "[].stats[]"
+      ],
+      "depth": 1
+    },
+    {
+      "name": "statistics-v2/featured/athlete/leaderboard",
+      "path": "/statistics-v2/featured/athlete/leaderboard?ssgtUuid=iuzqg7dqk9&module=players_summary&count=3",
+      "sample": "leaderboard.json"
+    },
+    {
+      "name": "sports-v2/today-games",
+      "path": "/sports-v2/today-games?seasonSeriesGameType=qa98unlbd6&pageSize=10",
+      "note": "Empty body when no games today"
+    },
+    {
+      "name": "sports-v2/upcoming-games/{team}",
+      "path": "/sports-v2/upcoming-games/50e6-50e6DYeWM?gamePlace=",
+      "sample": "upcoming-games.json",
+      "keys": [
+        "upcomingGames[]"
+      ]
+    },
+    {
+      "name": "sports-v2/upcoming-games?series[]",
+      "path": "/sports-v2/upcoming-games?pageSize=10&series[]=qQ9-bb0bzEWUk",
+      "sample": "upcoming-games-by-series.json",
+      "keys": [
+        "upcomingGames[]"
+      ]
+    },
+    {
+      "name": "sports-v2/played-games/{team}",
+      "path": "/sports-v2/played-games/50e6-50e6DYeWM",
+      "sample": "played-games.json",
+      "keys": [
+        "playedGames[]"
+      ]
+    },
+    {
+      "name": "sports-v2/staffs?teamUuid",
+      "path": "/sports-v2/staffs?teamUuid=50e6-50e6DYeWM",
+      "sample": "staffs.json"
+    },
+    {
+      "name": "statistics-v2/game-center/team-h2h",
+      "path": "/statistics-v2/game-center/team-h2h?ssgtUuid=iuzqg7dqk9&homeTeamUuid=50e6-50e6DYeWM&awayTeamUuid=1ab8-1ab8bfj7N",
+      "sample": "team-h2h.json",
+      "keys": [
+        "homeTeam",
+        "awayTeam",
+        "stats[]"
+      ]
+    },
+    {
+      "name": "statistics-v2/team-page/stats-header",
+      "path": "/statistics-v2/team-page/stats-header?teamUuid=50e6-50e6DYeWM",
+      "sample": "team-stats-header.json"
+    },
+    {
+      "name": "sports-v2/ssgt/{ssgt}/provider",
+      "path": "/sports-v2/ssgt/qa98unlbd6/provider",
+      "format": "text"
+    },
+    {
+      "name": "sports-v2/upcoming-live-games",
+      "path": "/sports-v2/upcoming-live-games",
+      "note": "Bare array, empty outside game days"
+    }
+  ]
+}

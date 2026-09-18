@@ -1,0 +1,3715 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "4f36a358a795d91b2fbb0c9b",
+    "_modifyDate": "2026-09-11T06:25:16.852Z",
+    "externalId": "3012",
+    "startDate": "2026-09-10T15:30:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "finished",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "teams": {
+      "home": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "c9840a203093f97cae0a9495",
+        "externalId": "107",
+        "name": "KooKoo Kouvola",
+        "shortName": "KOO",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+          "isWeb": false
+        },
+        "athletes": [
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "c0add44e7a2094c45b3e5fe9",
+            "externalId": "446173",
+            "firstName": "Roope",
+            "lastName": "Tossavainen",
+            "number": 72,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "c0add44e7a2094c45b3e5fe9",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Roope",
+                "lastName": "Tossavainen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 819,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 5
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "a56f004b8c755a6e1e29e346",
+            "externalId": "446172",
+            "firstName": "Santeri",
+            "lastName": "Sulku",
+            "number": 10,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "a56f004b8c755a6e1e29e346",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Santeri",
+                "lastName": "Sulku"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 890,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "108b8e4e8c52400e670f1443",
+            "externalId": "446164",
+            "firstName": "Verner",
+            "lastName": "Miettinen",
+            "number": 9,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "108b8e4e8c52400e670f1443",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Verner",
+                "lastName": "Miettinen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 820,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 8
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 5
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "da7f534cb78870fb5dffa681",
+            "externalId": "446161",
+            "firstName": "Ossi-Petteri",
+            "lastName": "Jaakola",
+            "number": 15,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "da7f534cb78870fb5dffa681",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Ossi-Petteri",
+                "lastName": "Jaakola"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 880,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "ada1c8dbc756a6a932945d6e",
+            "externalId": "446174",
+            "firstName": "Samuel",
+            "lastName": "Valkeejärvi",
+            "number": 20,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "ada1c8dbc756a6a932945d6e",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Samuel",
+                "lastName": "Valkeejärvi"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 927,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 15
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 5
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "11a809b45ebc978720b3c027",
+            "externalId": "446170",
+            "firstName": "Ville",
+            "lastName": "Puhakka",
+            "number": 77,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "11a809b45ebc978720b3c027",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Ville",
+                "lastName": "Puhakka"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1072,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 5
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "59d3e26aaeace58ecd9f1711",
+            "externalId": "444922",
+            "firstName": "Arttu",
+            "lastName": "Pelli",
+            "number": 3,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "59d3e26aaeace58ecd9f1711",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Arttu",
+                "lastName": "Pelli"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1506,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "d1f948c0dd0d2769f53cc6f6",
+            "externalId": "1744",
+            "firstName": "Vilmos",
+            "lastName": "Galló",
+            "number": 55,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "d1f948c0dd0d2769f53cc6f6",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Vilmos",
+                "lastName": "Galló"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1239,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "5d77008c4beddf26eab5d391",
+            "externalId": "821",
+            "firstName": "Axel",
+            "lastName": "Holmström",
+            "number": 25,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "5d77008c4beddf26eab5d391",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Axel",
+                "lastName": "Holmström"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1147,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 20
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 9
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "a99e821f5f87fff68677ecdd",
+            "externalId": "4667",
+            "firstName": "Jiri",
+            "lastName": "Pärssinen",
+            "number": 7,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "a99e821f5f87fff68677ecdd",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Jiri",
+                "lastName": "Pärssinen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1623,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "479f48873014bb1d780404ef",
+            "externalId": "446169",
+            "firstName": "Aleksi",
+            "lastName": "Pakaslahti",
+            "number": 8,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "479f48873014bb1d780404ef",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Aleksi",
+                "lastName": "Pakaslahti"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1423,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "531136f28db2b5fc7acec730",
+            "externalId": "446163",
+            "firstName": "Veeti",
+            "lastName": "Miettinen",
+            "number": 24,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "531136f28db2b5fc7acec730",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Veeti",
+                "lastName": "Miettinen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1223,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 8
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "98ab69cc910af1e7e2c9ffca",
+            "externalId": "446168",
+            "firstName": "Niklas",
+            "lastName": "Nykyri",
+            "number": 4,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "98ab69cc910af1e7e2c9ffca",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Niklas",
+                "lastName": "Nykyri"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1156,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "95956d88f9d4bf3fe2d90e74",
+            "externalId": "446166",
+            "firstName": "Akseli",
+            "lastName": "Mäkinen",
+            "number": 27,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "95956d88f9d4bf3fe2d90e74",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Akseli",
+                "lastName": "Mäkinen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1073,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 10
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 5
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "aa0254351752170a6cc0aa7d",
+            "externalId": "446195",
+            "firstName": "Niko",
+            "lastName": "Rajala",
+            "number": 11,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "aa0254351752170a6cc0aa7d",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Niko",
+                "lastName": "Rajala"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 984,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "285e375a95f79fb9ceae3911",
+            "externalId": "446165",
+            "firstName": "Manu",
+            "lastName": "Mäkelä",
+            "number": 58,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "285e375a95f79fb9ceae3911",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Manu",
+                "lastName": "Mäkelä"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 920,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "0402ea737a44a7c76bc9512e",
+            "externalId": "446159",
+            "firstName": "Matěj",
+            "lastName": "Bělohlav",
+            "number": 89,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "0402ea737a44a7c76bc9512e",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Matěj",
+                "lastName": "Bělohlav"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 814,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "af5b7eacdec8409691626d7f",
+            "externalId": "446160",
+            "firstName": "Matvey",
+            "lastName": "Butkovskiy",
+            "number": 19,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "af5b7eacdec8409691626d7f",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Matvey",
+                "lastName": "Butkovskiy"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 636,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "5ad4979fe897795a11b68450",
+            "externalId": "446216",
+            "firstName": "Niclas",
+            "lastName": "Westerholm",
+            "number": 35,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "5ad4979fe897795a11b68450",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Niclas",
+                "lastName": "Westerholm"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Goalkeeper",
+              "shortName": "GK",
+              "category": "Goalkeeper",
+              "order": 3
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 0,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Saves",
+                  "shortName": "SV",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals against",
+                  "shortName": "GA",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Number",
+                  "name": "Save Percentage",
+                  "shortName": "SV%",
+                  "value": 0,
+                  "units": "percents"
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "783cc05a8ec84bfa088cba54",
+            "externalId": "4452",
+            "firstName": "Jasper",
+            "lastName": "Patrikainen",
+            "number": 30,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "783cc05a8ec84bfa088cba54",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Jasper",
+                "lastName": "Patrikainen"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Goalkeeper",
+              "shortName": "GK",
+              "category": "Goalkeeper",
+              "order": 3
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 3600,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Saves",
+                  "shortName": "SV",
+                  "value": 31
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals against",
+                  "shortName": "GA",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Number",
+                  "name": "Save Percentage",
+                  "shortName": "SV%",
+                  "value": 88.57,
+                  "units": "percents"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "away": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "11df2073083f06cccbb5132e",
+        "externalId": "55",
+        "name": "HK Nitra",
+        "shortName": "NIT",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+          "isWeb": false
+        },
+        "athletes": [
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "83506071d201df37c5d3ce7c",
+            "externalId": "4019",
+            "firstName": "Michal",
+            "lastName": "Krištof",
+            "number": 13,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "83506071d201df37c5d3ce7c",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Michal",
+                "lastName": "Krištof"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1254,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 7
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 16
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 9
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "3ccaaf357df53dd3d78a58bb",
+            "externalId": "446113",
+            "firstName": "Adrián",
+            "lastName": "Holešinský",
+            "number": 89,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "3ccaaf357df53dd3d78a58bb",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Adrián",
+                "lastName": "Holešinský"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1009,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "a6eec6c21183e460832775b5",
+            "externalId": "446100",
+            "firstName": "Marko",
+            "lastName": "Stacha",
+            "number": 16,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "a6eec6c21183e460832775b5",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Marko",
+                "lastName": "Stacha"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1406,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "b51a5d19397e39ca87763a52",
+            "externalId": "455",
+            "firstName": "Tomáš",
+            "lastName": "Hrnka",
+            "number": 80,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "b51a5d19397e39ca87763a52",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Tomáš",
+                "lastName": "Hrnka"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1066,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 16
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 10
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "29931aa82767ac7ceedd4df5",
+            "externalId": "446114",
+            "firstName": "Jakub",
+            "lastName": "Lacka",
+            "number": 39,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "29931aa82767ac7ceedd4df5",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Jakub",
+                "lastName": "Lacka"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 947,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "5e845301691d697d0ca06069",
+            "externalId": "446106",
+            "firstName": "Ondrej",
+            "lastName": "Molnár",
+            "number": 96,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "5e845301691d697d0ca06069",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Ondrej",
+                "lastName": "Molnár"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 656,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "dfb8af1c5619f9024f00e827",
+            "externalId": "446102",
+            "firstName": "Martin",
+            "lastName": "Vitaloš",
+            "number": 17,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "dfb8af1c5619f9024f00e827",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Martin",
+                "lastName": "Vitaloš"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1223,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "6c52f113670d2b1636f9f457",
+            "externalId": "446104",
+            "firstName": "Matej",
+            "lastName": "Bača",
+            "number": 2,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "6c52f113670d2b1636f9f457",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Matej",
+                "lastName": "Bača"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 554,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "a5347fea53e0721cc7f9c1fc",
+            "externalId": "3904",
+            "firstName": "Matej",
+            "lastName": "Paulovič",
+            "number": 67,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "a5347fea53e0721cc7f9c1fc",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Matej",
+                "lastName": "Paulovič"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1363,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "368962de9a22bc1b3a3a4368",
+            "externalId": "445565",
+            "firstName": "Dmytro",
+            "lastName": "Timashov",
+            "number": 36,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "368962de9a22bc1b3a3a4368",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Dmytro",
+                "lastName": "Timashov"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1155,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "ee1507bab836e34ddd444f1c",
+            "externalId": "1890",
+            "firstName": "Branislav",
+            "lastName": "Mezei",
+            "number": 24,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "ee1507bab836e34ddd444f1c",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Branislav",
+                "lastName": "Mezei"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1151,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "37f7de1311911f7d2e76e0ff",
+            "externalId": "446107",
+            "firstName": "Adam",
+            "lastName": "Kalman",
+            "number": 28,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "37f7de1311911f7d2e76e0ff",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Adam",
+                "lastName": "Kalman"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1117,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "c3557b6652c8acdfec41b846",
+            "externalId": "446103",
+            "firstName": "Zach",
+            "lastName": "Osburn",
+            "number": 44,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "c3557b6652c8acdfec41b846",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Zach",
+                "lastName": "Osburn"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1116,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 2
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 5
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "2cb7b46f7bae133adc4457ce",
+            "externalId": "446111",
+            "firstName": "Robby",
+            "lastName": "Jackson",
+            "number": 91,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "2cb7b46f7bae133adc4457ce",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Robby",
+                "lastName": "Jackson"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1055,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 6
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "49741d3953fe897a6f3d8c1d",
+            "externalId": "445085",
+            "firstName": "Brett David",
+            "lastName": "Pollock",
+            "number": 71,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "49741d3953fe897a6f3d8c1d",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Brett David",
+                "lastName": "Pollock"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1053,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 3
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 18
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 9
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "ffdbd3c69d1dca1a84f2836e",
+            "externalId": "1895",
+            "firstName": "Filip",
+            "lastName": "Bajtek",
+            "number": 21,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "ffdbd3c69d1dca1a84f2836e",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Filip",
+                "lastName": "Bajtek"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 1017,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 4
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "7928728a3c79ba8902f78db6",
+            "externalId": "446108",
+            "firstName": "Oliver",
+            "lastName": "Botka",
+            "number": 23,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "7928728a3c79ba8902f78db6",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Oliver",
+                "lastName": "Botka"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Defenceman",
+              "shortName": "DE",
+              "category": "Defenceman",
+              "order": 2
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 941,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "0f3f6bc85066c5e5dd0ff078",
+            "externalId": "446120",
+            "firstName": "Hugo",
+            "lastName": "Kováč",
+            "number": 9,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "0f3f6bc85066c5e5dd0ff078",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Hugo",
+                "lastName": "Kováč"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 829,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "784e22ba5799e55c54282242",
+            "externalId": "446116",
+            "firstName": "Dário",
+            "lastName": "Lašš",
+            "number": 11,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "784e22ba5799e55c54282242",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Dário",
+                "lastName": "Lašš"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 422,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "08c83087958cea0752a62f33",
+            "externalId": "446117",
+            "firstName": "Samuel",
+            "lastName": "Sisik",
+            "number": 19,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "08c83087958cea0752a62f33",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Samuel",
+                "lastName": "Sisik"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Forward",
+              "shortName": "FW",
+              "category": "Forward",
+              "order": 1
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 66,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals",
+                  "shortName": "G",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Assists",
+                  "shortName": "A",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Penalty Minutes",
+                  "shortName": "PIM",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots",
+                  "shortName": "Sh",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Shots on goal",
+                  "shortName": "S",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Blocked Shots",
+                  "shortName": "BS",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs",
+                  "shortName": "FO",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Faceoffs won",
+                  "shortName": "FOW",
+                  "value": 0
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "016af9cd329a0055ba85e08c",
+            "externalId": "446109",
+            "firstName": "Matej",
+            "lastName": "Marinov",
+            "number": 33,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "016af9cd329a0055ba85e08c",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Matej",
+                "lastName": "Marinov"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Goalkeeper",
+              "shortName": "GK",
+              "category": "Goalkeeper",
+              "order": 3
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 0,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Saves",
+                  "shortName": "SV",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals against",
+                  "shortName": "GA",
+                  "value": 0
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Number",
+                  "name": "Save Percentage",
+                  "shortName": "SV%",
+                  "value": 0,
+                  "units": "percents"
+                }
+              ]
+            }
+          },
+          {
+            "_type": "Corebine.Core.Sport.Player",
+            "_entityId": "1d2ce0f29267f11477e62a65",
+            "externalId": "446110",
+            "firstName": "Shikhabutdin",
+            "lastName": "Gadzhiev",
+            "number": 31,
+            "source": {
+              "_type": "Corebine.Core.Feed.Sport",
+              "feedType": "player",
+              "competition": {
+                "_type": "Corebine.Core.Sport.Competition",
+                "_entityId": "21ec9dad81abe2e0240460d0",
+                "name": "Champions Hockey League"
+              },
+              "person": {
+                "_entityId": "1d2ce0f29267f11477e62a65",
+                "_type": "Corebine.Core.Sport.Player",
+                "firstName": "Shikhabutdin",
+                "lastName": "Gadzhiev"
+              }
+            },
+            "position": {
+              "_type": "Corebine.Core.Sport.Athlete.Position",
+              "name": "Goalkeeper",
+              "shortName": "GK",
+              "category": "Goalkeeper",
+              "order": 3
+            },
+            "stats": {
+              "_type": "Corebine.Core.Sport.Athlete.Stats",
+              "properties": [
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Time on ice",
+                  "shortName": "TOI",
+                  "value": 3600,
+                  "units": "sec"
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Saves",
+                  "shortName": "SV",
+                  "value": 20
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Integer",
+                  "name": "Goals against",
+                  "shortName": "GA",
+                  "value": 1
+                },
+                {
+                  "_type": "Corebine.Core.Type.Property.Number",
+                  "name": "Save Percentage",
+                  "shortName": "SV%",
+                  "value": 95.24,
+                  "units": "percents"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "errors": []
+}

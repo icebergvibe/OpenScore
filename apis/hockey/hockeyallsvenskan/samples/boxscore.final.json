@@ -1,0 +1,1651 @@
+{
+  "dataColumns": [
+    {
+      "name": "NR",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "Player",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "LINE",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "POS",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "G",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "A",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SOG",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SW",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "PIM",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "PPG",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "PPSOG",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "+/-",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "FOW",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "FOL",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "FOPerc",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "TOI",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "Hits",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    }
+  ],
+  "players": {
+    "homeTeamValue": {
+      "492": {
+        "fullName": "Jonas Ahnelöv",
+        "firstName": "Jonas",
+        "lastName": "Ahnelöv",
+        "extIds": [
+          {
+            "extId": 492
+          }
+        ]
+      },
+      "904": {
+        "fullName": "Patrik Zackrisson",
+        "firstName": "Patrik",
+        "lastName": "Zackrisson",
+        "extIds": [
+          {
+            "extId": 904
+          }
+        ]
+      },
+      "1075": {
+        "fullName": "Henrik Eriksson",
+        "firstName": "Henrik",
+        "lastName": "Eriksson",
+        "extIds": [
+          {
+            "extId": 1075
+          }
+        ]
+      },
+      "2106": {
+        "fullName": "Sebastian Dyk",
+        "firstName": "Sebastian",
+        "lastName": "Dyk",
+        "extIds": [
+          {
+            "extId": 2106
+          }
+        ]
+      },
+      "2178": {
+        "fullName": "Filip Windlert",
+        "firstName": "Filip",
+        "lastName": "Windlert",
+        "extIds": [
+          {
+            "extId": 2178
+          }
+        ]
+      },
+      "2395": {
+        "fullName": "Albin Carlson",
+        "firstName": "Albin",
+        "lastName": "Carlson",
+        "extIds": [
+          {
+            "extId": 2395
+          }
+        ]
+      },
+      "2432": {
+        "fullName": "Niklas Arell",
+        "firstName": "Niklas",
+        "lastName": "Arell",
+        "extIds": [
+          {
+            "extId": 2432
+          }
+        ]
+      },
+      "2757": {
+        "fullName": "Daniel Norbe",
+        "firstName": "Daniel",
+        "lastName": "Norbe",
+        "extIds": [
+          {
+            "extId": 2757
+          }
+        ]
+      },
+      "3461": {
+        "fullName": "Måns Lindbäck",
+        "firstName": "Måns",
+        "lastName": "Lindbäck",
+        "extIds": [
+          {
+            "extId": 3461
+          }
+        ]
+      },
+      "3604": {
+        "fullName": "Filip Engarås",
+        "firstName": "Filip",
+        "lastName": "Engarås",
+        "extIds": [
+          {
+            "extId": 3604
+          }
+        ]
+      },
+      "3809": {
+        "fullName": "William Wiå",
+        "firstName": "William",
+        "lastName": "Wiå",
+        "extIds": [
+          {
+            "extId": 3809
+          }
+        ]
+      },
+      "4144": {
+        "fullName": "Hampus Harlestam",
+        "firstName": "Hampus",
+        "lastName": "Harlestam",
+        "extIds": [
+          {
+            "extId": 4144
+          }
+        ]
+      },
+      "4688": {
+        "fullName": "Carter Ashton",
+        "firstName": "Carter",
+        "lastName": "Ashton",
+        "extIds": [
+          {
+            "extId": 4688
+          }
+        ]
+      },
+      "6026": {
+        "fullName": "Elias Lindgren",
+        "firstName": "Elias",
+        "lastName": "Lindgren",
+        "extIds": [
+          {
+            "extId": 6026
+          }
+        ]
+      },
+      "6366": {
+        "fullName": "Wilhelm Hallquisth",
+        "firstName": "Wilhelm",
+        "lastName": "Hallquisth",
+        "extIds": [
+          {
+            "extId": 6366
+          }
+        ]
+      },
+      "6370": {
+        "fullName": "Adam Hesselvall",
+        "firstName": "Adam",
+        "lastName": "Hesselvall",
+        "extIds": [
+          {
+            "extId": 6370
+          }
+        ]
+      },
+      "6786": {
+        "fullName": "Cole Fonstad",
+        "firstName": "Cole",
+        "lastName": "Fonstad",
+        "extIds": [
+          {
+            "extId": 6786
+          }
+        ]
+      },
+      "6787": {
+        "fullName": "Mitch Lewandowski",
+        "firstName": "Mitch",
+        "lastName": "Lewandowski",
+        "extIds": [
+          {
+            "extId": 6787
+          }
+        ]
+      },
+      "6788": {
+        "fullName": "Brett Stapley",
+        "firstName": "Brett",
+        "lastName": "Stapley",
+        "extIds": [
+          {
+            "extId": 6788
+          }
+        ]
+      },
+      "6789": {
+        "fullName": "Karl Sterner",
+        "firstName": "Karl",
+        "lastName": "Sterner",
+        "extIds": [
+          {
+            "extId": 6789
+          }
+        ]
+      }
+    },
+    "awayTeamValue": {
+      "798": {
+        "fullName": "Henrik Björklund",
+        "firstName": "Henrik",
+        "lastName": "Björklund",
+        "extIds": [
+          {
+            "extId": 798
+          }
+        ]
+      },
+      "2592": {
+        "fullName": "Gustaf Franzén",
+        "firstName": "Gustaf",
+        "lastName": "Franzén",
+        "extIds": [
+          {
+            "extId": 2592
+          }
+        ]
+      },
+      "2613": {
+        "fullName": "Kalle Jellvert",
+        "firstName": "Kalle",
+        "lastName": "Jellvert",
+        "extIds": [
+          {
+            "extId": 2613
+          }
+        ]
+      },
+      "2817": {
+        "fullName": "Tobias Sjökvist",
+        "firstName": "Tobias",
+        "lastName": "Sjökvist",
+        "extIds": [
+          {
+            "extId": 2817
+          }
+        ]
+      },
+      "3028": {
+        "fullName": "Gustaf Thorell",
+        "firstName": "Gustaf",
+        "lastName": "Thorell",
+        "extIds": [
+          {
+            "extId": 3028
+          }
+        ]
+      },
+      "3031": {
+        "fullName": "Viktor Lang",
+        "firstName": "Viktor",
+        "lastName": "Lang",
+        "extIds": [
+          {
+            "extId": 3031
+          }
+        ]
+      },
+      "3205": {
+        "fullName": "Oliver Eklind",
+        "firstName": "Oliver",
+        "lastName": "Eklind",
+        "extIds": [
+          {
+            "extId": 3205
+          }
+        ]
+      },
+      "3222": {
+        "fullName": "Alexander Leandersson",
+        "firstName": "Alexander",
+        "lastName": "Leandersson",
+        "extIds": [
+          {
+            "extId": 3222
+          }
+        ]
+      },
+      "3611": {
+        "fullName": "Rikard Olsén",
+        "firstName": "Rikard",
+        "lastName": "Olsén",
+        "extIds": [
+          {
+            "extId": 3611
+          }
+        ]
+      },
+      "4022": {
+        "fullName": "Jonatan Harju",
+        "firstName": "Jonatan",
+        "lastName": "Harju",
+        "extIds": [
+          {
+            "extId": 4022
+          }
+        ]
+      },
+      "4445": {
+        "fullName": "Elias Ekström",
+        "firstName": "Elias",
+        "lastName": "Ekström",
+        "extIds": [
+          {
+            "extId": 4445
+          }
+        ]
+      },
+      "4495": {
+        "fullName": "Åke Stakkestad",
+        "firstName": "Åke",
+        "lastName": "Stakkestad",
+        "extIds": [
+          {
+            "extId": 4495
+          }
+        ]
+      },
+      "4506": {
+        "fullName": "Alexander Ljungkrantz",
+        "firstName": "Alexander",
+        "lastName": "Ljungkrantz",
+        "extIds": [
+          {
+            "extId": 4506
+          }
+        ]
+      },
+      "4802": {
+        "fullName": "Hampus Plato",
+        "firstName": "Hampus",
+        "lastName": "Plato",
+        "extIds": [
+          {
+            "extId": 4802
+          }
+        ]
+      },
+      "5890": {
+        "fullName": "Tim Barkemo",
+        "firstName": "Tim",
+        "lastName": "Barkemo",
+        "extIds": [
+          {
+            "extId": 5890
+          }
+        ]
+      },
+      "6152": {
+        "fullName": "Simen Andre Edvardsen",
+        "firstName": "Simen Andre",
+        "lastName": "Edvardsen",
+        "extIds": [
+          {
+            "extId": 6152
+          }
+        ]
+      },
+      "6456": {
+        "fullName": "Eero Teräväinen",
+        "firstName": "Eero",
+        "lastName": "Teräväinen",
+        "extIds": [
+          {
+            "extId": 6456
+          }
+        ]
+      },
+      "6468": {
+        "fullName": "Jonatan Lundgren",
+        "firstName": "Jonatan",
+        "lastName": "Lundgren",
+        "extIds": [
+          {
+            "extId": 6468
+          }
+        ]
+      },
+      "6469": {
+        "fullName": "Sander Vold Engebråten",
+        "firstName": "Sander",
+        "lastName": "Vold Engebråten",
+        "extIds": [
+          {
+            "extId": 6469
+          }
+        ]
+      },
+      "6668": {
+        "fullName": "Leevi Viitala",
+        "firstName": "Leevi",
+        "lastName": "Viitala",
+        "extIds": [
+          {
+            "extId": 6668
+          }
+        ]
+      }
+    }
+  },
+  "stats": {
+    "homeTeamValue": [
+      {
+        "NR": 9,
+        "POS": "CE",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 0,
+        "+/-": -2,
+        "TOI": "21:03",
+        "Hits": 2,
+        "FOW": 16,
+        "FOL": 7,
+        "FOPerc": 69,
+        "info": {
+          "period": 0,
+          "playerId": 904,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 17,
+        "POS": "RW",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 2,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "17:58",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4688,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 44,
+        "POS": "LD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "21:54",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2432,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 45,
+        "POS": "LW",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 1,
+        "+/-": -1,
+        "TOI": "15:57",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2106,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 48,
+        "POS": "RD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 2,
+        "SOG": 3,
+        "PPSOG": 0,
+        "+/-": -2,
+        "TOI": "20:33",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6366,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 15,
+        "POS": "LD",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "17:16",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2395,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 27,
+        "POS": "RD",
+        "LINE": 2,
+        "G": 0,
+        "A": 1,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": -2,
+        "TOI": "16:49",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2757,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 42,
+        "POS": "LW",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "14:27",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6786,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 67,
+        "POS": "RW",
+        "LINE": 2,
+        "G": 0,
+        "A": 1,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "17:58",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6787,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 77,
+        "POS": "CE",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 2,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "15:19",
+        "Hits": 1,
+        "FOW": 7,
+        "FOL": 4,
+        "FOPerc": 63,
+        "info": {
+          "period": 0,
+          "playerId": 6788,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 5,
+        "POS": "LD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "16:03",
+        "Hits": 2,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 492,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 22,
+        "POS": "RD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "12:20",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6026,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 28,
+        "POS": "RW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "08:40",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6370,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 33,
+        "POS": "LW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "13:50",
+        "Hits": 2,
+        "FOW": 0,
+        "FOL": 1,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3461,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 71,
+        "POS": "CE",
+        "LINE": 3,
+        "G": 1,
+        "A": 0,
+        "PPG": 1,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 1,
+        "+/-": -1,
+        "TOI": "09:34",
+        "Hits": 1,
+        "FOW": 2,
+        "FOL": 2,
+        "FOPerc": 50,
+        "info": {
+          "period": 0,
+          "playerId": 6789,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 8,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "12:37",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3809,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 13,
+        "POS": "LW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": -1,
+        "TOI": "13:06",
+        "Hits": 0,
+        "FOW": 1,
+        "FOL": 1,
+        "FOPerc": 50,
+        "info": {
+          "period": 0,
+          "playerId": 1075,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 16,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "04:16",
+        "Hits": 0,
+        "FOW": 1,
+        "FOL": 0,
+        "FOPerc": 100,
+        "info": {
+          "period": 0,
+          "playerId": 3604,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 19,
+        "POS": "CE",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 2,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": -2,
+        "TOI": "14:51",
+        "Hits": 0,
+        "FOW": 6,
+        "FOL": 8,
+        "FOPerc": 42,
+        "info": {
+          "period": 0,
+          "playerId": 4144,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 21,
+        "POS": "RD",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "09:51",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2178,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      }
+    ],
+    "awayTeamValue": [
+      {
+        "NR": 4,
+        "POS": "LD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 1,
+        "TOI": "24:31",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3222,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 12,
+        "POS": "CE",
+        "LINE": 1,
+        "G": 0,
+        "A": 1,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 1,
+        "+/-": 0,
+        "TOI": "16:43",
+        "Hits": 0,
+        "FOW": 4,
+        "FOL": 10,
+        "FOPerc": 28,
+        "info": {
+          "period": 0,
+          "playerId": 3028,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 14,
+        "POS": "RW",
+        "LINE": 1,
+        "G": 1,
+        "A": 1,
+        "PPG": 0,
+        "SW": 3,
+        "PIM": 0,
+        "SOG": 6,
+        "PPSOG": 1,
+        "+/-": 1,
+        "TOI": "20:22",
+        "Hits": 0,
+        "FOW": 1,
+        "FOL": 2,
+        "FOPerc": 33,
+        "info": {
+          "period": 0,
+          "playerId": 798,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 44,
+        "POS": "LW",
+        "LINE": 1,
+        "G": 0,
+        "A": 1,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": 1,
+        "TOI": "16:53",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4022,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 91,
+        "POS": "RD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "22:41",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 5890,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 9,
+        "POS": "LD",
+        "LINE": 2,
+        "G": 1,
+        "A": 1,
+        "PPG": 1,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 2,
+        "+/-": 2,
+        "TOI": "15:23",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6456,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 17,
+        "POS": "RW",
+        "LINE": 2,
+        "G": 1,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 2,
+        "TOI": "17:49",
+        "Hits": 2,
+        "FOW": 3,
+        "FOL": 0,
+        "FOPerc": 100,
+        "info": {
+          "period": 0,
+          "playerId": 4495,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 19,
+        "POS": "LW",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 2,
+        "TOI": "14:45",
+        "Hits": 0,
+        "FOW": 1,
+        "FOL": 1,
+        "FOPerc": 50,
+        "info": {
+          "period": 0,
+          "playerId": 6152,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 73,
+        "POS": "CE",
+        "LINE": 2,
+        "G": 0,
+        "A": 1,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 2,
+        "+/-": 2,
+        "TOI": "15:47",
+        "Hits": 0,
+        "FOW": 6,
+        "FOL": 5,
+        "FOPerc": 54,
+        "info": {
+          "period": 0,
+          "playerId": 3205,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 90,
+        "POS": "RD",
+        "LINE": 2,
+        "G": 1,
+        "A": 1,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 2,
+        "TOI": "17:21",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3611,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 5,
+        "POS": "RD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 1,
+        "TOI": "13:21",
+        "Hits": 1,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6468,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 7,
+        "POS": "LD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "12:56",
+        "Hits": 2,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6469,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 13,
+        "POS": "LW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 1,
+        "+/-": 0,
+        "TOI": "15:56",
+        "Hits": 2,
+        "FOW": 0,
+        "FOL": 1,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4802,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 21,
+        "POS": "RW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "14:45",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4445,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 40,
+        "POS": "CE",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "+/-": 1,
+        "TOI": "13:41",
+        "Hits": 0,
+        "FOW": 4,
+        "FOL": 6,
+        "FOPerc": 40,
+        "info": {
+          "period": 0,
+          "playerId": 2613,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 10,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "12:45",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4506,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 15,
+        "POS": "CE",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "10:42",
+        "Hits": 1,
+        "FOW": 4,
+        "FOL": 8,
+        "FOPerc": 33,
+        "info": {
+          "period": 0,
+          "playerId": 2592,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 22,
+        "POS": "RD",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "07:15",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3031,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 27,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "07:00",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2817,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 78,
+        "POS": "LW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "+/-": 0,
+        "TOI": "08:47",
+        "Hits": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "FOPerc": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6668,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      }
+    ]
+  },
+  "provider": "statnet",
+  "gkStats": {
+    "homeTeamValue": [
+      {
+        "NR": 39,
+        "POS": "GK",
+        "LINE": 1,
+        "GA": 3,
+        "SOGA": 29,
+        "SPGA": 12,
+        "SVS": 26,
+        "SVS%": "0.896551724137931",
+        "info": {
+          "period": 0,
+          "playerId": 4343,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      },
+      {
+        "NR": 73,
+        "POS": "GK",
+        "LINE": 2,
+        "GA": 0,
+        "SOGA": 0,
+        "SPGA": 0,
+        "SVS": 0,
+        "SVS%": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6255,
+          "teamId": "SSK",
+          "team": "home"
+        }
+      }
+    ],
+    "awayTeamValue": [
+      {
+        "NR": 35,
+        "POS": "GK",
+        "LINE": 1,
+        "GA": 1,
+        "SOGA": 22,
+        "SPGA": 8,
+        "SVS": 21,
+        "SVS%": "0.95454545454545459",
+        "info": {
+          "period": 0,
+          "playerId": 2848,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      },
+      {
+        "NR": 39,
+        "POS": "GK",
+        "LINE": 2,
+        "GA": 0,
+        "SOGA": 0,
+        "SPGA": 0,
+        "SVS": 0,
+        "SVS%": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6777,
+          "teamId": "BIK",
+          "team": "away"
+        }
+      }
+    ]
+  },
+  "gkDataColumns": [
+    {
+      "name": "POS",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "LINE",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "NR",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "Player",
+      "type": "string",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "GA",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SOGA",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SPGA",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SVS",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    },
+    {
+      "name": "SVS%",
+      "type": "integer",
+      "highlighted": false,
+      "group": ""
+    }
+  ],
+  "goalkeepers": {
+    "homeTeamValue": {
+      "4343": {
+        "fullName": "Oliver Håkanson",
+        "firstName": "Oliver",
+        "lastName": "Håkanson",
+        "extIds": [
+          {
+            "extId": 4343
+          }
+        ]
+      },
+      "6255": {
+        "fullName": "Love Härenstam",
+        "firstName": "Love",
+        "lastName": "Härenstam",
+        "extIds": [
+          {
+            "extId": 6255
+          }
+        ]
+      }
+    },
+    "awayTeamValue": {
+      "2848": {
+        "fullName": "Lars Volden",
+        "firstName": "Lars",
+        "lastName": "Volden",
+        "extIds": [
+          {
+            "extId": 2848
+          }
+        ]
+      },
+      "6777": {
+        "fullName": "Trym Gran",
+        "firstName": "Trym",
+        "lastName": "Gran",
+        "extIds": [
+          {
+            "extId": 6777
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "matchId": "serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c",
+  "status": "LIVE",
+  "providerStatus": null,
+  "phase": "END_SECOND_HALF",
+  "events": null,
+  "scheduleStatus": "UNKNOWN",
+  "stadium": {
+    "stadiumId": "serie-a::Football_Stadium::bb77ff0172f24bd2845905765829743c",
+    "stadiumLabel": null,
+    "stadiumName": "Friuli/Bluenergy stadium",
+    "mapsGeoCodeLatitude": "",
+    "mapsGeoCodeLongitude": "",
+    "images": {
+      "stadiumImage": "stadiums/bb77ff0172f24bd2845905765829743c.webp"
+    }
+  },
+  "location": {
+    "locationLabel": null,
+    "cityName": "Udine"
+  },
+  "referees": [
+    {
+      "refereeId": "serie-a::Football_Referee::4ca6048382164e95980c86da6a2107de",
+      "roleLabel": "Referee",
+      "role": "Referee",
+      "section": "Monza",
+      "mediaFirstName": "Paride",
+      "mediaLastName": "Tremolada",
+      "shortName": "Paride Tremolada",
+      "displayName": "Tremolada",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:796"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::63ffd7a5de9e472db1b648ed00226049",
+      "roleLabel": "Assistant Referee 1",
+      "role": "Assistant Referee 1",
+      "section": "Rovigo",
+      "mediaFirstName": "Luigi",
+      "mediaLastName": "Rossi",
+      "shortName": "Luigi Rossi",
+      "displayName": "L. Rossi",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:580"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::2d9387d13e75495d8ebfa3a9809443f9",
+      "roleLabel": "Assistant Referee 2",
+      "role": "Assistant Referee 2",
+      "section": "Termoli",
+      "mediaFirstName": "Giacomo",
+      "mediaLastName": "Monaco",
+      "shortName": "Giacomo Monaco",
+      "displayName": "G. Monaco",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:403"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::f3c223736b42424ba7617ea30f01e84d",
+      "roleLabel": "Fourth Official",
+      "role": "Fourth Official",
+      "section": "Napoli",
+      "mediaFirstName": "Fabio",
+      "mediaLastName": "Maresca",
+      "shortName": "Fabio Maresca",
+      "displayName": "F. Maresca",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:292"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::5ef45329084f49ca9685b5a194d5a8db",
+      "roleLabel": "VAR",
+      "role": "VAR",
+      "section": "Lecco",
+      "mediaFirstName": "Lorenzo",
+      "mediaLastName": "Maggioni",
+      "shortName": "Lorenzo Maggioni",
+      "displayName": "Maggioni",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:530"
+    },
+    {
+      "refereeId": "serie-a::Football_Referee::5ce1762bbdd0406eb6fad19d5ab33a0b",
+      "roleLabel": "Assistant VAR Official",
+      "role": "Assistant VAR Official",
+      "section": "Enna",
+      "mediaFirstName": "Daniele",
+      "mediaLastName": "Rutella",
+      "shortName": "Daniele Rutella",
+      "displayName": "Rutella",
+      "nationality": "",
+      "nationalityIsoCode": null,
+      "providerId": "kama:Referee:192"
+    }
+  ],
+  "enviroment": {
+    "airHumidity": null,
+    "airPressure": null,
+    "weatherDescription": null,
+    "temperature": null,
+    "precipitation": null,
+    "pitchErosion": null,
+    "roof": null,
+    "floodlight": null,
+    "numberOfSpectators": null,
+    "stadiumCapacity": null,
+    "soldOut": false,
+    "country": "1"
+  },
+  "apiCallRequestTime": "2026-09-11T17:18:02.5715141+00:00"
+}

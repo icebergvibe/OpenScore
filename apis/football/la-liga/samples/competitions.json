@@ -1,0 +1,274 @@
+{
+  "competitions": [
+    {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "main": true,
+      "opta_id": "23",
+      "lde_id": 5
+    },
+    {
+      "id": 2,
+      "name": "LALIGA HYPERMOTION",
+      "slug": "segunda-division",
+      "main": true,
+      "opta_id": "102",
+      "lde_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Copa del Rey",
+      "slug": "copa-del-rey",
+      "main": false,
+      "opta_id": "331",
+      "lde_id": 6
+    },
+    {
+      "id": 4,
+      "name": "UEFA Champions League",
+      "slug": "champions-league",
+      "main": false,
+      "opta_id": "5",
+      "lde_id": 9
+    },
+    {
+      "id": 5,
+      "name": "UEFA Europa League",
+      "slug": "europa-league",
+      "main": false,
+      "opta_id": "6",
+      "lde_id": 10
+    },
+    {
+      "id": 6,
+      "name": "Clasificación Mundial 2014",
+      "slug": "clasificacion-mundial-2014",
+      "main": false,
+      "lde_id": 76
+    },
+    {
+      "id": 7,
+      "name": "Amistosos Selección",
+      "slug": "amistosos-seleccion",
+      "main": false,
+      "lde_id": 77
+    },
+    {
+      "id": 8,
+      "name": "Amistosos",
+      "slug": "amistosos",
+      "main": false,
+      "lde_id": 78
+    },
+    {
+      "id": 9,
+      "name": "Events",
+      "slug": "eventos",
+      "main": false
+    },
+    {
+      "id": 10,
+      "name": "Mundial FIFA",
+      "slug": "mundial-fifa",
+      "main": false,
+      "opta_id": "4",
+      "lde_id": 58
+    },
+    {
+      "id": 11,
+      "name": "Supercopa de España",
+      "slug": "supercopa-de-espana",
+      "main": false,
+      "opta_id": "168",
+      "lde_id": 3
+    },
+    {
+      "id": 12,
+      "name": "Clasificación Eurocopa Francia 2016",
+      "slug": "clasificacion-eurocopa-francia-2016",
+      "main": false
+    },
+    {
+      "id": 13,
+      "name": "Copa Mundial de Clubes",
+      "slug": "copa-mundial-de-clubes",
+      "main": false,
+      "opta_id": "335",
+      "lde_id": 7
+    },
+    {
+      "id": 14,
+      "name": "Supercopa de Europa",
+      "slug": "supercopa-de-europa",
+      "main": false,
+      "opta_id": "174",
+      "lde_id": 4
+    },
+    {
+      "id": 15,
+      "name": "LIGA FEMENINA",
+      "slug": "primera-division-femenina",
+      "main": true,
+      "opta_id": "903",
+      "lde_id": 11
+    },
+    {
+      "id": 16,
+      "name": "Copa de la Reina",
+      "slug": "copa-de-la-reina",
+      "main": false,
+      "opta_id": "966",
+      "lde_id": 2
+    },
+    {
+      "id": 17,
+      "name": "UEFA Women's Champions League",
+      "slug": "uefa-womens-champions-league",
+      "main": false,
+      "opta_id": "336",
+      "lde_id": 8
+    },
+    {
+      "id": 18,
+      "name": "Eventos internos",
+      "slug": "eventos-internos",
+      "main": false
+    },
+    {
+      "id": 19,
+      "name": "UEFA Euro 2024",
+      "slug": "uefa-eurocopa",
+      "main": false,
+      "opta_id": "3",
+      "lde_id": 79
+    },
+    {
+      "id": 20,
+      "name": "Primera RFEF",
+      "slug": "segunda-division-b",
+      "main": true,
+      "opta_id": "542",
+      "lde_id": 54
+    },
+    {
+      "id": 21,
+      "name": "Clasificación Mundial Rusia 2018",
+      "slug": "clasificacion-mundial-rusia-2018",
+      "main": false
+    },
+    {
+      "id": 22,
+      "name": "LALIGA Genuine Moeve",
+      "slug": "laliga-genuine",
+      "main": false
+    },
+    {
+      "id": 23,
+      "name": "Women's Second Division",
+      "slug": "segunda-division-femenina",
+      "main": true,
+      "lde_id": 67
+    },
+    {
+      "id": 25,
+      "name": "UEFA Nations League",
+      "slug": "uefa-nations-league",
+      "main": false,
+      "lde_id": 68
+    },
+    {
+      "id": 26,
+      "name": "Clasificación UEFA EURO 2020",
+      "slug": "clasificacion-uefa-euro-2020",
+      "main": false
+    },
+    {
+      "id": 27,
+      "name": "LALIGA FC FUTURES",
+      "slug": "laliga-promises",
+      "main": false
+    },
+    {
+      "id": 28,
+      "name": "Women's Premier League",
+      "slug": "primera-nacional-femenina",
+      "main": true
+    },
+    {
+      "id": 29,
+      "name": "Supercopa de España Femenina",
+      "slug": "supercopa-de-espana-femenina",
+      "main": false,
+      "opta_id": "1060",
+      "lde_id": 55
+    },
+    {
+      "id": 30,
+      "name": "Premier League",
+      "slug": "english-premier-league",
+      "main": true,
+      "opta_id": "8",
+      "lde_id": 34
+    },
+    {
+      "id": 31,
+      "name": "Serie A",
+      "slug": "italian-serie-a",
+      "main": true,
+      "opta_id": "21",
+      "lde_id": 37
+    },
+    {
+      "id": 32,
+      "name": "Bundesliga",
+      "slug": "german-bundesliga",
+      "main": true,
+      "opta_id": "22",
+      "lde_id": 29
+    },
+    {
+      "id": 33,
+      "name": "Ligue 1",
+      "slug": "french-ligue-1",
+      "main": true,
+      "opta_id": "24",
+      "lde_id": 43
+    },
+    {
+      "id": 34,
+      "name": "UEFA Europa Conference League",
+      "slug": "europa-conference-league",
+      "main": false,
+      "opta_id": "1125",
+      "lde_id": 82
+    },
+    {
+      "id": 35,
+      "name": "eLaLiga Santander",
+      "slug": "elaliga-santander",
+      "main": true
+    },
+    {
+      "id": 36,
+      "name": "Primera Chile",
+      "slug": "primera-chile",
+      "main": true,
+      "opta_id": "370"
+    },
+    {
+      "id": 37,
+      "name": "All",
+      "slug": "todas",
+      "main": false
+    },
+    {
+      "id": 38,
+      "name": "Mundial de Clubes FIFA",
+      "slug": "mundial-de-clubes-fifa",
+      "main": false,
+      "opta_id": "1277",
+      "lde_id": 161
+    }
+  ]
+}

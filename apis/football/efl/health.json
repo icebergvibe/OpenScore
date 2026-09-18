@@ -1,0 +1,242 @@
+{
+  "league": "efl",
+  "name": "EFL — Championship and Carabao Cup (Gamechanger multi-club-matches v2 + Firestore live-feed)",
+  "baseUrl": "https://multi-club-matches.webapi.gc.eflservices.co.uk/v2",
+  "minDelayMs": 1000,
+  "checks": [
+    {
+      "name": "competitions",
+      "path": "/competitions?includeLiveMatchCount=true",
+      "sample": "competitions.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.competitionCode",
+        "data[].attributes.liveMatchCount",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "matches — date (cup, final)",
+      "path": "/matches?from=2026-09-17%2000:00:00Z&to=2026-09-17%2023:59:59Z&competitionID=2&seasonID=2026&page.size=100",
+      "sample": "matches-date.final.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.kickOffDateUTC",
+        "data[].attributes.matchPeriod",
+        "data[].attributes.homeTeam.score",
+        "data[].attributes.resultType",
+        "data[].attributes.competitionID",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "matches — date (today, Championship + cup)",
+      "path": "/matches?from={today}%2000:00:00Z&to={today}%2023:59:59Z&competitionID=10,2&seasonID=2026&page.size=100",
+      "status": [200, 404],
+      "note": "A day without a match answers 404 \"No matches found\" — documented, not drift"
+    },
+    {
+      "name": "matches — season (cup, all pages in one)",
+      "path": "/matches?competitionID=2&seasonID=2026&page.size=600",
+      "sample": "matches-season-cup.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.homeTeam.penaltyScore",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "matches — pagination links",
+      "path": "/matches?competitionID=10&seasonID=2026&page.size=10&page.number=2",
+      "sample": "matches-season-page.json",
+      "keys": [
+        "links.first",
+        "links.next",
+        "links.last",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "matches — team",
+      "path": "/matches?seasonID=2026&teamID=t109&page.size=100",
+      "sample": "matches-team.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.competitionID"
+      ]
+    },
+    {
+      "name": "matches/firstlast",
+      "path": "/matches/firstlast?seasonID=2026",
+      "sample": "matches-firstlast.json",
+      "keys": [
+        "data[].attributes.kickOffUTC"
+      ]
+    },
+    {
+      "name": "matches/{id} — final",
+      "path": "/matches/g2685170",
+      "sample": "match.final.json",
+      "depth": 4,
+      "keys": [
+        "data.attributes.period",
+        "data.attributes.homeTeamID",
+        "data.attributes.matchDetails.matchTime",
+        "data.attributes.matchDetails.resultType",
+        "data.attributes.matchTeams[].score",
+        "data.attributes.matchTeams[].halfScore",
+        "data.attributes.matchTeams[].players.Start",
+        "data.attributes.matchTeams[].events.goals",
+        "data.attributes.matchTeams[].events.bookings",
+        "data.attributes.matchTeams[].events.subs"
+      ]
+    },
+    {
+      "name": "matches/{id} — shoot-out",
+      "path": "/matches/g2685182",
+      "sample": "match.final.shootout.json",
+      "depth": 4,
+      "keys": [
+        "data.attributes.matchTeams[].penaltyScore",
+        "data.attributes.matchTeams[].events.shootout"
+      ]
+    },
+    {
+      "name": "matches/{id} — extra time",
+      "path": "/matches/g2634379",
+      "sample": "match.final.extra-time.json",
+      "depth": 4,
+      "keys": [
+        "data.attributes.matchTeams[].ninetyScore",
+        "data.attributes.matchTeams[].extraScore"
+      ]
+    },
+    {
+      "name": "matches/{id} — play-off final (four matchTeams)",
+      "path": "/matches/g2634991",
+      "sample": "match.final.playoff-final.json",
+      "depth": 3,
+      "keys": [
+        "data.attributes.homeTeamID",
+        "data.attributes.awayTeamID",
+        "data.attributes.matchTeams[].teamID"
+      ]
+    },
+    {
+      "name": "matches/{id} — pre-match",
+      "path": "/matches/g2647335",
+      "sample": "match.pre.json",
+      "depth": 3,
+      "note": "Sample captured pre-match; once played the live response gains matchDetails/players and the shape comparison stays satisfied",
+      "keys": [
+        "data.attributes.period",
+        "data.attributes.kickOffUTC",
+        "data.attributes.matchTeams[].team.teamName"
+      ]
+    },
+    {
+      "name": "matches/{id} — unknown id",
+      "path": "/matches/g1",
+      "status": [404],
+      "sample": "match.404.json",
+      "keys": [
+        "errors[].status"
+      ]
+    },
+    {
+      "name": "stats/match/{id}",
+      "path": "/stats/match/g2685170",
+      "sample": "stats-match.final.json",
+      "keys": [
+        "data[].attributes.teamID",
+        "data[].attributes.possession",
+        "data[].attributes.shots"
+      ]
+    },
+    {
+      "name": "league-tables — Championship",
+      "path": "/league-tables?competitionID=10&seasonID=2026",
+      "sample": "league-tables.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.position",
+        "data[].attributes.points",
+        "data[].attributes.played",
+        "data[].attributes.form",
+        "meta.snapshotDate"
+      ]
+    },
+    {
+      "name": "league-tables — cup has none",
+      "path": "/league-tables?competitionID=2&seasonID=2026",
+      "status": [404],
+      "sample": "league-tables.404.json"
+    },
+    {
+      "name": "teams — Championship",
+      "path": "/teams?competitionID=10&seasonID=2026",
+      "sample": "teams.json",
+      "keys": [
+        "data[].id",
+        "data[].attributes.teams.teamName",
+        "data[].attributes.teams.crestURL",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "teams — Carabao Cup",
+      "path": "/teams?competitionID=2&seasonID=2026",
+      "sample": "teams-cup.json",
+      "keys": [
+        "data[].id",
+        "meta.totalCount"
+      ]
+    },
+    {
+      "name": "stats/teams/{season}",
+      "path": "/stats/teams/2026/?competitionID=10",
+      "sample": "stats-teams.json",
+      "keys": [
+        "data[].attributes.goals[].value",
+        "data[].attributes.goals[].team.teamID"
+      ]
+    },
+    {
+      "name": "stats/players/{season}",
+      "path": "/stats/players/2026/?competitionID=10&page.size=3&page.number=1",
+      "sample": "stats-players.json",
+      "keys": [
+        "data[].attributes.goals[].value",
+        "data[].attributes.goals[].player.lastName",
+        "meta.statPageCount"
+      ]
+    },
+    {
+      "name": "broadcasters",
+      "path": "/broadcasters?from={today}&to={today+7}&seasonId=2026&competitionID=10&includeBroadcasters=true&page.size=60",
+      "sample": "broadcasters.json",
+      "status": [200, 404],
+      "note": "Broadcaster names are probably resolved per caller country; an empty week may answer 404"
+    },
+    {
+      "name": "firestore live-feed — document",
+      "url": "https://firestore.googleapis.com/v1/projects/eflcom/databases/(default)/documents/live-feed/g2685170_FullTime",
+      "sample": "firestore-live-feed.doc.json",
+      "keys": [
+        "fields.matchID.stringValue",
+        "fields.eventType.stringValue",
+        "fields.eventTime.integerValue",
+        "fields.homeTeam.mapValue"
+      ]
+    },
+    {
+      "name": "firestore live-feed — list (key-less read)",
+      "url": "https://firestore.googleapis.com/v1/projects/eflcom/databases/(default)/documents/live-feed?pageSize=2",
+      "sample": "firestore-live-feed.list.json",
+      "keys": [
+        "documents[].name",
+        "documents[].fields.eventType"
+      ]
+    }
+  ]
+}

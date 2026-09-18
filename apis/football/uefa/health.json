@@ -1,0 +1,326 @@
+{
+  "league": "ucl",
+  "name": "UEFA club competitions (Champions League / Europa League / Conference League)",
+  "baseUrl": "https://match.uefa.com/v5",
+  "checks": [
+    {
+      "name": "competitions?competitionIds=1,14,2019",
+      "url": "https://comp.uefa.com/v2/competitions?competitionIds=1,14,2019",
+      "sample": "competitions.json",
+      "keys": [
+        "[].id",
+        "[].code",
+        "[].metaData.name"
+      ]
+    },
+    {
+      "name": "matches — UCL day (finished)",
+      "path": "/matches?competitionId=1&fromDate=2026-09-08&toDate=2026-09-08&limit=50&offset=0&order=ASC",
+      "sample": "matches.day.json",
+      "keys": [
+        "[].id",
+        "[].status",
+        "[].kickOffTime.dateTime",
+        "[].homeTeam.id",
+        "[].awayTeam.id",
+        "[].score.total",
+        "[].round.metaData.name"
+      ]
+    },
+    {
+      "name": "matches — UEL day",
+      "path": "/matches?competitionId=14&fromDate=2026-09-16&toDate=2026-09-16&limit=50&offset=0&order=ASC",
+      "sample": "matches.day-pre.json",
+      "keys": [
+        "[].id",
+        "[].status"
+      ],
+      "note": "captured before kick-off; the shape gains score/winner once played"
+    },
+    {
+      "name": "matches — UECL day",
+      "path": "/matches?competitionId=2019&fromDate=2026-10-15&toDate=2026-10-15&limit=50&offset=0&order=ASC",
+      "sample": "matches.day-uecl.json",
+      "keys": [
+        "[].id",
+        "[].status"
+      ],
+      "note": "captured before kick-off; the shape gains score/winner once played"
+    },
+    {
+      "name": "matches — today (all UCL games, may be empty)",
+      "path": "/matches?competitionId=1&fromDate={today}&toDate={today}&limit=50&offset=0&order=ASC",
+      "sample": "matches.empty.json",
+      "depth": 0
+    },
+    {
+      "name": "matches?matchId=…",
+      "path": "/matches?matchId=2049553,2050063",
+      "sample": "matches.by-id.json",
+      "keys": [
+        "[].id",
+        "[].status"
+      ]
+    },
+    {
+      "name": "matches — season list",
+      "path": "/matches?competitionId=1&seasonYear=2027&limit=5&offset=0&order=ASC",
+      "sample": "matches.season.json",
+      "keys": [
+        "[].id",
+        "[].round.phase",
+        "[].competitionPhase"
+      ]
+    },
+    {
+      "name": "matches/{id} — final",
+      "path": "/matches/2049553",
+      "sample": "match.final.json",
+      "keys": [
+        "id",
+        "status",
+        "kickOffTime.dateTime",
+        "score.regular",
+        "score.total",
+        "winner.match.reason",
+        "playerEvents.scorers[].time.minute",
+        "lineupStatus",
+        "round.mode"
+      ]
+    },
+    {
+      "name": "matches/{id} — pre (UEL 2050063)",
+      "path": "/matches/2050063",
+      "sample": "match.pre.json",
+      "keys": [
+        "id",
+        "status",
+        "kickOffTime.dateTime"
+      ],
+      "note": "captured UPCOMING; the live response gains score/winner once played"
+    },
+    {
+      "name": "matches/{id} — second leg with aggregate",
+      "path": "/matches/2048635",
+      "sample": "match.final-two-legs.json",
+      "keys": [
+        "score.aggregate",
+        "winner.aggregate.reason",
+        "relatedMatches[].id"
+      ]
+    },
+    {
+      "name": "matches/{id} — extra time",
+      "path": "/matches/2047770",
+      "sample": "match.final-extra-time.json",
+      "keys": [
+        "score.regular",
+        "score.total"
+      ]
+    },
+    {
+      "name": "matches/{id} — penalties",
+      "path": "/matches/2047742",
+      "sample": "match.final-penalties.json",
+      "keys": [
+        "score.penalty",
+        "playerEvents.penaltyScorers[].penaltyType"
+      ]
+    },
+    {
+      "name": "matches/{id} — unknown id",
+      "path": "/matches/999999999",
+      "status": [404],
+      "sample": "match.not-found.json",
+      "keys": [
+        "error.status"
+      ]
+    },
+    {
+      "name": "matches/{id}/events?filter=MAIN",
+      "path": "/matches/2049553/events?filter=MAIN&order=ASC&limit=500&offset=0",
+      "sample": "match-events.main.final.json",
+      "keys": [
+        "[].id",
+        "[].type",
+        "[].phase",
+        "[].timestamp",
+        "[].time.minute",
+        "[].primaryActor.person.id",
+        "[].primaryActor.team.id"
+      ]
+    },
+    {
+      "name": "matches/{id}/events?filter=ALL",
+      "path": "/matches/2049553/events?filter=ALL&order=ASC&limit=40&offset=0",
+      "sample": "match-events.all.final.json",
+      "keys": [
+        "[].type"
+      ]
+    },
+    {
+      "name": "matches/{id}/events?filter=LINEUP",
+      "path": "/matches/2049553/events?filter=LINEUP&order=ASC&limit=500&offset=0",
+      "sample": "match-events.lineup.final.json",
+      "keys": [
+        "[].type"
+      ]
+    },
+    {
+      "name": "matches/{id}/events?filter=PHASES",
+      "path": "/matches/2049553/events?filter=PHASES&order=ASC&limit=500&offset=0",
+      "sample": "match-events.phases.final.json",
+      "keys": [
+        "[].type",
+        "[].timestamp"
+      ]
+    },
+    {
+      "name": "matches/{id}/events — shoot-out",
+      "path": "/matches/2047742/events?filter=MAIN&order=ASC&limit=500&offset=0",
+      "sample": "match-events.main.final-penalties.json",
+      "keys": [
+        "[].subType"
+      ]
+    },
+    {
+      "name": "matches/{id}/events — own goal",
+      "path": "/matches/2048624/events?filter=MAIN&order=ASC&limit=500&offset=0",
+      "sample": "match-events.main.own-goal.json",
+      "keys": [
+        "[].subType"
+      ]
+    },
+    {
+      "name": "matches/{id}/events — extra-time phases",
+      "path": "/matches/2047770/events?filter=PHASES&order=ASC&limit=500&offset=0",
+      "sample": "match-events.phases.final-extra-time.json",
+      "keys": [
+        "[].phase"
+      ]
+    },
+    {
+      "name": "matches/{id}/events — pre (empty)",
+      "path": "/matches/2050063/events?filter=MAIN&order=ASC&limit=500&offset=0",
+      "sample": "match-events.main.pre.json",
+      "depth": 0,
+      "note": "[] until kick-off; filled once played"
+    },
+    {
+      "name": "matches/{id}/lineups — final",
+      "path": "/matches/2049553/lineups",
+      "sample": "match-lineups.final.json",
+      "keys": [
+        "lineupStatus",
+        "homeTeam.field[].player.id",
+        "homeTeam.bench[].player.id",
+        "awayTeam.field[].jerseyNumber",
+        "homeTeam.coaches[].person.id"
+      ]
+    },
+    {
+      "name": "matches/{id}/lineups — pre",
+      "path": "/matches/2050063/lineups",
+      "sample": "match-lineups.pre.json",
+      "keys": [
+        "lineupStatus",
+        "matchId"
+      ],
+      "depth": 0
+    },
+    {
+      "name": "livescore",
+      "path": "/livescore",
+      "sample": "livescore.json",
+      "depth": 0,
+      "note": "[] outside the ±1 h windows around matches"
+    },
+    {
+      "name": "team-statistics/{id} — final",
+      "url": "https://matchstats.uefa.com/v1/team-statistics/2049553",
+      "sample": "team-statistics.final.json",
+      "keys": [
+        "[].teamId",
+        "[].statistics[].name",
+        "[].statistics[].value"
+      ]
+    },
+    {
+      "name": "team-statistics/{id} — pre (empty)",
+      "url": "https://matchstats.uefa.com/v1/team-statistics/2050063",
+      "sample": "team-statistics.pre.json",
+      "depth": 0
+    },
+    {
+      "name": "standings — UCL 2027",
+      "url": "https://standings.uefa.com/v1/standings?competitionId=1&seasonYear=2027&phase=TOURNAMENT",
+      "sample": "standings.json",
+      "keys": [
+        "[].group.metaData.groupName",
+        "[].items[].rank",
+        "[].items[].teamId",
+        "[].items[].points",
+        "[].items[].played",
+        "[].items[].goalDifference"
+      ]
+    },
+    {
+      "name": "standings — UEL 2027",
+      "url": "https://standings.uefa.com/v1/standings?competitionId=14&seasonYear=2027&phase=TOURNAMENT",
+      "sample": "standings.uel.json",
+      "keys": [
+        "[].items[].rank"
+      ]
+    },
+    {
+      "name": "standings — previous season",
+      "url": "https://standings.uefa.com/v1/standings?competitionId=1&seasonYear=2026&phase=TOURNAMENT",
+      "sample": "standings.previous-season.json",
+      "keys": [
+        "[].items[].rank",
+        "[].items[].points"
+      ]
+    },
+    {
+      "name": "teams?competitionId=1&seasonYear=2027",
+      "url": "https://comp.uefa.com/v2/teams?competitionId=1&seasonYear=2027&limit=100&offset=0",
+      "sample": "teams.json",
+      "keys": [
+        "[].id",
+        "[].internationalName",
+        "[].teamCode",
+        "[].countryCode"
+      ]
+    },
+    {
+      "name": "teams?teamIds=…",
+      "url": "https://comp.uefa.com/v2/teams?teamIds=50051,50138",
+      "sample": "teams.by-id.json",
+      "keys": [
+        "[].id",
+        "[].mediumLogoUrl"
+      ]
+    },
+    {
+      "name": "players?competitionId=1&seasonYear=2027",
+      "url": "https://comp.uefa.com/v2/players?competitionId=1&seasonYear=2027&limit=50&offset=0",
+      "sample": "players.json",
+      "keys": [
+        "[].id",
+        "[].internationalName",
+        "[].clubId",
+        "[].fieldPosition"
+      ]
+    },
+    {
+      "name": "players?playerIds=…",
+      "url": "https://comp.uefa.com/v2/players?playerIds=250076574",
+      "sample": "players.by-id.json",
+      "keys": [
+        "[].id",
+        "[].birthDate",
+        "[].countryCode"
+      ]
+    }
+  ]
+}

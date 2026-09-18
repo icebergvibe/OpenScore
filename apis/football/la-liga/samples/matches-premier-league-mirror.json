@@ -1,0 +1,421 @@
+{
+  "total": 10,
+  "matches": [
+    {
+      "id": 101899,
+      "name": "Temporada 2026/2027 - Premier League - A Villa - Nottingham Forest - 4",
+      "slug": "temporada-2026-2027-premier-league-a-villa-nottingham-forest-4",
+      "date": "2026-09-12T14:00:00+00:00",
+      "time": "2026-09-12T14:00:00+00:00",
+      "hashtag": "AstonVillaNottinghamForest",
+      "competition": {
+        "id": 30,
+        "name": "Premier League",
+        "slug": "english-premier-league",
+        "main": true,
+        "opta_id": "8",
+        "lde_id": 34
+      },
+      "status": "PreMatch",
+      "home_team": {
+        "id": 1014,
+        "slug": "a-villa",
+        "name": "Aston Villa",
+        "nickname": "A Villa",
+        "boundname": "A Villa",
+        "shortname": "AVL",
+        "sprite_status": "not_created",
+        "shield": {
+          "id": 503669,
+          "name": "avilla",
+          "url": "https://assets.laliga.com/assets/2021/03/11/xlarge/6cc06773e2d8649601fbaa2cf304e774.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2021/03/11/xsmall/6cc06773e2d8649601fbaa2cf304e774.png",
+            "small": "https://assets.laliga.com/assets/2021/03/11/small/6cc06773e2d8649601fbaa2cf304e774.png",
+            "medium": "https://assets.laliga.com/assets/2021/03/11/medium/6cc06773e2d8649601fbaa2cf304e774.png",
+            "large": "https://assets.laliga.com/assets/2021/03/11/large/6cc06773e2d8649601fbaa2cf304e774.png",
+            "xlarge": "https://assets.laliga.com/assets/2021/03/11/xlarge/6cc06773e2d8649601fbaa2cf304e774.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t7",
+        "lde_id": 430
+      },
+      "away_team": {
+        "id": 1345,
+        "slug": "nottingham-forest",
+        "name": "Nottingham Forest",
+        "nickname": "Nottingham Forest",
+        "boundname": "Nottingham Forest",
+        "shortname": "NFO",
+        "sprite_status": "not_created",
+        "shield": {
+          "id": 619335,
+          "name": "NFO",
+          "url": "https://assets.laliga.com/assets/2022/07/13/xlarge/c87203b58a343672c3291dcba0473a39.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2022/07/13/xsmall/c87203b58a343672c3291dcba0473a39.png",
+            "small": "https://assets.laliga.com/assets/2022/07/13/small/c87203b58a343672c3291dcba0473a39.png",
+            "medium": "https://assets.laliga.com/assets/2022/07/13/medium/c87203b58a343672c3291dcba0473a39.png",
+            "large": "https://assets.laliga.com/assets/2022/07/13/large/c87203b58a343672c3291dcba0473a39.png",
+            "xlarge": "https://assets.laliga.com/assets/2022/07/13/xlarge/c87203b58a343672c3291dcba0473a39.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t17",
+        "lde_id": 931
+      },
+      "gameweek": {
+        "id": 10340,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-12T15:00:00+00:00"
+      },
+      "venue": {
+        "id": 481,
+        "name": "Villa Park",
+        "latitude": "52.50818",
+        "longitude": "-1.89312",
+        "capacity": 42785,
+        "address": "Trinity Rd, Birmingham B6 6HE",
+        "timezone": "Europe/London",
+        "city": "Birmingham",
+        "slug": "villa-park",
+        "opta_id": "v34",
+        "lde_id": 807
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 12561,
+            "name": "Andy Madley",
+            "nickname": "Andy Madley",
+            "firstname": "Andy",
+            "lastname": "Madley",
+            "gender": "male",
+            "international": false,
+            "slug": "andy-madley"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o41487",
+          "lde_id": 3119
+        },
+        {
+          "person": {
+            "id": 10516,
+            "name": "Constantine Hatzidakis",
+            "nickname": "Constantine Hatzidakis",
+            "firstname": "Constantine",
+            "lastname": "Hatzidakis",
+            "gender": "male",
+            "international": false,
+            "slug": "constantine-hatzidakis"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 18482,
+            "name": "Richard West",
+            "nickname": "Richard West",
+            "firstname": "Richard",
+            "lastname": "West",
+            "gender": "male",
+            "international": false,
+            "slug": "richard-west"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        },
+        {
+          "person": {
+            "id": 18494,
+            "name": "Oliver Langford",
+            "nickname": "Oliver Langford",
+            "firstname": "Oliver",
+            "lastname": "Langford",
+            "gender": "male",
+            "international": false,
+            "slug": "oliver-langford"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 18490,
+            "name": "Timothy Wood",
+            "nickname": "Timothy Wood",
+            "firstname": "Timothy",
+            "lastname": "Wood",
+            "gender": "male",
+            "international": false,
+            "slug": "timothy-wood"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 39869,
+            "name": "Will Finnie",
+            "nickname": "Will Finnie",
+            "firstname": "Will",
+            "lastname": "Finnie",
+            "gender": "male",
+            "international": false,
+            "slug": "will-finnie"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "opta_id": "g2645226",
+      "lde_id": 239280
+    },
+    {
+      "id": 101900,
+      "name": "Temporada 2026/2027 - Premier League - Bournemouth - Brentford - 4",
+      "slug": "temporada-2026-2027-premier-league-bournemouth-brentford-4",
+      "date": "2026-09-12T14:00:00+00:00",
+      "time": "2026-09-12T14:00:00+00:00",
+      "hashtag": "BournemouthBrentford",
+      "competition": {
+        "id": 30,
+        "name": "Premier League",
+        "slug": "english-premier-league",
+        "main": true,
+        "opta_id": "8",
+        "lde_id": 34
+      },
+      "status": "PreMatch",
+      "home_team": {
+        "id": 1346,
+        "slug": "bournemouth",
+        "name": "Bournemouth",
+        "nickname": "Bournemouth",
+        "boundname": "Bournemouth",
+        "shortname": "BOU",
+        "sprite_status": "not_created",
+        "shield": {
+          "id": 619336,
+          "name": "AFC_Bournemouth",
+          "url": "https://assets.laliga.com/assets/2022/07/13/xlarge/b3f3ec89462cdc4d1793ad1829f4214a.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2022/07/13/xsmall/b3f3ec89462cdc4d1793ad1829f4214a.png",
+            "small": "https://assets.laliga.com/assets/2022/07/13/small/b3f3ec89462cdc4d1793ad1829f4214a.png",
+            "medium": "https://assets.laliga.com/assets/2022/07/13/medium/b3f3ec89462cdc4d1793ad1829f4214a.png",
+            "large": "https://assets.laliga.com/assets/2022/07/13/large/b3f3ec89462cdc4d1793ad1829f4214a.png",
+            "xlarge": "https://assets.laliga.com/assets/2022/07/13/xlarge/b3f3ec89462cdc4d1793ad1829f4214a.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t91",
+        "lde_id": 780
+      },
+      "away_team": {
+        "id": 1101,
+        "slug": "brentford",
+        "name": "Brentford",
+        "nickname": "Brentford",
+        "boundname": "Brentford",
+        "shortname": "BFD",
+        "sprite_status": "not_created",
+        "shield": {
+          "id": 535919,
+          "name": "brentford",
+          "url": "https://assets.laliga.com/assets/2021/06/28/xlarge/e9c393505fa47447661b8aabfc706554.png",
+          "resizes": {
+            "xsmall": "https://assets.laliga.com/assets/2021/06/28/xsmall/e9c393505fa47447661b8aabfc706554.png",
+            "small": "https://assets.laliga.com/assets/2021/06/28/small/e9c393505fa47447661b8aabfc706554.png",
+            "medium": "https://assets.laliga.com/assets/2021/06/28/medium/e9c393505fa47447661b8aabfc706554.png",
+            "large": "https://assets.laliga.com/assets/2021/06/28/large/e9c393505fa47447661b8aabfc706554.png",
+            "xlarge": "https://assets.laliga.com/assets/2021/06/28/xlarge/e9c393505fa47447661b8aabfc706554.png"
+          }
+        },
+        "competitions": [],
+        "opta_id": "t94",
+        "lde_id": 952
+      },
+      "gameweek": {
+        "id": 10340,
+        "week": 4,
+        "name": "Matchday 4",
+        "shortname": "M4",
+        "date": "2026-09-12T15:00:00+00:00"
+      },
+      "venue": {
+        "id": 712,
+        "name": "Vitality Stadium",
+        "latitude": "50.72186",
+        "longitude": "-1.83753",
+        "capacity": 11379,
+        "address": "Boscombe, Bournemouth BH7 7BT, Reino Unido",
+        "timezone": "Europe/London",
+        "city": "Bournemouth",
+        "slug": "vitality-stadium",
+        "opta_id": "v2734",
+        "lde_id": 779
+      },
+      "persons_role": [
+        {
+          "person": {
+            "id": 18492,
+            "name": "Jarred Gillett",
+            "nickname": "Jarred Gillett",
+            "firstname": "Jarred",
+            "lastname": "Gillett",
+            "gender": "male",
+            "international": false,
+            "slug": "jarred-gillett"
+          },
+          "role": {
+            "id": 5,
+            "name": "Main Referee",
+            "female_name": "Árbitro Principal",
+            "slug": "arbitro-principal"
+          },
+          "opta_id": "o42752",
+          "lde_id": 4374
+        },
+        {
+          "person": {
+            "id": 18478,
+            "name": "Neil Davies",
+            "nickname": "Neil Davies",
+            "firstname": "Neil",
+            "lastname": "Davies",
+            "gender": "male",
+            "international": false,
+            "slug": "neil-davies"
+          },
+          "role": {
+            "id": 6,
+            "name": "Assistant 1",
+            "female_name": "Árbitro Asistente 1",
+            "slug": "arbitro-asistente-1"
+          }
+        },
+        {
+          "person": {
+            "id": 18501,
+            "name": "Nick Greenhalgh",
+            "nickname": "Nick Greenhalgh",
+            "firstname": "Nick",
+            "lastname": "Greenhalgh",
+            "gender": "male",
+            "international": false,
+            "slug": "nick-greenhalgh"
+          },
+          "role": {
+            "id": 7,
+            "name": "Assistant 2",
+            "female_name": "Árbitro Asistente 2",
+            "slug": "arbitro-asistente-2"
+          }
+        },
+        {
+          "person": {
+            "id": 48012,
+            "name": "Tom Reeves",
+            "nickname": "Tom Reeves",
+            "firstname": "Tom",
+            "lastname": "Reeves",
+            "gender": "male",
+            "international": false,
+            "slug": "tom-reeves"
+          },
+          "role": {
+            "id": 8,
+            "name": "Fourth official",
+            "female_name": "Cuarto Árbitro",
+            "slug": "cuarto-arbitro"
+          }
+        },
+        {
+          "person": {
+            "id": 10339,
+            "name": "Michael Salisbury",
+            "nickname": "Michael Salisbury",
+            "firstname": "Michael",
+            "lastname": "Salisbury",
+            "gender": "male",
+            "international": false,
+            "slug": "michael-salisbury"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR",
+            "female_name": "VAR",
+            "slug": "var"
+          }
+        },
+        {
+          "person": {
+            "id": 18475,
+            "name": "Nicholas Hopton",
+            "nickname": "Nicholas Hopton",
+            "firstname": "Nicholas",
+            "lastname": "Hopton",
+            "gender": "male",
+            "international": false,
+            "slug": "nicholas-hopton"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR",
+            "female_name": "AVAR",
+            "slug": "avar"
+          }
+        }
+      ],
+      "season": {
+        "id": 102,
+        "name": "Season 2026/2027",
+        "year": 2026,
+        "slug": "season-2026-2027",
+        "opta_id": "2026",
+        "lde_id": 99
+      },
+      "is_brand_day": false,
+      "opta_id": "g2645225",
+      "lde_id": 239312
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "errors": [
+    {
+      "message": "Unexpected error.",
+      "locations": [
+        {
+          "line": 1,
+          "column": 37
+        }
+      ],
+      "path": [
+        "matchStats"
+      ],
+      "extensions": {
+        "code": "INTERNAL_SERVER_ERROR"
+      }
+    }
+  ],
+  "data": {
+    "matchStats": null
+  }
+}

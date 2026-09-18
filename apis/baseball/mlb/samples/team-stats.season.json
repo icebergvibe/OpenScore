@@ -1,0 +1,139 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "stats": [
+    {
+      "type": {
+        "displayName": "season"
+      },
+      "group": {
+        "displayName": "hitting"
+      },
+      "exemptions": [],
+      "splits": [
+        {
+          "season": "2026",
+          "stat": {
+            "gamesPlayed": 149,
+            "groundOuts": 1119,
+            "airOuts": 1329,
+            "runs": 677,
+            "doubles": 212,
+            "triples": 17,
+            "homeRuns": 204,
+            "strikeOuts": 1362,
+            "baseOnBalls": 533,
+            "intentionalWalks": 18,
+            "hits": 1153,
+            "hitByPitch": 37,
+            "avg": ".235",
+            "atBats": 4915,
+            "obp": ".312",
+            "slg": ".409",
+            "ops": ".721",
+            "caughtStealing": 48,
+            "stolenBases": 140,
+            "stolenBasePercentage": ".745",
+            "caughtStealingPercentage": ".255",
+            "groundIntoDoublePlay": 87,
+            "numberOfPitches": 22012,
+            "plateAppearances": 5538,
+            "totalBases": 2011,
+            "rbi": 646,
+            "leftOnBase": 925,
+            "sacBunts": 10,
+            "sacFlies": 38,
+            "babip": ".280",
+            "groundOutsToAirouts": "0.84",
+            "catchersInterference": 5,
+            "atBatsPerHomeRun": "24.09"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "displayName": "season"
+      },
+      "group": {
+        "displayName": "pitching"
+      },
+      "exemptions": [],
+      "splits": [
+        {
+          "season": "2026",
+          "stat": {
+            "gamesPlayed": 149,
+            "gamesStarted": 149,
+            "groundOuts": 1264,
+            "airOuts": 1296,
+            "runs": 552,
+            "doubles": 206,
+            "triples": 22,
+            "homeRuns": 154,
+            "strikeOuts": 1339,
+            "baseOnBalls": 448,
+            "intentionalWalks": 12,
+            "hits": 1103,
+            "hitByPitch": 54,
+            "avg": ".223",
+            "atBats": 4951,
+            "obp": ".293",
+            "slg": ".367",
+            "ops": ".660",
+            "caughtStealing": 20,
+            "stolenBases": 66,
+            "stolenBasePercentage": ".767",
+            "caughtStealingPercentage": ".233",
+            "groundIntoDoublePlay": 95,
+            "numberOfPitches": 21595,
+            "era": "3.24",
+            "inningsPitched": "1332.0",
+            "wins": 86,
+            "losses": 63,
+            "saves": 43,
+            "saveOpportunities": 70,
+            "holds": 86,
+            "blownSaves": 27,
+            "earnedRuns": 479,
+            "whip": "1.16",
+            "battersFaced": 5511,
+            "outs": 3996,
+            "gamesPitched": 149,
+            "completeGames": 0,
+            "shutouts": 14,
+            "strikes": 13877,
+            "strikePercentage": ".640",
+            "hitBatsmen": 54,
+            "balks": 4,
+            "wildPitches": 32,
+            "pickoffs": 14,
+            "totalBases": 1815,
+            "groundOutsToAirouts": "0.98",
+            "winPercentage": ".577",
+            "pitchesPerInning": "16.21",
+            "gamesFinished": 149,
+            "strikeoutWalkRatio": "2.99",
+            "strikeoutsPer9Inn": "9.05",
+            "walksPer9Inn": "3.03",
+            "hitsPer9Inn": "7.45",
+            "runsScoredPer9": "3.73",
+            "homeRunsPer9": "1.04",
+            "catchersInterference": 7,
+            "sacBunts": 17,
+            "sacFlies": 34
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          }
+        }
+      ]
+    }
+  ]
+}

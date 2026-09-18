@@ -1,0 +1,133 @@
+{
+  "homeTeam": {
+    "name": "Frölunda HC",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg"
+  },
+  "awayTeam": {
+    "name": "Linköping HC",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/lhc1_lhc.svg"
+  },
+  "stats": [
+    {
+      "homeTeam": {
+        "left": {
+          "type": "G",
+          "value": 161
+        },
+        "right": {
+          "type": "SOG",
+          "value": 1283
+        },
+        "center": {
+          "type": "SEff",
+          "value": "12.55"
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "G",
+          "value": 119
+        },
+        "right": {
+          "type": "SOG",
+          "value": 1180
+        },
+        "center": {
+          "type": "SEff",
+          "value": "10.08"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "left": {
+          "type": "PPG",
+          "value": 37
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 118
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "31.36"
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "PPG",
+          "value": 34
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 111
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "30.63"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "left": {
+          "type": "FOW",
+          "value": 1367
+        },
+        "right": {
+          "type": "FOL",
+          "value": 1327
+        },
+        "center": {
+          "type": "FOPerc",
+          "value": "50.74"
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "FOW",
+          "value": 1339
+        },
+        "right": {
+          "type": "FOL",
+          "value": 1390
+        },
+        "center": {
+          "type": "FOPerc",
+          "value": "49.07"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "left": {
+          "type": "PIM",
+          "value": 294
+        },
+        "right": {
+          "type": "PIM",
+          "value": 294
+        },
+        "center": {
+          "type": "PIM",
+          "value": 294
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "PIM",
+          "value": 438
+        },
+        "right": {
+          "type": "PIM",
+          "value": 438
+        },
+        "center": {
+          "type": "PIM",
+          "value": 438
+        }
+      }
+    }
+  ],
+  "provider": "statnet"
+}

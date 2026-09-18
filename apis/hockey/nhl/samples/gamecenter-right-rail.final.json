@@ -1,0 +1,576 @@
+{
+    "seasonSeries": [
+        {
+            "id": 2025030411,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-02",
+            "startTimeUTC": "2026-06-03T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 5
+            },
+            "homeTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 4
+            },
+            "periodDescriptor": {
+                "number": 3,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/car-vs-vgk/2026/06/02/2025030411",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        },
+        {
+            "id": 2025030412,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-04",
+            "startTimeUTC": "2026-06-05T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 3
+            },
+            "homeTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 4
+            },
+            "periodDescriptor": {
+                "number": 4,
+                "periodType": "OT",
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/car-vs-vgk/2026/06/04/2025030412",
+            "gameOutcome": {
+                "lastPeriodType": "OT",
+                "otPeriods": 1
+            }
+        },
+        {
+            "id": 2025030413,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-06",
+            "startTimeUTC": "2026-06-07T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-07:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 4
+            },
+            "homeTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 5
+            },
+            "periodDescriptor": {
+                "number": 5,
+                "periodType": "OT",
+                "otPeriods": 2,
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/vgk-vs-car/2026/06/06/2025030413",
+            "gameOutcome": {
+                "lastPeriodType": "OT",
+                "otPeriods": 2
+            }
+        },
+        {
+            "id": 2025030414,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-09",
+            "startTimeUTC": "2026-06-10T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-07:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 5
+            },
+            "homeTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 3
+            },
+            "periodDescriptor": {
+                "number": 3,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/vgk-vs-car/2026/06/09/2025030414",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        },
+        {
+            "id": 2025030415,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-11",
+            "startTimeUTC": "2026-06-12T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-04:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 2
+            },
+            "homeTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 4
+            },
+            "periodDescriptor": {
+                "number": 3,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/car-vs-vgk/2026/06/11/2025030415",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        },
+        {
+            "id": 2025030416,
+            "season": 20252026,
+            "gameType": 3,
+            "gameDate": "2026-06-14",
+            "startTimeUTC": "2026-06-15T00:00:00Z",
+            "easternUTCOffset": "-04:00",
+            "venueUTCOffset": "-07:00",
+            "gameState": "OFF",
+            "gameScheduleState": "OK",
+            "awayTeam": {
+                "id": 12,
+                "abbrev": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "score": 3
+            },
+            "homeTeam": {
+                "id": 54,
+                "abbrev": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "score": 0
+            },
+            "periodDescriptor": {
+                "number": 3,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "gameCenterLink": "/gamecenter/vgk-vs-car/2026/06/14/2025030416",
+            "gameOutcome": {
+                "lastPeriodType": "REG"
+            }
+        }
+    ],
+    "seasonSeriesWins": {
+        "awayTeamWins": 4,
+        "homeTeamWins": 2,
+        "neededToWin": 4
+    },
+    "gameInfo": {
+        "referees": [
+            {
+                "fullName": {
+                    "default": "Garrett Rank"
+                },
+                "sweaterNumber": 7
+            },
+            {
+                "fullName": {
+                    "default": "Jean Hebert"
+                },
+                "sweaterNumber": 15
+            }
+        ],
+        "linesmen": [
+            {
+                "fullName": {
+                    "default": "Scott Cherrey"
+                },
+                "sweaterNumber": 50
+            },
+            {
+                "fullName": {
+                    "default": "Trent Knorr"
+                },
+                "sweaterNumber": 74
+            }
+        ],
+        "awayTeam": {
+            "headCoach": {
+                "default": "Rod Brind'Amour"
+            },
+            "scratches": [
+                {
+                    "id": 8475235,
+                    "firstName": {
+                        "default": "Nicolas"
+                    },
+                    "lastName": {
+                        "default": "Deslauriers"
+                    }
+                },
+                {
+                    "id": 8475883,
+                    "firstName": {
+                        "default": "Frederik"
+                    },
+                    "lastName": {
+                        "default": "Andersen"
+                    }
+                },
+                {
+                    "id": 8476422,
+                    "firstName": {
+                        "default": "Mike"
+                    },
+                    "lastName": {
+                        "default": "Reilly"
+                    }
+                },
+                {
+                    "id": 8480829,
+                    "firstName": {
+                        "default": "Jesperi"
+                    },
+                    "lastName": {
+                        "default": "Kotkaniemi"
+                    }
+                },
+                {
+                    "id": 8485563,
+                    "firstName": {
+                        "default": "Charlie"
+                    },
+                    "lastName": {
+                        "default": "Cerrato"
+                    }
+                }
+            ]
+        },
+        "homeTeam": {
+            "headCoach": {
+                "default": "John Tortorella"
+            },
+            "scratches": [
+                {
+                    "id": 8476438,
+                    "firstName": {
+                        "default": "Brandon"
+                    },
+                    "lastName": {
+                        "default": "Saad"
+                    }
+                },
+                {
+                    "id": 8476448,
+                    "firstName": {
+                        "default": "William"
+                    },
+                    "lastName": {
+                        "default": "Karlsson"
+                    }
+                },
+                {
+                    "id": 8477018,
+                    "firstName": {
+                        "default": "Ben"
+                    },
+                    "lastName": {
+                        "default": "Hutton"
+                    }
+                },
+                {
+                    "id": 8477034,
+                    "firstName": {
+                        "default": "Jaycob"
+                    },
+                    "lastName": {
+                        "default": "Megna"
+                    }
+                },
+                {
+                    "id": 8478434,
+                    "firstName": {
+                        "default": "Keegan"
+                    },
+                    "lastName": {
+                        "default": "Kolesar"
+                    }
+                },
+                {
+                    "id": 8479550,
+                    "firstName": {
+                        "default": "Tanner"
+                    },
+                    "lastName": {
+                        "default": "Laczynski"
+                    }
+                },
+                {
+                    "id": 8479602,
+                    "firstName": {
+                        "default": "Jeremy"
+                    },
+                    "lastName": {
+                        "default": "Davies"
+                    }
+                },
+                {
+                    "id": 8479639,
+                    "firstName": {
+                        "default": "Dylan"
+                    },
+                    "lastName": {
+                        "default": "Coghlan"
+                    }
+                },
+                {
+                    "id": 8480007,
+                    "firstName": {
+                        "default": "Jonas"
+                    },
+                    "lastName": {
+                        "default": "Rondbjerg",
+                        "cs": "R\u00f6ndbjerg",
+                        "fi": "R\u00f8ndbjerg",
+                        "sk": "R\u00f6ndbjerg",
+                        "sv": "R\u00f8ndbjerg"
+                    }
+                },
+                {
+                    "id": 8481033,
+                    "firstName": {
+                        "default": "Akira"
+                    },
+                    "lastName": {
+                        "default": "Schmid"
+                    }
+                },
+                {
+                    "id": 8481534,
+                    "firstName": {
+                        "default": "Raphael"
+                    },
+                    "lastName": {
+                        "default": "Lavoie"
+                    }
+                },
+                {
+                    "id": 8482125,
+                    "firstName": {
+                        "default": "Alexander"
+                    },
+                    "lastName": {
+                        "default": "Holtz"
+                    }
+                },
+                {
+                    "id": 8482761,
+                    "firstName": {
+                        "default": "Carl"
+                    },
+                    "lastName": {
+                        "default": "Lindbom"
+                    }
+                },
+                {
+                    "id": 8484803,
+                    "firstName": {
+                        "default": "Trevor"
+                    },
+                    "lastName": {
+                        "default": "Connelly"
+                    }
+                },
+                {
+                    "id": 8485251,
+                    "firstName": {
+                        "default": "Kai"
+                    },
+                    "lastName": {
+                        "default": "Uchacz"
+                    }
+                }
+            ]
+        }
+    },
+    "seasonSeriesFullCoverageUrl": {
+        "cs": "https://www.nhl.com/cs/playoffs/2026/series-o-coverage",
+        "de": "https://www.nhl.com/de/playoffs/2026/series-o-coverage",
+        "sv": "https://www.nhl.com/sv/playoffs/2026/series-o-coverage",
+        "fi": "https://www.nhl.com/fi/playoffs/2026/series-o-coverage",
+        "sk": "https://www.nhl.com/sk/playoffs/2026/series-o-coverage",
+        "en": "https://www.nhl.com/playoffs/2026/series-o-coverage",
+        "fr": "https://www.nhl.com/fr/playoffs/2026/series-o-coverage",
+        "es": "https://www.nhl.com/es/playoffs/2026/series-o-coverage"
+    },
+    "gameVideo": {
+        "threeMinRecap": 6398427047112,
+        "threeMinRecapFr": 6398429903112,
+        "condensedGame": 6398428229112,
+        "condensedGameFr": 6398428647112
+    },
+    "linescore": {
+        "byPeriod": [
+            {
+                "periodDescriptor": {
+                    "number": 1,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "away": 1,
+                "home": 0
+            },
+            {
+                "periodDescriptor": {
+                    "number": 2,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "away": 1,
+                "home": 0
+            },
+            {
+                "periodDescriptor": {
+                    "number": 3,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "away": 1,
+                "home": 0
+            }
+        ],
+        "totals": {
+            "away": 3,
+            "home": 0
+        }
+    },
+    "shotsByPeriod": [
+        {
+            "periodDescriptor": {
+                "number": 1,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "away": 8,
+            "home": 11
+        },
+        {
+            "periodDescriptor": {
+                "number": 2,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "away": 8,
+            "home": 3
+        },
+        {
+            "periodDescriptor": {
+                "number": 3,
+                "periodType": "REG",
+                "maxRegulationPeriods": 3
+            },
+            "away": 7,
+            "home": 8
+        }
+    ],
+    "teamGameStats": [
+        {
+            "category": "sog",
+            "awayValue": 23,
+            "homeValue": 22
+        },
+        {
+            "category": "faceoffWinningPctg",
+            "awayValue": 0.52381,
+            "homeValue": 0.47619
+        },
+        {
+            "category": "faceoffWins",
+            "awayValue": "33/63",
+            "homeValue": "30/63"
+        },
+        {
+            "category": "powerPlay",
+            "awayValue": "0/3",
+            "homeValue": "0/3"
+        },
+        {
+            "category": "powerPlayPctg",
+            "awayValue": 0.0,
+            "homeValue": 0.0
+        },
+        {
+            "category": "pim",
+            "awayValue": 6,
+            "homeValue": 6
+        },
+        {
+            "category": "hits",
+            "awayValue": 32,
+            "homeValue": 39
+        },
+        {
+            "category": "blockedShots",
+            "awayValue": 12,
+            "homeValue": 7
+        },
+        {
+            "category": "giveaways",
+            "awayValue": 16,
+            "homeValue": 19
+        },
+        {
+            "category": "takeaways",
+            "awayValue": 10,
+            "homeValue": 2
+        }
+    ],
+    "gameReports": {
+        "gameSummary": "https://www.nhl.com/scores/htmlreports/20252026/GS030416.HTM",
+        "eventSummary": "https://www.nhl.com/scores/htmlreports/20252026/ES030416.HTM",
+        "playByPlay": "https://www.nhl.com/scores/htmlreports/20252026/PL030416.HTM",
+        "faceoffSummary": "https://www.nhl.com/scores/htmlreports/20252026/FS030416.HTM",
+        "faceoffComparison": "https://www.nhl.com/scores/htmlreports/20252026/FC030416.HTM",
+        "rosters": "https://www.nhl.com/scores/htmlreports/20252026/RO030416.HTM",
+        "shotSummary": "https://www.nhl.com/scores/htmlreports/20252026/SS030416.HTM",
+        "shiftChart": "https://www.nhl.com/stats/shiftcharts?id=2025030416",
+        "toiAway": "https://www.nhl.com/scores/htmlreports/20252026/TV030416.HTM",
+        "toiHome": "https://www.nhl.com/scores/htmlreports/20252026/TH030416.HTM"
+    }
+}

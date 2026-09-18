@@ -1,0 +1,276 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "totalItems": 3,
+  "totalEvents": 0,
+  "totalGames": 3,
+  "totalGamesInProgress": 0,
+  "dates": [
+    {
+      "date": "2026-09-08",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 823500,
+          "gameGuid": "b66f5f43-e603-4629-81f1-2800ef943667",
+          "link": "/api/v1.1/game/823500/feed/live",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-08T23:05:00Z",
+          "officialDate": "2026-09-08",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "name": "Colorado Rockies",
+                "link": "/api/v1/teams/115"
+              },
+              "leagueRecord": {
+                "wins": 55,
+                "losses": 89,
+                "ties": 0,
+                "pct": ".382"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 47
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 82,
+                "losses": 62,
+                "ties": 0,
+                "pct": ".569"
+              },
+              "score": 5,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 47
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/823500/content"
+          },
+          "isTie": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-823500-2026-09-08",
+          "seasonDisplay": "2026",
+          "dayNight": "night",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 1,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2026-09-09",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 823497,
+          "gameGuid": "b4d1cbf5-3541-4fa1-a715-9b9c3e67ace0",
+          "link": "/api/v1.1/game/823497/feed/live",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-09T23:05:00Z",
+          "officialDate": "2026-09-09",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "name": "Colorado Rockies",
+                "link": "/api/v1/teams/115"
+              },
+              "leagueRecord": {
+                "wins": 55,
+                "losses": 90,
+                "ties": 0,
+                "pct": ".379"
+              },
+              "score": 1,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 47
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 83,
+                "losses": 62,
+                "ties": 0,
+                "pct": ".572"
+              },
+              "score": 6,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 47
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/823497/content"
+          },
+          "isTie": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-823497-2026-09-09",
+          "seasonDisplay": "2026",
+          "dayNight": "night",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    },
+    {
+      "date": "2026-09-10",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "games": [
+        {
+          "gamePk": 823499,
+          "gameGuid": "d040fb43-b2b8-453f-aa0f-45084e664473",
+          "link": "/api/v1.1/game/823499/feed/live",
+          "gameType": "R",
+          "season": "2026",
+          "gameDate": "2026-09-10T23:05:00Z",
+          "officialDate": "2026-09-10",
+          "status": {
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
+            "statusCode": "F",
+            "startTimeTBD": false,
+            "abstractGameCode": "F"
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "name": "Colorado Rockies",
+                "link": "/api/v1/teams/115"
+              },
+              "leagueRecord": {
+                "wins": 55,
+                "losses": 91,
+                "ties": 0,
+                "pct": ".377"
+              },
+              "score": 3,
+              "isWinner": false,
+              "splitSquad": false,
+              "seriesNumber": 47
+            },
+            "home": {
+              "team": {
+                "id": 147,
+                "name": "New York Yankees",
+                "link": "/api/v1/teams/147"
+              },
+              "leagueRecord": {
+                "wins": 84,
+                "losses": 62,
+                "ties": 0,
+                "pct": ".575"
+              },
+              "score": 10,
+              "isWinner": true,
+              "splitSquad": false,
+              "seriesNumber": 47
+            }
+          },
+          "venue": {
+            "id": 3313,
+            "name": "Yankee Stadium",
+            "link": "/api/v1/venues/3313"
+          },
+          "content": {
+            "link": "/api/v1/game/823499/content"
+          },
+          "isTie": false,
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-823499-2026-09-10",
+          "seasonDisplay": "2026",
+          "dayNight": "night",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 3,
+          "seriesDescription": "Regular Season",
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    }
+  ]
+}

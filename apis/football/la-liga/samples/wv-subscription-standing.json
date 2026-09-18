@@ -1,0 +1,574 @@
+{
+  "standings": [
+    {
+      "played": 4,
+      "points": 12,
+      "won": 4,
+      "drawn": 0,
+      "lost": 0,
+      "goals_for": 17,
+      "goals_against": 2,
+      "goal_difference": "+15",
+      "position": 1,
+      "previous_position": 1,
+      "difference_position": 0,
+      "team": {
+        "id": 4,
+        "slug": "fc-barcelona",
+        "name": "Fútbol Club Barcelona",
+        "nickname": "FC Barcelona",
+        "boundname": "FC Barcelona",
+        "shortname": "BAR",
+        "sprite_status": "created",
+        "shield": {
+          "id": 127
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Champions League",
+        "shortname": "Champions League",
+        "color": "#08237f"
+      }
+    },
+    {
+      "played": 4,
+      "points": 10,
+      "won": 3,
+      "drawn": 1,
+      "lost": 0,
+      "goals_for": 10,
+      "goals_against": 3,
+      "goal_difference": "+7",
+      "position": 2,
+      "previous_position": 2,
+      "difference_position": 0,
+      "team": {
+        "id": 21,
+        "slug": "d-alaves",
+        "name": "Deportivo Alavés SAD",
+        "nickname": "Deportivo Alavés",
+        "boundname": "Deportivo Alavés",
+        "shortname": "ALA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 467523
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Champions League",
+        "shortname": "Champions League",
+        "color": "#08237f"
+      }
+    },
+    {
+      "played": 5,
+      "points": 10,
+      "won": 3,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 8,
+      "goals_against": 6,
+      "goal_difference": "+2",
+      "position": 3,
+      "previous_position": 3,
+      "difference_position": 0,
+      "team": {
+        "id": 17,
+        "slug": "sevilla-fc",
+        "name": "Sevilla Fútbol Club SAD",
+        "nickname": "Sevilla FC",
+        "boundname": "Sevilla FC",
+        "shortname": "SEV",
+        "sprite_status": "created",
+        "shield": {
+          "id": 153
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Champions League",
+        "shortname": "Champions League",
+        "color": "#08237f"
+      }
+    },
+    {
+      "played": 4,
+      "points": 9,
+      "won": 3,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 10,
+      "goals_against": 3,
+      "goal_difference": "+7",
+      "position": 4,
+      "previous_position": 4,
+      "difference_position": 0,
+      "team": {
+        "id": 15,
+        "slug": "real-madrid",
+        "name": "Real Madrid Club de Fútbol",
+        "nickname": "Real Madrid",
+        "boundname": "Real Madrid",
+        "shortname": "RMA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 149
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Champions League",
+        "shortname": "Champions League",
+        "color": "#08237f"
+      }
+    },
+    {
+      "played": 4,
+      "points": 9,
+      "won": 3,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 5,
+      "goal_difference": "0",
+      "position": 5,
+      "previous_position": 5,
+      "difference_position": 0,
+      "team": {
+        "id": 5,
+        "slug": "real-betis",
+        "name": "Real Betis Balompié SAD",
+        "nickname": "Real Betis",
+        "boundname": "Real Betis",
+        "shortname": "BET",
+        "sprite_status": "created",
+        "shield": {
+          "id": 627565
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Champions League",
+        "shortname": "Champions League",
+        "color": "#08237f"
+      }
+    },
+    {
+      "played": 4,
+      "points": 8,
+      "won": 2,
+      "drawn": 2,
+      "lost": 0,
+      "goals_for": 8,
+      "goals_against": 5,
+      "goal_difference": "+3",
+      "position": 6,
+      "previous_position": 6,
+      "difference_position": 0,
+      "team": {
+        "id": 26,
+        "slug": "rc-deportivo",
+        "name": "Real Club Deportivo de A Coruña SAD",
+        "nickname": "RC Deportivo",
+        "boundname": "RC Deportivo",
+        "shortname": "DEP",
+        "sprite_status": "created",
+        "shield": {
+          "id": 994863
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Europa League",
+        "shortname": "Europa League",
+        "color": "#ff6900"
+      }
+    },
+    {
+      "played": 4,
+      "points": 7,
+      "won": 2,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 7,
+      "goals_against": 6,
+      "goal_difference": "+1",
+      "position": 7,
+      "previous_position": 7,
+      "difference_position": 0,
+      "team": {
+        "id": 2,
+        "slug": "atletico-de-madrid",
+        "name": "Club Atlético de Madrid SAD",
+        "nickname": "Atlético de Madrid",
+        "boundname": "Atlético de Madrid",
+        "shortname": "ATM",
+        "sprite_status": "created",
+        "shield": {
+          "id": 812970
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Conference League",
+        "shortname": "Conference League",
+        "color": "#00aa20"
+      }
+    },
+    {
+      "played": 4,
+      "points": 7,
+      "won": 2,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 6,
+      "goal_difference": "-1",
+      "position": 8,
+      "previous_position": 8,
+      "difference_position": 0,
+      "team": {
+        "id": 13,
+        "slug": "c-a-osasuna",
+        "name": "Club Atlético Osasuna",
+        "nickname": "CA Osasuna",
+        "boundname": "CA Osasuna",
+        "shortname": "OSA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 145
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 5,
+      "points": 7,
+      "won": 2,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 6,
+      "goals_against": 8,
+      "goal_difference": "-2",
+      "position": 9,
+      "previous_position": 10,
+      "difference_position": 1,
+      "team": {
+        "id": 16,
+        "slug": "real-sociedad",
+        "name": "Real Sociedad de Fútbol SAD",
+        "nickname": "Real Sociedad",
+        "boundname": "Real Sociedad",
+        "shortname": "RSO",
+        "sprite_status": "created",
+        "shield": {
+          "id": 151
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 6,
+      "won": 2,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 6,
+      "goals_against": 5,
+      "goal_difference": "+1",
+      "position": 10,
+      "previous_position": 9,
+      "difference_position": -1,
+      "team": {
+        "id": 3,
+        "slug": "athletic-club",
+        "name": "Athletic Club",
+        "nickname": "Athletic Club",
+        "boundname": "Athletic Club",
+        "shortname": "ATH",
+        "sprite_status": "created",
+        "shield": {
+          "id": 125
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 5,
+      "goal_difference": "0",
+      "position": 11,
+      "previous_position": 11,
+      "difference_position": 0,
+      "team": {
+        "id": 11,
+        "slug": "levante-ud",
+        "name": "Levante Unión Deportiva SAD",
+        "nickname": "Levante UD",
+        "boundname": "Levante UD",
+        "shortname": "LEV",
+        "sprite_status": "created",
+        "shield": {
+          "id": 141
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 4,
+      "won": 1,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 6,
+      "goals_against": 5,
+      "goal_difference": "+1",
+      "position": 12,
+      "previous_position": 12,
+      "difference_position": 0,
+      "team": {
+        "id": 8,
+        "slug": "rcd-espanyol",
+        "name": "RCD Espanyol de Barcelona",
+        "nickname": "RCD Espanyol de Barcelona",
+        "boundname": "RCD Espanyol de Barcelona",
+        "shortname": "ESP",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891385
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 4,
+      "won": 1,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 7,
+      "goals_against": 8,
+      "goal_difference": "-1",
+      "position": 13,
+      "previous_position": 13,
+      "difference_position": 0,
+      "team": {
+        "id": 49,
+        "slug": "r-racing-club",
+        "name": "Real Racing Club SAD",
+        "nickname": "R. Racing Club",
+        "boundname": "R. Racing Club",
+        "shortname": "RAC",
+        "sprite_status": "created",
+        "shield": {
+          "id": 215
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 4,
+      "won": 1,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 7,
+      "goals_against": 10,
+      "goal_difference": "-3",
+      "position": 14,
+      "previous_position": 14,
+      "difference_position": 0,
+      "team": {
+        "id": 14,
+        "slug": "rayo-vallecano",
+        "name": "Rayo Vallecano de Madrid SAD",
+        "nickname": "Rayo Vallecano",
+        "boundname": "Rayo Vallecano",
+        "shortname": "RAY",
+        "sprite_status": "created",
+        "shield": {
+          "id": 691708
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 4,
+      "won": 1,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 5,
+      "goal_difference": "-3",
+      "position": 15,
+      "previous_position": 15,
+      "difference_position": 0,
+      "team": {
+        "id": 9,
+        "slug": "getafe-cf",
+        "name": "Getafe Club de Fútbol SAD",
+        "nickname": "Getafe CF",
+        "boundname": "Getafe CF",
+        "shortname": "GET",
+        "sprite_status": "created",
+        "shield": {
+          "id": 695837
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 5,
+      "points": 3,
+      "won": 0,
+      "drawn": 3,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 5,
+      "goal_difference": "-3",
+      "position": 16,
+      "previous_position": 17,
+      "difference_position": 1,
+      "team": {
+        "id": 6,
+        "slug": "rc-celta",
+        "name": "Real Club Celta de Vigo SAD",
+        "nickname": "Celta",
+        "boundname": "Celta",
+        "shortname": "CEL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891421
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 2,
+      "won": 0,
+      "drawn": 2,
+      "lost": 2,
+      "goals_for": 6,
+      "goals_against": 8,
+      "goal_difference": "-2",
+      "position": 17,
+      "previous_position": 16,
+      "difference_position": -1,
+      "team": {
+        "id": 20,
+        "slug": "villarreal-cf",
+        "name": "Villarreal Club de Fútbol SAD",
+        "nickname": "Villarreal CF",
+        "boundname": "Villarreal CF",
+        "shortname": "VIL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 159
+        },
+        "competitions": []
+      }
+    },
+    {
+      "played": 4,
+      "points": 2,
+      "won": 0,
+      "drawn": 2,
+      "lost": 2,
+      "goals_for": 1,
+      "goals_against": 7,
+      "goal_difference": "-6",
+      "position": 18,
+      "previous_position": 18,
+      "difference_position": 0,
+      "team": {
+        "id": 12,
+        "slug": "malaga-cf",
+        "name": "Málaga Club de Fútbol SAD",
+        "nickname": "Málaga CF",
+        "boundname": "Málaga CF",
+        "shortname": "MGA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 143
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Descenso",
+        "shortname": "Descenso",
+        "color": "#00d4d6"
+      }
+    },
+    {
+      "played": 4,
+      "points": 1,
+      "won": 0,
+      "drawn": 1,
+      "lost": 3,
+      "goals_for": 5,
+      "goals_against": 12,
+      "goal_difference": "-7",
+      "position": 19,
+      "previous_position": 19,
+      "difference_position": 0,
+      "team": {
+        "id": 7,
+        "slug": "elche-c-f",
+        "name": "Elche Club de Fútbol SAD",
+        "nickname": "Elche CF",
+        "boundname": "Elche CF",
+        "shortname": "ELC",
+        "sprite_status": "created",
+        "shield": {
+          "id": 133
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Descenso",
+        "shortname": "Descenso",
+        "color": "#00d4d6"
+      }
+    },
+    {
+      "played": 5,
+      "points": 1,
+      "won": 0,
+      "drawn": 1,
+      "lost": 4,
+      "goals_for": 1,
+      "goals_against": 10,
+      "goal_difference": "-9",
+      "position": 20,
+      "previous_position": 20,
+      "difference_position": 0,
+      "team": {
+        "id": 18,
+        "slug": "valencia-cf",
+        "name": "Valencia Club de Fútbol SAD",
+        "nickname": "Valencia CF",
+        "boundname": "Valencia CF",
+        "shortname": "VAL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 155
+        },
+        "competitions": []
+      },
+      "qualify": {
+        "name": "Descenso",
+        "shortname": "Descenso",
+        "color": "#00d4d6"
+      }
+    }
+  ]
+}

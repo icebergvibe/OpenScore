@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<game-info created="2026-09-10 21:34:47" supplier="FOGIS" livescorereporttype="1" status="200">
+  <game id="6536131" association-id="1" football-type-id="1" competition-id="133340" competition-category-id="740" date="2026-09-10" start="19:00:00">
+    <tournament id="133340" name="Superettan 2026" number="000005" competitionCategoryId="740" classname="superettan-2026" supplier="FOGIS"/>
+    <teams>
+      <team id="25513" short-name="GIF Sundsvall" long-name="GIF Sundsvall" home-team="true" participationId="1356209" teamImageUrl="https://staticcdn.svenskfotboll.se/img/teams/9441.png" teamImageSmUrl="https://staticcdn.svenskfotboll.se/img/teamssm/9441.png"/>
+      <team id="89484" short-name="&#xD6;rebro" long-name="&#xD6;rebro" home-team="false" participationId="1356104" teamImageUrl="https://staticcdn.svenskfotboll.se/img/teams/12129.png" teamImageSmUrl="https://staticcdn.svenskfotboll.se/img/teamssm/12129.png"/>
+    </teams>
+    <status id="6" desc="FINISHED"/>
+    <score home-team="0" away-team="3" home-team-half-time="0" away-team-half-time="1"/>
+    <referees name="Per Melin" place="" referee-role-description="Domare" assistant1-name="Martin Palm" assistant1-place="" assistant1-role-description="Ass. domare 1" assistant2-name="Dany Kako" assistant2-place="" assistant2-role-description="Ass. domare 2" fourth-name="Petter Lindbom" fourth-place="" fourth-role-description="Fj&#xE4;rdedomare"/>
+    <stadium name="NP3 Arena " spectators="2326"/>
+    <stats home-corners="1" home-ball-possession="0" home-offsides="0" home-yellow-cards="2" home-red-cards="0" home-red-cards-from-bookings="0" home-freekicks-awarded="6" home-finishes="8" home-shots-on-goal="4" home-shots-post="0" home-shots-missed="4" home-normal-goals="0" home-penalty-goals="0" home-freekick-goals="0" home-cornor-goals="0" home-assists="0" away-corners="7" away-ball-possession="0" away-offsides="0" away-yellow-cards="0" away-red-cards="0" away-red-cards-from-bookings="0" away-freekicks-awarded="14" away-finishes="16" away-shots-on-goal="6" away-shots-post="0" away-shots-missed="10" away-normal-goals="3" away-penalty-goals="0" away-freekick-goals="0" away-cornor-goals="0" away-assists="3"/>
+    <ball-possession/>
+  </game>
+  <events>
+    <event id="12131546" phase="2" game-time="96:05" game-minute-for-web="90+7" game-time-for-web="90+7" day-time="20:51:35" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131489" phase="2" game-time="92:16" game-minute-for-web="90+3" game-time-for-web="90+3" day-time="20:47:54" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1121161" player-guid="653f6cdd-5358-45c5-8232-3680205b1b18" number="3" given-name="Victor" surname="Sandberg" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="571145" player-guid="2ff9e2d8-a9ea-4418-8e47-eab818a9f78d" number="19" given-name="Jetmir" surname="Haliti" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1121161" number="3" given-name="Victor" surname="Sandberg" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131475" phase="2" game-time="90:58" game-minute-for-web="90+1" game-time-for-web="90+1" day-time="20:46:31" event-type-id="12" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="841964" player-guid="452de6a3-655d-40fe-bc1e-96989033181f" number="21" given-name="Ludvig" surname="N&#xE5;vik" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131470" phase="2" game-time="89:54" game-minute-for-web="90" game-time-for-web="90" day-time="20:45:30" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="625440" player-guid="4cb40e1a-7f84-4e55-811d-f8a329533d19" number="11" given-name="Christopher" surname="Redenstrand" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131463" phase="2" game-time="88:39" game-minute-for-web="89" game-time-for-web="89" day-time="20:44:41" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="625440" player-guid="4cb40e1a-7f84-4e55-811d-f8a329533d19" number="11" given-name="Christopher" surname="Redenstrand" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="625440" number="11" given-name="Christopher" surname="Redenstrand" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131461" phase="2" game-time="88:35" game-minute-for-web="89" game-time-for-web="89" day-time="20:44:24" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="933393" player-guid="787c52b8-c230-42d0-a40c-70eb9af0cd4c" number="21" given-name="Fabian" surname="Wahlstr&#xF6;m" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="933393" number="21" given-name="Fabian" surname="Wahlstr&#xF6;m" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131458" phase="2" game-time="88:24" game-minute-for-web="89" game-time-for-web="89" day-time="20:44:05" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1159008" player-guid="ca99b70e-0aeb-4fee-adca-b2ec788ec2e7" number="6" given-name="Edwin" surname="Ibrahimbegovic" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1159008" number="6" given-name="Edwin" surname="Ibrahimbegovic" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131452" phase="2" game-time="87:34" game-minute-for-web="88" game-time-for-web="88" day-time="20:43:33" event-type-id="20" type="P" type-desc="Card" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="841964" player-guid="452de6a3-655d-40fe-bc1e-96989033181f" number="21" given-name="Ludvig" surname="N&#xE5;vik" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131447" phase="2" game-time="87:42" game-minute-for-web="88" game-time-for-web="88" day-time="20:43:10" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131446" phase="2" game-time="87:27" game-minute-for-web="88" game-time-for-web="88" day-time="20:43:00" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131441" phase="2" game-time="86:48" game-minute-for-web="87" game-time-for-web="87" day-time="20:42:21" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="680829" player-guid="fb989188-dbca-4d77-ac74-2a124460e27d" number="10" given-name="Rasmus" surname="Wiedesheim-Paul" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131440" phase="2" game-time="86:40" game-minute-for-web="87" game-time-for-web="87" day-time="20:42:09" event-type-id="5" type="C" type-desc="Corner" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131421" phase="2" game-time="84:46" game-minute-for-web="85" game-time-for-web="85" day-time="20:40:18" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131395" phase="2" game-time="82:21" game-minute-for-web="83" game-time-for-web="83" day-time="20:37:57" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="839775" player-guid="9d3a4757-f528-4718-bee9-5073f8adc62a" number="20" given-name="Jeremiah" surname="Bj&#xF6;rnler" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="1680808" player-guid="60ef70c8-75c6-474e-9b59-5921d61cc14e" number="19" given-name="Eron" surname="Gojani" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="839775" number="20" given-name="Jeremiah" surname="Bj&#xF6;rnler" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131393" phase="2" game-time="82:15" game-minute-for-web="83" game-time-for-web="83" day-time="20:37:53" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1461413" player-guid="3d45a5b2-dbe5-4aa9-bbc1-4d9a124ded0f" number="9" given-name="Taiki" surname="Kagayama" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="714717" player-guid="be468d92-611f-4850-ab7e-975bd0948752" number="8" given-name="Carl" surname="Bj&#xF6;rk" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1461413" number="9" given-name="Taiki" surname="Kagayama" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131390" phase="2" game-time="82:00" game-minute-for-web="82" game-time-for-web="82" day-time="20:37:37" event-type-id="20" type="P" type-desc="Card" home-team="true" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1680808" player-guid="60ef70c8-75c6-474e-9b59-5921d61cc14e" number="19" given-name="Eron" surname="Gojani" event-type-id="20" type="Y" type-desc="Yellow Card" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131388" phase="2" game-time="81:53" game-minute-for-web="82" game-time-for-web="82" day-time="20:37:31" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1194937" player-guid="93b58acf-fcc0-4a3d-9d53-aac348acbc3c" number="25" given-name="Chovanie Shakur" surname="Amatkarijo" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131379" phase="2" game-time="81:25" game-minute-for-web="82" game-time-for-web="82" day-time="20:36:59" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="911506" player-guid="519d83db-87e0-4b50-a256-143c8b183b96" number="7" given-name="Samuel" surname="Wikman" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131380" phase="2" game-time="80:54" game-minute-for-web="81" game-time-for-web="81" day-time="20:37:08" event-type-id="16" type="S" type-desc="Substitution" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="911506" player-guid="519d83db-87e0-4b50-a256-143c8b183b96" number="7" given-name="Samuel" surname="Wikman" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="775274" player-guid="97c62c67-fa22-480d-b90d-adce3db91a1e" number="8" given-name="Manasse" surname="Kusu" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="911506" number="7" given-name="Samuel" surname="Wikman" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131360" phase="2" game-time="79:44" game-minute-for-web="80" game-time-for-web="80" day-time="20:35:17" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="0" away-score="3" x-position="0" y-position="0" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="680829" player-guid="fb989188-dbca-4d77-ac74-2a124460e27d" number="10" given-name="Rasmus" surname="Wiedesheim-Paul" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="11" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131357" phase="2" game-time="79:06" game-minute-for-web="80" game-time-for-web="80" day-time="20:34:44" event-type-id="13" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1063177" player-guid="8a715b02-e626-4e91-9d31-87135dc67814" number="5" given-name="Alieu" surname="Atlee Manneh" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131348" phase="2" game-time="78:11" game-minute-for-web="79" game-time-for-web="79" day-time="20:33:45" event-type-id="13" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1194937" player-guid="93b58acf-fcc0-4a3d-9d53-aac348acbc3c" number="25" given-name="Chovanie Shakur" surname="Amatkarijo" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131336" phase="2" game-time="77:09" game-minute-for-web="78" game-time-for-web="78" day-time="20:32:51" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131327" phase="2" game-time="76:12" game-minute-for-web="77" game-time-for-web="77" day-time="20:31:46" event-type-id="12" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1008284" player-guid="d4a0dcc4-4bb8-454f-bce7-b3b374515d39" number="30" given-name="Joshua" surname="Mambu" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131310" phase="2" game-time="72:39" game-minute-for-web="73" game-time-for-web="73" day-time="20:28:18" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1008284" player-guid="d4a0dcc4-4bb8-454f-bce7-b3b374515d39" number="30" given-name="Joshua" surname="Mambu" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="909603" player-guid="dda6e90e-70cb-4d50-9ba5-320764714c1a" number="26" given-name="Edvard" surname="Carrick" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1008284" number="30" given-name="Joshua" surname="Mambu" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131306" phase="2" game-time="72:37" game-minute-for-web="73" game-time-for-web="73" day-time="20:28:14" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1403438" player-guid="e12b7c13-8beb-4896-9c8b-84240a722693" number="6" given-name="Marc" surname="Manchon I Armans" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="771827" player-guid="78241e81-80f3-483c-a53f-8e53a62c9756" number="14" given-name="Alper" surname="Demirol" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1403438" number="6" given-name="Marc" surname="Manchon I Armans" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131302" phase="2" game-time="72:01" game-minute-for-web="73" game-time-for-web="73" day-time="20:27:35" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="845478" player-guid="0c107be5-d1de-4635-b7f0-85f7761f93c1" number="16" given-name="Elvis" surname="Hansson" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131295" phase="2" game-time="69:21" game-minute-for-web="70" game-time-for-web="70" day-time="20:24:54" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="588011" player-guid="7d08573d-a733-4315-af52-013665bb8820" number="5" given-name="Jacob" surname="Ouro Ortmark" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131271" phase="2" game-time="65:11" game-minute-for-web="66" game-time-for-web="66" day-time="20:20:43" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="909603" player-guid="dda6e90e-70cb-4d50-9ba5-320764714c1a" number="26" given-name="Edvard" surname="Carrick" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131244" phase="2" game-time="62:21" game-minute-for-web="63" game-time-for-web="63" day-time="20:17:55" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="571145" player-guid="2ff9e2d8-a9ea-4418-8e47-eab818a9f78d" number="19" given-name="Jetmir" surname="Haliti" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131222" phase="2" game-time="58:28" game-minute-for-web="59" game-time-for-web="59" day-time="20:14:02" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="0" away-score="2" x-position="0" y-position="0" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="11" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131219" phase="2" game-time="57:39" game-minute-for-web="58" game-time-for-web="58" day-time="20:13:13" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131207" phase="2" game-time="55:45" game-minute-for-web="56" game-time-for-web="56" day-time="20:11:20" event-type-id="13" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="406749" player-guid="c58c9987-1289-4e4e-bccf-0a0fc0d74027" number="32" given-name="John" surname="Stenberg" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131205" phase="2" game-time="55:43" game-minute-for-web="56" game-time-for-web="56" day-time="20:11:12" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131202" phase="2" game-time="55:23" game-minute-for-web="56" game-time-for-web="56" day-time="20:10:53" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131188" phase="2" game-time="52:27" game-minute-for-web="53" game-time-for-web="53" day-time="20:08:05" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="775274" player-guid="97c62c67-fa22-480d-b90d-adce3db91a1e" number="8" given-name="Manasse" surname="Kusu" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131184" phase="2" game-time="51:48" game-minute-for-web="52" game-time-for-web="52" day-time="20:07:16" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131181" phase="2" game-time="51:04" game-minute-for-web="52" game-time-for-web="52" day-time="20:06:36" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131178" phase="2" game-time="50:32" game-minute-for-web="51" game-time-for-web="51" day-time="20:06:09" event-type-id="16" type="S" type-desc="Substitution" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1164438" player-guid="66c772c7-9f34-4598-a45a-393c2a8b29fd" number="34" given-name="Wilmer" surname="Bjuhr" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+        <participant id="933346" player-guid="1706f4ca-73b2-424b-9fba-00d89fcd1a22" number="13" given-name="Daniel" surname="Henareh" event-type-id="16" type="O" type-desc="Substitutes Out" is-staff-member="false"/>
+        <participant id="1164438" number="34" given-name="Wilmer" surname="Bjuhr" event-type-id="17" type="I" type-desc="Substitutes In" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131173" phase="2" game-time="48:14" game-minute-for-web="49" game-time-for-web="49" day-time="20:03:47" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="680829" player-guid="fb989188-dbca-4d77-ac74-2a124460e27d" number="10" given-name="Rasmus" surname="Wiedesheim-Paul" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131165" phase="2" game-time="45:58" game-minute-for-web="46" game-time-for-web="46" day-time="20:01:33" event-type-id="13" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="922095" player-guid="7d3f0a46-f178-4585-920d-91f12f99f8d1" number="15" given-name="Shalom" surname="Ekong" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131161" phase="2" game-time="45:00" game-minute-for-web="45" game-time-for-web="45" day-time="20:00:32" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131043" phase="1" game-time="45:05" game-minute-for-web="45+1" game-time-for-web="45+1" day-time="19:45:27" event-type-id="32" type="HALFENDED" type-desc="Half ended" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="32" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131040" phase="1" game-time="44:47" game-minute-for-web="45" game-time-for-web="45" day-time="19:45:11" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131036" phase="1" game-time="44:11" game-minute-for-web="45" game-time-for-web="45" day-time="19:44:37" event-type-id="13" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="680829" player-guid="fb989188-dbca-4d77-ac74-2a124460e27d" number="10" given-name="Rasmus" surname="Wiedesheim-Paul" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131018" phase="1" game-time="41:55" game-minute-for-web="42" game-time-for-web="42" day-time="19:42:21" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="588011" player-guid="7d08573d-a733-4315-af52-013665bb8820" number="5" given-name="Jacob" surname="Ouro Ortmark" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131014" phase="1" game-time="40:35" game-minute-for-web="41" game-time-for-web="41" day-time="19:41:05" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12131006" phase="1" game-time="38:56" game-minute-for-web="39" game-time-for-web="39" day-time="19:39:23" event-type-id="12" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="922095" player-guid="7d3f0a46-f178-4585-920d-91f12f99f8d1" number="15" given-name="Shalom" surname="Ekong" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130997" phase="1" game-time="36:58" game-minute-for-web="37" game-time-for-web="37" day-time="19:37:23" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130995" phase="1" game-time="36:32" game-minute-for-web="37" game-time-for-web="37" day-time="19:36:55" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130977" phase="1" game-time="34:08" game-minute-for-web="35" game-time-for-web="35" day-time="19:34:36" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="550032" player-guid="cb642fb4-24c0-4b2e-842e-3374bfc141e6" number="23" given-name="Erdal" surname="Rakip" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130953" phase="1" game-time="30:01" game-minute-for-web="31" game-time-for-web="31" day-time="19:30:28" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="771827" player-guid="78241e81-80f3-483c-a53f-8e53a62c9756" number="14" given-name="Alper" surname="Demirol" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130952" phase="1" game-time="29:45" game-minute-for-web="30" game-time-for-web="30" day-time="19:30:12" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="841964" player-guid="452de6a3-655d-40fe-bc1e-96989033181f" number="21" given-name="Ludvig" surname="N&#xE5;vik" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130944" phase="1" game-time="28:24" game-minute-for-web="29" game-time-for-web="29" day-time="19:28:51" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130943" phase="1" game-time="27:40" game-minute-for-web="28" game-time-for-web="28" day-time="19:28:06" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="549417" player-guid="675c7553-4551-4b42-93a5-5286e2cfb4a0" number="20" given-name="Max" surname="Watson" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130934" phase="1" game-time="25:19" game-minute-for-web="26" game-time-for-web="26" day-time="19:25:44" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1483432" player-guid="edb31c7f-c86b-4fe2-b362-58b6811ec995" number="25" given-name="Charles" surname="Baah" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130930" phase="1" game-time="23:02" game-minute-for-web="24" game-time-for-web="24" day-time="19:23:27" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="367659" player-guid="0a691feb-c441-420e-ac77-c89da2cf6f10" number="17" given-name="Karl" surname="Holmberg" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130903" phase="1" game-time="16:58" game-minute-for-web="17" game-time-for-web="17" day-time="19:17:27" event-type-id="6" type="G" type-desc="Goal" home-team="false" home-score="0" away-score="1" x-position="0" y-position="0" goal-type-ix="1" goal-type-desc="Normal">
+      <participants>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="6" type="S" type-desc="Scorer" is-staff-member="false"/>
+        <participant id="571145" player-guid="2ff9e2d8-a9ea-4418-8e47-eab818a9f78d" number="19" given-name="Jetmir" surname="Haliti" event-type-id="11" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130889" phase="1" game-time="12:37" game-minute-for-web="13" game-time-for-web="13" day-time="19:13:09" event-type-id="12" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="845478" player-guid="0c107be5-d1de-4635-b7f0-85f7761f93c1" number="16" given-name="Elvis" surname="Hansson" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130888" phase="1" game-time="12:35" game-minute-for-web="13" game-time-for-web="13" day-time="19:13:05" event-type-id="13" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="922095" player-guid="7d3f0a46-f178-4585-920d-91f12f99f8d1" number="15" given-name="Shalom" surname="Ekong" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130886" phase="1" game-time="11:07" game-minute-for-web="12" game-time-for-web="12" day-time="19:11:31" event-type-id="5" type="C" type-desc="Corner" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="5" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130858" phase="1" game-time="5:01" game-minute-for-web="6" game-time-for-web="6" day-time="19:05:28" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="775274" player-guid="97c62c67-fa22-480d-b90d-adce3db91a1e" number="8" given-name="Manasse" surname="Kusu" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130857" phase="1" game-time="4:22" game-minute-for-web="5" game-time-for-web="5" day-time="19:04:46" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="571145" player-guid="2ff9e2d8-a9ea-4418-8e47-eab818a9f78d" number="19" given-name="Jetmir" surname="Haliti" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130855" phase="1" game-time="4:15" game-minute-for-web="5" game-time-for-web="5" day-time="19:04:42" event-type-id="13" type="F" type-desc="Finish" home-team="true" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="1680808" player-guid="60ef70c8-75c6-474e-9b59-5921d61cc14e" number="19" given-name="Eron" surname="Gojani" event-type-id="13" type="S" type-desc="Shot saved" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130854" phase="1" game-time="3:33" game-minute-for-web="4" game-time-for-web="4" day-time="19:03:58" event-type-id="4" type="T" type-desc="Freekick" home-team="true" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="922095" player-guid="7d3f0a46-f178-4585-920d-91f12f99f8d1" number="15" given-name="Shalom" surname="Ekong" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130852" phase="1" game-time="2:58" game-minute-for-web="3" game-time-for-web="3" day-time="19:03:26" event-type-id="12" type="F" type-desc="Finish" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="12" type="O" type-desc="Shot missed" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130848" phase="1" game-time="2:08" game-minute-for-web="3" game-time-for-web="3" day-time="19:02:37" event-type-id="4" type="T" type-desc="Freekick" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="337826" player-guid="69078587-ae1c-406a-89b2-b732bbbd6c96" number="99" given-name="Ahmed" surname="Yasin" event-type-id="4" type="F" type-desc="Freekick for" is-staff-member="false"/>
+      </participants>
+    </event>
+    <event id="12130845" phase="1" game-time="0:00" game-minute-for-web="1" game-time-for-web="1" day-time="19:00:24" event-type-id="31" type="HALFSTARTED" type-desc="Half started" home-team="false" home-score="0" away-score="0" x-position="0" y-position="0" goal-type-ix="" goal-type-desc="">
+      <participants>
+        <participant id="0" player-guid="" number="-1" given-name="" surname="Ok&#xE4;nd spelare" event-type-id="31" type="0" type-desc="Unknown" is-staff-member="false"/>
+      </participants>
+    </event>
+  </events>
+</game-info>

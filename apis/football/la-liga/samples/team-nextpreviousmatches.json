@@ -1,0 +1,577 @@
+{
+  "match_previous_next": {
+    "previous_matches": [
+      {
+        "id": 102295,
+        "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Madrid - Rayo Vallecano - 5",
+        "slug": "temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+        "date": "2026-09-12T19:00:00+00:00",
+        "time": "2026-09-12T19:00:00+00:00",
+        "hashtag": "RealMadridRayo",
+        "status": "PreMatch",
+        "home_team": {
+          "id": 15,
+          "slug": "real-madrid",
+          "name": "Real Madrid Club de Fútbol",
+          "nickname": "Real Madrid",
+          "boundname": "Real Madrid",
+          "shortname": "RMA",
+          "color": "#0f39b8",
+          "color_secondary": "#ffffff",
+          "foundation": "1902-03-06T00:00:00+00:00",
+          "web": "http://www.realmadrid.com",
+          "sprite_status": "created",
+          "shield": {
+            "id": 149,
+            "name": "Escudo RMA",
+            "caption": "Escudo RMA",
+            "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+              "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+              "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+              "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+              "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t186",
+          "lde_id": 82
+        },
+        "away_team": {
+          "id": 14,
+          "slug": "rayo-vallecano",
+          "name": "Rayo Vallecano de Madrid SAD",
+          "nickname": "Rayo Vallecano",
+          "boundname": "Rayo Vallecano",
+          "shortname": "RAY",
+          "foundation": "1924-05-20T00:00:00+00:00",
+          "web": "http://www.rayovallecano.es",
+          "sprite_status": "created",
+          "shield": {
+            "id": 691708,
+            "name": "Escudo Rayo",
+            "caption": "Escudo Rayo",
+            "url": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2023/04/27/xsmall/57d9950a8745ead226c04d37235c0786.png",
+              "small": "https://assets.laliga.com/assets/2023/04/27/small/57d9950a8745ead226c04d37235c0786.png",
+              "medium": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png",
+              "large": "https://assets.laliga.com/assets/2023/04/27/large/57d9950a8745ead226c04d37235c0786.png",
+              "xlarge": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+              "hl": "https://assets.laliga.com/assets/2023/04/27/hl/57d9950a8745ead226c04d37235c0786.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t184",
+          "lde_id": 80
+        },
+        "gameweek": {
+          "id": 10379,
+          "week": 5,
+          "name": "Matchday 5",
+          "shortname": "M5",
+          "date": "2026-09-13T00:00:00+00:00",
+          "highlight_note": "*Los partidos podrían sufrir modificaciones por lo que LALIGA recomienda verificar regularmente los horarios y fechas de los partidos a través de la web y de los canales oficiales de venta de entradas para estar debidamente informados de cualquier cambio que pudiera ocurrir. En caso de modificación, cancelación o suspensión de un partido por fuerza mayor o causas sobrevenidas ajenas a LALIGA que así lo justifiquen se informará a la mayor brevedad posible a través de los canales de comunicación de LALIGA."
+        },
+        "venue": {
+          "id": 15,
+          "name": "Bernabéu",
+          "latitude": "40.4523173",
+          "longitude": "-3.6837513",
+          "capacity": 80000,
+          "address": "Av. de Concha Espina, 1, Chamartín, 28036",
+          "timezone": "Europe/Madrid",
+          "city": "Madrid",
+          "slug": "bernabeu",
+          "opta_id": "v1360",
+          "lde_id": 515
+        },
+        "channels": [
+          {
+            "id": "67",
+            "name": "DAZN",
+            "slug": "dazn",
+            "local": false,
+            "residential": false,
+            "residential_secondary": false,
+            "image": {
+              "id": 619217,
+              "name": "DAZN",
+              "url": "https://assets.laliga.com/assets/2022/06/30/xlarge/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2022/06/30/xsmall/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "small": "https://assets.laliga.com/assets/2022/06/30/small/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "medium": "https://assets.laliga.com/assets/2022/06/30/medium/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "large": "https://assets.laliga.com/assets/2022/06/30/large/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "xlarge": "https://assets.laliga.com/assets/2022/06/30/xlarge/6a4bdb9c79c7f82e20bdb4014f5e9fde.png"
+              }
+            },
+            "web": " https://www.awin1.com/cread.php?awinmid=126263&awinaffid=2937963&campaign=LaLigaWidgetMediosAWON&ued=https%3A%2F%2Fwww.dazn.com%2Fes-ES%2Fwelcome",
+            "web_residential": "https://www.dazn.com/es-ES/welcome/",
+            "priority": 1,
+            "countries": []
+          }
+        ],
+        "season": {
+          "id": 102,
+          "name": "Season 2026/2027",
+          "year": 2026,
+          "slug": "season-2026-2027",
+          "opta_id": "2026",
+          "lde_id": 99
+        },
+        "is_brand_day": false,
+        "temperature": {
+          "enabled_historical": false,
+          "enabled_forecast": false
+        },
+        "opta_id": "g2650808",
+        "lde_id": 240595
+      },
+      {
+        "id": 102281,
+        "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Betis - Real Madrid - 4",
+        "slug": "temporada-2026-2027-laliga-ea-sports-real-betis-real-madrid-4",
+        "date": "2026-09-04T19:00:00+00:00",
+        "time": "2026-09-04T19:00:00+00:00",
+        "hashtag": "RealBetisRealMadrid",
+        "home_score": 1,
+        "away_score": 0,
+        "status": "FullTime",
+        "home_team": {
+          "id": 5,
+          "slug": "real-betis",
+          "name": "Real Betis Balompié SAD",
+          "nickname": "Real Betis",
+          "boundname": "Real Betis",
+          "shortname": "BET",
+          "color": "#038316",
+          "color_secondary": "#ffffff",
+          "foundation": "1907-09-12T00:00:00+00:00",
+          "web": "http://www.realbetisbalompie.es/",
+          "sprite_status": "created",
+          "shield": {
+            "id": 627565,
+            "name": "LOGO BETIS OK",
+            "url": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2022/09/15/xsmall/e4a09419d3bd115b8f3dab73d480e146.png",
+              "small": "https://assets.laliga.com/assets/2022/09/15/small/e4a09419d3bd115b8f3dab73d480e146.png",
+              "medium": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png",
+              "large": "https://assets.laliga.com/assets/2022/09/15/large/e4a09419d3bd115b8f3dab73d480e146.png",
+              "xlarge": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t185",
+          "lde_id": 81
+        },
+        "away_team": {
+          "id": 15,
+          "slug": "real-madrid",
+          "name": "Real Madrid Club de Fútbol",
+          "nickname": "Real Madrid",
+          "boundname": "Real Madrid",
+          "shortname": "RMA",
+          "foundation": "1902-03-06T00:00:00+00:00",
+          "web": "http://www.realmadrid.com",
+          "sprite_status": "created",
+          "shield": {
+            "id": 149,
+            "name": "Escudo RMA",
+            "caption": "Escudo RMA",
+            "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+              "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+              "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+              "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+              "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t186",
+          "lde_id": 82
+        },
+        "match_winner_team": {
+          "id": 5,
+          "slug": "real-betis",
+          "name": "Real Betis Balompié SAD",
+          "nickname": "Real Betis",
+          "boundname": "Real Betis",
+          "shortname": "BET",
+          "color": "#038316",
+          "color_secondary": "#ffffff",
+          "foundation": "1907-09-12T00:00:00+00:00",
+          "web": "http://www.realbetisbalompie.es/",
+          "sprite_status": "created",
+          "shield": {
+            "id": 627565,
+            "name": "LOGO BETIS OK",
+            "url": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2022/09/15/xsmall/e4a09419d3bd115b8f3dab73d480e146.png",
+              "small": "https://assets.laliga.com/assets/2022/09/15/small/e4a09419d3bd115b8f3dab73d480e146.png",
+              "medium": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png",
+              "large": "https://assets.laliga.com/assets/2022/09/15/large/e4a09419d3bd115b8f3dab73d480e146.png",
+              "xlarge": "https://assets.laliga.com/assets/2022/09/15/xlarge/e4a09419d3bd115b8f3dab73d480e146.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t185",
+          "lde_id": 81
+        },
+        "gameweek": {
+          "id": 10378,
+          "week": 4,
+          "name": "Matchday 4",
+          "shortname": "M4",
+          "date": "2026-09-06T00:00:00+00:00"
+        },
+        "venue": {
+          "id": 402,
+          "name": "Estadio La Cartuja",
+          "latitude": "37.3771483",
+          "longitude": "-6.0147061",
+          "capacity": 60000,
+          "address": "Isla de la Cartuja, 41092",
+          "timezone": "Europe/Madrid",
+          "city": "Sevilla",
+          "slug": "estadio-la-cartuja",
+          "opta_id": "v3354",
+          "lde_id": 600
+        },
+        "channels": [
+          {
+            "id": "69",
+            "name": "Movistar LALIGA",
+            "slug": "movistar-laliga-tv",
+            "local": false,
+            "residential": true,
+            "residential_secondary": false,
+            "image": {
+              "id": 891488,
+              "name": "M_LaLiga_Negro_RGB.png",
+              "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+                "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+                "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+                "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+                "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+                "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+              }
+            },
+            "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+            "priority": 2,
+            "countries": []
+          }
+        ],
+        "season": {
+          "id": 102,
+          "name": "Season 2026/2027",
+          "year": 2026,
+          "slug": "season-2026-2027",
+          "opta_id": "2026",
+          "lde_id": 99
+        },
+        "is_brand_day": false,
+        "temperature": {
+          "enabled_historical": false,
+          "enabled_forecast": false
+        },
+        "opta_id": "g2650794",
+        "lde_id": 240608
+      }
+    ],
+    "next_matches": [
+      {
+        "id": 102303,
+        "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Elche CF - Real Madrid - 6",
+        "slug": "temporada-2026-2027-laliga-ea-sports-elche-cf-real-madrid-6",
+        "date": "2026-09-15T19:30:00+00:00",
+        "time": "2026-09-15T19:30:00+00:00",
+        "hashtag": "ElcheRealMadrid",
+        "status": "PreMatch",
+        "home_team": {
+          "id": 7,
+          "slug": "elche-c-f",
+          "name": "Elche Club de Fútbol SAD",
+          "nickname": "Elche CF",
+          "boundname": "Elche CF",
+          "shortname": "ELC",
+          "color": "#038316",
+          "color_secondary": "#ffffff",
+          "foundation": "1923-03-01T00:00:00+00:00",
+          "web": "http://www.elchecf.es/",
+          "sprite_status": "created",
+          "shield": {
+            "id": 133,
+            "name": "Escudo ECF",
+            "caption": "Escudo ECF",
+            "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/elche.png",
+              "small": "https://assets.laliga.com/assets/2019/06/07/small/elche.png",
+              "medium": "https://assets.laliga.com/assets/2019/06/07/medium/elche.png",
+              "large": "https://assets.laliga.com/assets/2019/06/07/large/elche.png",
+              "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/elche.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t954",
+          "lde_id": 262
+        },
+        "away_team": {
+          "id": 15,
+          "slug": "real-madrid",
+          "name": "Real Madrid Club de Fútbol",
+          "nickname": "Real Madrid",
+          "boundname": "Real Madrid",
+          "shortname": "RMA",
+          "foundation": "1902-03-06T00:00:00+00:00",
+          "web": "http://www.realmadrid.com",
+          "sprite_status": "created",
+          "shield": {
+            "id": 149,
+            "name": "Escudo RMA",
+            "caption": "Escudo RMA",
+            "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+              "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+              "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+              "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+              "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t186",
+          "lde_id": 82
+        },
+        "venue": {
+          "id": 7,
+          "name": "Estadio Martínez Valero",
+          "latitude": "38.26661",
+          "longitude": "-0.66477",
+          "capacity": 33722,
+          "address": "Avda. Manuel Martínez Valero, 3. 03208 Elche (Alicante)",
+          "timezone": "Europe/Madrid",
+          "city": "Elche",
+          "slug": "estadio-martinez-valero",
+          "opta_id": "v3670",
+          "lde_id": 329
+        },
+        "channels": [
+          {
+            "id": "69",
+            "name": "Movistar LALIGA",
+            "slug": "movistar-laliga-tv",
+            "local": false,
+            "residential": true,
+            "residential_secondary": false,
+            "image": {
+              "id": 891488,
+              "name": "M_LaLiga_Negro_RGB.png",
+              "url": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2025/07/22/xsmall/b30076eca9b622cf930eaa01ef6910d1.png",
+                "small": "https://assets.laliga.com/assets/2025/07/22/small/b30076eca9b622cf930eaa01ef6910d1.png",
+                "medium": "https://assets.laliga.com/assets/2025/07/22/medium/b30076eca9b622cf930eaa01ef6910d1.png",
+                "large": "https://assets.laliga.com/assets/2025/07/22/large/b30076eca9b622cf930eaa01ef6910d1.png",
+                "xlarge": "https://assets.laliga.com/assets/2025/07/22/xlarge/b30076eca9b622cf930eaa01ef6910d1.png",
+                "hl": "https://assets.laliga.com/assets/2025/07/22/hl/b30076eca9b622cf930eaa01ef6910d1.png"
+              }
+            },
+            "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+            "priority": 2,
+            "countries": []
+          },
+          {
+            "id": "70",
+            "name": "Movistar Plus+",
+            "slug": "movistar-plus",
+            "local": false,
+            "residential": false,
+            "residential_secondary": false,
+            "image": {
+              "id": 714617,
+              "name": "MicrosoftTeams-image (42).png",
+              "url": "https://assets.laliga.com/assets/2023/07/26/xlarge/e4e14d9bb877f01c3919c7d653ce9443.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2023/07/26/xsmall/e4e14d9bb877f01c3919c7d653ce9443.png",
+                "small": "https://assets.laliga.com/assets/2023/07/26/small/e4e14d9bb877f01c3919c7d653ce9443.png",
+                "medium": "https://assets.laliga.com/assets/2023/07/26/medium/e4e14d9bb877f01c3919c7d653ce9443.png",
+                "large": "https://assets.laliga.com/assets/2023/07/26/large/e4e14d9bb877f01c3919c7d653ce9443.png",
+                "xlarge": "https://assets.laliga.com/assets/2023/07/26/xlarge/e4e14d9bb877f01c3919c7d653ce9443.png",
+                "hl": "https://assets.laliga.com/assets/2023/07/26/hl/e4e14d9bb877f01c3919c7d653ce9443.png"
+              }
+            },
+            "web": "https://www.movistarplus.es/el-partido-movistarplus?utm_source=laliga.com&utm_medium=referral&utm_campaign=web_laliga",
+            "priority": 3,
+            "countries": []
+          },
+          {
+            "id": "75",
+            "name": "Orange Fútbol 1",
+            "slug": "futbol-1",
+            "local": false,
+            "residential": false,
+            "residential_secondary": false,
+            "image": {
+              "id": 965255,
+              "name": "ORANGE_FUTBOL_1_POSITIVO.png",
+              "url": "https://assets.laliga.com/assets/2026/04/09/xlarge/5cc2f175c04975c54139f7166301aff7.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2026/04/09/xsmall/5cc2f175c04975c54139f7166301aff7.png",
+                "small": "https://assets.laliga.com/assets/2026/04/09/small/5cc2f175c04975c54139f7166301aff7.png",
+                "medium": "https://assets.laliga.com/assets/2026/04/09/medium/5cc2f175c04975c54139f7166301aff7.png",
+                "large": "https://assets.laliga.com/assets/2026/04/09/large/5cc2f175c04975c54139f7166301aff7.png",
+                "xlarge": "https://assets.laliga.com/assets/2026/04/09/xlarge/5cc2f175c04975c54139f7166301aff7.png",
+                "hl": "https://assets.laliga.com/assets/2026/04/09/hl/5cc2f175c04975c54139f7166301aff7.png"
+              }
+            },
+            "priority": 4,
+            "countries": []
+          }
+        ],
+        "season": {
+          "id": 102,
+          "name": "Season 2026/2027",
+          "year": 2026,
+          "slug": "season-2026-2027",
+          "opta_id": "2026",
+          "lde_id": 99
+        },
+        "is_brand_day": false,
+        "temperature": {
+          "enabled_historical": false,
+          "enabled_forecast": false
+        },
+        "opta_id": "g2650816",
+        "lde_id": 240606
+      },
+      {
+        "id": 102310,
+        "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Atlético de Madrid - Real Madrid - 7",
+        "slug": "temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-real-madrid-7",
+        "date": "2026-09-20T14:15:00+00:00",
+        "time": "2026-09-20T14:15:00+00:00",
+        "hashtag": "AtletiRealMadrid",
+        "status": "PreMatch",
+        "home_team": {
+          "id": 2,
+          "slug": "atletico-de-madrid",
+          "name": "Club Atlético de Madrid SAD",
+          "nickname": "Atlético de Madrid",
+          "boundname": "Atlético de Madrid",
+          "shortname": "ATM",
+          "color": "#f21e27",
+          "color_secondary": "#ffffff",
+          "shirt_style": "striped",
+          "foundation": "1903-04-26T00:00:00+00:00",
+          "web": "http://www.atleticodemadrid.com/",
+          "sprite_status": "created",
+          "shield": {
+            "id": 812970,
+            "name": "atletico_v2_512x512.png",
+            "url": "https://assets.laliga.com/assets/2024/06/17/xlarge/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2024/06/17/xsmall/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+              "small": "https://assets.laliga.com/assets/2024/06/17/small/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+              "medium": "https://assets.laliga.com/assets/2024/06/17/medium/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+              "large": "https://assets.laliga.com/assets/2024/06/17/large/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+              "xlarge": "https://assets.laliga.com/assets/2024/06/17/xlarge/cbc5c8cc8c3e8abd0e175c00ee53b723.png",
+              "hl": "https://assets.laliga.com/assets/2024/06/17/hl/cbc5c8cc8c3e8abd0e175c00ee53b723.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t175",
+          "lde_id": 70
+        },
+        "away_team": {
+          "id": 15,
+          "slug": "real-madrid",
+          "name": "Real Madrid Club de Fútbol",
+          "nickname": "Real Madrid",
+          "boundname": "Real Madrid",
+          "shortname": "RMA",
+          "foundation": "1902-03-06T00:00:00+00:00",
+          "web": "http://www.realmadrid.com",
+          "sprite_status": "created",
+          "shield": {
+            "id": 149,
+            "name": "Escudo RMA",
+            "caption": "Escudo RMA",
+            "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+            "resizes": {
+              "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+              "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+              "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+              "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+              "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+            }
+          },
+          "competitions": [],
+          "opta_id": "t186",
+          "lde_id": 82
+        },
+        "venue": {
+          "id": 259,
+          "name": "Riyadh Air Metropolitano",
+          "latitude": "40.44184",
+          "longitude": "-3.60278",
+          "capacity": 70692,
+          "address": "Av. de Luis Aragones, 4, 28022 Madrid",
+          "timezone": "Europe/Madrid",
+          "city": "Madrid",
+          "slug": "riyadh-air-metropolitano",
+          "opta_id": "v12175",
+          "lde_id": 510
+        },
+        "channels": [
+          {
+            "id": "67",
+            "name": "DAZN",
+            "slug": "dazn",
+            "local": false,
+            "residential": false,
+            "residential_secondary": false,
+            "image": {
+              "id": 619217,
+              "name": "DAZN",
+              "url": "https://assets.laliga.com/assets/2022/06/30/xlarge/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+              "resizes": {
+                "xsmall": "https://assets.laliga.com/assets/2022/06/30/xsmall/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "small": "https://assets.laliga.com/assets/2022/06/30/small/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "medium": "https://assets.laliga.com/assets/2022/06/30/medium/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "large": "https://assets.laliga.com/assets/2022/06/30/large/6a4bdb9c79c7f82e20bdb4014f5e9fde.png",
+                "xlarge": "https://assets.laliga.com/assets/2022/06/30/xlarge/6a4bdb9c79c7f82e20bdb4014f5e9fde.png"
+              }
+            },
+            "web": " https://www.awin1.com/cread.php?awinmid=126263&awinaffid=2937963&campaign=LaLigaWidgetMediosAWON&ued=https%3A%2F%2Fwww.dazn.com%2Fes-ES%2Fwelcome",
+            "web_residential": "https://www.dazn.com/es-ES/welcome/",
+            "priority": 1,
+            "countries": []
+          }
+        ],
+        "season": {
+          "id": 102,
+          "name": "Season 2026/2027",
+          "year": 2026,
+          "slug": "season-2026-2027",
+          "opta_id": "2026",
+          "lde_id": 99
+        },
+        "is_brand_day": false,
+        "temperature": {
+          "enabled_historical": false,
+          "enabled_forecast": false
+        },
+        "opta_id": "g2650823",
+        "lde_id": 240594
+      }
+    ]
+  }
+}

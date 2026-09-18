@@ -1,0 +1,237 @@
+{
+  "match": {
+    "id": 102295,
+    "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Madrid - Rayo Vallecano - 5",
+    "slug": "temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+    "date": "2026-09-12T19:00:00+00:00",
+    "time": "2026-09-12T19:00:00+00:00",
+    "hashtag": "RealMadridRayo",
+    "competition": {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "main": true,
+      "opta_id": "23",
+      "lde_id": 5
+    },
+    "status": "PreMatch",
+    "attempt_official": false,
+    "home_team": {
+      "id": 15,
+      "slug": "real-madrid",
+      "name": "Real Madrid Club de Fútbol",
+      "nickname": "Real Madrid",
+      "boundname": "Real Madrid",
+      "shortname": "RMA",
+      "color": "#0f39b8",
+      "color_secondary": "#ffffff",
+      "foundation": "1902-03-06T00:00:00+00:00",
+      "web": "http://www.realmadrid.com",
+      "sprite_status": "created",
+      "shield": {
+        "id": 149,
+        "name": "Escudo RMA",
+        "caption": "Escudo RMA",
+        "url": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png",
+        "resizes": {
+          "xsmall": "https://assets.laliga.com/assets/2019/06/07/xsmall/real-madrid.png",
+          "small": "https://assets.laliga.com/assets/2019/06/07/small/real-madrid.png",
+          "medium": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png",
+          "large": "https://assets.laliga.com/assets/2019/06/07/large/real-madrid.png",
+          "xlarge": "https://assets.laliga.com/assets/2019/06/07/xlarge/real-madrid.png"
+        }
+      },
+      "competitions": [],
+      "opta_id": "t186",
+      "lde_id": 82
+    },
+    "away_team": {
+      "id": 14,
+      "slug": "rayo-vallecano",
+      "name": "Rayo Vallecano de Madrid SAD",
+      "nickname": "Rayo Vallecano",
+      "boundname": "Rayo Vallecano",
+      "shortname": "RAY",
+      "foundation": "1924-05-20T00:00:00+00:00",
+      "web": "http://www.rayovallecano.es",
+      "sprite_status": "created",
+      "shield": {
+        "id": 691708,
+        "name": "Escudo Rayo",
+        "caption": "Escudo Rayo",
+        "url": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+        "resizes": {
+          "xsmall": "https://assets.laliga.com/assets/2023/04/27/xsmall/57d9950a8745ead226c04d37235c0786.png",
+          "small": "https://assets.laliga.com/assets/2023/04/27/small/57d9950a8745ead226c04d37235c0786.png",
+          "medium": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png",
+          "large": "https://assets.laliga.com/assets/2023/04/27/large/57d9950a8745ead226c04d37235c0786.png",
+          "xlarge": "https://assets.laliga.com/assets/2023/04/27/xlarge/57d9950a8745ead226c04d37235c0786.png",
+          "hl": "https://assets.laliga.com/assets/2023/04/27/hl/57d9950a8745ead226c04d37235c0786.png"
+        }
+      },
+      "competitions": [],
+      "opta_id": "t184",
+      "lde_id": 80
+    },
+    "gameweek": {
+      "id": 10379,
+      "week": 5,
+      "name": "Matchday 5",
+      "shortname": "M5",
+      "date": "2026-09-13T00:00:00+00:00",
+      "highlight_note": "*Los partidos podrían sufrir modificaciones por lo que LALIGA recomienda verificar regularmente los horarios y fechas de los partidos a través de la web y de los canales oficiales de venta de entradas para estar debidamente informados de cualquier cambio que pudiera ocurrir. En caso de modificación, cancelación o suspensión de un partido por fuerza mayor o causas sobrevenidas ajenas a LALIGA que así lo justifiquen se informará a la mayor brevedad posible a través de los canales de comunicación de LALIGA."
+    },
+    "venue": {
+      "id": 15,
+      "name": "Bernabéu",
+      "latitude": "40.4523173",
+      "longitude": "-3.6837513",
+      "capacity": 80000,
+      "address": "Av. de Concha Espina, 1, Chamartín, 28036",
+      "timezone": "Europe/Madrid",
+      "city": "Madrid",
+      "slug": "bernabeu",
+      "opta_id": "v1360",
+      "lde_id": 515
+    },
+    "persons_role": [
+      {
+        "person": {
+          "id": 9901,
+          "name": "Víctor García Verdura",
+          "nickname": "Víctor García Verdura",
+          "firstname": "Víctor",
+          "lastname": "García Verdura",
+          "gender": "male",
+          "international": false,
+          "slug": "victor-garcia-verdura"
+        },
+        "role": {
+          "id": 5,
+          "name": "Main Referee",
+          "female_name": "Árbitro Principal",
+          "slug": "arbitro-principal"
+        },
+        "opta_id": "o48769",
+        "lde_id": 531
+      },
+      {
+        "person": {
+          "id": 24330,
+          "name": "Javier Figueiredo Comesaña",
+          "nickname": "Javier Figueiredo Comesaña",
+          "firstname": "Javier",
+          "lastname": "Figueiredo Comesaña",
+          "gender": "male",
+          "international": false,
+          "slug": "javier-figueiredo-comesana"
+        },
+        "role": {
+          "id": 8,
+          "name": "Fourth official",
+          "female_name": "Cuarto Árbitro",
+          "slug": "cuarto-arbitro"
+        }
+      },
+      {
+        "person": {
+          "id": 9863,
+          "name": "Juan Luis Pulido Santana",
+          "nickname": "Juan Luis Pulido Santana",
+          "firstname": "Juan Luis",
+          "lastname": "Pulido Santana",
+          "gender": "male",
+          "international": false,
+          "slug": "juan-luis-pulido-santana"
+        },
+        "role": {
+          "id": 9,
+          "name": "VAR",
+          "female_name": "VAR",
+          "slug": "var"
+        }
+      },
+      {
+        "person": {
+          "id": 9950,
+          "name": "Luis Mario Milla Alvendiz",
+          "nickname": "Luis Mario Milla Alvendiz",
+          "firstname": "Luis Mario",
+          "lastname": "Milla Alvendiz",
+          "gender": "male",
+          "international": false,
+          "slug": "luis-mario-milla-alvendiz"
+        },
+        "role": {
+          "id": 10,
+          "name": "AVAR",
+          "female_name": "AVAR",
+          "slug": "avar"
+        }
+      },
+      {
+        "person": {
+          "id": 10068,
+          "name": "Diego Sánchez Rojo",
+          "nickname": "Diego Sánchez Rojo",
+          "firstname": "Diego",
+          "lastname": "Sánchez Rojo",
+          "gender": "male",
+          "international": false,
+          "slug": "diego-sanchez-rojo"
+        },
+        "role": {
+          "id": 6,
+          "name": "Assistant 1",
+          "female_name": "Árbitro Asistente 1",
+          "slug": "arbitro-asistente-1"
+        }
+      },
+      {
+        "person": {
+          "id": 10134,
+          "name": "Julián Villaseñor Julián",
+          "nickname": "Julián Villaseñor Julián",
+          "firstname": "Julián",
+          "lastname": "Villaseñor Julián",
+          "gender": "male",
+          "international": false,
+          "slug": "julian-villasenor-julian"
+        },
+        "role": {
+          "id": 7,
+          "name": "Assistant 2",
+          "female_name": "Árbitro Asistente 2",
+          "slug": "arbitro-asistente-2"
+        }
+      }
+    ],
+    "season": {
+      "id": 102,
+      "name": "Season 2026/2027",
+      "year": 2026,
+      "slug": "season-2026-2027",
+      "opta_id": "2026",
+      "lde_id": 99
+    },
+    "subscription": {
+      "id": 395,
+      "name": "LALIGA EA SPORTS",
+      "slug": "laliga-easports-2026",
+      "teams": [],
+      "rounds": []
+    },
+    "is_brand_day": false,
+    "temperature": {
+      "enabled_historical": false,
+      "enabled_forecast": false
+    },
+    "ball": {
+      "id": 31,
+      "name": "STELLAR NITRO ULTIMATE",
+      "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+    },
+    "opta_id": "g2650808",
+    "lde_id": 240595
+  }
+}

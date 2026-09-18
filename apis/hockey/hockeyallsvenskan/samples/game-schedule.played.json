@@ -1,0 +1,990 @@
+{
+  "_openscore_note": "TRUNCATED: 2025-26; gameInfo reduced to 6 (4 REG + 1 OT + 1 SO), teamList to 2.",
+  "gameInfo": [
+    {
+      "uuid": "z5oiv4qe2r",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "936a-936aAY8bT",
+        "ownerInstanceId": "ssk1_ssk",
+        "code": "SSK",
+        "names": {
+          "code": "SSK",
+          "short": "Södertälje",
+          "long": "Södertälje SK",
+          "full": "Södertälje Sportklubb",
+          "codeSite": "SSK",
+          "shortSite": "Södertälje",
+          "fullSite": "Södertälje SK Herr",
+          "longSite": "Södertälje SK Herr"
+        },
+        "score": 1,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/ssk1_ssk.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "1429-1429fuhHu",
+        "ownerInstanceId": "bik1_bik",
+        "code": "BIK",
+        "names": {
+          "code": "BIK",
+          "short": "Karlskoga",
+          "long": "BIK Karlskoga",
+          "full": "Bofors Ishockeyklubb Karlskoga",
+          "codeSite": "BIK",
+          "shortSite": "Karlskoga A-Lag",
+          "longSite": "BIK Karlskoga A-Lag",
+          "fullSite": "BIK Karlskoga A-Lag"
+        },
+        "score": 4,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/bik1_bik.svg"
+      },
+      "venueInfo": {
+        "uuid": "qQ9-119ambFbk",
+        "name": "Scaniarinken"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "bz2asu6rvf",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": true,
+      "shootout": false,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "d53c-cd81tOBRi",
+        "ownerInstanceId": "vim1_vim",
+        "code": "VHC",
+        "names": {
+          "code": "VH",
+          "short": "Vimmerby",
+          "long": "Vimmerby Hockey",
+          "full": "Vimmerby Hockey",
+          "codeSite": "VH",
+          "shortSite": "Vimmerby",
+          "fullSite": "Vimmerby Hockey",
+          "longSite": "Vimmerby Hockey"
+        },
+        "score": 1,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/vim1_vim.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "216a-216aIW1JZ",
+        "ownerInstanceId": "tro1_tro",
+        "code": "TRO",
+        "names": {
+          "code": "TRO",
+          "short": "Troja",
+          "long": "Troja-Ljungby",
+          "full": "IF Troja-Ljungby",
+          "codeSite": "TRO",
+          "shortSite": "Troja",
+          "fullSite": "IF Troja-Ljungby",
+          "longSite": "Troja-Ljungby"
+        },
+        "score": 2,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/tro1_tro.svg"
+      },
+      "venueInfo": {
+        "uuid": "qRh-B6sskxVIl",
+        "name": "VBO Arena"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "dkpul1jzta",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "WIN",
+        "uuid": "f7c8-f7c8isEb3",
+        "ownerInstanceId": "aik1_aik",
+        "code": "AIK",
+        "names": {
+          "code": "AIK",
+          "short": "AIK",
+          "long": "AIK",
+          "full": "Allmänna Idrottsklubben"
+        },
+        "score": 2,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/aik1_aik.svg"
+      },
+      "awayTeamInfo": {
+        "status": "LOSE",
+        "uuid": "94ce-94ce8I8r",
+        "ownerInstanceId": "vik1_vik",
+        "code": "VIK",
+        "names": {
+          "code": "VIK",
+          "short": "Västerås",
+          "long": "Västerås IK",
+          "full": "Västerås IK",
+          "codeSite": "VIK",
+          "shortSite": "Västerås Herr",
+          "fullSite": "Västerås IK Herr",
+          "longSite": "Västerås IK Herr"
+        },
+        "score": 1,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/vik1_vik.svg"
+      },
+      "venueInfo": {
+        "uuid": "qQ9-22c98azQX",
+        "name": "Hovet"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "dmke778r37",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "WIN",
+        "uuid": "f32b-cd81wq7XN",
+        "ownerInstanceId": "nyb1_nyb",
+        "code": "NYB",
+        "names": {
+          "code": "NVIF",
+          "short": "Nybro",
+          "long": "Nybro Vikings",
+          "full": "Nybro Vikings IF",
+          "codeSite": "NVIF",
+          "shortSite": "Nybro",
+          "fullSite": "Nybro Vikings IF",
+          "longSite": "Nybro Vikings"
+        },
+        "score": 3,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/nyb1_nyb.svg"
+      },
+      "awayTeamInfo": {
+        "status": "LOSE",
+        "uuid": "259b-259bYGVIp",
+        "ownerInstanceId": "iko1_iko",
+        "code": "IKO",
+        "names": {
+          "code": "IKO",
+          "short": "Oskarshamn",
+          "long": "IK Oskarshamn",
+          "full": "Ishockeyklubben Oskarshamn",
+          "codeSite": "IKO",
+          "shortSite": "Oskarshamn",
+          "fullSite": "Ishockeyklubben Oskarshamn",
+          "longSite": "IK Oskarshamn"
+        },
+        "score": 2,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/iko1_iko.svg"
+      },
+      "venueInfo": {
+        "uuid": "qWX-B22tdhwuc",
+        "name": "Liljas Arena"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "bz2asu6rvf",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": true,
+      "shootout": false,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "d53c-cd81tOBRi",
+        "ownerInstanceId": "vim1_vim",
+        "code": "VHC",
+        "names": {
+          "code": "VH",
+          "short": "Vimmerby",
+          "long": "Vimmerby Hockey",
+          "full": "Vimmerby Hockey",
+          "codeSite": "VH",
+          "shortSite": "Vimmerby",
+          "fullSite": "Vimmerby Hockey",
+          "longSite": "Vimmerby Hockey"
+        },
+        "score": 1,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/vim1_vim.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "216a-216aIW1JZ",
+        "ownerInstanceId": "tro1_tro",
+        "code": "TRO",
+        "names": {
+          "code": "TRO",
+          "short": "Troja",
+          "long": "Troja-Ljungby",
+          "full": "IF Troja-Ljungby",
+          "codeSite": "TRO",
+          "shortSite": "Troja",
+          "fullSite": "IF Troja-Ljungby",
+          "longSite": "Troja-Ljungby"
+        },
+        "score": 2,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/tro1_tro.svg"
+      },
+      "venueInfo": {
+        "uuid": "qRh-B6sskxVIl",
+        "name": "VBO Arena"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "x8thwci0qc",
+      "rawStartDateTime": "2025-09-19T17:00:00.000Z",
+      "startDateTime": "2025-09-19 19:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": true,
+      "ssgtUuid": "uy2zvu6xaa",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "dcba-dcbaXSrRU",
+        "ownerInstanceId": "mik1_mik",
+        "code": "MIK",
+        "names": {
+          "code": "MIK",
+          "short": "Mora",
+          "long": "Mora IK",
+          "full": "Mora Ishockeyklubb",
+          "codeSite": "MIK",
+          "shortSite": "Mora IK",
+          "fullSite": "Mora IK",
+          "longSite": "Mora IK"
+        },
+        "score": 1,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/mik1_mik.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "4519-4519Rdei6",
+        "ownerInstanceId": "ifb1_ifb",
+        "code": "IFB",
+        "names": {
+          "code": "IFB",
+          "short": "Björklöven",
+          "long": "Björklöven",
+          "full": "Idrottsföreningen Björklöven",
+          "codeSite": "IFB Herr",
+          "shortSite": "Björklöven Herr",
+          "fullSite": "Idrottsföreningen Björklöven Herr",
+          "longSite": "Björklöven"
+        },
+        "score": 2,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/ifb1_ifb.svg"
+      },
+      "venueInfo": {
+        "uuid": "qQ9-3422EDNzy",
+        "name": "Wibe Arena"
+      },
+      "seriesInfo": {
+        "uuid": "qQ9-594cW8OWD",
+        "code": "HA",
+        "displayName": "HockeyAllsvenskan"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    }
+  ],
+  "teamList": [
+    {
+      "uuid": "f7c8-f7c8isEb3",
+      "createdAt": null,
+      "createdBy": null,
+      "deleted": false,
+      "gender": "",
+      "graphicsLibrary": "aik1-aik-f535b",
+      "lastModified": "2024-11-18T14:53:34.000Z",
+      "nationality": "SE",
+      "ownerInstanceId": "aik1_aik",
+      "ownersite": "AIK",
+      "teamCode": "AIK",
+      "series": [
+        {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "displayName": "HA",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qQ9-bd0dSLh6k",
+          "code": "hockey",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2022-09-28T13:18:06.000Z"
+        }
+      ],
+      "teamMedia": [
+        {
+          "id": 925,
+          "mediaString": "image|ramses|21/09/967ba49ca5ffce98aaada05d0d23a2c0",
+          "sortOrder": 0,
+          "type": "squad"
+        }
+      ],
+      "teamNames": {
+        "code": "AIK",
+        "short": "AIK",
+        "long": "AIK",
+        "full": "Allmänna Idrottsklubben"
+      },
+      "clubName": {},
+      "teamInfo": {
+        "founded": "1891",
+        "golds": "7 st (1934, 1935, 1938, 1946, 1947, 1982, 1984)",
+        "finals": "4 st (1978, 1981, 1982, 1984)",
+        "retiredNumbers": "# 1 Leif Holmqvist\r\n# 2 Mats Thelin\r\n# 5 Bert-Ola Nordlander\r\n# 11 Peter Gradin\r\n# 18 Leif Holmgren",
+        "address": "Gårdsvägen 4\r\n169 70 Solna",
+        "phone": "08-18 91 00",
+        "email": "ishockey@aikhockey.se",
+        "chairman": "Johan Palmgren",
+        "manager": "Anders Olson"
+      },
+      "teamExtIds": [
+        {
+          "id": 1,
+          "extId": "AIK",
+          "locked": true,
+          "extIdType": {
+            "uuid": "165a-d5bcMnEuq",
+            "code": "isa",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": true,
+            "name": "ISA / Statnet"
+          }
+        },
+        {
+          "id": 2,
+          "extId": "4",
+          "locked": true,
+          "extIdType": {
+            "uuid": "7b6a-e633fcdB7",
+            "code": "ramses_legacy",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": false,
+            "name": "Ramses gammalt id"
+          }
+        },
+        {
+          "id": 125,
+          "extId": "36815",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 228,
+          "extId": "42841",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 504,
+          "extId": "49097",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 2308,
+          "extId": "69617",
+          "locked": false,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 1442,
+          "extId": "62512",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 834,
+          "extId": "55967",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 1,
+          "extId": "AIK",
+          "locked": true,
+          "extIdType": {
+            "uuid": "165a-d5bcMnEuq",
+            "code": "isa",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": true,
+            "name": "ISA / Statnet"
+          }
+        },
+        {
+          "id": 2,
+          "extId": "4",
+          "locked": true,
+          "extIdType": {
+            "uuid": "7b6a-e633fcdB7",
+            "code": "ramses_legacy",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": false,
+            "name": "Ramses gammalt id"
+          }
+        },
+        {
+          "id": 125,
+          "extId": "36815",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 228,
+          "extId": "42841",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 504,
+          "extId": "49097",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 2308,
+          "extId": "69617",
+          "locked": false,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 1442,
+          "extId": "62512",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 834,
+          "extId": "55967",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/aik1_aik.svg",
+      "socialMedia": [],
+      "displayName": "AIK"
+    },
+    {
+      "uuid": "181c-181cv0b9i",
+      "createdAt": null,
+      "createdBy": null,
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "ais1-ais-0e4dc",
+      "lastModified": "2024-10-09T10:05:33.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "ais1_ais",
+      "ownersite": "AIS",
+      "teamCode": "AIS",
+      "series": [
+        {
+          "uuid": "qQ9-594cW8OWD",
+          "code": "HA",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-15T08:21:41.000Z",
+          "displayName": "HA",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "en",
+              "translation": "HockeyAllsvenskan"
+            },
+            {
+              "language": "display",
+              "translation": "HA"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qQ9-bd0dSLh6k",
+          "code": "hockey",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2022-09-28T13:18:06.000Z"
+        }
+      ],
+      "teamMedia": [
+        {
+          "id": 880,
+          "mediaString": "image|ramses|21/09/42f473deb490215327f129647a1a5658",
+          "sortOrder": 0,
+          "type": "squad"
+        }
+      ],
+      "teamNames": {
+        "code": "AIS",
+        "short": "Almtuna",
+        "long": "Almtuna IS",
+        "full": "Almtuna Idrottssällskap",
+        "codeSite": "AIS",
+        "shortSite": "Almtuna",
+        "fullSite": "Almtuna Idrottssällskap",
+        "longSite": "Almtuna IS Herr"
+      },
+      "clubName": {
+        "code": "AIS",
+        "short": "Almtuna",
+        "long": "Almtuna IS Herr",
+        "full": "Almtuna Idrottssällskap"
+      },
+      "teamInfo": {
+        "email": "",
+        "chairman": "Niklas Sjölund",
+        "manager": "Robert Lif",
+        "founded": "1932",
+        "retiredNumbers": "11",
+        "address": "",
+        "facebook": "https://www.facebook.com/AlmtunaIS",
+        "instagram": "https://www.instagram.com/almtuna_official/"
+      },
+      "teamExtIds": [
+        {
+          "id": 229,
+          "extId": "42842",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 2764,
+          "extId": "AIS",
+          "locked": true,
+          "extIdType": {
+            "uuid": "165a-d5bcMnEuq",
+            "code": "isa",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": true,
+            "name": "ISA / Statnet"
+          }
+        },
+        {
+          "id": 2311,
+          "extId": "69618",
+          "locked": false,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 1460,
+          "extId": "62518",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 835,
+          "extId": "56268",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 795,
+          "extId": "55702",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 506,
+          "extId": "49099",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 126,
+          "extId": "36816",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 229,
+          "extId": "42842",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 2764,
+          "extId": "AIS",
+          "locked": true,
+          "extIdType": {
+            "uuid": "165a-d5bcMnEuq",
+            "code": "isa",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": null,
+            "visible": true,
+            "name": "ISA / Statnet"
+          }
+        },
+        {
+          "id": 2311,
+          "extId": "69618",
+          "locked": false,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 1460,
+          "extId": "62518",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 835,
+          "extId": "56268",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 795,
+          "extId": "55702",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 506,
+          "extId": "49099",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        },
+        {
+          "id": 126,
+          "extId": "36816",
+          "locked": true,
+          "extIdType": {
+            "uuid": "9f4c-1284S7mMn",
+            "code": "impleo_tournament-team-id",
+            "createdAt": "2016-12-01T17:20:56.000Z",
+            "createdBy": "ramses",
+            "deleted": false,
+            "lastModified": "2016-12-01T17:20:56.000Z",
+            "visible": true,
+            "name": "Impleo / Swehockey: Serie lagid"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/ais1_ais.svg",
+      "socialMedia": [],
+      "displayName": "Almtuna"
+    }
+  ],
+  "ssgtUuid": "uy2zvu6xaa"
+}

@@ -1,0 +1,61 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Team",
+    "_entityId": "c9840a203093f97cae0a9495",
+    "externalId": "107",
+    "name": "KooKoo Kouvola",
+    "shortName": "KOO",
+    "country": {
+      "name": "Finland",
+      "code": "fin"
+    },
+    "stats": {
+      "_type": "Corebine.Chl.Sport.Team.Stats",
+      "matches": {
+        "played": {
+          "total": 3
+        },
+        "won": {
+          "total": 1,
+          "overtimes": 0,
+          "shootouts": 0
+        },
+        "lost": {
+          "total": 2,
+          "overtimes": 1,
+          "shootouts": 0
+        },
+        "drawn": 0,
+        "wonPercentage": 33.33,
+        "shutouts": 0
+      },
+      "goals": {
+        "scored": {
+          "total": 7,
+          "shortHanded": 3
+        },
+        "conceded": {
+          "total": 8
+        }
+      },
+      "faceOffs": {
+        "total": 161,
+        "won": 77,
+        "percentage": 47.83
+      },
+      "powerPlays": {
+        "total": 12,
+        "won": 1
+      },
+      "powerPlayPercentage": 8.33,
+      "penaltyKills": {
+        "total": 11,
+        "won": 8
+      },
+      "penaltyKillPercentage": 72.73
+    }
+  },
+  "errors": [],
+  "includes": []
+}

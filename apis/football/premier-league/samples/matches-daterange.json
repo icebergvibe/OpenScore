@@ -1,0 +1,59 @@
+{
+  "pagination": {
+    "_limit": 10,
+    "_prev": null,
+    "_next": null
+  },
+  "data": [
+    {
+      "phase": "1",
+      "kickoffTimezone": "BST",
+      "competitionId": "8",
+      "period": "PreMatch",
+      "matchWeek": 4,
+      "kickoff": "2026-09-13 14:00:00",
+      "awayTeam": {
+        "name": "Brighton and Hove Albion",
+        "id": "36",
+        "shortName": "Brighton",
+        "abbr": "BHA"
+      },
+      "competition": "Premier League",
+      "kickoffTimezoneString": "Europe/London",
+      "homeTeam": {
+        "name": "Coventry City",
+        "id": "9",
+        "shortName": "Coventry",
+        "abbr": "COV"
+      },
+      "season": "2026",
+      "ground": "Coventry Building Society Arena, Coventry",
+      "matchId": "2645228"
+    },
+    {
+      "phase": "1",
+      "kickoffTimezone": "BST",
+      "competitionId": "8",
+      "period": "PreMatch",
+      "matchWeek": 4,
+      "kickoff": "2026-09-13 16:30:00",
+      "awayTeam": {
+        "name": "Manchester City",
+        "id": "43",
+        "shortName": "Man City",
+        "abbr": "MCI"
+      },
+      "competition": "Premier League",
+      "kickoffTimezoneString": "Europe/London",
+      "homeTeam": {
+        "name": "Manchester United",
+        "id": "1",
+        "shortName": "Man Utd",
+        "abbr": "MUN"
+      },
+      "season": "2026",
+      "ground": "Old Trafford, Manchester",
+      "matchId": "2645232"
+    }
+  ]
+}

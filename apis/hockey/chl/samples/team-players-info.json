@@ -1,0 +1,2379 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Team",
+    "_entityId": "c9840a203093f97cae0a9495",
+    "externalId": "107",
+    "name": "KooKoo Kouvola",
+    "shortName": "KOO",
+    "country": {
+      "name": "Finland",
+      "code": "fin"
+    },
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "pageEntityId": "1",
+      "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+      "isWeb": false
+    },
+    "athletes": [
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "ada1c8dbc756a6a932945d6e",
+        "externalId": "446174",
+        "firstName": "Samuel",
+        "lastName": "Valkeejärvi",
+        "number": 20,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "ada1c8dbc756a6a932945d6e",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Samuel",
+            "lastName": "Valkeejärvi"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-ada1c8dbc756a6a932945d6e.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 182,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 83,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2001-05-11T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "11a809b45ebc978720b3c027",
+        "externalId": "446170",
+        "firstName": "Ville",
+        "lastName": "Puhakka",
+        "number": 77,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "11a809b45ebc978720b3c027",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Ville",
+            "lastName": "Puhakka"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-11a809b45ebc978720b3c027.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 190,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 95,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2000-05-15T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "c0add44e7a2094c45b3e5fe9",
+        "externalId": "446173",
+        "firstName": "Roope",
+        "lastName": "Tossavainen",
+        "number": 72,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "c0add44e7a2094c45b3e5fe9",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Roope",
+            "lastName": "Tossavainen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-c0add44e7a2094c45b3e5fe9.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 181,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 84,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2004-12-05T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "a56f004b8c755a6e1e29e346",
+        "externalId": "446172",
+        "firstName": "Santeri",
+        "lastName": "Sulku",
+        "number": 10,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "a56f004b8c755a6e1e29e346",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Santeri",
+            "lastName": "Sulku"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-a56f004b8c755a6e1e29e346.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 192,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 91,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2004-06-13T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "d1f948c0dd0d2769f53cc6f6",
+        "externalId": "1744",
+        "firstName": "Vilmos",
+        "lastName": "Galló",
+        "number": 55,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "d1f948c0dd0d2769f53cc6f6",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Vilmos",
+            "lastName": "Galló"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-d1f948c0dd0d2769f53cc6f6.json"
+        },
+        "nationality": {
+          "name": "Hungary",
+          "code": "hun"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 182,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 92,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1996-07-31T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Hungary",
+                "code": "hun"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "98ab69cc910af1e7e2c9ffca",
+        "externalId": "446168",
+        "firstName": "Niklas",
+        "lastName": "Nykyri",
+        "number": 4,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "98ab69cc910af1e7e2c9ffca",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Niklas",
+            "lastName": "Nykyri"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-98ab69cc910af1e7e2c9ffca.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 187,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 86,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2006-01-26T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "b56aa7225988922d4e027e71",
+        "externalId": "446171",
+        "firstName": "Miska",
+        "lastName": "Siikonen",
+        "number": 71,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "b56aa7225988922d4e027e71",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Miska",
+            "lastName": "Siikonen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-b56aa7225988922d4e027e71.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 190,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 97,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1996-05-12T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "0125f4539e92f3a664b22320",
+        "externalId": "2461",
+        "firstName": "Marcus",
+        "lastName": "Davidsson",
+        "number": 70,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "0125f4539e92f3a664b22320",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Marcus",
+            "lastName": "Davidsson"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-0125f4539e92f3a664b22320.json"
+        },
+        "nationality": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 185,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 90,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1998-11-18T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Sweden",
+                "code": "swe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "da7f534cb78870fb5dffa681",
+        "externalId": "446161",
+        "firstName": "Ossi-Petteri",
+        "lastName": "Jaakola",
+        "number": 15,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "da7f534cb78870fb5dffa681",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Ossi-Petteri",
+            "lastName": "Jaakola"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-da7f534cb78870fb5dffa681.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 183,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 84,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2002-02-16T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "0402ea737a44a7c76bc9512e",
+        "externalId": "446159",
+        "firstName": "Matěj",
+        "lastName": "Bělohlav",
+        "number": 89,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "0402ea737a44a7c76bc9512e",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Matěj",
+            "lastName": "Bělohlav"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-0402ea737a44a7c76bc9512e.json"
+        },
+        "nationality": {
+          "name": "Czechia",
+          "code": "cze"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 191,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 88,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2005-06-05T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Czechia",
+                "code": "cze"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "108b8e4e8c52400e670f1443",
+        "externalId": "446164",
+        "firstName": "Verner",
+        "lastName": "Miettinen",
+        "number": 9,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "108b8e4e8c52400e670f1443",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Verner",
+            "lastName": "Miettinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-108b8e4e8c52400e670f1443.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 183,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 79,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2003-04-07T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "a99e821f5f87fff68677ecdd",
+        "externalId": "4667",
+        "firstName": "Jiri",
+        "lastName": "Pärssinen",
+        "number": 7,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "a99e821f5f87fff68677ecdd",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Jiri",
+            "lastName": "Pärssinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-a99e821f5f87fff68677ecdd.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 188,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 85,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2002-05-24T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "005df9e86a16c355cd6505bd",
+        "externalId": "445162",
+        "firstName": "Eetu",
+        "lastName": "Randelin",
+        "number": 34,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "005df9e86a16c355cd6505bd",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Eetu",
+            "lastName": "Randelin"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-005df9e86a16c355cd6505bd.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Goalkeeper",
+          "shortName": "GK",
+          "category": "Goalkeeper",
+          "order": 3
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 180,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 85,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2001-11-12T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "783cc05a8ec84bfa088cba54",
+        "externalId": "4452",
+        "firstName": "Jasper",
+        "lastName": "Patrikainen",
+        "number": 30,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "783cc05a8ec84bfa088cba54",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Jasper",
+            "lastName": "Patrikainen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-783cc05a8ec84bfa088cba54.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Goalkeeper",
+          "shortName": "GK",
+          "category": "Goalkeeper",
+          "order": 3
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 185,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 80,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2000-07-01T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "dc20c2690ec8843eae185f6e",
+        "externalId": "446029",
+        "firstName": "Joseph",
+        "lastName": "Berger",
+        "number": 41,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "dc20c2690ec8843eae185f6e",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Joseph",
+            "lastName": "Berger"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-dc20c2690ec8843eae185f6e.json"
+        },
+        "nationality": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 187,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 88,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1999-12-13T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Sweden",
+                "code": "swe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "fc4dc9c3870baa8826127d56",
+        "externalId": "446157",
+        "firstName": "Samuel",
+        "lastName": "Heikkinen",
+        "number": 53,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "fc4dc9c3870baa8826127d56",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Samuel",
+            "lastName": "Heikkinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-fc4dc9c3870baa8826127d56.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Goalkeeper",
+          "shortName": "GK",
+          "category": "Goalkeeper",
+          "order": 3
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 187,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 75,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2009-01-31T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "561bfe909fa1f959bcbc82c3",
+        "externalId": "446158",
+        "firstName": "Ari",
+        "lastName": "Gröndahl",
+        "number": 17,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "561bfe909fa1f959bcbc82c3",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Ari",
+            "lastName": "Gröndahl"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-561bfe909fa1f959bcbc82c3.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 195,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 101,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1989-08-11T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "af5b7eacdec8409691626d7f",
+        "externalId": "446160",
+        "firstName": "Matvey",
+        "lastName": "Butkovskiy",
+        "number": 19,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "af5b7eacdec8409691626d7f",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Matvey",
+            "lastName": "Butkovskiy"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-af5b7eacdec8409691626d7f.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 189,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 88,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2006-03-20T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "5d77008c4beddf26eab5d391",
+        "externalId": "821",
+        "firstName": "Axel",
+        "lastName": "Holmström",
+        "number": 25,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "5d77008c4beddf26eab5d391",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Axel",
+            "lastName": "Holmström"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-5d77008c4beddf26eab5d391.json"
+        },
+        "nationality": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 186,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 86,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1996-06-29T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Sweden",
+                "code": "swe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "32431ca74a0aa620d0530f1f",
+        "externalId": "5074",
+        "firstName": "Oskari",
+        "lastName": "Luoto",
+        "number": 22,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "32431ca74a0aa620d0530f1f",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Oskari",
+            "lastName": "Luoto"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-32431ca74a0aa620d0530f1f.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 186,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 82,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2002-05-21T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "8cbeb16bd830416e3ac0e6e8",
+        "externalId": "444923",
+        "firstName": "Ville",
+        "lastName": "Meskanen",
+        "number": 82,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "8cbeb16bd830416e3ac0e6e8",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Ville",
+            "lastName": "Meskanen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-8cbeb16bd830416e3ac0e6e8.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 185,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 82,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1995-10-02T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "531136f28db2b5fc7acec730",
+        "externalId": "446163",
+        "firstName": "Veeti",
+        "lastName": "Miettinen",
+        "number": 24,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "531136f28db2b5fc7acec730",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Veeti",
+            "lastName": "Miettinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-531136f28db2b5fc7acec730.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 175,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 78,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2001-09-20T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "285e375a95f79fb9ceae3911",
+        "externalId": "446165",
+        "firstName": "Manu",
+        "lastName": "Mäkelä",
+        "number": 58,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "285e375a95f79fb9ceae3911",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Manu",
+            "lastName": "Mäkelä"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-285e375a95f79fb9ceae3911.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 177,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 81,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2004-08-05T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "95956d88f9d4bf3fe2d90e74",
+        "externalId": "446166",
+        "firstName": "Akseli",
+        "lastName": "Mäkinen",
+        "number": 27,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "95956d88f9d4bf3fe2d90e74",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Akseli",
+            "lastName": "Mäkinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-95956d88f9d4bf3fe2d90e74.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 186,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 85,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2002-05-23T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "f295150944176e1b4446fdeb",
+        "externalId": "446167",
+        "firstName": "Kim",
+        "lastName": "Nousiainen",
+        "number": 39,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "f295150944176e1b4446fdeb",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Kim",
+            "lastName": "Nousiainen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-f295150944176e1b4446fdeb.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 176,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 82,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2000-11-14T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "479f48873014bb1d780404ef",
+        "externalId": "446169",
+        "firstName": "Aleksi",
+        "lastName": "Pakaslahti",
+        "number": 8,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "479f48873014bb1d780404ef",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Aleksi",
+            "lastName": "Pakaslahti"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-479f48873014bb1d780404ef.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 187,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 91,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2002-11-09T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "59d3e26aaeace58ecd9f1711",
+        "externalId": "444922",
+        "firstName": "Arttu",
+        "lastName": "Pelli",
+        "number": 3,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "59d3e26aaeace58ecd9f1711",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Arttu",
+            "lastName": "Pelli"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-59d3e26aaeace58ecd9f1711.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 176,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 77,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "right",
+              "shortValue": "R"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1996-08-22T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "e37d2a0bd3de64c65b4d6ec5",
+        "externalId": "3441",
+        "firstName": "Joona",
+        "lastName": "Riekkinen",
+        "number": 6,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "e37d2a0bd3de64c65b4d6ec5",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Joona",
+            "lastName": "Riekkinen"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-e37d2a0bd3de64c65b4d6ec5.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 184,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 87,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1999-03-05T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "a7df1dba125654b8b2c3747b",
+        "externalId": "2361",
+        "firstName": "Robert",
+        "lastName": "Rooba",
+        "number": 88,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "a7df1dba125654b8b2c3747b",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Robert",
+            "lastName": "Rooba"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-a7df1dba125654b8b2c3747b.json"
+        },
+        "nationality": {
+          "name": "Estonia",
+          "code": "est"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Forward",
+          "shortName": "FW",
+          "category": "Forward",
+          "order": 1
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 191,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 95,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1993-09-02T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Estonia",
+                "code": "est"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "aa0254351752170a6cc0aa7d",
+        "externalId": "446195",
+        "firstName": "Niko",
+        "lastName": "Rajala",
+        "number": 26,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "aa0254351752170a6cc0aa7d",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Niko",
+            "lastName": "Rajala"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-aa0254351752170a6cc0aa7d.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Defenceman",
+          "shortName": "DE",
+          "category": "Defenceman",
+          "order": 2
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 182,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 82,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "2006-02-08T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_type": "Corebine.Core.Sport.Player",
+        "_entityId": "5ad4979fe897795a11b68450",
+        "externalId": "446216",
+        "firstName": "Niclas",
+        "lastName": "Westerholm",
+        "number": 35,
+        "source": {
+          "_type": "Corebine.Core.Feed.Sport",
+          "feedType": "player",
+          "competition": {
+            "_type": "Corebine.Core.Sport.Competition",
+            "_entityId": "21ec9dad81abe2e0240460d0",
+            "name": "Champions Hockey League"
+          },
+          "person": {
+            "_entityId": "5ad4979fe897795a11b68450",
+            "_type": "Corebine.Core.Sport.Player",
+            "firstName": "Niclas",
+            "lastName": "Westerholm"
+          },
+          "query": "player-21ec9dad81abe2e0240460d0-5ad4979fe897795a11b68450.json"
+        },
+        "nationality": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "position": {
+          "_type": "Corebine.Core.Sport.Athlete.Position",
+          "name": "Goalkeeper",
+          "shortName": "GK",
+          "category": "Goalkeeper",
+          "order": 3
+        },
+        "info": {
+          "_type": "Corebine.Core.Person.Info",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Height",
+              "shortName": "Ht",
+              "value": 192,
+              "units": "cm"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Weight",
+              "shortName": "Wt",
+              "value": 90,
+              "units": "kg"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.String",
+              "name": "Shoots",
+              "shortName": "Sht",
+              "value": "left",
+              "shortValue": "L"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Date",
+              "name": "Birthday",
+              "shortName": "Bd",
+              "value": "1997-08-13T00:00:00.000Z"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Country",
+              "name": "Nationality",
+              "shortName": "Nat",
+              "value": {
+                "name": "Finland",
+                "code": "fin"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "errors": []
+}

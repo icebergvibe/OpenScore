@@ -1,0 +1,209 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "282628c3708fc7d1ce2d537d",
+    "_modifyDate": "2026-09-11T12:10:07.347Z",
+    "externalId": "3018",
+    "startDate": "2026-09-11T16:00:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "not-started",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/282628c3708fc7d1ce2d537d/bili-tygri-liberec-vs-herning-blue-fox",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "teams": {
+      "home": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "865ec7e2959da256a2a97a8b",
+        "externalId": "3",
+        "name": "Bílí Tygři Liberec",
+        "shortName": "LIB",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+          "isWeb": false
+        },
+        "stats": {
+          "_type": "Corebine.Core.Sport.Team.Stats",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots",
+              "shortName": "Sh",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots on goal",
+              "shortName": "S",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots efficiency",
+              "shortName": "S%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power plays",
+              "shortName": "PP",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power play efficiency",
+              "shortName": "PP%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty minutes",
+              "shortName": "PIM",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty kill efficiency",
+              "shortName": "PK%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Saves",
+              "shortName": "Sv",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Save percentage",
+              "shortName": "Sv%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Faceoffs won",
+              "shortName": "FOW",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Blocked shots",
+              "shortName": "SB",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Hits",
+              "shortName": "Hits",
+              "value": 0
+            }
+          ]
+        }
+      },
+      "away": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "ef112cb0eed346d32a775fac",
+        "externalId": "109",
+        "name": "Herning Blue Fox",
+        "shortName": "HBF",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+          "isWeb": false
+        },
+        "stats": {
+          "_type": "Corebine.Core.Sport.Team.Stats",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots",
+              "shortName": "Sh",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots on goal",
+              "shortName": "S",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots efficiency",
+              "shortName": "S%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power plays",
+              "shortName": "PP",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power play efficiency",
+              "shortName": "PP%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty minutes",
+              "shortName": "PIM",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty kill efficiency",
+              "shortName": "PK%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Saves",
+              "shortName": "Sv",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Save percentage",
+              "shortName": "Sv%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Faceoffs won",
+              "shortName": "FOW",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Blocked shots",
+              "shortName": "SB",
+              "value": 0
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Hits",
+              "shortName": "Hits",
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": []
+}

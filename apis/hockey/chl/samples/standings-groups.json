@@ -1,0 +1,1104 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_entityId": "c4d7de6849b7751a97f6bc7e",
+      "_type": "Corebine.Core.Sport.Series",
+      "status": "in-progress",
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        }
+      },
+      "teams": [
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "73caaf27776183ec10ea6ddc",
+          "externalId": "37",
+          "name": "Skellefteå AIK",
+          "shortName": "SKE",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 1,
+            "points": 9,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 3,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 3,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 12
+              },
+              "conceded": {
+                "total": 4
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "fc04d1152903083968962750",
+          "externalId": "47",
+          "name": "HC Davos",
+          "shortName": "HCD",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/fc04d1152903083968962750/hc-davos",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 2,
+            "points": 8,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2.667,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 15
+              },
+              "conceded": {
+                "total": 6
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "104c3b90fcb6da8e653c05eb",
+          "externalId": "12",
+          "name": "Kölner Haie",
+          "shortName": "KOL",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 3,
+            "points": 8,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2.667,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 15
+              },
+              "conceded": {
+                "total": 8
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "3e2b15fb0e41329efc1f6237",
+          "externalId": "5",
+          "name": "Dynamo Pardubice",
+          "shortName": "PAR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 4,
+            "points": 6,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 9
+              },
+              "conceded": {
+                "total": 3
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "77148013ae31c768167a5d28",
+          "externalId": "64",
+          "name": "HC Pilsen",
+          "shortName": "PLZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 5,
+            "points": 6,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 3,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 6
+              },
+              "conceded": {
+                "total": 1
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e407e3c30bba319774cc4bea",
+          "externalId": "22",
+          "name": "Genève-Servette",
+          "shortName": "GEN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 6,
+            "points": 6,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 11
+              },
+              "conceded": {
+                "total": 7
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "81d5f7bf950746f44e2b92f3",
+          "externalId": "18",
+          "name": "Fribourg-Gottéron",
+          "shortName": "FRI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/81d5f7bf950746f44e2b92f3/fribourg-gotteron",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 7,
+            "points": 6,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 3,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 7
+              },
+              "conceded": {
+                "total": 3
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6aa374572836df3fb42eb000",
+          "externalId": "30",
+          "name": "SaiPa Lappeenranta",
+          "shortName": "SAI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6aa374572836df3fb42eb000/sai-pa-lappeenranta",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 8,
+            "points": 6,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 11
+              },
+              "conceded": {
+                "total": 10
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 9,
+            "points": 5,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.667,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 10
+              },
+              "conceded": {
+                "total": 7
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6a0612c54317b473a6f67f56",
+          "externalId": "27",
+          "name": "Tappara Tampere",
+          "shortName": "TAP",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 10,
+            "points": 4,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 10
+              },
+              "conceded": {
+                "total": 8
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "50e896abe7f9760028ebd0c3",
+          "externalId": "108",
+          "name": "Bordeaux Boxers",
+          "shortName": "BOR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/50e896abe7f9760028ebd0c3/bordeaux-boxers",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 11,
+            "points": 4,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 2,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 0,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 5
+              },
+              "conceded": {
+                "total": 4
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 12,
+            "points": 4,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.333,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 7
+              },
+              "conceded": {
+                "total": 8
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e5e5ff0d908f9cc719344e3e",
+          "externalId": "52",
+          "name": "Storhamar Hamar",
+          "shortName": "STO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 13,
+            "points": 4,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.333,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 6
+              },
+              "conceded": {
+                "total": 7
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "aa8d051910780a557dc4a37f",
+          "externalId": "13",
+          "name": "Red Bull Salzburg",
+          "shortName": "RBS",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 14,
+            "points": 3,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.5,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 5
+              },
+              "conceded": {
+                "total": 5
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "59b68db03ae141bf08f49775",
+          "externalId": "38",
+          "name": "Växjö Lakers",
+          "shortName": "VLH",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/59b68db03ae141bf08f49775/vaxjo-lakers",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 15,
+            "points": 3,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.5,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 4
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "9bd414328e8c2658731938a0",
+          "externalId": "8",
+          "name": "Adler Mannheim",
+          "shortName": "MAN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 16,
+            "points": 3,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1.5,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 4
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "11df2073083f06cccbb5132e",
+          "externalId": "55",
+          "name": "HK Nitra",
+          "shortName": "NIT",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 17,
+            "points": 3,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 1,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 1,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 6
+              },
+              "conceded": {
+                "total": 10
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "954f0696fef5e714282a6d75",
+          "externalId": "51",
+          "name": "KAC Klagenfurt",
+          "shortName": "KAC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 18,
+            "points": 2,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0.667,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 1,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 6
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "93b3b3514079478af9986663",
+          "externalId": "86",
+          "name": "Graz99ers",
+          "shortName": "GRZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/93b3b3514079478af9986663/graz-99-ers",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 19,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 8
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "47cce95deef579332978edc7",
+          "externalId": "91",
+          "name": "Rögle Ängelholm",
+          "shortName": "RBK",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/47cce95deef579332978edc7/rogle-angelholm",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 20,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 0
+              },
+              "conceded": {
+                "total": 5
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "865ec7e2959da256a2a97a8b",
+          "externalId": "3",
+          "name": "Bílí Tygři Liberec",
+          "shortName": "LIB",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 21,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 3
+              },
+              "conceded": {
+                "total": 9
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ef112cb0eed346d32a775fac",
+          "externalId": "109",
+          "name": "Herning Blue Fox",
+          "shortName": "HBF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 22,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 12
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "a834198f57003fefc78152e6",
+          "externalId": "78",
+          "name": "GKS Tychy",
+          "shortName": "TYC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 23,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 3
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 3,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 3
+              },
+              "conceded": {
+                "total": 12
+              }
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+          "externalId": "9",
+          "name": "Eisbären Berlin",
+          "shortName": "BER",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+            "isWeb": false
+          },
+          "stats": {
+            "_type": "Corebine.Chl.Sport.Team.Stats",
+            "place": 24,
+            "points": 0,
+            "isLive": false,
+            "placeChange": 0,
+            "pointsPercentage": 0,
+            "matches": {
+              "played": {
+                "total": 2
+              },
+              "won": {
+                "total": 0,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "lost": {
+                "total": 2,
+                "overtimes": 0,
+                "shootouts": 0
+              },
+              "drawn": 0
+            },
+            "goals": {
+              "scored": {
+                "total": 4
+              },
+              "conceded": {
+                "total": 14
+              }
+            }
+          }
+        }
+      ],
+      "results": {
+        "_type": "Corebine.Core.Sport.Series.Results",
+        "winners": []
+      }
+    }
+  ],
+  "errors": []
+}

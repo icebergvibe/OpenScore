@@ -1,0 +1,218 @@
+{
+  "league": "allsvenskan",
+  "name": "Allsvenskan / Superettan (Sportomedia GraphQL)",
+  "baseUrl": "https://gql.sportomedia.se/graphql",
+  "checks": [
+    {
+      "name": "seasons(allsvenskan)",
+      "query": "{seasons(configLeagueName:\"allsvenskan\",sort:\"desc\"){id name years configLeagueName configSeasonStartYear startDate endDate everySportId}}",
+      "sample": "seasons.json",
+      "keys": [
+        "data.seasons[].configSeasonStartYear"
+      ]
+    },
+    {
+      "name": "matchesForLeague — round window",
+      "query": "{matchesForLeague(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026,startDate:\"{today-3}\",endDate:\"{today+4}\"){matches{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName}}}",
+      "sample": "matches-for-league.round.json",
+      "keys": [
+        "data.matchesForLeague.matches[]"
+      ]
+    },
+    {
+      "name": "matchesForLeague — season",
+      "query": "{matchesForLeague(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){matches{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName}}}",
+      "sample": "matches-for-league.season.json",
+      "keys": [
+        "data.matchesForLeague.matches[].id",
+        "data.matchesForLeague.matches[].status",
+        "data.matchesForLeague.matches[].startDate"
+      ]
+    },
+    {
+      "name": "matchesForLeague — superettan",
+      "query": "{matchesForLeague(configLeagueName:\"superettan\",configSeasonStartYear:2026,startDate:\"{today-3}\",endDate:\"{today+4}\"){matches{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName}}}",
+      "sample": "matches-for-league.superettan.json",
+      "keys": [
+        "data.matchesForLeague.matches[]"
+      ]
+    },
+    {
+      "name": "matchesForLeague — damallsvenskan",
+      "query": "{matchesForLeague(configLeagueName:\"damallsvenskan\",configSeasonStartYear:2026,startDate:\"{today-3}\",endDate:\"{today+4}\"){matches{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName}}}",
+      "sample": "matches-for-league.damallsvenskan.json",
+      "keys": [
+        "data.matchesForLeague.matches[]"
+      ]
+    },
+    {
+      "name": "matchesForTeam(HAM)",
+      "query": "{matchesForTeam(abbrv:\"HAM\",configSeasonStartYear:2026){matches{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName}}}",
+      "sample": "matches-for-team.json",
+      "keys": [
+        "data.matchesForTeam.matches[]"
+      ],
+      "note": "matchesForTeam errors for some clubs (AIK); Hammarby is the documented sample"
+    },
+    {
+      "name": "match — final",
+      "query": "{match(id:6529993,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){match{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName matchMinuteWithStoppageTime homeTeamLogo visitingTeamLogo spectators referees matchEvents{type typeString gameTime period description teamName homeTeamScore visitingTeamScore byHomeTeam source key minuteWithStoppageTime playerName inPlayerName outPlayerName assistPlayerName assistPlayerId}}}}",
+      "sample": "match.final.json",
+      "keys": [
+        "data.match.match.id",
+        "data.match.match.status",
+        "data.match.match.matchEvents[].type",
+        "data.match.match.matchEvents[].gameTime"
+      ]
+    },
+    {
+      "name": "match — pre",
+      "query": "{match(id:6529989,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){match{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName matchEvents{type typeString gameTime period description teamName homeTeamScore visitingTeamScore byHomeTeam source key minuteWithStoppageTime playerName inPlayerName outPlayerName assistPlayerName assistPlayerId}}}}",
+      "sample": "match.pre.json",
+      "keys": [
+        "data.match.match.id",
+        "data.match.match.status"
+      ]
+    },
+    {
+      "name": "match — cup",
+      "query": "{match(id:5258746,configLeagueName:\"conferenceleague\",configSeasonStartYear:2026){match{id startDate homeTeamName visitingTeamName homeTeamScore visitingTeamScore status extendedStatus period round configLeagueName homeTeamAbbrv visitingTeamAbbrv leagueName matchMinute arenaName matchEvents{type typeString gameTime period description teamName homeTeamScore visitingTeamScore byHomeTeam source key minuteWithStoppageTime playerName inPlayerName outPlayerName assistPlayerName assistPlayerId}}}}",
+      "sample": "match.final.cup.json",
+      "keys": [
+        "data.match.match.id"
+      ]
+    },
+    {
+      "name": "lineups — final",
+      "query": "{lineups(id:6529993,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){homeTeam{abbrv formation starting{id displayName givenName surName shirtNumber image position positionText} substitutes{id displayName givenName surName shirtNumber image position positionText}} visitingTeam{abbrv formation starting{id displayName givenName surName shirtNumber image position positionText} substitutes{id displayName givenName surName shirtNumber image position positionText}}}}",
+      "sample": "lineups.final.json",
+      "keys": [
+        "data.lineups.homeTeam.starting[].id",
+        "data.lineups.visitingTeam.formation"
+      ]
+    },
+    {
+      "name": "lineups — pre",
+      "query": "{lineups(id:6529989,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){homeTeam{abbrv formation starting{id displayName givenName surName shirtNumber image position positionText}} visitingTeam{abbrv formation starting{id displayName givenName surName shirtNumber image position positionText}}}}",
+      "sample": "lineups.pre.json",
+      "keys": [
+        "data.lineups.homeTeam"
+      ]
+    },
+    {
+      "name": "matchStats — final",
+      "query": "{matchStats(id:6529993,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){id totalStats{homeTeamPossesion visitingTeamPossesion homeTeamShots visitingTeamShots homeTeamShotsOnTarget visitingTeamShotsOnTarget homeTeamCorners visitingTeamCorners homeTeamOffsides visitingTeamOffsides homeTeamYellowCards visitingTeamYellowCards homeTeamRedCards visitingTeamRedCards homeTeamDistance visitingTeamDistance} firstPeriodStats{homeTeamPossesion visitingTeamPossesion homeTeamShots visitingTeamShots homeTeamShotsOnTarget visitingTeamShotsOnTarget homeTeamCorners visitingTeamCorners homeTeamOffsides visitingTeamOffsides homeTeamYellowCards visitingTeamYellowCards homeTeamRedCards visitingTeamRedCards homeTeamDistance visitingTeamDistance} secondPeriodStats{homeTeamPossesion visitingTeamPossesion homeTeamShots visitingTeamShots homeTeamShotsOnTarget visitingTeamShotsOnTarget homeTeamCorners visitingTeamCorners homeTeamOffsides visitingTeamOffsides homeTeamYellowCards visitingTeamYellowCards homeTeamRedCards visitingTeamRedCards homeTeamDistance visitingTeamDistance}}}",
+      "sample": "match-stats.final.json",
+      "keys": [
+        "data.matchStats.totalStats.homeTeamShots"
+      ]
+    },
+    {
+      "name": "matchConfig",
+      "query": "{matchConfig(id:6529993,configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){hideMatchTime hideStats{ballPossesion distance} interruptedMatchText showInterruptedMatchInformation}}",
+      "sample": "match-config.json",
+      "keys": [
+        "data.matchConfig"
+      ]
+    },
+    {
+      "name": "standingsForLeague — total",
+      "query": "{standingsForLeague(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026,type:\"total\"){type standings{teamAbbrv teamName position previousPosition teamId logoImageUrl borderType stats{name value} form{matchResult}}}}",
+      "sample": "standings-for-league.total.json",
+      "keys": [
+        "data.standingsForLeague.standings[].teamAbbrv",
+        "data.standingsForLeague.standings[].position"
+      ]
+    },
+    {
+      "name": "standingsForLeague — home",
+      "query": "{standingsForLeague(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026,type:\"home\"){type standings{teamAbbrv position stats{name value}}}}",
+      "sample": "standings-for-league.home.json",
+      "keys": [
+        "data.standingsForLeague.standings[]"
+      ]
+    },
+    {
+      "name": "standingsForLeague — superettan",
+      "query": "{standingsForLeague(configLeagueName:\"superettan\",configSeasonStartYear:2026,type:\"total\"){type standings{teamAbbrv teamName position teamId stats{name value} form{matchResult}}}}",
+      "sample": "standings-for-league.superettan.json",
+      "keys": [
+        "data.standingsForLeague.standings[].teamAbbrv"
+      ]
+    },
+    {
+      "name": "teamsForLeague",
+      "query": "{teamsForLeague(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){configLeagueName configSeasonStartYear teams{abbrv everySportId fogisId gender sport logoImageUrl displayName smcId}}}",
+      "sample": "teams-for-league.json",
+      "keys": [
+        "data.teamsForLeague.teams[].abbrv"
+      ]
+    },
+    {
+      "name": "team(AIK)",
+      "query": "{team(abbrv:\"AIK\"){abbrv name displayName fogisId logoImageUrl arena{name spectators}}}",
+      "sample": "team.json",
+      "keys": [
+        "data.team.abbrv",
+        "data.team.name"
+      ]
+    },
+    {
+      "name": "squad(AIK)",
+      "query": "{squad(abbrv:\"AIK\",configSeasonStartYear:2026){goalkeepers{id fogisId givenName surName displayName shirtNumber position nationality birthDate height weight image isGoalkeeper teamAbbrv} defenders{id fogisId givenName surName displayName shirtNumber position nationality birthDate height weight image isGoalkeeper teamAbbrv} midfields{id fogisId givenName surName displayName shirtNumber position nationality birthDate height weight image isGoalkeeper teamAbbrv} forwards{id fogisId givenName surName displayName shirtNumber position nationality birthDate height weight image isGoalkeeper teamAbbrv}}}",
+      "sample": "squad.json",
+      "keys": [
+        "data.squad.goalkeepers[].id",
+        "data.squad.forwards[]"
+      ]
+    },
+    {
+      "name": "teamStaff(AIK)",
+      "query": "{teamStaff(abbrv:\"AIK\",configSeasonStartYear:2026){staff{birthDay fullName givenName surName nationality role roleName}}}",
+      "sample": "team-staff.json",
+      "keys": [
+        "data.teamStaff.staff[]"
+      ]
+    },
+    {
+      "name": "teamForm(AIK)",
+      "query": "{teamForm(abbrv:\"AIK\",limit:5){awayScore date homeScore opponentId opponentName result type}}",
+      "sample": "team-form.json",
+      "keys": [
+        "data.teamForm[].result"
+      ]
+    },
+    {
+      "name": "player",
+      "query": "{player(id:1500426){givenName surName displayName shirtNumber position nationality birthDate height weight image isGoalkeeper}}",
+      "sample": "player.json",
+      "keys": [
+        "data.player.displayName"
+      ]
+    },
+    {
+      "name": "leaders — goals",
+      "query": "{leaders(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026,type:\"goals\"){type leaders{id smcId fogisId givenName surName displayName image teamName}}}",
+      "sample": "leaders.goals.json",
+      "keys": [
+        "data.leaders.leaders[].id"
+      ]
+    },
+    {
+      "name": "statistics",
+      "query": "{statistics(configLeagueName:\"allsvenskan\",configSeasonStartYear:2026){team{name displayName smcId abbrv fogisId goals shots shotsOnTarget}}}",
+      "sample": "statistics.json",
+      "keys": [
+        "data.statistics.team[]"
+      ]
+    },
+    {
+      "name": "teamLogos",
+      "query": "{teamLogos(ids:[\"AIK\",\"VSK\"]){logos}}",
+      "sample": "team-logos.json",
+      "keys": [
+        "data.teamLogos.logos[]"
+      ]
+    }
+  ]
+}

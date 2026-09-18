@@ -1,0 +1,209 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "4f36a358a795d91b2fbb0c9b",
+    "_modifyDate": "2026-09-11T06:25:16.845Z",
+    "externalId": "3012",
+    "startDate": "2026-09-10T15:30:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "finished",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "teams": {
+      "home": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "c9840a203093f97cae0a9495",
+        "externalId": "107",
+        "name": "KooKoo Kouvola",
+        "shortName": "KOO",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+          "isWeb": false
+        },
+        "stats": {
+          "_type": "Corebine.Core.Sport.Team.Stats",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots",
+              "shortName": "Sh",
+              "value": 57
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots on goal",
+              "shortName": "S",
+              "value": 21
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots efficiency",
+              "shortName": "S%",
+              "value": 5,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power plays",
+              "shortName": "PP",
+              "value": 4
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power play efficiency",
+              "shortName": "PP%",
+              "value": 0,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty minutes",
+              "shortName": "PIM",
+              "value": 6
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty kill efficiency",
+              "shortName": "PK%",
+              "value": 60,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Saves",
+              "shortName": "Sv",
+              "value": 31
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Save percentage",
+              "shortName": "Sv%",
+              "value": 89,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Faceoffs won",
+              "shortName": "FOW",
+              "value": 26
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Blocked shots",
+              "shortName": "SB",
+              "value": 7
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Hits",
+              "shortName": "Hits",
+              "value": 4
+            }
+          ]
+        }
+      },
+      "away": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "11df2073083f06cccbb5132e",
+        "externalId": "55",
+        "name": "HK Nitra",
+        "shortName": "NIT",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+          "isWeb": false
+        },
+        "stats": {
+          "_type": "Corebine.Core.Sport.Team.Stats",
+          "properties": [
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots",
+              "shortName": "Sh",
+              "value": 55
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots on goal",
+              "shortName": "S",
+              "value": 35
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Shots efficiency",
+              "shortName": "S%",
+              "value": 11,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power plays",
+              "shortName": "PP",
+              "value": 5
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Power play efficiency",
+              "shortName": "PP%",
+              "value": 40,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty minutes",
+              "shortName": "PIM",
+              "value": 8
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Penalty kill efficiency",
+              "shortName": "PK%",
+              "value": 100,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Saves",
+              "shortName": "Sv",
+              "value": 20
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Save percentage",
+              "shortName": "Sv%",
+              "value": 95,
+              "units": "percents"
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Faceoffs won",
+              "shortName": "FOW",
+              "value": 29
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Blocked shots",
+              "shortName": "SB",
+              "value": 19
+            },
+            {
+              "_type": "Corebine.Core.Type.Property.Integer",
+              "name": "Hits",
+              "shortName": "Hits",
+              "value": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "errors": []
+}

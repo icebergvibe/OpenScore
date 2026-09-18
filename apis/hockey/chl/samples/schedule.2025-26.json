@@ -1,0 +1,575 @@
+{
+  "_openscore_note": "TRUNCATED: 101 games reduced to 8 (3 regular + 1 OT + 1 SO + 3 playoff).",
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_entityId": "2598d33681bd2c7bf1310768",
+      "externalId": "2865",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-03-03T18:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "b47638e8de347b2dd38c1e90",
+        "name": "Scandinavium"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 31,
+          "name": "Final"
+        },
+        "round": {
+          "order": 200,
+          "name": "Final"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "cfdf4169f0c8e8ff93cf24da",
+          "externalId": "35",
+          "name": "Luleå Hockey",
+          "shortName": "LHF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2598d33681bd2c7bf1310768/frolunda-gothenburg-vs-lulea-hockey",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Overtime",
+        "shortName": "F/OT"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_entityId": "1f3a497406961f04bdac3d6b",
+      "externalId": "2866",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2025-08-28T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "192a1f4b9a61bd1782a5f66b",
+        "name": "Coop Norrbotten Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 1,
+          "name": "Game Day 1"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "cfdf4169f0c8e8ff93cf24da",
+          "externalId": "35",
+          "name": "Luleå Hockey",
+          "shortName": "LHF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "4472b82fc7441fedc37b82e3",
+          "externalId": "20",
+          "name": "EV Zug",
+          "shortName": "EVZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/4472b82fc7441fedc37b82e3/ev-zug",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/1f3a497406961f04bdac3d6b/lulea-hockey-vs-ev-zug",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Overtime",
+        "shortName": "F/OT"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 2,
+          "away": 3
+        }
+      }
+    },
+    {
+      "_entityId": "88bd5113b59c4346ea869592",
+      "externalId": "2867",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2025-08-28T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "8897a8e8bb083d93d1c8b9f9",
+        "name": "CC Amfi"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 1,
+          "name": "Game Day 1"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e5e5ff0d908f9cc719344e3e",
+          "externalId": "52",
+          "name": "Storhamar Hamar",
+          "shortName": "STO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+          "externalId": "9",
+          "name": "Eisbären Berlin",
+          "shortName": "BER",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/88bd5113b59c4346ea869592/storhamar-hamar-vs-eisbaren-berlin",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 0,
+          "away": 3
+        }
+      }
+    },
+    {
+      "_entityId": "2598d33681bd2c7bf1310768",
+      "externalId": "2865",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-03-03T18:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "b47638e8de347b2dd38c1e90",
+        "name": "Scandinavium"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 31,
+          "name": "Final"
+        },
+        "round": {
+          "order": 200,
+          "name": "Final"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "cfdf4169f0c8e8ff93cf24da",
+          "externalId": "35",
+          "name": "Luleå Hockey",
+          "shortName": "LHF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2598d33681bd2c7bf1310768/frolunda-gothenburg-vs-lulea-hockey",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Overtime",
+        "shortName": "F/OT"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_entityId": "a0dedd257aff92689a14b8d3",
+      "externalId": "2872",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2025-08-29T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "6b9284890586659786324580",
+        "name": "ČPP Aréna"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 1,
+          "name": "Game Day 1"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "31ffb756ae0a30e567dcf226",
+          "externalId": "72",
+          "name": "Mountfield HK",
+          "shortName": "MHK",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/31ffb756ae0a30e567dcf226/mountfield-hk",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ddfde75cab5c2b155b37aa4b",
+          "externalId": "106",
+          "name": "Odense Bulldogs",
+          "shortName": "ODE",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ddfde75cab5c2b155b37aa4b/odense-bulldogs",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/a0dedd257aff92689a14b8d3/mountfield-hk-vs-odense-bulldogs",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Shootout",
+        "shortName": "F/SO"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 4
+        }
+      }
+    },
+    {
+      "_entityId": "2598d33681bd2c7bf1310768",
+      "externalId": "2865",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2026-03-03T18:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "b47638e8de347b2dd38c1e90",
+        "name": "Scandinavium"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 31,
+          "name": "Final"
+        },
+        "round": {
+          "order": 200,
+          "name": "Final"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "cfdf4169f0c8e8ff93cf24da",
+          "externalId": "35",
+          "name": "Luleå Hockey",
+          "shortName": "LHF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2598d33681bd2c7bf1310768/frolunda-gothenburg-vs-lulea-hockey",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime/Overtime",
+        "shortName": "F/OT"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_entityId": "c149933620bc77c00eb4f877",
+      "externalId": "2958",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2025-11-11T18:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "192a1f4b9a61bd1782a5f66b",
+        "name": "Coop Norrbotten Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 28,
+          "name": "Round of 16"
+        },
+        "round": {
+          "order": 101,
+          "name": "First Game"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "cfdf4169f0c8e8ff93cf24da",
+          "externalId": "35",
+          "name": "Luleå Hockey",
+          "shortName": "LHF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/cfdf4169f0c8e8ff93cf24da/lulea-hockey",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "70002ab8714596f91aa6a514",
+          "externalId": "71",
+          "name": "Kometa Brno",
+          "shortName": "KOM",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/70002ab8714596f91aa6a514/kometa-brno",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/c149933620bc77c00eb4f877/lulea-hockey-vs-kometa-brno",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 6,
+          "away": 1
+        }
+      }
+    },
+    {
+      "_entityId": "4137301b8886e4752b31e17f",
+      "externalId": "2959",
+      "_type": "Corebine.Core.Sport.Match",
+      "startDate": "2025-11-11T18:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "88ba11bdf53fa062e90e78f2",
+        "name": "Monitor ERP Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 28,
+          "name": "Round of 16"
+        },
+        "round": {
+          "order": 101,
+          "name": "First Game"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "199734faffe3b90bf3ecccce",
+          "externalId": "69",
+          "name": "Brynäs IF",
+          "shortName": "BIF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/199734faffe3b90bf3ecccce/brynas-if",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "d782924e733c817e5af717fd",
+          "externalId": "17",
+          "name": "SC Bern",
+          "shortName": "SCB",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/d782924e733c817e5af717fd/sc-bern",
+            "isWeb": false
+          }
+        }
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/4137301b8886e4752b31e17f/brynas-if-vs-sc-bern",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 1,
+          "away": 2
+        }
+      }
+    }
+  ],
+  "errors": []
+}

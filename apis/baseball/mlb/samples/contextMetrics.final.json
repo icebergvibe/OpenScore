@@ -1,0 +1,97 @@
+{
+  "game": {
+    "gamePk": 823088,
+    "gameGuid": "6ebebf4b-0def-4378-b1e0-be688fe7b31f",
+    "link": "/api/v1.1/game/823088/feed/live",
+    "gameType": "R",
+    "season": "2026",
+    "gameDate": "2026-09-10T20:10:00Z",
+    "officialDate": "2026-09-10",
+    "status": {
+      "abstractGameState": "Final",
+      "codedGameState": "F",
+      "detailedState": "Final",
+      "statusCode": "F",
+      "startTimeTBD": false,
+      "abstractGameCode": "F"
+    },
+    "teams": {
+      "away": {
+        "team": {
+          "id": 140,
+          "name": "Texas Rangers",
+          "link": "/api/v1/teams/140"
+        },
+        "leagueRecord": {
+          "wins": 72,
+          "losses": 75,
+          "ties": 0,
+          "pct": ".490"
+        },
+        "score": 3,
+        "isWinner": false,
+        "probablePitcher": {
+          "id": 594798,
+          "fullName": "Jacob deGrom",
+          "link": "/api/v1/people/594798"
+        },
+        "splitSquad": false,
+        "seriesNumber": 47
+      },
+      "home": {
+        "team": {
+          "id": 136,
+          "name": "Seattle Mariners",
+          "link": "/api/v1/teams/136"
+        },
+        "leagueRecord": {
+          "wins": 69,
+          "losses": 78,
+          "ties": 0,
+          "pct": ".469"
+        },
+        "score": 4,
+        "isWinner": true,
+        "probablePitcher": {
+          "id": 669302,
+          "fullName": "Logan Gilbert",
+          "link": "/api/v1/people/669302"
+        },
+        "splitSquad": false,
+        "seriesNumber": 47
+      }
+    },
+    "venue": {
+      "id": 680,
+      "name": "T-Mobile Park",
+      "link": "/api/v1/venues/680"
+    },
+    "content": {
+      "link": "/api/v1/game/823088/content"
+    },
+    "isTie": false,
+    "gameNumber": 1,
+    "publicFacing": true,
+    "doubleHeader": "N",
+    "gamedayType": "P",
+    "tiebreaker": "N",
+    "calendarEventID": "14-823088-2026-09-10",
+    "seasonDisplay": "2026",
+    "dayNight": "day",
+    "scheduledInnings": 9,
+    "reverseHomeAwayStatus": false,
+    "inningBreakLength": 120,
+    "gamesInSeries": 3,
+    "seriesGameNumber": 3,
+    "seriesDescription": "Regular Season",
+    "recordSource": "S",
+    "ifNecessary": "N",
+    "ifNecessaryDescription": "Normal Game",
+    "gameId": "2026/09/10/texmlb-seamlb-1"
+  },
+  "leftFieldSacFlyProbability": {},
+  "centerFieldSacFlyProbability": {},
+  "rightFieldSacFlyProbability": {},
+  "awayWinProbability": 0.0,
+  "homeWinProbability": 100.0
+}

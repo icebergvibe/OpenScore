@@ -1,0 +1,2208 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "4f36a358a795d91b2fbb0c9b",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3012",
+      "startDate": "2026-09-10T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2f944ab4055dcb2fb49be604",
+        "name": "Kouvolan jäähalli"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "11df2073083f06cccbb5132e",
+          "externalId": "55",
+          "name": "HK Nitra",
+          "shortName": "NIT",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 1,
+          "away": 4
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "aec9e611288630b2354b4bf1",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3013",
+      "startDate": "2026-09-10T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/aec9e611288630b2354b4bf1/sai-pa-lappeenranta-vs-dynamo-pardubice",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "23d9bdb31f77390d3dd96bbb",
+        "name": "Kisapuisto"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6aa374572836df3fb42eb000",
+          "externalId": "30",
+          "name": "SaiPa Lappeenranta",
+          "shortName": "SAI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6aa374572836df3fb42eb000/sai-pa-lappeenranta",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "3e2b15fb0e41329efc1f6237",
+          "externalId": "5",
+          "name": "Dynamo Pardubice",
+          "shortName": "PAR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "3993ba8191ba8bdfa3e86027",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3014",
+      "startDate": "2026-09-10T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/3993ba8191ba8bdfa3e86027/gks-tychy-vs-hc-davos",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "6c4763e4330df94461fdc803",
+        "name": "Stadion Zimowy Tychy"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "a834198f57003fefc78152e6",
+          "externalId": "78",
+          "name": "GKS Tychy",
+          "shortName": "TYC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "fc04d1152903083968962750",
+          "externalId": "47",
+          "name": "HC Davos",
+          "shortName": "HCD",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/fc04d1152903083968962750/hc-davos",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 2,
+          "away": 4
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "f53c78cf34039461d87b4a44",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3015",
+      "startDate": "2026-09-10T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/f53c78cf34039461d87b4a44/skelleftea-aik-vs-geneve-servette",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "5e49294202bcbae95c6f0f5f",
+        "name": "Skellefteå Kraft Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "73caaf27776183ec10ea6ddc",
+          "externalId": "37",
+          "name": "Skellefteå AIK",
+          "shortName": "SKE",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e407e3c30bba319774cc4bea",
+          "externalId": "22",
+          "name": "Genève-Servette",
+          "shortName": "GEN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "810fadd2bb09a0427e9db86f",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3016",
+      "startDate": "2026-09-10T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/810fadd2bb09a0427e9db86f/storhamar-hamar-vs-kac-klagenfurt",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "8897a8e8bb083d93d1c8b9f9",
+        "name": "CC Amfi"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e5e5ff0d908f9cc719344e3e",
+          "externalId": "52",
+          "name": "Storhamar Hamar",
+          "shortName": "STO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "954f0696fef5e714282a6d75",
+          "externalId": "51",
+          "name": "KAC Klagenfurt",
+          "shortName": "KAC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 2,
+          "away": 1
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "d90c226758cacdc373f4946e",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3017",
+      "startDate": "2026-09-10T17:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "finished",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/d90c226758cacdc373f4946e/kolner-haie-vs-frolunda-gothenburg",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "9fed1ebed537b7fdef891c3c",
+        "name": "LANXESS Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "104c3b90fcb6da8e653c05eb",
+          "externalId": "12",
+          "name": "Kölner Haie",
+          "shortName": "KOL",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        }
+      },
+      "state": {
+        "_type": "Corebine.Core.Sport.Event.State",
+        "name": "Fulltime",
+        "shortName": "F"
+      },
+      "results": {
+        "_type": "Corebine.Core.Sport.Match.Results",
+        "scores": {
+          "_type": "Corebine.Core.Sport.Match.Scores",
+          "home": 5,
+          "away": 2
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "282628c3708fc7d1ce2d537d",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3018",
+      "startDate": "2026-09-11T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/282628c3708fc7d1ce2d537d/bili-tygri-liberec-vs-herning-blue-fox",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "41eb4de512bd17d966b42ed5",
+        "name": "Home Credit Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "865ec7e2959da256a2a97a8b",
+          "externalId": "3",
+          "name": "Bílí Tygři Liberec",
+          "shortName": "LIB",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ef112cb0eed346d32a775fac",
+          "externalId": "109",
+          "name": "Herning Blue Fox",
+          "shortName": "HBF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "af55c2a6d6e71079cf4c50a9",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3019",
+      "startDate": "2026-09-11T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/af55c2a6d6e71079cf4c50a9/rogle-angelholm-vs-red-bull-salzburg",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "e7ee2d83d90de3f15b62dafa",
+        "name": "Catena Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "47cce95deef579332978edc7",
+          "externalId": "91",
+          "name": "Rögle Ängelholm",
+          "shortName": "RBK",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/47cce95deef579332978edc7/rogle-angelholm",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "aa8d051910780a557dc4a37f",
+          "externalId": "13",
+          "name": "Red Bull Salzburg",
+          "shortName": "RBS",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "f888e7e0d5a34a770a4a0298",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3020",
+      "startDate": "2026-09-11T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/f888e7e0d5a34a770a4a0298/vaxjo-lakers-vs-tappara-tampere",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "0eb086be7b3182fee1fe36e5",
+        "name": "Vida Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "59b68db03ae141bf08f49775",
+          "externalId": "38",
+          "name": "Växjö Lakers",
+          "shortName": "VLH",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/59b68db03ae141bf08f49775/vaxjo-lakers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6a0612c54317b473a6f67f56",
+          "externalId": "27",
+          "name": "Tappara Tampere",
+          "shortName": "TAP",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "055164bd9cdfac0aece2ec3c",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3021",
+      "startDate": "2026-09-11T17:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/055164bd9cdfac0aece2ec3c/eisbaren-berlin-vs-graz-99-ers",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "fd9215611203ef1f35203f3f",
+        "name": "Wellblechpalast"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+          "externalId": "9",
+          "name": "Eisbären Berlin",
+          "shortName": "BER",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "93b3b3514079478af9986663",
+          "externalId": "86",
+          "name": "Graz99ers",
+          "shortName": "GRZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/93b3b3514079478af9986663/graz-99-ers",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "0b2b255e62d286531193722c",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3022",
+      "startDate": "2026-09-11T17:45:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/0b2b255e62d286531193722c/fribourg-gotteron-vs-hc-pilsen",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "14bd25d4afe6f8a18212c519",
+        "name": "BCF Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "81d5f7bf950746f44e2b92f3",
+          "externalId": "18",
+          "name": "Fribourg-Gottéron",
+          "shortName": "FRI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/81d5f7bf950746f44e2b92f3/fribourg-gotteron",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "77148013ae31c768167a5d28",
+          "externalId": "64",
+          "name": "HC Pilsen",
+          "shortName": "PLZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "05be0be7d9296bc244f43f0d",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3023",
+      "startDate": "2026-09-11T18:15:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/05be0be7d9296bc244f43f0d/bordeaux-boxers-vs-adler-mannheim",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "07d43bf2592304da8dc57d8e",
+        "name": "Patinoire Mériadeck"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 3,
+          "name": "Game Day 3"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "50e896abe7f9760028ebd0c3",
+          "externalId": "108",
+          "name": "Bordeaux Boxers",
+          "shortName": "BOR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/50e896abe7f9760028ebd0c3/bordeaux-boxers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "9bd414328e8c2658731938a0",
+          "externalId": "8",
+          "name": "Adler Mannheim",
+          "shortName": "MAN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "2c97b18b6dcb99eed865e111",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3024",
+      "startDate": "2026-09-12T12:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2c97b18b6dcb99eed865e111/skelleftea-aik-vs-hc-davos",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "5e49294202bcbae95c6f0f5f",
+        "name": "Skellefteå Kraft Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "73caaf27776183ec10ea6ddc",
+          "externalId": "37",
+          "name": "Skellefteå AIK",
+          "shortName": "SKE",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "fc04d1152903083968962750",
+          "externalId": "47",
+          "name": "HC Davos",
+          "shortName": "HCD",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/fc04d1152903083968962750/hc-davos",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "53e8968b596c13fabe0668bc",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3025",
+      "startDate": "2026-09-12T14:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/53e8968b596c13fabe0668bc/koo-koo-kouvola-vs-dynamo-pardubice",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "2f944ab4055dcb2fb49be604",
+        "name": "Kouvolan jäähalli"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "3e2b15fb0e41329efc1f6237",
+          "externalId": "5",
+          "name": "Dynamo Pardubice",
+          "shortName": "PAR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "4ec764d9b9241aa35070463d",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3026",
+      "startDate": "2026-09-12T14:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/4ec764d9b9241aa35070463d/sai-pa-lappeenranta-vs-hk-nitra",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "23d9bdb31f77390d3dd96bbb",
+        "name": "Kisapuisto"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6aa374572836df3fb42eb000",
+          "externalId": "30",
+          "name": "SaiPa Lappeenranta",
+          "shortName": "SAI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6aa374572836df3fb42eb000/sai-pa-lappeenranta",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "11df2073083f06cccbb5132e",
+          "externalId": "55",
+          "name": "HK Nitra",
+          "shortName": "NIT",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "a36c2ac20069ca066d69c16d",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3029",
+      "startDate": "2026-09-12T15:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/a36c2ac20069ca066d69c16d/kolner-haie-vs-kac-klagenfurt",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "f61acacb5b846fb849244a41",
+        "name": "Yayla-Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "104c3b90fcb6da8e653c05eb",
+          "externalId": "12",
+          "name": "Kölner Haie",
+          "shortName": "KOL",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "954f0696fef5e714282a6d75",
+          "externalId": "51",
+          "name": "KAC Klagenfurt",
+          "shortName": "KAC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "508c765f16f5c45f7446c1d5",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3027",
+      "startDate": "2026-09-12T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/508c765f16f5c45f7446c1d5/gks-tychy-vs-geneve-servette",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "6c4763e4330df94461fdc803",
+        "name": "Stadion Zimowy Tychy"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "a834198f57003fefc78152e6",
+          "externalId": "78",
+          "name": "GKS Tychy",
+          "shortName": "TYC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e407e3c30bba319774cc4bea",
+          "externalId": "22",
+          "name": "Genève-Servette",
+          "shortName": "GEN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "4f8db89e115cb3e54ecfe6bb",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3028",
+      "startDate": "2026-09-12T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/4f8db89e115cb3e54ecfe6bb/storhamar-hamar-vs-frolunda-gothenburg",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "8897a8e8bb083d93d1c8b9f9",
+        "name": "CC Amfi"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e5e5ff0d908f9cc719344e3e",
+          "externalId": "52",
+          "name": "Storhamar Hamar",
+          "shortName": "STO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "9f0d43a32e2a32093c865142",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3030",
+      "startDate": "2026-09-13T12:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/9f0d43a32e2a32093c865142/fribourg-gotteron-vs-adler-mannheim",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "14bd25d4afe6f8a18212c519",
+        "name": "BCF Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "81d5f7bf950746f44e2b92f3",
+          "externalId": "18",
+          "name": "Fribourg-Gottéron",
+          "shortName": "FRI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/81d5f7bf950746f44e2b92f3/fribourg-gotteron",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "9bd414328e8c2658731938a0",
+          "externalId": "8",
+          "name": "Adler Mannheim",
+          "shortName": "MAN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "30aee8ca370db58b96c324b5",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3031",
+      "startDate": "2026-09-13T13:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/30aee8ca370db58b96c324b5/vaxjo-lakers-vs-red-bull-salzburg",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "0eb086be7b3182fee1fe36e5",
+        "name": "Vida Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "59b68db03ae141bf08f49775",
+          "externalId": "38",
+          "name": "Växjö Lakers",
+          "shortName": "VLH",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/59b68db03ae141bf08f49775/vaxjo-lakers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "aa8d051910780a557dc4a37f",
+          "externalId": "13",
+          "name": "Red Bull Salzburg",
+          "shortName": "RBS",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "cb917b7dfc2899c9ea60ab27",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3032",
+      "startDate": "2026-09-13T13:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/cb917b7dfc2899c9ea60ab27/rogle-angelholm-vs-tappara-tampere",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "e7ee2d83d90de3f15b62dafa",
+        "name": "Catena Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "47cce95deef579332978edc7",
+          "externalId": "91",
+          "name": "Rögle Ängelholm",
+          "shortName": "RBK",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/47cce95deef579332978edc7/rogle-angelholm",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6a0612c54317b473a6f67f56",
+          "externalId": "27",
+          "name": "Tappara Tampere",
+          "shortName": "TAP",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "10446a848ab4085d872bb129",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3033",
+      "startDate": "2026-09-13T14:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/10446a848ab4085d872bb129/bili-tygri-liberec-vs-graz-99-ers",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "41eb4de512bd17d966b42ed5",
+        "name": "Home Credit Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "865ec7e2959da256a2a97a8b",
+          "externalId": "3",
+          "name": "Bílí Tygři Liberec",
+          "shortName": "LIB",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "93b3b3514079478af9986663",
+          "externalId": "86",
+          "name": "Graz99ers",
+          "shortName": "GRZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/93b3b3514079478af9986663/graz-99-ers",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "a7e48d28a8dbf9574aab9a86",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3034",
+      "startDate": "2026-09-13T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/a7e48d28a8dbf9574aab9a86/eisbaren-berlin-vs-herning-blue-fox",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "fd9215611203ef1f35203f3f",
+        "name": "Wellblechpalast"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+          "externalId": "9",
+          "name": "Eisbären Berlin",
+          "shortName": "BER",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ef112cb0eed346d32a775fac",
+          "externalId": "109",
+          "name": "Herning Blue Fox",
+          "shortName": "HBF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "c546889eba97ba5c8f3e5116",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3035",
+      "startDate": "2026-09-13T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/c546889eba97ba5c8f3e5116/bordeaux-boxers-vs-hc-pilsen",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "07d43bf2592304da8dc57d8e",
+        "name": "Patinoire Mériadeck"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 4,
+          "name": "Game Day 4"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "50e896abe7f9760028ebd0c3",
+          "externalId": "108",
+          "name": "Bordeaux Boxers",
+          "shortName": "BOR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/50e896abe7f9760028ebd0c3/bordeaux-boxers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "77148013ae31c768167a5d28",
+          "externalId": "64",
+          "name": "HC Pilsen",
+          "shortName": "PLZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "1a7ccbdac3737e2e2123f998",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3036",
+      "startDate": "2026-10-06T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/1a7ccbdac3737e2e2123f998/hc-pilsen-vs-skelleftea-aik",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "ae8d53aed953d724f1872f90",
+        "name": "Logspeed CZ Aréna"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "77148013ae31c768167a5d28",
+          "externalId": "64",
+          "name": "HC Pilsen",
+          "shortName": "PLZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "73caaf27776183ec10ea6ddc",
+          "externalId": "37",
+          "name": "Skellefteå AIK",
+          "shortName": "SKE",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "699e54a9eed83201d7cdeae4",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3037",
+      "startDate": "2026-10-06T16:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/699e54a9eed83201d7cdeae4/bili-tygri-liberec-vs-frolunda-gothenburg",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "41eb4de512bd17d966b42ed5",
+        "name": "Home Credit Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "865ec7e2959da256a2a97a8b",
+          "externalId": "3",
+          "name": "Bílí Tygři Liberec",
+          "shortName": "LIB",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ba55abe823bed83d7c12e7b3",
+          "externalId": "31",
+          "name": "Frölunda Gothenburg",
+          "shortName": "FHC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "dbf6bf2cc4a956165eef7fc3",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3038",
+      "startDate": "2026-10-06T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/dbf6bf2cc4a956165eef7fc3/vaxjo-lakers-vs-geneve-servette",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "0eb086be7b3182fee1fe36e5",
+        "name": "Vida Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "59b68db03ae141bf08f49775",
+          "externalId": "38",
+          "name": "Växjö Lakers",
+          "shortName": "VLH",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/59b68db03ae141bf08f49775/vaxjo-lakers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e407e3c30bba319774cc4bea",
+          "externalId": "22",
+          "name": "Genève-Servette",
+          "shortName": "GEN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "377f3b9a9ec357ee3dc153b0",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3039",
+      "startDate": "2026-10-06T17:00:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/377f3b9a9ec357ee3dc153b0/rogle-angelholm-vs-hc-davos",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "e7ee2d83d90de3f15b62dafa",
+        "name": "Catena Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "47cce95deef579332978edc7",
+          "externalId": "91",
+          "name": "Rögle Ängelholm",
+          "shortName": "RBK",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/47cce95deef579332978edc7/rogle-angelholm",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "fc04d1152903083968962750",
+          "externalId": "47",
+          "name": "HC Davos",
+          "shortName": "HCD",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/fc04d1152903083968962750/hc-davos",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "d7aa32e2ec7131a0a30e21a6",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3040",
+      "startDate": "2026-10-06T17:15:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/d7aa32e2ec7131a0a30e21a6/kac-klagenfurt-vs-koo-koo-kouvola",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "623f0e3060d241ac7acbee6f",
+        "name": "Heidi Horten-Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "954f0696fef5e714282a6d75",
+          "externalId": "51",
+          "name": "KAC Klagenfurt",
+          "shortName": "KAC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "c9840a203093f97cae0a9495",
+          "externalId": "107",
+          "name": "KooKoo Kouvola",
+          "shortName": "KOO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "bd2515ce172bf496428a0a58",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3041",
+      "startDate": "2026-10-06T17:45:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/bd2515ce172bf496428a0a58/fribourg-gotteron-vs-hk-nitra",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "14bd25d4afe6f8a18212c519",
+        "name": "BCF Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "81d5f7bf950746f44e2b92f3",
+          "externalId": "18",
+          "name": "Fribourg-Gottéron",
+          "shortName": "FRI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/81d5f7bf950746f44e2b92f3/fribourg-gotteron",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "11df2073083f06cccbb5132e",
+          "externalId": "55",
+          "name": "HK Nitra",
+          "shortName": "NIT",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "3a6ab615c9faf2b08de2f7b1",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3042",
+      "startDate": "2026-10-06T18:20:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/3a6ab615c9faf2b08de2f7b1/graz-99-ers-vs-sai-pa-lappeenranta",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "a6b41f733bd26d7705dc70bb",
+        "name": "Merkur Eisstadion"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "93b3b3514079478af9986663",
+          "externalId": "86",
+          "name": "Graz99ers",
+          "shortName": "GRZ",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/93b3b3514079478af9986663/graz-99-ers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6aa374572836df3fb42eb000",
+          "externalId": "30",
+          "name": "SaiPa Lappeenranta",
+          "shortName": "SAI",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6aa374572836df3fb42eb000/sai-pa-lappeenranta",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "27f291d3bd65525d537f2420",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3043",
+      "startDate": "2026-10-07T15:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/27f291d3bd65525d537f2420/tappara-tampere-vs-storhamar-hamar",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "9c4f3e134da1c0e380910250",
+        "name": "Nokia Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "6a0612c54317b473a6f67f56",
+          "externalId": "27",
+          "name": "Tappara Tampere",
+          "shortName": "TAP",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "e5e5ff0d908f9cc719344e3e",
+          "externalId": "52",
+          "name": "Storhamar Hamar",
+          "shortName": "STO",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "1304690b8a655c2c91cec3d8",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3044",
+      "startDate": "2026-10-07T17:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/1304690b8a655c2c91cec3d8/kolner-haie-vs-herning-blue-fox",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "9fed1ebed537b7fdef891c3c",
+        "name": "LANXESS Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "104c3b90fcb6da8e653c05eb",
+          "externalId": "12",
+          "name": "Kölner Haie",
+          "shortName": "KOL",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "ef112cb0eed346d32a775fac",
+          "externalId": "109",
+          "name": "Herning Blue Fox",
+          "shortName": "HBF",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "2f56470e13ade13611569e9e",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3045",
+      "startDate": "2026-10-07T17:30:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/2f56470e13ade13611569e9e/adler-mannheim-vs-gks-tychy",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "1d13ade030d679fd1f4d5f7c",
+        "name": "SAP Arena"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "9bd414328e8c2658731938a0",
+          "externalId": "8",
+          "name": "Adler Mannheim",
+          "shortName": "MAN",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "a834198f57003fefc78152e6",
+          "externalId": "78",
+          "name": "GKS Tychy",
+          "shortName": "TYC",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "06d8ab4a53b43b55dc3c445a",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3046",
+      "startDate": "2026-10-07T18:15:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/06d8ab4a53b43b55dc3c445a/bordeaux-boxers-vs-dynamo-pardubice",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "07d43bf2592304da8dc57d8e",
+        "name": "Patinoire Mériadeck"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "50e896abe7f9760028ebd0c3",
+          "externalId": "108",
+          "name": "Bordeaux Boxers",
+          "shortName": "BOR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/50e896abe7f9760028ebd0c3/bordeaux-boxers",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "3e2b15fb0e41329efc1f6237",
+          "externalId": "5",
+          "name": "Dynamo Pardubice",
+          "shortName": "PAR",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+            "isWeb": false
+          }
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Match",
+      "_entityId": "09d924986866b5d4c1293ae0",
+      "_modifyDate": "2026-09-11T06:25:13.475Z",
+      "externalId": "3047",
+      "startDate": "2026-10-07T18:20:00.000Z",
+      "startDateNotConfirmed": false,
+      "status": "not-started",
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "url": "/matches/09d924986866b5d4c1293ae0/red-bull-salzburg-vs-eisbaren-berlin",
+        "isWeb": false,
+        "pageEntityId": "1"
+      },
+      "venue": {
+        "_type": "Corebine.Core.Sport.Arena",
+        "_entityId": "3e0e84b4ca636f7fd0a3443c",
+        "name": "Eisarena Salzburg"
+      },
+      "stage": {
+        "_type": "Corebine.Core.Sport.Event.Stage",
+        "group": {
+          "order": 1,
+          "name": "Regular Season"
+        },
+        "round": {
+          "order": 5,
+          "name": "Game Day 5"
+        }
+      },
+      "teams": {
+        "home": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "aa8d051910780a557dc4a37f",
+          "externalId": "13",
+          "name": "Red Bull Salzburg",
+          "shortName": "RBS",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+            "isWeb": false
+          }
+        },
+        "away": {
+          "_type": "Corebine.Core.Sport.Team",
+          "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+          "externalId": "9",
+          "name": "Eisbären Berlin",
+          "shortName": "BER",
+          "link": {
+            "_type": "Corebine.Core.Type.Link.Internal",
+            "pageEntityId": "1",
+            "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+            "isWeb": false
+          }
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose draws everything; the platform theme only has to stay out of the way. -->
+    <style name="Theme.OpenScore" parent="android:Theme.Material.NoActionBar" />
+</resources>

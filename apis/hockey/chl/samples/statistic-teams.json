@@ -1,0 +1,3392 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "73caaf27776183ec10ea6ddc",
+      "externalId": "37",
+      "name": "Skellefteå AIK",
+      "shortName": "SKE",
+      "country": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 10.53
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 12
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 8,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 1.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 48.39,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 6.666666666666667
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 26.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2077
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "fc04d1152903083968962750",
+      "externalId": "47",
+      "name": "HC Davos",
+      "shortName": "HCD",
+      "country": {
+        "name": "Switzerland",
+        "code": "sui"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/fc04d1152903083968962750/hc-davos",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 88.89,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 9.91
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 15
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 9,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 53.38,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 5.333333333333333
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 80,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 3515
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "104c3b90fcb6da8e653c05eb",
+      "externalId": "12",
+      "name": "Kölner Haie",
+      "shortName": "KOL",
+      "country": {
+        "name": "Germany",
+        "code": "ger"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 88.89,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 9.92
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 15
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 7,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 47.83,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 5.333333333333333
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 27.27,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 85,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 18104
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "3e2b15fb0e41329efc1f6237",
+      "externalId": "5",
+      "name": "Dynamo Pardubice",
+      "shortName": "PAR",
+      "country": {
+        "name": "Czechia",
+        "code": "cze"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 12.84
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 6,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 55.97,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 4.333333333333333
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 23.08,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 90,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 8206
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "77148013ae31c768167a5d28",
+      "externalId": "64",
+      "name": "HC Pilsen",
+      "shortName": "PLZ",
+      "country": {
+        "name": "Czechia",
+        "code": "cze"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 4.75
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 5,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 0.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 22.22,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2655
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "e407e3c30bba319774cc4bea",
+      "externalId": "22",
+      "name": "Genève-Servette",
+      "shortName": "GEN",
+      "country": {
+        "name": "Switzerland",
+        "code": "sui"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 8.96
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 11
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 43.64,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 18.18,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 76.92,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 4696
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "81d5f7bf950746f44e2b92f3",
+      "externalId": "18",
+      "name": "Fribourg-Gottéron",
+      "shortName": "FRI",
+      "country": {
+        "name": "Switzerland",
+        "code": "sui"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/81d5f7bf950746f44e2b92f3/fribourg-gotteron",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 7.28
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 1.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 49.53,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 3.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 30,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 77.78,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "6aa374572836df3fb42eb000",
+      "externalId": "30",
+      "name": "SaiPa Lappeenranta",
+      "shortName": "SAI",
+      "country": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/6aa374572836df3fb42eb000/sai-pa-lappeenranta",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 7.53
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 11
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 10
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 3.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 23.08,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 72.73,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 3331
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "ba55abe823bed83d7c12e7b3",
+      "externalId": "31",
+      "name": "Frölunda Gothenburg",
+      "shortName": "FHC",
+      "country": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 55.56,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 9.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 10
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 3,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 3.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 46.75,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 3.3333333333333335
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 84.62,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2826
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "6a0612c54317b473a6f67f56",
+      "externalId": "27",
+      "name": "Tappara Tampere",
+      "shortName": "TAP",
+      "country": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 5.08
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 10
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 2,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 54.76,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 35.71,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2299
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "50e896abe7f9760028ebd0c3",
+      "externalId": "108",
+      "name": "Bordeaux Boxers",
+      "shortName": "BOR",
+      "country": {
+        "name": "France",
+        "code": "fra"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/50e896abe7f9760028ebd0c3/bordeaux-boxers",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 4.62
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 51.24,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 3.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "c9840a203093f97cae0a9495",
+      "externalId": "107",
+      "name": "KooKoo Kouvola",
+      "shortName": "KOO",
+      "country": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 44.44,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 7.44
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 47.83,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 7.666666666666667
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 8.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 72.73,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 1570
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "e5e5ff0d908f9cc719344e3e",
+      "externalId": "52",
+      "name": "Storhamar Hamar",
+      "shortName": "STO",
+      "country": {
+        "name": "Norway",
+        "code": "nor"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 44.44,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 4.78
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 47.77,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 5.666666666666667
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 75,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 3483
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "aa8d051910780a557dc4a37f",
+      "externalId": "13",
+      "name": "Red Bull Salzburg",
+      "shortName": "RBS",
+      "country": {
+        "name": "Austria",
+        "code": "aut"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 5.2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 0,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 51.26,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 6.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 7.69,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 3016
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "59b68db03ae141bf08f49775",
+      "externalId": "38",
+      "name": "Växjö Lakers",
+      "shortName": "VLH",
+      "country": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/59b68db03ae141bf08f49775/vaxjo-lakers",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 4.36
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 0,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 42.71,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 2.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 20,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 77.78,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "9bd414328e8c2658731938a0",
+      "externalId": "8",
+      "name": "Adler Mannheim",
+      "shortName": "MAN",
+      "country": {
+        "name": "Germany",
+        "code": "ger"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/9bd414328e8c2658731938a0/adler-mannheim",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 7.24
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": 0,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 69.61,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 18.18,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 71.43,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 4376
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "11df2073083f06cccbb5132e",
+      "externalId": "55",
+      "name": "HK Nitra",
+      "shortName": "NIT",
+      "country": {
+        "name": "Slovakia",
+        "code": "svk"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 6.58
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 10
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 3.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 49.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 4.333333333333333
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 20,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 90,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2969
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "954f0696fef5e714282a6d75",
+      "externalId": "51",
+      "name": "KAC Klagenfurt",
+      "shortName": "KAC",
+      "country": {
+        "name": "Austria",
+        "code": "aut"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/954f0696fef5e714282a6d75/kac-klagenfurt",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 22.22,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 5.39
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -2,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 1.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 47.24,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 12.5,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 72.73,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2313
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "93b3b3514079478af9986663",
+      "externalId": "86",
+      "name": "Graz99ers",
+      "shortName": "GRZ",
+      "country": {
+        "name": "Austria",
+        "code": "aut"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/93b3b3514079478af9986663/graz-99-ers",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 5.88
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 53.04,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2450
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "47cce95deef579332978edc7",
+      "externalId": "91",
+      "name": "Rögle Ängelholm",
+      "shortName": "RBK",
+      "country": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/47cce95deef579332978edc7/rogle-angelholm",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 3.42
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -5,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 2.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 55.88,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 0.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 87.5,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "865ec7e2959da256a2a97a8b",
+      "externalId": "3",
+      "name": "Bílí Tygři Liberec",
+      "shortName": "LIB",
+      "country": {
+        "name": "Czechia",
+        "code": "cze"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/865ec7e2959da256a2a97a8b/bili-tygri-liberec",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 3.83
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -6,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 1.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 4.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 50.43,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 4.5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 72.73,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "ef112cb0eed346d32a775fac",
+      "externalId": "109",
+      "name": "Herning Blue Fox",
+      "shortName": "HBF",
+      "country": {
+        "name": "Denmark",
+        "code": "den"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/ef112cb0eed346d32a775fac/herning-blue-fox",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 6.44
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 12
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -8,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 51.88,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 77.78,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 1727
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "a834198f57003fefc78152e6",
+      "externalId": "78",
+      "name": "GKS Tychy",
+      "shortName": "TYC",
+      "country": {
+        "name": "Poland",
+        "code": "pol"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 4.25
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 12
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -9,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 37.5,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 6.333333333333333
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 11.11,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 68.75,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 2015
+          }
+        ]
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Team",
+      "_entityId": "2e6ebca3b60eeec1da4b9e9b",
+      "externalId": "9",
+      "name": "Eisbären Berlin",
+      "shortName": "BER",
+      "country": {
+        "name": "Germany",
+        "code": "ger"
+      },
+      "link": {
+        "_type": "Corebine.Core.Type.Link.Internal",
+        "pageEntityId": "1",
+        "url": "/teams/2e6ebca3b60eeec1da4b9e9b/eisbaren-berlin",
+        "isWeb": false
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Team.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Wins",
+            "shortName": "W",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Wins",
+            "shortName": "OTW",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Ties",
+            "shortName": "T",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Overtime and Shootout Losses",
+            "shortName": "OTL",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Losses",
+            "shortName": "L",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points Percentage",
+            "shortName": "P%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 5.13
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals for",
+            "shortName": "GF",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals against",
+            "shortName": "GA",
+            "value": 14
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goal Difference",
+            "shortName": "GDF",
+            "value": -10,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Per Game",
+            "shortName": "GG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Goals Against Per Game",
+            "shortName": "GAG",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 54.05,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Hits per game",
+            "shortName": "HPG",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Power Play Percentage",
+            "shortName": "PP%",
+            "value": 27.27,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Penalty Kill Percentage",
+            "shortName": "PK%",
+            "value": 70,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Average Attendance",
+            "shortName": "AVG.ATT.",
+            "value": 0
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "includes": [],
+  "_version": "2024"
+}

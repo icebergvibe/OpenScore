@@ -1,0 +1,946 @@
+{
+  "matches": [
+    {
+      "id": 102297,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Sevilla FC - Valencia CF - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-sevilla-fc-valencia-cf-5",
+      "date": "2026-09-11T19:00:00+00:00",
+      "time": "2026-09-11T19:00:00+00:00",
+      "hashtag": "SevillaValencia",
+      "home_score": 1,
+      "away_score": 0,
+      "status": "FullTime",
+      "home_team": {
+        "id": 17,
+        "slug": "sevilla-fc",
+        "name": "Sevilla Fútbol Club SAD",
+        "nickname": "Sevilla FC",
+        "boundname": "Sevilla FC",
+        "shortname": "SEV",
+        "sprite_status": "created",
+        "shield": {
+          "id": 153,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/sevilla.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 18,
+        "slug": "valencia-cf",
+        "name": "Valencia Club de Fútbol SAD",
+        "nickname": "Valencia CF",
+        "boundname": "Valencia CF",
+        "shortname": "VAL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 155,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/valencia.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Ramón Sánchez-Pizjuán"
+      },
+      "persons_role": [
+        {
+          "person": {
+            "name": "Mateo Busquets Ferrer",
+            "nickname": "Mateo Busquets Ferrer",
+            "firstname": "Mateo",
+            "lastname": "Busquets Ferrer"
+          },
+          "role": {
+            "id": 5,
+            "name": "Árbitro Principal"
+          }
+        },
+        {
+          "person": {
+            "name": "Juan Francisco Roca Roblés",
+            "nickname": "Juan Francisco Roca Roblés",
+            "firstname": "Juan Francisco",
+            "lastname": "Roca Roblés"
+          },
+          "role": {
+            "id": 8,
+            "name": "Cuarto Árbitro"
+          }
+        },
+        {
+          "person": {
+            "name": "Carlos del Cerro Grande",
+            "nickname": "Carlos del Cerro Grande",
+            "firstname": "Carlos",
+            "lastname": "del Cerro Grande"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Rubén Ávalos Barrera",
+            "nickname": "Rubén Ávalos Barrera",
+            "firstname": "Rubén",
+            "lastname": "Ávalos Barrera"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Gonzalo García González",
+            "nickname": "Gonzalo García González",
+            "firstname": "Gonzalo",
+            "lastname": "García González"
+          },
+          "role": {
+            "id": 6,
+            "name": "Árbitro Asistente 1"
+          }
+        },
+        {
+          "person": {
+            "name": "Guillermo Santiago Sacristán",
+            "nickname": "Guillermo Santiago Sacristán",
+            "firstname": "Guillermo",
+            "lastname": "Santiago Sacristán"
+          },
+          "role": {
+            "id": 7,
+            "name": "Árbitro Asistente 2"
+          }
+        }
+      ],
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102294,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - R. Racing Club - Deportivo Alavés - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-r-racing-club-deportivo-alaves-5",
+      "date": "2026-09-12T12:00:00+00:00",
+      "time": "2026-09-12T12:00:00+00:00",
+      "hashtag": "RacingAlavés",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 49,
+        "slug": "r-racing-club",
+        "name": "Real Racing Club SAD",
+        "nickname": "R. Racing Club",
+        "boundname": "R. Racing Club",
+        "shortname": "RAC",
+        "sprite_status": "created",
+        "shield": {
+          "id": 215,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/racing.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 21,
+        "slug": "d-alaves",
+        "name": "Deportivo Alavés SAD",
+        "nickname": "Deportivo Alavés",
+        "boundname": "Deportivo Alavés",
+        "shortname": "ALA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 467523,
+          "url": "https://assets.laliga.com/assets/2020/09/01/medium/27002754a98bf535807fe49a24cc63ea.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "El Sardinero"
+      },
+      "persons_role": [
+        {
+          "person": {
+            "name": "Javier Alberola Rojas",
+            "nickname": "Javier Alberola Rojas",
+            "firstname": "Javier",
+            "lastname": "Alberola Rojas"
+          },
+          "role": {
+            "id": 5,
+            "name": "Árbitro Principal"
+          }
+        },
+        {
+          "person": {
+            "name": "Álvaro Juncal Moreira",
+            "nickname": "Álvaro Juncal Moreira",
+            "firstname": "Álvaro",
+            "lastname": "Juncal Moreira"
+          },
+          "role": {
+            "id": 8,
+            "name": "Cuarto Árbitro"
+          }
+        },
+        {
+          "person": {
+            "name": "Javier Iglesias Villanueva",
+            "nickname": "Javier Iglesias Villanueva",
+            "firstname": "Javier",
+            "lastname": "Iglesias Villanueva"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Daniel Jesús Trujillo Suárez",
+            "nickname": "Daniel Jesús Trujillo Suárez",
+            "firstname": "Daniel Jesús",
+            "lastname": "Trujillo Suárez"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Alfredo Rodríguez Moreno",
+            "nickname": "Alfredo Rodríguez Moreno",
+            "firstname": "Alfredo",
+            "lastname": "Rodríguez Moreno"
+          },
+          "role": {
+            "id": 6,
+            "name": "Árbitro Asistente 1"
+          }
+        },
+        {
+          "person": {
+            "name": "Jorge Bueno Mateo",
+            "nickname": "Jorge Bueno Mateo",
+            "firstname": "Jorge",
+            "lastname": "Bueno Mateo"
+          },
+          "role": {
+            "id": 7,
+            "name": "Árbitro Asistente 2"
+          }
+        }
+      ],
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102293,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - CA Osasuna - RCD Espanyol de Barcelona - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-ca-osasuna-rcd-espanyol-de-barcelona-5",
+      "date": "2026-09-12T14:15:00+00:00",
+      "time": "2026-09-12T14:15:00+00:00",
+      "hashtag": "OsasunaEspanyol",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 13,
+        "slug": "c-a-osasuna",
+        "name": "Club Atlético Osasuna",
+        "nickname": "CA Osasuna",
+        "boundname": "CA Osasuna",
+        "shortname": "OSA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 145,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/osasuna.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 8,
+        "slug": "rcd-espanyol",
+        "name": "RCD Espanyol de Barcelona",
+        "nickname": "RCD Espanyol de Barcelona",
+        "boundname": "RCD Espanyol de Barcelona",
+        "shortname": "ESP",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891385,
+          "url": "https://assets.laliga.com/assets/2025/07/02/medium/e9177f6edd72c6360602adbca85e442f.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Estadio El Sadar"
+      },
+      "persons_role": [
+        {
+          "person": {
+            "name": "Luis Bestard Servera",
+            "nickname": "Luis Bestard Servera",
+            "firstname": "Luis",
+            "lastname": "Bestard Servera"
+          },
+          "role": {
+            "id": 5,
+            "name": "Árbitro Principal"
+          }
+        },
+        {
+          "person": {
+            "name": "Sergio Escriche Gúzman",
+            "nickname": "Sergio Escriche Gúzman",
+            "firstname": "Sergio",
+            "lastname": "Escriche Gúzman"
+          },
+          "role": {
+            "id": 8,
+            "name": "Cuarto Árbitro"
+          }
+        },
+        {
+          "person": {
+            "name": "David Gálvez Rascón",
+            "nickname": "David Gálvez Rascón",
+            "firstname": "David",
+            "lastname": "Gálvez Rascón"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR"
+          }
+        },
+        {
+          "person": {
+            "name": "José Luis Munuera Montero",
+            "nickname": "José Luis Munuera Montero",
+            "firstname": "José Luis",
+            "lastname": "Munuera Montero"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Álvaro Granel Peiró",
+            "nickname": "Álvaro Granel Peiró",
+            "firstname": "Álvaro",
+            "lastname": "Granel Peiró"
+          },
+          "role": {
+            "id": 6,
+            "name": "Árbitro Asistente 1"
+          }
+        },
+        {
+          "person": {
+            "name": "Carlos Martinez Caballero",
+            "nickname": "Carlos Martinez Caballero",
+            "firstname": "Carlos",
+            "lastname": "Martinez Caballero"
+          },
+          "role": {
+            "id": 7,
+            "name": "Árbitro Asistente 2"
+          }
+        }
+      ],
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102289,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Athletic Club - Elche CF - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-athletic-club-elche-cf-5",
+      "date": "2026-09-12T16:30:00+00:00",
+      "time": "2026-09-12T16:30:00+00:00",
+      "hashtag": "AthleticElche",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 3,
+        "slug": "athletic-club",
+        "name": "Athletic Club",
+        "nickname": "Athletic Club",
+        "boundname": "Athletic Club",
+        "shortname": "ATH",
+        "sprite_status": "created",
+        "shield": {
+          "id": 125,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/athletic.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 7,
+        "slug": "elche-c-f",
+        "name": "Elche Club de Fútbol SAD",
+        "nickname": "Elche CF",
+        "boundname": "Elche CF",
+        "shortname": "ELC",
+        "sprite_status": "created",
+        "shield": {
+          "id": 133,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/elche.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Estadio San Mamés"
+      },
+      "persons_role": [
+        {
+          "person": {
+            "name": "Manuel Jesús Orellana Cid",
+            "nickname": "Manuel Jesús Orellana Cid",
+            "firstname": "Manuel Jesús",
+            "lastname": "Orellana Cid"
+          },
+          "role": {
+            "id": 5,
+            "name": "Árbitro Principal"
+          }
+        },
+        {
+          "person": {
+            "name": "Joan Masip Vidal",
+            "nickname": "Joan Masip Vidal",
+            "firstname": "Joan",
+            "lastname": "Masip Vidal"
+          },
+          "role": {
+            "id": 8,
+            "name": "Cuarto Árbitro"
+          }
+        },
+        {
+          "person": {
+            "name": "José Antonio López Toca",
+            "nickname": "José Antonio López Toca",
+            "firstname": "José Antonio",
+            "lastname": "López Toca"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Álvaro Moreno Aragón",
+            "nickname": "Álvaro Moreno Aragón",
+            "firstname": "Álvaro",
+            "lastname": "Moreno Aragón"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Iván Ríos Vargas",
+            "nickname": "Iván Ríos Vargas",
+            "firstname": "Iván",
+            "lastname": "Ríos Vargas"
+          },
+          "role": {
+            "id": 6,
+            "name": "Árbitro Asistente 1"
+          }
+        },
+        {
+          "person": {
+            "name": "Roberto Tejero García",
+            "nickname": "Roberto Tejero García",
+            "firstname": "Roberto",
+            "lastname": "Tejero García"
+          },
+          "role": {
+            "id": 7,
+            "name": "Árbitro Asistente 2"
+          }
+        }
+      ],
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102295,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Madrid - Rayo Vallecano - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-real-madrid-rayo-vallecano-5",
+      "date": "2026-09-12T19:00:00+00:00",
+      "time": "2026-09-12T19:00:00+00:00",
+      "hashtag": "RealMadridRayo",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 15,
+        "slug": "real-madrid",
+        "name": "Real Madrid Club de Fútbol",
+        "nickname": "Real Madrid",
+        "boundname": "Real Madrid",
+        "shortname": "RMA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 149,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/real-madrid.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 14,
+        "slug": "rayo-vallecano",
+        "name": "Rayo Vallecano de Madrid SAD",
+        "nickname": "Rayo Vallecano",
+        "boundname": "Rayo Vallecano",
+        "shortname": "RAY",
+        "sprite_status": "created",
+        "shield": {
+          "id": 691708,
+          "url": "https://assets.laliga.com/assets/2023/04/27/medium/57d9950a8745ead226c04d37235c0786.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Bernabéu"
+      },
+      "persons_role": [
+        {
+          "person": {
+            "name": "Víctor García Verdura",
+            "nickname": "Víctor García Verdura",
+            "firstname": "Víctor",
+            "lastname": "García Verdura"
+          },
+          "role": {
+            "id": 5,
+            "name": "Árbitro Principal"
+          }
+        },
+        {
+          "person": {
+            "name": "Javier Figueiredo Comesaña",
+            "nickname": "Javier Figueiredo Comesaña",
+            "firstname": "Javier",
+            "lastname": "Figueiredo Comesaña"
+          },
+          "role": {
+            "id": 8,
+            "name": "Cuarto Árbitro"
+          }
+        },
+        {
+          "person": {
+            "name": "Juan Luis Pulido Santana",
+            "nickname": "Juan Luis Pulido Santana",
+            "firstname": "Juan Luis",
+            "lastname": "Pulido Santana"
+          },
+          "role": {
+            "id": 9,
+            "name": "VAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Luis Mario Milla Alvendiz",
+            "nickname": "Luis Mario Milla Alvendiz",
+            "firstname": "Luis Mario",
+            "lastname": "Milla Alvendiz"
+          },
+          "role": {
+            "id": 10,
+            "name": "AVAR"
+          }
+        },
+        {
+          "person": {
+            "name": "Diego Sánchez Rojo",
+            "nickname": "Diego Sánchez Rojo",
+            "firstname": "Diego",
+            "lastname": "Sánchez Rojo"
+          },
+          "role": {
+            "id": 6,
+            "name": "Árbitro Asistente 1"
+          }
+        },
+        {
+          "person": {
+            "name": "Julián Villaseñor Julián",
+            "nickname": "Julián Villaseñor Julián",
+            "firstname": "Julián",
+            "lastname": "Villaseñor Julián"
+          },
+          "role": {
+            "id": 7,
+            "name": "Árbitro Asistente 2"
+          }
+        }
+      ],
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102290,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Celta - Málaga CF - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-rc-celta-malaga-cf-5",
+      "date": "2026-09-13T12:00:00+00:00",
+      "time": "2026-09-13T12:00:00+00:00",
+      "hashtag": "CeltaMálaga",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 6,
+        "slug": "rc-celta",
+        "name": "Real Club Celta de Vigo SAD",
+        "nickname": "Celta",
+        "boundname": "Celta",
+        "shortname": "CEL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 891421,
+          "url": "https://assets.laliga.com/assets/2025/07/11/medium/0a796827f9e758d7d750db805adde7c5.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 12,
+        "slug": "malaga-cf",
+        "name": "Málaga Club de Fútbol SAD",
+        "nickname": "Málaga CF",
+        "boundname": "Málaga CF",
+        "shortname": "MGA",
+        "sprite_status": "created",
+        "shield": {
+          "id": 143,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/malaga.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Estadio ABANCA Balaídos"
+      },
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102292,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Levante UD - FC Barcelona - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-levante-ud-fc-barcelona-5",
+      "date": "2026-09-13T14:15:00+00:00",
+      "time": "2026-09-13T14:15:00+00:00",
+      "hashtag": "LevanteUDBarça",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 11,
+        "slug": "levante-ud",
+        "name": "Levante Unión Deportiva SAD",
+        "nickname": "Levante UD",
+        "boundname": "Levante UD",
+        "shortname": "LEV",
+        "sprite_status": "created",
+        "shield": {
+          "id": 141,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/levante.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 4,
+        "slug": "fc-barcelona",
+        "name": "Fútbol Club Barcelona",
+        "nickname": "FC Barcelona",
+        "boundname": "FC Barcelona",
+        "shortname": "BAR",
+        "sprite_status": "created",
+        "shield": {
+          "id": 127,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/barcelona.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Estadio Ciutat de València"
+      },
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102291,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Getafe CF - RC Deportivo - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-getafe-cf-rc-deportivo-5",
+      "date": "2026-09-13T16:30:00+00:00",
+      "time": "2026-09-13T16:30:00+00:00",
+      "hashtag": "GetafeDépor",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 9,
+        "slug": "getafe-cf",
+        "name": "Getafe Club de Fútbol SAD",
+        "nickname": "Getafe CF",
+        "boundname": "Getafe CF",
+        "shortname": "GET",
+        "sprite_status": "created",
+        "shield": {
+          "id": 695837,
+          "url": "https://assets.laliga.com/assets/2023/05/12/medium/dc59645c96bc2c9010341c16dd6d4bfa.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 26,
+        "slug": "rc-deportivo",
+        "name": "Real Club Deportivo de A Coruña SAD",
+        "nickname": "RC Deportivo",
+        "boundname": "RC Deportivo",
+        "shortname": "DEP",
+        "sprite_status": "created",
+        "shield": {
+          "id": 994863,
+          "url": "https://assets.laliga.com/assets/2026/06/24/medium/6b88661529a2c06840c8bf6bddd90970.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Coliseum"
+      },
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102296,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Real Sociedad - Atlético de Madrid - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-real-sociedad-atletico-de-madrid-5",
+      "date": "2026-09-13T19:00:00+00:00",
+      "time": "2026-09-13T19:00:00+00:00",
+      "hashtag": "RealSociedadAtleti",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 16,
+        "slug": "real-sociedad",
+        "name": "Real Sociedad de Fútbol SAD",
+        "nickname": "Real Sociedad",
+        "boundname": "Real Sociedad",
+        "shortname": "RSO",
+        "sprite_status": "created",
+        "shield": {
+          "id": 151,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/real-sociedad.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 2,
+        "slug": "atletico-de-madrid",
+        "name": "Club Atlético de Madrid SAD",
+        "nickname": "Atlético de Madrid",
+        "boundname": "Atlético de Madrid",
+        "shortname": "ATM",
+        "sprite_status": "created",
+        "shield": {
+          "id": 812970,
+          "url": "https://assets.laliga.com/assets/2024/06/17/medium/cbc5c8cc8c3e8abd0e175c00ee53b723.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Anoeta"
+      },
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    },
+    {
+      "id": 102298,
+      "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Villarreal CF - Real Betis - 5",
+      "slug": "temporada-2026-2027-laliga-ea-sports-villarreal-cf-real-betis-5",
+      "date": "2026-09-14T19:00:00+00:00",
+      "time": "2026-09-14T19:00:00+00:00",
+      "hashtag": "VillarrealRealBetis",
+      "status": "PreMatch",
+      "home_team": {
+        "id": 20,
+        "slug": "villarreal-cf",
+        "name": "Villarreal Club de Fútbol SAD",
+        "nickname": "Villarreal CF",
+        "boundname": "Villarreal CF",
+        "shortname": "VIL",
+        "sprite_status": "created",
+        "shield": {
+          "id": 159,
+          "url": "https://assets.laliga.com/assets/2019/06/07/medium/villarreal.png"
+        },
+        "competitions": []
+      },
+      "away_team": {
+        "id": 5,
+        "slug": "real-betis",
+        "name": "Real Betis Balompié SAD",
+        "nickname": "Real Betis",
+        "boundname": "Real Betis",
+        "shortname": "BET",
+        "sprite_status": "created",
+        "shield": {
+          "id": 627565,
+          "url": "https://assets.laliga.com/assets/2022/09/15/medium/e4a09419d3bd115b8f3dab73d480e146.png"
+        },
+        "competitions": []
+      },
+      "venue": {
+        "name": "Estadio de la Cerámica"
+      },
+      "subscription": {
+        "id": 395,
+        "name": "LALIGA EA SPORTS",
+        "slug": "laliga-easports-2026",
+        "teams": [],
+        "rounds": []
+      },
+      "is_brand_day": false,
+      "temperature": {
+        "enabled_historical": false,
+        "enabled_forecast": false
+      },
+      "ball": {
+        "id": 31,
+        "name": "STELLAR NITRO ULTIMATE",
+        "image": "https://assets.laliga.com/ball/2627_ACCELERATE_1_BLANCO_1_B08_CAP.png"
+      }
+    }
+  ]
+}

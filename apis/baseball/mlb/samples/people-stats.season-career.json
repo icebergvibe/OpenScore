@@ -1,0 +1,145 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "stats": [
+    {
+      "type": {
+        "displayName": "season"
+      },
+      "group": {
+        "displayName": "hitting"
+      },
+      "exemptions": [],
+      "splits": [
+        {
+          "season": "2026",
+          "stat": {
+            "age": 34,
+            "gamesPlayed": 61,
+            "groundOuts": 44,
+            "airOuts": 48,
+            "runs": 44,
+            "doubles": 10,
+            "triples": 0,
+            "homeRuns": 17,
+            "strikeOuts": 75,
+            "baseOnBalls": 42,
+            "intentionalWalks": 5,
+            "hits": 55,
+            "hitByPitch": 2,
+            "avg": ".249",
+            "atBats": 221,
+            "obp": ".372",
+            "slg": ".525",
+            "ops": ".897",
+            "caughtStealing": 3,
+            "stolenBases": 5,
+            "stolenBasePercentage": ".625",
+            "caughtStealingPercentage": ".375",
+            "groundIntoDoublePlay": 8,
+            "numberOfPitches": 1144,
+            "plateAppearances": 268,
+            "totalBases": 116,
+            "rbi": 38,
+            "leftOnBase": 78,
+            "sacBunts": 0,
+            "sacFlies": 1,
+            "babip": ".292",
+            "groundOutsToAirouts": "0.92",
+            "catchersInterference": 2,
+            "atBatsPerHomeRun": "13.00"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "gameType": "R"
+        }
+      ]
+    },
+    {
+      "type": {
+        "displayName": "career"
+      },
+      "group": {
+        "displayName": "hitting"
+      },
+      "exemptions": [],
+      "splits": [
+        {
+          "stat": {
+            "gamesPlayed": 1206,
+            "groundOuts": 768,
+            "airOuts": 888,
+            "runs": 917,
+            "doubles": 213,
+            "triples": 7,
+            "homeRuns": 385,
+            "strikeOuts": 1444,
+            "baseOnBalls": 859,
+            "intentionalWalks": 109,
+            "hits": 1260,
+            "hitByPitch": 42,
+            "avg": ".291",
+            "atBats": 4326,
+            "obp": ".411",
+            "slg": ".611",
+            "ops": "1.022",
+            "caughtStealing": 24,
+            "stolenBases": 70,
+            "stolenBasePercentage": ".745",
+            "caughtStealingPercentage": ".255",
+            "groundIntoDoublePlay": 124,
+            "numberOfPitches": 22043,
+            "plateAppearances": 5270,
+            "totalBases": 2642,
+            "rbi": 868,
+            "leftOnBase": 1705,
+            "sacBunts": 0,
+            "sacFlies": 34,
+            "babip": ".346",
+            "groundOutsToAirouts": "0.86",
+            "catchersInterference": 9,
+            "atBatsPerHomeRun": "11.24"
+          },
+          "team": {
+            "id": 147,
+            "name": "New York Yankees",
+            "link": "/api/v1/teams/147"
+          },
+          "player": {
+            "id": 592450,
+            "fullName": "Aaron Judge",
+            "link": "/api/v1/people/592450"
+          },
+          "league": {
+            "id": 103,
+            "name": "American League",
+            "link": "/api/v1/league/103"
+          },
+          "sport": {
+            "id": 1,
+            "link": "/api/v1/sports/1",
+            "abbreviation": "MLB"
+          },
+          "gameType": "R"
+        }
+      ]
+    }
+  ]
+}

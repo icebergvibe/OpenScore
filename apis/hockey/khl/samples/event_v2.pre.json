@@ -1,0 +1,514 @@
+{
+  "event": {
+    "game_state_key": "not_yet_started",
+    "period": null,
+    "hd": true,
+    "id": 3000171,
+    "season": "2026/2027",
+    "stage_id": 407,
+    "type_id": 24,
+    "commentator": true,
+    "likes_enabled": null,
+    "is_vertical_video": false,
+    "khl_id": 902008,
+    "arena": {
+      "id": 335,
+      "capacity": 12300,
+      "phone": "+7 (495) 796-86-80",
+      "website": "https://icearenamsk.ru/",
+      "name": "CSKA Arena",
+      "address": "Avtozavodskaya st. 23A, Moscow, Russia, 115280",
+      "city": "Moscow",
+      "image": "https://www.khl.ru/images/arenas/52/1.jpg",
+      "geo": {
+        "lat": 55.701984,
+        "long": 37.645711
+      }
+    },
+    "team_a": {
+      "id": 16,
+      "khl_id": 2,
+      "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/16/original/cska_2016_rus__200x200.png",
+      "name": "CSKA",
+      "location": "Moscow",
+      "shots": 0,
+      "gf": 0,
+      "ppg": 0,
+      "shg": 0,
+      "ppc": 0,
+      "vbr": 0,
+      "pim": 0,
+      "total_puck_control_time": null,
+      "total_distance_travelled": null,
+      "offensive_blue_line_crossings_count": null,
+      "top_players": [],
+      "start_fives": [],
+      "players": [],
+      "active": true
+    },
+    "team_b": {
+      "id": 61,
+      "khl_id": 418,
+      "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png",
+      "name": "Admiral",
+      "location": "Vladivostok",
+      "shots": 0,
+      "gf": 0,
+      "ppg": 0,
+      "shg": 0,
+      "ppc": 0,
+      "vbr": 0,
+      "pim": 0,
+      "total_puck_control_time": null,
+      "total_distance_travelled": null,
+      "offensive_blue_line_crossings_count": null,
+      "top_players": [],
+      "start_fives": [],
+      "players": [],
+      "active": true
+    },
+    "other_events_with_both_teams": [
+      {
+        "event": {
+          "id": 2784010,
+          "score": "4:5",
+          "type_id": 18,
+          "khl_id": 897565,
+          "team_a": {
+            "id": 61,
+            "tv_image": "/images/khl_tv/teams/61.png",
+            "khl_id": 418,
+            "name": "Admiral",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png"
+          },
+          "team_b": {
+            "id": 16,
+            "tv_image": "/images/khl_tv/teams/16.png",
+            "khl_id": 2,
+            "name": "CSKA",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/16/original/cska_2016_rus__200x200.png"
+          },
+          "name": "Admiral - CSKA",
+          "start_at": 1758619800000,
+          "event_start_at": 1758619200000,
+          "end_at": 1758628933000,
+          "scores": {
+            "first_period": "1:2",
+            "second_period": "1:1",
+            "third_period": "2:2",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2783794,
+          "score": "1:0",
+          "type_id": 18,
+          "khl_id": 897511,
+          "team_a": {
+            "id": 16,
+            "tv_image": "/images/khl_tv/teams/16.png",
+            "khl_id": 2,
+            "name": "CSKA",
+            "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/16/original/cska_2016_rus__200x200.png"
+          },
+          "team_b": {
+            "id": 61,
+            "tv_image": "/images/khl_tv/teams/61.png",
+            "khl_id": 418,
+            "name": "Admiral",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png"
+          },
+          "name": "CSKA - Admiral",
+          "start_at": 1757521800000,
+          "event_start_at": 1757521200000,
+          "end_at": 1757529983000,
+          "scores": {
+            "first_period": "1:0",
+            "second_period": "0:0",
+            "third_period": "0:0",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2535883,
+          "score": "3:2",
+          "type_id": 18,
+          "khl_id": 889927,
+          "team_a": {
+            "id": 61,
+            "tv_image": "/images/khl_tv/teams/61.png",
+            "khl_id": 418,
+            "name": "Admiral",
+            "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdn/team_pics/61/original/admiral_2024_200x200.png"
+          },
+          "team_b": {
+            "id": 16,
+            "tv_image": "/images/khl_tv/teams/16.png",
+            "khl_id": 2,
+            "name": "CSKA",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/16/original/cska_2016_rus__200x200.png"
+          },
+          "name": "Admiral - CSKA",
+          "start_at": 1726988400000,
+          "event_start_at": 1726987800000,
+          "end_at": 1726997502000,
+          "scores": {
+            "first_period": "0:1",
+            "second_period": "1:0",
+            "third_period": "1:1",
+            "overtime": "1:0",
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2535667,
+          "score": "6:2",
+          "type_id": 18,
+          "khl_id": 889873,
+          "team_a": {
+            "id": 16,
+            "tv_image": "/images/khl_tv/teams/16.png",
+            "khl_id": 2,
+            "name": "CSKA",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdc/team_pics/16/original/cska_2016_rus__200x200.png"
+          },
+          "team_b": {
+            "id": 61,
+            "tv_image": "/images/khl_tv/teams/61.png",
+            "khl_id": 418,
+            "name": "Admiral",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png"
+          },
+          "name": "CSKA - Admiral",
+          "start_at": 1725804000000,
+          "event_start_at": 1725803400000,
+          "end_at": 1725812530000,
+          "scores": {
+            "first_period": "1:1",
+            "second_period": "2:1",
+            "third_period": "3:0",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 1929211,
+          "score": "3:2",
+          "type_id": 18,
+          "khl_id": 885685,
+          "team_a": {
+            "id": 61,
+            "tv_image": "/images/khl_tv/teams/61.png",
+            "khl_id": 418,
+            "name": "Admiral",
+            "image": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdg/team_pics/61/original/admiral_2024_200x200.png"
+          },
+          "team_b": {
+            "id": 16,
+            "tv_image": "/images/khl_tv/teams/16.png",
+            "khl_id": 2,
+            "name": "CSKA",
+            "image": "https://thumbs.webcaster.pro/rec-1-4.webcaster.pro/fc/sdi/team_pics/16/original/cska_2016_rus__200x200.png"
+          },
+          "name": "Admiral - CSKA",
+          "start_at": 1698139800000,
+          "event_start_at": 1698139200000,
+          "end_at": 1698148318000,
+          "scores": {
+            "first_period": "0:1",
+            "second_period": "1:1",
+            "third_period": "1:0",
+            "overtime": "1:0",
+            "bullitt": null
+          }
+        }
+      }
+    ],
+    "social_tags": [
+      "ЦСКАнавсегда",
+      "hcadmiral",
+      "admiral",
+      "адмирал",
+      "ХКАдмирал"
+    ],
+    "free": false,
+    "yandex_rights": true,
+    "yandex_id": "m751586",
+    "match_id": "902008",
+    "balancer_type": "record",
+    "event_or_quote_type_name": "Трансляция",
+    "outer_stage_id": 1436,
+    "stage_name": "Regular 2026/2027",
+    "parent_id": null,
+    "name": "CSKA - Admiral",
+    "mref1": null,
+    "mref2": null,
+    "lref1": null,
+    "lref2": null,
+    "announce": null,
+    "views": "0",
+    "stage_type": "regular",
+    "audio_tracks": [
+      {
+        "id": "main",
+        "title": "Main"
+      },
+      {
+        "id": "a_noise",
+        "title": "Intersound"
+      }
+    ],
+    "image_big": "https://api-video.khl.ru/images/khl/IMG_2497.JPG",
+    "location": "Moscow",
+    "start_at_day": 1789074000,
+    "start_at": 1789144200000,
+    "event_start_at": 1789143600000,
+    "end_at": 1789161900000,
+    "tickets": "https://widget.afisha.yandex.ru/w/sessions/MTE2NXwzMjc3MjN8MTQyNDY3OTF8MTc4OTE0NDIwMDAwMA==?clientKey=e3426c34-3ad2-4b57-800b-c347cd049079",
+    "text_events": [],
+    "not_regular": false,
+    "infographics": "With scoreboard",
+    "infographics_enabled": true,
+    "score": "0:0",
+    "condensed_game": null,
+    "highlight": null,
+    "outer_url": "https://www.khl.ru/game/1436/902008/preview/",
+    "m3u8_url": null,
+    "feed_url": null,
+    "iframe_url": "//api-video.khl.ru/iframe/feed/start/na_e9a1607c70515ec9b93c6a4881ac9274/2_902008/7594548168223c1a673ada70419a92ca/1789174425?sr=42&type_id=24&width=730&height=397&iframe_width=730&iframe_height=397&lang=en&skin_name=khl",
+    "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/na_e9a1607c70515ec9b93c6a4881ac9274/2_902008/7594548168223c1a673ada70419a92ca/1789174425?sr=42&type_id=24&width=100%25&height=100%25&iframe_width=730&iframe_height=397&lang=en&skin_name=khl\" width=\"730\"></iframe>",
+    "scores": {
+      "first_period": null,
+      "second_period": null,
+      "third_period": null,
+      "overtime": null,
+      "bullitt": null
+    },
+    "this_pair_stat": {
+      "events_count": 23,
+      "team_a": {
+        "wins_count": 19,
+        "goals_count": 71,
+        "points_count": 47
+      },
+      "team_b": {
+        "wins_count": 4,
+        "goals_count": 34,
+        "points_count": 12
+      }
+    },
+    "transaction_types": [
+      {
+        "id": 17,
+        "platforms": "browser,smarttv",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "535618b2-c814-45b8-b2c5-5f530a6b0507",
+        "name": "Single match (HD)",
+        "time": 0,
+        "amount": 9900,
+        "season": false,
+        "events_filter_rule": "one_from_all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1213,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_buy_one_game",
+        "smarttv_app_product_id": "",
+        "name": "One game (HD)",
+        "time": 0,
+        "amount": 9900,
+        "season": false,
+        "events_filter_rule": "one_from_all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1895,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_month_sub_month_one_2025_2026",
+        "smarttv_app_product_id": "",
+        "name": "Month (1 team) ios'25/26",
+        "time": 2592000,
+        "amount": 34900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1225,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Month (1 team)",
+        "time": 2592000,
+        "amount": 34900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1899,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_month_sub_month_all_2025_2026",
+        "smarttv_app_product_id": "",
+        "name": "Month (all matches) ios'25/26",
+        "time": 2592000,
+        "amount": 44900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1233,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Month (all matches)",
+        "time": 2592000,
+        "amount": 44900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1313,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Season (1 team)",
+        "time": 31557600,
+        "amount": 199000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1988,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_season_one_team_2026_2027",
+        "smarttv_app_product_id": "",
+        "name": "Season (1 team) ios'26/27",
+        "time": 31557600,
+        "amount": 199000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1317,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Season (all matches)",
+        "time": 31557600,
+        "amount": 299000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1992,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_season_all_2026_2027",
+        "smarttv_app_product_id": "",
+        "name": "Season (all matches) ios'26/27",
+        "time": 31557600,
+        "amount": 299000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      }
+    ],
+    "sscore": null,
+    "commentators_names": "Artem Batrak, Kirill Fastovskiy",
+    "bets": {
+      "team_a_win": 1.45,
+      "draw": 5.5,
+      "team_b_win": 5.5,
+      "url": "https://af-bk6bba.com/click?offer_id=803&partner_id=16996&url=https://fon.bet/sports/hockey/13283/67904698/?utm_source=default&utm_medium=cpc&utm_campaign=des_base&utm_content=odds&utm_medium=sponsorship&sub_1={khl}&sub_2={feed}&sub_3={odds}"
+    },
+    "transactions": [],
+    "has_video": true,
+    "geo_error": null
+  }
+}

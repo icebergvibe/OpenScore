@@ -1,0 +1,1687 @@
+{
+  "dataColumns": [
+    {
+      "name": "Player",
+      "displayed": true
+    },
+    {
+      "name": "NR",
+      "displayed": true
+    },
+    {
+      "name": "POS",
+      "displayed": true
+    },
+    {
+      "name": "LINE",
+      "displayed": true
+    },
+    {
+      "name": "G",
+      "displayed": true
+    },
+    {
+      "name": "A",
+      "displayed": true
+    },
+    {
+      "name": "TP",
+      "displayed": false
+    },
+    {
+      "name": "SHG",
+      "displayed": false
+    },
+    {
+      "name": "PPG",
+      "displayed": true
+    },
+    {
+      "name": "SW",
+      "displayed": true
+    },
+    {
+      "name": "PIM",
+      "displayed": true
+    },
+    {
+      "name": "SOG",
+      "displayed": true
+    },
+    {
+      "name": "PPSOG",
+      "displayed": true
+    },
+    {
+      "name": "NEP",
+      "displayed": false
+    },
+    {
+      "name": "POP",
+      "displayed": false
+    },
+    {
+      "name": "+/-",
+      "displayed": true
+    },
+    {
+      "name": "TOI",
+      "displayed": true
+    },
+    {
+      "name": "Hits",
+      "displayed": true
+    },
+    {
+      "name": "FO_tot",
+      "displayed": false
+    },
+    {
+      "name": "FOW",
+      "displayed": true
+    },
+    {
+      "name": "FOL",
+      "displayed": true
+    },
+    {
+      "name": "NumPen",
+      "displayed": false
+    },
+    {
+      "name": "FOPerc",
+      "displayed": true
+    },
+    {
+      "name": "MS",
+      "displayed": false
+    },
+    {
+      "name": "BkS",
+      "displayed": false
+    }
+  ],
+  "players": {
+    "homeTeamValue": {
+      "1115": {
+        "fullName": "Nicklas Lasu",
+        "firstName": "Nicklas",
+        "lastName": "Lasu"
+      },
+      "1332": {
+        "fullName": "Henrik Tömmernes",
+        "firstName": "Henrik",
+        "lastName": "Tömmernes"
+      },
+      "1639": {
+        "fullName": "Erik Thorell",
+        "firstName": "Erik",
+        "lastName": "Thorell"
+      },
+      "2004": {
+        "fullName": "Max Friberg",
+        "firstName": "Max",
+        "lastName": "Friberg"
+      },
+      "2429": {
+        "fullName": "Tom Nilsson",
+        "firstName": "Tom",
+        "lastName": "Nilsson"
+      },
+      "3265": {
+        "fullName": "Linus Högberg",
+        "firstName": "Linus",
+        "lastName": "Högberg"
+      },
+      "3274": {
+        "fullName": "Max Lindholm",
+        "firstName": "Max",
+        "lastName": "Lindholm"
+      },
+      "3770": {
+        "fullName": "Jacob Peterson",
+        "firstName": "Jacob",
+        "lastName": "Peterson"
+      },
+      "3910": {
+        "fullName": "Filip Hasa",
+        "firstName": "Filip",
+        "lastName": "Hasa"
+      },
+      "4050": {
+        "fullName": "Filip Cederqvist",
+        "firstName": "Filip",
+        "lastName": "Cederqvist"
+      },
+      "4092": {
+        "fullName": "Isac Heens",
+        "firstName": "Isac",
+        "lastName": "Heens"
+      },
+      "4565": {
+        "fullName": "Theodor Niederbach",
+        "firstName": "Theodor",
+        "lastName": "Niederbach"
+      },
+      "4724": {
+        "fullName": "Christian Folin",
+        "firstName": "Christian",
+        "lastName": "Folin"
+      },
+      "4981": {
+        "fullName": "Noah Hasa",
+        "firstName": "Noah",
+        "lastName": "Hasa"
+      },
+      "5639": {
+        "fullName": "Jere Innala",
+        "firstName": "Jere",
+        "lastName": "Innala"
+      },
+      "5799": {
+        "fullName": "Isac Born",
+        "firstName": "Isac",
+        "lastName": "Born"
+      },
+      "6432": {
+        "fullName": "Dominik Egli",
+        "firstName": "Dominik",
+        "lastName": "Egli"
+      },
+      "6433": {
+        "fullName": "Arttu Ruotsalainen",
+        "firstName": "Arttu",
+        "lastName": "Ruotsalainen"
+      },
+      "6598": {
+        "fullName": "Ivar Stenberg",
+        "firstName": "Ivar",
+        "lastName": "Stenberg"
+      },
+      "6711": {
+        "fullName": "Max Westergård",
+        "firstName": "Max",
+        "lastName": "Westergård"
+      }
+    },
+    "awayTeamValue": {
+      "2364": {
+        "fullName": "Jakub Vrana",
+        "firstName": "Jakub",
+        "lastName": "Vrana"
+      },
+      "2404": {
+        "fullName": "Robin Kovacs",
+        "firstName": "Robin",
+        "lastName": "Kovacs"
+      },
+      "2558": {
+        "fullName": "Theodor Lennström",
+        "firstName": "Theodor",
+        "lastName": "Lennström"
+      },
+      "2609": {
+        "fullName": "Christoffer Ehn",
+        "firstName": "Christoffer",
+        "lastName": "Ehn"
+      },
+      "2660": {
+        "fullName": "Markus Ljungh",
+        "firstName": "Markus",
+        "lastName": "Ljungh"
+      },
+      "3280": {
+        "fullName": "Fredrik Karlström",
+        "firstName": "Fredrik",
+        "lastName": "Karlström"
+      },
+      "3456": {
+        "fullName": "David Bernhardt",
+        "firstName": "David",
+        "lastName": "Bernhardt"
+      },
+      "3622": {
+        "fullName": "Johan Södergran",
+        "firstName": "Johan",
+        "lastName": "Södergran"
+      },
+      "4097": {
+        "fullName": "Oscar Lawner",
+        "firstName": "Oscar",
+        "lastName": "Lawner"
+      },
+      "4287": {
+        "fullName": "Erik Norén",
+        "firstName": "Erik",
+        "lastName": "Norén"
+      },
+      "4288": {
+        "fullName": "Zion Nybeck",
+        "firstName": "Zion",
+        "lastName": "Nybeck"
+      },
+      "4772": {
+        "fullName": "Oliver Johansson",
+        "firstName": "Oliver",
+        "lastName": "Johansson"
+      },
+      "4839": {
+        "fullName": "Ty Rattie",
+        "firstName": "Ty",
+        "lastName": "Rattie"
+      },
+      "4935": {
+        "fullName": "Adam Hofbauer",
+        "firstName": "Adam",
+        "lastName": "Hofbauer"
+      },
+      "4982": {
+        "fullName": "Jonathan Myrenberg",
+        "firstName": "Jonathan",
+        "lastName": "Myrenberg"
+      },
+      "5871": {
+        "fullName": "Nick Shore",
+        "firstName": "Nick",
+        "lastName": "Shore"
+      },
+      "6153": {
+        "fullName": "Eskild Bakke Olsen",
+        "firstName": "Eskild",
+        "lastName": "Bakke Olsen"
+      },
+      "6354": {
+        "fullName": "Felix Öhrqvist",
+        "firstName": "Felix",
+        "lastName": "Öhrqvist"
+      },
+      "6454": {
+        "fullName": "Max Martin",
+        "firstName": "Max",
+        "lastName": "Martin"
+      },
+      "6798": {
+        "fullName": "Mikko Kokkonen",
+        "firstName": "Mikko",
+        "lastName": "Kokkonen"
+      }
+    }
+  },
+  "stats": {
+    "homeTeamValue": [
+      {
+        "NR": 2,
+        "POS": "RD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "13:16",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 4724,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 6,
+        "POS": "LD",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "03:17",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3910,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 7,
+        "POS": "LD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "22:21",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 6,
+        "BkS": 2,
+        "info": {
+          "period": 0,
+          "playerId": 1332,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 10,
+        "POS": "RD",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "02:22",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6711,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 11,
+        "POS": "LW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 1,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "15:21",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3274,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 12,
+        "POS": "RW",
+        "LINE": 1,
+        "G": 0,
+        "A": 1,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 1,
+        "+/-": 1,
+        "TOI": "23:47",
+        "Hits": 3,
+        "FO_tot": 2,
+        "FOW": 1,
+        "FOL": 1,
+        "NumPen": 0,
+        "FOPerc": 50,
+        "MS": 1,
+        "BkS": 3,
+        "info": {
+          "period": 0,
+          "playerId": 2004,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 17,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "08:05",
+        "Hits": 1,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 5799,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 21,
+        "POS": "LW",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 4,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 1,
+        "+/-": 1,
+        "TOI": "20:30",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 5639,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 25,
+        "POS": "CE",
+        "LINE": 2,
+        "G": 1,
+        "A": 0,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 1,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 4,
+        "PPSOG": 2,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "15:02",
+        "Hits": 0,
+        "FO_tot": 9,
+        "FOW": 5,
+        "FOL": 4,
+        "NumPen": 0,
+        "FOPerc": 55,
+        "MS": 0,
+        "BkS": 3,
+        "info": {
+          "period": 0,
+          "playerId": 6433,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 26,
+        "POS": "LD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 1,
+        "+/-": 1,
+        "TOI": "15:50",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4092,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 27,
+        "POS": "CE",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "14:18",
+        "Hits": 1,
+        "FO_tot": 9,
+        "FOW": 3,
+        "FOL": 6,
+        "NumPen": 0,
+        "FOPerc": 33,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4565,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 31,
+        "POS": "CE",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "11:58",
+        "Hits": 1,
+        "FO_tot": 13,
+        "FOW": 11,
+        "FOL": 2,
+        "NumPen": 0,
+        "FOPerc": 84,
+        "MS": 1,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 1115,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 32,
+        "POS": "LW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "10:20",
+        "Hits": 0,
+        "FO_tot": 3,
+        "FOW": 1,
+        "FOL": 2,
+        "NumPen": 0,
+        "FOPerc": 33,
+        "MS": 0,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 4981,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 33,
+        "POS": "LD",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 1,
+        "+/-": 1,
+        "TOI": "17:47",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3265,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 40,
+        "POS": "CE",
+        "LINE": 1,
+        "G": 1,
+        "A": 0,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 1,
+        "+/-": 1,
+        "TOI": "17:56",
+        "Hits": 0,
+        "FO_tot": 18,
+        "FOW": 8,
+        "FOL": 10,
+        "NumPen": 0,
+        "FOPerc": 44,
+        "MS": 1,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 3770,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 41,
+        "POS": "RW",
+        "LINE": 3,
+        "G": 0,
+        "A": 1,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "12:21",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 6598,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 43,
+        "POS": "RD",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 1,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "21:04",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 3,
+        "info": {
+          "period": 0,
+          "playerId": 2429,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 46,
+        "POS": "RD",
+        "LINE": 1,
+        "G": 0,
+        "A": 1,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 4,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "20:58",
+        "Hits": 1,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 2,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6432,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 86,
+        "POS": "LW",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "13:57",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 1639,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 92,
+        "POS": "RW",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "15:41",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 4050,
+          "team": "home"
+        }
+      }
+    ],
+    "awayTeamValue": [
+      {
+        "NR": 4,
+        "POS": "LW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "01:51",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4097,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 8,
+        "POS": "RD",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 2,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "08:04",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 1,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4982,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 9,
+        "POS": "RD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 2,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "15:48",
+        "Hits": 1,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 1,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 2,
+        "info": {
+          "period": 0,
+          "playerId": 4287,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 13,
+        "POS": "LW",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 1,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "17:49",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2364,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 17,
+        "POS": "LD",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 3,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "11:34",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 6354,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 21,
+        "POS": "LW",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "18:21",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 2609,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 23,
+        "POS": "RW",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "17:19",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 2404,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 26,
+        "POS": "RD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 5,
+        "PPSOG": 0,
+        "NEP": 1,
+        "POP": 0,
+        "+/-": -1,
+        "TOI": "18:16",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 2,
+        "info": {
+          "period": 0,
+          "playerId": 6454,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 38,
+        "POS": "LW",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "15:01",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 3622,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 39,
+        "POS": "RW",
+        "LINE": 3,
+        "G": 0,
+        "A": 1,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 1,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "16:36",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 3,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4839,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 40,
+        "POS": "LD",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "21:49",
+        "Hits": 1,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 2,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 3456,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 48,
+        "POS": "RD",
+        "LINE": 2,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "20:04",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 6798,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 53,
+        "POS": "RW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 1,
+        "POP": 0,
+        "+/-": -1,
+        "TOI": "07:11",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 4935,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 61,
+        "POS": "CE",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "19:29",
+        "Hits": 0,
+        "FO_tot": 18,
+        "FOW": 7,
+        "FOL": 11,
+        "NumPen": 0,
+        "FOPerc": 38,
+        "MS": 2,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2660,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 70,
+        "POS": "RW",
+        "LINE": 2,
+        "G": 1,
+        "A": 0,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 1,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 2,
+        "PPSOG": 1,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "17:44",
+        "Hits": 0,
+        "FO_tot": 2,
+        "FOW": 1,
+        "FOL": 1,
+        "NumPen": 0,
+        "FOPerc": 50,
+        "MS": 1,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 3280,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 71,
+        "POS": "CE",
+        "LINE": 3,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 1,
+        "PIM": 0,
+        "SOG": 3,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "16:30",
+        "Hits": 1,
+        "FO_tot": 10,
+        "FOW": 6,
+        "FOL": 4,
+        "NumPen": 0,
+        "FOPerc": 60,
+        "MS": 1,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6153,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 73,
+        "POS": "CE",
+        "LINE": 2,
+        "G": 0,
+        "A": 1,
+        "TP": 1,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 4,
+        "PPSOG": 0,
+        "NEP": 0,
+        "POP": 0,
+        "+/-": 0,
+        "TOI": "18:12",
+        "Hits": 0,
+        "FO_tot": 21,
+        "FOW": 11,
+        "FOL": 10,
+        "NumPen": 0,
+        "FOPerc": 52,
+        "MS": 0,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 5871,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 81,
+        "POS": "LD",
+        "LINE": 1,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 2,
+        "PIM": 2,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 1,
+        "POP": 0,
+        "+/-": -1,
+        "TOI": "17:52",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 1,
+        "FOPerc": 0,
+        "MS": 4,
+        "BkS": 0,
+        "info": {
+          "period": 0,
+          "playerId": 2558,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 92,
+        "POS": "LW",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 1,
+        "PPSOG": 0,
+        "NEP": 1,
+        "POP": 0,
+        "+/-": -1,
+        "TOI": "09:30",
+        "Hits": 0,
+        "FO_tot": 0,
+        "FOW": 0,
+        "FOL": 0,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 1,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 4288,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 93,
+        "POS": "CE",
+        "LINE": 4,
+        "G": 0,
+        "A": 0,
+        "TP": 0,
+        "SHG": 0,
+        "PPG": 0,
+        "SW": 0,
+        "PIM": 0,
+        "SOG": 0,
+        "PPSOG": 0,
+        "NEP": 1,
+        "POP": 0,
+        "+/-": -1,
+        "TOI": "08:19",
+        "Hits": 0,
+        "FO_tot": 3,
+        "FOW": 0,
+        "FOL": 3,
+        "NumPen": 0,
+        "FOPerc": 0,
+        "MS": 0,
+        "BkS": 1,
+        "info": {
+          "period": 0,
+          "playerId": 4772,
+          "team": "away"
+        }
+      }
+    ]
+  },
+  "provider": "statnet",
+  "gkStats": {
+    "homeTeamValue": [
+      {
+        "NR": 1,
+        "POS": "GK",
+        "LINE": 1,
+        "GA": 1,
+        "SOGA": 29,
+        "SPGA": 14,
+        "SVS": 28,
+        "SVS%": "0.96551724137931039",
+        "info": {
+          "period": 0,
+          "playerId": 2427,
+          "team": "home"
+        }
+      },
+      {
+        "NR": 30,
+        "POS": "GK",
+        "LINE": 2,
+        "GA": 0,
+        "SOGA": 0,
+        "SPGA": 0,
+        "SVS": 0,
+        "SVS%": 0,
+        "info": {
+          "period": 0,
+          "playerId": 6154,
+          "team": "home"
+        }
+      }
+    ],
+    "awayTeamValue": [
+      {
+        "NR": 31,
+        "POS": "GK",
+        "LINE": 1,
+        "GA": 2,
+        "SOGA": 31,
+        "SPGA": 9,
+        "SVS": 29,
+        "SVS%": "0.93548387096774188",
+        "info": {
+          "period": 0,
+          "playerId": 3858,
+          "team": "away"
+        }
+      },
+      {
+        "NR": 36,
+        "POS": "GK",
+        "LINE": 2,
+        "GA": 0,
+        "SOGA": 0,
+        "SPGA": 0,
+        "SVS": 0,
+        "SVS%": 0,
+        "info": {
+          "period": 0,
+          "playerId": 5596,
+          "team": "away"
+        }
+      }
+    ]
+  },
+  "gkDataColumns": [
+    {
+      "name": "Player",
+      "displayed": true
+    },
+    {
+      "name": "NR",
+      "displayed": true
+    },
+    {
+      "name": "POS",
+      "displayed": true
+    },
+    {
+      "name": "LINE",
+      "displayed": true
+    },
+    {
+      "name": "GA",
+      "displayed": true
+    },
+    {
+      "name": "SOGA",
+      "displayed": true
+    },
+    {
+      "name": "SPGA",
+      "displayed": true
+    },
+    {
+      "name": "SVS",
+      "displayed": true
+    },
+    {
+      "name": "SVS%",
+      "displayed": true
+    }
+  ],
+  "goalkeepers": {
+    "homeTeamValue": {
+      "2427": {
+        "fullName": "Lars Johansson",
+        "firstName": "Lars",
+        "lastName": "Johansson"
+      },
+      "6154": {
+        "fullName": "Tobias Normann",
+        "firstName": "Tobias",
+        "lastName": "Normann"
+      }
+    },
+    "awayTeamValue": {
+      "3858": {
+        "fullName": "Jesper Myrenberg",
+        "firstName": "Jesper",
+        "lastName": "Myrenberg"
+      },
+      "5596": {
+        "fullName": "Waltteri Ignatjew",
+        "firstName": "Waltteri",
+        "lastName": "Ignatjew"
+      }
+    }
+  }
+}

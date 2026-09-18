@@ -1,0 +1,109 @@
+{
+  "homeTeam": {
+    "name": "",
+    "logo": ""
+  },
+  "awayTeam": {
+    "name": "",
+    "logo": ""
+  },
+  "stats": [
+    {
+      "homeTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 1
+        },
+        "right": {
+          "type": "SOG",
+          "value": 22
+        },
+        "center": {
+          "type": "SEff",
+          "value": "4.55"
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 1
+        },
+        "right": {
+          "type": "SOG",
+          "value": 22
+        },
+        "center": {
+          "type": "SEff",
+          "value": "4.55"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "PPG",
+        "left": {
+          "type": "PPG",
+          "value": 1
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 1
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "100.00"
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "PPG",
+        "left": {
+          "type": "PPG",
+          "value": 1
+        },
+        "right": {
+          "type": "PPOpp",
+          "value": 1
+        },
+        "center": {
+          "type": "PPPerc",
+          "value": "100.00"
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 8
+        },
+        "right": {
+          "type": "PIM",
+          "value": 8
+        },
+        "center": {
+          "type": "PIM",
+          "value": 8
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 8
+        },
+        "right": {
+          "type": "PIM",
+          "value": 8
+        },
+        "center": {
+          "type": "PIM",
+          "value": 8
+        }
+      }
+    }
+  ],
+  "provider": "statnet"
+}

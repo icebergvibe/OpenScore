@@ -1,0 +1,296 @@
+{
+  "pageInfo": {
+    "page": 0,
+    "numPages": 6598,
+    "pageSize": 2,
+    "numEntries": 13196
+  },
+  "content": [
+    {
+      "gameweek": {
+        "id": 19763.0,
+        "compSeason": {
+          "label": "English Premier League Season 2026/2027",
+          "competition": {
+            "abbreviation": "EN_PR",
+            "description": "Premier League",
+            "level": "SEN",
+            "source": "",
+            "id": 1.0,
+            "altIds": {
+              "opta": "8"
+            }
+          },
+          "id": 841.0
+        },
+        "gameweek": 3.0,
+        "competitionPhase": {
+          "id": 8163.0,
+          "type": "L",
+          "gameweekRange": [
+            1.0,
+            38.0
+          ]
+        }
+      },
+      "kickoff": {
+        "completeness": 3.0,
+        "millis": 1788708600000.0,
+        "label": "Sun 6 Sep 2026, 16:30 BST",
+        "gmtOffset": 1.0
+      },
+      "provisionalKickoff": {
+        "completeness": 3.0,
+        "millis": 1788708600000.0,
+        "label": "Sun 6 Sep 2026, 16:30 BST",
+        "gmtOffset": 1.0
+      },
+      "teams": [
+        {
+          "team": {
+            "name": "Arsenal",
+            "club": {
+              "name": "Arsenal",
+              "shortName": "Arsenal",
+              "abbr": "ARS",
+              "id": 1.0
+            },
+            "teamType": "FIRST",
+            "shortName": "Arsenal",
+            "id": 1.0,
+            "altIds": {
+              "opta": "t3"
+            }
+          },
+          "score": 2.0
+        },
+        {
+          "team": {
+            "name": "Chelsea",
+            "club": {
+              "name": "Chelsea",
+              "shortName": "Chelsea",
+              "abbr": "CHE",
+              "id": 4.0
+            },
+            "teamType": "FIRST",
+            "shortName": "Chelsea",
+            "id": 4.0,
+            "altIds": {
+              "opta": "t8"
+            }
+          },
+          "score": 1.0
+        }
+      ],
+      "replay": false,
+      "ground": {
+        "name": "Emirates Stadium",
+        "city": "London",
+        "source": "OPTA",
+        "id": 9523.0
+      },
+      "neutralGround": false,
+      "status": "C",
+      "phase": "F",
+      "outcome": "H",
+      "attendance": 60240.0,
+      "clock": {
+        "secs": 5700.0,
+        "label": "90+5'00"
+      },
+      "fixtureType": "REGULAR",
+      "extraTime": false,
+      "shootout": false,
+      "goals": [
+        {
+          "personId": 23968.0,
+          "assistId": 119041.0,
+          "clock": {
+            "secs": 120.0,
+            "label": "02'00"
+          },
+          "phase": "1",
+          "type": "G",
+          "description": "G"
+        },
+        {
+          "personId": 20810.0,
+          "assistId": 15202.0,
+          "clock": {
+            "secs": 1500.0,
+            "label": "25'00"
+          },
+          "phase": "1",
+          "type": "G",
+          "description": "G"
+        },
+        {
+          "personId": 11419.0,
+          "assistId": 67704.0,
+          "clock": {
+            "secs": 3000.0,
+            "label": "50'00"
+          },
+          "phase": "2",
+          "type": "G",
+          "description": "G"
+        }
+      ],
+      "penaltyShootouts": [],
+      "behindClosedDoors": false,
+      "id": 128943.0,
+      "altIds": {
+        "opta": "g2645215"
+      }
+    },
+    {
+      "gameweek": {
+        "id": 19763.0,
+        "compSeason": {
+          "label": "English Premier League Season 2026/2027",
+          "competition": {
+            "abbreviation": "EN_PR",
+            "description": "Premier League",
+            "level": "SEN",
+            "source": "",
+            "id": 1.0,
+            "altIds": {
+              "opta": "8"
+            }
+          },
+          "id": 841.0
+        },
+        "gameweek": 3.0,
+        "competitionPhase": {
+          "id": 8163.0,
+          "type": "L",
+          "gameweekRange": [
+            1.0,
+            38.0
+          ]
+        }
+      },
+      "kickoff": {
+        "completeness": 3.0,
+        "millis": 1788699600000.0,
+        "label": "Sun 6 Sep 2026, 14:00 BST",
+        "gmtOffset": 1.0
+      },
+      "provisionalKickoff": {
+        "completeness": 3.0,
+        "millis": 1788699600000.0,
+        "label": "Sun 6 Sep 2026, 14:00 BST",
+        "gmtOffset": 1.0
+      },
+      "teams": [
+        {
+          "team": {
+            "name": "Everton",
+            "club": {
+              "name": "Everton",
+              "shortName": "Everton",
+              "abbr": "EVE",
+              "id": 7.0
+            },
+            "teamType": "FIRST",
+            "shortName": "Everton",
+            "id": 7.0,
+            "altIds": {
+              "opta": "t11"
+            }
+          },
+          "score": 2.0
+        },
+        {
+          "team": {
+            "name": "Manchester United",
+            "club": {
+              "name": "Manchester United",
+              "shortName": "Man Utd",
+              "abbr": "MUN",
+              "id": 12.0
+            },
+            "teamType": "FIRST",
+            "shortName": "Man Utd",
+            "id": 12.0,
+            "altIds": {
+              "opta": "t1"
+            }
+          },
+          "score": 2.0
+        }
+      ],
+      "replay": false,
+      "ground": {
+        "name": "Hill Dickinson Stadium",
+        "city": "Liverpool",
+        "source": "OPTA",
+        "id": 9308.0
+      },
+      "neutralGround": false,
+      "status": "C",
+      "phase": "F",
+      "outcome": "D",
+      "attendance": 52302.0,
+      "clock": {
+        "secs": 5820.0,
+        "label": "90+7'00"
+      },
+      "fixtureType": "REGULAR",
+      "extraTime": false,
+      "shootout": false,
+      "goals": [
+        {
+          "personId": 66360.0,
+          "assistId": 108936.0,
+          "clock": {
+            "secs": 2760.0,
+            "label": "46'00"
+          },
+          "phase": "2",
+          "type": "G",
+          "description": "G"
+        },
+        {
+          "personId": 118442.0,
+          "assistId": 25375.0,
+          "clock": {
+            "secs": 4980.0,
+            "label": "83'00"
+          },
+          "phase": "2",
+          "type": "G",
+          "description": "G"
+        },
+        {
+          "personId": 66036.0,
+          "assistId": 4608.0,
+          "clock": {
+            "secs": 5280.0,
+            "label": "88'00"
+          },
+          "phase": "2",
+          "type": "G",
+          "description": "G"
+        },
+        {
+          "personId": 10428.0,
+          "clock": {
+            "secs": 5760.0,
+            "label": "90+6'00"
+          },
+          "phase": "2",
+          "type": "G",
+          "description": "G"
+        }
+      ],
+      "penaltyShootouts": [],
+      "behindClosedDoors": false,
+      "id": 128946.0,
+      "altIds": {
+        "opta": "g2645218"
+      }
+    }
+  ]
+}

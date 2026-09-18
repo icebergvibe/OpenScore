@@ -1,0 +1,139 @@
+{
+  "documents": [
+    {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2370524_2635985291",
+      "fields": {
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Watford"
+              },
+              "shortName": {
+                "stringValue": "Watford"
+              },
+              "score": {
+                "integerValue": "1"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t57.png"
+              }
+            }
+          }
+        },
+        "matchID": {
+          "stringValue": "g2370524"
+        },
+        "competitionID": {
+          "integerValue": "10"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "shortName": {
+                "stringValue": "QPR"
+              },
+              "name": {
+                "stringValue": "Queens Park Rangers"
+              },
+              "score": {
+                "integerValue": "0"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t52.png"
+              }
+            }
+          }
+        },
+        "teamName": {
+          "stringValue": "Watford"
+        },
+        "playerName": {
+          "stringValue": "Jake Livermore"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t57.png"
+        },
+        "matchTime": {
+          "stringValue": "60'"
+        },
+        "eventTime": {
+          "integerValue": "1705238281"
+        }
+      },
+      "createTime": "2024-01-14T13:18:26.599841Z",
+      "updateTime": "2024-01-14T13:18:26.599841Z"
+    },
+    {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2370524_2635988097",
+      "fields": {
+        "teamName": {
+          "stringValue": "Watford"
+        },
+        "playerName": {
+          "stringValue": "Jake Livermore"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t57.png"
+        },
+        "matchID": {
+          "stringValue": "g2370524"
+        },
+        "competitionID": {
+          "integerValue": "10"
+        },
+        "matchTime": {
+          "stringValue": "65'"
+        },
+        "eventTime": {
+          "integerValue": "1705238575"
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "shortName": {
+                "stringValue": "Watford"
+              },
+              "name": {
+                "stringValue": "Watford"
+              },
+              "score": {
+                "integerValue": "2"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t57.png"
+              }
+            }
+          }
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Queens Park Rangers"
+              },
+              "score": {
+                "integerValue": "0"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t52.png"
+              },
+              "shortName": {
+                "stringValue": "QPR"
+              }
+            }
+          }
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        }
+      },
+      "createTime": "2024-01-14T13:23:40.453990Z",
+      "updateTime": "2024-01-14T13:23:40.453990Z"
+    }
+  ],
+  "nextPageToken": "AFTOeJxMfaXMFOVVsQIlKAPiKcWs6FWK5eKMq6JLQT9Zs-Fo_FkdznfnnAFWl5PZ4QoZor0sFNfMoBPInqPkA-RAo7CeW1bRSEGJ-2CPaYNsaxXCXzwRm44v4Bsug1hhALVU"
+}

@@ -1,0 +1,575 @@
+[
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2647874_FullTime",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2647874"
+        },
+        "competitionID": {
+          "integerValue": "11"
+        },
+        "eventType": {
+          "stringValue": "FullTime"
+        },
+        "eventTime": {
+          "integerValue": "1789678152"
+        },
+        "matchTime": {
+          "stringValue": "90' +3'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "AFC Wimbledon"
+              },
+              "shortName": {
+                "stringValue": "AFC Wimbledon"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t2623.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "MK Dons"
+              },
+              "shortName": {
+                "stringValue": "MK Dons"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t22.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T20:49:18.846300Z",
+      "updateTime": "2026-09-17T20:49:18.846300Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_FullTime",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "FullTime"
+        },
+        "eventTime": {
+          "integerValue": "1789676314"
+        },
+        "matchTime": {
+          "stringValue": "90' +3'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "5"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T20:18:40.549024Z",
+      "updateTime": "2026-09-17T20:18:40.549024Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_2971161965",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "eventTime": {
+          "integerValue": "1789676179"
+        },
+        "teamName": {
+          "stringValue": "Manchester City"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+        },
+        "playerName": {
+          "stringValue": "Ryan McAidoo"
+        },
+        "matchTime": {
+          "stringValue": "90'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "5"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T20:16:36.631724Z",
+      "updateTime": "2026-09-17T20:16:36.631724Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2647874_HalfTime",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2647874"
+        },
+        "competitionID": {
+          "integerValue": "11"
+        },
+        "eventType": {
+          "stringValue": "HalfTime"
+        },
+        "eventTime": {
+          "integerValue": "1789674383"
+        },
+        "matchTime": {
+          "stringValue": "45' +2'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "AFC Wimbledon"
+              },
+              "shortName": {
+                "stringValue": "AFC Wimbledon"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t2623.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "MK Dons"
+              },
+              "shortName": {
+                "stringValue": "MK Dons"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t22.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T19:46:28.590985Z",
+      "updateTime": "2026-09-17T19:46:28.590985Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_2971148173",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "eventTime": {
+          "integerValue": "1789673984"
+        },
+        "teamName": {
+          "stringValue": "Manchester City"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+        },
+        "playerName": {
+          "stringValue": "Floyd Samba"
+        },
+        "matchTime": {
+          "stringValue": "54'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "4"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T19:40:04.000057Z",
+      "updateTime": "2026-09-17T19:40:04.000057Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_2971144875",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "eventTime": {
+          "integerValue": "1789673638"
+        },
+        "teamName": {
+          "stringValue": "Manchester City"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+        },
+        "playerName": {
+          "stringValue": "Allan"
+        },
+        "matchTime": {
+          "stringValue": "48'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "3"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T19:34:18.934421Z",
+      "updateTime": "2026-09-17T19:34:18.934421Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_HalfTime",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "HalfTime"
+        },
+        "eventTime": {
+          "integerValue": "1789672567"
+        },
+        "matchTime": {
+          "stringValue": "45' +1'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "2"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T19:16:15.062793Z",
+      "updateTime": "2026-09-17T19:16:15.062793Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_2971125821",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "eventTime": {
+          "integerValue": "1789671674"
+        },
+        "teamName": {
+          "stringValue": "Manchester City"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+        },
+        "playerName": {
+          "stringValue": "Rayan Cherki"
+        },
+        "matchTime": {
+          "stringValue": "32'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "2"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T19:01:37.092857Z",
+      "updateTime": "2026-09-17T19:01:37.092857Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  },
+  {
+    "document": {
+      "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_2971125029",
+      "fields": {
+        "matchID": {
+          "stringValue": "g2685170"
+        },
+        "competitionID": {
+          "integerValue": "2"
+        },
+        "eventType": {
+          "stringValue": "Goal"
+        },
+        "eventTime": {
+          "integerValue": "1789671505"
+        },
+        "teamName": {
+          "stringValue": "Manchester City"
+        },
+        "teamCrest": {
+          "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+        },
+        "playerName": {
+          "stringValue": "Floyd Samba"
+        },
+        "matchTime": {
+          "stringValue": "29'"
+        },
+        "homeTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Manchester City"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+              },
+              "score": {
+                "integerValue": "1"
+              }
+            }
+          }
+        },
+        "awayTeam": {
+          "mapValue": {
+            "fields": {
+              "name": {
+                "stringValue": "Norwich City"
+              },
+              "shortName": {
+                "stringValue": "Norwich"
+              },
+              "crest": {
+                "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+              },
+              "score": {
+                "integerValue": "0"
+              }
+            }
+          }
+        }
+      },
+      "createTime": "2026-09-17T18:58:42.533010Z",
+      "updateTime": "2026-09-17T18:58:42.533010Z"
+    },
+    "readTime": "2026-09-17T21:19:08.508224Z"
+  }
+]

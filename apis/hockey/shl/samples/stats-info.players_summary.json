@@ -1,0 +1,6100 @@
+[
+  {
+    "dataColumns": [
+      {
+        "name": "Rank",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Player",
+        "type": "string",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Team",
+        "type": "string",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "GP",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "TP",
+        "type": "integer",
+        "highlighted": true,
+        "group": ""
+      },
+      {
+        "name": "G",
+        "type": "integer",
+        "highlighted": true,
+        "group": ""
+      },
+      {
+        "name": "A",
+        "type": "integer",
+        "highlighted": true,
+        "group": ""
+      },
+      {
+        "name": "PIM",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "GWG",
+        "type": "integer",
+        "highlighted": true,
+        "group": ""
+      },
+      {
+        "name": "PPG",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "SOG",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Hits",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "BkS",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Plus",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "Minus",
+        "type": "integer",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "PlusMinus",
+        "type": "integer",
+        "highlighted": true,
+        "group": ""
+      },
+      {
+        "name": "TOI_GP",
+        "type": "string",
+        "highlighted": false,
+        "group": ""
+      },
+      {
+        "name": "TPPG",
+        "type": "float_two",
+        "highlighted": false,
+        "group": ""
+      }
+    ],
+    "defaultSortKey": {
+      "name": "TP",
+      "order": "DESC"
+    },
+    "stats": [
+      {
+        "Rank": 1,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 67,
+        "G": 30,
+        "A": 37,
+        "PIM": 52,
+        "GWG": 4,
+        "PPG": 9,
+        "SOG": 154,
+        "Hits": 37,
+        "BkS": 20,
+        "Plus": 53,
+        "Minus": 36,
+        "PlusMinus": 17,
+        "TOI_GP": "19:02",
+        "TPPG": "1.29",
+        "info": {
+          "uuid": "qQ9-322eZcouc",
+          "fullName": "Oscar Lindberg",
+          "firstName": "Oscar",
+          "lastName": "Lindberg",
+          "birthDate": "1991-10-29",
+          "nationality": "SE",
+          "number": 24,
+          "position": "CE",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 88,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42653,
+            "mediaString": "image|ramses_sports|player_portrait_05d2ab46-edaf-410e-aac1-9763190744e924 Oscar Lindberg.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "50e6-50e6DYeWM",
+            "name": "Skellefteå AIK",
+            "code": "SKE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+            "ownerInstanceId": "saik1_saik",
+            "siteDisplayName": "Skellefteå AIK"
+          },
+          "teamCode": "SAIK",
+          "teamId": "50e6-50e6DYeWM"
+        }
+      },
+      {
+        "Rank": 2,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 56,
+        "G": 20,
+        "A": 36,
+        "PIM": 12,
+        "GWG": 3,
+        "PPG": 8,
+        "SOG": 111,
+        "Hits": 26,
+        "BkS": 29,
+        "Plus": 50,
+        "Minus": 37,
+        "PlusMinus": 13,
+        "TOI_GP": "19:04",
+        "TPPG": "1.08",
+        "info": {
+          "uuid": "qRh-1Lnn3OfJt",
+          "fullName": "Rickard Hugg",
+          "firstName": "Rickard",
+          "lastName": "Hugg",
+          "birthDate": "1999-01-18",
+          "nationality": "SE",
+          "number": 96,
+          "position": "F",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 179,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42665,
+            "mediaString": "image|ramses_sports|player_portrait_822d4289-f33c-499a-9cc3-1194b24c73ec96 Rickard Hugg.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "50e6-50e6DYeWM",
+            "name": "Skellefteå AIK",
+            "code": "SKE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+            "ownerInstanceId": "saik1_saik",
+            "siteDisplayName": "Skellefteå AIK"
+          },
+          "teamCode": "SAIK",
+          "teamId": "50e6-50e6DYeWM"
+        }
+      },
+      {
+        "Rank": 3,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 55,
+        "G": 30,
+        "A": 25,
+        "PIM": 16,
+        "GWG": 3,
+        "PPG": 11,
+        "SOG": 167,
+        "Hits": 3,
+        "BkS": 9,
+        "Plus": 39,
+        "Minus": 30,
+        "PlusMinus": 9,
+        "TOI_GP": "18:11",
+        "TPPG": "1.10",
+        "info": {
+          "uuid": "qQ9-19d1gvUAS",
+          "fullName": "Jonathan Dahlén",
+          "firstName": "Jonathan",
+          "lastName": "Dahlén",
+          "birthDate": "1997-12-20",
+          "nationality": "SE",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 87,
+            "format": "kg"
+          },
+          "height": {
+            "value": 182,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40979,
+            "mediaString": "image|ramses_sports|player_portrait_0d8c9386-e0ad-453d-b67e-9c013229eabfJonathan Dahlen.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "31d1-31d1NbSlR",
+            "name": "Timrå IK",
+            "code": "TIK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/tik1_tik.svg",
+            "ownerInstanceId": "tik1_tik",
+            "siteDisplayName": "Timrå IK"
+          },
+          "teamCode": "TIK",
+          "teamId": "31d1-31d1NbSlR"
+        }
+      },
+      {
+        "Rank": 4,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 50,
+        "G": 15,
+        "A": 35,
+        "PIM": 14,
+        "GWG": 5,
+        "PPG": 6,
+        "SOG": 116,
+        "Hits": 23,
+        "BkS": 17,
+        "Plus": 44,
+        "Minus": 44,
+        "PlusMinus": 0,
+        "TOI_GP": "18:11",
+        "TPPG": "0.96",
+        "info": {
+          "uuid": "qZk-48kNGB8Z5",
+          "fullName": "Patrik Karlkvist",
+          "firstName": "Patrik",
+          "lastName": "Karlkvist",
+          "birthDate": "1992-05-01",
+          "nationality": "SE",
+          "number": 89,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 98,
+            "format": "kg"
+          },
+          "height": {
+            "value": 186,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 41569,
+            "mediaString": "image|ramses_sports|player_portrait_08f6cd26-774a-44a8-b528-797b72b1909689PatrikKarlkvist01.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "82eb-82ebmgaJ8",
+            "name": "Örebro Hockey",
+            "code": "ÖRE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+            "ownerInstanceId": "ohk1_ohk",
+            "siteDisplayName": "Örebro Hockey"
+          },
+          "teamCode": "OHK",
+          "teamId": "82eb-82ebmgaJ8"
+        }
+      },
+      {
+        "Rank": 5,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 50,
+        "G": 12,
+        "A": 38,
+        "PIM": 14,
+        "GWG": 2,
+        "PPG": 4,
+        "SOG": 62,
+        "Hits": 6,
+        "BkS": 10,
+        "Plus": 35,
+        "Minus": 32,
+        "PlusMinus": 3,
+        "TOI_GP": "18:43",
+        "TPPG": "0.98",
+        "info": {
+          "uuid": "qTL-2RaryAoLs",
+          "fullName": "Lucas Elvenes",
+          "firstName": "Lucas",
+          "lastName": "Elvenes",
+          "birthDate": "1999-08-18",
+          "nationality": "SE",
+          "number": 25,
+          "position": "F",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 76,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42419,
+            "mediaString": "image|ramses_sports|player_portrait_e8159e1d-2dbc-4d3b-b4d5-5dbcdf76bc9aRityta 1 kopiera 19.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "fe02-fe02mf1FN",
+            "name": "Växjö Lakers",
+            "code": "VLH",
+            "media": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+            "ownerInstanceId": "vlh1_vlh",
+            "siteDisplayName": "Växjö Lakers"
+          },
+          "teamCode": "VLH",
+          "teamId": "fe02-fe02mf1FN"
+        }
+      },
+      {
+        "Rank": 6,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 47,
+        "G": 23,
+        "A": 24,
+        "PIM": 49,
+        "GWG": 5,
+        "PPG": 12,
+        "SOG": 129,
+        "Hits": 17,
+        "BkS": 28,
+        "Plus": 30,
+        "Minus": 28,
+        "PlusMinus": 2,
+        "TOI_GP": "18:13",
+        "TPPG": "0.94",
+        "info": {
+          "uuid": "qQ9-04eb7YtFL",
+          "fullName": "Robin Kovács",
+          "firstName": "Robin",
+          "lastName": "Kovács",
+          "birthDate": "1996-11-16",
+          "nationality": "SE",
+          "number": 86,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42704,
+            "mediaString": "image|ramses_sports|player_portrait_dfbc8bb7-b3b0-45b5-bb4d-10f8912a41eeRobinKovacs.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "41c4-41c4BiYZU",
+            "name": "Linköping HC",
+            "code": "LHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/lhc1_lhc.svg",
+            "ownerInstanceId": "lhc1_lhc",
+            "siteDisplayName": "Linköping HC"
+          },
+          "teamCode": "LHC",
+          "teamId": "41c4-41c4BiYZU"
+        }
+      },
+      {
+        "Rank": 7,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 47,
+        "G": 16,
+        "A": 31,
+        "PIM": 36,
+        "GWG": 1,
+        "PPG": 8,
+        "SOG": 126,
+        "Hits": 7,
+        "BkS": 55,
+        "Plus": 45,
+        "Minus": 34,
+        "PlusMinus": 11,
+        "TOI_GP": "22:00",
+        "TPPG": "0.98",
+        "info": {
+          "uuid": "qQ9-b81bnE76N",
+          "fullName": "Jonathan Pudas",
+          "firstName": "Jonathan",
+          "lastName": "Pudas",
+          "birthDate": "1993-04-26",
+          "nationality": "SE",
+          "number": 64,
+          "position": "D",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 81,
+            "format": "kg"
+          },
+          "height": {
+            "value": 179,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42662,
+            "mediaString": "image|ramses_sports|player_portrait_7937ec2c-26de-4aac-af6f-b5b119726e85Jonathan Pudas.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "50e6-50e6DYeWM",
+            "name": "Skellefteå AIK",
+            "code": "SKE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+            "ownerInstanceId": "saik1_saik",
+            "siteDisplayName": "Skellefteå AIK"
+          },
+          "teamCode": "SAIK",
+          "teamId": "50e6-50e6DYeWM"
+        }
+      },
+      {
+        "Rank": 8,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 46,
+        "G": 21,
+        "A": 25,
+        "PIM": 38,
+        "GWG": 4,
+        "PPG": 5,
+        "SOG": 84,
+        "Hits": 24,
+        "BkS": 17,
+        "Plus": 37,
+        "Minus": 47,
+        "PlusMinus": -10,
+        "TOI_GP": "19:10",
+        "TPPG": "0.88",
+        "info": {
+          "uuid": "anqcbbk7f5",
+          "fullName": "Jonathan Ang",
+          "firstName": "Jonathan",
+          "lastName": "Ang",
+          "birthDate": "1998-01-31",
+          "nationality": "CA",
+          "number": 27,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 75,
+            "format": "kg"
+          },
+          "height": {
+            "value": 181,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42392,
+            "mediaString": "image|ramses_sports|player_portrait_34864a4f-ae5d-425a-99fc-ffca5e314b5927jonathanang.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "3db0-3db09jXTE",
+            "name": "HV71",
+            "code": "HV71",
+            "media": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+            "ownerInstanceId": "hv711_hv71",
+            "siteDisplayName": "HV71"
+          },
+          "teamCode": "HV71",
+          "teamId": "3db0-3db09jXTE"
+        }
+      },
+      {
+        "Rank": 9,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 46,
+        "G": 15,
+        "A": 31,
+        "PIM": 22,
+        "GWG": 1,
+        "PPG": 2,
+        "SOG": 121,
+        "Hits": 12,
+        "BkS": 25,
+        "Plus": 41,
+        "Minus": 33,
+        "PlusMinus": 8,
+        "TOI_GP": "17:54",
+        "TPPG": "0.90",
+        "info": {
+          "uuid": "qQ9-b20c10aOfn",
+          "fullName": "Emil Pettersson",
+          "firstName": "Emil",
+          "lastName": "Pettersson",
+          "birthDate": "1994-01-14",
+          "nationality": "SE",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 80,
+            "format": "kg"
+          },
+          "height": {
+            "value": 187,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40980,
+            "mediaString": "image|ramses_sports|player_portrait_ab7d0704-b23f-4eb0-beee-41f891b085d6Emil Pettersson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "31d1-31d1NbSlR",
+            "name": "Timrå IK",
+            "code": "TIK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/tik1_tik.svg",
+            "ownerInstanceId": "tik1_tik",
+            "siteDisplayName": "Timrå IK"
+          },
+          "teamCode": "TIK",
+          "teamId": "31d1-31d1NbSlR"
+        }
+      },
+      {
+        "Rank": 10,
+        "Player": 0,
+        "Team": 0,
+        "GP": 49,
+        "TP": 46,
+        "G": 12,
+        "A": 34,
+        "PIM": 44,
+        "GWG": 1,
+        "PPG": 4,
+        "SOG": 102,
+        "Hits": 49,
+        "BkS": 22,
+        "Plus": 29,
+        "Minus": 30,
+        "PlusMinus": -1,
+        "TOI_GP": "17:46",
+        "TPPG": "0.94",
+        "info": {
+          "uuid": "qUy-2KFsIg5EU",
+          "fullName": "Viktor Lodin",
+          "firstName": "Viktor",
+          "lastName": "Lodin",
+          "birthDate": "1999-06-02",
+          "nationality": "SE",
+          "number": 71,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 86,
+            "format": "kg"
+          },
+          "height": {
+            "value": 186,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42570,
+            "mediaString": "image|ramses_sports|player_portrait_2d335b50-2fe1-4da9-a550-cb3b13a5997471VictorLodinIMG0080.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "752c-752c12zB7Z",
+            "name": "Färjestad BK",
+            "code": "FBK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fbk1_fbk.svg",
+            "ownerInstanceId": "fbk1_fbk",
+            "siteDisplayName": "Färjestad BK"
+          },
+          "teamCode": "FBK",
+          "teamId": "752c-752c12zB7Z"
+        }
+      },
+      {
+        "Rank": 11,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 45,
+        "G": 13,
+        "A": 32,
+        "PIM": 51,
+        "GWG": 3,
+        "PPG": 3,
+        "SOG": 85,
+        "Hits": 19,
+        "BkS": 16,
+        "Plus": 25,
+        "Minus": 27,
+        "PlusMinus": -2,
+        "TOI_GP": "17:58",
+        "TPPG": "0.94",
+        "info": {
+          "uuid": "qcw-3QbWrnwAD",
+          "fullName": "Janne Kuokkanen",
+          "firstName": "Janne",
+          "lastName": "Kuokkanen",
+          "birthDate": "1998-05-25",
+          "nationality": "FI",
+          "number": 22,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 88,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42465,
+            "mediaString": "image|ramses_sports|player_portrait_d8cada17-2d0e-4ed6-810f-4e47e33bec61Janne Kuokkanen.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "8e6f-8e6fUXJvi",
+            "name": "Malmö Redhawks",
+            "code": "MIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+            "ownerInstanceId": "mif1_mif",
+            "siteDisplayName": "Malmö Redhawks"
+          },
+          "teamCode": "MIF",
+          "teamId": "8e6f-8e6fUXJvi"
+        }
+      },
+      {
+        "Rank": 12,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 44,
+        "G": 16,
+        "A": 28,
+        "PIM": 14,
+        "GWG": 2,
+        "PPG": 5,
+        "SOG": 149,
+        "Hits": 24,
+        "BkS": 34,
+        "Plus": 44,
+        "Minus": 41,
+        "PlusMinus": 3,
+        "TOI_GP": "20:22",
+        "TPPG": "0.85",
+        "info": {
+          "uuid": "qZm-3rVq3Bhlh",
+          "fullName": "David Quenneville",
+          "firstName": "David",
+          "lastName": "Quenneville",
+          "birthDate": "1998-03-13",
+          "nationality": "CA",
+          "number": 55,
+          "position": "D",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 86,
+            "format": "kg"
+          },
+          "height": {
+            "value": 173,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 41555,
+            "mediaString": "image|ramses_sports|player_portrait_a34addf5-1f1a-475b-8d31-6ec6941fc27055DavidQuenneville01.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "82eb-82ebmgaJ8",
+            "name": "Örebro Hockey",
+            "code": "ÖRE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+            "ownerInstanceId": "ohk1_ohk",
+            "siteDisplayName": "Örebro Hockey"
+          },
+          "teamCode": "OHK",
+          "teamId": "82eb-82ebmgaJ8"
+        }
+      },
+      {
+        "Rank": 13,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 44,
+        "G": 8,
+        "A": 36,
+        "PIM": 28,
+        "GWG": 1,
+        "PPG": 4,
+        "SOG": 127,
+        "Hits": 5,
+        "BkS": 40,
+        "Plus": 42,
+        "Minus": 32,
+        "PlusMinus": 10,
+        "TOI_GP": "20:02",
+        "TPPG": "0.92",
+        "info": {
+          "uuid": "qTJ-sd9PK0O1",
+          "fullName": "Joel Persson",
+          "firstName": "Joel",
+          "lastName": "Persson",
+          "birthDate": "1994-03-04",
+          "nationality": "SE",
+          "number": 94,
+          "position": "D",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 89,
+            "format": "kg"
+          },
+          "height": {
+            "value": 186,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42411,
+            "mediaString": "image|ramses_sports|player_portrait_e9bce8d0-08b5-42be-89f7-69d1783a4553Rityta 1 kopiera 15.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "fe02-fe02mf1FN",
+            "name": "Växjö Lakers",
+            "code": "VLH",
+            "media": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+            "ownerInstanceId": "vlh1_vlh",
+            "siteDisplayName": "Växjö Lakers"
+          },
+          "teamCode": "VLH",
+          "teamId": "fe02-fe02mf1FN"
+        }
+      },
+      {
+        "Rank": 14,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 43,
+        "G": 20,
+        "A": 23,
+        "PIM": 14,
+        "GWG": 6,
+        "PPG": 8,
+        "SOG": 98,
+        "Hits": 28,
+        "BkS": 12,
+        "Plus": 44,
+        "Minus": 32,
+        "PlusMinus": 12,
+        "TOI_GP": "17:29",
+        "TPPG": "0.86",
+        "info": {
+          "uuid": "qYC-4THzp8DoI",
+          "fullName": "Mikkel Aagaard",
+          "firstName": "Mikkel",
+          "lastName": "Aagaard",
+          "birthDate": "1995-10-18",
+          "nationality": "DK",
+          "number": 29,
+          "position": "F",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 81,
+            "format": "kg"
+          },
+          "height": {
+            "value": 184,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42661,
+            "mediaString": "image|ramses_sports|player_portrait_8e8b2b29-a742-4f4b-8947-25d85c51d8e329 Mikkel Aagaard.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "50e6-50e6DYeWM",
+            "name": "Skellefteå AIK",
+            "code": "SKE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+            "ownerInstanceId": "saik1_saik",
+            "siteDisplayName": "Skellefteå AIK"
+          },
+          "teamCode": "SAIK",
+          "teamId": "50e6-50e6DYeWM"
+        }
+      },
+      {
+        "Rank": 15,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 43,
+        "G": 20,
+        "A": 23,
+        "PIM": 44,
+        "GWG": 3,
+        "PPG": 8,
+        "SOG": 129,
+        "Hits": 24,
+        "BkS": 25,
+        "Plus": 40,
+        "Minus": 32,
+        "PlusMinus": 8,
+        "TOI_GP": "19:11",
+        "TPPG": "0.83",
+        "info": {
+          "uuid": "qQ9-0f23VL1DC",
+          "fullName": "Jakob Silfverberg",
+          "firstName": "Jakob",
+          "lastName": "Silfverberg",
+          "birthDate": "1990-10-13",
+          "nationality": "SE",
+          "number": 33,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40803,
+            "mediaString": "image|ramses_sports|player_portrait_b05097eb-0176-4689-bf71-a2e1df483dabJakob Silfverberg.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      },
+      {
+        "Rank": 16,
+        "Player": 0,
+        "Team": 0,
+        "GP": 49,
+        "TP": 41,
+        "G": 23,
+        "A": 18,
+        "PIM": 22,
+        "GWG": 10,
+        "PPG": 9,
+        "SOG": 93,
+        "Hits": 55,
+        "BkS": 20,
+        "Plus": 38,
+        "Minus": 34,
+        "PlusMinus": 4,
+        "TOI_GP": "17:35",
+        "TPPG": "0.84",
+        "info": {
+          "uuid": "qQ9-854911Gq0o",
+          "fullName": "Carl Persson",
+          "firstName": "Carl",
+          "lastName": "Persson",
+          "birthDate": "1995-06-28",
+          "nationality": "SE",
+          "number": 95,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 93,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42470,
+            "mediaString": "image|ramses_sports|player_portrait_0bc2e615-5d98-433a-8afc-beb35a0b9644Carl Persson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "8e6f-8e6fUXJvi",
+            "name": "Malmö Redhawks",
+            "code": "MIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+            "ownerInstanceId": "mif1_mif",
+            "siteDisplayName": "Malmö Redhawks"
+          },
+          "teamCode": "MIF",
+          "teamId": "8e6f-8e6fUXJvi"
+        }
+      },
+      {
+        "Rank": 17,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 41,
+        "G": 12,
+        "A": 29,
+        "PIM": 16,
+        "GWG": 3,
+        "PPG": 4,
+        "SOG": 96,
+        "Hits": 33,
+        "BkS": 46,
+        "Plus": 42,
+        "Minus": 31,
+        "PlusMinus": 11,
+        "TOI_GP": "22:35",
+        "TPPG": "0.80",
+        "info": {
+          "uuid": "qRm-KI57OWyn",
+          "fullName": "Johannes Kinnvall",
+          "firstName": "Johannes",
+          "lastName": "Kinnvall",
+          "birthDate": "1997-07-28",
+          "nationality": "SE",
+          "number": 28,
+          "position": "D",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 85,
+            "format": "kg"
+          },
+          "height": {
+            "value": 184,
+            "format": "cm"
+          },
+          "playerMedia": {},
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      },
+      {
+        "Rank": 18,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 40,
+        "G": 22,
+        "A": 18,
+        "PIM": 16,
+        "GWG": 6,
+        "PPG": 9,
+        "SOG": 125,
+        "Hits": 6,
+        "BkS": 16,
+        "Plus": 42,
+        "Minus": 22,
+        "PlusMinus": 20,
+        "TOI_GP": "16:03",
+        "TPPG": "0.83",
+        "info": {
+          "uuid": "qbN-3oZKJRhl6",
+          "fullName": "Jere Innala",
+          "firstName": "Jere",
+          "lastName": "Innala",
+          "birthDate": "1998-03-17",
+          "nationality": "FI",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 175,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40772,
+            "mediaString": "image|ramses_sports|player_portrait_a3127241-55c1-470d-9bc0-9d57782d2e41Jere Innala.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 19,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 40,
+        "G": 14,
+        "A": 26,
+        "PIM": 14,
+        "GWG": 3,
+        "PPG": 5,
+        "SOG": 102,
+        "Hits": 22,
+        "BkS": 13,
+        "Plus": 37,
+        "Minus": 19,
+        "PlusMinus": 18,
+        "TOI_GP": "15:23",
+        "TPPG": "0.77",
+        "info": {
+          "uuid": "qbT-APIwS0tpn",
+          "fullName": "Felix Nilsson",
+          "firstName": "Felix",
+          "lastName": "Nilsson",
+          "birthDate": "2005-06-22",
+          "nationality": "SE",
+          "shoots": "L",
+          "gender": "",
+          "weight": {
+            "value": 76,
+            "format": "kg"
+          },
+          "height": {
+            "value": 181,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42133,
+            "mediaString": "image|ramses_sports|player_portrait_1de499b8-269e-4621-904a-65f9ad8bf043Felix Nilsson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "ee93-ee93uy4oW",
+            "name": "Rögle BK",
+            "code": "RBK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/rbk1_rbk.svg",
+            "ownerInstanceId": "rbk1_rbk",
+            "siteDisplayName": "Rögle BK"
+          },
+          "teamCode": "RBK",
+          "teamId": "ee93-ee93uy4oW"
+        }
+      },
+      {
+        "Rank": 20,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 40,
+        "G": 13,
+        "A": 27,
+        "PIM": 10,
+        "GWG": 3,
+        "PPG": 5,
+        "SOG": 105,
+        "Hits": 3,
+        "BkS": 9,
+        "Plus": 31,
+        "Minus": 47,
+        "PlusMinus": -16,
+        "TOI_GP": "18:51",
+        "TPPG": "0.80",
+        "info": {
+          "uuid": "qZi-dhQtfwf4",
+          "fullName": "Joey LaLeggia",
+          "firstName": "Joey",
+          "lastName": "LaLeggia",
+          "birthDate": "1992-06-24",
+          "nationality": "CA",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 88,
+            "format": "kg"
+          },
+          "height": {
+            "value": 88,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40856,
+            "mediaString": "image|ramses_sports|player_portrait_23e955e0-bc53-4fa7-90fd-99cec24bf86bJoey LaLeggia.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "2459-2459QTs1f",
+            "name": "Djurgårdens IF",
+            "code": "DIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/dif1_dif.svg",
+            "ownerInstanceId": "dif1_dif",
+            "siteDisplayName": "Djurgårdens IF"
+          },
+          "teamCode": "DIF",
+          "teamId": "2459-2459QTs1f"
+        }
+      },
+      {
+        "Rank": 21,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 40,
+        "G": 7,
+        "A": 33,
+        "PIM": 16,
+        "GWG": 0,
+        "PPG": 2,
+        "SOG": 102,
+        "Hits": 27,
+        "BkS": 56,
+        "Plus": 46,
+        "Minus": 49,
+        "PlusMinus": -3,
+        "TOI_GP": "24:45",
+        "TPPG": "0.77",
+        "info": {
+          "uuid": "qY6-5K1bja35c",
+          "fullName": "Robin Salo",
+          "firstName": "Robin",
+          "lastName": "Salo",
+          "birthDate": "1998-10-13",
+          "nationality": "FI",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40149,
+            "mediaString": "image|ramses_sports|player_portrait_82fa6ef4-fb91-413d-a425-fc3332fd889942.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "8e6f-8e6fUXJvi",
+            "name": "Malmö Redhawks",
+            "code": "MIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+            "ownerInstanceId": "mif1_mif",
+            "siteDisplayName": "Malmö Redhawks"
+          },
+          "teamCode": "MIF",
+          "teamId": "8e6f-8e6fUXJvi"
+        }
+      },
+      {
+        "Rank": 22,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 39,
+        "G": 15,
+        "A": 24,
+        "PIM": 18,
+        "GWG": 1,
+        "PPG": 4,
+        "SOG": 85,
+        "Hits": 3,
+        "BkS": 27,
+        "Plus": 34,
+        "Minus": 41,
+        "PlusMinus": -7,
+        "TOI_GP": "19:47",
+        "TPPG": "0.75",
+        "info": {
+          "uuid": "aivy90beh7",
+          "fullName": "Joe Snively",
+          "firstName": "Joe",
+          "lastName": "Snively",
+          "birthDate": "1996-01-01",
+          "nationality": "US",
+          "number": 7,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 82,
+            "format": "kg"
+          },
+          "height": {
+            "value": 175,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42849,
+            "mediaString": "image|ramses_sports|player_portrait_9f278c89-8d5c-4a68-9076-7cdc969027afSnively.jpg",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "2459-2459QTs1f",
+            "name": "Djurgårdens IF",
+            "code": "DIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/dif1_dif.svg",
+            "ownerInstanceId": "dif1_dif",
+            "siteDisplayName": "Djurgårdens IF"
+          },
+          "teamCode": "DIF",
+          "teamId": "2459-2459QTs1f"
+        }
+      },
+      {
+        "Rank": 23,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 38,
+        "G": 16,
+        "A": 22,
+        "PIM": 54,
+        "GWG": 3,
+        "PPG": 10,
+        "SOG": 125,
+        "Hits": 56,
+        "BkS": 12,
+        "Plus": 28,
+        "Minus": 32,
+        "PlusMinus": -4,
+        "TOI_GP": "17:17",
+        "TPPG": "0.75",
+        "info": {
+          "uuid": "qcz-B2ewQPKyG",
+          "fullName": "Lauri Pajuniemi",
+          "firstName": "Lauri",
+          "lastName": "Pajuniemi",
+          "birthDate": "1999-09-12",
+          "nationality": "FI",
+          "number": 48,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 182,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42467,
+            "mediaString": "image|ramses_sports|player_portrait_4791b202-0b86-4958-8647-4b1419ff9399Lauri Pajuniemi.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "8e6f-8e6fUXJvi",
+            "name": "Malmö Redhawks",
+            "code": "MIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+            "ownerInstanceId": "mif1_mif",
+            "siteDisplayName": "Malmö Redhawks"
+          },
+          "teamCode": "MIF",
+          "teamId": "8e6f-8e6fUXJvi"
+        }
+      },
+      {
+        "Rank": 24,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 38,
+        "G": 12,
+        "A": 26,
+        "PIM": 12,
+        "GWG": 2,
+        "PPG": 3,
+        "SOG": 121,
+        "Hits": 65,
+        "BkS": 20,
+        "Plus": 49,
+        "Minus": 20,
+        "PlusMinus": 29,
+        "TOI_GP": "19:30",
+        "TPPG": "0.73",
+        "info": {
+          "uuid": "qWa-2PzP1sBzE",
+          "fullName": "Fredrik Olofsson",
+          "firstName": "Fredrik",
+          "lastName": "Olofsson",
+          "birthDate": "1996-05-27",
+          "nationality": "SE",
+          "number": 22,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 186,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42644,
+            "mediaString": "image|ramses_sports|player_portrait_adb2eab6-a740-47f2-a14d-e1d6002ce8f7Olofsson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "ee93-ee93uy4oW",
+            "name": "Rögle BK",
+            "code": "RBK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/rbk1_rbk.svg",
+            "ownerInstanceId": "rbk1_rbk",
+            "siteDisplayName": "Rögle BK"
+          },
+          "teamCode": "RBK",
+          "teamId": "ee93-ee93uy4oW"
+        }
+      },
+      {
+        "Rank": 25,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 37,
+        "G": 20,
+        "A": 17,
+        "PIM": 14,
+        "GWG": 3,
+        "PPG": 6,
+        "SOG": 67,
+        "Hits": 8,
+        "BkS": 33,
+        "Plus": 36,
+        "Minus": 33,
+        "PlusMinus": 3,
+        "TOI_GP": "19:53",
+        "TPPG": "0.71",
+        "info": {
+          "uuid": "qQ9-0a85nVSr0",
+          "fullName": "Dennis Rasmussen",
+          "firstName": "Dennis",
+          "lastName": "Rasmussen",
+          "birthDate": "1990-07-03",
+          "nationality": "SE",
+          "number": 40,
+          "position": "F",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 93,
+            "format": "kg"
+          },
+          "height": {
+            "value": 192,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42416,
+            "mediaString": "image|ramses_sports|player_portrait_4292d47b-6735-46b4-968a-08e564c867caRityta 1 kopiera 7.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "fe02-fe02mf1FN",
+            "name": "Växjö Lakers",
+            "code": "VLH",
+            "media": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+            "ownerInstanceId": "vlh1_vlh",
+            "siteDisplayName": "Växjö Lakers"
+          },
+          "teamCode": "VLH",
+          "teamId": "fe02-fe02mf1FN"
+        }
+      },
+      {
+        "Rank": 26,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 36,
+        "G": 15,
+        "A": 21,
+        "PIM": 18,
+        "GWG": 3,
+        "PPG": 5,
+        "SOG": 100,
+        "Hits": 12,
+        "BkS": 18,
+        "Plus": 34,
+        "Minus": 23,
+        "PlusMinus": 11,
+        "TOI_GP": "15:38",
+        "TPPG": "0.72",
+        "info": {
+          "uuid": "qcw-3QbUIyuRn",
+          "fullName": "Arttu Ruotsalainen",
+          "firstName": "Arttu",
+          "lastName": "Ruotsalainen",
+          "birthDate": "1997-10-29",
+          "nationality": "FI",
+          "shoots": "L",
+          "gender": "",
+          "weight": {
+            "value": 85,
+            "format": "kg"
+          },
+          "height": {
+            "value": 175,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40775,
+            "mediaString": "image|ramses_sports|player_portrait_5efe6074-0a00-4fa9-b9d2-b89dd1347133Arttu Ruotasalainen.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 27,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 36,
+        "G": 14,
+        "A": 22,
+        "PIM": 19,
+        "GWG": 5,
+        "PPG": 2,
+        "SOG": 79,
+        "Hits": 25,
+        "BkS": 26,
+        "Plus": 34,
+        "Minus": 37,
+        "PlusMinus": -3,
+        "TOI_GP": "18:16",
+        "TPPG": "0.72",
+        "info": {
+          "uuid": "qee-2LE2Dynti",
+          "fullName": "Patrik Puistola",
+          "firstName": "Patrik",
+          "lastName": "Puistola",
+          "birthDate": "2001-01-11",
+          "nationality": "FI",
+          "number": 21,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 183,
+            "format": "kg"
+          },
+          "height": {
+            "value": 82,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42538,
+            "mediaString": "image|ramses_sports|player_portrait_05be05f8-7182-485f-8b15-9465be9c2d89Patrik Puistola.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "82eb-82ebmgaJ8",
+            "name": "Örebro Hockey",
+            "code": "ÖRE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+            "ownerInstanceId": "ohk1_ohk",
+            "siteDisplayName": "Örebro Hockey"
+          },
+          "teamCode": "OHK",
+          "teamId": "82eb-82ebmgaJ8"
+        }
+      },
+      {
+        "Rank": 28,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 36,
+        "G": 12,
+        "A": 24,
+        "PIM": 6,
+        "GWG": 2,
+        "PPG": 9,
+        "SOG": 97,
+        "Hits": 10,
+        "BkS": 43,
+        "Plus": 34,
+        "Minus": 39,
+        "PlusMinus": -5,
+        "TOI_GP": "21:30",
+        "TPPG": "0.75",
+        "info": {
+          "uuid": "idsgujrv67",
+          "fullName": "Brogan Rafferty",
+          "firstName": "Brogan",
+          "lastName": "Rafferty",
+          "birthDate": "1995-05-28",
+          "nationality": "US",
+          "number": 11,
+          "position": "D",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 88,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42409,
+            "mediaString": "image|ramses_sports|player_portrait_51254d0f-158e-4046-820a-b294a95140c6Rityta 1 kopiera 6.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "fe02-fe02mf1FN",
+            "name": "Växjö Lakers",
+            "code": "VLH",
+            "media": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+            "ownerInstanceId": "vlh1_vlh",
+            "siteDisplayName": "Växjö Lakers"
+          },
+          "teamCode": "VLH",
+          "teamId": "fe02-fe02mf1FN"
+        }
+      },
+      {
+        "Rank": 29,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 36,
+        "G": 11,
+        "A": 25,
+        "PIM": 18,
+        "GWG": 1,
+        "PPG": 1,
+        "SOG": 76,
+        "Hits": 36,
+        "BkS": 22,
+        "Plus": 43,
+        "Minus": 31,
+        "PlusMinus": 12,
+        "TOI_GP": "18:06",
+        "TPPG": "0.72",
+        "info": {
+          "uuid": "qee-2LDtJosXS",
+          "fullName": "Brian O'Neill",
+          "firstName": "Brian",
+          "lastName": "O'Neill",
+          "birthDate": "1988-06-01",
+          "nationality": "US",
+          "number": 91,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 78,
+            "format": "kg"
+          },
+          "height": {
+            "value": 175,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42526,
+            "mediaString": "image|ramses_sports|player_portrait_3bdf103c-029a-4dfc-902d-cd94016ac66991 Brian ONeill 2.jpg",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1a71-1a71gTHKh",
+            "name": "Luleå Hockey",
+            "code": "LHF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/lhf1_lhf.svg",
+            "ownerInstanceId": "lhf1_lhf",
+            "siteDisplayName": "Luleå Hockey"
+          },
+          "teamCode": "LHF",
+          "teamId": "1a71-1a71gTHKh"
+        }
+      },
+      {
+        "Rank": 30,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 36,
+        "G": 10,
+        "A": 26,
+        "PIM": 12,
+        "GWG": 2,
+        "PPG": 2,
+        "SOG": 93,
+        "Hits": 39,
+        "BkS": 20,
+        "Plus": 38,
+        "Minus": 44,
+        "PlusMinus": -6,
+        "TOI_GP": "19:41",
+        "TPPG": "0.69",
+        "info": {
+          "uuid": "qbU-6Us5E36h0",
+          "fullName": "Axel Rindell",
+          "firstName": "Axel",
+          "lastName": "Rindell",
+          "birthDate": "2000-04-23",
+          "nationality": "FI",
+          "number": 61,
+          "position": "D",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42746,
+            "mediaString": "image|ramses_sports|player_portrait_9a1c890f-c45f-4a6c-90d1-9f0f63953113Axel Rindell.jpg",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "3db0-3db09jXTE",
+            "name": "HV71",
+            "code": "HV71",
+            "media": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+            "ownerInstanceId": "hv711_hv71",
+            "siteDisplayName": "HV71"
+          },
+          "teamCode": "HV71",
+          "teamId": "3db0-3db09jXTE"
+        }
+      },
+      {
+        "Rank": 31,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 35,
+        "G": 13,
+        "A": 22,
+        "PIM": 18,
+        "GWG": 1,
+        "PPG": 6,
+        "SOG": 92,
+        "Hits": 20,
+        "BkS": 15,
+        "Plus": 33,
+        "Minus": 29,
+        "PlusMinus": 4,
+        "TOI_GP": "17:15",
+        "TPPG": "0.67",
+        "info": {
+          "uuid": "f5vnve2wi9",
+          "fullName": "Luke Philp",
+          "firstName": "Luke",
+          "lastName": "Philp",
+          "birthDate": "1995-11-06",
+          "nationality": "CA",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 82,
+            "format": "kg"
+          },
+          "height": {
+            "value": 178,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40878,
+            "mediaString": "image|ramses_sports|player_portrait_88958843-92e0-448f-8527-dfc6e564f4f9Luke Philp.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "752c-752c12zB7Z",
+            "name": "Färjestad BK",
+            "code": "FBK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fbk1_fbk.svg",
+            "ownerInstanceId": "fbk1_fbk",
+            "siteDisplayName": "Färjestad BK"
+          },
+          "teamCode": "FBK",
+          "teamId": "752c-752c12zB7Z"
+        }
+      },
+      {
+        "Rank": 32,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 35,
+        "G": 7,
+        "A": 28,
+        "PIM": 32,
+        "GWG": 1,
+        "PPG": 0,
+        "SOG": 80,
+        "Hits": 21,
+        "BkS": 72,
+        "Plus": 46,
+        "Minus": 30,
+        "PlusMinus": 16,
+        "TOI_GP": "21:11",
+        "TPPG": "0.73",
+        "info": {
+          "uuid": "qWe-4Cc6tHlAo",
+          "fullName": "Calle Själin",
+          "firstName": "Calle",
+          "lastName": "Själin",
+          "birthDate": "1999-09-02",
+          "nationality": "SE",
+          "number": 51,
+          "position": "D",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 81,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42631,
+            "mediaString": "image|ramses_sports|player_portrait_953b35fb-873e-43ed-817c-e37cca0020a0Sjalin.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "ee93-ee93uy4oW",
+            "name": "Rögle BK",
+            "code": "RBK",
+            "media": "https://sportality.cdn.s8y.se/team-logos/rbk1_rbk.svg",
+            "ownerInstanceId": "rbk1_rbk",
+            "siteDisplayName": "Rögle BK"
+          },
+          "teamCode": "RBK",
+          "teamId": "ee93-ee93uy4oW"
+        }
+      },
+      {
+        "Rank": 33,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 35,
+        "G": 6,
+        "A": 29,
+        "PIM": 20,
+        "GWG": 0,
+        "PPG": 2,
+        "SOG": 80,
+        "Hits": 13,
+        "BkS": 64,
+        "Plus": 47,
+        "Minus": 35,
+        "PlusMinus": 12,
+        "TOI_GP": "22:28",
+        "TPPG": "0.67",
+        "info": {
+          "uuid": "qQ9-e9f8rPgRL",
+          "fullName": "Henrik Tömmernes",
+          "firstName": "Henrik",
+          "lastName": "Tömmernes",
+          "birthDate": "1990-08-28",
+          "nationality": "SE",
+          "number": 7,
+          "position": "D",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 186,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42529,
+            "mediaString": "image|ramses_sports|player_portrait_8c418548-665f-43b8-b5a7-c4b37fae3e4cHenrik Tommernes.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 34,
+        "Player": 0,
+        "Team": 0,
+        "GP": 49,
+        "TP": 34,
+        "G": 14,
+        "A": 20,
+        "PIM": 10,
+        "GWG": 2,
+        "PPG": 4,
+        "SOG": 93,
+        "Hits": 29,
+        "BkS": 31,
+        "Plus": 30,
+        "Minus": 36,
+        "PlusMinus": -6,
+        "TOI_GP": "16:10",
+        "TPPG": "0.69",
+        "info": {
+          "uuid": "qTJ-AiSJ9ICvP",
+          "fullName": "Axel Sundberg",
+          "firstName": "Axel",
+          "lastName": "Sundberg",
+          "birthDate": "1998-06-30",
+          "nationality": "SE",
+          "number": 91,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 188,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42471,
+            "mediaString": "image|ramses_sports|player_portrait_ec9fbb52-d526-4b38-aa79-d9e3b7136012Axel Sundberg.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "8e6f-8e6fUXJvi",
+            "name": "Malmö Redhawks",
+            "code": "MIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+            "ownerInstanceId": "mif1_mif",
+            "siteDisplayName": "Malmö Redhawks"
+          },
+          "teamCode": "MIF",
+          "teamId": "8e6f-8e6fUXJvi"
+        }
+      },
+      {
+        "Rank": 35,
+        "Player": 0,
+        "Team": 0,
+        "GP": 43,
+        "TP": 34,
+        "G": 11,
+        "A": 23,
+        "PIM": 18,
+        "GWG": 0,
+        "PPG": 5,
+        "SOG": 68,
+        "Hits": 11,
+        "BkS": 16,
+        "Plus": 33,
+        "Minus": 27,
+        "PlusMinus": 6,
+        "TOI_GP": "18:19",
+        "TPPG": "0.79",
+        "info": {
+          "uuid": "qbO-7BDJk8xTZ",
+          "fullName": "Kalle Kossila",
+          "firstName": "Kalle",
+          "lastName": "Kossila",
+          "birthDate": "1993-04-14",
+          "nationality": "FI",
+          "number": 11,
+          "position": "F",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 178,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 41557,
+            "mediaString": "image|ramses_sports|player_portrait_f60b05e2-78c0-4c51-8659-d0239f1b15dd11KalleKossila01.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "82eb-82ebmgaJ8",
+            "name": "Örebro Hockey",
+            "code": "ÖRE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+            "ownerInstanceId": "ohk1_ohk",
+            "siteDisplayName": "Örebro Hockey"
+          },
+          "teamCode": "OHK",
+          "teamId": "82eb-82ebmgaJ8"
+        }
+      },
+      {
+        "Rank": 36,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 34,
+        "G": 11,
+        "A": 23,
+        "PIM": 26,
+        "GWG": 1,
+        "PPG": 3,
+        "SOG": 78,
+        "Hits": 17,
+        "BkS": 14,
+        "Plus": 36,
+        "Minus": 33,
+        "PlusMinus": 3,
+        "TOI_GP": "18:05",
+        "TPPG": "0.71",
+        "info": {
+          "uuid": "qQ9-8f5c12bFG2",
+          "fullName": "Anton Rödin",
+          "firstName": "Anton",
+          "lastName": "Rödin",
+          "birthDate": "1990-11-21",
+          "nationality": "SE",
+          "number": 18,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40805,
+            "mediaString": "image|ramses_sports|player_portrait_33c9740c-b575-4e64-9e40-af898fb3e3d3Anton Rodin.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      },
+      {
+        "Rank": 37,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 33,
+        "G": 17,
+        "A": 16,
+        "PIM": 22,
+        "GWG": 3,
+        "PPG": 6,
+        "SOG": 100,
+        "Hits": 3,
+        "BkS": 28,
+        "Plus": 38,
+        "Minus": 26,
+        "PlusMinus": 12,
+        "TOI_GP": "16:45",
+        "TPPG": "0.63",
+        "info": {
+          "uuid": "qQ9-76d9egWOS",
+          "fullName": "Max Lindholm",
+          "firstName": "Max",
+          "lastName": "Lindholm",
+          "birthDate": "1997-07-04",
+          "nationality": "SE",
+          "number": 77,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 94,
+            "format": "kg"
+          },
+          "height": {
+            "value": 187,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42540,
+            "mediaString": "image|ramses_sports|player_portrait_964d784d-d76b-4ca3-843b-0d8da29bf06dMax Lindholm.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 38,
+        "Player": 0,
+        "Team": 0,
+        "GP": 43,
+        "TP": 33,
+        "G": 11,
+        "A": 22,
+        "PIM": 6,
+        "GWG": 1,
+        "PPG": 2,
+        "SOG": 67,
+        "Hits": 9,
+        "BkS": 18,
+        "Plus": 28,
+        "Minus": 18,
+        "PlusMinus": 10,
+        "TOI_GP": "15:11",
+        "TPPG": "0.77",
+        "info": {
+          "uuid": "qbQ-Ak6TSzObk",
+          "fullName": "Ivar Stenberg",
+          "firstName": "Ivar",
+          "lastName": "Stenberg",
+          "birthDate": "2007-09-30",
+          "nationality": "SE",
+          "shoots": "-",
+          "gender": "",
+          "weight": {
+            "value": 67,
+            "format": "kg"
+          },
+          "height": {
+            "value": 173,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40774,
+            "mediaString": "image|ramses_sports|player_portrait_6eb07543-0acb-4452-90dc-e40be394411eIvar Stenberg.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 39,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 32,
+        "G": 15,
+        "A": 17,
+        "PIM": 50,
+        "GWG": 2,
+        "PPG": 2,
+        "SOG": 85,
+        "Hits": 60,
+        "BkS": 9,
+        "Plus": 32,
+        "Minus": 29,
+        "PlusMinus": 3,
+        "TOI_GP": "16:13",
+        "TPPG": "0.63",
+        "info": {
+          "uuid": "qee-2LDtSq1Pe",
+          "fullName": "Markus Nurmi",
+          "firstName": "Markus",
+          "lastName": "Nurmi",
+          "birthDate": "1998-06-29",
+          "nationality": "FI",
+          "number": 51,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 95,
+            "format": "kg"
+          },
+          "height": {
+            "value": 195,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42520,
+            "mediaString": "image|ramses_sports|player_portrait_4be421cf-3d93-42e0-9ca1-d6cea028229151 Markus Nurmi 2.jpg",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1a71-1a71gTHKh",
+            "name": "Luleå Hockey",
+            "code": "LHF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/lhf1_lhf.svg",
+            "ownerInstanceId": "lhf1_lhf",
+            "siteDisplayName": "Luleå Hockey"
+          },
+          "teamCode": "LHF",
+          "teamId": "1a71-1a71gTHKh"
+        }
+      },
+      {
+        "Rank": 40,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 32,
+        "G": 13,
+        "A": 19,
+        "PIM": 16,
+        "GWG": 2,
+        "PPG": 4,
+        "SOG": 74,
+        "Hits": 23,
+        "BkS": 17,
+        "Plus": 38,
+        "Minus": 28,
+        "PlusMinus": 10,
+        "TOI_GP": "15:51",
+        "TPPG": "0.62",
+        "info": {
+          "uuid": "qUw-11Ue56hUQ",
+          "fullName": "Theodor Niederbach",
+          "firstName": "Theodor",
+          "lastName": "Niederbach",
+          "birthDate": "2002-02-25",
+          "nationality": "SE",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 78,
+            "format": "kg"
+          },
+          "height": {
+            "value": 180,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40784,
+            "mediaString": "image|ramses_sports|player_portrait_e0a773c4-c06f-499b-8231-c4ca0d78fb5bTheodor Niederbach.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "087a-087aTQv9u",
+            "name": "Frölunda HC",
+            "code": "FHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+            "ownerInstanceId": "fhc1_fhc",
+            "siteDisplayName": "Frölunda HC"
+          },
+          "teamCode": "FHC",
+          "teamId": "087a-087aTQv9u"
+        }
+      },
+      {
+        "Rank": 41,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 32,
+        "G": 11,
+        "A": 21,
+        "PIM": 10,
+        "GWG": 1,
+        "PPG": 6,
+        "SOG": 54,
+        "Hits": 35,
+        "BkS": 28,
+        "Plus": 29,
+        "Minus": 27,
+        "PlusMinus": 2,
+        "TOI_GP": "17:16",
+        "TPPG": "0.63",
+        "info": {
+          "uuid": "qd1-1JVJz0ku7",
+          "fullName": "Eskild Bakke Olsen",
+          "firstName": "Eskild",
+          "lastName": "Bakke Olsen",
+          "birthDate": "2002-03-19",
+          "nationality": "NO",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 84,
+            "format": "kg"
+          },
+          "height": {
+            "value": 184,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40410,
+            "mediaString": "image|ramses_sports|player_portrait_83e8e19b-fcc2-4c53-871c-965c708a9bcbEskildBakkeOlsen500x600.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "41c4-41c4BiYZU",
+            "name": "Linköping HC",
+            "code": "LHC",
+            "media": "https://sportality.cdn.s8y.se/team-logos/lhc1_lhc.svg",
+            "ownerInstanceId": "lhc1_lhc",
+            "siteDisplayName": "Linköping HC"
+          },
+          "teamCode": "LHC",
+          "teamId": "41c4-41c4BiYZU"
+        }
+      },
+      {
+        "Rank": 42,
+        "Player": 0,
+        "Team": 0,
+        "GP": 50,
+        "TP": 32,
+        "G": 7,
+        "A": 25,
+        "PIM": 51,
+        "GWG": 1,
+        "PPG": 0,
+        "SOG": 131,
+        "Hits": 2,
+        "BkS": 47,
+        "Plus": 43,
+        "Minus": 37,
+        "PlusMinus": 6,
+        "TOI_GP": "21:58",
+        "TPPG": "0.64",
+        "info": {
+          "uuid": "qcz-3ubmRZkio",
+          "fullName": "Frédéric Allard",
+          "firstName": "Frédéric",
+          "lastName": "Allard",
+          "birthDate": "1997-12-27",
+          "nationality": "CA",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40914,
+            "mediaString": "image|ramses_sports|player_portrait_83221b66-923f-4137-9934-564e047c85aaFrederic Allard.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1a71-1a71gTHKh",
+            "name": "Luleå Hockey",
+            "code": "LHF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/lhf1_lhf.svg",
+            "ownerInstanceId": "lhf1_lhf",
+            "siteDisplayName": "Luleå Hockey"
+          },
+          "teamCode": "LHF",
+          "teamId": "1a71-1a71gTHKh"
+        }
+      },
+      {
+        "Rank": 43,
+        "Player": 0,
+        "Team": 0,
+        "GP": 48,
+        "TP": 31,
+        "G": 16,
+        "A": 15,
+        "PIM": 10,
+        "GWG": 2,
+        "PPG": 3,
+        "SOG": 74,
+        "Hits": 20,
+        "BkS": 7,
+        "Plus": 34,
+        "Minus": 26,
+        "PlusMinus": 8,
+        "TOI_GP": "16:25",
+        "TPPG": "0.65",
+        "info": {
+          "uuid": "qZo-3Ut7Ve8cX",
+          "fullName": "Riley Woods",
+          "firstName": "Riley",
+          "lastName": "Woods",
+          "birthDate": "1998-06-25",
+          "nationality": "CA",
+          "number": 41,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 82,
+            "format": "kg"
+          },
+          "height": {
+            "value": 178,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42402,
+            "mediaString": "image|ramses_sports|player_portrait_012b90df-4790-4c48-8db1-8ac02b8d038041rileywoods.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "3db0-3db09jXTE",
+            "name": "HV71",
+            "code": "HV71",
+            "media": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+            "ownerInstanceId": "hv711_hv71",
+            "siteDisplayName": "HV71"
+          },
+          "teamCode": "HV71",
+          "teamId": "3db0-3db09jXTE"
+        }
+      },
+      {
+        "Rank": 44,
+        "Player": 0,
+        "Team": 0,
+        "GP": 40,
+        "TP": 31,
+        "G": 15,
+        "A": 16,
+        "PIM": 18,
+        "GWG": 2,
+        "PPG": 6,
+        "SOG": 108,
+        "Hits": 24,
+        "BkS": 15,
+        "Plus": 29,
+        "Minus": 34,
+        "PlusMinus": -5,
+        "TOI_GP": "17:18",
+        "TPPG": "0.78",
+        "info": {
+          "uuid": "cym9k17su6",
+          "fullName": "Charles Hudon",
+          "firstName": "Charles",
+          "lastName": "Hudon",
+          "birthDate": "1994-06-23",
+          "nationality": "CA",
+          "number": 55,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 86,
+            "format": "kg"
+          },
+          "height": {
+            "value": 179,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42834,
+            "mediaString": "image|ramses_sports|player_portrait_1244d56b-06e8-404f-b994-3a800608da03Hudon.jpg",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "2459-2459QTs1f",
+            "name": "Djurgårdens IF",
+            "code": "DIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/dif1_dif.svg",
+            "ownerInstanceId": "dif1_dif",
+            "siteDisplayName": "Djurgårdens IF"
+          },
+          "teamCode": "DIF",
+          "teamId": "2459-2459QTs1f"
+        }
+      },
+      {
+        "Rank": 45,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 31,
+        "G": 3,
+        "A": 28,
+        "PIM": 10,
+        "GWG": 2,
+        "PPG": 0,
+        "SOG": 25,
+        "Hits": 14,
+        "BkS": 23,
+        "Plus": 42,
+        "Minus": 40,
+        "PlusMinus": 2,
+        "TOI_GP": "18:13",
+        "TPPG": "0.60",
+        "info": {
+          "uuid": "x6lnqj05b0",
+          "fullName": "Lukas Rousek",
+          "firstName": "Lukas",
+          "lastName": "Rousek",
+          "birthDate": "1999-04-20",
+          "nationality": "CZ",
+          "number": 70,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 91,
+            "format": "kg"
+          },
+          "height": {
+            "value": 180,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42403,
+            "mediaString": "image|ramses_sports|player_portrait_3eda1c48-a3c6-4759-87e0-d0d8d2287c7e70lukasrousek.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "3db0-3db09jXTE",
+            "name": "HV71",
+            "code": "HV71",
+            "media": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+            "ownerInstanceId": "hv711_hv71",
+            "siteDisplayName": "HV71"
+          },
+          "teamCode": "HV71",
+          "teamId": "3db0-3db09jXTE"
+        }
+      },
+      {
+        "Rank": 46,
+        "Player": 0,
+        "Team": 0,
+        "GP": 49,
+        "TP": 30,
+        "G": 15,
+        "A": 15,
+        "PIM": 12,
+        "GWG": 2,
+        "PPG": 7,
+        "SOG": 95,
+        "Hits": 14,
+        "BkS": 10,
+        "Plus": 25,
+        "Minus": 29,
+        "PlusMinus": -4,
+        "TOI_GP": "16:00",
+        "TPPG": "0.61",
+        "info": {
+          "uuid": "irr1h04arr",
+          "fullName": "Reid Gardiner",
+          "firstName": "Reid",
+          "lastName": "Gardiner",
+          "birthDate": "1996-01-19",
+          "nationality": "CA",
+          "number": 89,
+          "position": "F",
+          "shoots": "R",
+          "gender": "male",
+          "weight": {
+            "value": 86,
+            "format": "kg"
+          },
+          "height": {
+            "value": 180,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40994,
+            "mediaString": "image|ramses_sports|player_portrait_6c7801ef-8677-4756-b521-8aae0c96e0c5Reid Gardiner.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "fe02-fe02mf1FN",
+            "name": "Växjö Lakers",
+            "code": "VLH",
+            "media": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+            "ownerInstanceId": "vlh1_vlh",
+            "siteDisplayName": "Växjö Lakers"
+          },
+          "teamCode": "VLH",
+          "teamId": "fe02-fe02mf1FN"
+        }
+      },
+      {
+        "Rank": 47,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 30,
+        "G": 15,
+        "A": 15,
+        "PIM": 33,
+        "GWG": 4,
+        "PPG": 3,
+        "SOG": 156,
+        "Hits": 57,
+        "BkS": 15,
+        "Plus": 30,
+        "Minus": 21,
+        "PlusMinus": 9,
+        "TOI_GP": "16:21",
+        "TPPG": "0.58",
+        "info": {
+          "uuid": "rd3vuvj8bf",
+          "fullName": "Kieffer Bellows",
+          "firstName": "Kieffer",
+          "lastName": "Bellows",
+          "birthDate": "1998-06-10",
+          "nationality": "US",
+          "number": 81,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 88,
+            "format": "kg"
+          },
+          "height": {
+            "value": 185,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40811,
+            "mediaString": "image|ramses_sports|player_portrait_d46e6fe9-eed8-4582-96ec-d78f424d02c6Kieffer Bellows.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      },
+      {
+        "Rank": 48,
+        "Player": 0,
+        "Team": 0,
+        "GP": 51,
+        "TP": 30,
+        "G": 12,
+        "A": 18,
+        "PIM": 48,
+        "GWG": 3,
+        "PPG": 3,
+        "SOG": 79,
+        "Hits": 83,
+        "BkS": 30,
+        "Plus": 40,
+        "Minus": 34,
+        "PlusMinus": 6,
+        "TOI_GP": "20:13",
+        "TPPG": "0.59",
+        "info": {
+          "uuid": "qQ9-d125QFo9O",
+          "fullName": "Johan Larsson",
+          "firstName": "Johan",
+          "lastName": "Larsson",
+          "birthDate": "1992-07-25",
+          "nationality": "SE",
+          "number": 10,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 92,
+            "format": "kg"
+          },
+          "height": {
+            "value": 180,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40807,
+            "mediaString": "image|ramses_sports|player_portrait_0a209145-ba4a-4bb5-862f-88fd5e9667e7Johan Larsson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      },
+      {
+        "Rank": 49,
+        "Player": 0,
+        "Team": 0,
+        "GP": 52,
+        "TP": 30,
+        "G": 9,
+        "A": 21,
+        "PIM": 14,
+        "GWG": 1,
+        "PPG": 4,
+        "SOG": 67,
+        "Hits": 14,
+        "BkS": 12,
+        "Plus": 28,
+        "Minus": 31,
+        "PlusMinus": -3,
+        "TOI_GP": "15:07",
+        "TPPG": "0.58",
+        "info": {
+          "uuid": "qQ9-3bf8ZYLR8",
+          "fullName": "Jonathan Johnson",
+          "firstName": "Jonathan",
+          "lastName": "Johnson",
+          "birthDate": "1993-01-11",
+          "nationality": "SE",
+          "number": 22,
+          "position": "CE",
+          "shoots": "-",
+          "gender": "male",
+          "weight": {
+            "value": 83,
+            "format": "kg"
+          },
+          "height": {
+            "value": 183,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 42656,
+            "mediaString": "image|ramses_sports|player_portrait_2888cfb5-7ee3-4e5a-bd48-9c568b3184a122 Jonathan Johnson.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "50e6-50e6DYeWM",
+            "name": "Skellefteå AIK",
+            "code": "SKE",
+            "media": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+            "ownerInstanceId": "saik1_saik",
+            "siteDisplayName": "Skellefteå AIK"
+          },
+          "teamCode": "SAIK",
+          "teamId": "50e6-50e6DYeWM"
+        }
+      },
+      {
+        "Rank": 50,
+        "Player": 0,
+        "Team": 0,
+        "GP": 45,
+        "TP": 30,
+        "G": 3,
+        "A": 27,
+        "PIM": 12,
+        "GWG": 0,
+        "PPG": 1,
+        "SOG": 71,
+        "Hits": 13,
+        "BkS": 14,
+        "Plus": 33,
+        "Minus": 27,
+        "PlusMinus": 6,
+        "TOI_GP": "18:14",
+        "TPPG": "0.67",
+        "info": {
+          "uuid": "evrn569cti",
+          "fullName": "Nicklas Bäckström",
+          "firstName": "Nicklas",
+          "lastName": "Bäckström",
+          "birthDate": "1987-11-23",
+          "nationality": "SE",
+          "number": 19,
+          "position": "F",
+          "shoots": "L",
+          "gender": "male",
+          "weight": {
+            "value": 92,
+            "format": "kg"
+          },
+          "height": {
+            "value": 184,
+            "format": "cm"
+          },
+          "playerMedia": {
+            "id": 40799,
+            "mediaString": "image|ramses_sports|player_portrait_8da4a0d7-e683-4ded-8528-bcfeb1a23b98Nicklas Backstrom.png",
+            "type": "portrait",
+            "sortOrder": 0
+          },
+          "team": {
+            "uuid": "1ab8-1ab8bfj7N",
+            "name": "Brynäs IF",
+            "code": "BIF",
+            "media": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+            "ownerInstanceId": "bif1_bif",
+            "siteDisplayName": "Brynäs IF"
+          },
+          "teamCode": "BIF",
+          "teamId": "1ab8-1ab8bfj7N"
+        }
+      }
+    ],
+    "provider": "statnet",
+    "teams": {
+      "50e6-50e6DYeWM": {
+        "type": "team",
+        "id": "SAIK",
+        "teamCode": "SAIK",
+        "siteDisplayName": "Skellefteå AIK",
+        "name": "SAIK",
+        "uuid": "50e6-50e6DYeWM",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "saik1-saik-ba23a",
+        "lastModified": "2024-11-18T09:21:40.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "saik1_saik",
+        "ownersite": "SAIK",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+        "teamNames": {
+          "code": "SKE",
+          "short": "Skellefteå",
+          "long": "Skellefteå AIK",
+          "full": "Skellefteå AIK Hockey",
+          "code_site": "SKE",
+          "short_site": "Skellefteå",
+          "full_site": "Skellefteå AIK Hockey",
+          "long_site": "Skellefteå AIK"
+        },
+        "clubName": {
+          "code": "SKE",
+          "short": "Skellefteå",
+          "long": "Skellefteå AIK",
+          "full": "Skellefteå AIK Hockey"
+        },
+        "teamInfo": {
+          "founded": "1921",
+          "golds": "3 st (1978, 2013, 2014)",
+          "finals": "8 st (1978, 2011, 2012, 2013, 2014, 2015, 2016, 2018)",
+          "address": "Skellefteå AIK, Skellefteå Kraft Arena, Mossgatan 27, Box 185, 931 22 Skellefteå",
+          "phone": "0910-79 20 00",
+          "fax": "0910-79 20 10",
+          "email": "info@skellefteaaik.se",
+          "chairman": "Kenneth Fahlgren",
+          "manager": "Pea Israelsson",
+          "accreditation": "Anna Hägglund, anna.hagglund@skellefteaaik.se",
+          "facebook": "https://www.facebook.com/skellefteaaikhockey",
+          "instagram": "https://www.instagram.com/skellefteaaik/",
+          "twitter": "https://twitter.com/skelleftea_aik"
+        },
+        "teamExtIds": [
+          {
+            "id": 29,
+            "extId": "SAIK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 30,
+            "extId": "10",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 29,
+            "extId": "SAIK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 30,
+            "extId": "10",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/saik1_saik.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "31d1-31d1NbSlR": {
+        "type": "team",
+        "id": "TIK",
+        "teamCode": "TIK",
+        "siteDisplayName": "Timrå IK",
+        "name": "NOT",
+        "uuid": "31d1-31d1NbSlR",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "tik1-tik-9d6bb",
+        "lastModified": "2025-03-06T08:44:33.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "tik1_tik",
+        "ownersite": "TIK",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/tik1_tik.svg",
+        "teamNames": {
+          "code": "TIK",
+          "short": "Timrå",
+          "long": "Timrå IK",
+          "full": "Timrå Idrottsklubb",
+          "codeSite": "TIK",
+          "shortSite": "Timrå",
+          "fullSite": "Timrå Idrottsklubb",
+          "longSite": "Timrå IK"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1928",
+          "golds": "0 st",
+          "finals": "0 st",
+          "retired_numbers": "# 05 Lennart \"Lill-Strimma\" Svedberg\r\n# 20 Henrik \"Zäta\" Zetterberg",
+          "address": "Timrå IK SCA Arena Box 263, 861 26 TIMRÅ, Lill-Strimmas väg 1, 860 30 SÖRBERGE",
+          "phone": "060-789 10 00",
+          "fax": "060-789 10 01",
+          "email": "huvudsektion@timraik.se",
+          "chairman": "Lars Backlund",
+          "accreditation": "David Åberg, david.aberg@timraik.se",
+          "manager": "Jonas Torines",
+          "facebook": "https://www.facebook.com/timraik.se/",
+          "instagram": "https://www.instagram.com/timra_ik/",
+          "twitter": "https://x.com/timra_ik"
+        },
+        "teamExtIds": [
+          {
+            "id": 31,
+            "extId": "TIK",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 32,
+            "extId": "11",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 135,
+            "extId": "36825",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 238,
+            "extId": "42852",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 792,
+            "extId": "55723",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 822,
+            "extId": "55955",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 1472,
+            "extId": "62522",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 31,
+            "extId": "TIK",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 32,
+            "extId": "11",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 135,
+            "extId": "36825",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 238,
+            "extId": "42852",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 792,
+            "extId": "55723",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 822,
+            "extId": "55955",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          },
+          {
+            "id": 1472,
+            "extId": "62522",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/tik1_tik.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "82eb-82ebmgaJ8": {
+        "type": "team",
+        "id": "OHK",
+        "teamCode": "OHK",
+        "siteDisplayName": "Örebro Hockey",
+        "name": "OHK",
+        "uuid": "82eb-82ebmgaJ8",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "",
+        "graphicsLibrary": "ohk1-ohk-0ab2b",
+        "lastModified": "2024-10-18T16:55:23.000Z",
+        "nationality": "SE",
+        "ownerInstanceId": "ohk1_ohk",
+        "ownersite": "OHK",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+        "teamNames": {
+          "code": "ÖRE",
+          "short": "Örebro",
+          "long": "Örebro Hockey",
+          "full": "Örebro Hockey"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1990",
+          "golds": "0 st",
+          "finals": "0 st",
+          "retired_numbers": "#13 Björn \"Nalle\" Johansson\r\n#3   Lars \"Mozart\" Andersson",
+          "address": "Orvar Bergmarks Plats 5\r\n702 23 Örebro",
+          "phone": "019 - 13 00 30",
+          "fax": "019 - 13 00 31",
+          "email": "info@orebrohockey.se",
+          "chairman": "Ulf Gejhammar",
+          "manager": "Pontus Gustafsson",
+          "accreditation": "Lars \"Mozart\" Andersson lars.andersson@orebrohockey.se"
+        },
+        "teamExtIds": [
+          {
+            "id": 25,
+            "extId": "OHK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 26,
+            "extId": "14",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 25,
+            "extId": "OHK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 26,
+            "extId": "14",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/ohk1_ohk.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "fe02-fe02mf1FN": {
+        "type": "team",
+        "id": "VLH",
+        "teamCode": "VLH",
+        "siteDisplayName": "Växjö Lakers",
+        "name": "VLH",
+        "uuid": "fe02-fe02mf1FN",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "vlh1-vlh-8a4d0",
+        "lastModified": "2024-10-09T15:51:55.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "vlh1_vlh",
+        "ownersite": "VLH",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+        "teamNames": {
+          "code": "VLH",
+          "short": "Växjö",
+          "long": "Växjö Lakers",
+          "full": "Växjö Lakers",
+          "code_site": "VLH",
+          "short_site": "Växjö Lakers",
+          "full_site": "Växjö Lakers",
+          "long_site": "Växjö Lakers"
+        },
+        "clubName": {
+          "code": "VLH",
+          "short": "Växjö Lakers",
+          "long": "Växjö Lakers",
+          "full": "Växjö Lakers"
+        },
+        "teamInfo": {
+          "founded": "1997",
+          "golds": "3 st (2015, 2018, 2021)",
+          "finals": "3 st (2015, 2018, 2021)",
+          "retired_numbers": "# 38 Johan Markusson",
+          "address": "Storgatan 86\r\n352 46 Växjö",
+          "phone": "0470-32 97 00",
+          "fax": "0470-32 97 99",
+          "email": "kansli@vaxjolakers.se",
+          "chairman": "Jennie Isberg",
+          "manager": "Johan Markusson",
+          "accreditation": "press@vaxjolakers.se",
+          "contact": "Instagram: @vaxjolakers\r\nFacebook: @Växjö Lakers\r\nTwitter: @VLHlive\r\nTikTok: @vaxjolakers\r\nYouTube: @Växjö Lakers OFFICIAL",
+          "instagram": "@vaxjolakers",
+          "facebook": "@Växjö Lakers",
+          "twitter": "@vlhlive"
+        },
+        "teamExtIds": [
+          {
+            "id": 33,
+            "extId": "VLH",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 34,
+            "extId": "12",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 33,
+            "extId": "VLH",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 34,
+            "extId": "12",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/vlh1_vlh.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "41c4-41c4BiYZU": {
+        "type": "team",
+        "id": "LHC",
+        "teamCode": "LHC",
+        "siteDisplayName": "Linköping HC",
+        "name": "IFB",
+        "uuid": "41c4-41c4BiYZU",
+        "createdAt": "2018-05-15T19:07:27.000Z",
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "lhc1-lhc-e49a6",
+        "lastModified": "2025-03-25T10:52:21.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "lhc1_lhc",
+        "ownersite": "LHC",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/lhc1_lhc.svg",
+        "teamNames": {
+          "code": "LHC",
+          "short": "Linköping",
+          "long": "Linköping HC",
+          "full": "Linköping Hockey Club",
+          "codeSite": "LHC",
+          "shortSite": "Linköping",
+          "fullSite": "Linköping Hockey Club",
+          "longSite": "Linköping HC"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1976",
+          "golds": "0 st",
+          "finals": "2 st (2007, 2008)",
+          "retired_numbers": "# 10 Mats Andersson\r\n# 15 Stefan Jacobsson\r\n# 16 Mike Helber\r\n# 33 Fredrik Emvall",
+          "address": "Stångebro Ishall, Gumpekullavägen 3 582 78 Linköping",
+          "phone": "013-37 12 00",
+          "fax": "013-37 12 99",
+          "email": "info@lhc.eu",
+          "chairman": "Roger Ekström",
+          "manager": "Niklas Persson",
+          "accreditation": "Gustaf Pettersson",
+          "facebook": "https://www.facebook.com/LinkopingHC/",
+          "instagram": "https://www.instagram.com/lhchockey/",
+          "twitter": "https://x.com/LHChockey"
+        },
+        "teamExtIds": [
+          {
+            "id": 15,
+            "extId": "LHC",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 16,
+            "extId": "1",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 15,
+            "extId": "LHC",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 16,
+            "extId": "1",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/lhc1_lhc.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "3db0-3db09jXTE": {
+        "type": "team",
+        "id": "HV71",
+        "teamCode": "HV71",
+        "siteDisplayName": "HV71",
+        "name": "HV71",
+        "uuid": "3db0-3db09jXTE",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "hv711-hv71-32ce9",
+        "lastModified": "2024-11-14T09:14:10.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "hv711_hv71",
+        "ownersite": "HV71",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+        "teamNames": {
+          "code": "HV71",
+          "short": "HV71",
+          "long": "HV71",
+          "full": "HV71",
+          "code_site": "HV71",
+          "short_site": "HV71",
+          "full_site": "HV71",
+          "long_site": "HV71"
+        },
+        "clubName": {
+          "code": "HV71",
+          "short": "HV71",
+          "long": "HV71",
+          "full": "HV71"
+        },
+        "teamInfo": {
+          "founded": "1971",
+          "golds": "5 st (1995, 2004, 2008, 2010, 2017)",
+          "finals": "6 st (1995, 2004, 2008, 2009, 2010, 2017)",
+          "retired_numbers": "# 01 Stefan Liv\r\n# 07 Per Gustafsson\r\n# 14 Fredrik Stillman\r\n# 15 Stefan Örnskog\r\n# 22 David Petrasek\r\n# 76 Johan Davidsson",
+          "address": "Husqvarna Garden 554 54 Jönköping",
+          "phone": "036-299 71 00",
+          "fax": "036-71 03 71",
+          "email": "info@hv71.se",
+          "chairman": "Anders Wilander",
+          "accreditation": "Johan Freijd, johan@hv71.se",
+          "manager": "Johan Lindbom",
+          "facebook": "https://www.facebook.com/HV71/",
+          "instagram": "https://www.instagram.com/hv71/",
+          "twitter": "https://twitter.com/hv71"
+        },
+        "teamExtIds": [
+          {
+            "id": 11,
+            "extId": "HV71",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 12,
+            "extId": "7",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 2320,
+            "extId": "69621",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 11,
+            "extId": "HV71",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 12,
+            "extId": "7",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 2320,
+            "extId": "69621",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/hv711_hv71.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "752c-752c12zB7Z": {
+        "type": "team",
+        "id": "FBK",
+        "teamCode": "FBK",
+        "siteDisplayName": "Färjestad BK",
+        "name": "FBK",
+        "uuid": "752c-752c12zB7Z",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "fbk1-fbk-88173",
+        "lastModified": "2024-09-24T12:58:08.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "fbk1_fbk",
+        "ownersite": "FBK",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/fbk1_fbk.svg",
+        "teamNames": {
+          "code": "FBK",
+          "short": "Färjestad",
+          "long": "Färjestad BK",
+          "full": "Färjestad Bollklubb",
+          "code_site": "FBK",
+          "short_site": "Färjestad Herr",
+          "full_site": "Färjestad Bollklubb Herr",
+          "long_site": "Färjestad BK"
+        },
+        "clubName": {
+          "code": "FBK",
+          "short": "Färjestad Herr",
+          "long": "Färjestad BK",
+          "full": "Färjestad Bollklubb Herr"
+        },
+        "teamInfo": {
+          "founded": "1932",
+          "golds": "10 st (1981, 1986, 1988, 1997, 1998, 2002, 2006, 2009, 2011, 2022)",
+          "finals": "21 st (1976, 1977, 1981, 1983, 1986, 1987, 1988, 1990, 1991, 1997, 1998, 2001, 2002, 2003, 2004, 2005, 2006, 2009, 2011, 2014, 2022)",
+          "retired_numbers": "# 02 Tommy Samuelsson\r\n# 05 Håkan Loob\r\n# 09 Thomas Rundqvist\r\n# 09 Ulf Sterner\r\n# 17 Mathias Johansson\r\n# Peter Nordström\r\n# 21 Jörgen Jönsson\r\n# 51 Rickard Wallin",
+          "address": "Färjestad BK\r\nBox 318\r\n651 08 KARLSTAD",
+          "phone": "054-22 33 00",
+          "email": "kundcenter@farjestadsbk.se",
+          "chairman": "Lars Appelqvist",
+          "manager": "Stefan Larsson",
+          "accreditation": "Stefan Eriksson, stefan.eriksson@farjestadsbk.se",
+          "contact": "Besöksadress:\r\nFärjestad BK Kundcenter\r\nNorra Infarten 79\r\n654 65 KARLSTAD",
+          "facebook": "https://www.facebook.com/farjestadbk",
+          "instagram": "https://www.instagram.com/farjestad_bk/",
+          "twitter": "https://twitter.com/farjestad_bk"
+        },
+        "teamExtIds": [
+          {
+            "id": 7,
+            "extId": "FBK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 8,
+            "extId": "6",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 7,
+            "extId": "FBK",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 8,
+            "extId": "6",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/fbk1_fbk.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "8e6f-8e6fUXJvi": {
+        "type": "team",
+        "id": "MIF",
+        "teamCode": "MIF",
+        "siteDisplayName": "Malmö Redhawks",
+        "name": "MIF",
+        "uuid": "8e6f-8e6fUXJvi",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "mif1-mif-d39e4",
+        "lastModified": "2026-01-14T15:50:25.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "mif1_mif",
+        "ownersite": "MIF",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+        "teamNames": {
+          "code": "MIF",
+          "short": "Malmö",
+          "long": "Malmö Redhawks",
+          "full": "Malmö Redhawks",
+          "codeSite": "MIF",
+          "shortSite": "Redhawks",
+          "fullSite": "Malmö Redhawks",
+          "longSite": "Malmö Redhawks"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1972",
+          "golds": "2 st (1992, 1994)",
+          "finals": "2 st (1992, 1994)",
+          "retired_numbers": "# 01 Pekka Lindmark\r\n# 05 Roger Nordström\r\n# 18 Patrik Sylvegård\r\n# 25 Kaj Olsson\r\n# 66 Mats Lusth",
+          "address": "Hyllie Stationstorg 215 32  MALMÖ",
+          "phone": "+46 (0) 40 642 06 00",
+          "email": "info@malmoredhawks.com",
+          "chairman": "Mats Larsson",
+          "manager": "Patrik Sylvegård",
+          "accreditation": "Christian Winnbergchristian.winnberg@malmoredhawks.com+46 (0) 706 75 86 06",
+          "facebook": "https://facebook.com/redhawks247",
+          "instagram": "https://instagram.com/malmoredhawks"
+        },
+        "teamExtIds": [
+          {
+            "id": 21,
+            "extId": "MIF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 22,
+            "extId": "17",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 21,
+            "extId": "MIF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 22,
+            "extId": "17",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/mif1_mif.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "1ab8-1ab8bfj7N": {
+        "type": "team",
+        "id": "BIF",
+        "teamCode": "BIF",
+        "siteDisplayName": "Brynäs IF",
+        "name": "BIF",
+        "uuid": "1ab8-1ab8bfj7N",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "bif1-bif-713a5",
+        "lastModified": "2024-10-31T17:06:28.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "bif1_bif",
+        "ownersite": "BIF",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+        "teamNames": {
+          "code": "BIF",
+          "short": "Brynäs",
+          "long": "Brynäs IF",
+          "full": "Brynäs Idrottsförening",
+          "code_site": "BIF",
+          "short_site": "Brynäs",
+          "full_site": "Brynäs Idrottsförening",
+          "long_site": "Brynäs IF"
+        },
+        "clubName": {
+          "code": "BIF",
+          "short": "Brynäs",
+          "long": "Brynäs IF",
+          "full": "Brynäs Idrottsförening"
+        },
+        "teamInfo": {
+          "founded": "1912",
+          "golds": "13 (1964, 1966, 1967, 1968, 1970, 1971, 1972, 1976, 1977, 1980, 1993, 1999, 2012).",
+          "finals": "11* (1966, 1967, 1975, 1976, 1977, 1980, 1993, 1995, 1999, 2012, 2017).\r\n\r\n*Vissa guld togs efter seriespel, därav färre antal finaler än SM-guld",
+          "retired_numbers": "#06 Tord Lundström\r\n#26 Anders Huss",
+          "address": "Brynäs IF, Gavlehovsvägen 13, 806 33 Gävle",
+          "email": "info@brynas.se",
+          "facebook": "https://www.facebook.com/brynasif/",
+          "instagram": "https://www.instagram.com/brynas__if/",
+          "twitter": "https://twitter.com/Brynas"
+        },
+        "teamExtIds": [
+          {
+            "id": 3,
+            "extId": "BIF",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 4,
+            "extId": "3",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 3,
+            "extId": "BIF",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 4,
+            "extId": "3",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/bif1_bif.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "087a-087aTQv9u": {
+        "type": "team",
+        "id": "FHC",
+        "teamCode": "FHC",
+        "siteDisplayName": "Frölunda HC",
+        "name": "NOT",
+        "uuid": "087a-087aTQv9u",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "fhc1-fhc-f7c59",
+        "lastModified": "2024-11-11T16:30:35.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "fhc1_fhc",
+        "ownersite": "FHC",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+        "teamNames": {
+          "code": "FHC",
+          "short": "Frölunda ",
+          "long": "Frölunda HC",
+          "full": "Frölunda Hockey Club",
+          "code_site": "FHC",
+          "short_site": "Frölunda",
+          "full_site": "Frölunda Hockey Club / Herr",
+          "long_site": "Frölunda HC"
+        },
+        "clubName": {
+          "code": "FHC",
+          "short": "Frölunda",
+          "long": "Frölunda HC",
+          "full": "Frölunda Hockey Club / Herr"
+        },
+        "teamInfo": {
+          "founded": "1944",
+          "golds": "5 st (1965, 2003, 2005, 2016, 2019)",
+          "finals": "7 st (1980, 1996, 2003, 2005, 2006, 2016, 2019)",
+          "retired_numbers": "#13 Lars-Erik Lundvall\r\n#14 Ronald Pettersson\r\n#14 Patrik Carnbäck\r\n#19 Jörgen Pettersson\r\n#23 Ronnie Sundin\r\n#24 Niklas Andersson\r\n#29 Stefan Larsson",
+          "address": "Frölunda HC\r\nFrölundaborgs Isstadion\r\nBox 12127\r\n402 42 Göteborg",
+          "phone": "031-708 16 80",
+          "fax": "031-18 97 06",
+          "email": "kontakt@frolundahockey.com",
+          "chairman": "Mats Grauers",
+          "manager": "Christian Lecthaler",
+          "accreditation": "peter.kymmer@frolundahockey.com",
+          "facebook": "https://www.facebook.com/frolundahc",
+          "instagram": "https://www.instagram.com/frolunda_hc/",
+          "twitter": "https://twitter.com/frolunda_hc"
+        },
+        "teamExtIds": [
+          {
+            "id": 9,
+            "extId": "FHC",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 10,
+            "extId": "5",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 9,
+            "extId": "FHC",
+            "locked": true,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 10,
+            "extId": "5",
+            "locked": true,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/fhc1_fhc.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "ee93-ee93uy4oW": {
+        "type": "team",
+        "id": "RBK",
+        "teamCode": "RBK",
+        "siteDisplayName": "Rögle BK",
+        "name": "NOT",
+        "uuid": "ee93-ee93uy4oW",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "rbk1-rbk-539f1",
+        "lastModified": "2026-06-08T10:14:12.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "rbk1_rbk",
+        "ownersite": "RBK",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/rbk1_rbk.svg",
+        "teamNames": {
+          "code": "RBK",
+          "short": "Rögle",
+          "long": "Rögle BK",
+          "full": "Rögle Bandyklubb",
+          "codeSite": "RBK",
+          "shortSite": "Rögle",
+          "fullSite": "Rögle Bandyklubb",
+          "longSite": "Rögle BK"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1932",
+          "golds": "0 st",
+          "finals": "1 st (2021)",
+          "retired_numbers": "# 1 Kenth \"Swiss\" Svensson\r\n# 9 Lennart Åkesson\r\n# 13 Roger Elvenes\r\n# 19 Kenny Jönsson\r\n# 25 Stefan Elvenes\r\n# 26 Jakob Johansson",
+          "address": "Rögle BK\r\nCatena Arena\r\n262 54 ÄNGELHOLM",
+          "phone": "0431-55 89 00",
+          "email": "info@roglebk.se",
+          "chairman": "Håkan Eriksson",
+          "manager": "Daniel Koch",
+          "accreditation": "peter.ekholm@roglebk.se",
+          "facebook": "https://www.facebook.com/roglebk",
+          "instagram": "https://www.instagram.com/roglebk/",
+          "twitter": "https://x.com/roglebk"
+        },
+        "teamExtIds": [
+          {
+            "id": 27,
+            "extId": "RBK",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 28,
+            "extId": "13",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 219,
+            "extId": "36761",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 27,
+            "extId": "RBK",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 28,
+            "extId": "13",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          },
+          {
+            "id": 219,
+            "extId": "36761",
+            "locked": false,
+            "extIdType": {
+              "uuid": "9f4c-1284S7mMn",
+              "code": "impleo_tournament-team-id",
+              "createdAt": "2016-12-01T17:20:56.000Z",
+              "createdBy": "ramses",
+              "deleted": false,
+              "lastModified": "2016-12-01T17:20:56.000Z",
+              "visible": true,
+              "name": "Impleo / Swehockey: Serie lagid"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/rbk1_rbk.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "2459-2459QTs1f": {
+        "type": "team",
+        "id": "DIF",
+        "teamCode": "DIF",
+        "siteDisplayName": "Djurgårdens IF",
+        "name": "NOT",
+        "uuid": "2459-2459QTs1f",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "dif1-dif-896f9",
+        "lastModified": "2025-09-18T21:35:41.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "dif1_dif",
+        "ownersite": "DIF",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/dif1_dif.svg",
+        "teamNames": {
+          "code": "DIF",
+          "short": "Djurgården",
+          "long": "Djurgårdens IF",
+          "full": "Djurgården Hockey",
+          "codeSite": "DIF Herr",
+          "shortSite": "Djurgården Herr",
+          "fullSite": "Djurgården Hockey Herr",
+          "longSite": "Djurgården Hockey Herr"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1891",
+          "golds": "16 st (1926, 1950, 1954, 1955, 1958, 1959, 1960, 1961, 1962, 1963, 1983, 1989, 1990, 1991, 2000, 2001)",
+          "finals": "26 st (1923, 1924, 1926, 1927, 1950, 1954, 1955, 1958, 1959, 1960, 1961, 1962, 1963, 1979, 1983, 1984, 1985, 1989, 1990, 1991, 1992, 1998, 2000, 2001, 2010, 2019)",
+          "retired_numbers": "#2 Roland Stoltz\r\n#2 Charles Berglund\r\n#5 Sven Tumba\r\n#11 Jens Öhling\r\n#12 Lasse Björn\r\n#16 Nichlas Falk\r\n#22 Håkan Södergren\r\n#25 Mikael Johansson\r\n#27 Thomas Eriksson",
+          "address": "Djurgården Hockey AB\r\nLindetorpsvägen 25\r\nBox 2\r\n121 25 STOCKHOLM-GLOBEN",
+          "phone": "08-600 81 00",
+          "fax": "08-600 81 99",
+          "chairman": "Kaarel Lehiste",
+          "accreditation": "Senast dagen före match till ackreditering@difhockey.se."
+        },
+        "teamExtIds": [
+          {
+            "id": 5,
+            "extId": "DIF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 6,
+            "extId": "2",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 5,
+            "extId": "DIF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 6,
+            "extId": "2",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/dif1_dif.svg",
+        "socialMedia": [],
+        "displayName": ""
+      },
+      "1a71-1a71gTHKh": {
+        "type": "team",
+        "id": "LHF",
+        "teamCode": "LHF",
+        "siteDisplayName": "Luleå Hockey",
+        "name": "LHF",
+        "uuid": "1a71-1a71gTHKh",
+        "createdAt": null,
+        "createdBy": null,
+        "deleted": false,
+        "gender": "male",
+        "graphicsLibrary": "lhf1-lhf-cc96a",
+        "lastModified": "2025-03-06T08:41:17.000Z",
+        "nationality": "sv",
+        "ownerInstanceId": "lhf1_lhf",
+        "ownersite": "LHF",
+        "series": [
+          {
+            "uuid": "qQ9-bb0bzEWUk",
+            "code": "SHL",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2023-03-01T13:47:40.000Z",
+            "displayName": "SHL",
+            "names": {
+              "0": {
+                "language": "sv",
+                "translation": "SHL"
+              },
+              "1": {
+                "language": "en",
+                "translation": "SHL"
+              }
+            }
+          }
+        ],
+        "sport": [
+          {
+            "uuid": "qQ9-bd0dSLh6k",
+            "code": "hockey",
+            "createdAt": null,
+            "createdBy": null,
+            "deleted": false,
+            "lastModified": "2022-09-28T13:18:06.000Z"
+          }
+        ],
+        "teamMedia": "https://sportality.cdn.s8y.se/team-logos/lhf1_lhf.svg",
+        "teamNames": {
+          "code": "LHF",
+          "short": "Luleå",
+          "long": "Luleå Hockey",
+          "full": "Luleå Hockey",
+          "codeSite": "LHF",
+          "shortSite": "Luleå",
+          "fullSite": "Luleå Hockey",
+          "longSite": "Luleå Hockey"
+        },
+        "clubName": {},
+        "teamInfo": {
+          "founded": "1977",
+          "golds": "1 st (1996)",
+          "finals": "4 st (1993, 1996, 1997, 2013)",
+          "retired_numbers": "# 12 Johan Strömwall\r\n# 35 Jarmo Myllys\r\n#  4  Stefan \"Skuggan\" Nilsson\r\n# 28 Roger Åkerström\r\n\r\n# 22 Hans Norberg förlamades under en match 1989 och sen dess har hans tröjnummer aldrig använts i Luleå Hockey",
+          "address": "Luleå Hockey\r\nOstrongatan 2\r\n973 34 Luleå",
+          "phone": "0920-52 82 00",
+          "fax": "0920–52 82 99",
+          "email": "info@luleahockey.se",
+          "chairman": "Anders Olofsson",
+          "manager": "Stefan Enbom",
+          "accreditation": "robert.hedlund@luleahockey.se",
+          "facebook": "https://www.facebook.com/LuleaHockey/",
+          "instagram": "https://www.instagram.com/LuleaHockey",
+          "twitter": "https://x.com/LuleaHockey"
+        },
+        "teamExtIds": [
+          {
+            "id": 17,
+            "extId": "LHF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 18,
+            "extId": "8",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "extIds": [
+          {
+            "id": 17,
+            "extId": "LHF",
+            "locked": false,
+            "extIdType": {
+              "uuid": "165a-d5bcMnEuq",
+              "code": "isa",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": true,
+              "name": "ISA / Statnet"
+            }
+          },
+          {
+            "id": 18,
+            "extId": "8",
+            "locked": false,
+            "extIdType": {
+              "uuid": "7b6a-e633fcdB7",
+              "code": "ramses_legacy",
+              "createdAt": null,
+              "createdBy": null,
+              "deleted": false,
+              "lastModified": null,
+              "visible": false,
+              "name": "Ramses gammalt id"
+            }
+          }
+        ],
+        "logo": "https://sportality.cdn.s8y.se/team-logos/lhf1_lhf.svg",
+        "socialMedia": [],
+        "displayName": ""
+      }
+    },
+    "games": {},
+    "seasonSeriesGameTypes": {},
+    "type": "athlete",
+    "totalCount": 50,
+    "players": {
+      "214": {
+        "type": "athlete",
+        "id": 214,
+        "firstName": "Nicklas",
+        "lastName": "Bäckström",
+        "jerseyNumber": 19,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "evrn569cti",
+        "fullName": "Nicklas Bäckström",
+        "dateOfBirth": "1987-11-23",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 92,
+        "height": 184,
+        "playerMedia": {
+          "id": 40799,
+          "mediaString": "image|ramses_sports|player_portrait_8da4a0d7-e683-4ded-8528-bcfeb1a23b98Nicklas Backstrom.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1326": {
+        "type": "athlete",
+        "id": 1326,
+        "firstName": "Jakob",
+        "lastName": "Silfverberg",
+        "jerseyNumber": 33,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qQ9-0f23VL1DC",
+        "fullName": "Jakob Silfverberg",
+        "dateOfBirth": "1990-10-13",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 83,
+        "height": 183,
+        "playerMedia": {
+          "id": 40803,
+          "mediaString": "image|ramses_sports|player_portrait_b05097eb-0176-4689-bf71-a2e1df483dabJakob Silfverberg.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1332": {
+        "type": "athlete",
+        "id": 1332,
+        "firstName": "Henrik",
+        "lastName": "Tömmernes",
+        "jerseyNumber": 7,
+        "position": "D",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-e9f8rPgRL",
+        "fullName": "Henrik Tömmernes",
+        "dateOfBirth": "1990-08-28",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 84,
+        "height": 186,
+        "playerMedia": {
+          "id": 42529,
+          "mediaString": "image|ramses_sports|player_portrait_8c418548-665f-43b8-b5a7-c4b37fae3e4cHenrik Tommernes.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1439": {
+        "type": "athlete",
+        "id": 1439,
+        "firstName": "Anton",
+        "lastName": "Rödin",
+        "jerseyNumber": 18,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-8f5c12bFG2",
+        "fullName": "Anton Rödin",
+        "dateOfBirth": "1990-11-21",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 84,
+        "height": 183,
+        "playerMedia": {
+          "id": 40805,
+          "mediaString": "image|ramses_sports|player_portrait_33c9740c-b575-4e64-9e40-af898fb3e3d3Anton Rodin.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1552": {
+        "type": "athlete",
+        "id": 1552,
+        "firstName": "Oscar",
+        "lastName": "Lindberg",
+        "jerseyNumber": 24,
+        "position": "CE",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-322eZcouc",
+        "fullName": "Oscar Lindberg",
+        "dateOfBirth": "1991-10-29",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 88,
+        "height": 183,
+        "playerMedia": {
+          "id": 42653,
+          "mediaString": "image|ramses_sports|player_portrait_05d2ab46-edaf-410e-aac1-9763190744e924 Oscar Lindberg.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1809": {
+        "type": "athlete",
+        "id": 1809,
+        "firstName": "Johan",
+        "lastName": "Larsson",
+        "jerseyNumber": 10,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-d125QFo9O",
+        "fullName": "Johan Larsson",
+        "dateOfBirth": "1992-07-25",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 92,
+        "height": 180,
+        "playerMedia": {
+          "id": 40807,
+          "mediaString": "image|ramses_sports|player_portrait_0a209145-ba4a-4bb5-862f-88fd5e9667e7Johan Larsson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "1964": {
+        "type": "athlete",
+        "id": 1964,
+        "firstName": "Dennis",
+        "lastName": "Rasmussen",
+        "jerseyNumber": 40,
+        "position": "F",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-0a85nVSr0",
+        "fullName": "Dennis Rasmussen",
+        "dateOfBirth": "1990-07-03",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 93,
+        "height": 192,
+        "playerMedia": {
+          "id": 42416,
+          "mediaString": "image|ramses_sports|player_portrait_4292d47b-6735-46b4-968a-08e564c867caRityta 1 kopiera 7.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2102": {
+        "type": "athlete",
+        "id": 2102,
+        "firstName": "Jonathan",
+        "lastName": "Johnson",
+        "jerseyNumber": 22,
+        "position": "CE",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-3bf8ZYLR8",
+        "fullName": "Jonathan Johnson",
+        "dateOfBirth": "1993-01-11",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 83,
+        "height": 183,
+        "playerMedia": {
+          "id": 42656,
+          "mediaString": "image|ramses_sports|player_portrait_2888cfb5-7ee3-4e5a-bd48-9c568b3184a122 Jonathan Johnson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2337": {
+        "type": "athlete",
+        "id": 2337,
+        "firstName": "Jonathan",
+        "lastName": "Pudas",
+        "jerseyNumber": 64,
+        "position": "D",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-b81bnE76N",
+        "fullName": "Jonathan Pudas",
+        "dateOfBirth": "1993-04-26",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 81,
+        "height": 179,
+        "playerMedia": {
+          "id": 42662,
+          "mediaString": "image|ramses_sports|player_portrait_7937ec2c-26de-4aac-af6f-b5b119726e85Jonathan Pudas.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2397": {
+        "type": "athlete",
+        "id": 2397,
+        "firstName": "Emil",
+        "lastName": "Pettersson",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-b20c10aOfn",
+        "fullName": "Emil Pettersson",
+        "dateOfBirth": "1994-01-14",
+        "nationality": "SE",
+        "gender": "",
+        "weight": 80,
+        "height": 187,
+        "playerMedia": {
+          "id": 40980,
+          "mediaString": "image|ramses_sports|player_portrait_ab7d0704-b23f-4eb0-beee-41f891b085d6Emil Pettersson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2404": {
+        "type": "athlete",
+        "id": 2404,
+        "firstName": "Robin",
+        "lastName": "Kovács",
+        "jerseyNumber": 86,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-04eb7YtFL",
+        "fullName": "Robin Kovács",
+        "dateOfBirth": "1996-11-16",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 84,
+        "height": 183,
+        "playerMedia": {
+          "id": 42704,
+          "mediaString": "image|ramses_sports|player_portrait_dfbc8bb7-b3b0-45b5-bb4d-10f8912a41eeRobinKovacs.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2820": {
+        "type": "athlete",
+        "id": 2820,
+        "firstName": "Carl",
+        "lastName": "Persson",
+        "jerseyNumber": 95,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-854911Gq0o",
+        "fullName": "Carl Persson",
+        "dateOfBirth": "1995-06-28",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 93,
+        "height": 185,
+        "playerMedia": {
+          "id": 42470,
+          "mediaString": "image|ramses_sports|player_portrait_0bc2e615-5d98-433a-8afc-beb35a0b9644Carl Persson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "2922": {
+        "type": "athlete",
+        "id": 2922,
+        "firstName": "Jonathan",
+        "lastName": "Dahlén",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qQ9-19d1gvUAS",
+        "fullName": "Jonathan Dahlén",
+        "dateOfBirth": "1997-12-20",
+        "nationality": "SE",
+        "gender": "",
+        "weight": 87,
+        "height": 182,
+        "playerMedia": {
+          "id": 40979,
+          "mediaString": "image|ramses_sports|player_portrait_0d8c9386-e0ad-453d-b67e-9c013229eabfJonathan Dahlen.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3020": {
+        "type": "athlete",
+        "id": 3020,
+        "firstName": "Patrik",
+        "lastName": "Karlkvist",
+        "jerseyNumber": 89,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qZk-48kNGB8Z5",
+        "fullName": "Patrik Karlkvist",
+        "dateOfBirth": "1992-05-01",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 98,
+        "height": 186,
+        "playerMedia": {
+          "id": 41569,
+          "mediaString": "image|ramses_sports|player_portrait_08f6cd26-774a-44a8-b528-797b72b1909689PatrikKarlkvist01.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3274": {
+        "type": "athlete",
+        "id": 3274,
+        "firstName": "Max",
+        "lastName": "Lindholm",
+        "jerseyNumber": 77,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qQ9-76d9egWOS",
+        "fullName": "Max Lindholm",
+        "dateOfBirth": "1997-07-04",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 94,
+        "height": 187,
+        "playerMedia": {
+          "id": 42540,
+          "mediaString": "image|ramses_sports|player_portrait_964d784d-d76b-4ca3-843b-0d8da29bf06dMax Lindholm.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3296": {
+        "type": "athlete",
+        "id": 3296,
+        "firstName": "Rickard",
+        "lastName": "Hugg",
+        "jerseyNumber": 96,
+        "position": "F",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qRh-1Lnn3OfJt",
+        "fullName": "Rickard Hugg",
+        "dateOfBirth": "1999-01-18",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 83,
+        "height": 179,
+        "playerMedia": {
+          "id": 42665,
+          "mediaString": "image|ramses_sports|player_portrait_822d4289-f33c-499a-9cc3-1194b24c73ec96 Rickard Hugg.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3524": {
+        "type": "athlete",
+        "id": 3524,
+        "firstName": "Lucas",
+        "lastName": "Elvenes",
+        "jerseyNumber": 25,
+        "position": "F",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qTL-2RaryAoLs",
+        "fullName": "Lucas Elvenes",
+        "dateOfBirth": "1999-08-18",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 76,
+        "height": 183,
+        "playerMedia": {
+          "id": 42419,
+          "mediaString": "image|ramses_sports|player_portrait_e8159e1d-2dbc-4d3b-b4d5-5dbcdf76bc9aRityta 1 kopiera 19.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3525": {
+        "type": "athlete",
+        "id": 3525,
+        "firstName": "Johannes",
+        "lastName": "Kinnvall",
+        "jerseyNumber": 28,
+        "position": "D",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qRm-KI57OWyn",
+        "fullName": "Johannes Kinnvall",
+        "dateOfBirth": "1997-07-28",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 85,
+        "height": 184,
+        "playerMedia": {}
+      },
+      "3665": {
+        "type": "athlete",
+        "id": 3665,
+        "firstName": "Calle",
+        "lastName": "Själin",
+        "jerseyNumber": 51,
+        "position": "D",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qWe-4Cc6tHlAo",
+        "fullName": "Calle Själin",
+        "dateOfBirth": "1999-09-02",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 81,
+        "height": 185,
+        "playerMedia": {
+          "id": 42631,
+          "mediaString": "image|ramses_sports|player_portrait_953b35fb-873e-43ed-817c-e37cca0020a0Sjalin.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3668": {
+        "type": "athlete",
+        "id": 3668,
+        "firstName": "Joel",
+        "lastName": "Persson",
+        "jerseyNumber": 94,
+        "position": "D",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qTJ-sd9PK0O1",
+        "fullName": "Joel Persson",
+        "dateOfBirth": "1994-03-04",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 89,
+        "height": 186,
+        "playerMedia": {
+          "id": 42411,
+          "mediaString": "image|ramses_sports|player_portrait_e9bce8d0-08b5-42be-89f7-69d1783a4553Rityta 1 kopiera 15.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3791": {
+        "type": "athlete",
+        "id": 3791,
+        "firstName": "Axel",
+        "lastName": "Sundberg",
+        "jerseyNumber": 91,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qTJ-AiSJ9ICvP",
+        "fullName": "Axel Sundberg",
+        "dateOfBirth": "1998-06-30",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 95,
+        "height": 188,
+        "playerMedia": {
+          "id": 42471,
+          "mediaString": "image|ramses_sports|player_portrait_ec9fbb52-d526-4b38-aa79-d9e3b7136012Axel Sundberg.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "3970": {
+        "type": "athlete",
+        "id": 3970,
+        "firstName": "Viktor",
+        "lastName": "Lodin",
+        "jerseyNumber": 71,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qUy-2KFsIg5EU",
+        "fullName": "Viktor Lodin",
+        "dateOfBirth": "1999-06-02",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 86,
+        "height": 186,
+        "playerMedia": {
+          "id": 42570,
+          "mediaString": "image|ramses_sports|player_portrait_2d335b50-2fe1-4da9-a550-cb3b13a5997471VictorLodinIMG0080.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4349": {
+        "type": "athlete",
+        "id": 4349,
+        "firstName": "Fredrik",
+        "lastName": "Olofsson",
+        "jerseyNumber": 22,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qWa-2PzP1sBzE",
+        "fullName": "Fredrik Olofsson",
+        "dateOfBirth": "1996-05-27",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 84,
+        "height": 186,
+        "playerMedia": {
+          "id": 42644,
+          "mediaString": "image|ramses_sports|player_portrait_adb2eab6-a740-47f2-a14d-e1d6002ce8f7Olofsson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4485": {
+        "type": "athlete",
+        "id": 4485,
+        "firstName": "Robin",
+        "lastName": "Salo",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qY6-5K1bja35c",
+        "fullName": "Robin Salo",
+        "dateOfBirth": "1998-10-13",
+        "nationality": "FI",
+        "gender": "",
+        "weight": 84,
+        "height": 185,
+        "playerMedia": {
+          "id": 40149,
+          "mediaString": "image|ramses_sports|player_portrait_82fa6ef4-fb91-413d-a425-fc3332fd889942.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4548": {
+        "type": "athlete",
+        "id": 4548,
+        "firstName": "Mikkel",
+        "lastName": "Aagaard",
+        "jerseyNumber": 29,
+        "position": "F",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qYC-4THzp8DoI",
+        "fullName": "Mikkel Aagaard",
+        "dateOfBirth": "1995-10-18",
+        "nationality": "DK",
+        "gender": "male",
+        "weight": 81,
+        "height": 184,
+        "playerMedia": {
+          "id": 42661,
+          "mediaString": "image|ramses_sports|player_portrait_8e8b2b29-a742-4f4b-8947-25d85c51d8e329 Mikkel Aagaard.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4565": {
+        "type": "athlete",
+        "id": 4565,
+        "firstName": "Theodor",
+        "lastName": "Niederbach",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qUw-11Ue56hUQ",
+        "fullName": "Theodor Niederbach",
+        "dateOfBirth": "2002-02-25",
+        "nationality": "SE",
+        "gender": "male",
+        "weight": 78,
+        "height": 180,
+        "playerMedia": {
+          "id": 40784,
+          "mediaString": "image|ramses_sports|player_portrait_e0a773c4-c06f-499b-8231-c4ca0d78fb5bTheodor Niederbach.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4750": {
+        "type": "athlete",
+        "id": 4750,
+        "firstName": "Joey",
+        "lastName": "LaLeggia",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qZi-dhQtfwf4",
+        "fullName": "Joey LaLeggia",
+        "dateOfBirth": "1992-06-24",
+        "nationality": "CA",
+        "gender": "",
+        "weight": 88,
+        "height": 88,
+        "playerMedia": {
+          "id": 40856,
+          "mediaString": "image|ramses_sports|player_portrait_23e955e0-bc53-4fa7-90fd-99cec24bf86bJoey LaLeggia.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4828": {
+        "type": "athlete",
+        "id": 4828,
+        "firstName": "David",
+        "lastName": "Quenneville",
+        "jerseyNumber": 55,
+        "position": "D",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qZm-3rVq3Bhlh",
+        "fullName": "David Quenneville",
+        "dateOfBirth": "1998-03-13",
+        "nationality": "CA",
+        "gender": "",
+        "weight": 86,
+        "height": 173,
+        "playerMedia": {
+          "id": 41555,
+          "mediaString": "image|ramses_sports|player_portrait_a34addf5-1f1a-475b-8d31-6ec6941fc27055DavidQuenneville01.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "4925": {
+        "type": "athlete",
+        "id": 4925,
+        "firstName": "Riley",
+        "lastName": "Woods",
+        "jerseyNumber": 41,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qZo-3Ut7Ve8cX",
+        "fullName": "Riley Woods",
+        "dateOfBirth": "1998-06-25",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 82,
+        "height": 178,
+        "playerMedia": {
+          "id": 42402,
+          "mediaString": "image|ramses_sports|player_portrait_012b90df-4790-4c48-8db1-8ac02b8d038041rileywoods.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "5632": {
+        "type": "athlete",
+        "id": 5632,
+        "firstName": "Kalle",
+        "lastName": "Kossila",
+        "jerseyNumber": 11,
+        "position": "F",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qbO-7BDJk8xTZ",
+        "fullName": "Kalle Kossila",
+        "dateOfBirth": "1993-04-14",
+        "nationality": "FI",
+        "gender": "",
+        "weight": 84,
+        "height": 178,
+        "playerMedia": {
+          "id": 41557,
+          "mediaString": "image|ramses_sports|player_portrait_f60b05e2-78c0-4c51-8659-d0239f1b15dd11KalleKossila01.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "5639": {
+        "type": "athlete",
+        "id": 5639,
+        "firstName": "Jere",
+        "lastName": "Innala",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qbN-3oZKJRhl6",
+        "fullName": "Jere Innala",
+        "dateOfBirth": "1998-03-17",
+        "nationality": "FI",
+        "gender": "",
+        "weight": 83,
+        "height": 175,
+        "playerMedia": {
+          "id": 40772,
+          "mediaString": "image|ramses_sports|player_portrait_a3127241-55c1-470d-9bc0-9d57782d2e41Jere Innala.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "5835": {
+        "type": "athlete",
+        "id": 5835,
+        "firstName": "Felix",
+        "lastName": "Nilsson",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qbT-APIwS0tpn",
+        "fullName": "Felix Nilsson",
+        "dateOfBirth": "2005-06-22",
+        "nationality": "SE",
+        "gender": "",
+        "weight": 76,
+        "height": 181,
+        "playerMedia": {
+          "id": 42133,
+          "mediaString": "image|ramses_sports|player_portrait_1de499b8-269e-4621-904a-65f9ad8bf043Felix Nilsson.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "5878": {
+        "type": "athlete",
+        "id": 5878,
+        "firstName": "Axel",
+        "lastName": "Rindell",
+        "jerseyNumber": 61,
+        "position": "D",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qbU-6Us5E36h0",
+        "fullName": "Axel Rindell",
+        "dateOfBirth": "2000-04-23",
+        "nationality": "FI",
+        "gender": "male",
+        "weight": 83,
+        "height": 183,
+        "playerMedia": {
+          "id": 42746,
+          "mediaString": "image|ramses_sports|player_portrait_9a1c890f-c45f-4a6c-90d1-9f0f63953113Axel Rindell.jpg",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6111": {
+        "type": "athlete",
+        "id": 6111,
+        "firstName": "Frédéric",
+        "lastName": "Allard",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qcz-3ubmRZkio",
+        "fullName": "Frédéric Allard",
+        "dateOfBirth": "1997-12-27",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 83,
+        "height": 185,
+        "playerMedia": {
+          "id": 40914,
+          "mediaString": "image|ramses_sports|player_portrait_83221b66-923f-4137-9934-564e047c85aaFrederic Allard.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6113": {
+        "type": "athlete",
+        "id": 6113,
+        "firstName": "Janne",
+        "lastName": "Kuokkanen",
+        "jerseyNumber": 22,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qcw-3QbWrnwAD",
+        "fullName": "Janne Kuokkanen",
+        "dateOfBirth": "1998-05-25",
+        "nationality": "FI",
+        "gender": "male",
+        "weight": 88,
+        "height": 185,
+        "playerMedia": {
+          "id": 42465,
+          "mediaString": "image|ramses_sports|player_portrait_d8cada17-2d0e-4ed6-810f-4e47e33bec61Janne Kuokkanen.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6119": {
+        "type": "athlete",
+        "id": 6119,
+        "firstName": "Lauri",
+        "lastName": "Pajuniemi",
+        "jerseyNumber": 48,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qcz-B2ewQPKyG",
+        "fullName": "Lauri Pajuniemi",
+        "dateOfBirth": "1999-09-12",
+        "nationality": "FI",
+        "gender": "male",
+        "weight": 83,
+        "height": 182,
+        "playerMedia": {
+          "id": 42467,
+          "mediaString": "image|ramses_sports|player_portrait_4791b202-0b86-4958-8647-4b1419ff9399Lauri Pajuniemi.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6153": {
+        "type": "athlete",
+        "id": 6153,
+        "firstName": "Eskild",
+        "lastName": "Bakke Olsen",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qd1-1JVJz0ku7",
+        "fullName": "Eskild Bakke Olsen",
+        "dateOfBirth": "2002-03-19",
+        "nationality": "NO",
+        "gender": "male",
+        "weight": 84,
+        "height": 184,
+        "playerMedia": {
+          "id": 40410,
+          "mediaString": "image|ramses_sports|player_portrait_83e8e19b-fcc2-4c53-871c-965c708a9bcbEskildBakkeOlsen500x600.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6433": {
+        "type": "athlete",
+        "id": 6433,
+        "firstName": "Arttu",
+        "lastName": "Ruotsalainen",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qcw-3QbUIyuRn",
+        "fullName": "Arttu Ruotsalainen",
+        "dateOfBirth": "1997-10-29",
+        "nationality": "FI",
+        "gender": "",
+        "weight": 85,
+        "height": 175,
+        "playerMedia": {
+          "id": 40775,
+          "mediaString": "image|ramses_sports|player_portrait_5efe6074-0a00-4fa9-b9d2-b89dd1347133Arttu Ruotasalainen.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6441": {
+        "type": "athlete",
+        "id": 6441,
+        "firstName": "Markus",
+        "lastName": "Nurmi",
+        "jerseyNumber": 51,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "qee-2LDtSq1Pe",
+        "fullName": "Markus Nurmi",
+        "dateOfBirth": "1998-06-29",
+        "nationality": "FI",
+        "gender": "male",
+        "weight": 95,
+        "height": 195,
+        "playerMedia": {
+          "id": 42520,
+          "mediaString": "image|ramses_sports|player_portrait_4be421cf-3d93-42e0-9ca1-d6cea028229151 Markus Nurmi 2.jpg",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6442": {
+        "type": "athlete",
+        "id": 6442,
+        "firstName": "Brian",
+        "lastName": "O'Neill",
+        "jerseyNumber": 91,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qee-2LDtJosXS",
+        "fullName": "Brian O'Neill",
+        "dateOfBirth": "1988-06-01",
+        "nationality": "US",
+        "gender": "male",
+        "weight": 78,
+        "height": 175,
+        "playerMedia": {
+          "id": 42526,
+          "mediaString": "image|ramses_sports|player_portrait_3bdf103c-029a-4dfc-902d-cd94016ac66991 Brian ONeill 2.jpg",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6453": {
+        "type": "athlete",
+        "id": 6453,
+        "firstName": "Patrik",
+        "lastName": "Puistola",
+        "jerseyNumber": 21,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "qee-2LE2Dynti",
+        "fullName": "Patrik Puistola",
+        "dateOfBirth": "2001-01-11",
+        "nationality": "FI",
+        "gender": "male",
+        "weight": 183,
+        "height": 82,
+        "playerMedia": {
+          "id": 42538,
+          "mediaString": "image|ramses_sports|player_portrait_05be05f8-7182-485f-8b15-9465be9c2d89Patrik Puistola.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6598": {
+        "type": "athlete",
+        "id": 6598,
+        "firstName": "Ivar",
+        "lastName": "Stenberg",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "qbQ-Ak6TSzObk",
+        "fullName": "Ivar Stenberg",
+        "dateOfBirth": "2007-09-30",
+        "nationality": "SE",
+        "gender": "",
+        "weight": 67,
+        "height": 173,
+        "playerMedia": {
+          "id": 40774,
+          "mediaString": "image|ramses_sports|player_portrait_6eb07543-0acb-4452-90dc-e40be394411eIvar Stenberg.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6621": {
+        "type": "athlete",
+        "id": 6621,
+        "firstName": "Jonathan",
+        "lastName": "Ang",
+        "jerseyNumber": 27,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "anqcbbk7f5",
+        "fullName": "Jonathan Ang",
+        "dateOfBirth": "1998-01-31",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 75,
+        "height": 181,
+        "playerMedia": {
+          "id": 42392,
+          "mediaString": "image|ramses_sports|player_portrait_34864a4f-ae5d-425a-99fc-ffca5e314b5927jonathanang.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6736": {
+        "type": "athlete",
+        "id": 6736,
+        "firstName": "Lukas",
+        "lastName": "Rousek",
+        "jerseyNumber": 70,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "x6lnqj05b0",
+        "fullName": "Lukas Rousek",
+        "dateOfBirth": "1999-04-20",
+        "nationality": "CZ",
+        "gender": "male",
+        "weight": 91,
+        "height": 180,
+        "playerMedia": {
+          "id": 42403,
+          "mediaString": "image|ramses_sports|player_portrait_3eda1c48-a3c6-4759-87e0-d0d8d2287c7e70lukasrousek.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6752": {
+        "type": "athlete",
+        "id": 6752,
+        "firstName": "Reid",
+        "lastName": "Gardiner",
+        "jerseyNumber": 89,
+        "position": "F",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "irr1h04arr",
+        "fullName": "Reid Gardiner",
+        "dateOfBirth": "1996-01-19",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 86,
+        "height": 180,
+        "playerMedia": {
+          "id": 40994,
+          "mediaString": "image|ramses_sports|player_portrait_6c7801ef-8677-4756-b521-8aae0c96e0c5Reid Gardiner.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6754": {
+        "type": "athlete",
+        "id": 6754,
+        "firstName": "Luke",
+        "lastName": "Philp",
+        "shoots": "R",
+        "epUrl": "",
+        "uuid": "f5vnve2wi9",
+        "fullName": "Luke Philp",
+        "dateOfBirth": "1995-11-06",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 82,
+        "height": 178,
+        "playerMedia": {
+          "id": 40878,
+          "mediaString": "image|ramses_sports|player_portrait_88958843-92e0-448f-8527-dfc6e564f4f9Luke Philp.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6755": {
+        "type": "athlete",
+        "id": 6755,
+        "firstName": "Charles",
+        "lastName": "Hudon",
+        "jerseyNumber": 55,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "cym9k17su6",
+        "fullName": "Charles Hudon",
+        "dateOfBirth": "1994-06-23",
+        "nationality": "CA",
+        "gender": "male",
+        "weight": 86,
+        "height": 179,
+        "playerMedia": {
+          "id": 42834,
+          "mediaString": "image|ramses_sports|player_portrait_1244d56b-06e8-404f-b994-3a800608da03Hudon.jpg",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6758": {
+        "type": "athlete",
+        "id": 6758,
+        "firstName": "Kieffer",
+        "lastName": "Bellows",
+        "jerseyNumber": 81,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "rd3vuvj8bf",
+        "fullName": "Kieffer Bellows",
+        "dateOfBirth": "1998-06-10",
+        "nationality": "US",
+        "gender": "male",
+        "weight": 88,
+        "height": 185,
+        "playerMedia": {
+          "id": 40811,
+          "mediaString": "image|ramses_sports|player_portrait_d46e6fe9-eed8-4582-96ec-d78f424d02c6Kieffer Bellows.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6760": {
+        "type": "athlete",
+        "id": 6760,
+        "firstName": "Joe",
+        "lastName": "Snively",
+        "jerseyNumber": 7,
+        "position": "F",
+        "shoots": "L",
+        "epUrl": "",
+        "uuid": "aivy90beh7",
+        "fullName": "Joe Snively",
+        "dateOfBirth": "1996-01-01",
+        "nationality": "US",
+        "gender": "male",
+        "weight": 82,
+        "height": 175,
+        "playerMedia": {
+          "id": 42849,
+          "mediaString": "image|ramses_sports|player_portrait_9f278c89-8d5c-4a68-9076-7cdc969027afSnively.jpg",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      },
+      "6850": {
+        "type": "athlete",
+        "id": 6850,
+        "firstName": "Brogan",
+        "lastName": "Rafferty",
+        "jerseyNumber": 11,
+        "position": "D",
+        "shoots": "-",
+        "epUrl": "",
+        "uuid": "idsgujrv67",
+        "fullName": "Brogan Rafferty",
+        "dateOfBirth": "1995-05-28",
+        "nationality": "US",
+        "gender": "male",
+        "weight": 88,
+        "height": 183,
+        "playerMedia": {
+          "id": 42409,
+          "mediaString": "image|ramses_sports|player_portrait_51254d0f-158e-4046-820a-b294a95140c6Rityta 1 kopiera 6.png",
+          "type": "portrait",
+          "sortOrder": 0
+        }
+      }
+    }
+  }
+]

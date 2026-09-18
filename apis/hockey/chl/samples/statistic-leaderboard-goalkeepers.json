@@ -1,0 +1,1251 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Array.Group",
+  "data": [
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Saves",
+      "shortName": "SVS",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "4d1958111acbbad0e8e36138",
+          "externalId": "445611",
+          "firstName": "Tomáš",
+          "lastName": "Fučík",
+          "number": 33,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "4d1958111acbbad0e8e36138",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Tomáš",
+              "lastName": "Fučík"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-4d1958111acbbad0e8e36138.json"
+          },
+          "nationality": {
+            "name": "Poland",
+            "code": "pol"
+          },
+          "rank": 613,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 104,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 90.43,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 3.73,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 0,
+                "description": "Shutouts"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "a834198f57003fefc78152e6",
+            "externalId": "78",
+            "name": "GKS Tychy",
+            "shortName": "TYC",
+            "country": {
+              "name": "Poland",
+              "code": "pol"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/a834198f57003fefc78152e6/gks-tychy",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "9d5107ded44a2b8748819ffc",
+          "externalId": "446084",
+          "firstName": "Janne",
+          "lastName": "Juvonen",
+          "number": 30,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "9d5107ded44a2b8748819ffc",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Janne",
+              "lastName": "Juvonen"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-9d5107ded44a2b8748819ffc.json"
+          },
+          "nationality": {
+            "name": "Finland",
+            "code": "fin"
+          },
+          "rank": 617,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 71,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 89.87,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 2.64,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 0,
+                "description": "Shutouts"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "104c3b90fcb6da8e653c05eb",
+            "externalId": "12",
+            "name": "Kölner Haie",
+            "shortName": "KOL",
+            "country": {
+              "name": "Germany",
+              "code": "ger"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "789bf8b81b66c09bd33dd039",
+          "externalId": "445911",
+          "firstName": "Theo",
+          "lastName": "R. de Vries",
+          "number": 70,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "789bf8b81b66c09bd33dd039",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Theo",
+              "lastName": "R. de Vries"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-789bf8b81b66c09bd33dd039.json"
+          },
+          "nationality": {
+            "name": "Norway",
+            "code": "nor"
+          },
+          "rank": 614,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 63,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 90,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 2.35,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 0,
+                "description": "Shutouts"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "e5e5ff0d908f9cc719344e3e",
+            "externalId": "52",
+            "name": "Storhamar Hamar",
+            "shortName": "STO",
+            "country": {
+              "name": "Norway",
+              "code": "nor"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/e5e5ff0d908f9cc719344e3e/storhamar-hamar",
+              "isWeb": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Save %",
+      "shortName": "SVS%",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "027139b94ebde2c8c973c5ab",
+          "externalId": "3970",
+          "firstName": "Nick",
+          "lastName": "Malík",
+          "number": 31,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "027139b94ebde2c8c973c5ab",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Nick",
+              "lastName": "Malík"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-027139b94ebde2c8c973c5ab.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 591,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 15,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "77148013ae31c768167a5d28",
+            "externalId": "64",
+            "name": "HC Pilsen",
+            "shortName": "PLZ",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a41feb81c5a261265c321745",
+          "externalId": "2174",
+          "firstName": "Roman",
+          "lastName": "Will",
+          "number": 35,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a41feb81c5a261265c321745",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Roman",
+              "lastName": "Will"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a41feb81c5a261265c321745.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 592,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 32,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "3e2b15fb0e41329efc1f6237",
+            "externalId": "5",
+            "name": "Dynamo Pardubice",
+            "shortName": "PAR",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "5bde9b6196fe22f5f8a280ae",
+          "externalId": "271",
+          "firstName": "Lars",
+          "lastName": "Johansson",
+          "number": 1,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "5bde9b6196fe22f5f8a280ae",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Lars",
+              "lastName": "Johansson"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-5bde9b6196fe22f5f8a280ae.json"
+          },
+          "nationality": {
+            "name": "Sweden",
+            "code": "swe"
+          },
+          "rank": 593,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 30,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 96.77,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0.98,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 0,
+                "description": "Shutouts"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "ba55abe823bed83d7c12e7b3",
+            "externalId": "31",
+            "name": "Frölunda Gothenburg",
+            "shortName": "FHC",
+            "country": {
+              "name": "Sweden",
+              "code": "swe"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+              "isWeb": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Goals Against Avg.",
+      "shortName": "GAA",
+      "direction": "asc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "027139b94ebde2c8c973c5ab",
+          "externalId": "3970",
+          "firstName": "Nick",
+          "lastName": "Malík",
+          "number": 31,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "027139b94ebde2c8c973c5ab",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Nick",
+              "lastName": "Malík"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-027139b94ebde2c8c973c5ab.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 591,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 15,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "77148013ae31c768167a5d28",
+            "externalId": "64",
+            "name": "HC Pilsen",
+            "shortName": "PLZ",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a41feb81c5a261265c321745",
+          "externalId": "2174",
+          "firstName": "Roman",
+          "lastName": "Will",
+          "number": 35,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a41feb81c5a261265c321745",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Roman",
+              "lastName": "Will"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a41feb81c5a261265c321745.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 592,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 32,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "3e2b15fb0e41329efc1f6237",
+            "externalId": "5",
+            "name": "Dynamo Pardubice",
+            "shortName": "PAR",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "5bde9b6196fe22f5f8a280ae",
+          "externalId": "271",
+          "firstName": "Lars",
+          "lastName": "Johansson",
+          "number": 1,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "5bde9b6196fe22f5f8a280ae",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Lars",
+              "lastName": "Johansson"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-5bde9b6196fe22f5f8a280ae.json"
+          },
+          "nationality": {
+            "name": "Sweden",
+            "code": "swe"
+          },
+          "rank": 593,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 30,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 96.77,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0.98,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 0,
+                "description": "Shutouts"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "ba55abe823bed83d7c12e7b3",
+            "externalId": "31",
+            "name": "Frölunda Gothenburg",
+            "shortName": "FHC",
+            "country": {
+              "name": "Sweden",
+              "code": "swe"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/ba55abe823bed83d7c12e7b3/frolunda-gothenburg",
+              "isWeb": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "Corebine.Core.Type.Group",
+      "name": "Shutouts",
+      "shortName": "SO",
+      "direction": "desc",
+      "items": [
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "027139b94ebde2c8c973c5ab",
+          "externalId": "3970",
+          "firstName": "Nick",
+          "lastName": "Malík",
+          "number": 31,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "027139b94ebde2c8c973c5ab",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Nick",
+              "lastName": "Malík"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-027139b94ebde2c8c973c5ab.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 591,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 15,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "77148013ae31c768167a5d28",
+            "externalId": "64",
+            "name": "HC Pilsen",
+            "shortName": "PLZ",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/77148013ae31c768167a5d28/hc-pilsen",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "a41feb81c5a261265c321745",
+          "externalId": "2174",
+          "firstName": "Roman",
+          "lastName": "Will",
+          "number": 35,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "a41feb81c5a261265c321745",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Roman",
+              "lastName": "Will"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-a41feb81c5a261265c321745.json"
+          },
+          "nationality": {
+            "name": "Czechia",
+            "code": "cze"
+          },
+          "rank": 592,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 32,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 100,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 0,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "3e2b15fb0e41329efc1f6237",
+            "externalId": "5",
+            "name": "Dynamo Pardubice",
+            "shortName": "PAR",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+              "isWeb": false
+            }
+          }
+        },
+        {
+          "_type": "Corebine.Core.Sport.Player",
+          "_entityId": "0a9bd4ebe416c92a2aa57df7",
+          "externalId": "446199",
+          "firstName": "Malcolm-Jamaal",
+          "lastName": "Subban",
+          "number": 32,
+          "source": {
+            "_type": "Corebine.Core.Feed.Sport",
+            "feedType": "player",
+            "competition": {
+              "_type": "Corebine.Core.Sport.Competition",
+              "_entityId": "21ec9dad81abe2e0240460d0",
+              "name": "Champions Hockey League"
+            },
+            "person": {
+              "_entityId": "0a9bd4ebe416c92a2aa57df7",
+              "_type": "Corebine.Core.Sport.Player",
+              "firstName": "Malcolm-Jamaal",
+              "lastName": "Subban"
+            },
+            "query": "player-21ec9dad81abe2e0240460d0-0a9bd4ebe416c92a2aa57df7.json"
+          },
+          "nationality": {
+            "name": "Canada",
+            "code": "can"
+          },
+          "rank": 605,
+          "position": {
+            "_type": "Corebine.Core.Sport.Athlete.Position",
+            "name": "Goalkeeper",
+            "shortName": "GK",
+            "category": "Goalkeeper",
+            "order": 3
+          },
+          "stats": {
+            "_type": "Corebine.Core.Sport.Athlete.Stats",
+            "properties": [
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Games Played",
+                "shortName": "GP",
+                "value": 0,
+                "description": "Games Played"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shots On Goal",
+                "shortName": "SOG",
+                "value": 0,
+                "description": "Shots"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Saves",
+                "shortName": "SVS",
+                "value": 37,
+                "description": "Saves"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Save %",
+                "shortName": "SVS%",
+                "value": 92.5,
+                "units": "percents",
+                "description": "Save"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Number",
+                "name": "Goals Against Avg.",
+                "shortName": "GAA",
+                "value": 1.52,
+                "description": "GAA"
+              },
+              {
+                "_type": "Corebine.Core.Type.Property.Integer",
+                "name": "Shutouts",
+                "shortName": "SO",
+                "value": 1,
+                "description": "Shutout"
+              }
+            ]
+          },
+          "team": {
+            "_type": "Corebine.Core.Sport.Team",
+            "_entityId": "3e2b15fb0e41329efc1f6237",
+            "externalId": "5",
+            "name": "Dynamo Pardubice",
+            "shortName": "PAR",
+            "country": {
+              "name": "Czechia",
+              "code": "cze"
+            },
+            "link": {
+              "_type": "Corebine.Core.Type.Link.Internal",
+              "pageEntityId": "1",
+              "url": "/teams/3e2b15fb0e41329efc1f6237/dynamo-pardubice",
+              "isWeb": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "_version": "10 Dec 2024"
+}

@@ -1,0 +1,660 @@
+{
+    "id": 2025020444,
+    "season": 20252026,
+    "gameType": 2,
+    "limitedScoring": false,
+    "gameDate": "2025-12-06",
+    "venue": {
+        "default": "Scotiabank Arena"
+    },
+    "venueLocation": {
+        "default": "Toronto"
+    },
+    "startTimeUTC": "2025-12-07T00:00:00Z",
+    "easternUTCOffset": "-05:00",
+    "venueUTCOffset": "-05:00",
+    "venueTimezone": "America/Toronto",
+    "periodDescriptor": {
+        "number": 5,
+        "periodType": "SO",
+        "maxRegulationPeriods": 3
+    },
+    "tvBroadcasts": [
+        {
+            "id": 282,
+            "market": "N",
+            "countryCode": "CA",
+            "network": "SN",
+            "sequenceNumber": 21
+        },
+        {
+            "id": 4,
+            "market": "N",
+            "countryCode": "CA",
+            "network": "CBC",
+            "sequenceNumber": 101
+        },
+        {
+            "id": 281,
+            "market": "N",
+            "countryCode": "CA",
+            "network": "TVAS",
+            "sequenceNumber": 120
+        }
+    ],
+    "gameState": "OFF",
+    "gameScheduleState": "OK",
+    "awayTeam": {
+        "id": 8,
+        "commonName": {
+            "default": "Canadiens"
+        },
+        "abbrev": "MTL",
+        "placeName": {
+            "default": "Montr\u00e9al"
+        },
+        "placeNameWithPreposition": {
+            "default": "Montr\u00e9al",
+            "fr": "de Montr\u00e9al"
+        },
+        "score": 2,
+        "sog": 34,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg"
+    },
+    "homeTeam": {
+        "id": 10,
+        "commonName": {
+            "default": "Maple Leafs"
+        },
+        "abbrev": "TOR",
+        "placeName": {
+            "default": "Toronto"
+        },
+        "placeNameWithPreposition": {
+            "default": "Toronto",
+            "fr": "de Toronto"
+        },
+        "score": 1,
+        "sog": 23,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+        "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_dark.svg"
+    },
+    "shootoutInUse": true,
+    "maxPeriods": 5,
+    "regPeriods": 3,
+    "otInUse": true,
+    "tiesInUse": false,
+    "summary": {
+        "scoring": [
+            {
+                "periodDescriptor": {
+                    "number": 1,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": []
+            },
+            {
+                "periodDescriptor": {
+                    "number": 2,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": [
+                    {
+                        "situationCode": "1541",
+                        "eventId": 354,
+                        "strength": "pp",
+                        "playerId": 8481540,
+                        "firstName": {
+                            "default": "Cole"
+                        },
+                        "lastName": {
+                            "default": "Caufield"
+                        },
+                        "name": {
+                            "default": "C. Caufield"
+                        },
+                        "teamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481540.png",
+                        "highlightClipSharingUrl": "https://nhl.com/video/mtl-tor-caufield-scores-goal-against-dennis-hildeby-6386139109112",
+                        "highlightClipSharingUrlFr": "https://nhl.com/fr/video/mtl-tor-caufield-marque-un-but-contre-dennis-hildeby-6386136962112",
+                        "highlightClip": 6386139109112,
+                        "highlightClipFr": 6386136962112,
+                        "discreteClip": 6386137064112,
+                        "discreteClipFr": 6386139206112,
+                        "goalsToDate": 15,
+                        "awayScore": 1,
+                        "homeScore": 0,
+                        "leadingTeamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "timeInPeriod": "08:25",
+                        "shotType": "wrist",
+                        "goalModifier": "none",
+                        "assists": [
+                            {
+                                "playerId": 8483515,
+                                "firstName": {
+                                    "default": "Juraj"
+                                },
+                                "lastName": {
+                                    "default": "Slafkovsk\u00fd"
+                                },
+                                "name": {
+                                    "default": "J. Slafkovsk\u00fd"
+                                },
+                                "assistsToDate": 7,
+                                "sweaterNumber": 20
+                            },
+                            {
+                                "playerId": 8484984,
+                                "firstName": {
+                                    "default": "Ivan"
+                                },
+                                "lastName": {
+                                    "default": "Demidov"
+                                },
+                                "name": {
+                                    "default": "I. Demidov"
+                                },
+                                "assistsToDate": 15,
+                                "sweaterNumber": 93
+                            }
+                        ],
+                        "pptReplayUrl": "https://wsr.nhle.com/sprites/20252026/2025020444/ev354.json",
+                        "homeTeamDefendingSide": "left",
+                        "isHome": false
+                    }
+                ]
+            },
+            {
+                "periodDescriptor": {
+                    "number": 3,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": [
+                    {
+                        "situationCode": "1541",
+                        "eventId": 976,
+                        "strength": "sh",
+                        "playerId": 8476872,
+                        "firstName": {
+                            "default": "Scott"
+                        },
+                        "lastName": {
+                            "default": "Laughton"
+                        },
+                        "name": {
+                            "default": "S. Laughton"
+                        },
+                        "teamAbbrev": {
+                            "default": "TOR"
+                        },
+                        "headshot": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8476872.png",
+                        "highlightClipSharingUrl": "https://nhl.com/video/mtl-tor-laughton-scores-shg-against-jakub-dobes-6386140679112",
+                        "highlightClipSharingUrlFr": "https://nhl.com/fr/video/mtl-tor-laughton-marque-un-but-en-i-n-contre-jakub-dobes-6386139193112",
+                        "highlightClip": 6386140679112,
+                        "highlightClipFr": 6386139193112,
+                        "discreteClip": 6386141448112,
+                        "discreteClipFr": 6386140071112,
+                        "goalsToDate": 3,
+                        "awayScore": 1,
+                        "homeScore": 1,
+                        "timeInPeriod": "10:28",
+                        "shotType": "slap",
+                        "goalModifier": "none",
+                        "assists": [
+                            {
+                                "playerId": 8478462,
+                                "firstName": {
+                                    "default": "Nicolas"
+                                },
+                                "lastName": {
+                                    "default": "Roy"
+                                },
+                                "name": {
+                                    "default": "N. Roy"
+                                },
+                                "assistsToDate": 8,
+                                "sweaterNumber": 55
+                            }
+                        ],
+                        "pptReplayUrl": "https://wsr.nhle.com/sprites/20252026/2025020444/ev976.json",
+                        "homeTeamDefendingSide": "right",
+                        "isHome": true
+                    }
+                ]
+            },
+            {
+                "periodDescriptor": {
+                    "number": 4,
+                    "periodType": "OT",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": []
+            },
+            {
+                "periodDescriptor": {
+                    "number": 5,
+                    "periodType": "SO",
+                    "maxRegulationPeriods": 3
+                },
+                "goals": [
+                    {
+                        "situationCode": "0101",
+                        "eventId": 360,
+                        "strength": "ev",
+                        "playerId": 8480074,
+                        "firstName": {
+                            "default": "Alexandre"
+                        },
+                        "lastName": {
+                            "default": "Texier"
+                        },
+                        "name": {
+                            "default": "A. Texier"
+                        },
+                        "teamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8480074.png",
+                        "discreteClip": 6386147059112,
+                        "discreteClipFr": 6386148219112,
+                        "awayScore": 2,
+                        "homeScore": 1,
+                        "leadingTeamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "timeInPeriod": "00:00",
+                        "shotType": "backhand",
+                        "goalModifier": "none",
+                        "assists": [],
+                        "homeTeamDefendingSide": "right",
+                        "isHome": false
+                    }
+                ]
+            }
+        ],
+        "shootout": {
+            "liveScore": {
+                "home": 1,
+                "away": 2
+            },
+            "events": [
+                {
+                    "sequence": 1,
+                    "playerId": 8477939,
+                    "teamAbbrev": {
+                        "default": "TOR"
+                    },
+                    "firstName": {
+                        "default": "William"
+                    },
+                    "lastName": {
+                        "default": "Nylander"
+                    },
+                    "shotType": "wrist",
+                    "result": "save",
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8477939.png",
+                    "gameWinner": false,
+                    "homeScore": 0,
+                    "awayScore": 0
+                },
+                {
+                    "sequence": 2,
+                    "playerId": 8481540,
+                    "teamAbbrev": {
+                        "default": "MTL"
+                    },
+                    "firstName": {
+                        "default": "Cole"
+                    },
+                    "lastName": {
+                        "default": "Caufield"
+                    },
+                    "shotType": "wrist",
+                    "result": "goal",
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481540.png",
+                    "gameWinner": false,
+                    "homeScore": 0,
+                    "awayScore": 1
+                },
+                {
+                    "sequence": 3,
+                    "playerId": 8479318,
+                    "teamAbbrev": {
+                        "default": "TOR"
+                    },
+                    "firstName": {
+                        "default": "Auston"
+                    },
+                    "lastName": {
+                        "default": "Matthews"
+                    },
+                    "shotType": "backhand",
+                    "result": "goal",
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8479318.png",
+                    "gameWinner": false,
+                    "homeScore": 1,
+                    "awayScore": 1
+                },
+                {
+                    "sequence": 4,
+                    "playerId": 8480074,
+                    "teamAbbrev": {
+                        "default": "MTL"
+                    },
+                    "firstName": {
+                        "default": "Alexandre"
+                    },
+                    "lastName": {
+                        "default": "Texier"
+                    },
+                    "shotType": "backhand",
+                    "result": "goal",
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8480074.png",
+                    "gameWinner": true,
+                    "discreteClip": 6386147059112,
+                    "discreteClipFr": 6386148219112,
+                    "homeScore": 1,
+                    "awayScore": 2
+                },
+                {
+                    "sequence": 5,
+                    "playerId": 8475166,
+                    "teamAbbrev": {
+                        "default": "TOR"
+                    },
+                    "firstName": {
+                        "default": "John"
+                    },
+                    "lastName": {
+                        "default": "Tavares"
+                    },
+                    "shotType": "backhand",
+                    "result": "save",
+                    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8475166.png",
+                    "gameWinner": false,
+                    "homeScore": 1,
+                    "awayScore": 2
+                }
+            ],
+            "fullVideoId": {
+                "default": 6386142575112
+            },
+            "fullShootoutSharingUrl": {
+                "default": "https://nhl.com/video/canadiens-win-in-shootout-6386142575112"
+            }
+        },
+        "threeStars": [
+            {
+                "star": 1,
+                "playerId": 8481540,
+                "teamAbbrev": "MTL",
+                "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481540.png",
+                "name": {
+                    "default": "C. Caufield"
+                },
+                "sweaterNo": 13,
+                "position": "R",
+                "goals": 1,
+                "assists": 0,
+                "points": 1
+            },
+            {
+                "star": 2,
+                "playerId": 8483710,
+                "teamAbbrev": "TOR",
+                "headshot": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8483710.png",
+                "name": {
+                    "default": "D. Hildeby"
+                },
+                "sweaterNo": 35,
+                "position": "G",
+                "goalsAgainstAverage": 0.93,
+                "savePctg": 0.971
+            },
+            {
+                "star": 3,
+                "playerId": 8482487,
+                "teamAbbrev": "MTL",
+                "headshot": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482487.png",
+                "name": {
+                    "default": "J. Dobes"
+                },
+                "sweaterNo": 75,
+                "position": "G",
+                "goalsAgainstAverage": 0.93,
+                "savePctg": 0.957
+            }
+        ],
+        "penalties": [
+            {
+                "periodDescriptor": {
+                    "number": 1,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "penalties": [
+                    {
+                        "timeInPeriod": "06:22",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "Juraj"
+                            },
+                            "lastName": {
+                                "default": "Slafkovsk\u00fd"
+                            },
+                            "sweaterNumber": 20
+                        },
+                        "teamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "Auston"
+                            },
+                            "lastName": {
+                                "default": "Matthews"
+                            },
+                            "sweaterNumber": 34
+                        },
+                        "descKey": "hooking"
+                    },
+                    {
+                        "timeInPeriod": "10:52",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "John"
+                            },
+                            "lastName": {
+                                "default": "Tavares"
+                            },
+                            "sweaterNumber": 91
+                        },
+                        "teamAbbrev": {
+                            "default": "TOR"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "Noah"
+                            },
+                            "lastName": {
+                                "default": "Dobson"
+                            },
+                            "sweaterNumber": 53
+                        },
+                        "descKey": "high-sticking"
+                    }
+                ]
+            },
+            {
+                "periodDescriptor": {
+                    "number": 2,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "penalties": [
+                    {
+                        "timeInPeriod": "07:58",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "Troy"
+                            },
+                            "lastName": {
+                                "default": "Stecher"
+                            },
+                            "sweaterNumber": 28
+                        },
+                        "teamAbbrev": {
+                            "default": "TOR"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "Joe",
+                                "cs": "Joseph",
+                                "de": "Joseph",
+                                "es": "Joseph",
+                                "fi": "Joseph",
+                                "sk": "Joseph",
+                                "sv": "Joseph"
+                            },
+                            "lastName": {
+                                "default": "Veleno"
+                            },
+                            "sweaterNumber": 90
+                        },
+                        "descKey": "tripping"
+                    },
+                    {
+                        "timeInPeriod": "12:43",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "Noah"
+                            },
+                            "lastName": {
+                                "default": "Dobson"
+                            },
+                            "sweaterNumber": 53
+                        },
+                        "teamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "William"
+                            },
+                            "lastName": {
+                                "default": "Nylander"
+                            },
+                            "sweaterNumber": 88
+                        },
+                        "descKey": "tripping"
+                    },
+                    {
+                        "timeInPeriod": "13:54",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "John"
+                            },
+                            "lastName": {
+                                "default": "Tavares"
+                            },
+                            "sweaterNumber": 91
+                        },
+                        "teamAbbrev": {
+                            "default": "TOR"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "Mike"
+                            },
+                            "lastName": {
+                                "default": "Matheson"
+                            },
+                            "sweaterNumber": 8
+                        },
+                        "descKey": "interference"
+                    }
+                ]
+            },
+            {
+                "periodDescriptor": {
+                    "number": 3,
+                    "periodType": "REG",
+                    "maxRegulationPeriods": 3
+                },
+                "penalties": [
+                    {
+                        "timeInPeriod": "08:36",
+                        "type": "BEN",
+                        "duration": 2,
+                        "teamAbbrev": {
+                            "default": "TOR"
+                        },
+                        "descKey": "too-many-men-on-the-ice",
+                        "servedBy": {
+                            "default": "Easton Cowan"
+                        }
+                    },
+                    {
+                        "timeInPeriod": "14:33",
+                        "type": "MIN",
+                        "duration": 2,
+                        "committedByPlayer": {
+                            "firstName": {
+                                "default": "Arber"
+                            },
+                            "lastName": {
+                                "default": "Xhekaj"
+                            },
+                            "sweaterNumber": 72
+                        },
+                        "teamAbbrev": {
+                            "default": "MTL"
+                        },
+                        "drawnBy": {
+                            "firstName": {
+                                "default": "Dakota"
+                            },
+                            "lastName": {
+                                "default": "Joshua"
+                            },
+                            "sweaterNumber": 81
+                        },
+                        "descKey": "hooking"
+                    }
+                ]
+            },
+            {
+                "periodDescriptor": {
+                    "number": 4,
+                    "periodType": "OT",
+                    "maxRegulationPeriods": 3
+                },
+                "penalties": []
+            }
+        ]
+    },
+    "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+    }
+}

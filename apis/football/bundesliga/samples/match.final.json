@@ -1,0 +1,2285 @@
+{
+  "dflDatalibraryCompetitionId": "DFL-COM-000001",
+  "dflDatalibraryMatchId": "DFL-MAT-J043GZ",
+  "dflDatalibraryMatchdayId": "DFL-DAY-004CBV",
+  "dflDatalibrarySeasonId": "DFL-SEA-0001KA",
+  "environment": {
+    "lastUpdateDateTime": "2026-09-11T20:36:28.587Z",
+    "numberOfSpectators": 0,
+    "precipitation": "none",
+    "soldOut": false,
+    "temperature": 20
+  },
+  "kickOff": "2026-09-11T18:30:23+0000",
+  "liveBlogEntries": {
+    "19112300000302": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01K77",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01k77-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Junior Dina Ebimbe"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01BGM",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01bgm-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Dejan Ljubičić"
+        },
+        "score": {
+          "away": 0,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T20:51:13+0200",
+      "entryType": "sub",
+      "matchSection": "FIRST_HALF",
+      "order": 2100010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 21
+      },
+      "side": "away"
+    },
+    "19112300000364": {
+      "detail": {
+        "distanceToGoal": 10.64,
+        "penalty": false,
+        "score": {
+          "away": 1,
+          "home": 0
+        },
+        "scorer": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J019PZ",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j019pz-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Robin Gosens"
+        },
+        "xG": 0.2576
+      },
+      "entryDate": "2026-09-11T20:54:28+0200",
+      "entryType": "goal",
+      "matchSection": "FIRST_HALF",
+      "order": 2500010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 25
+      },
+      "side": "away"
+    },
+    "19112300000726": {
+      "detail": {
+        "person": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01ND9",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01nd9-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Aljoscha Kemlein"
+        },
+        "score": {
+          "away": 1,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T21:14:24+0200",
+      "entryType": "yellowCard",
+      "matchSection": "FIRST_HALF",
+      "order": 4500010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 45
+      },
+      "side": "home"
+    },
+    "19112300000801": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01GUA",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01gua-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "András Schäfer"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01ND9",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01nd9-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Aljoscha Kemlein"
+        },
+        "score": {
+          "away": 1,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T21:33:11+0200",
+      "entryType": "sub",
+      "matchSection": "HALF",
+      "order": 4503030000,
+      "playtime": {
+        "injuryTime": 3,
+        "minute": 45
+      },
+      "side": "home"
+    },
+    "19112300000802": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01TMD",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01tmd-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Marin Ljubičić"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01VYC",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01vyc-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Livan Burcu"
+        },
+        "score": {
+          "away": 1,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T21:33:16+0200",
+      "entryType": "sub",
+      "matchSection": "HALF",
+      "order": 4503040000,
+      "playtime": {
+        "injuryTime": 3,
+        "minute": 45
+      },
+      "side": "home"
+    },
+    "19112300000823": {
+      "detail": {
+        "assist": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01FO8",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01fo8-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Junior Adamu"
+        },
+        "distanceToGoal": 12.32,
+        "penalty": false,
+        "score": {
+          "away": 2,
+          "home": 0
+        },
+        "scorer": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01CXY",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01cxy-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Adil Aouchiche"
+        },
+        "shotSpeed": 98.79,
+        "xG": 0.1731
+      },
+      "entryDate": "2026-09-11T21:34:18+0200",
+      "entryType": "goal",
+      "matchSection": "SECOND_HALF",
+      "order": 4600030000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 46
+      },
+      "side": "away"
+    },
+    "19112300001120": {
+      "detail": {
+        "person": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01TMD",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01tmd-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Marin Ljubičić"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:01:51+0200",
+      "entryType": "yellowCard",
+      "matchSection": "SECOND_HALF",
+      "order": 7400010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 74
+      },
+      "side": "home"
+    },
+    "19112300001155": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002659",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002659-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Tim Skarke"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J0269J",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j0269j-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Emmanuel Latte Lath"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:04:12+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 7600010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 76
+      },
+      "side": "home"
+    },
+    "19112300001199": {
+      "detail": {
+        "person": {
+          "dflDatalibraryObjectId": "DFL-OBJ-0026TT",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0026tt-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Felix Uduokhai"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:06:51+0200",
+      "entryType": "yellowCard",
+      "matchSection": "SECOND_HALF",
+      "order": 7900010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 79
+      },
+      "side": "home"
+    },
+    "19112300001216": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-0029MG",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0029mg-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Edin Džeko"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-0001WU",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0001wu-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Kenan Karaman"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:08:03+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 8000010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 80
+      },
+      "side": "away"
+    },
+    "19112300001217": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002FVI",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002fvi-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Hee Chan Hwang"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01FO8",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01fo8-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Junior Adamu"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:08:06+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 8000020000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 80
+      },
+      "side": "away"
+    },
+    "19112300001218": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J016RQ",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j016rq-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Maximilian Wöber"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J019PZ",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j019pz-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Robin Gosens"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:08:09+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 8000030000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 80
+      },
+      "side": "away"
+    },
+    "19112300001307": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-0002DW",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0002dw-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Janik Haberer"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J017R0",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j017r0-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Michel Aebischer"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:13:17+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 8500010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 85
+      },
+      "side": "home"
+    },
+    "19112300001400": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002G4B",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002g4b-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Robert Skov"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002FVR",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002fvr-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Woo-yeong Jeong"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:19:35+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 9001010000,
+      "playtime": {
+        "injuryTime": 1,
+        "minute": 90
+      },
+      "side": "home"
+    },
+    "19112300001422": {
+      "detail": {
+        "in": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002G8X",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002g8x-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Janik Bachmann"
+        },
+        "out": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01CXY",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01cxy-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Adil Aouchiche"
+        },
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T22:21:56+0200",
+      "entryType": "sub",
+      "matchSection": "SECOND_HALF",
+      "order": 9004010000,
+      "playtime": {
+        "injuryTime": 4,
+        "minute": 90
+      },
+      "side": "away"
+    },
+    "19112300001486": {
+      "detail": {
+        "assist": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J01KAI",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01kai-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Tom Rothe"
+        },
+        "distanceToGoal": 6.91,
+        "penalty": false,
+        "score": {
+          "away": 2,
+          "home": 1
+        },
+        "scorer": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002659",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002659-dfl-clu-00000v-dfl-sea-0001ka.png",
+          "name": "Tim Skarke"
+        },
+        "xG": 0.1322
+      },
+      "entryDate": "2026-09-11T22:24:23+0200",
+      "entryType": "goal",
+      "matchSection": "SECOND_HALF",
+      "order": 9006010000,
+      "playtime": {
+        "injuryTime": 6,
+        "minute": 90
+      },
+      "side": "home"
+    },
+    "19112300001532": {
+      "detail": {
+        "person": {
+          "dflDatalibraryObjectId": "DFL-OBJ-0000X6",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0000x6-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Loris Karius"
+        },
+        "score": {
+          "away": 2,
+          "home": 1
+        }
+      },
+      "entryDate": "2026-09-11T22:27:36+0200",
+      "entryType": "yellowCard",
+      "matchSection": "SECOND_HALF",
+      "order": 9009010000,
+      "playtime": {
+        "injuryTime": 9,
+        "minute": 90
+      },
+      "side": "away"
+    },
+    "19112300001611": {
+      "detail": {
+        "assist": {
+          "dflDatalibraryObjectId": "DFL-OBJ-002FVI",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002fvi-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Hee Chan Hwang"
+        },
+        "distanceToGoal": 10.66,
+        "penalty": false,
+        "score": {
+          "away": 3,
+          "home": 1
+        },
+        "scorer": {
+          "dflDatalibraryObjectId": "DFL-OBJ-J016RQ",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j016rq-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Maximilian Wöber"
+        },
+        "xG": 0.3012
+      },
+      "entryDate": "2026-09-11T22:31:15+0200",
+      "entryType": "goal",
+      "matchSection": "SECOND_HALF",
+      "order": 9013020000,
+      "playtime": {
+        "injuryTime": 13,
+        "minute": 90
+      },
+      "side": "away"
+    },
+    "4c61a970-1fdb-4fae-9886-764a2ad33f32": {
+      "detail": {
+        "decision": "Goal",
+        "review": "Offside?",
+        "score": {
+          "away": 1,
+          "home": 0
+        },
+        "situation": "No goal"
+      },
+      "entryDate": "2026-09-11T21:35:18+0200",
+      "entryType": "videoAssistant",
+      "matchSection": "SECOND_HALF",
+      "order": 4700010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 47
+      },
+      "side": "none"
+    },
+    "7502474585846054912": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "16:9",
+        "duration": 63,
+        "headline": "Watch: Schalke 0-0 Bayern Munich - last time out",
+        "text": "Returning Schalke stood firm to bring an end to Bayern Munich's 59-match scoring streak as the Royal Blues secured their first point of 2026/27.",
+        "uploadDate": "2026-09-05T18:35:25.000Z",
+        "videoId": "upT2iIIR"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-06T23:14:11+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 10000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "away"
+    },
+    "7502474884992204800": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "16:9",
+        "duration": 58,
+        "headline": "Watch: Bayer Leverkusen 4-0 Union Berlin - last time out",
+        "text": "Union Berlin have conceded seven goals after two matchdays following their 4-0 defeat against Bayer Leverkusen.",
+        "uploadDate": "2026-09-05T16:17:14.000Z",
+        "videoId": "NGQAJlch"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-06T23:15:58+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 20000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7502476690535219200": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "16:9",
+        "duration": 123,
+        "headline": "Watch: Union Berlin 0-0 Schalke - previous meeting",
+        "text": "Union Berlin were held to a goalless draw at home to bottom club Schalke in 2022/23.",
+        "uploadDate": "2023-02-19T16:32:33.000Z",
+        "videoId": "CoylU2yp"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-06T23:22:10+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 30000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7503139157481357312": {
+      "conference": false,
+      "detail": {
+        "copyright": "Pau Barrena",
+        "headline": "Shipping goals",
+        "text": "Ahead of Matchday 3, Union have the division's most porous defence with seven goals conceded.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/GettyImages-2293651105.jpg?crop=0px,697px,2214px,1476px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-08T19:15:46+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 60000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7503140855696326656": {
+      "conference": false,
+      "detail": {
+        "copyright": "Bundesliga/Getty Images/Oliver Hardt",
+        "headline": "Better call Edin",
+        "text": "Also winless, Schalke are one of three teams yet to score alongside Borussia Mönchengladbach and Hamburg. Will Miron Muslić turn to Edin Džeko to get his team firing? The 40-year-old scored 66 goals in 112 Bundesliga appearances for Wolfsburg.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/2627_MD02_S04FCB_OH_463.jpg?crop=0px,0px,6000px,4000px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-08T19:21:22+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 70000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "away"
+    },
+    "7503541062468632576": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "16:9",
+        "duration": 207,
+        "headline": "Watch: How Schalke shut out Bayern",
+        "uploadDate": "2026-09-09T19:30:02.000Z",
+        "videoId": "cOpadhzf"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-09T21:53:01+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 100000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7503554830623834112": {
+      "conference": true,
+      "detail": {
+        "copyright": "IMAGO/Malte Ossowski/SVEN SIMON",
+        "headline": "Miron Muslić on facing Union",
+        "text": "\"In our last home game we were delighted with how we stuck to our principles and our structure from the first whistle to the last. We’ll need that intensity again on Friday evening. Union Berlin are an experienced Bundesliga team with a clear way of playing; very vertical, very direct, with a strong focus on second balls and set-pieces. But we’re very well prepared. We want to play intense football again.\"",
+        "url": "https://assets.bundesliga.com/contender/2026/8/imago1082661892h.jpg?crop=479px,216px,4972px,3317px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-09T22:46:44+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 110000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "away"
+    },
+    "7503555367633158144": {
+      "conference": true,
+      "detail": {
+        "copyright": "Pau Barrena",
+        "headline": "Mauro Lustrinelli on facing Schalke",
+        "text": "\"Schalke played the game as they would have wanted to [vs. Bayern]. They were aggressive, compact, willing to run and strong in the duels and played like that until the end. But every game is interesting, and it will be a very different game at der Alten Försterei. We know what mentality they have and we’ll be ready.\"",
+        "url": "https://assets.bundesliga.com/contender/2026/8/GettyImages-2293643478.jpg?crop=231px,158px,4146px,2760px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-09T22:49:27+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 120000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "home"
+    },
+    "7503800038678593536": {
+      "conference": false,
+      "detail": {
+        "channelsEnabled": {
+          "mobile": true,
+          "web": false
+        },
+        "embedPlatform": "monterosa",
+        "eventId": "591470c3-5756-4e07-b20e-266e6b789970",
+        "projectId": "18fcbca1-809f-40ac-9587-30488c355541"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-10T15:01:58+0200",
+      "entryType": "embed",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 130000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504225361886969856": {
+      "conference": false,
+      "detail": {
+        "embedId": "2098451281274605919",
+        "embedPlatform": "twitter"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:12:14+0200",
+      "entryType": "embed",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 140000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504225965506035712": {
+      "conference": false,
+      "detail": {
+        "headline": "Schalke subs",
+        "text": "Müller, Becker, Wöber, Ayhan, Bachmann, Dina Ebimbe, Vozar, Džeko, Hwang "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:13:54+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 175000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504226258473975808": {
+      "conference": false,
+      "detail": {
+        "headline": "Union subs",
+        "text": "Raab, Trimmel, Van den Bosch, Skarke, Haberer, Schäfer, Güther, Skov, Ljubičić  "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:15:17+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 160000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "home"
+    },
+    "7504228123471249408": {
+      "conference": false,
+      "detail": {
+        "copyright": "DFL/Getty Images/Sebastian Widmann",
+        "headline": "More on that Union team",
+        "text": "Union have made two changes following last week’s 4-0 hammering in Leverkusen, with Leopold Querfeld returning at centre-back and Woo-yeong Jeong (pictured) making his first Bundesliga start of the season. Zeno van den Bosch and Marin Ljubičić drop to the bench as a result.",
+        "url": "https://assets.bundesliga.com/contender/2026/2/2526_MD27_FCBFCU_SW_086.jpg?crop=0px,0px,5000px,3333px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:21:12+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 190000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504228959094046720": {
+      "conference": false,
+      "detail": {
+        "copyright": "Bundesliga/Getty Images/Oliver Hardt",
+        "headline": "More on that Schalke team ",
+        "text": "There are two changes for the Royal Blues as well. Captain Kenan Karaman (pictured) starts up front in place of Moussa Sylla, who is absent following the birth of his daughter. In midfield, Junior Adamu replaces Junior Dina Ebimbe.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/2627_MD02_S04FCB_OH_447.jpg?crop=0px,0px,6000px,4000px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:24:33+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 200000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504230918966476800": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 20,
+        "headline": "Watch: Fans arriving in numbers!",
+        "uploadDate": "2026-09-11T17:21:03.000Z",
+        "videoId": "84RUgwMX"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:34:15+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 195000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504231360727351296": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 11,
+        "headline": "Watch: Schalke's Gosens greets former Union team-mates",
+        "uploadDate": "2026-09-11T17:33:54.000Z",
+        "videoId": "RZAhhsHZ"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:35:59+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 210000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504234918596050944": {
+      "conference": false,
+      "detail": {
+        "copyright": "IMAGO/Matthias Koch",
+        "headline": "Must-win game for both",
+        "text": "Union drew 3-3 with Frankfurt on the opening day and lost 4-0 in Leverkusen last week, while Schalke's goalless draw with Bayern last time out was a big improvement on their 3-0 reverse in Augsburg on Matchday 1. As such, both teams have just a single point on the board going into this one.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/imago1082933258h.jpg?crop=0px,37px,4500px,2999px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T19:50:03+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 220000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "7504245190752731136": {
+      "conference": false,
+      "detail": {
+        "headline": "Peeeep!",
+        "text": "Here we go as the hosts get the ball rolling."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:31:01+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 100020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 1
+      },
+      "side": "home"
+    },
+    "7504245534727602176": {
+      "conference": false,
+      "detail": {
+        "headline": "First sight of goal",
+        "text": "Juranović floats a free-kick from the left into the box and it sits up nicely for Querfeld, whose first-time shot is blocked by Gosens."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:32:03+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 200010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 2
+      },
+      "side": "home"
+    },
+    "7504246177919926272": {
+      "conference": false,
+      "detail": {
+        "headline": "Over from Karaman",
+        "text": "Karaman latches onto a flick-on from Aouchiche and gets a shot away, which whizzes over the bar. It wouldn't have counted had it gone in, though, has the flag goes up for offside. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:34:05+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 400010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 4
+      },
+      "side": "away"
+    },
+    "7504246495508430848": {
+      "detail": {
+        "away": {
+          "value": 7
+        },
+        "headline": "Union bossing early stages",
+        "home": {
+          "value": 34
+        },
+        "matchFact": false,
+        "text": "The home side have been very much on top in terms of possession in these opening minutes. ",
+        "title": "passesTitle",
+        "type": "bar"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:36:01+0200",
+      "entryType": "stats",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 600010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 6
+      },
+      "side": "none"
+    },
+    "7504247412270039040": {
+      "conference": false,
+      "detail": {
+        "headline": "Dangerous location",
+        "text": "Latte Lath gives away a free-kick about 30-yards from goal in a central position. Aouchiche tries to curl it at goal but the ball is blocked inside a crowded box. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:39:14+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 900010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 9
+      },
+      "side": "away"
+    },
+    "7504247779930144768": {
+      "conference": false,
+      "detail": {
+        "headline": "Best chance of the game!",
+        "text": "Gosens' finds Karaman in a pocket of space deep inside the Union half. He drives forward and unleashes a fizzing shot that only just goes over. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:40:41+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 1100010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 11
+      },
+      "side": "away"
+    },
+    "7504248272450486272": {
+      "conference": false,
+      "detail": {
+        "copyright": "IMAGO/HMB Media/Uwe Koch",
+        "headline": "Juranović to be key?",
+        "text": "You get the sense already that set-pieces and pinpoint deliveries will be a feature of this game. ",
+        "url": "https://assets.bundesliga.com/contender/2026/8/imago1082939503h.jpg?crop=0px,0px,4105px,2737px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:42:08+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 1200010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 12
+      },
+      "side": "home"
+    },
+    "7504248770746384384": {
+      "conference": false,
+      "detail": {
+        "headline": "Jeong has a go",
+        "text": "A long throw into the Schalke box drops down invitingly for Jeong, whose rasping drive is blocked for a corner by Tanaka."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:44:47+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 1500010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 15
+      },
+      "side": "home"
+    },
+    "7504249020261335040": {
+      "conference": false,
+      "detail": {
+        "headline": "Rothe blocks Ljubičić's attempt",
+        "text": "A flowing Schalke attack culminates in Aouchiche finding Karaman, who lays it off to Ljubičić. He cuts inside and tries to get a shot away, only to see it blocked by Rothe."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:45:58+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 1600010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 16
+      },
+      "side": "none"
+    },
+    "7504249619551879168": {
+      "conference": false,
+      "detail": {
+        "headline": "Karaman's header over the bar",
+        "text": "Schalke win a corner on the right, and Karaman rises to meet it, but his header flies over the crossbar."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:48:41+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 1900010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 19
+      },
+      "side": "none"
+    },
+    "7504249933109657600": {
+      "conference": false,
+      "detail": {
+        "headline": "Rønnow thwarts Aouchiche",
+        "text": "Karaman finds Aouchiche with a pass out to the left. The midfield cuts inside and aims a swerving, dipping effort at goal that Rønnow does well to tip over."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:49:57+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2000010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 20
+      },
+      "side": "none"
+    },
+    "7504250507829968896": {
+      "conference": false,
+      "detail": {
+        "headline": "Early change",
+        "text": "Ljubičić is forced off, having picked up a knock a few moments ago when Rothe blocked his shot. Dina Embimbe comes on in his place. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:51:29+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2200010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 22
+      },
+      "side": "away"
+    },
+    "7504250955450286080": {
+      "detail": {
+        "away": {
+          "value": 29
+        },
+        "headline": "Royal Blues up for it",
+        "home": {
+          "value": 22
+        },
+        "matchFact": false,
+        "text": "No doubt aware of Union's physicality, Schalke are proving more than a match for their hosts in the duels so far. ",
+        "title": "tacklesWonTitle",
+        "type": "bar"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:53:29+0200",
+      "entryType": "stats",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2400010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 24
+      },
+      "side": "none"
+    },
+    "7504251597048774656": {
+      "conference": false,
+      "detail": {
+        "copyright": "Stuart Franklin",
+        "headline": "Schalke lead!",
+        "text": "El-Faouzi's cross from the right is only half-cleared by Querfeld, whose header sends the ball looping up high towards the back post. Gosens executes superb technique to volley it in across goal, in off the post!",
+        "url": "https://assets.bundesliga.com/contender/2026/8/GettyImages-2294757572.jpg?crop=6px,0px,2449px,1633px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:55:16+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2500020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 25
+      },
+      "side": "away"
+    },
+    "7504251991804084224": {
+      "conference": false,
+      "detail": {
+        "headline": "Karius denies Latte Lath",
+        "text": "Khedira picks out Latte Lath with a pass, but Karius gathers the shot comfortably."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T20:58:09+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2800010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 28
+      },
+      "side": "none"
+    },
+    "7504252696547819520": {
+      "conference": false,
+      "detail": {
+        "headline": "Not undeserved",
+        "text": "Schalke's lead is well-merited, given their 7-4 advantage in shots and 51 percent success rate in duels."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:00:57+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 3000010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 30
+      },
+      "side": "none"
+    },
+    "7504253822148018176": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 16,
+        "headline": "Rothe clears off the line!",
+        "text": "Aouchiche charges into space down the left and gets into the box, going one-on-one with Rønnow. His shot beats the goalkeeper but takes a nick off him on the way through, slowing it down enough to give Rothe time  to get back and hook the ball off the line.",
+        "uploadDate": "2026-09-11T19:38:42.000Z",
+        "videoId": "E4NO9XUP"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:04:01+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 3400010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 34
+      },
+      "side": "home"
+    },
+    "7504254223417081856": {
+      "conference": false,
+      "detail": {
+        "headline": "Rønnow to the rescue!",
+        "text": "A long throw into the Union box causes havoc in the home defence, ending with Adamu taking a close-range shot that the home goalkeeper manages to tip around the post. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:06:01+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 3600010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 36
+      },
+      "side": "home"
+    },
+    "7504254304283262976": {
+      "conference": false,
+      "detail": {
+        "headline": "Karaman wants it",
+        "text": "The Schalke captain has been involved in six of Schalke's 11 shots, taking two himself and teeing up four for his colleagues. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:07:21+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 3700010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 37
+      },
+      "side": "none"
+    },
+    "7504254781892853760": {
+      "detail": {
+        "away": {
+          "relativeValue": 1,
+          "value": 1.2083
+        },
+        "headline": "Deservedly in front",
+        "home": {
+          "relativeValue": 0,
+          "value": 0.3038
+        },
+        "matchFact": true,
+        "metric": "goalsMetricTitle",
+        "text": "The visitors are good value for their lead so far...",
+        "title": "xGoals",
+        "type": "clubProgressRanking"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:08:44+0200",
+      "entryType": "stats",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 3900010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 39
+      },
+      "side": "none"
+    },
+    "7504256455034273792": {
+      "conference": false,
+      "detail": {
+        "headline": "Rønnow deals with El-Faouzi's attempt",
+        "text": "Adamu finds El-Faouzi lurking just outside the penalty area, but his shot is comfortably saved by Rønnow."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:15:31+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "HALF",
+      "order": 4500020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 45
+      },
+      "side": "none"
+    },
+    "7504257016731271168": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 22,
+        "headline": "Gosens' muted celebrations against former team",
+        "uploadDate": "2026-09-11T19:14:49.000Z",
+        "videoId": "LNsP76ka"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:17:40+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 2500030000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 25
+      },
+      "side": "away"
+    },
+    "7504257629066100736": {
+      "conference": false,
+      "detail": {
+        "copyright": "IMAGO/KROEGER/RHR-FOTO",
+        "headline": "Half-time: Union 0-1 Schalke",
+        "text": "The away side lead at the interval and deservedly so thanks to Gosens' fine volley, which was their first Bundesliga goal of the season. The Royal Blues have looked the more dangerous of the teams going forward, with Karaman, Aouchiche and El-Faouzi in particular causing mischief. \n",
+        "url": "https://assets.bundesliga.com/contender/2026/8/imago1082942763h.jpg?crop=0px,0px,8256px,5504px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:18:52+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "HALF",
+      "order": 4503020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 3,
+        "minute": 45
+      },
+      "side": "none"
+    },
+    "7504261164373639168": {
+      "conference": false,
+      "detail": {
+        "headline": "Here we go again!",
+        "text": "Schalke get the gam back underway. Two changes at the break for Union as they bid to turn this one around. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:34:17+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 4600020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 46
+      },
+      "side": "none"
+    },
+    "7504261756802301952": {
+      "conference": false,
+      "detail": {
+        "copyright": "Stuart Franklin",
+        "headline": "Schalke double their lead!",
+        "text": "What a way to start the second half! Aouchiche emphatically smashes the ball into the net, in off the crossbar, following a neat pass from Adamu. It looks like it's offside but it's checked by VAR and it's given!",
+        "url": "https://assets.bundesliga.com/contender/2026/8/GettyImages-2294764663.jpg?crop=0px,25px,4606px,3074px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:35:21+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 4800020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 48
+      },
+      "side": "away"
+    },
+    "7504262271481151488": {
+      "detail": {
+        "headline": "It's Schalke's to lose",
+        "matchFact": true,
+        "progression": [
+          {
+            "playtime": {
+              "injuryTime": 0,
+              "minute": 1
+            },
+            "unit": "%",
+            "value": 32.8
+          },
+          {
+            "playtime": {
+              "injuryTime": 0,
+              "minute": 50
+            },
+            "unit": "%",
+            "value": 88.5
+          }
+        ],
+        "text": "Union were favourites to win this one at kick-off, but Schalke's two clinical strikes have now put them firmly in command. ",
+        "title": "winProbability",
+        "type": "clubMetricProgression"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:38:25+0200",
+      "entryType": "stats",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 5000010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 50
+      },
+      "side": "away"
+    },
+    "7504262506186014720": {
+      "conference": false,
+      "detail": {
+        "copyright": "Stuart Franklin",
+        "headline": "First goal",
+        "text": "It's a maiden Bundesliga goal for Aouchiche, who has now scored four times in his last eight league games dating back to last season.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/GettyImages-2294764631.jpg?crop=531px,413px,2805px,1873px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:39:55+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 5200010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 52
+      },
+      "side": "none"
+    },
+    "7504263480493473792": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 15,
+        "headline": "Karius frustrates Schäfer",
+        "text": "A long Union throw causes disarray in the Schalke box, culminating in Karius pawing away Schäfer's powerful drive from close range. ",
+        "uploadDate": "2026-09-11T20:02:08.000Z",
+        "videoId": "PuxwizCy"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:42:59+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 5500010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 55
+      },
+      "side": "away"
+    },
+    "7504263781841633280": {
+      "conference": false,
+      "detail": {
+        "headline": "Rothe hits the bar!",
+        "text": "A step-over from Jeong down the right sends him scampering past his marker and into space before whipping a teasing cross into the box. Rothe meets it at the back post and he should score, but his header grazes the top of the bar on its way over. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:44:12+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 5600010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 56
+      },
+      "side": "home"
+    },
+    "7504264776369831936": {
+      "conference": false,
+      "detail": {
+        "aspectRatio": "9:16",
+        "duration": 32,
+        "headline": "Break in play",
+        "text": "The referee walks to the touchline, gesturing that he needs treatment on his right calf. ",
+        "uploadDate": "2026-09-11T20:22:54.000Z",
+        "videoId": "qZAfSVlm"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:48:26+0200",
+      "entryType": "video",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 6000010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 60
+      },
+      "side": "none"
+    },
+    "7504265456560111616": {
+      "conference": false,
+      "detail": {
+        "headline": "Inopportune time",
+        "text": "Union will be feeling frustrated by this break, having been building momentum since going 2-0 down."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:51:03+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 6300010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 63
+      },
+      "side": "home"
+    },
+    "7504266916383424512": {
+      "conference": false,
+      "detail": {
+        "headline": "Back under way",
+        "text": "The ball is rolling once again. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:57:20+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 6900010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 69
+      },
+      "side": "none"
+    },
+    "7504268202189258752": {
+      "conference": false,
+      "detail": {
+        "headline": "Scrappy",
+        "text": "Union are still pushing for a way back into this game but Schalke won't give up without a fight. As such, there a lots of interruptions due to fouls at the moment. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:01:48+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 7300010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 73
+      },
+      "side": "none"
+    },
+    "7504268573632626688": {
+      "conference": false,
+      "detail": {
+        "headline": "Rothe denied by Karius",
+        "text": "Querfeld finds Juranović on the right, and although his cross doesn't reach its target it falls to Rothe, who drills a low, bouncing shot back across the face of goal. Karius is equal to the shot though, making a fine save down to his left. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:03:36+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 7500010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 75
+      },
+      "side": "none"
+    },
+    "7504269528289771520": {
+      "conference": false,
+      "detail": {
+        "headline": "Schalke can't keep the ball",
+        "text": "The Royal Blues are defending well but they're struggling to get forward right now due to Union's intensity. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:07:28+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 7800010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 78
+      },
+      "side": "away"
+    },
+    "7504269901582827520": {
+      "conference": false,
+      "detail": {
+        "headline": "Karius denies Skarke's attempt",
+        "text": "Substitute Skarke tries his luck, but Karius makes the save for Schalke."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:08:57+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8100010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 81
+      },
+      "side": "none"
+    },
+    "7504270221062963200": {
+      "conference": false,
+      "detail": {
+        "headline": "Triple change",
+        "text": "Schalke coach Miron Muslić ha recognised that the flow of the game is going against his side right now, so makes three changes in a bid to reverse the tide. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:09:56+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8200010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 82
+      },
+      "side": "away"
+    },
+    "7504270424948080640": {
+      "conference": false,
+      "detail": {
+        "headline": "Jeong's effort flies high",
+        "text": "Skarke's cross fails to find its target. Aebischer then picks out Jeong, but his shot goes well over the crossbar for Union."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:11:02+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8200020000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 82
+      },
+      "side": "none"
+    },
+    "7504270849441005568": {
+      "detail": {
+        "away": {
+          "primaryLabel": "goalAttempts_onTarget",
+          "primaryValue": 8,
+          "secondaryLabel": "goalAttempts_offTarget",
+          "secondaryValue": 8
+        },
+        "headline": "Union's shot counting climbing",
+        "home": {
+          "primaryLabel": "goalAttempts_onTarget",
+          "primaryValue": 7,
+          "secondaryLabel": "goalAttempts_offTarget",
+          "secondaryValue": 11
+        },
+        "matchFact": false,
+        "text": "The hosts have been letting fly whenever they can in the last few minutes - several of which have been blocked by last-ditch lunges.",
+        "title": "goalAttemptsTitle",
+        "type": "stackedcolumn"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:12:25+0200",
+      "entryType": "stats",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8400010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 84
+      },
+      "side": "none"
+    },
+    "7504271538359631872": {
+      "conference": false,
+      "detail": {
+        "headline": "Ljubičić rattles the post",
+        "text": "Rothe's throw-in finds its way to Ljubičić, whose shot crashes against the right-hand upright as Union Berlin search for an equalizer."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:15:40+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8700010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 87
+      },
+      "side": "none"
+    },
+    "7504272338788024320": {
+      "conference": false,
+      "detail": {
+        "headline": "Into added time",
+        "text": "We'll have an additional 12 minutes here, largely owing to the change of referee midway through this second half. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:18:40+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9000010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 90
+      },
+      "side": "none"
+    },
+    "7504273013588623360": {
+      "conference": false,
+      "detail": {
+        "headline": "One-way traffic",
+        "text": "Union are camped out deep inside the Schalke half, pinning their visitors back as they seek a late route back into this game. "
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:21:15+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9003010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 3,
+        "minute": 90
+      },
+      "side": "home"
+    },
+    "7504274042786938880": {
+      "conference": false,
+      "detail": {
+        "headline": "Union's pressure pays off!",
+        "text": "Querfeld pings a diagonal ball into the box, finding Rothe, who heads it back across goal. Skarke reacts first and prods it over the line from close range!"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:24:54+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9008010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 8,
+        "minute": 90
+      },
+      "side": "home"
+    },
+    "7504275226738294784": {
+      "conference": false,
+      "detail": {
+        "headline": "Rothe heads over!",
+        "text": "Another chance for Union, but Rothe can't keep his header down!"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:30:08+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9010010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 10,
+        "minute": 90
+      },
+      "side": "home"
+    },
+    "7504276053985067008": {
+      "conference": false,
+      "detail": {
+        "headline": "Wöber seals it!",
+        "text": "The Schalke substitute makes sure of the points for the Royal Blues, sliding in late on to finish a swift counterattack!"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:33:00+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9013010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 13,
+        "minute": 90
+      },
+      "side": "away"
+    },
+    "857d43f9-2fb0-486d-85b1-2e1d58213617": {
+      "detail": {
+        "decision": "Goal",
+        "review": "Previous foul?",
+        "score": {
+          "away": 2,
+          "home": 1
+        },
+        "situation": "Goal"
+      },
+      "entryDate": "2026-09-11T22:25:14+0200",
+      "entryType": "videoAssistant",
+      "matchSection": "SECOND_HALF",
+      "order": 9007010000,
+      "playtime": {
+        "injuryTime": 7,
+        "minute": 90
+      },
+      "side": "none"
+    },
+    "a5701a35-5ee2-40b1-9a35-1a92929e966b": {
+      "conference": false,
+      "detail": {
+        "headline": "Union recovering the ball quickly",
+        "text": "The hosts only need 8.4 seconds to regain possession, which is significantly quicker than Schalke (11.9 seconds)."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:10:49+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "FIRST_HALF",
+      "order": 4100010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 41
+      },
+      "side": "home"
+    },
+    "c039e47f-6109-463b-9b22-f885ef000413": {
+      "conference": false,
+      "detail": {
+        "copyright": "IMAGO/DeFodi.de",
+        "headline": "Wienefeld's debut",
+        "text": "Jarno Wienefeld is the fourth official who is stepping in for Timo Gerach. He has officiated 13 matches in Bundesliga 2 so far.",
+        "url": "https://assets.bundesliga.com/contender/2026/8/imago1082950076h.jpg?crop=0px,0px,4692px,3130px"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T21:54:18+0200",
+      "entryType": "image",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 6800010000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 68
+      },
+      "side": "none"
+    },
+    "end_firstHalf": {
+      "detail": {
+        "score": {
+          "away": 1,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T21:17:37+0200",
+      "entryType": "end_firstHalf",
+      "matchSection": "FIRST_HALF",
+      "order": 4503010000,
+      "playtime": {
+        "injuryTime": 3,
+        "minute": 45
+      },
+      "side": "none"
+    },
+    "end_secondHalf": {
+      "detail": {
+        "score": {
+          "away": 3,
+          "home": 1
+        }
+      },
+      "entryDate": "2026-09-11T22:32:00+0200",
+      "entryType": "end_secondHalf",
+      "matchSection": "SECOND_HALF",
+      "order": 9014010000,
+      "playtime": {
+        "injuryTime": 14,
+        "minute": 90
+      },
+      "side": "none"
+    },
+    "finalWhistle": {
+      "detail": {
+        "score": {
+          "away": 3,
+          "home": 1
+        }
+      },
+      "entryDate": "2026-09-11T22:32:00+0200",
+      "entryType": "finalWhistle",
+      "matchSection": "FINAL_WHISTLE",
+      "order": 9014020000,
+      "playtime": {
+        "injuryTime": 14,
+        "minute": 90
+      },
+      "side": "none"
+    },
+    "intro": {
+      "conference": false,
+      "detail": {
+        "headline": "Hello and welcome!",
+        "text": "Welcome along and thanks for joining us for build-up and live coverage of this Matchday 3 fixture between Union Berlin and Schalke."
+      },
+      "enableHtml": false,
+      "entryDate": "2026-07-02T11:49:41+0200",
+      "entryType": "freetext",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": -10000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "none"
+    },
+    "lineup_away": {
+      "detail": {
+        "formation": "3-4-2-1 Double-10",
+        "lineup": [
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-0000X6",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0000x6-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Loris Karius",
+            "position": "TW",
+            "shirtNumber": 1
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01SUJ",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01suj-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Hasan Kuruçay",
+            "position": "IVL",
+            "shirtNumber": 4
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01BI3",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01bi3-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Nikola Katić",
+            "position": "IVZ",
+            "shirtNumber": 25
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-002G7T",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002g7t-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Timo Becker",
+            "position": "IVR",
+            "shirtNumber": 5
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J019PZ",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j019pz-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Robin Gosens",
+            "position": "DLM",
+            "shirtNumber": 8
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01TOY",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01toy-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Satoshi Tanaka",
+            "position": "DML",
+            "shirtNumber": 13
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-002GN7",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002gn7-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Soufiane El-Faouzi",
+            "position": "DMR",
+            "shirtNumber": 23
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01FO8",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01fo8-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Junior Adamu",
+            "position": "DRM",
+            "shirtNumber": 20
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01CXY",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01cxy-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Adil Aouchiche",
+            "position": "OHL",
+            "shirtNumber": 24
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01BGM",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01bgm-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Dejan Ljubicic",
+            "position": "OHR",
+            "shirtNumber": 21
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-0001WU",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0001wu-dfl-clu-000009-dfl-sea-0001ka.png",
+            "name": "Kenan Karaman",
+            "position": "STZ",
+            "shirtNumber": 19
+          }
+        ],
+        "predicted": false
+      },
+      "entryDate": "2026-09-11T19:12:48+0200",
+      "entryType": "lineup",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 180000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "away"
+    },
+    "lineup_home": {
+      "detail": {
+        "formation": "4-4-2 Diamond",
+        "lineup": [
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-0028P2",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0028p2-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Frederik Rønnow",
+            "position": "TW",
+            "shirtNumber": 1
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01KAI",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01kai-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Tom Rothe",
+            "position": "LV",
+            "shirtNumber": 15
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-0026TT",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0026tt-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Felix Uduokhai",
+            "position": "IVL",
+            "shirtNumber": 2
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J020KQ",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j020kq-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Leopold Querfeld",
+            "position": "IVR",
+            "shirtNumber": 14
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01GSO",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01gso-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Josip Juranović",
+            "position": "RV",
+            "shirtNumber": 18
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01VYC",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01vyc-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Livan Burcu",
+            "position": "HL",
+            "shirtNumber": 9
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J01ND9",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j01nd9-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Aljoscha Kemlein",
+            "position": "DMZ",
+            "shirtNumber": 6
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-0001EA",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0001ea-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Rani Khedira",
+            "position": "ZO",
+            "shirtNumber": 8
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J017R0",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j017r0-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Michel Aebischer",
+            "position": "HR",
+            "shirtNumber": 20
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-J0269J",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-j0269j-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Emmanuel Latte Lath",
+            "position": "STL",
+            "shirtNumber": 29
+          },
+          {
+            "dflDatalibraryObjectId": "DFL-OBJ-002FVR",
+            "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-002fvr-dfl-clu-00000v-dfl-sea-0001ka.png",
+            "name": "Woo-yeong Jeong",
+            "position": "STR",
+            "shirtNumber": 11
+          }
+        ],
+        "predicted": false
+      },
+      "entryDate": "2026-09-11T19:12:48+0200",
+      "entryType": "lineup",
+      "hidden": false,
+      "matchSection": "PRE_MATCH",
+      "order": 170000,
+      "pinned": false,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 0
+      },
+      "side": "home"
+    },
+    "playerofthematch": {
+      "detail": {
+        "percentageOfVotes": 47,
+        "playerOfTheMatch": {
+          "dflDatalibraryClubId": "DFL-CLU-000009",
+          "dflDatalibraryObjectId": "DFL-OBJ-0000X6",
+          "imageUrl": "https://assets.bundesliga.com/player/dfl-obj-0000x6-dfl-clu-000009-dfl-sea-0001ka.png",
+          "name": "Loris Karius"
+        }
+      },
+      "entryDate": "2026-09-11T22:32:41+0200",
+      "entryType": "playerOfTheMatch",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 9000020000,
+      "pinned": true,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 90
+      },
+      "side": "none"
+    },
+    "start_firstHalf": {
+      "detail": {
+        "score": {
+          "away": 0,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T20:30:21+0200",
+      "entryType": "start_firstHalf",
+      "matchSection": "FIRST_HALF",
+      "order": 100010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 1
+      },
+      "side": "none"
+    },
+    "start_secondHalf": {
+      "detail": {
+        "score": {
+          "away": 2,
+          "home": 0
+        }
+      },
+      "entryDate": "2026-09-11T21:33:47+0200",
+      "entryType": "start_secondHalf",
+      "matchSection": "SECOND_HALF",
+      "order": 4600010000,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 46
+      },
+      "side": "none"
+    },
+    "voting_playerofthematch": {
+      "conference": false,
+      "detail": {
+        "channelsEnabled": {
+          "mobile": true,
+          "web": false
+        },
+        "embedPlatform": "monterosa",
+        "eventId": "7a15da90-516c-4f84-ac2c-721a1f4945f2",
+        "headline": "Vote for your Man of the Match!",
+        "text": "Vote for your Man of the Match!"
+      },
+      "enableHtml": false,
+      "entryDate": "2026-09-11T22:32:41+0200",
+      "entryType": "embed",
+      "hidden": false,
+      "matchSection": "SECOND_HALF",
+      "order": 8600010000,
+      "pinned": true,
+      "playtime": {
+        "injuryTime": 0,
+        "minute": 86
+      },
+      "side": "none"
+    }
+  },
+  "liveBlogInfos": {
+    "awayIsTyping": false,
+    "homeIsTyping": false,
+    "isTyping": false
+  },
+  "liveBlogUrl": "https://webview.bundesliga.com/en/liveticker/DFL-COM-000001/DFL-SEA-0001KA/DFL-DAY-004CBV/DFL-MAT-J043GZ",
+  "matchDateFixed": true,
+  "matchId": "DFL-MAT-J043GZ",
+  "matchStatus": "FINAL_WHISTLE",
+  "matchday": 3,
+  "matchdayId": "DFL-DAY-004CBV_DFL-COM-000001_matchDayFirstHalf",
+  "matchdayLabel": "Matchday 3",
+  "matchdayRange": {
+    "end": "2026-09-13T00:00:00+0000",
+    "start": "2026-09-11T00:00:00+0000"
+  },
+  "minuteOfPlay": {
+    "injuryTime": 14,
+    "minute": 90
+  },
+  "plannedKickOff": "2026-09-11T18:30:00+0000",
+  "referee": {
+    "displayName": "T. Gerach",
+    "firstName": "Timo",
+    "lastName": "Gerach"
+  },
+  "score": {
+    "away": {
+      "fulltime": 3,
+      "halftime": 1,
+      "live": 3
+    },
+    "home": {
+      "fulltime": 1,
+      "halftime": 0,
+      "live": 1
+    }
+  },
+  "seasonOrder": 19,
+  "slugs": {
+    "slugLong": "1-fc-union-berlin-vs-fc-schalke-04",
+    "slugShort": "union-berlin-vs-schalke"
+  },
+  "stadiumIconUrlBlack": "https://assets.bundesliga.com/stadium/icon/DFL-STA-00000M_B.png",
+  "stadiumIconUrlWhite": "https://assets.bundesliga.com/stadium/icon/DFL-STA-00000M_W.png",
+  "stadiumName": "An der Alten Försterei",
+  "teams": {
+    "away": {
+      "dflDatalibraryClubId": "DFL-CLU-000009",
+      "gradientEndColor": "#004b9c",
+      "gradientStartColor": "#004b9c",
+      "logoUrl": "https://assets.bundesliga.com/clublogos/DFL-SEA-0001KA/DFL-CLU-000009.svg",
+      "nameFull": "FC Schalke 04",
+      "nameShort": "Schalke",
+      "textColor": "#FFFFFF",
+      "threeLetterCode": "S04"
+    },
+    "home": {
+      "dflDatalibraryClubId": "DFL-CLU-00000V",
+      "gradientEndColor": "#E30613",
+      "gradientStartColor": "#E30613",
+      "logoUrl": "https://assets.bundesliga.com/clublogos/DFL-SEA-0001KA/DFL-CLU-00000V.svg",
+      "nameFull": "1. FC Union Berlin",
+      "nameShort": "Union Berlin",
+      "textColor": "#FFFFFF",
+      "threeLetterCode": "FCU"
+    }
+  }
+}

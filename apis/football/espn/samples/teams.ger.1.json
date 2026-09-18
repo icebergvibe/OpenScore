@@ -1,0 +1,1503 @@
+{
+  "sports": [
+    {
+      "id": "600",
+      "leagues": [
+        {
+          "abbreviation": "Bundesliga",
+          "id": "720",
+          "name": "German Bundesliga",
+          "season": {
+            "displayName": "2026",
+            "year": 2026
+          },
+          "shortName": "Bundesliga",
+          "slug": "ger.1",
+          "teams": [
+            {
+              "team": {
+                "abbreviation": "FCU",
+                "alternateColor": "d4d4d4",
+                "color": "DA0308",
+                "displayName": "1. FC Union Berlin",
+                "id": "598",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/598/1-fc-union-berlin",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/598/1-fc-union-berlin",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/598/1-fc-union-berlin",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "1. FC Union Berlin",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/598.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "1. FC Union Berlin",
+                "shortDisplayName": "Union Berlin",
+                "slug": "ger.fc_union_berlin",
+                "uid": "s:600~t:598"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "B04",
+                "alternateColor": "f9fbfc",
+                "color": "DA0308",
+                "displayName": "Bayer Leverkusen",
+                "id": "131",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/131/bayer-leverkusen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/131/bayer-leverkusen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/131/bayer-leverkusen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Bayer Leverkusen",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/131.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Bayer Leverkusen",
+                "shortDisplayName": "Leverkusen",
+                "slug": "ger.leverkusen",
+                "uid": "s:600~t:131"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "MUN",
+                "alternateColor": "1a1a1a",
+                "color": "dc052d",
+                "displayName": "Bayern Munich",
+                "id": "132",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/132/bayern-munich",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/132/bayern-munich",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/132/bayern-munich",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Bayern Munich",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/132.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Bayern Munich",
+                "shortDisplayName": "Bayern",
+                "slug": "ger.bayern_munich",
+                "uid": "s:600~t:132"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "DOR",
+                "alternateColor": "272726",
+                "color": "ffee00",
+                "displayName": "Borussia Dortmund",
+                "id": "124",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/124/borussia-dortmund",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/124/borussia-dortmund",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/124/borussia-dortmund",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Borussia Dortmund",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/124.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Borussia Dortmund",
+                "shortDisplayName": "Dortmund",
+                "slug": "ger.dortmund",
+                "uid": "s:600~t:124"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "BMG",
+                "alternateColor": "03915c",
+                "color": "ffffff",
+                "displayName": "Borussia Mönchengladbach",
+                "id": "268",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/268/borussia-monchengladbach",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/268/borussia-monchengladbach",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/268/borussia-monchengladbach",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Borussia Mönchengladbach",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/268.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Borussia Mönchengladbach",
+                "shortDisplayName": "Gladbach",
+                "slug": "ger.borussia_mgladbach",
+                "uid": "s:600~t:268"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SGE",
+                "alternateColor": "272726",
+                "color": "ffffff",
+                "displayName": "Eintracht Frankfurt",
+                "id": "125",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/125/eintracht-frankfurt",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/125/eintracht-frankfurt",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/125/eintracht-frankfurt",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Eintracht Frankfurt",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/125.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Eintracht Frankfurt",
+                "shortDisplayName": "Frankfurt",
+                "slug": "ger.frankfurt",
+                "uid": "s:600~t:125"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "FCA",
+                "alternateColor": "03915c",
+                "color": "ffffff",
+                "displayName": "FC Augsburg",
+                "id": "3841",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/3841/fc-augsburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/3841/fc-augsburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/3841/fc-augsburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "FC Augsburg",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/3841.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "FC Augsburg",
+                "shortDisplayName": "Augsburg",
+                "slug": "ger.fc_augsburg",
+                "uid": "s:600~t:3841"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "KOE",
+                "alternateColor": "DA0308",
+                "color": "ffffff",
+                "displayName": "FC Cologne",
+                "id": "122",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/122/fc-cologne",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/122/fc-cologne",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/122/fc-cologne",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "FC Cologne",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/122.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "FC Cologne",
+                "shortDisplayName": "Cologne",
+                "slug": "ger.1_fc_kln",
+                "uid": "s:600~t:122"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "HSV",
+                "alternateColor": "1a1a1a",
+                "color": "1a26af",
+                "displayName": "Hamburg SV",
+                "id": "127",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/127/hamburg-sv",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/127/hamburg-sv",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/127/hamburg-sv",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Hamburg SV",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/127.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Hamburg SV",
+                "shortDisplayName": "Hamburg",
+                "slug": "ger.hamburg",
+                "uid": "s:600~t:127"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "M05",
+                "alternateColor": "000055",
+                "color": "DA0308",
+                "displayName": "Mainz",
+                "id": "2950",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/2950/mainz",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/2950/mainz",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/2950/mainz",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Mainz",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/2950.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Mainz",
+                "shortDisplayName": "Mainz",
+                "slug": "ger.mainz",
+                "uid": "s:600~t:2950"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "RBL",
+                "alternateColor": "740c14",
+                "color": "ffffff",
+                "displayName": "RB Leipzig",
+                "id": "11420",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/11420/rb-leipzig",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/11420/rb-leipzig",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/11420/rb-leipzig",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "RB Leipzig",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/11420.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "RB Leipzig",
+                "shortDisplayName": "RB Leipzig",
+                "slug": "ger.rb_leipzig",
+                "uid": "s:600~t:11420"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SCF",
+                "alternateColor": "ffffff",
+                "color": "DA0308",
+                "displayName": "SC Freiburg",
+                "id": "126",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/126/sc-freiburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/126/sc-freiburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/126/sc-freiburg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "SC Freiburg",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/126.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "SC Freiburg",
+                "shortDisplayName": "Freiburg",
+                "slug": "ger.freiburg",
+                "uid": "s:600~t:126"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SCP",
+                "alternateColor": "ffffff",
+                "color": "0000dd",
+                "displayName": "SC Paderborn 07",
+                "id": "3307",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/3307/sc-paderborn-07",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/3307/sc-paderborn-07",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/3307/sc-paderborn-07",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "SC Paderborn 07",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/3307.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "SC Paderborn 07",
+                "shortDisplayName": "Paderborn",
+                "slug": "ger.sc_paderborn_07",
+                "uid": "s:600~t:3307"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "ELV",
+                "alternateColor": "FFFFFF",
+                "color": "000000",
+                "displayName": "SV Elversberg",
+                "id": "10388",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/10388/sv-elversberg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/10388/sv-elversberg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/10388/sv-elversberg",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "SV Elversberg",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/10388.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "SV Elversberg",
+                "shortDisplayName": "Elversberg",
+                "slug": "ger.sv_07_elversberg",
+                "uid": "s:600~t:10388"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "S04",
+                "alternateColor": "ffffff",
+                "color": "0000dd",
+                "displayName": "Schalke 04",
+                "id": "133",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/133/schalke-04",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/133/schalke-04",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/133/schalke-04",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Schalke 04",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/133.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Schalke 04",
+                "shortDisplayName": "Schalke",
+                "slug": "ger.schalke_04",
+                "uid": "s:600~t:133"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "TSG",
+                "alternateColor": "000055",
+                "color": "003399",
+                "displayName": "TSG Hoffenheim",
+                "id": "7911",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/7911/tsg-hoffenheim",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/7911/tsg-hoffenheim",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/7911/tsg-hoffenheim",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "TSG Hoffenheim",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/7911.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "TSG Hoffenheim",
+                "shortDisplayName": "Hoffenheim",
+                "slug": "ger.tsg_hoffenheim",
+                "uid": "s:600~t:7911"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "VFB",
+                "alternateColor": "DA0308",
+                "color": "ffffff",
+                "displayName": "VfB Stuttgart",
+                "id": "134",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/134/vfb-stuttgart",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/134/vfb-stuttgart",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/134/vfb-stuttgart",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "VfB Stuttgart",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/134.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "VfB Stuttgart",
+                "shortDisplayName": "Stuttgart",
+                "slug": "ger.stuttgart",
+                "uid": "s:600~t:134"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SVW",
+                "alternateColor": "ffffff",
+                "color": "03915c",
+                "displayName": "Werder Bremen",
+                "id": "137",
+                "isActive": true,
+                "isAllStar": false,
+                "links": [
+                  {
+                    "href": "https://www.espn.com/soccer/club/_/id/137/werder-bremen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "clubhouse",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Clubhouse",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/stats/_/id/137/werder-bremen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "stats",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Stats",
+                    "text": "Stats"
+                  },
+                  {
+                    "href": "https://www.espn.com/soccer/team/fixtures/_/id/137/werder-bremen",
+                    "isExternal": false,
+                    "isHidden": false,
+                    "isPremium": false,
+                    "language": "en-US",
+                    "rel": [
+                      "schedule",
+                      "desktop",
+                      "team"
+                    ],
+                    "shortText": "Fixtures",
+                    "text": "Fixtures"
+                  }
+                ],
+                "location": "Werder Bremen",
+                "logos": [
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+                    "rel": [
+                      "full",
+                      "default"
+                    ],
+                    "width": 500
+                  },
+                  {
+                    "alt": "",
+                    "height": 500,
+                    "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/137.png",
+                    "rel": [
+                      "full",
+                      "dark"
+                    ],
+                    "width": 500
+                  }
+                ],
+                "name": "Werder Bremen",
+                "shortDisplayName": "Bremen",
+                "slug": "ger.werder_bremen",
+                "uid": "s:600~t:137"
+              }
+            }
+          ],
+          "uid": "s:600~l:720",
+          "year": 2026
+        }
+      ],
+      "name": "Soccer",
+      "slug": "soccer",
+      "uid": "s:600"
+    }
+  ]
+}

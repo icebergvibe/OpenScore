@@ -1,0 +1,150 @@
+{
+    "match": {
+        "id": 102290,
+        "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Celta - M\u00e1laga CF - 5",
+        "slug": "temporada-2026-2027-laliga-ea-sports-rc-celta-malaga-cf-5",
+        "date": "2026-09-13T12:00:00+00:00",
+        "time": "2026-09-13T12:00:00+00:00",
+        "match_time": 44,
+        "hashtag": "CeltaM\u00e1laga",
+        "competition": {
+            "id": 1,
+            "name": "LALIGA EA SPORTS",
+            "slug": "primera-division",
+            "opta_id": "23"
+        },
+        "home_score": 1,
+        "away_score": 0,
+        "status": "FirstHalf",
+        "attempt_official": false,
+        "home_team": {
+            "id": 6,
+            "slug": "rc-celta",
+            "name": "Real Club Celta de Vigo SAD",
+            "nickname": "Celta",
+            "boundname": "Celta",
+            "shortname": "CEL",
+            "color": "#52c3f1",
+            "color_secondary": "#ffffff",
+            "sprite_status": "created",
+            "shield": {
+                "id": 891421,
+                "url": "https://assets.laliga.com/assets/2025/07/11/medium/0a796827f9e758d7d750db805adde7c5.png"
+            },
+            "competitions": [],
+            "opta_id": "t176"
+        },
+        "away_team": {
+            "id": 12,
+            "slug": "malaga-cf",
+            "name": "M\u00e1laga Club de F\u00fatbol SAD",
+            "nickname": "M\u00e1laga CF",
+            "boundname": "M\u00e1laga CF",
+            "shortname": "MGA",
+            "color": "#1476c4",
+            "sprite_status": "created",
+            "shield": {
+                "id": 143,
+                "url": "https://assets.laliga.com/assets/2019/06/07/medium/malaga.png"
+            },
+            "competitions": [],
+            "opta_id": "t182"
+        },
+        "home_formation": "343",
+        "away_formation": "442",
+        "gameweek": {
+            "week": 5,
+            "name": "Matchday 5",
+            "shortname": "M5"
+        },
+        "venue": {
+            "name": "Estadio ABANCA Bala\u00eddos"
+        },
+        "persons_role": [
+            {
+                "person": {
+                    "name": "Carlos Mu\u00f1iz Mu\u00f1oz",
+                    "nickname": "Mu\u00f1iz Mu\u00f1oz",
+                    "firstname": "Carlos",
+                    "lastname": "Mu\u00f1iz Mu\u00f1oz"
+                },
+                "role": {
+                    "id": 5
+                }
+            },
+            {
+                "person": {
+                    "name": "Luis Enrique Morona Del Campo Morona Del Campo",
+                    "nickname": "Morona Del Campo",
+                    "firstname": "Luis Enrique Morona Del Campo",
+                    "lastname": "Morona Del Campo"
+                },
+                "role": {
+                    "id": 8
+                }
+            },
+            {
+                "person": {
+                    "name": "Jorge Figueroa V\u00e1zquez",
+                    "nickname": "Jorge Figueroa V\u00e1zquez",
+                    "firstname": "Jorge",
+                    "lastname": "Figueroa V\u00e1zquez"
+                },
+                "role": {
+                    "id": 9
+                }
+            },
+            {
+                "person": {
+                    "name": "\u00c1lvaro Moreno Arag\u00f3n",
+                    "nickname": "\u00c1lvaro Moreno Arag\u00f3n",
+                    "firstname": "\u00c1lvaro",
+                    "lastname": "Moreno Arag\u00f3n"
+                },
+                "role": {
+                    "id": 10
+                }
+            },
+            {
+                "person": {
+                    "name": "Fernando Estela Bravo",
+                    "nickname": "Fernando Estela Bravo",
+                    "firstname": "Fernando",
+                    "lastname": "Estela Bravo"
+                },
+                "role": {
+                    "id": 6
+                }
+            },
+            {
+                "person": {
+                    "name": "Israel B\u00e1rcena Rodr\u00edguez",
+                    "nickname": "Israel B\u00e1rcena Rodr\u00edguez",
+                    "firstname": "Israel",
+                    "lastname": "B\u00e1rcena Rodr\u00edguez"
+                },
+                "role": {
+                    "id": 7
+                }
+            }
+        ],
+        "season": {
+            "id": 102,
+            "name": "Season 2026/2027",
+            "opta_id": "2026"
+        },
+        "subscription": {
+            "id": 395,
+            "slug": "laliga-easports-2026",
+            "teams": [],
+            "rounds": []
+        },
+        "is_brand_day": false,
+        "period_started": {
+            "FirstHalf": {
+                "start": "2026-09-13T12:02:33+00:00"
+            }
+        },
+        "opta_id": "g2650803"
+    }
+}

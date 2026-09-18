@@ -1,0 +1,2453 @@
+{
+  "_openscore_note": "TRUNCATED: data array cut to 15 (original 1.5 MB).",
+  "_type": "Corebine.Core.Protocol.Response.Array",
+  "data": [
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "6eed85e6742245194ed2b991",
+      "externalId": "1466",
+      "firstName": "Marcel",
+      "lastName": "Noebels",
+      "number": 92,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "6eed85e6742245194ed2b991",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Marcel",
+          "lastName": "Noebels"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-6eed85e6742245194ed2b991.json"
+      },
+      "nationality": {
+        "name": "Germany",
+        "code": "ger"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 2.84
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 6,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 66.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 997,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "104c3b90fcb6da8e653c05eb",
+        "externalId": "12",
+        "name": "Kölner Haie",
+        "shortName": "KOL",
+        "country": {
+          "name": "Germany",
+          "code": "ger"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "ec28ea23a7fa9cf1f3953f19",
+      "externalId": "2197",
+      "firstName": "Filip",
+      "lastName": "Zadina",
+      "number": 18,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "ec28ea23a7fa9cf1f3953f19",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Filip",
+          "lastName": "Zadina"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-ec28ea23a7fa9cf1f3953f19.json"
+      },
+      "nationality": {
+        "name": "Czechia",
+        "code": "cze"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.89
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 6,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 994.33,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "fc04d1152903083968962750",
+        "externalId": "47",
+        "name": "HC Davos",
+        "shortName": "HCD",
+        "country": {
+          "name": "Switzerland",
+          "code": "sui"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/fc04d1152903083968962750/hc-davos",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "4822adff43b3ec7e21aa733b",
+      "externalId": "446093",
+      "firstName": "Patrick",
+      "lastName": "Russell",
+      "number": 63,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "4822adff43b3ec7e21aa733b",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Patrick",
+          "lastName": "Russell"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-4822adff43b3ec7e21aa733b.json"
+      },
+      "nationality": {
+        "name": "Denmark",
+        "code": "den"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 1.78
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 37.5,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1018.67,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "104c3b90fcb6da8e653c05eb",
+        "externalId": "12",
+        "name": "Kölner Haie",
+        "shortName": "KOL",
+        "country": {
+          "name": "Germany",
+          "code": "ger"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "222e5cab9a6b1c9702424554",
+      "externalId": "446090",
+      "firstName": "Gregor",
+      "lastName": "MacLeod",
+      "number": 89,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "222e5cab9a6b1c9702424554",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Gregor",
+          "lastName": "MacLeod"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-222e5cab9a6b1c9702424554.json"
+      },
+      "nationality": {
+        "name": "Canada",
+        "code": "can"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.58
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 5,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 14.29,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 57.14,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1015.33,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "104c3b90fcb6da8e653c05eb",
+        "externalId": "12",
+        "name": "Kölner Haie",
+        "shortName": "KOL",
+        "country": {
+          "name": "Germany",
+          "code": "ger"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/104c3b90fcb6da8e653c05eb/kolner-haie",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "d8bcd9b29eb29038e2a3e848",
+      "externalId": "446096",
+      "firstName": "Jimmy",
+      "lastName": "Vesey",
+      "number": 16,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "d8bcd9b29eb29038e2a3e848",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Jimmy",
+          "lastName": "Vesey"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-d8bcd9b29eb29038e2a3e848.json"
+      },
+      "nationality": {
+        "name": "USA",
+        "code": "usa"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.99
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 8
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 25,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 16.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1121.33,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "e407e3c30bba319774cc4bea",
+        "externalId": "22",
+        "name": "Genève-Servette",
+        "shortName": "GEN",
+        "country": {
+          "name": "Switzerland",
+          "code": "sui"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "0faf4bbd1f3b974a66f9bba7",
+      "externalId": "445482",
+      "firstName": "Valter",
+      "lastName": "Lindberg",
+      "number": 12,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "0faf4bbd1f3b974a66f9bba7",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Valter",
+          "lastName": "Lindberg"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-0faf4bbd1f3b974a66f9bba7.json"
+      },
+      "nationality": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.51
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 2,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 25,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 795.33,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "73caaf27776183ec10ea6ddc",
+        "externalId": "37",
+        "name": "Skellefteå AIK",
+        "shortName": "SKE",
+        "country": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "398872014e2668087e3d250a",
+      "externalId": "3599",
+      "firstName": "Jonathan",
+      "lastName": "Pudas",
+      "number": 64,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "398872014e2668087e3d250a",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Jonathan",
+          "lastName": "Pudas"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-398872014e2668087e3d250a.json"
+      },
+      "nationality": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Defenceman",
+        "shortName": "DE",
+        "category": "Defenceman",
+        "order": 2
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.67
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.56
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 10
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1216,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "73caaf27776183ec10ea6ddc",
+        "externalId": "37",
+        "name": "Skellefteå AIK",
+        "shortName": "SKE",
+        "country": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "45f210342d05653bb0ecc8b1",
+      "externalId": "445308",
+      "firstName": "Markus",
+      "lastName": "Granlund",
+      "number": 60,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "45f210342d05653bb0ecc8b1",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Markus",
+          "lastName": "Granlund"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-45f210342d05653bb0ecc8b1.json"
+      },
+      "nationality": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 1.59
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 50,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 100,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1123,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "e407e3c30bba319774cc4bea",
+        "externalId": "22",
+        "name": "Genève-Servette",
+        "shortName": "GEN",
+        "country": {
+          "name": "Switzerland",
+          "code": "sui"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/e407e3c30bba319774cc4bea/geneve-servette",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "842afa3146e67ae462babeaf",
+      "externalId": "445491",
+      "firstName": "Aapeli",
+      "lastName": "Räsänen",
+      "number": 22,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "842afa3146e67ae462babeaf",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Aapeli",
+          "lastName": "Räsänen"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-842afa3146e67ae462babeaf.json"
+      },
+      "nationality": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.88
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": -1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 60,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 37.5,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1106,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "6a0612c54317b473a6f67f56",
+        "externalId": "27",
+        "name": "Tappara Tampere",
+        "shortName": "TAP",
+        "country": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "90a763f3eed784c1eee87c19",
+      "externalId": "3165",
+      "firstName": "Mario",
+      "lastName": "Huber",
+      "number": 96,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "90a763f3eed784c1eee87c19",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Mario",
+          "lastName": "Huber"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-90a763f3eed784c1eee87c19.json"
+      },
+      "nationality": {
+        "name": "Austria",
+        "code": "aut"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.46
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 5
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 40,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1277,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "aa8d051910780a557dc4a37f",
+        "externalId": "13",
+        "name": "Red Bull Salzburg",
+        "shortName": "RBS",
+        "country": {
+          "name": "Austria",
+          "code": "aut"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/aa8d051910780a557dc4a37f/red-bull-salzburg",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "d013293c0820622c7e16a02a",
+      "externalId": "4379",
+      "firstName": "Oscar",
+      "lastName": "Lindberg",
+      "number": 24,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "d013293c0820622c7e16a02a",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Oscar",
+          "lastName": "Lindberg"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-d013293c0820622c7e16a02a.json"
+      },
+      "nationality": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 1.45
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 3,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 9
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 22.22,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 51.11,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1070.67,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "73caaf27776183ec10ea6ddc",
+        "externalId": "37",
+        "name": "Skellefteå AIK",
+        "shortName": "SKE",
+        "country": {
+          "name": "Sweden",
+          "code": "swe"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/73caaf27776183ec10ea6ddc/skelleftea-aik",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "8ab36c6f1ddb6d37db3eebab",
+      "externalId": "319",
+      "firstName": "Rasmus",
+      "lastName": "Asplund",
+      "number": 74,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "8ab36c6f1ddb6d37db3eebab",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Rasmus",
+          "lastName": "Asplund"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-8ab36c6f1ddb6d37db3eebab.json"
+      },
+      "nationality": {
+        "name": "Sweden",
+        "code": "swe"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 1.06
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 3,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 7
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 28.57,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 42.86,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1136.33,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "fc04d1152903083968962750",
+        "externalId": "47",
+        "name": "HC Davos",
+        "shortName": "HCD",
+        "country": {
+          "name": "Switzerland",
+          "code": "sui"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/fc04d1152903083968962750/hc-davos",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "637a55fe03ef2b0aea282828",
+      "externalId": "445078",
+      "firstName": "Joachim",
+      "lastName": "Blichfeld",
+      "number": 88,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "637a55fe03ef2b0aea282828",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Joachim",
+          "lastName": "Blichfeld"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-637a55fe03ef2b0aea282828.json"
+      },
+      "nationality": {
+        "name": "Denmark",
+        "code": "den"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.76
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": -2,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 33.33,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1115,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "6a0612c54317b473a6f67f56",
+        "externalId": "27",
+        "name": "Tappara Tampere",
+        "shortName": "TAP",
+        "country": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "5225b255b49e46b240d78a3e",
+      "externalId": "445169",
+      "firstName": "Benjamin",
+      "lastName": "Rautiainen",
+      "number": 78,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "5225b255b49e46b240d78a3e",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Benjamin",
+          "lastName": "Rautiainen"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-5225b255b49e46b240d78a3e.json"
+      },
+      "nationality": {
+        "name": "Finland",
+        "code": "fin"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Forward",
+        "shortName": "FW",
+        "category": "Forward",
+        "order": 1
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.86
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": -1,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 16.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 2
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1211.5,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "6a0612c54317b473a6f67f56",
+        "externalId": "27",
+        "name": "Tappara Tampere",
+        "shortName": "TAP",
+        "country": {
+          "name": "Finland",
+          "code": "fin"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/6a0612c54317b473a6f67f56/tappara-tampere",
+          "isWeb": false
+        }
+      }
+    },
+    {
+      "_type": "Corebine.Core.Sport.Player",
+      "_entityId": "e03d7aec91ce90aaed85acf4",
+      "externalId": "1057",
+      "firstName": "Lukas",
+      "lastName": "Frick",
+      "number": 38,
+      "source": {
+        "_type": "Corebine.Core.Feed.Sport",
+        "feedType": "player",
+        "competition": {
+          "_type": "Corebine.Core.Sport.Competition",
+          "_entityId": "21ec9dad81abe2e0240460d0",
+          "name": "Champions Hockey League"
+        },
+        "person": {
+          "_entityId": "e03d7aec91ce90aaed85acf4",
+          "_type": "Corebine.Core.Sport.Player",
+          "firstName": "Lukas",
+          "lastName": "Frick"
+        },
+        "query": "player-21ec9dad81abe2e0240460d0-e03d7aec91ce90aaed85acf4.json"
+      },
+      "nationality": {
+        "name": "Switzerland",
+        "code": "sui"
+      },
+      "position": {
+        "_type": "Corebine.Core.Sport.Athlete.Position",
+        "name": "Defenceman",
+        "shortName": "DE",
+        "category": "Defenceman",
+        "order": 2
+      },
+      "stats": {
+        "_type": "Corebine.Core.Sport.Athlete.Stats",
+        "properties": [
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Games Played",
+            "shortName": "GP",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Goals",
+            "shortName": "G",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Assists",
+            "shortName": "A",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Points",
+            "shortName": "P",
+            "value": 4
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Points per Game",
+            "shortName": "P/GP",
+            "value": 1.33
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Expected Goals",
+            "shortName": "xG",
+            "value": 0.24
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Plus/Minus",
+            "shortName": "+/-",
+            "value": 4,
+            "units": "plus-minus"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Penalty minutes",
+            "shortName": "PIM",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Power Play Goals",
+            "shortName": "PPG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Short Handed Goals",
+            "shortName": "SHG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Game Winning Goals",
+            "shortName": "GWG",
+            "value": 0
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Shots On Goal",
+            "shortName": "SOG",
+            "value": 6
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Shots Efficiency",
+            "shortName": "S%",
+            "value": 16.67,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Blocked Shots",
+            "shortName": "BS",
+            "value": 3
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Integer",
+            "name": "Hits",
+            "shortName": "HITS",
+            "value": 1
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.Number",
+            "name": "Face-offs Percentage",
+            "shortName": "FOW%",
+            "value": 0,
+            "units": "percents"
+          },
+          {
+            "_type": "Corebine.Core.Type.Property.String",
+            "name": "Time On Ice per Game Played",
+            "shortName": "TOI/GP",
+            "value": 1099,
+            "units": "sec"
+          }
+        ]
+      },
+      "team": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "fc04d1152903083968962750",
+        "externalId": "47",
+        "name": "HC Davos",
+        "shortName": "HCD",
+        "country": {
+          "name": "Switzerland",
+          "code": "sui"
+        },
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/fc04d1152903083968962750/hc-davos",
+          "isWeb": false
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "_version": "2024"
+}

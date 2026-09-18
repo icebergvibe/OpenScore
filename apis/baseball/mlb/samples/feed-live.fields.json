@@ -1,0 +1,38 @@
+{
+  "gamePk": 823088,
+  "metaData": {
+    "timeStamp": "20260910_224035"
+  },
+  "gameData": {
+    "status": {
+      "abstractGameState": "Final",
+      "detailedState": "Final",
+      "statusCode": "F"
+    },
+    "teams": {
+      "away": {},
+      "home": {}
+    }
+  },
+  "liveData": {
+    "linescore": {
+      "currentInning": 9,
+      "inningState": "Top",
+      "teams": {
+        "home": {
+          "runs": 4,
+          "hits": 4,
+          "errors": 1
+        },
+        "away": {
+          "runs": 3,
+          "hits": 4,
+          "errors": 0
+        }
+      },
+      "balls": 2,
+      "strikes": 2,
+      "outs": 3
+    }
+  }
+}

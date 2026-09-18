@@ -1,0 +1,55 @@
+{
+  "name": "projects/eflcom/databases/(default)/documents/live-feed/g2685170_FullTime",
+  "fields": {
+    "eventTime": {
+      "integerValue": "1789676314"
+    },
+    "matchTime": {
+      "stringValue": "90' +3'"
+    },
+    "matchID": {
+      "stringValue": "g2685170"
+    },
+    "competitionID": {
+      "integerValue": "2"
+    },
+    "eventType": {
+      "stringValue": "FullTime"
+    },
+    "awayTeam": {
+      "mapValue": {
+        "fields": {
+          "crest": {
+            "stringValue": "https://crests.gc.eflservices.co.uk/t45.png"
+          },
+          "shortName": {
+            "stringValue": "Norwich"
+          },
+          "score": {
+            "integerValue": "0"
+          },
+          "name": {
+            "stringValue": "Norwich City"
+          }
+        }
+      }
+    },
+    "homeTeam": {
+      "mapValue": {
+        "fields": {
+          "crest": {
+            "stringValue": "https://crests.gc.eflservices.co.uk/t43.png"
+          },
+          "score": {
+            "integerValue": "5"
+          },
+          "name": {
+            "stringValue": "Manchester City"
+          }
+        }
+      }
+    }
+  },
+  "createTime": "2026-09-17T20:18:40.549024Z",
+  "updateTime": "2026-09-17T20:18:40.549024Z"
+}

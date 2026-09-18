@@ -1,0 +1,308 @@
+{
+  "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "note": "One out when winning run scored.",
+  "currentInning": 11,
+  "currentInningOrdinal": "11th",
+  "inningState": "Bottom",
+  "inningHalf": "Bottom",
+  "isTopInning": false,
+  "scheduledInnings": 9,
+  "innings": [
+    {
+      "num": 1,
+      "ordinalNum": "1st",
+      "home": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 2,
+      "ordinalNum": "2nd",
+      "home": {
+        "runs": 0,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 3,
+      "ordinalNum": "3rd",
+      "home": {
+        "runs": 1,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 2
+      },
+      "away": {
+        "runs": 0,
+        "hits": 1,
+        "errors": 1,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 4,
+      "ordinalNum": "4th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      }
+    },
+    {
+      "num": 5,
+      "ordinalNum": "5th",
+      "home": {
+        "runs": 1,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 1
+      },
+      "away": {
+        "runs": 0,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 6,
+      "ordinalNum": "6th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 7,
+      "ordinalNum": "7th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 8,
+      "ordinalNum": "8th",
+      "home": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 0
+      },
+      "away": {
+        "runs": 0,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 2
+      }
+    },
+    {
+      "num": 9,
+      "ordinalNum": "9th",
+      "home": {
+        "runs": 0,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 3
+      },
+      "away": {
+        "runs": 1,
+        "hits": 2,
+        "errors": 0,
+        "leftOnBase": 2
+      }
+    },
+    {
+      "num": 10,
+      "ordinalNum": "10th",
+      "home": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 2
+      },
+      "away": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      }
+    },
+    {
+      "num": 11,
+      "ordinalNum": "11th",
+      "home": {
+        "runs": 1,
+        "hits": 1,
+        "errors": 0,
+        "leftOnBase": 1
+      },
+      "away": {
+        "runs": 0,
+        "hits": 0,
+        "errors": 0,
+        "leftOnBase": 2
+      }
+    }
+  ],
+  "teams": {
+    "home": {
+      "runs": 5,
+      "hits": 10,
+      "errors": 0,
+      "leftOnBase": 10,
+      "isWinner": true
+    },
+    "away": {
+      "runs": 4,
+      "hits": 9,
+      "errors": 1,
+      "leftOnBase": 12,
+      "isWinner": false
+    }
+  },
+  "defense": {
+    "pitcher": {
+      "id": 666277,
+      "fullName": "George Soriano",
+      "link": "/api/v1/people/666277"
+    },
+    "catcher": {
+      "id": 699024,
+      "fullName": "Leo Bernal",
+      "link": "/api/v1/people/699024"
+    },
+    "first": {
+      "id": 676475,
+      "fullName": "Alec Burleson",
+      "link": "/api/v1/people/676475"
+    },
+    "second": {
+      "id": 665877,
+      "fullName": "José Fermín",
+      "link": "/api/v1/people/665877"
+    },
+    "third": {
+      "id": 669357,
+      "fullName": "Nolan Gorman",
+      "link": "/api/v1/people/669357"
+    },
+    "shortstop": {
+      "id": 695336,
+      "fullName": "Thomas Saggese",
+      "link": "/api/v1/people/695336"
+    },
+    "left": {
+      "id": 695491,
+      "fullName": "Joshua Báez",
+      "link": "/api/v1/people/695491"
+    },
+    "center": {
+      "id": 701675,
+      "fullName": "Nathan Church",
+      "link": "/api/v1/people/701675"
+    },
+    "right": {
+      "id": 691023,
+      "fullName": "Jordan Walker",
+      "link": "/api/v1/people/691023"
+    },
+    "batter": {
+      "id": 676475,
+      "fullName": "Alec Burleson",
+      "link": "/api/v1/people/676475"
+    },
+    "onDeck": {
+      "id": 691023,
+      "fullName": "Jordan Walker",
+      "link": "/api/v1/people/691023"
+    },
+    "inHole": {
+      "id": 699024,
+      "fullName": "Leo Bernal",
+      "link": "/api/v1/people/699024"
+    },
+    "battingOrder": 3,
+    "team": {
+      "id": 138,
+      "name": "St. Louis Cardinals",
+      "link": "/api/v1/teams/138"
+    }
+  },
+  "offense": {
+    "batter": {
+      "id": 694376,
+      "fullName": "Shay Whitcomb",
+      "link": "/api/v1/people/694376"
+    },
+    "onDeck": {
+      "id": 683766,
+      "fullName": "Christian Koss",
+      "link": "/api/v1/people/683766"
+    },
+    "inHole": {
+      "id": 806367,
+      "fullName": "Turner Hill",
+      "link": "/api/v1/people/806367"
+    },
+    "first": {
+      "id": 694376,
+      "fullName": "Shay Whitcomb",
+      "link": "/api/v1/people/694376"
+    },
+    "pitcher": {
+      "id": 671345,
+      "fullName": "Jason Foley",
+      "link": "/api/v1/people/671345"
+    },
+    "battingOrder": 8,
+    "team": {
+      "id": 137,
+      "name": "San Francisco Giants",
+      "link": "/api/v1/teams/137"
+    }
+  },
+  "balls": 0,
+  "strikes": 1,
+  "outs": 1
+}

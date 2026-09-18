@@ -1,0 +1,1823 @@
+{
+  "data": {
+    "type": "match",
+    "id": "g2634379",
+    "attributes": {
+      "matchID": "g2634379",
+      "competitionID": 10,
+      "seasonID": 2025,
+      "kickOffUTC": "2026-05-12 19:00:00",
+      "TBC": null,
+      "groupName": null,
+      "matchDay": "48",
+      "matchType": "2nd Leg",
+      "leg": null,
+      "matchWinnerID": null,
+      "gameWinnerID": null,
+      "gameWinnerType": null,
+      "legWinnerTypeID": null,
+      "period": "FullTime",
+      "postponementReason": null,
+      "roundNumber": null,
+      "roundType": null,
+      "venue": "St. Mary's Stadium",
+      "venueCity": "Southampton",
+      "refereeName": null,
+      "homeTeamID": "t20",
+      "awayTeamID": "t25",
+      "isBroadcast": "global",
+      "matchDetails": {
+        "attendance": 30277,
+        "awayAttendance": null,
+        "kickOffUTC": "2026-05-12 19:00:00.000000",
+        "matchTime": 127,
+        "period": "FullTime",
+        "refereeName": "Andy Madley",
+        "resultType": "Aggregate",
+        "weather": "Clear",
+        "matchWinner": {
+          "teamID": "t20",
+          "teamName": "Southampton",
+          "teamOfficialName": "Southampton",
+          "teamNameInitials": null,
+          "customTeamNameInitials": null,
+          "teamShortName": "Southampton",
+          "customShortName": null,
+          "teamURL": "https://www.southamptonfc.com/",
+          "crestURL": "https://crests.gc.eflservices.co.uk/t20.png",
+          "stadiumName": "St Mary's Stadium",
+          "streamingURL": "https://www.southamptonfc.com/en/videos/video",
+          "ticketURL": "https://tickets.southamptonfc.com/",
+          "matchCentreURL": "https://www.southamptonfc.com/en/matches/mens-team",
+          "retailURL": "https://store.southamptonfc.com/",
+          "facebookURL": "https://www.facebook.com/southamptonfc/",
+          "twitterURL": "https://twitter.com/SouthamptonFC"
+        },
+        "formattedMatchTime": "90' +37'"
+      },
+      "matchTeams": [
+        {
+          "matchID": "g2634379",
+          "teamID": "t20",
+          "kitID": "425",
+          "formation": "4222",
+          "score": 2,
+          "halfScore": 1,
+          "ninetyScore": 1,
+          "extraScore": 1,
+          "penaltyScore": null,
+          "kit": {
+            "kitID": "425",
+            "kitType": "home",
+            "colour1": "#FF0000",
+            "colour2": "#FFFFFF",
+            "colour3": "#000000",
+            "colour4": "#000000",
+            "colour5": "#000000",
+            "seasonID": null
+          },
+          "team": {
+            "teamID": "t20",
+            "teamName": "Southampton",
+            "teamOfficialName": "Southampton",
+            "teamNameInitials": null,
+            "customTeamNameInitials": null,
+            "teamShortName": "Southampton",
+            "customShortName": null,
+            "teamURL": "https://www.southamptonfc.com/",
+            "crestURL": "https://crests.gc.eflservices.co.uk/t20.png",
+            "stadiumName": "St Mary's Stadium",
+            "streamingURL": "https://www.southamptonfc.com/en/videos/video",
+            "ticketURL": "https://tickets.southamptonfc.com/",
+            "matchCentreURL": "https://www.southamptonfc.com/en/matches/mens-team",
+            "retailURL": "https://store.southamptonfc.com/",
+            "facebookURL": "https://www.facebook.com/southamptonfc/",
+            "twitterURL": "https://twitter.com/SouthamptonFC"
+          },
+          "players": {
+            "Start": [
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p429571",
+                "formationPlace": 1,
+                "playerPosition": "Goalkeeper",
+                "playerSubPosition": null,
+                "shirtNumber": 41,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p429571",
+                  "firstName": "Daniel",
+                  "lastName": "Peretz",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p184386",
+                "formationPlace": 2,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 14,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p184386",
+                  "firstName": "James",
+                  "lastName": "Bree",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p245719",
+                "formationPlace": 5,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 6,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p245719",
+                  "firstName": "Taylor",
+                  "lastName": "Harwood-Bellis",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p244845",
+                "formationPlace": 6,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 15,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p244845",
+                  "firstName": "Nathan",
+                  "lastName": "Wood",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p204863",
+                "formationPlace": 3,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 3,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p204863",
+                  "firstName": "Ryan",
+                  "lastName": "Manning",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p463210",
+                "formationPlace": 4,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 24,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p463210",
+                  "firstName": "Shea",
+                  "lastName": "Charles",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p565813",
+                "formationPlace": 8,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 20,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p565813",
+                  "firstName": "Caspar",
+                  "lastName": "Jander",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p232416",
+                "formationPlace": 7,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 10,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p232416",
+                  "firstName": "Finn",
+                  "lastName": "Azaz",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p469566",
+                "formationPlace": 11,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 27,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p469566",
+                  "firstName": "Kuryu",
+                  "lastName": "Matsuki",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p230348",
+                "formationPlace": 10,
+                "playerPosition": "Striker",
+                "playerSubPosition": null,
+                "shirtNumber": 11,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p230348",
+                  "firstName": "Ross",
+                  "lastName": "Stewart",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p584651",
+                "formationPlace": 9,
+                "playerPosition": "Striker",
+                "playerSubPosition": null,
+                "shirtNumber": 13,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p584651",
+                  "firstName": "Leonardo",
+                  "lastName": "Weschenfelder Scienza",
+                  "knownName": "Léo Scienza",
+                  "customKnownName": null
+                }
+              }
+            ],
+            "Sub": [
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p220585",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 4,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p220585",
+                  "firstName": "Flynn",
+                  "lastName": "Downes",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p88900",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Defender",
+                "shirtNumber": 5,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p88900",
+                  "firstName": "Jack",
+                  "lastName": "Stephens",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p185126",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Forward",
+                "shirtNumber": 9,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p185126",
+                  "firstName": "Cyle",
+                  "lastName": "Larin",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p467125",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 18,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p467125",
+                  "firstName": "Tom",
+                  "lastName": "Fellows",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p433979",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Forward",
+                "shirtNumber": 19,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p433979",
+                  "firstName": "Cameron",
+                  "lastName": "Archer",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p490503",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 23,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p490503",
+                  "firstName": "Samuel",
+                  "lastName": "Edozie",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p92505",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Goalkeeper",
+                "shirtNumber": 25,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p92505",
+                  "firstName": "George",
+                  "lastName": "Long",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p500016",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Defender",
+                "shirtNumber": 34,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p500016",
+                  "firstName": "Welington Damascena",
+                  "lastName": "Santos",
+                  "knownName": "Welington",
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "playerID": "p496932",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 48,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p496932",
+                  "firstName": "Cameron",
+                  "lastName": "Bragg",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              }
+            ]
+          },
+          "events": {
+            "bookings": [
+              {
+                "eventID": "2937114815",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 19:36:56.000000",
+                "eventTime": 37,
+                "eventSecond": 17,
+                "eventMinute": 36,
+                "eventPeriod": "FirstHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937114815",
+                  "playerID": "p244845",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "FirstHalf",
+                  "reason": "Dissent",
+                  "player": {
+                    "matchID": "g2370526",
+                    "teamID": "t80",
+                    "playerID": "p244845",
+                    "formationPlace": 4,
+                    "playerPosition": "Defender",
+                    "playerSubPosition": null,
+                    "shirtNumber": 23,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p244845",
+                      "firstName": "Nathan",
+                      "lastName": "Wood",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "37'"
+              },
+              {
+                "eventID": "2937139845",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 20:18:29.000000",
+                "eventTime": 56,
+                "eventSecond": 20,
+                "eventMinute": 55,
+                "eventPeriod": "SecondHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937139845",
+                  "playerID": "p232416",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "SecondHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2370523",
+                    "teamID": "t76",
+                    "playerID": "p232416",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 18,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p232416",
+                      "firstName": "Finn",
+                      "lastName": "Azaz",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "56'"
+              },
+              {
+                "eventID": "2937159493",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 21:40:33.000000",
+                "eventTime": 123,
+                "eventSecond": 17,
+                "eventMinute": 122,
+                "eventPeriod": "ExtraSecondHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937159493",
+                  "playerID": "p429571",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "ExtraSecondHalf",
+                  "reason": "Time wasting",
+                  "player": {
+                    "matchID": "g2566682",
+                    "teamID": "t20",
+                    "playerID": "p429571",
+                    "formationPlace": 1,
+                    "playerPosition": "Goalkeeper",
+                    "playerSubPosition": null,
+                    "shirtNumber": 41,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p429571",
+                      "firstName": "Daniel",
+                      "lastName": "Peretz",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "120' +3'"
+              },
+              {
+                "eventID": "2937159993",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 21:43:33.000000",
+                "eventTime": 126,
+                "eventSecond": 17,
+                "eventMinute": 125,
+                "eventPeriod": "ExtraSecondHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937159993",
+                  "playerID": "p185126",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "ExtraSecondHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2566732",
+                    "teamID": "t20",
+                    "playerID": "p185126",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Forward",
+                    "shirtNumber": 9,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p185126",
+                      "firstName": "Cyle",
+                      "lastName": "Larin",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "120' +6'"
+              }
+            ],
+            "goals": [
+              {
+                "eventID": "2937120217",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 19:46:25.000000",
+                "eventTime": 46,
+                "eventSecond": 47,
+                "eventMinute": 45,
+                "eventPeriod": "FirstHalf",
+                "goalEvents": {
+                  "eventID": "2937120217",
+                  "playerID": "p230348",
+                  "goalType": "Goal",
+                  "player": {
+                    "matchID": "g2213697",
+                    "teamID": "t56",
+                    "playerID": "p230348",
+                    "formationPlace": 10,
+                    "playerPosition": "Striker",
+                    "playerSubPosition": null,
+                    "shirtNumber": 14,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p230348",
+                      "firstName": "Ross",
+                      "lastName": "Stewart",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "substitutionEvents": null,
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "45' +1'"
+              },
+              {
+                "eventID": "2937158587",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 21:34:07.000000",
+                "eventTime": 116,
+                "eventSecond": 51,
+                "eventMinute": 115,
+                "eventPeriod": "ExtraSecondHalf",
+                "goalEvents": {
+                  "eventID": "2937158587",
+                  "playerID": "p463210",
+                  "goalType": "Goal",
+                  "player": {
+                    "matchID": "g2370518",
+                    "teamID": "t20",
+                    "playerID": "p463210",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 24,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p463210",
+                      "firstName": "Shea",
+                      "lastName": "Charles",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "substitutionEvents": null,
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "116'"
+              }
+            ],
+            "shootout": [],
+            "subs": [
+              {
+                "eventID": "2937145033",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 20:28:46.000000",
+                "eventTime": 66,
+                "eventSecond": 38,
+                "eventMinute": 65,
+                "eventPeriod": "2",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937145033",
+                  "subOnID": "p220585",
+                  "subOffID": "p469566",
+                  "reason": "Tactical",
+                  "subPeriod": 2,
+                  "subOnPlayer": {
+                    "matchID": "g2213426",
+                    "teamID": "t80",
+                    "playerID": "p220585",
+                    "formationPlace": 4,
+                    "playerPosition": "Midfielder",
+                    "playerSubPosition": null,
+                    "shirtNumber": 4,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p220585",
+                      "firstName": "Flynn",
+                      "lastName": "Downes",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2566372",
+                    "teamID": "t20",
+                    "playerID": "p469566",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 27,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p469566",
+                      "firstName": "Kuryu",
+                      "lastName": "Matsuki",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "66'"
+              },
+              {
+                "eventID": "2937150713",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 20:47:08.000000",
+                "eventTime": 84,
+                "eventSecond": 0,
+                "eventMinute": 84,
+                "eventPeriod": "2",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937150713",
+                  "subOnID": "p185126",
+                  "subOffID": "p230348",
+                  "reason": "Tactical",
+                  "subPeriod": 2,
+                  "subOnPlayer": {
+                    "matchID": "g2566732",
+                    "teamID": "t20",
+                    "playerID": "p185126",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Forward",
+                    "shirtNumber": 9,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p185126",
+                      "firstName": "Cyle",
+                      "lastName": "Larin",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2213697",
+                    "teamID": "t56",
+                    "playerID": "p230348",
+                    "formationPlace": 10,
+                    "playerPosition": "Striker",
+                    "playerSubPosition": null,
+                    "shirtNumber": 14,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p230348",
+                      "firstName": "Ross",
+                      "lastName": "Stewart",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "84'"
+              },
+              {
+                "eventID": "2937150737",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 20:47:14.000000",
+                "eventTime": 85,
+                "eventSecond": 5,
+                "eventMinute": 84,
+                "eventPeriod": "2",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937150737",
+                  "subOnID": "p490503",
+                  "subOffID": "p584651",
+                  "reason": "Tactical",
+                  "subPeriod": 2,
+                  "subOnPlayer": {
+                    "matchID": "g2370518",
+                    "teamID": "t20",
+                    "playerID": "p490503",
+                    "formationPlace": 11,
+                    "playerPosition": "Striker",
+                    "playerSubPosition": null,
+                    "shirtNumber": 23,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p490503",
+                      "firstName": "Samuel",
+                      "lastName": "Edozie",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2566418",
+                    "teamID": "t20",
+                    "playerID": "p584651",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 13,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p584651",
+                      "firstName": "Leonardo",
+                      "lastName": "Weschenfelder Scienza",
+                      "knownName": "Léo Scienza",
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "85'"
+              },
+              {
+                "eventID": "2937158943",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 21:36:33.000000",
+                "eventTime": 119,
+                "eventSecond": 17,
+                "eventMinute": 118,
+                "eventPeriod": "4",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937158943",
+                  "subOnID": "p496932",
+                  "subOffID": "p565813",
+                  "reason": "Tactical",
+                  "subPeriod": 4,
+                  "subOnPlayer": {
+                    "matchID": "g2370757",
+                    "teamID": "t20",
+                    "playerID": "p496932",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 40,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p496932",
+                      "firstName": "Cameron",
+                      "lastName": "Bragg",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2566418",
+                    "teamID": "t20",
+                    "playerID": "p565813",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 20,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p565813",
+                      "firstName": "Caspar",
+                      "lastName": "Jander",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "119'"
+              },
+              {
+                "eventID": "2937158977",
+                "matchID": "g2634379",
+                "teamID": "t20",
+                "eventTimestamp": "2026-05-12 21:36:51.000000",
+                "eventTime": 119,
+                "eventSecond": 35,
+                "eventMinute": 118,
+                "eventPeriod": "4",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937158977",
+                  "subOnID": "p500016",
+                  "subOffID": "p490503",
+                  "reason": "Tactical",
+                  "subPeriod": 4,
+                  "subOnPlayer": {
+                    "matchID": "g2566372",
+                    "teamID": "t20",
+                    "playerID": "p500016",
+                    "formationPlace": 3,
+                    "playerPosition": "Midfielder",
+                    "playerSubPosition": null,
+                    "shirtNumber": 34,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p500016",
+                      "firstName": "Welington Damascena",
+                      "lastName": "Santos",
+                      "knownName": "Welington",
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2370518",
+                    "teamID": "t20",
+                    "playerID": "p490503",
+                    "formationPlace": 11,
+                    "playerPosition": "Striker",
+                    "playerSubPosition": null,
+                    "shirtNumber": 23,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p490503",
+                      "firstName": "Samuel",
+                      "lastName": "Edozie",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "119'"
+              }
+            ],
+            "var": []
+          }
+        },
+        {
+          "matchID": "g2634379",
+          "teamID": "t25",
+          "kitID": "27932",
+          "formation": "3421",
+          "score": 1,
+          "halfScore": 1,
+          "ninetyScore": 1,
+          "extraScore": 0,
+          "penaltyScore": null,
+          "kit": {
+            "kitID": "27932",
+            "kitType": "third",
+            "colour1": "#05688C",
+            "colour2": "#192438",
+            "colour3": "#81CFD4",
+            "colour4": "#81CFD4",
+            "colour5": "#81CFD4",
+            "seasonID": null
+          },
+          "team": {
+            "teamID": "t25",
+            "teamName": "Middlesbrough",
+            "teamOfficialName": "Middlesbrough",
+            "teamNameInitials": null,
+            "customTeamNameInitials": null,
+            "teamShortName": "Middlesbrough",
+            "customShortName": null,
+            "teamURL": "https://www.mfc.co.uk/",
+            "crestURL": "https://crests.gc.eflservices.co.uk/t25.png",
+            "stadiumName": "Riverside Stadium",
+            "streamingURL": "https://www.mfc.co.uk/videos",
+            "ticketURL": "https://www.mfc.co.uk/tickets",
+            "matchCentreURL": "https://www.mfc.co.uk/matches/",
+            "retailURL": "https://www.mfcofficialdirect.co.uk/",
+            "facebookURL": "https://www.facebook.com/MFCofficial/",
+            "twitterURL": "https://twitter.com/Boro"
+          },
+          "players": {
+            "Start": [
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p232938",
+                "formationPlace": 1,
+                "playerPosition": "Goalkeeper",
+                "playerSubPosition": null,
+                "shirtNumber": 31,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p232938",
+                  "firstName": "Sol",
+                  "lastName": "Brynn",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p66588",
+                "formationPlace": 6,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 12,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p66588",
+                  "firstName": "Luke",
+                  "lastName": "Ayling",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p169061",
+                "formationPlace": 5,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 6,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p169061",
+                  "firstName": "Dael",
+                  "lastName": "Fry",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p523643",
+                "formationPlace": 4,
+                "playerPosition": "Defender",
+                "playerSubPosition": null,
+                "shirtNumber": 29,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p523643",
+                  "firstName": "Adilson",
+                  "lastName": "Malanda",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p221417",
+                "formationPlace": 2,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 2,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p221417",
+                  "firstName": "Callum",
+                  "lastName": "Brittain",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p427542",
+                "formationPlace": 7,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 18,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p427542",
+                  "firstName": "Aidan",
+                  "lastName": "Morris",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p224935",
+                "formationPlace": 8,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 8,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p224935",
+                  "firstName": "Riley",
+                  "lastName": "McGree",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p169359",
+                "formationPlace": 3,
+                "playerPosition": "Midfielder",
+                "playerSubPosition": null,
+                "shirtNumber": 3,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p169359",
+                  "firstName": "Matt",
+                  "lastName": "Targett",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p232817",
+                "formationPlace": 10,
+                "playerPosition": "Striker",
+                "playerSubPosition": null,
+                "shirtNumber": 11,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p232817",
+                  "firstName": "Morgan",
+                  "lastName": "Whittaker",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p472312",
+                "formationPlace": 11,
+                "playerPosition": "Striker",
+                "playerSubPosition": null,
+                "shirtNumber": 9,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p472312",
+                  "firstName": "Tommy",
+                  "lastName": "Conway",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p456304",
+                "formationPlace": 9,
+                "playerPosition": "Striker",
+                "playerSubPosition": null,
+                "shirtNumber": 13,
+                "playerStatus": "Start",
+                "playerName": {
+                  "playerID": "p456304",
+                  "firstName": "David",
+                  "lastName": "Strelec",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              }
+            ],
+            "Sub": [
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p438659",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Forward",
+                "shirtNumber": 14,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p438659",
+                  "firstName": "Alex",
+                  "lastName": "Gilbert",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p521966",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Defender",
+                "shirtNumber": 15,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p521966",
+                  "firstName": "Finley",
+                  "lastName": "Munroe",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p171422",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 16,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p171422",
+                  "firstName": "Alan",
+                  "lastName": "Browne",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p440439",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Forward",
+                "shirtNumber": 22,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p440439",
+                  "firstName": "Sam",
+                  "lastName": "Silvera",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p517995",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 23,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p517995",
+                  "firstName": "Leo",
+                  "lastName": "Castledine",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p214964",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Defender",
+                "shirtNumber": 25,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p214964",
+                  "firstName": "George",
+                  "lastName": "Edmundson",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p441268",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Forward",
+                "shirtNumber": 27,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p441268",
+                  "firstName": "Sontje",
+                  "lastName": "Hansen",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p175433",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Goalkeeper",
+                "shirtNumber": 32,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p175433",
+                  "firstName": "Joe",
+                  "lastName": "Wildsmith",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              },
+              {
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "playerID": "p441192",
+                "formationPlace": 0,
+                "playerPosition": "Substitute",
+                "playerSubPosition": "Midfielder",
+                "shirtNumber": 45,
+                "playerStatus": "Sub",
+                "playerName": {
+                  "playerID": "p441192",
+                  "firstName": "Jeremy",
+                  "lastName": "Sarmiento",
+                  "knownName": null,
+                  "customKnownName": null
+                }
+              }
+            ]
+          },
+          "events": {
+            "bookings": [
+              {
+                "eventID": "2937098433",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 19:13:05.000000",
+                "eventTime": 13,
+                "eventSecond": 27,
+                "eventMinute": 12,
+                "eventPeriod": "FirstHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937098433",
+                  "playerID": "p224935",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "FirstHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2213246",
+                    "teamID": "t25",
+                    "playerID": "p224935",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 48,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p224935",
+                      "firstName": "Riley",
+                      "lastName": "McGree",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "13'"
+              },
+              {
+                "eventID": "2937115645",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 19:38:35.000000",
+                "eventTime": 38,
+                "eventSecond": 56,
+                "eventMinute": 37,
+                "eventPeriod": "FirstHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937115645",
+                  "playerID": "p66588",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "FirstHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2370527",
+                    "teamID": "t2",
+                    "playerID": "p66588",
+                    "formationPlace": 2,
+                    "playerPosition": "Defender",
+                    "playerSubPosition": null,
+                    "shirtNumber": 2,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p66588",
+                      "firstName": "Luke",
+                      "lastName": "Ayling",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "38'"
+              },
+              {
+                "eventID": "2937149457",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 20:41:04.000000",
+                "eventTime": 78,
+                "eventSecond": 56,
+                "eventMinute": 77,
+                "eventPeriod": "SecondHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937149457",
+                  "playerID": "p523643",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "SecondHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2566670",
+                    "teamID": "t25",
+                    "playerID": "p523643",
+                    "formationPlace": 5,
+                    "playerPosition": "Defender",
+                    "playerSubPosition": null,
+                    "shirtNumber": 29,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p523643",
+                      "firstName": "Adilson",
+                      "lastName": "Malanda",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "78'"
+              },
+              {
+                "eventID": "2937154537",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 21:07:24.000000",
+                "eventTime": 92,
+                "eventSecond": 33,
+                "eventMinute": 91,
+                "eventPeriod": "ExtraFirstHalf",
+                "goalEvents": null,
+                "substitutionEvents": null,
+                "bookingEvents": {
+                  "eventID": "2937154537",
+                  "playerID": "p221417",
+                  "card": "Yellow",
+                  "cardType": "Yellow",
+                  "cardPeriod": "ExtraFirstHalf",
+                  "reason": "Foul",
+                  "player": {
+                    "matchID": "g2299721",
+                    "teamID": "t5",
+                    "playerID": "p221417",
+                    "formationPlace": 2,
+                    "playerPosition": "Defender",
+                    "playerSubPosition": null,
+                    "shirtNumber": 2,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p221417",
+                      "firstName": "Callum",
+                      "lastName": "Brittain",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "92'"
+              }
+            ],
+            "goals": [
+              {
+                "eventID": "2937092151",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 19:04:56.000000",
+                "eventTime": 5,
+                "eventSecond": 18,
+                "eventMinute": 4,
+                "eventPeriod": "FirstHalf",
+                "goalEvents": {
+                  "eventID": "2937092151",
+                  "playerID": "p224935",
+                  "goalType": "Goal",
+                  "player": {
+                    "matchID": "g2213246",
+                    "teamID": "t25",
+                    "playerID": "p224935",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 48,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p224935",
+                      "firstName": "Riley",
+                      "lastName": "McGree",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "substitutionEvents": null,
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "5'"
+              }
+            ],
+            "shootout": [],
+            "subs": [
+              {
+                "eventID": "2937147933",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 20:35:48.000000",
+                "eventTime": 73,
+                "eventSecond": 39,
+                "eventMinute": 72,
+                "eventPeriod": "2",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937147933",
+                  "subOnID": "p171422",
+                  "subOffID": "p472312",
+                  "reason": "Injury",
+                  "subPeriod": 2,
+                  "subOnPlayer": {
+                    "matchID": "g2213363",
+                    "teamID": "t107",
+                    "playerID": "p171422",
+                    "formationPlace": 7,
+                    "playerPosition": "Midfielder",
+                    "playerSubPosition": null,
+                    "shirtNumber": 8,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p171422",
+                      "firstName": "Alan",
+                      "lastName": "Browne",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2299724",
+                    "teamID": "t113",
+                    "playerID": "p472312",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Forward",
+                    "shirtNumber": 15,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p472312",
+                      "firstName": "Tommy",
+                      "lastName": "Conway",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "73'"
+              },
+              {
+                "eventID": "2937150411",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 20:45:35.000000",
+                "eventTime": 83,
+                "eventSecond": 27,
+                "eventMinute": 82,
+                "eventPeriod": "2",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937150411",
+                  "subOnID": "p517995",
+                  "subOffID": "p456304",
+                  "reason": "Tactical",
+                  "subPeriod": 2,
+                  "subOnPlayer": {
+                    "matchID": "g2397503",
+                    "teamID": "t12943",
+                    "playerID": "p517995",
+                    "formationPlace": 8,
+                    "playerPosition": "Midfielder",
+                    "playerSubPosition": null,
+                    "shirtNumber": 54,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p517995",
+                      "firstName": "Leo",
+                      "lastName": "Castledine",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2566416",
+                    "teamID": "t25",
+                    "playerID": "p456304",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Forward",
+                    "shirtNumber": 13,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p456304",
+                      "firstName": "David",
+                      "lastName": "Strelec",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "83'"
+              },
+              {
+                "eventID": "2937156697",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 21:22:41.000000",
+                "eventTime": 105,
+                "eventSecond": 0,
+                "eventMinute": 105,
+                "eventPeriod": "4",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937156697",
+                  "subOnID": "p441192",
+                  "subOffID": "p224935",
+                  "reason": "Tactical",
+                  "subPeriod": 4,
+                  "subOnPlayer": {
+                    "matchID": "g2326241",
+                    "teamID": "t36",
+                    "playerID": "p441192",
+                    "formationPlace": 11,
+                    "playerPosition": "Midfielder",
+                    "playerSubPosition": null,
+                    "shirtNumber": 19,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p441192",
+                      "firstName": "Jeremy",
+                      "lastName": "Sarmiento",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2213246",
+                    "teamID": "t25",
+                    "playerID": "p224935",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Midfielder",
+                    "shirtNumber": 48,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p224935",
+                      "firstName": "Riley",
+                      "lastName": "McGree",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "105'"
+              },
+              {
+                "eventID": "2937159277",
+                "matchID": "g2634379",
+                "teamID": "t25",
+                "eventTimestamp": "2026-05-12 21:36:46.000000",
+                "eventTime": 119,
+                "eventSecond": 30,
+                "eventMinute": 118,
+                "eventPeriod": "4",
+                "goalEvents": null,
+                "substitutionEvents": {
+                  "eventID": "2937159277",
+                  "subOnID": "p441268",
+                  "subOffID": "p66588",
+                  "reason": "Tactical",
+                  "subPeriod": 4,
+                  "subOnPlayer": {
+                    "matchID": "g2566381",
+                    "teamID": "t25",
+                    "playerID": "p441268",
+                    "formationPlace": 0,
+                    "playerPosition": "Substitute",
+                    "playerSubPosition": "Forward",
+                    "shirtNumber": 27,
+                    "playerStatus": "Sub",
+                    "playerName": {
+                      "playerID": "p441268",
+                      "firstName": "Sontje",
+                      "lastName": "Hansen",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  },
+                  "subOffPlayer": {
+                    "matchID": "g2370527",
+                    "teamID": "t2",
+                    "playerID": "p66588",
+                    "formationPlace": 2,
+                    "playerPosition": "Defender",
+                    "playerSubPosition": null,
+                    "shirtNumber": 2,
+                    "playerStatus": "Start",
+                    "playerName": {
+                      "playerID": "p66588",
+                      "firstName": "Luke",
+                      "lastName": "Ayling",
+                      "knownName": null,
+                      "customKnownName": null
+                    }
+                  }
+                },
+                "bookingEvents": null,
+                "varEvents": null,
+                "shootoutEvents": null,
+                "formattedEventTime": "119'"
+              }
+            ],
+            "var": []
+          }
+        }
+      ],
+      "homeTeam": {
+        "teamID": "t20",
+        "teamName": "Southampton",
+        "teamOfficialName": "Southampton",
+        "teamNameInitials": null,
+        "customTeamNameInitials": null,
+        "teamShortName": "Southampton",
+        "customShortName": null,
+        "teamURL": "https://www.southamptonfc.com/",
+        "crestURL": "https://crests.gc.eflservices.co.uk/t20.png",
+        "stadiumName": "St Mary's Stadium",
+        "streamingURL": "https://www.southamptonfc.com/en/videos/video",
+        "ticketURL": "https://tickets.southamptonfc.com/",
+        "matchCentreURL": "https://www.southamptonfc.com/en/matches/mens-team",
+        "retailURL": "https://store.southamptonfc.com/",
+        "facebookURL": "https://www.facebook.com/southamptonfc/",
+        "twitterURL": "https://twitter.com/SouthamptonFC"
+      },
+      "awayTeam": {
+        "teamID": "t25",
+        "teamName": "Middlesbrough",
+        "teamOfficialName": "Middlesbrough",
+        "teamNameInitials": null,
+        "customTeamNameInitials": null,
+        "teamShortName": "Middlesbrough",
+        "customShortName": null,
+        "teamURL": "https://www.mfc.co.uk/",
+        "crestURL": "https://crests.gc.eflservices.co.uk/t25.png",
+        "stadiumName": "Riverside Stadium",
+        "streamingURL": "https://www.mfc.co.uk/videos",
+        "ticketURL": "https://www.mfc.co.uk/tickets",
+        "matchCentreURL": "https://www.mfc.co.uk/matches/",
+        "retailURL": "https://www.mfcofficialdirect.co.uk/",
+        "facebookURL": "https://www.facebook.com/MFCofficial/",
+        "twitterURL": "https://twitter.com/Boro"
+      }
+    }
+  }
+}

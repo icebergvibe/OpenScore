@@ -1,0 +1,58 @@
+{
+  "dflDatalibraryCompetitionId": "DFL-COM-000001",
+  "dflDatalibraryMatchId": "DFL-MAT-J043GZ",
+  "dflDatalibraryMatchdayId": "DFL-DAY-004CBV",
+  "dflDatalibrarySeasonId": "DFL-SEA-0001KA",
+  "kickOff": "2026-09-11T18:30:23+0000",
+  "matchDateFixed": true,
+  "matchId": "DFL-MAT-J043GZ",
+  "matchStatus": "FINAL_WHISTLE",
+  "matchday": 3,
+  "matchdayRange": {
+    "end": "2026-09-13T00:00:00+0000",
+    "start": "2026-09-11T00:00:00+0000"
+  },
+  "minuteOfPlay": {
+    "injuryTime": 14,
+    "minute": 90
+  },
+  "plannedKickOff": "2026-09-11T18:30:00+0000",
+  "score": {
+    "away": {
+      "fulltime": 3,
+      "halftime": 1,
+      "live": 3
+    },
+    "home": {
+      "fulltime": 1,
+      "halftime": 0,
+      "live": 1
+    }
+  },
+  "seasonOrder": 19,
+  "slugs": {
+    "slugLong": "1-fc-union-berlin-vs-fc-schalke-04"
+  },
+  "teams": {
+    "away": {
+      "dflDatalibraryClubId": "DFL-CLU-000009",
+      "gradientEndColor": "#004b9c",
+      "gradientStartColor": "#004b9c",
+      "logoUrl": "https://assets.bundesliga.com/clublogos/DFL-SEA-0001KA/DFL-CLU-000009.svg",
+      "nameFull": "FC Schalke 04",
+      "nameShort": "Schalke",
+      "textColor": "#FFFFFF",
+      "threeLetterCode": "S04"
+    },
+    "home": {
+      "dflDatalibraryClubId": "DFL-CLU-00000V",
+      "gradientEndColor": "#E30613",
+      "gradientStartColor": "#E30613",
+      "logoUrl": "https://assets.bundesliga.com/clublogos/DFL-SEA-0001KA/DFL-CLU-00000V.svg",
+      "nameFull": "1. FC Union Berlin",
+      "nameShort": "Union Berlin",
+      "textColor": "#FFFFFF",
+      "threeLetterCode": "FCU"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "league": "liiga",
+  "name": "Liiga",
+  "baseUrl": "https://liiga.fi/api/v2",
+  "checks": [
+    {
+      "name": "games?tournament=all&date={date}",
+      "path": "/games?tournament=all&date={today}",
+      "sample": "games-by-date.json",
+      "note": "Bare array; empty on an off-day",
+      "keys": [
+        "games[]",
+        "nextGameDate"
+      ]
+    },
+    {
+      "name": "games?tournament=all&date=… — finished day",
+      "path": "/games?tournament=all&date=2026-09-01",
+      "sample": "games-by-date.json",
+      "keys": [
+        "games[].id",
+        "games[].homeTeam",
+        "games[].ended",
+        "games[].periods"
+      ]
+    },
+    {
+      "name": "games?tournament=runkosarja&season=2027",
+      "path": "/games?tournament=runkosarja&season=2027",
+      "sample": "games-season.json",
+      "keys": [
+        "[].id",
+        "[].start"
+      ]
+    },
+    {
+      "name": "games?…&week=1&season=2027",
+      "path": "/games?tournament=runkosarja&week=1&season=2027",
+      "sample": "games-by-week.json",
+      "keys": [
+        "[].gameWeek"
+      ]
+    },
+    {
+      "name": "games?tournament=playoffs&season=2026",
+      "path": "/games?tournament=playoffs&season=2026",
+      "sample": "games-playoffs.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "games/{season}/{id} — pre",
+      "path": "/games/2027/2701298",
+      "sample": "game.pre.json",
+      "keys": [
+        "game.id",
+        "game.homeTeam",
+        "homeTeamPlayers[]"
+      ]
+    },
+    {
+      "name": "games/{season}/{id} — final",
+      "path": "/games/2027/2701274",
+      "sample": "game.final.json",
+      "keys": [
+        "game.ended",
+        "game.homeTeam.goalEvents[]",
+        "game.periods[]"
+      ]
+    },
+    {
+      "name": "games/{season}/{id} — shootout",
+      "path": "/games/2027/2701280",
+      "sample": "game.final-shootout.json",
+      "keys": [
+        "game.finishedType"
+      ]
+    },
+    {
+      "name": "games/{season}/{id}?dataType=playersWithStats",
+      "path": "/games/2027/2701274?dataType=playersWithStats",
+      "sample": "game.players-with-stats.json",
+      "keys": [
+        "homeTeamPlayers[]",
+        "awayTeamPlayers[]"
+      ]
+    },
+    {
+      "name": "games/{season}/{id}?dataType=pastAndFutureGames",
+      "path": "/games/2027/2701274?dataType=pastAndFutureGames",
+      "sample": "game.past-and-future-games.json",
+      "keys": [
+        "pastGamesBetweenTeams[]"
+      ]
+    },
+    {
+      "name": "games/preview/{season}/{id}",
+      "path": "/games/preview/2027/2701298/?gameDate=2026-09-15&homeTeam=859884935:kalpa&awayTeam=55786244:hpk",
+      "sample": "game-preview.json",
+      "keys": [
+        "teamComparison"
+      ]
+    },
+    {
+      "name": "shotmap/{season}/{id} — final",
+      "path": "/shotmap/2027/2701274",
+      "sample": "shotmap.final.json",
+      "keys": [
+        "[].shotX",
+        "[].shotY",
+        "[].shooterId"
+      ]
+    },
+    {
+      "name": "shotmap/{season}/{id} — pre",
+      "path": "/shotmap/2027/2701298",
+      "sample": "shotmap.pre.json"
+    },
+    {
+      "name": "standings?season=2027",
+      "path": "/standings?season=2027",
+      "sample": "standings.json",
+      "keys": [
+        "season[].teamId",
+        "season[].points",
+        "playoffs[]"
+      ]
+    },
+    {
+      "name": "standings?season=2026 (playoffs)",
+      "path": "/standings?season=2026",
+      "sample": "standings.playoffs.json",
+      "keys": [
+        "season[].teamId",
+        "playoffs[]"
+      ]
+    },
+    {
+      "name": "schedule?tournament=runkosarja&season=2027",
+      "path": "/schedule?tournament=runkosarja&season=2027",
+      "sample": "schedule.json",
+      "keys": [
+        "[].id",
+        "[].homeTeamName",
+        "[].start"
+      ]
+    },
+    {
+      "name": "players/info?tournament=…",
+      "path": "/players/info?tournament=runkosarja&fromSeason=2027&toSeason=2027",
+      "sample": "players-info.json",
+      "keys": [
+        "[].id"
+      ]
+    },
+    {
+      "name": "players/info/{id}",
+      "path": "/players/info/60860218",
+      "sample": "player-info.json",
+      "keys": [
+        "firstName",
+        "lastName",
+        "historical"
+      ]
+    },
+    {
+      "name": "players/info/{id}/games/{season}",
+      "path": "/players/info/60860218/games/2027",
+      "sample": "player-games.json"
+    },
+    {
+      "name": "players/stats/summed — basicStats",
+      "path": "/players/stats/summed/2027/2027/runkosarja/true?dataType=basicStats",
+      "sample": "players-stats-summed.basicStats.json",
+      "keys": [
+        "[].playerId"
+      ]
+    },
+    {
+      "name": "players/stats/summed — goalStats",
+      "path": "/players/stats/summed/2027/2027/runkosarja/true?dataType=goalStats",
+      "sample": "players-stats-summed.goalStats.json",
+      "keys": [
+        "[].playerId"
+      ]
+    },
+    {
+      "name": "teams/info",
+      "path": "/teams/info",
+      "sample": "teams-info.json",
+      "keys": [
+        "teams"
+      ]
+    },
+    {
+      "name": "teams/info?team={teamId}",
+      "path": "/teams/info?team=495643563",
+      "sample": "team-info.json"
+    }
+  ]
+}

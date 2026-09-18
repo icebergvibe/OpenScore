@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "type": "competition",
+      "id": "10",
+      "attributes": {
+        "competitionName": "English Football League - Championship",
+        "competitionCode": "EN_D1",
+        "crestURL": null,
+        "liveMatchCount": 0
+      },
+      "links": {
+        "self": "https://multi-club-matches.gc.eflservices.co.uk/v2/competitions/10"
+      }
+    },
+    {
+      "type": "competition",
+      "id": "11",
+      "attributes": {
+        "competitionName": "English Football League - League One",
+        "competitionCode": "EN_D2",
+        "crestURL": null,
+        "liveMatchCount": 1
+      },
+      "links": {
+        "self": "https://multi-club-matches.gc.eflservices.co.uk/v2/competitions/11"
+      }
+    },
+    {
+      "type": "competition",
+      "id": "12",
+      "attributes": {
+        "competitionName": "English Football League - League Two",
+        "competitionCode": "EN_D3",
+        "crestURL": null,
+        "liveMatchCount": 0
+      },
+      "links": {
+        "self": "https://multi-club-matches.gc.eflservices.co.uk/v2/competitions/12"
+      }
+    },
+    {
+      "type": "competition",
+      "id": "7",
+      "attributes": {
+        "competitionName": "English Football League Trophy",
+        "competitionCode": "EN_FL",
+        "crestURL": null,
+        "liveMatchCount": 0
+      },
+      "links": {
+        "self": "https://multi-club-matches.gc.eflservices.co.uk/v2/competitions/7"
+      }
+    },
+    {
+      "type": "competition",
+      "id": "2",
+      "attributes": {
+        "competitionName": "English League Cup",
+        "competitionCode": "EN_LC",
+        "crestURL": null,
+        "liveMatchCount": 1
+      },
+      "links": {
+        "self": "https://multi-club-matches.gc.eflservices.co.uk/v2/competitions/2"
+      }
+    }
+  ],
+  "meta": {
+    "totalCount": 5,
+    "count": 5
+  }
+}

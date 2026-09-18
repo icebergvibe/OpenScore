@@ -1,0 +1,2504 @@
+{
+  "_type": "Corebine.Core.Protocol.Response.Object",
+  "data": {
+    "_type": "Corebine.Core.Sport.Match",
+    "_entityId": "4f36a358a795d91b2fbb0c9b",
+    "_modifyDate": "2026-09-11T06:25:16.803Z",
+    "externalId": "3012",
+    "startDate": "2026-09-10T15:30:00.000Z",
+    "startDateNotConfirmed": false,
+    "status": "finished",
+    "link": {
+      "_type": "Corebine.Core.Type.Link.Internal",
+      "url": "/matches/4f36a358a795d91b2fbb0c9b/koo-koo-kouvola-vs-hk-nitra",
+      "isWeb": false,
+      "pageEntityId": "1"
+    },
+    "venue": {
+      "_type": "Corebine.Core.Sport.Arena",
+      "_entityId": "2f944ab4055dcb2fb49be604",
+      "name": "Kouvolan jäähalli"
+    },
+    "stage": {
+      "_type": "Corebine.Core.Sport.Event.Stage",
+      "group": {
+        "order": 1,
+        "name": "Regular Season"
+      },
+      "round": {
+        "order": 3,
+        "name": "Game Day 3"
+      }
+    },
+    "teams": {
+      "home": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "c9840a203093f97cae0a9495",
+        "externalId": "107",
+        "name": "KooKoo Kouvola",
+        "shortName": "KOO",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/c9840a203093f97cae0a9495/koo-koo-kouvola",
+          "isWeb": false
+        }
+      },
+      "away": {
+        "_type": "Corebine.Core.Sport.Team",
+        "_entityId": "11df2073083f06cccbb5132e",
+        "externalId": "55",
+        "name": "HK Nitra",
+        "shortName": "NIT",
+        "link": {
+          "_type": "Corebine.Core.Type.Link.Internal",
+          "pageEntityId": "1",
+          "url": "/teams/11df2073083f06cccbb5132e/hk-nitra",
+          "isWeb": false
+        }
+      }
+    },
+    "state": {
+      "_type": "Corebine.Core.Sport.Event.State",
+      "name": "Fulltime",
+      "shortName": "F"
+    },
+    "audience": 1570,
+    "results": {
+      "_type": "Corebine.Core.Sport.Match.Results",
+      "scores": {
+        "_type": "Corebine.Core.Sport.Match.Scores",
+        "home": 1,
+        "away": 4
+      },
+      "periods": [
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "1st Period",
+          "shortName": "1st",
+          "scores": {
+            "_type": "Corebine.Core.Sport.Match.Scores",
+            "home": 0,
+            "away": 0
+          },
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "event-start",
+              "message": {
+                "title": "Start of Game",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "event-start",
+                  "message": {
+                    "title": "Start of Game",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "event-start"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "teamType": "home",
+              "message": {
+                "title": "Goalie In",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "783cc05a8ec84bfa088cba54",
+                  "externalId": "4452",
+                  "firstName": "Jasper",
+                  "lastName": "Patrikainen",
+                  "number": 30,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "783cc05a8ec84bfa088cba54",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Jasper",
+                      "lastName": "Patrikainen"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-783cc05a8ec84bfa088cba54.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Goalkeeper",
+                    "shortName": "GK",
+                    "category": "Goalkeeper",
+                    "order": 3
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "substitution-in",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 0
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Goalie In",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "783cc05a8ec84bfa088cba54",
+                      "externalId": "4452",
+                      "firstName": "Jasper",
+                      "lastName": "Patrikainen",
+                      "number": 30,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "783cc05a8ec84bfa088cba54",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Jasper",
+                          "lastName": "Patrikainen"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-783cc05a8ec84bfa088cba54.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Goalkeeper",
+                        "shortName": "GK",
+                        "category": "Goalkeeper",
+                        "order": 3
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "11702"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goalkeeper-change",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 0
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Goalie In",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "1d2ce0f29267f11477e62a65",
+                  "externalId": "446110",
+                  "firstName": "Shikhabutdin",
+                  "lastName": "Gadzhiev",
+                  "number": 31,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "1d2ce0f29267f11477e62a65",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Shikhabutdin",
+                      "lastName": "Gadzhiev"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-1d2ce0f29267f11477e62a65.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Goalkeeper",
+                    "shortName": "GK",
+                    "category": "Goalkeeper",
+                    "order": 3
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "substitution-in",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 0
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Goalie In",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "1d2ce0f29267f11477e62a65",
+                      "externalId": "446110",
+                      "firstName": "Shikhabutdin",
+                      "lastName": "Gadzhiev",
+                      "number": 31,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "1d2ce0f29267f11477e62a65",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Shikhabutdin",
+                          "lastName": "Gadzhiev"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-1d2ce0f29267f11477e62a65.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Goalkeeper",
+                        "shortName": "GK",
+                        "category": "Goalkeeper",
+                        "order": 3
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "11703"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 823
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "c3557b6652c8acdfec41b846",
+                  "externalId": "446103",
+                  "firstName": "Zach",
+                  "lastName": "Osburn",
+                  "number": 44,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "c3557b6652c8acdfec41b846",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Zach",
+                      "lastName": "Osburn"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-c3557b6652c8acdfec41b846.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 823
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "c3557b6652c8acdfec41b846",
+                      "externalId": "446103",
+                      "firstName": "Zach",
+                      "lastName": "Osburn",
+                      "number": 44,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "c3557b6652c8acdfec41b846",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Zach",
+                          "lastName": "Osburn"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-c3557b6652c8acdfec41b846.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 823
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Cross-checking",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14725"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1041
+              },
+              "teamType": "home",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "59d3e26aaeace58ecd9f1711",
+                  "externalId": "444922",
+                  "firstName": "Arttu",
+                  "lastName": "Pelli",
+                  "number": 3,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "59d3e26aaeace58ecd9f1711",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Arttu",
+                      "lastName": "Pelli"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-59d3e26aaeace58ecd9f1711.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1041
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "59d3e26aaeace58ecd9f1711",
+                      "externalId": "444922",
+                      "firstName": "Arttu",
+                      "lastName": "Pelli",
+                      "number": 3,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "59d3e26aaeace58ecd9f1711",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Arttu",
+                          "lastName": "Pelli"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-59d3e26aaeace58ecd9f1711.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1041
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Tripping",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14727"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "period-end",
+              "message": {
+                "title": "End of First Period",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "period-end",
+                  "message": {
+                    "title": "End of First Period",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "period-end"
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "2nd Period",
+          "shortName": "2nd",
+          "scores": {
+            "_type": "Corebine.Core.Sport.Match.Scores",
+            "home": 1,
+            "away": 2
+          },
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "period-start",
+              "message": {
+                "title": "Start of Second Period",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "period-start",
+                  "message": {
+                    "title": "Start of Second Period",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "period-start"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1491
+              },
+              "teamType": "home",
+              "message": {
+                "title": "Goal, 1:0",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "c0add44e7a2094c45b3e5fe9",
+                  "externalId": "446173",
+                  "firstName": "Roope",
+                  "lastName": "Tossavainen",
+                  "number": 72,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "c0add44e7a2094c45b3e5fe9",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Roope",
+                      "lastName": "Tossavainen"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-c0add44e7a2094c45b3e5fe9.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "a56f004b8c755a6e1e29e346",
+                  "externalId": "446172",
+                  "firstName": "Santeri",
+                  "lastName": "Sulku",
+                  "number": 10,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "a56f004b8c755a6e1e29e346",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Santeri",
+                      "lastName": "Sulku"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-a56f004b8c755a6e1e29e346.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "108b8e4e8c52400e670f1443",
+                  "externalId": "446164",
+                  "firstName": "Verner",
+                  "lastName": "Miettinen",
+                  "number": 9,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "108b8e4e8c52400e670f1443",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Verner",
+                      "lastName": "Miettinen"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-108b8e4e8c52400e670f1443.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "goal",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1491
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Goal, 1:0",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "c0add44e7a2094c45b3e5fe9",
+                      "externalId": "446173",
+                      "firstName": "Roope",
+                      "lastName": "Tossavainen",
+                      "number": 72,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "c0add44e7a2094c45b3e5fe9",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Roope",
+                          "lastName": "Tossavainen"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-c0add44e7a2094c45b3e5fe9.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "assist",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1491
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Assists",
+                    "description": "Assisted by Santeri Sulku and Verner Miettinen"
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "a56f004b8c755a6e1e29e346",
+                      "externalId": "446172",
+                      "firstName": "Santeri",
+                      "lastName": "Sulku",
+                      "number": 10,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "a56f004b8c755a6e1e29e346",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Santeri",
+                          "lastName": "Sulku"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-a56f004b8c755a6e1e29e346.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    },
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "108b8e4e8c52400e670f1443",
+                      "externalId": "446164",
+                      "firstName": "Verner",
+                      "lastName": "Miettinen",
+                      "number": 9,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "108b8e4e8c52400e670f1443",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Verner",
+                          "lastName": "Miettinen"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-108b8e4e8c52400e670f1443.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "8660",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "ZtFJCGpgG9w",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/ZtFJCGpgG9w/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1580
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "1d2ce0f29267f11477e62a65",
+                  "externalId": "446110",
+                  "firstName": "Shikhabutdin",
+                  "lastName": "Gadzhiev",
+                  "number": 31,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "1d2ce0f29267f11477e62a65",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Shikhabutdin",
+                      "lastName": "Gadzhiev"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-1d2ce0f29267f11477e62a65.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Goalkeeper",
+                    "shortName": "GK",
+                    "category": "Goalkeeper",
+                    "order": 3
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1580
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "1d2ce0f29267f11477e62a65",
+                      "externalId": "446110",
+                      "firstName": "Shikhabutdin",
+                      "lastName": "Gadzhiev",
+                      "number": 31,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "1d2ce0f29267f11477e62a65",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Shikhabutdin",
+                          "lastName": "Gadzhiev"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-1d2ce0f29267f11477e62a65.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Goalkeeper",
+                        "shortName": "GK",
+                        "category": "Goalkeeper",
+                        "order": 3
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1580
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Interference",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14728"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1923
+              },
+              "teamType": "home",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "11a809b45ebc978720b3c027",
+                  "externalId": "446170",
+                  "firstName": "Ville",
+                  "lastName": "Puhakka",
+                  "number": 77,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "11a809b45ebc978720b3c027",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Ville",
+                      "lastName": "Puhakka"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-11a809b45ebc978720b3c027.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1923
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "11a809b45ebc978720b3c027",
+                      "externalId": "446170",
+                      "firstName": "Ville",
+                      "lastName": "Puhakka",
+                      "number": 77,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "11a809b45ebc978720b3c027",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Ville",
+                          "lastName": "Puhakka"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-11a809b45ebc978720b3c027.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1923
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Holding",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14729"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 1955
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Goal, 1:1, PP",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "83506071d201df37c5d3ce7c",
+                  "externalId": "4019",
+                  "firstName": "Michal",
+                  "lastName": "Krištof",
+                  "number": 13,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "83506071d201df37c5d3ce7c",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Michal",
+                      "lastName": "Krištof"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "3ccaaf357df53dd3d78a58bb",
+                  "externalId": "446113",
+                  "firstName": "Adrián",
+                  "lastName": "Holešinský",
+                  "number": 89,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "3ccaaf357df53dd3d78a58bb",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Adrián",
+                      "lastName": "Holešinský"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-3ccaaf357df53dd3d78a58bb.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "b51a5d19397e39ca87763a52",
+                  "externalId": "455",
+                  "firstName": "Tomáš",
+                  "lastName": "Hrnka",
+                  "number": 80,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "goal",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1955
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Goal, 1:1, PP",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "83506071d201df37c5d3ce7c",
+                      "externalId": "4019",
+                      "firstName": "Michal",
+                      "lastName": "Krištof",
+                      "number": 13,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "83506071d201df37c5d3ce7c",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Michal",
+                          "lastName": "Krištof"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "assist",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 1955
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Assists",
+                    "description": "Assisted by Adrián Holešinský and Tomáš Hrnka"
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "3ccaaf357df53dd3d78a58bb",
+                      "externalId": "446113",
+                      "firstName": "Adrián",
+                      "lastName": "Holešinský",
+                      "number": 89,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "3ccaaf357df53dd3d78a58bb",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Adrián",
+                          "lastName": "Holešinský"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-3ccaaf357df53dd3d78a58bb.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    },
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "externalId": "455",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka",
+                      "number": 80,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "b51a5d19397e39ca87763a52",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Tomáš",
+                          "lastName": "Hrnka"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "8663",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "tk0KEZDusT4",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/tk0KEZDusT4/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2120
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Goal, 1:2",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "5e845301691d697d0ca06069",
+                  "externalId": "446106",
+                  "firstName": "Ondrej",
+                  "lastName": "Molnár",
+                  "number": 96,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "5e845301691d697d0ca06069",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Ondrej",
+                      "lastName": "Molnár"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-5e845301691d697d0ca06069.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "a6eec6c21183e460832775b5",
+                  "externalId": "446100",
+                  "firstName": "Marko",
+                  "lastName": "Stacha",
+                  "number": 16,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "a6eec6c21183e460832775b5",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Marko",
+                      "lastName": "Stacha"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "6c52f113670d2b1636f9f457",
+                  "externalId": "446104",
+                  "firstName": "Matej",
+                  "lastName": "Bača",
+                  "number": 2,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "6c52f113670d2b1636f9f457",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Matej",
+                      "lastName": "Bača"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-6c52f113670d2b1636f9f457.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "goal",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2120
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Goal, 1:2",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "5e845301691d697d0ca06069",
+                      "externalId": "446106",
+                      "firstName": "Ondrej",
+                      "lastName": "Molnár",
+                      "number": 96,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "5e845301691d697d0ca06069",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Ondrej",
+                          "lastName": "Molnár"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-5e845301691d697d0ca06069.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "assist",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2120
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Assists",
+                    "description": "Assisted by Marko Stacha and Matej Bača"
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "a6eec6c21183e460832775b5",
+                      "externalId": "446100",
+                      "firstName": "Marko",
+                      "lastName": "Stacha",
+                      "number": 16,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "a6eec6c21183e460832775b5",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Marko",
+                          "lastName": "Stacha"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    },
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "6c52f113670d2b1636f9f457",
+                      "externalId": "446104",
+                      "firstName": "Matej",
+                      "lastName": "Bača",
+                      "number": 2,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "6c52f113670d2b1636f9f457",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Matej",
+                          "lastName": "Bača"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-6c52f113670d2b1636f9f457.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "8664",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "4BomVK5xhsY",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/4BomVK5xhsY/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "period-end",
+              "message": {
+                "title": "End of Second Period",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "period-end",
+                  "message": {
+                    "title": "End of Second Period",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "period-end"
+            }
+          ]
+        },
+        {
+          "_type": "Corebine.Core.Sport.Match.Period",
+          "name": "3rd Period",
+          "shortName": "3rd",
+          "scores": {
+            "_type": "Corebine.Core.Sport.Match.Scores",
+            "home": 0,
+            "away": 2
+          },
+          "status": "finished",
+          "actions": [
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "period-start",
+              "message": {
+                "title": "Start of Third Period",
+                "description": ""
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "period-start",
+                  "message": {
+                    "title": "Start of Third Period",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "period-start"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2594
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "6c52f113670d2b1636f9f457",
+                  "externalId": "446104",
+                  "firstName": "Matej",
+                  "lastName": "Bača",
+                  "number": 2,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "6c52f113670d2b1636f9f457",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Matej",
+                      "lastName": "Bača"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-6c52f113670d2b1636f9f457.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2594
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "6c52f113670d2b1636f9f457",
+                      "externalId": "446104",
+                      "firstName": "Matej",
+                      "lastName": "Bača",
+                      "number": 2,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "6c52f113670d2b1636f9f457",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Matej",
+                          "lastName": "Bača"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-6c52f113670d2b1636f9f457.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2594
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Interference",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14738"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 2671
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Goal, 1:3, SH",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "29931aa82767ac7ceedd4df5",
+                  "externalId": "446114",
+                  "firstName": "Jakub",
+                  "lastName": "Lacka",
+                  "number": 39,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "29931aa82767ac7ceedd4df5",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Jakub",
+                      "lastName": "Lacka"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-29931aa82767ac7ceedd4df5.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "dfb8af1c5619f9024f00e827",
+                  "externalId": "446102",
+                  "firstName": "Martin",
+                  "lastName": "Vitaloš",
+                  "number": 17,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "dfb8af1c5619f9024f00e827",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Martin",
+                      "lastName": "Vitaloš"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-dfb8af1c5619f9024f00e827.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "a6eec6c21183e460832775b5",
+                  "externalId": "446100",
+                  "firstName": "Marko",
+                  "lastName": "Stacha",
+                  "number": 16,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "a6eec6c21183e460832775b5",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Marko",
+                      "lastName": "Stacha"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Defenceman",
+                    "shortName": "DE",
+                    "category": "Defenceman",
+                    "order": 2
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "goal",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2671
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Goal, 1:3, SH",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "29931aa82767ac7ceedd4df5",
+                      "externalId": "446114",
+                      "firstName": "Jakub",
+                      "lastName": "Lacka",
+                      "number": 39,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "29931aa82767ac7ceedd4df5",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Jakub",
+                          "lastName": "Lacka"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-29931aa82767ac7ceedd4df5.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "assist",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 2671
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Assists",
+                    "description": "Assisted by Martin Vitaloš and Marko Stacha"
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "dfb8af1c5619f9024f00e827",
+                      "externalId": "446102",
+                      "firstName": "Martin",
+                      "lastName": "Vitaloš",
+                      "number": 17,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "dfb8af1c5619f9024f00e827",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Martin",
+                          "lastName": "Vitaloš"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-dfb8af1c5619f9024f00e827.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    },
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "a6eec6c21183e460832775b5",
+                      "externalId": "446100",
+                      "firstName": "Marko",
+                      "lastName": "Stacha",
+                      "number": 16,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "a6eec6c21183e460832775b5",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Marko",
+                          "lastName": "Stacha"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-a6eec6c21183e460832775b5.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Defenceman",
+                        "shortName": "DE",
+                        "category": "Defenceman",
+                        "order": 2
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "8672",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "-nbXbq2Zens",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/-nbXbq2Zens/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3164
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "b51a5d19397e39ca87763a52",
+                  "externalId": "455",
+                  "firstName": "Tomáš",
+                  "lastName": "Hrnka",
+                  "number": 80,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3164
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "externalId": "455",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka",
+                      "number": 80,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "b51a5d19397e39ca87763a52",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Tomáš",
+                          "lastName": "Hrnka"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3164
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Tripping Penalty Shot",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "14742"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3294
+              },
+              "teamType": "home",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "a56f004b8c755a6e1e29e346",
+                  "externalId": "446172",
+                  "firstName": "Santeri",
+                  "lastName": "Sulku",
+                  "number": 10,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "a56f004b8c755a6e1e29e346",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Santeri",
+                      "lastName": "Sulku"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-a56f004b8c755a6e1e29e346.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3294
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "a56f004b8c755a6e1e29e346",
+                      "externalId": "446172",
+                      "firstName": "Santeri",
+                      "lastName": "Sulku",
+                      "number": 10,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "a56f004b8c755a6e1e29e346",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Santeri",
+                          "lastName": "Sulku"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-a56f004b8c755a6e1e29e346.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3294
+                  },
+                  "teamType": "home",
+                  "message": {
+                    "title": "Tripping",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14744"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "goal",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3304
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Goal, 1:4, PP",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "83506071d201df37c5d3ce7c",
+                  "externalId": "4019",
+                  "firstName": "Michal",
+                  "lastName": "Krištof",
+                  "number": 13,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "83506071d201df37c5d3ce7c",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Michal",
+                      "lastName": "Krištof"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "3ccaaf357df53dd3d78a58bb",
+                  "externalId": "446113",
+                  "firstName": "Adrián",
+                  "lastName": "Holešinský",
+                  "number": 89,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "3ccaaf357df53dd3d78a58bb",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Adrián",
+                      "lastName": "Holešinský"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-3ccaaf357df53dd3d78a58bb.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "b51a5d19397e39ca87763a52",
+                  "externalId": "455",
+                  "firstName": "Tomáš",
+                  "lastName": "Hrnka",
+                  "number": 80,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "goal",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3304
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Goal, 1:4, PP",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "83506071d201df37c5d3ce7c",
+                      "externalId": "4019",
+                      "firstName": "Michal",
+                      "lastName": "Krištof",
+                      "number": 13,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "83506071d201df37c5d3ce7c",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Michal",
+                          "lastName": "Krištof"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-83506071d201df37c5d3ce7c.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "assist",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3304
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Assists",
+                    "description": "Assisted by Adrián Holešinský and Tomáš Hrnka"
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "3ccaaf357df53dd3d78a58bb",
+                      "externalId": "446113",
+                      "firstName": "Adrián",
+                      "lastName": "Holešinský",
+                      "number": 89,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "3ccaaf357df53dd3d78a58bb",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Adrián",
+                          "lastName": "Holešinský"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-3ccaaf357df53dd3d78a58bb.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    },
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "b51a5d19397e39ca87763a52",
+                      "externalId": "455",
+                      "firstName": "Tomáš",
+                      "lastName": "Hrnka",
+                      "number": 80,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "b51a5d19397e39ca87763a52",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Tomáš",
+                          "lastName": "Hrnka"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-b51a5d19397e39ca87763a52.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "externalId": "8675",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "xWfbtTys8YA",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/xWfbtTys8YA/0.jpg"
+                }
+              }
+            },
+            {
+              "_type": "Corebine.Core.Sport.Match.Action",
+              "actionType": "penalty",
+              "time": {
+                "_type": "Corebine.Core.Sport.Match.Timestamp",
+                "regularTime": 3335
+              },
+              "teamType": "away",
+              "message": {
+                "title": "Penalty",
+                "description": ""
+              },
+              "players": [
+                {
+                  "_type": "Corebine.Core.Sport.Player",
+                  "_entityId": "368962de9a22bc1b3a3a4368",
+                  "externalId": "445565",
+                  "firstName": "Dmytro",
+                  "lastName": "Timashov",
+                  "number": 36,
+                  "source": {
+                    "_type": "Corebine.Core.Feed.Sport",
+                    "feedType": "player",
+                    "competition": {
+                      "_type": "Corebine.Core.Sport.Competition",
+                      "_entityId": "21ec9dad81abe2e0240460d0",
+                      "name": "Champions Hockey League"
+                    },
+                    "person": {
+                      "_entityId": "368962de9a22bc1b3a3a4368",
+                      "_type": "Corebine.Core.Sport.Player",
+                      "firstName": "Dmytro",
+                      "lastName": "Timashov"
+                    },
+                    "query": "player-21ec9dad81abe2e0240460d0-368962de9a22bc1b3a3a4368.json"
+                  },
+                  "position": {
+                    "_type": "Corebine.Core.Sport.Athlete.Position",
+                    "name": "Forward",
+                    "shortName": "FW",
+                    "category": "Forward",
+                    "order": 1
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3335
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Penalty",
+                    "description": ""
+                  },
+                  "players": [
+                    {
+                      "_type": "Corebine.Core.Sport.Player",
+                      "_entityId": "368962de9a22bc1b3a3a4368",
+                      "externalId": "445565",
+                      "firstName": "Dmytro",
+                      "lastName": "Timashov",
+                      "number": 36,
+                      "source": {
+                        "_type": "Corebine.Core.Feed.Sport",
+                        "feedType": "player",
+                        "competition": {
+                          "_type": "Corebine.Core.Sport.Competition",
+                          "_entityId": "21ec9dad81abe2e0240460d0",
+                          "name": "Champions Hockey League"
+                        },
+                        "person": {
+                          "_entityId": "368962de9a22bc1b3a3a4368",
+                          "_type": "Corebine.Core.Sport.Player",
+                          "firstName": "Dmytro",
+                          "lastName": "Timashov"
+                        },
+                        "query": "player-21ec9dad81abe2e0240460d0-368962de9a22bc1b3a3a4368.json"
+                      },
+                      "position": {
+                        "_type": "Corebine.Core.Sport.Athlete.Position",
+                        "name": "Forward",
+                        "shortName": "FW",
+                        "category": "Forward",
+                        "order": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "Corebine.Core.Sport.Match.Action",
+                  "actionType": "penalty",
+                  "time": {
+                    "_type": "Corebine.Core.Sport.Match.Timestamp",
+                    "regularTime": 3335
+                  },
+                  "teamType": "away",
+                  "message": {
+                    "title": "Cross-checking",
+                    "description": "2 mins"
+                  }
+                }
+              ],
+              "externalId": "14745"
+            },
+            {
+              "_type": "Corebine.Core.Sport.Event.Action",
+              "actionType": "event-end",
+              "message": {
+                "title": "End of Game",
+                "description": "HIGHLIGHTS"
+              },
+              "actions": [
+                {
+                  "_type": "Corebine.Core.Sport.Event.Action",
+                  "actionType": "event-end",
+                  "message": {
+                    "title": "End of Game",
+                    "description": ""
+                  }
+                }
+              ],
+              "externalId": "event-end",
+              "video": {
+                "_type": "Corebine.Core.Video.Youtube",
+                "id": "jjXaVDMEiF8",
+                "thumbnail": {
+                  "_type": "Corebine.Core.Image.Generic",
+                  "url": "https://img.youtube.com/vi/jjXaVDMEiF8/0.jpg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errors": []
+}

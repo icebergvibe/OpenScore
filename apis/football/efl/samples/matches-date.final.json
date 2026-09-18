@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "type": "match",
+      "id": "g2685170",
+      "attributes": {
+        "kickOffDateUTC": "2026-09-17 18:30:00",
+        "TBC": null,
+        "homeTeam": {
+          "crest": "https://crests.gc.eflservices.co.uk/t43.png",
+          "name": "Manchester City",
+          "officialName": "Manchester City Football Club",
+          "shortName": null,
+          "initials": null,
+          "score": 5,
+          "halfScore": 2,
+          "penaltyScore": null,
+          "liveStreamingUrl": null,
+          "teamURL": null
+        },
+        "awayTeam": {
+          "crest": "https://crests.gc.eflservices.co.uk/t45.png",
+          "name": "Norwich City",
+          "officialName": "Norwich City",
+          "shortName": "Norwich",
+          "initials": null,
+          "score": 0,
+          "halfScore": 0,
+          "penaltyScore": null,
+          "liveStreamingUrl": "https://www.canaries.co.uk/canaries-tv",
+          "teamURL": "https://www.canaries.co.uk/"
+        },
+        "matchMinutes": 93,
+        "matchPeriod": "FullTime",
+        "formattedMatchTime": "90' +3'",
+        "resultType": "NormalResult",
+        "postponementReason": null,
+        "competitionID": 2,
+        "matchWinner": {
+          "name": "Manchester City",
+          "crest": "https://crests.gc.eflservices.co.uk/t43.png",
+          "officialName": "Manchester City Football Club",
+          "shortName": null,
+          "initials": null,
+          "teamURL": null
+        }
+      },
+      "links": {
+        "self": "https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/matches/g2685170"
+      }
+    }
+  ],
+  "meta": {
+    "totalCount": 1,
+    "count": 1
+  },
+  "links": {
+    "self": "https://multi-club-matches.webapi.gc.eflservices.co.uk/v2/matches?competitionID=2&from=2026-09-17+00%3A00%3A00Z&page.size=100&seasonID=2026&to=2026-09-17+23%3A59%3A59Z"
+  }
+}
