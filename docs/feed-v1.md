@@ -110,7 +110,7 @@ A UFC `game` has both sides as fighters and its `situation.kind` is `fight` (bel
   extra innings are `OVERTIME` periods labelled `10`, `11`, …
   A fight (UFC) sends it in every state:
   `{"kind": "fight", "scheduledRounds": 5, "roundMinutes": [5, 5, 5, 5, 5], "weightClass": "Flyweight", "title": "UFC Flyweight Title", "cardSegment": "Main", "cardPosition": 1, "result": null}`
-  — `result`, once decided, is `{"winner": "<home or away team id>" | null, "method": "KO_TKO | SUBMISSION | DECISION | NO_CONTEST | OVERTURNED | OTHER", "methodLabel": "Decision - Unanimous", "round": 5, "time": "5:00", "detail": "Rear Naked Choke, from back control" | null, "notes": null, "homeOutcome": "WIN | LOSS | DRAW | NO_CONTEST", "awayOutcome": …, "fightOfTheNight": false, "scorecards": [{"judge": "Sal D'amato", "home": 50, "away": 45}]}`.
+  — `result`, once decided, is `{"winner": "<home or away team id>" | null, "method": "KO_TKO | SUBMISSION | DECISION | NO_CONTEST | OVERTURNED | OTHER", "methodLabel": "Decision - Unanimous", "round": 5, "time": "5:00", "detail": "Rear Naked Choke" | null, "notes": null, "homeOutcome": "WIN | LOSS | DRAW | NO_CONTEST", "awayOutcome": …, "homeBonuses": ["Performance of the Night"], "awayBonuses": [], "fightOfTheNight": false, "scorecards": [{"judge": "Sal D'amato", "home": 50, "away": 45}]}`.
   A fight's `score` is always `null`; `cardPosition` 1 is the main event.
 - `periodScores`: one entry per segment played so far, in order. A shootout is one entry
   credited 1–0 to the winner. Absent (empty) without `PERIOD_SCORES`. Baseball: one entry

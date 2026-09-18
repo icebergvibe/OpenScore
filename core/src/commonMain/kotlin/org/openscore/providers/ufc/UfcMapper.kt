@@ -5,7 +5,6 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import org.openscore.model.Clock
 import org.openscore.model.Game
-import org.openscore.model.GameCredit
 import org.openscore.model.GameEvent
 import org.openscore.model.GameState
 import org.openscore.model.GameTime
@@ -84,7 +83,6 @@ internal object UfcMapper {
                 cardPosition = f.FightOrder,
                 result = result,
             ),
-            credits = credits(f, result),
             events = if (withEvents) events(f, home, away, rounds) else null,
             rawState = listOfNotNull(e.Status, f.Status).joinToString("/"),
         )
@@ -214,9 +212,17 @@ internal object UfcMapper {
                 if (h == null || a == null) null
                 else Scorecard(listOfNotNull(j.JudgeFirstName, j.JudgeLastName).joinToString(" "), h, a)
             },
+            homeBonuses = bonuses(f.Fighters.firstOrNull { it.FighterId.toString() == home.id }),
+            awayBonuses = bonuses(f.Fighters.firstOrNull { it.FighterId.toString() == away.id }),
             fightOfTheNight = r?.FightOfTheNight ?: false,
         )
     }
+
+    private fun bonuses(x: UfcFighter?): List<String> = listOfNotNull(
+        "Performance of the Night".takeIf { x?.PerformanceOfTheNight == true },
+        "KO of the Night".takeIf { x?.KOOfTheNight == true },
+        "Submission of the Night".takeIf { x?.SubmissionOfTheNight == true },
+    )
 
     fun method(label: String?): FightMethod = when {
         label == null -> FightMethod.OTHER
@@ -236,27 +242,13 @@ internal object UfcMapper {
         else -> null
     }
 
-    /** `Rear Naked Choke, from back control` or `Punches to the head, at distance`. */
+    /** `Rear Naked Choke` or `Punches to the head`; the position it happened from is left to the feed. */
     private fun detail(r: UfcResult?): String? {
         r ?: return null
-        val position = r.EndingPosition?.lowercase()?.let { ", $it" } ?: ""
-        r.EndingSubmission?.let { return it + position }
+        r.EndingSubmission?.let { return it }
         val strike = r.EndingStrike ?: return null
         val target = r.EndingTarget?.let { " to the ${it.lowercase()}" } ?: ""
-        return strike + target + position
-    }
-
-    private fun credits(f: UfcFight, result: FightResult?): List<GameCredit> {
-        val out = ArrayList<GameCredit>()
-        for (x in f.Fighters) {
-            val ref = playerRef(x)
-            if (x.Outcome?.OutcomeId == 1) out += GameCredit("Winner", ref)
-            if (x.PerformanceOfTheNight) out += GameCredit("Performance of the Night", ref)
-            if (x.KOOfTheNight) out += GameCredit("KO of the Night", ref)
-            if (x.SubmissionOfTheNight) out += GameCredit("Submission of the Night", ref)
-        }
-        if (result?.fightOfTheNight == true) f.Fighters.forEach { out += GameCredit("Fight of the Night", playerRef(it)) }
-        return out
+        return strike + target
     }
 
     // ---- events ----------------------------------------------------------------------------
@@ -298,9 +290,9 @@ internal object UfcMapper {
                 "walkout" -> CombatEventType.WALKOUT to null
                 "fight_open" -> CombatEventType.FIGHT_START to null
                 "fight_over" -> CombatEventType.FIGHT_END to null
-                "unofficial_winner_kotko" -> CombatEventType.RESULT to "Unofficial: wins by KO/TKO"
-                "unofficial_winner_submission" -> CombatEventType.RESULT to "Unofficial: wins by submission"
-                "unofficial_winner_decision" -> CombatEventType.RESULT to "Unofficial: wins by decision"
+                "unofficial_winner_kotko" -> CombatEventType.RESULT to "Wins by KO/TKO"
+                "unofficial_winner_submission" -> CombatEventType.RESULT to "Wins by submission"
+                "unofficial_winner_decision" -> CombatEventType.RESULT to "Wins by decision"
                 else -> CombatEventType.OTHER to a.Type.replace('_', ' ')
             }
             out += event(a, index, type, round, rounds, f.RuleSet, team, players, description)

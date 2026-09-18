@@ -162,6 +162,8 @@ public object FeedMapper {
                     put("notes", r.notes)
                     put("homeOutcome", r.homeOutcome?.name)
                     put("awayOutcome", r.awayOutcome?.name)
+                    putJsonArray("homeBonuses") { r.homeBonuses.forEach { add(it) } }
+                    putJsonArray("awayBonuses") { r.awayBonuses.forEach { add(it) } }
                     put("fightOfTheNight", r.fightOfTheNight)
                     putJsonArray("scorecards") {
                         r.scorecards.forEach { c -> add(buildJsonObject { put("judge", c.judge); put("home", c.home); put("away", c.away) }) }

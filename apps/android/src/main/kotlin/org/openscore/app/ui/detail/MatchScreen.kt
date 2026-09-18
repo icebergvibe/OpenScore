@@ -324,6 +324,9 @@ private fun FightSection(game: Game, bout: FightSituation) {
             val how = listOfNotNull(r.methodLabel, r.detail, r.round?.let { round -> "R$round" + (r.time?.let { t -> " $t" } ?: "") })
             Text(how.joinToString(" · "), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             r.notes?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+            val bonuses = r.homeBonuses.map { "$it: ${game.home.name}" } + r.awayBonuses.map { "$it: ${game.away.name}" } +
+                listOfNotNull("Fight of the Night".takeIf { r.fightOfTheNight })
+            bonuses.forEach { Text("🏅 $it", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
             r.scorecards.forEach { card ->
                 Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween) {
                     Text(card.judge, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)

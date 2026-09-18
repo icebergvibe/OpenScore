@@ -163,7 +163,7 @@ FightMethod       KO_TKO | SUBMISSION | DECISION | NO_CONTEST | OVERTURNED | OTH
 FightOutcome      WIN | LOSS | DRAW | NO_CONTEST
 Scorecard         judge, home, away
 FightResult       winner?, method, methodLabel, round?, time? ("2:15" into the round), detail?, notes?,
-                  homeOutcome?, awayOutcome?, scorecards[], fightOfTheNight
+                  homeOutcome?, awayOutcome?, scorecards[], homeBonuses[], awayBonuses[], fightOfTheNight
 FightSituation    scheduledRounds, roundMinutes[], weightClass?, title?, cardSegment?, cardPosition?, result?
 ```
 
@@ -171,9 +171,9 @@ A fight (UFC) is a `Game` between two fighters: the red corner is `home`, the bl
 `away` (each a `TeamRef` whose id is the fighter's), rounds are `Period`s (`R1`; a
 tournament bout's extra round is `OVERTIME`), and there is no `Score` — ever. What a
 scoreboard shows instead is the `FightSituation`, present on every fight: the bout's format
-and, once decided, the `FightResult`. The winner also appears in `Game.credits` (`Winner`,
-with the night's bonuses). Events are the tracked actions with the time remaining in the
-round; a pause carries its reason (`Low blow`) as the description. The card a fight belongs
+and, once decided, the `FightResult` — winner, method, round and time, and the night's
+bonuses per corner; there are no `credits`. Events are the tracked actions, timed as results
+are stated (into the round); a pause carries its reason (`Low blow`) as the description. The card a fight belongs
 to is `Game.competition`, and its fights share the card segment's start time.
 
 ## Design notes worth knowing

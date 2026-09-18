@@ -50,12 +50,15 @@ public data class FightResult(
     val round: Int?,
     /** Time into [round] when it ended, `m:ss`; a decision ends at the full round. */
     val time: String?,
-    /** What finished it: the submission, or the strike, target and position. */
+    /** What finished it: the submission, or the strike and its target (`Punch to the head`). */
     val detail: String? = null,
     val notes: String? = null,
     val homeOutcome: FightOutcome? = null,
     val awayOutcome: FightOutcome? = null,
     val scorecards: List<Scorecard> = emptyList(),
+    /** The night's bonuses per corner (`Performance of the Night`, `KO of the Night`, `Submission of the Night`). */
+    val homeBonuses: List<String> = emptyList(),
+    val awayBonuses: List<String> = emptyList(),
     val fightOfTheNight: Boolean = false,
 )
 

@@ -123,7 +123,7 @@ class UfcProviderTest {
         assertEquals(FightOutcome.WIN, result.homeOutcome)
         assertEquals(FightOutcome.LOSS, result.awayOutcome)
         assertEquals(listOf("Sal D'amato" to (50 to 45), "David Sutherland" to (49 to 46), "Mike Bell" to (49 to 46)), result.scorecards.map { it.judge to (it.home to it.away) })
-        assertEquals(main.home.id, main.credits.single { it.role == "Winner" }.player.id)
+        assertTrue(main.credits.isEmpty(), "the result says who won; no credits")
 
         val reads = fetcher.requests.count { it.endsWith("/event/live/${UfcSamples.FINAL_EVENT_ID}.json") }
         ufc.gamesOn(LocalDate.parse(UfcSamples.FINAL_DATE))
@@ -138,7 +138,7 @@ class UfcProviderTest {
         assertEquals(FightMethod.SUBMISSION, result.method)
         assertEquals(1, result.round)
         assertEquals("2:15", result.time)
-        assertEquals("Rear Naked Choke, from back control", result.detail)
+        assertEquals("Rear Naked Choke", result.detail)
         assertEquals("Chase Hooper", result.winner?.name)
 
         val events = assertNotNull(game.events)
@@ -157,7 +157,7 @@ class UfcProviderTest {
         val roundEnd = events.first { it.type == CombatEventType.ROUND_END }
         assertEquals(2.minutes + 44.seconds, roundEnd.time.remaining)
         assertEquals(CombatEventType.RESULT, events.last().type)
-        assertEquals("Unofficial: wins by submission", events.last().description)
+        assertEquals("Wins by submission", events.last().description)
         assertEquals(events, ufc.events("1320-12874"))
 
         // The main event's fight route supplies the totals (the sample is the main event's).

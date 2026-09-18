@@ -9,6 +9,10 @@ import org.openscore.model.PeriodScore
 import org.openscore.model.PlayerRef
 import org.openscore.model.Score
 import org.openscore.model.Sport
+import org.openscore.model.combat.FightMethod
+import org.openscore.model.combat.FightOutcome
+import org.openscore.model.combat.FightResult
+import org.openscore.model.combat.FightSituation
 import org.openscore.model.football.CardDetails
 import org.openscore.model.football.CardKind
 import org.openscore.model.football.FootballEventType
@@ -56,6 +60,27 @@ class AlertRulesTest {
         time = GameTime(Fixtures.period(1, "1H"), elapsed = 20.minutes, label = "20'"), team = team?.let { Fixtures.team("premier-league", it) },
         details = CardDetails(PlayerRef("premier-league", "p$id", player), kind),
     )
+
+    @Test
+    fun `a fight queues its start and its result, and nothing round by round`() {
+        val van = Fixtures.team("ufc", "3989").copy(name = "Joshua Van")
+        val pantoja = Fixtures.team("ufc", "2858").copy(name = "Alexandre Pantoja")
+        val bout = FightSituation(scheduledRounds = 5, cardSegment = "Main", cardPosition = 1)
+        val fight = Fixtures.game(leagueId = "ufc", id = "1335-13017", competition = "UFC 331: Van vs. Pantoja 2", home = van, away = pantoja, startTime = kickoff).copy(situation = bout)
+        val rows = AlertRules.alertsFor(fight, Sport.MMA, "UFC", "2026-09-19", all, hourBefore)
+        assertEquals(setOf(AlertKind.KICKOFF, AlertKind.STARTED, AlertKind.RESULT), rows.map { it.kind }.toSet())
+        assertEquals("UFC 331: Van vs. Pantoja 2 · Main card", rows.first().competition)
+        assertEquals(kickoffMs + 240 * 60_000L, rows.first { it.kind == AlertKind.RESULT }.dueAt)
+
+        val won = fight.copy(state = GameState.FINAL, situation = bout.copy(result = FightResult(winner = van, method = FightMethod.SUBMISSION, methodLabel = "Submission", round = 2, time = "3:14")))
+        assertEquals("Joshua Van wins by submission in round 2", AlertRules.finalHeadline(won, Sport.MMA))
+        val decision = won.copy(situation = bout.copy(result = FightResult(winner = pantoja, method = FightMethod.DECISION, methodLabel = "Decision - Split", round = 5, time = "5:00")))
+        assertEquals("Alexandre Pantoja wins by split decision", AlertRules.finalHeadline(decision, Sport.MMA))
+        val draw = won.copy(situation = bout.copy(result = FightResult(winner = null, method = FightMethod.DECISION, methodLabel = "Decision - Majority", round = 3, time = "5:00", homeOutcome = FightOutcome.DRAW, awayOutcome = FightOutcome.DRAW)))
+        assertEquals("Draw", AlertRules.finalHeadline(draw, Sport.MMA))
+        val result = AlertRules.pollResult(rows.first { it.kind == AlertKind.RESULT }, Sport.MMA, won, kickoffMs + 60 * 60_000L)
+        assertEquals("Joshua Van wins by submission in round 2 · UFC 331: Van vs. Pantoja 2 · Main card", result.posts.single().text)
+    }
 
     @Test
     fun `a followed game an hour out queues every kind that is on, each at its own time`() {

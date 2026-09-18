@@ -8,6 +8,9 @@ import org.openscore.model.GameEvent
 import org.openscore.model.GameState
 import org.openscore.model.Score
 import org.openscore.model.Sport
+import org.openscore.model.combat.FightMethod
+import org.openscore.model.combat.FightOutcome
+import org.openscore.model.combat.FightResult
 import org.openscore.model.combat.FightSituation
 import org.openscore.model.football.CardDetails
 import org.openscore.model.football.FootballGoalDetails
@@ -77,6 +80,7 @@ object AlertRules {
     fun alertsFor(game: Game, sport: Sport, competition: String, date: String, settings: AlertSettings, now: Long): List<PendingAlert> {
         if (game.state.isTerminal) return emptyList()
         val kickoff = game.startTime.toEpochMilliseconds()
+        val bout = game.situation as? FightSituation
         val base = PendingAlert(
             leagueId = game.leagueId,
             gameId = game.id,
@@ -86,7 +90,8 @@ object AlertRules {
             kickoffAt = kickoff,
             home = game.home.name,
             away = game.away.name,
-            competition = competition,
+            // A fight is filed under its card and the card segment its start time belongs to.
+            competition = if (bout != null) listOfNotNull(game.competition ?: competition, bout.cardSegment?.let(::segmentLabel)).joinToString(" · ") else competition,
         )
         return buildList {
             if (settings.kickoff && base.dueAt > now) add(base)
@@ -94,12 +99,17 @@ object AlertRules {
             // of "live" a genuine start rather than a watch that began mid-match.
             if (settings.started && kickoff > now) add(base.copy(kind = AlertKind.STARTED, dueAt = kickoff))
             if (settings.results) add(base.copy(kind = AlertKind.RESULT, dueAt = kickoff + typicalDurationMinutes(sport) * 60_000L))
+            // A fight has no score, cards or intermissions to announce: its start and its result are the news.
+            if (bout != null) return@buildList
             // Due at kick-off, or straight away for a match already under way — the first poll of one
             // of those records what it finds without announcing it.
             if (settings.incidents) add(base.copy(kind = AlertKind.LIVE, dueAt = maxOf(kickoff, now)))
             if (settings.breaks) add(base.copy(kind = AlertKind.BREAK, dueAt = maxOf(kickoff, now)))
         }
     }
+
+    /** `Prelims1` / `Prelims2` → `Prelims`, `Main` → `Main card`. */
+    private fun segmentLabel(segment: String): String = if (segment.startsWith("Prelims")) "Prelims" else "$segment card"
 
     /**
      * Whether a watch on a game has anything left to wait for. [game] comes from the listing, so a
@@ -350,9 +360,23 @@ object AlertRules {
         Sport.HOCKEY -> when (game.ending) { GameEnding.OVERTIME -> "Final, overtime"; GameEnding.SHOOTOUT -> "Final, shootout"; else -> "Final" }
         Sport.BASEBALL -> if (game.periodScores.size > 9) "Final, ${game.periodScores.size} innings" else "Final"
         Sport.MOTORSPORT -> "Final"
-        Sport.MMA -> (game.situation as? FightSituation)?.result?.let { r ->
-            listOfNotNull(r.methodLabel, r.round?.let { "round $it" }).joinToString(", ")
-        } ?: "Final"
+        Sport.MMA -> (game.situation as? FightSituation)?.result?.let { r -> fightHeadline(game, r) } ?: "Final"
+    }
+
+    /** `Joshua Van wins by submission in round 2`, `Draw`, `No contest`. */
+    fun fightHeadline(game: Game, r: FightResult): String {
+        val winner = r.winner ?: return when (r.method) {
+            FightMethod.NO_CONTEST, FightMethod.OVERTURNED -> "No contest"
+            else -> if (r.homeOutcome == FightOutcome.DRAW || r.awayOutcome == FightOutcome.DRAW) "Draw" else r.methodLabel
+        }
+        val inRound = r.round?.let { " in round $it" }.orEmpty()
+        val how = when (r.method) {
+            FightMethod.KO_TKO -> "KO/TKO$inRound"
+            FightMethod.SUBMISSION -> "submission$inRound"
+            FightMethod.DECISION -> r.methodLabel.substringAfter("Decision - ", "").lowercase().let { if (it.isEmpty()) "decision" else "$it decision" }
+            else -> r.methodLabel.lowercase()
+        }
+        return "${winner.name} wins by $how"
     }
 
     /**
