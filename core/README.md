@@ -11,13 +11,14 @@ org.openscore.model.hockey   Hockey leaves: HockeyEventType, GoalDetails, Penalt
 org.openscore.model.football Football leaves: FootballEventType, FootballGoalDetails, CardDetails, …
 org.openscore.model.baseball Baseball leaves: BaseballEventType, PlateAppearanceDetails, BaseballSituation (Game.situation)
 org.openscore.model.motorsport Racing: RacingSeason, RacingRound, RacingSession, RacingClassification, RacingStandings
+org.openscore.model.combat   Fights: FightSituation (Game.situation: division, rounds, card slot, result), FightResult, CombatEventType
 org.openscore.clubs          Club crosswalk: TeamRef.clubId, the same club across leagues (docs/data-model.md)
 org.openscore.provider       LeagueProvider interface, Capability, BaseLeagueProvider (polling live())
                              and RacingProvider for non-two-team racing surfaces
 org.openscore.net            Fetcher (read-only GET), KtorFetcher (UA, cache floor, ETag), OpenScoreJson
 org.openscore.cache          Durable, normalized stores an app plugs in: DayListingStore + CachedDayListingProvider
                              (a settled or upcoming day is served from it, a due day is always read live, the last
-                             read stands in offline), SeasonScheduleStore (HockeyAllsvenskan's season)
+                             read stands in offline), SeasonScheduleStore (HockeyAllsvenskan's season, UFC's cards)
 org.openscore.feed           Feed v1: the JSON contract (docs/feed-v1.md) + FeedMapper (model → feed)
 org.openscore.OpenScore      Aggregator: all providers behind one door, cross-league gamesOn()
 org.openscore.providers.*    One package per platform — each DTOs + Mapper + Provider:
@@ -30,6 +31,7 @@ org.openscore.providers.*    One package per platform — each DTOs + Mapper + P
                              football/FootballPeriods: shared 1H/2H/ET/PENS conventions and minute labels
                              baseball: mlb
                              motorsport: jolpica — JolpicaProvider, the one RacingProvider (Formula 1)
+                             mma: ufc
 org.openscore.testing (jvm)  SampleFetcher + per-league sample routes, for tests and offline mode
 ```
 
@@ -54,6 +56,7 @@ org.openscore.testing (jvm)  SampleFetcher + per-league sample routes, for tests
 | `ucl`, `uel`, `uecl` | `ChampionsLeagueProvider`, `EuropaLeagueProvider`, `ConferenceLeagueProvider` (shared `UefaProvider`) | second-precision clock from the timeline's phase markers; squads from ESPN through the crosswalk (UEFA has no squad endpoint); no assists in the MAIN timeline; `live()` polls the 300-byte `livescore` hash and re-reads the match on change; live states not yet observed |
 | `fogis` | `FogisProvider` | every SvFF competition in one feed (`Game.competition`), an umbrella apps treat as opt-in; XML; no standings/team/player; clock derived from wall-clock stamps, on the day view too |
 | `mlb` | `MlbProvider` | no clock — period-only `Clock` (`Bot 7`) plus `Game.situation` (outs, count, runners); `live()` polls the 120 KB (gzipped) feed at 10 s; standings `points` = wins; probable pitchers / decisions not mapped |
+| `ufc` | `UfcProvider` | UFC, Contender Series and Road to UFC from the live-stats JSON behind ufc.com; game ids `{eventId}-{fightId}`, the red corner is `home`, `Game.competition` is the card. No listing route: the cards it knows are a snapshot (`SeasonScheduleStore`) and new ones are found by sweeping the id frontier every six hours (a cold start reads ~30 cards); a card due or under way is re-read at the live floor. `game()` adds the fight route's strike/takedown stats once a fight has started. No score, standings, team, roster or player; `FightSituation` carries the division, rounds, belt, card slot and — once decided — the result with scorecards. Live states not yet observed, so no `CLOCK` |
 | `f1` | `JolpicaProvider` (a `RacingProvider`, reached through `OpenScore.racingProviderOrNull`) | [Jolpica F1](https://github.com/jolpica/jolpica-f1)'s open-source, Ergast-compatible API (4 req/s burst, 500/h; every response cached a day): season calendar with sessions, race/qualifying/sprint classifications, driver and constructor tables; no live timing, no practice results; not yet mapped under `apis/` |
 
 ## Using it

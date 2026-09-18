@@ -99,6 +99,7 @@ public class SampleFetcher : Fetcher {
             UefaSamples.register(it, root)
             EspnSamples.register(it, root)
             MlbSamples.register(it, root)
+            UfcSamples.register(it, root)
         }
     }
 }

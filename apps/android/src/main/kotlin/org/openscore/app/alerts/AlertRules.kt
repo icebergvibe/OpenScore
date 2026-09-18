@@ -8,6 +8,10 @@ import org.openscore.model.GameEvent
 import org.openscore.model.GameState
 import org.openscore.model.Score
 import org.openscore.model.Sport
+import org.openscore.model.combat.FightMethod
+import org.openscore.model.combat.FightOutcome
+import org.openscore.model.combat.FightResult
+import org.openscore.model.combat.FightSituation
 import org.openscore.model.football.CardDetails
 import org.openscore.model.football.FootballGoalDetails
 import org.openscore.model.football.GoalKind
@@ -59,8 +63,15 @@ object AlertRules {
     /** Stoppage plus the lag between the final whistle and the feed saying so. */
     private const val STOPPAGE_ALLOWANCE_MINUTES = 4
 
-    /** The events a card watch announces: football's cards, and the penalties hockey books a player with instead. */
-    private val CARD_KEYS = setOf("yellow-card", "second-yellow", "red-card", "penalty")
+    /** Football's cards, all of which a card watch announces. */
+    private val CARD_KEYS = setOf("yellow-card", "second-yellow", "red-card")
+
+    /**
+     * A hockey penalty is announced from this many minutes: a major or a misconduct is the
+     * booking that changes a game, where a minor comes every few minutes and is not news. A
+     * feed that does not say how long (CHL) announces none.
+     */
+    private const val ANNOUNCED_PENALTY_MINUTES = 5
 
     /** Kick-off to the final whistle, generously; the result check is first due this long after kick-off. */
     fun typicalDurationMinutes(sport: Sport): Int = when (sport) {
@@ -68,12 +79,15 @@ object AlertRules {
         Sport.HOCKEY -> 170
         Sport.BASEBALL -> 200
         Sport.MOTORSPORT -> 180
+        // A fight is short, but its start time is its card segment's: the main event walks out hours later.
+        Sport.MMA -> 240
     }
 
     /** The rows a followed game on [date]'s listing turns into under [settings]; none for a game already over. */
     fun alertsFor(game: Game, sport: Sport, competition: String, date: String, settings: AlertSettings, now: Long): List<PendingAlert> {
         if (game.state.isTerminal) return emptyList()
         val kickoff = game.startTime.toEpochMilliseconds()
+        val bout = game.situation as? FightSituation
         val base = PendingAlert(
             leagueId = game.leagueId,
             gameId = game.id,
@@ -83,7 +97,8 @@ object AlertRules {
             kickoffAt = kickoff,
             home = game.home.name,
             away = game.away.name,
-            competition = competition,
+            // A fight is filed under its card and the card segment its start time belongs to.
+            competition = if (bout != null) listOfNotNull(game.competition ?: competition, bout.cardSegment?.let(::segmentLabel)).joinToString(" · ") else competition,
         )
         return buildList {
             if (settings.kickoff && base.dueAt > now) add(base)
@@ -91,12 +106,17 @@ object AlertRules {
             // of "live" a genuine start rather than a watch that began mid-match.
             if (settings.started && kickoff > now) add(base.copy(kind = AlertKind.STARTED, dueAt = kickoff))
             if (settings.results) add(base.copy(kind = AlertKind.RESULT, dueAt = kickoff + typicalDurationMinutes(sport) * 60_000L))
+            // A fight has no score, cards or intermissions to announce: its start and its result are the news.
+            if (bout != null) return@buildList
             // Due at kick-off, or straight away for a match already under way — the first poll of one
             // of those records what it finds without announcing it.
             if (settings.incidents) add(base.copy(kind = AlertKind.LIVE, dueAt = maxOf(kickoff, now)))
             if (settings.breaks) add(base.copy(kind = AlertKind.BREAK, dueAt = maxOf(kickoff, now)))
         }
     }
+
+    /** `Prelims1` / `Prelims2` → `Prelims`, `Main` → `Main card`. */
+    private fun segmentLabel(segment: String): String = if (segment.startsWith("Prelims")) "Prelims" else "$segment card"
 
     /**
      * Whether a watch on a game has anything left to wait for. [game] comes from the listing, so a
@@ -190,6 +210,7 @@ object AlertRules {
             Sport.HOCKEY -> game.periodScores.size.takeIf { it > 0 }?.let { "End of period $it" } ?: "Intermission"
             Sport.BASEBALL -> "Break"
             Sport.MOTORSPORT -> "Break"
+            Sport.MMA -> period?.let { "End of round $it" } ?: "Between rounds"
         }
     }
 
@@ -213,7 +234,7 @@ object AlertRules {
         val later = alert.later(now)
         if (game == null || !alert.hasStarted(game)) return Outcome(later)
         val score = game.score ?: return Outcome(later)
-        val cards = events?.filter { it.type.key in CARD_KEYS }
+        val cards = events?.filter { it.isAnnouncedCard() }
 
         if (!alert.seeded) {
             if (settings.cards && canEvents && cards == null) return Outcome(later)
@@ -282,14 +303,18 @@ object AlertRules {
         }
     }
 
-    /** `🟨 Yellow card for Arsenal`; a hockey penalty goes to the team whose player sits. */
+    /** Football's cards, and of hockey's penalties only the majors and misconducts. */
+    private fun GameEvent.isAnnouncedCard(): Boolean =
+        type.key in CARD_KEYS || (type.key == "penalty" && ((details as? PenaltyDetails)?.minutes ?: 0) >= ANNOUNCED_PENALTY_MINUTES)
+
+    /** `🟨 Yellow card for Arsenal`; a hockey penalty (`⏱ 5 min penalty to Toronto`) goes to the team whose player sits. */
     private fun cardHeadline(event: GameEvent): String {
         val team = event.team?.name
         return when (event.type.key) {
             "yellow-card" -> "🟨 Yellow card" + team?.let { " for $it" }.orEmpty()
             "second-yellow" -> "🟨🟥 Second yellow" + team?.let { " for $it" }.orEmpty()
             "red-card" -> "🟥 Red card" + team?.let { " for $it" }.orEmpty()
-            else -> "⏱ Penalty" + team?.let { " to $it" }.orEmpty()
+            else -> "⏱ " + ((event.details as? PenaltyDetails)?.minutes?.let { "$it min penalty" } ?: "Penalty") + team?.let { " to $it" }.orEmpty()
         }
     }
 
@@ -323,6 +348,7 @@ object AlertRules {
             Sport.HOCKEY -> (event.time.elapsed ?: event.time.remaining)?.let { "%d:%02d".format(it.inWholeSeconds / 60, it.inWholeSeconds % 60) }
             Sport.BASEBALL -> event.time.period.label
             Sport.MOTORSPORT -> event.time.period.label
+            Sport.MMA -> event.time.period.label
         }
         return listOfNotNull(who, how, time).joinToString(" ")
     }
@@ -345,6 +371,23 @@ object AlertRules {
         Sport.HOCKEY -> when (game.ending) { GameEnding.OVERTIME -> "Final, overtime"; GameEnding.SHOOTOUT -> "Final, shootout"; else -> "Final" }
         Sport.BASEBALL -> if (game.periodScores.size > 9) "Final, ${game.periodScores.size} innings" else "Final"
         Sport.MOTORSPORT -> "Final"
+        Sport.MMA -> (game.situation as? FightSituation)?.result?.let { r -> fightHeadline(game, r) } ?: "Final"
+    }
+
+    /** `Joshua Van wins by submission in round 2`, `Draw`, `No contest`. */
+    fun fightHeadline(game: Game, r: FightResult): String {
+        val winner = r.winner ?: return when (r.method) {
+            FightMethod.NO_CONTEST, FightMethod.OVERTURNED -> "No contest"
+            else -> if (r.homeOutcome == FightOutcome.DRAW || r.awayOutcome == FightOutcome.DRAW) "Draw" else r.methodLabel
+        }
+        val inRound = r.round?.let { " in round $it" }.orEmpty()
+        val how = when (r.method) {
+            FightMethod.KO_TKO -> "KO/TKO$inRound"
+            FightMethod.SUBMISSION -> "submission$inRound"
+            FightMethod.DECISION -> r.methodLabel.substringAfter("Decision - ", "").lowercase().let { if (it.isEmpty()) "decision" else "$it decision" }
+            else -> r.methodLabel.lowercase()
+        }
+        return "${winner.name} wins by $how"
     }
 
     /**
@@ -364,6 +407,8 @@ object AlertRules {
             Sport.HOCKEY -> time?.let { (3 - it.period.number).coerceAtLeast(0) * 35 + (it.remaining?.inWholeMinutes?.toInt()?.let { m -> m * 3 / 2 } ?: 10) } ?: DEFAULT_RETRY_MINUTES
             Sport.BASEBALL -> DEFAULT_RETRY_MINUTES
             Sport.MOTORSPORT -> DEFAULT_RETRY_MINUTES
+            // Five-minute rounds with a minute between them; whatever is left of the bout, rounded up.
+            Sport.MMA -> (game.situation as? FightSituation)?.let { bout -> time?.let { (bout.scheduledRounds - it.period.number + 1).coerceAtLeast(1) * 6 } } ?: DEFAULT_RETRY_MINUTES
         }
         return minutes.coerceIn(MIN_RETRY_MINUTES, MAX_RETRY_MINUTES)
     }

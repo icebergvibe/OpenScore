@@ -1,0 +1,113 @@
+{
+  "league": "ufc",
+  "name": "UFC live stats",
+  "baseUrl": "https://d29dxerjsp82wz.cloudfront.net/api/v3",
+  "minDelayMs": 500,
+  "checks": [
+    {
+      "name": "event/live — final card",
+      "path": "/event/live/1320.json",
+      "sample": "event.live.final.json",
+      "keys": [
+        "LiveEventDetail.EventId",
+        "LiveEventDetail.Name",
+        "LiveEventDetail.StartTime",
+        "LiveEventDetail.Status",
+        "LiveEventDetail.Organization.OrganizationId",
+        "LiveEventDetail.Location.Venue",
+        "LiveEventDetail.FightCard[].FightId",
+        "LiveEventDetail.FightCard[].Status",
+        "LiveEventDetail.FightCard[].CardSegmentStartTime",
+        "LiveEventDetail.FightCard[].Fighters[].FighterId",
+        "LiveEventDetail.FightCard[].Fighters[].Corner",
+        "LiveEventDetail.FightCard[].Fighters[].Outcome.Outcome",
+        "LiveEventDetail.FightCard[].Result.Method",
+        "LiveEventDetail.FightCard[].Result.EndingRound",
+        "LiveEventDetail.FightCard[].Result.FightScores[].JudgeId",
+        "LiveEventDetail.FightCard[].WeightClass.Description",
+        "LiveEventDetail.FightCard[].RuleSet.PossibleRounds",
+        "LiveEventDetail.FightCard[].FightNightTracking[].Type",
+        "LiveEventDetail.FightCard[].FightNightTracking[].Timestamp"
+      ],
+      "note": "UFC Fight Night: Du Plessis vs. Usman, 2026-07-18 — KO, submission and decision results with scorecards and the tracked timeline"
+    },
+    {
+      "name": "event/live — draw",
+      "path": "/event/live/1302.json",
+      "sample": "event.live.final.draw.json",
+      "keys": [
+        "LiveEventDetail.FightCard[].Fighters[].Outcome.OutcomeId"
+      ],
+      "note": "Fight 12742 is a majority draw (OutcomeId 3)"
+    },
+    {
+      "name": "event/live — no contest",
+      "path": "/event/live/1312.json",
+      "sample": "event.live.final.no-contest.json",
+      "keys": [
+        "LiveEventDetail.FightCard[].Result.EndingNotes"
+      ],
+      "note": "Fight 12730 ended Could Not Continue (OutcomeId 4, EndingNotes)"
+    },
+    {
+      "name": "event/live — Contender Series",
+      "path": "/event/live/1334.json",
+      "sample": "event.live.final.dwcs.json",
+      "keys": [
+        "LiveEventDetail.Organization.OrganizationId",
+        "LiveEventDetail.FightCard[].CardSegmentBroadcaster"
+      ],
+      "note": "OrganizationId 67, one Main segment on UFC Fight Pass"
+    },
+    {
+      "name": "event/live — upcoming card",
+      "path": "/event/live/1335.json",
+      "sample": "event.live.upcoming.json",
+      "keys": [
+        "LiveEventDetail.EventId",
+        "LiveEventDetail.FightCard[].FightId",
+        "LiveEventDetail.FightCard[].Fighters[].Record.Wins",
+        "LiveEventDetail.FightCard[].Accolades[].Name"
+      ],
+      "note": "UFC 331, 2026-09-19; becomes Final after the event — the shape is the same, only Result/Outcome fill in"
+    },
+    {
+      "name": "event/live — canceled",
+      "path": "/event/live/1303.json",
+      "sample": "event.live.canceled.json",
+      "keys": [
+        "LiveEventDetail.Status"
+      ],
+      "note": "Road to UFC 4.6: Status Canceled, empty FightCard"
+    },
+    {
+      "name": "event/live — unknown id",
+      "path": "/event/live/999999.json",
+      "sample": "event.live.unknown.json",
+      "depth": 1,
+      "note": "200 with an empty LiveEventDetail — the frontier sweep relies on this shape"
+    },
+    {
+      "name": "fight/live — final",
+      "path": "/fight/live/12919.json",
+      "sample": "fight.live.final.json",
+      "keys": [
+        "LiveFightDetail.Event.EventId",
+        "LiveFightDetail.FightId",
+        "LiveFightDetail.OfficialStats",
+        "LiveFightDetail.Result.RoundScores[].Rounds[].RoundNumber",
+        "LiveFightDetail.FightStats[].SigStrikesLanded",
+        "LiveFightDetail.FightStats[].TakedownsLanded",
+        "LiveFightDetail.FightStats[].ControlTime",
+        "LiveFightDetail.RoundStats[].Rounds[].RoundNumber"
+      ],
+      "note": "Du Plessis vs. Usman, five rounds of per-round stats"
+    },
+    {
+      "name": "fight/live — unknown id",
+      "path": "/fight/live/9999999.json",
+      "sample": "fight.live.unknown.json",
+      "depth": 1
+    }
+  ]
+}

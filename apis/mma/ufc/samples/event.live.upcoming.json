@@ -1,0 +1,1742 @@
+{
+  "LiveEventDetail": {
+    "EventId": 1335,
+    "Name": "UFC 331: Van vs. Pantoja 2",
+    "StartTime": "2026-09-19T21:30Z",
+    "TimeZone": "GMT-07:00",
+    "Status": "Upcoming",
+    "LiveEventId": null,
+    "LiveFightId": null,
+    "LiveRoundNumber": null,
+    "LiveRoundElapsedTime": null,
+    "Organization": {
+      "OrganizationId": 1,
+      "Name": "Ultimate Fighting Championship"
+    },
+    "Location": {
+      "City": "Los Angeles",
+      "State": "California",
+      "Country": "USA",
+      "TriCode": "USA",
+      "VenueId": 160,
+      "Venue": "Crypto.com Arena"
+    },
+    "FightCard": [
+      {
+        "FightId": 13017,
+        "FightOrder": 1,
+        "Status": "Upcoming",
+        "CardSegment": "Main",
+        "CardSegmentStartTime": "2026-09-20T01:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3989,
+            "MMAId": 163597,
+            "Name": {
+              "FirstName": "Joshua",
+              "LastName": "Van",
+              "NickName": "The Fearless"
+            },
+            "Born": {
+              "City": "Hakha",
+              "State": "Chin",
+              "Country": "Myanmar",
+              "TriCode": "MYA"
+            },
+            "FightingOutOf": {
+              "City": "Houston",
+              "State": "Texas",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 17,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "2001-10-10",
+            "Age": 24,
+            "Stance": "Orthodox",
+            "Weight": 125.0,
+            "Height": 65.0,
+            "Reach": 65.0,
+            "UFCLink": "http://www.ufc.com/athlete/Joshua-Van",
+            "WeightClasses": [
+              {
+                "WeightClassId": 8,
+                "WeightClassOrder": 1,
+                "Description": "Flyweight",
+                "Abbreviation": "FLW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 2858,
+            "MMAId": 149191,
+            "Name": {
+              "FirstName": "Alexandre",
+              "LastName": "Pantoja",
+              "NickName": "The Cannibal"
+            },
+            "Born": {
+              "City": "Rio de Janeiro",
+              "State": "Rio de Janeiro",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Arraial Do Cabo",
+              "State": "Rio de Janeiro",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 30,
+              "Losses": 6,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1990-04-16",
+            "Age": 36,
+            "Stance": "Orthodox",
+            "Weight": 125.0,
+            "Height": 65.0,
+            "Reach": 67.5,
+            "UFCLink": "http://www.ufc.com/athlete/Alexandre-Pantoja",
+            "WeightClasses": [
+              {
+                "WeightClassId": 8,
+                "WeightClassOrder": 1,
+                "Description": "Flyweight",
+                "Abbreviation": "FLW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 8,
+          "CatchWeight": null,
+          "Weight": "116-125",
+          "Description": "Flyweight",
+          "Abbreviation": "FLW"
+        },
+        "Accolades": [
+          {
+            "Type": "Belt",
+            "Name": "UFC Flyweight Title"
+          }
+        ],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 5,
+          "Description": "5 Rnd (5-5-5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13018,
+        "FightOrder": 2,
+        "Status": "Upcoming",
+        "CardSegment": "Main",
+        "CardSegmentStartTime": "2026-09-20T01:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3269,
+            "MMAId": 160021,
+            "Name": {
+              "FirstName": "Arman",
+              "LastName": "Tsarukyan",
+              "NickName": "The Batman"
+            },
+            "Born": {
+              "City": "Akhalkalaki",
+              "State": "Samtskhe-Javakheti",
+              "Country": "Georgia",
+              "TriCode": "GEO"
+            },
+            "FightingOutOf": {
+              "City": "Yerevan",
+              "State": null,
+              "Country": "Armenia",
+              "TriCode": "ARM"
+            },
+            "Record": {
+              "Wins": 23,
+              "Losses": 3,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1996-10-11",
+            "Age": 29,
+            "Stance": "Orthodox",
+            "Weight": 155.0,
+            "Height": 67.0,
+            "Reach": 72.5,
+            "UFCLink": "http://www.ufc.com/athlete/Arman-Tsarukyan",
+            "WeightClasses": [
+              {
+                "WeightClassId": 5,
+                "WeightClassOrder": 1,
+                "Description": "Lightweight",
+                "Abbreviation": "LW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4138,
+            "MMAId": 175650,
+            "Name": {
+              "FirstName": "Mauricio",
+              "LastName": "Ruffy",
+              "NickName": null
+            },
+            "Born": {
+              "City": "Sao Paulo",
+              "State": "Sao Paulo",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Coruripe",
+              "State": "Alagoas",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 14,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1996-06-17",
+            "Age": 30,
+            "Stance": "Orthodox",
+            "Weight": 155.0,
+            "Height": 71.0,
+            "Reach": 75.0,
+            "UFCLink": "http://www.ufc.com/athlete/Mauricio-Ruffy",
+            "WeightClasses": [
+              {
+                "WeightClassId": 5,
+                "WeightClassOrder": 1,
+                "Description": "Lightweight",
+                "Abbreviation": "LW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 5,
+          "CatchWeight": null,
+          "Weight": "146-155",
+          "Description": "Lightweight",
+          "Abbreviation": "LW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 5,
+          "Description": "5 Rnd (5-5-5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13025,
+        "FightOrder": 3,
+        "Status": "Upcoming",
+        "CardSegment": "Main",
+        "CardSegmentStartTime": "2026-09-20T01:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 2393,
+            "MMAId": 114726,
+            "Name": {
+              "FirstName": "Patricio",
+              "LastName": "Pitbull",
+              "NickName": null
+            },
+            "Born": {
+              "City": "Mossoro",
+              "State": "Rio Grande do Norte",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Natal",
+              "State": "Rio Grande do Norte",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 37,
+              "Losses": 9,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1987-07-07",
+            "Age": 39,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 66.0,
+            "Reach": 67.0,
+            "UFCLink": "http://www.ufc.com/athlete/Patricio-Freire",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 2198,
+            "MMAId": 141489,
+            "Name": {
+              "FirstName": "Dooho",
+              "LastName": "Choi",
+              "NickName": "The Korean Superboy"
+            },
+            "Born": {
+              "City": "Daegu",
+              "State": "Yeongnam",
+              "Country": "South Korea",
+              "TriCode": "KOR"
+            },
+            "FightingOutOf": {
+              "City": "Daegu",
+              "State": "Yeongnam",
+              "Country": "South Korea",
+              "TriCode": "KOR"
+            },
+            "Record": {
+              "Wins": 17,
+              "Losses": 4,
+              "Draws": 1,
+              "NoContests": 0
+            },
+            "DOB": "1991-04-10",
+            "Age": 35,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 70.0,
+            "Reach": 70.0,
+            "UFCLink": "http://www.ufc.com/athlete/Dooho-Choi",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 6,
+          "CatchWeight": null,
+          "Weight": "136-145",
+          "Description": "Featherweight",
+          "Abbreviation": "FTW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13019,
+        "FightOrder": 4,
+        "Status": "Upcoming",
+        "CardSegment": "Main",
+        "CardSegmentStartTime": "2026-09-20T01:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 4535,
+            "MMAId": 186927,
+            "Name": {
+              "FirstName": "Gable",
+              "LastName": "Steveson",
+              "NickName": null
+            },
+            "Born": {
+              "City": "Minneapolis",
+              "State": "Minnesota",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Albuquerque",
+              "State": "New Mexico",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 4,
+              "Losses": 0,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "2000-05-31",
+            "Age": 26,
+            "Stance": "Orthodox",
+            "Weight": 249.0,
+            "Height": 71.0,
+            "Reach": 74.0,
+            "UFCLink": "http://www.ufc.com/athlete/Gable-Steveson",
+            "WeightClasses": [
+              {
+                "WeightClassId": 1,
+                "WeightClassOrder": 1,
+                "Description": "Heavyweight",
+                "Abbreviation": "HW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4307,
+            "MMAId": 160931,
+            "Name": {
+              "FirstName": "Sean",
+              "LastName": "Sharaf",
+              "NickName": "The Smoke"
+            },
+            "Born": {
+              "City": "Anaheim",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Santa Ana",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 4,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1993-07-11",
+            "Age": 33,
+            "Stance": "Orthodox",
+            "Weight": 252.0,
+            "Height": 75.0,
+            "Reach": 77.0,
+            "UFCLink": "http://www.ufc.com/athlete/Sean-Sharaf",
+            "WeightClasses": [
+              {
+                "WeightClassId": 1,
+                "WeightClassOrder": 1,
+                "Description": "Heavyweight",
+                "Abbreviation": "HW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 1,
+          "CatchWeight": null,
+          "Weight": "206-265",
+          "Description": "Heavyweight",
+          "Abbreviation": "HW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13024,
+        "FightOrder": 5,
+        "Status": "Upcoming",
+        "CardSegment": "Main",
+        "CardSegmentStartTime": "2026-09-20T01:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 2686,
+            "MMAId": 141994,
+            "Name": {
+              "FirstName": "Alonzo",
+              "LastName": "Menifield",
+              "NickName": "Atomic"
+            },
+            "Born": {
+              "City": "Los Angeles",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Dallas",
+              "State": "Texas",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 18,
+              "Losses": 6,
+              "Draws": 1,
+              "NoContests": 0
+            },
+            "DOB": "1987-10-18",
+            "Age": 38,
+            "Stance": "Orthodox",
+            "Weight": 205.0,
+            "Height": 72.0,
+            "Reach": 76.0,
+            "UFCLink": "http://www.ufc.com/athlete/Alonzo-Menifield",
+            "WeightClasses": [
+              {
+                "WeightClassId": 2,
+                "WeightClassOrder": 1,
+                "Description": "Light Heavyweight",
+                "Abbreviation": "LHW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4394,
+            "MMAId": 187073,
+            "Name": {
+              "FirstName": "Iwo",
+              "LastName": "Baraniewski",
+              "NickName": "Rudy"
+            },
+            "Born": {
+              "City": "Warsaw",
+              "State": null,
+              "Country": "Poland",
+              "TriCode": "POL"
+            },
+            "FightingOutOf": {
+              "City": "Warsaw",
+              "State": null,
+              "Country": "Poland",
+              "TriCode": "POL"
+            },
+            "Record": {
+              "Wins": 9,
+              "Losses": 0,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1998-11-20",
+            "Age": 27,
+            "Stance": "Orthodox",
+            "Weight": 205.0,
+            "Height": 72.0,
+            "Reach": 73.5,
+            "UFCLink": "http://www.ufc.com/athlete/Iwo-Baraniewski",
+            "WeightClasses": [
+              {
+                "WeightClassId": 2,
+                "WeightClassOrder": 1,
+                "Description": "Light Heavyweight",
+                "Abbreviation": "LHW"
+              },
+              {
+                "WeightClassId": 1,
+                "WeightClassOrder": 2,
+                "Description": "Heavyweight",
+                "Abbreviation": "HW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 2,
+          "CatchWeight": null,
+          "Weight": "186-205",
+          "Description": "Light Heavyweight",
+          "Abbreviation": "LHW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13023,
+        "FightOrder": 6,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims1",
+        "CardSegmentStartTime": "2026-09-19T23:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 2359,
+            "MMAId": 140770,
+            "Name": {
+              "FirstName": "Marlon",
+              "LastName": "Vera",
+              "NickName": "Chito"
+            },
+            "Born": {
+              "City": "Chone",
+              "State": "Manabi",
+              "Country": "Ecuador",
+              "TriCode": "ECU"
+            },
+            "FightingOutOf": {
+              "City": "Chone",
+              "State": "Manabi",
+              "Country": "Ecuador",
+              "TriCode": "ECU"
+            },
+            "Record": {
+              "Wins": 23,
+              "Losses": 12,
+              "Draws": 1,
+              "NoContests": 0
+            },
+            "DOB": "1992-12-02",
+            "Age": 33,
+            "Stance": "Switch",
+            "Weight": 135.0,
+            "Height": 68.0,
+            "Reach": 70.5,
+            "UFCLink": "http://www.ufc.com/athlete/Marlon-Vera",
+            "WeightClasses": [
+              {
+                "WeightClassId": 7,
+                "WeightClassOrder": 1,
+                "Description": "Bantamweight",
+                "Abbreviation": "BW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 3292,
+            "MMAId": 160330,
+            "Name": {
+              "FirstName": "Charles",
+              "LastName": "Jourdain",
+              "NickName": "Air"
+            },
+            "Born": {
+              "City": "Beloeil",
+              "State": "Quebec",
+              "Country": "Canada",
+              "TriCode": "CAN"
+            },
+            "FightingOutOf": {
+              "City": "Beloeil",
+              "State": "Quebec",
+              "Country": "Canada",
+              "TriCode": "CAN"
+            },
+            "Record": {
+              "Wins": 18,
+              "Losses": 8,
+              "Draws": 1,
+              "NoContests": 0
+            },
+            "DOB": "1995-11-27",
+            "Age": 30,
+            "Stance": "Switch",
+            "Weight": 135.0,
+            "Height": 69.0,
+            "Reach": 69.0,
+            "UFCLink": "http://www.ufc.com/athlete/Charles-Jourdain",
+            "WeightClasses": [
+              {
+                "WeightClassId": 7,
+                "WeightClassOrder": 1,
+                "Description": "Bantamweight",
+                "Abbreviation": "BW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 7,
+          "CatchWeight": null,
+          "Weight": "126-135",
+          "Description": "Bantamweight",
+          "Abbreviation": "BW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13020,
+        "FightOrder": 7,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims1",
+        "CardSegmentStartTime": "2026-09-19T23:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3015,
+            "MMAId": 154649,
+            "Name": {
+              "FirstName": "Tai",
+              "LastName": "Tuivasa",
+              "NickName": "Bam Bam"
+            },
+            "Born": {
+              "City": "Kingswood",
+              "State": "New South Wales",
+              "Country": "Australia",
+              "TriCode": "AUS"
+            },
+            "FightingOutOf": {
+              "City": "Sydney",
+              "State": "New South Wales",
+              "Country": "Australia",
+              "TriCode": "AUS"
+            },
+            "Record": {
+              "Wins": 15,
+              "Losses": 10,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1993-03-16",
+            "Age": 33,
+            "Stance": "Southpaw",
+            "Weight": 264.0,
+            "Height": 74.0,
+            "Reach": 75.0,
+            "UFCLink": "http://www.ufc.com/athlete/Tai-Tuivasa",
+            "WeightClasses": [
+              {
+                "WeightClassId": 1,
+                "WeightClassOrder": 1,
+                "Description": "Heavyweight",
+                "Abbreviation": "HW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4161,
+            "MMAId": 169423,
+            "Name": {
+              "FirstName": "Robelis",
+              "LastName": "Despaigne",
+              "NickName": "The Big Boy"
+            },
+            "Born": {
+              "City": "Santiago de Cuba",
+              "State": "Santiago de Cuba",
+              "Country": "Cuba",
+              "TriCode": "CUB"
+            },
+            "FightingOutOf": {
+              "City": "Santiago de Cuba",
+              "State": "Santiago de Cuba",
+              "Country": "Cuba",
+              "TriCode": "CUB"
+            },
+            "Record": {
+              "Wins": 6,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1988-08-09",
+            "Age": 38,
+            "Stance": "Orthodox",
+            "Weight": 265.0,
+            "Height": 79.0,
+            "Reach": 84.0,
+            "UFCLink": "http://www.ufc.com/athlete/Robelis-Despaigne",
+            "WeightClasses": [
+              {
+                "WeightClassId": 1,
+                "WeightClassOrder": 1,
+                "Description": "Heavyweight",
+                "Abbreviation": "HW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 1,
+          "CatchWeight": null,
+          "Weight": "206-265",
+          "Description": "Heavyweight",
+          "Abbreviation": "HW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13029,
+        "FightOrder": 8,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims1",
+        "CardSegmentStartTime": "2026-09-19T23:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 4226,
+            "MMAId": 156588,
+            "Name": {
+              "FirstName": "Michael",
+              "LastName": "Aswell Jr.",
+              "NickName": "The Texas Kid"
+            },
+            "Born": {
+              "City": "Houston",
+              "State": "Texas",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Houston",
+              "State": "Texas",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 11,
+              "Losses": 5,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "2000-09-27",
+            "Age": 25,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 68.0,
+            "Reach": 69.0,
+            "UFCLink": "http://www.ufc.com/athlete/Michael-Aswell-Jr.",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4317,
+            "MMAId": 183845,
+            "Name": {
+              "FirstName": "JooSang",
+              "LastName": "Yoo",
+              "NickName": "Zombie Jr."
+            },
+            "Born": {
+              "City": "Seoul",
+              "State": null,
+              "Country": "South Korea",
+              "TriCode": "KOR"
+            },
+            "FightingOutOf": {
+              "City": "Seoul",
+              "State": null,
+              "Country": "South Korea",
+              "TriCode": "KOR"
+            },
+            "Record": {
+              "Wins": 9,
+              "Losses": 1,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1994-01-21",
+            "Age": 32,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 67.0,
+            "Reach": 71.5,
+            "UFCLink": "http://www.ufc.com/athlete/JooSang-Yoo",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 6,
+          "CatchWeight": null,
+          "Weight": "136-145",
+          "Description": "Featherweight",
+          "Abbreviation": "FTW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13021,
+        "FightOrder": 9,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims1",
+        "CardSegmentStartTime": "2026-09-19T23:00Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 4385,
+            "MMAId": 176884,
+            "Name": {
+              "FirstName": "Ryan",
+              "LastName": "Gandra",
+              "NickName": "Problema"
+            },
+            "Born": {
+              "City": null,
+              "State": "Minas Gerais",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Betim",
+              "State": "Minas Gerais",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 10,
+              "Losses": 1,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1995-05-08",
+            "Age": 31,
+            "Stance": "Orthodox",
+            "Weight": 185.0,
+            "Height": 73.0,
+            "Reach": 74.5,
+            "UFCLink": "http://www.ufc.com/athlete/Ryan-Gandra",
+            "WeightClasses": [
+              {
+                "WeightClassId": 3,
+                "WeightClassOrder": 1,
+                "Description": "Middleweight",
+                "Abbreviation": "MW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 3861,
+            "MMAId": 136363,
+            "Name": {
+              "FirstName": "Ozzy",
+              "LastName": "Diaz",
+              "NickName": null
+            },
+            "Born": {
+              "City": "Los Angeles",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Los Angeles",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 10,
+              "Losses": 4,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1990-11-22",
+            "Age": 35,
+            "Stance": "Orthodox",
+            "Weight": 185.0,
+            "Height": 76.0,
+            "Reach": 79.0,
+            "UFCLink": "http://www.ufc.com/athlete/Ozzy-Diaz",
+            "WeightClasses": [
+              {
+                "WeightClassId": 3,
+                "WeightClassOrder": 1,
+                "Description": "Middleweight",
+                "Abbreviation": "MW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 3,
+          "CatchWeight": null,
+          "Weight": "171-185",
+          "Description": "Middleweight",
+          "Abbreviation": "MW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13026,
+        "FightOrder": 10,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims2",
+        "CardSegmentStartTime": "2026-09-19T21:30Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3121,
+            "MMAId": 150232,
+            "Name": {
+              "FirstName": "Edmen",
+              "LastName": "Shahbazyan",
+              "NickName": "The Golden Boy"
+            },
+            "Born": {
+              "City": "Los Angeles",
+              "State": "California",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "FightingOutOf": {
+              "City": "Las Vegas",
+              "State": "Nevada",
+              "Country": "USA",
+              "TriCode": "USA"
+            },
+            "Record": {
+              "Wins": 16,
+              "Losses": 6,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1997-11-20",
+            "Age": 28,
+            "Stance": "Orthodox",
+            "Weight": 185.0,
+            "Height": 74.0,
+            "Reach": 74.0,
+            "UFCLink": "http://www.ufc.com/athlete/Edmen-Shahbazyan",
+            "WeightClasses": [
+              {
+                "WeightClassId": 3,
+                "WeightClassOrder": 1,
+                "Description": "Middleweight",
+                "Abbreviation": "MW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 3890,
+            "MMAId": 170763,
+            "Name": {
+              "FirstName": "Brunno",
+              "LastName": "Ferreira",
+              "NickName": "The Hulk"
+            },
+            "Born": {
+              "City": "Curitiba",
+              "State": "Parana",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Curitiba",
+              "State": "Parana",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 15,
+              "Losses": 4,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1992-11-04",
+            "Age": 33,
+            "Stance": "Orthodox",
+            "Weight": 185.0,
+            "Height": 70.0,
+            "Reach": 72.0,
+            "UFCLink": "http://www.ufc.com/athlete/Brunno-Ferreira",
+            "WeightClasses": [
+              {
+                "WeightClassId": 3,
+                "WeightClassOrder": 1,
+                "Description": "Middleweight",
+                "Abbreviation": "MW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 3,
+          "CatchWeight": null,
+          "Weight": "171-185",
+          "Description": "Middleweight",
+          "Abbreviation": "MW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13028,
+        "FightOrder": 11,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims2",
+        "CardSegmentStartTime": "2026-09-19T21:30Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3609,
+            "MMAId": 164065,
+            "Name": {
+              "FirstName": "Casey",
+              "LastName": "O'Neill",
+              "NickName": "King"
+            },
+            "Born": {
+              "City": "Irvine",
+              "State": "Scotland",
+              "Country": "United Kingdom",
+              "TriCode": "GBR"
+            },
+            "FightingOutOf": {
+              "City": "Gold Coast",
+              "State": "Queensland",
+              "Country": "Australia",
+              "TriCode": "AUS"
+            },
+            "Record": {
+              "Wins": 11,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1997-10-07",
+            "Age": 28,
+            "Stance": "Orthodox",
+            "Weight": 125.0,
+            "Height": 66.0,
+            "Reach": 69.0,
+            "UFCLink": "http://www.ufc.com/athlete/Casey-ONeill",
+            "WeightClasses": [
+              {
+                "WeightClassId": 35,
+                "WeightClassOrder": 1,
+                "Description": "Women's Flyweight",
+                "Abbreviation": "WFLW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 4016,
+            "MMAId": 174764,
+            "Name": {
+              "FirstName": "Eduarda",
+              "LastName": "Moura",
+              "NickName": "Ronda"
+            },
+            "Born": {
+              "City": "Riachuelo",
+              "State": "Sergipe",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Feira de Santana",
+              "State": "Bahia",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 12,
+              "Losses": 2,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1994-02-28",
+            "Age": 32,
+            "Stance": "Orthodox",
+            "Weight": 125.0,
+            "Height": 66.0,
+            "Reach": 67.0,
+            "UFCLink": "http://www.ufc.com/athlete/Eduarda-Moura",
+            "WeightClasses": [
+              {
+                "WeightClassId": 35,
+                "WeightClassOrder": 1,
+                "Description": "Women's Flyweight",
+                "Abbreviation": "WFLW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 35,
+          "CatchWeight": null,
+          "Weight": "116-125",
+          "Description": "Women's Flyweight",
+          "Abbreviation": "WFLW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      },
+      {
+        "FightId": 13027,
+        "FightOrder": 12,
+        "Status": "Upcoming",
+        "CardSegment": "Prelims2",
+        "CardSegmentStartTime": "2026-09-19T21:30Z",
+        "CardSegmentBroadcaster": "Paramount+",
+        "Fighters": [
+          {
+            "FighterId": 3094,
+            "MMAId": 146626,
+            "Name": {
+              "FirstName": "Giga",
+              "LastName": "Chikadze",
+              "NickName": "Ninja"
+            },
+            "Born": {
+              "City": "Tbilisi",
+              "State": null,
+              "Country": "Georgia",
+              "TriCode": "GEO"
+            },
+            "FightingOutOf": {
+              "City": "Tbilisi",
+              "State": null,
+              "Country": "Georgia",
+              "TriCode": "GEO"
+            },
+            "Record": {
+              "Wins": 15,
+              "Losses": 6,
+              "Draws": 0,
+              "NoContests": 0
+            },
+            "DOB": "1988-08-25",
+            "Age": 38,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 72.0,
+            "Reach": 74.0,
+            "UFCLink": "http://www.ufc.com/athlete/Giga-Chikadze",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Red",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          },
+          {
+            "FighterId": 3669,
+            "MMAId": 165429,
+            "Name": {
+              "FirstName": "Joanderson",
+              "LastName": "Brito",
+              "NickName": "Tubarao"
+            },
+            "Born": {
+              "City": "Santa Helena",
+              "State": "Maranhao",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "FightingOutOf": {
+              "City": "Bauru",
+              "State": "Sao Paulo",
+              "Country": "Brazil",
+              "TriCode": "BRA"
+            },
+            "Record": {
+              "Wins": 19,
+              "Losses": 5,
+              "Draws": 1,
+              "NoContests": 0
+            },
+            "DOB": "1995-02-11",
+            "Age": 31,
+            "Stance": "Orthodox",
+            "Weight": 145.0,
+            "Height": 68.0,
+            "Reach": 72.0,
+            "UFCLink": "http://www.ufc.com/athlete/Joanderson-Brito",
+            "WeightClasses": [
+              {
+                "WeightClassId": 6,
+                "WeightClassOrder": 1,
+                "Description": "Featherweight",
+                "Abbreviation": "FTW"
+              }
+            ],
+            "Corner": "Blue",
+            "WeighIn": null,
+            "Outcome": {
+              "OutcomeId": null,
+              "Outcome": null
+            },
+            "KOOfTheNight": false,
+            "SubmissionOfTheNight": false,
+            "PerformanceOfTheNight": false
+          }
+        ],
+        "Result": {
+          "Method": null,
+          "EndingRound": null,
+          "EndingTime": null,
+          "EndingStrike": null,
+          "EndingTarget": null,
+          "EndingPosition": null,
+          "EndingSubmission": null,
+          "EndingNotes": null,
+          "FightOfTheNight": false,
+          "FightScores": []
+        },
+        "WeightClass": {
+          "WeightClassId": 6,
+          "CatchWeight": null,
+          "Weight": "136-145",
+          "Description": "Featherweight",
+          "Abbreviation": "FTW"
+        },
+        "Accolades": [],
+        "Referee": {
+          "RefereeId": null,
+          "FirstName": null,
+          "LastName": null
+        },
+        "RuleSet": {
+          "PossibleRounds": 3,
+          "Description": "3 Rnd (5-5-5)"
+        },
+        "FightNightTracking": []
+      }
+    ]
+  }
+}

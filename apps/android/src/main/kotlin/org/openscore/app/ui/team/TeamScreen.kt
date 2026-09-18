@@ -345,7 +345,7 @@ private fun standingsLegend(sport: Sport): String = when (sport) {
     Sport.FOOTBALL -> "W wins · D draws · L losses · PTS points"
     Sport.HOCKEY -> "W wins · L losses · OTL overtime/shootout losses · PTS points"
     Sport.BASEBALL -> "W wins · L losses · PCT win percentage · GB games behind"
-    Sport.MOTORSPORT -> ""
+    Sport.MOTORSPORT, Sport.MMA -> ""
 }
 private fun Game.dateLabel(): String = gameDateFormat.format((scheduleDate ?: startTime.toLocalDateTime(leagueTimeZone(leagueId)).date).toJavaLocalDate())
 
@@ -456,7 +456,7 @@ private fun DivisionTable(group: StandingsGroup, selected: TeamRef, sport: Sport
         Sport.FOOTBALL -> listOf("W", "D", "L", "PTS")
         Sport.HOCKEY -> listOf("W", "L", "OTL", "PTS")
         Sport.BASEBALL -> listOf("W", "L", "PCT", "GB")
-        Sport.MOTORSPORT -> emptyList()
+        Sport.MOTORSPORT, Sport.MMA -> emptyList()
     }
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
         Text("Team", style = MaterialTheme.typography.labelSmall, modifier = Modifier.weight(1f))
@@ -477,7 +477,7 @@ private fun DivisionTable(group: StandingsGroup, selected: TeamRef, sport: Sport
                 Sport.FOOTBALL -> listOf(row.wins.toString(), row.draws?.toString() ?: "–", row.losses.toString(), row.points.toString())
                 Sport.HOCKEY -> listOf(row.wins.toString(), row.losses.toString(), row.otherLosses?.toString() ?: "–", row.points.toString())
                 Sport.BASEBALL -> listOf(row.wins.toString(), row.losses.toString(), row.extra["pct"] ?: "–", row.extra["gamesBack"] ?: "–")
-                Sport.MOTORSPORT -> emptyList()
+                Sport.MOTORSPORT, Sport.MMA -> emptyList()
             }
             values.forEach { TableValue(it) }
         }

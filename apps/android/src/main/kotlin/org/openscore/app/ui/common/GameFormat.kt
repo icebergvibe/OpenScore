@@ -13,6 +13,10 @@ import org.openscore.model.PeriodType
 import org.openscore.model.Sport
 import org.openscore.model.baseball.BaseballSituation
 import org.openscore.model.baseball.InningHalf
+import org.openscore.model.combat.FightMethod
+import org.openscore.model.combat.FightOutcome
+import org.openscore.model.combat.FightResult
+import org.openscore.model.combat.FightSituation
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 import kotlin.time.Duration
@@ -30,6 +34,7 @@ val Sport.displayName: String
         Sport.FOOTBALL -> "Football"
         Sport.BASEBALL -> "Baseball"
         Sport.MOTORSPORT -> "Motorsport"
+        Sport.MMA -> "MMA"
     }
 
 val Sport.iconRes: Int
@@ -38,6 +43,7 @@ val Sport.iconRes: Int
         Sport.FOOTBALL -> R.drawable.ic_sport_football
         Sport.BASEBALL -> R.drawable.ic_sport_baseball
         Sport.MOTORSPORT -> R.drawable.ic_sport_motorsport
+        Sport.MMA -> R.drawable.ic_sport_mma
     }
 
 /** The ball for a goal / run, so a football never sits beside a hockey goal. */
@@ -47,6 +53,7 @@ val Sport.goalIcon: String
         Sport.FOOTBALL -> "⚽"
         Sport.BASEBALL -> "⚾"
         Sport.MOTORSPORT -> "🏎️"
+        Sport.MMA -> "🥊"
     }
 
 /** Regional-indicator flag for an ISO 3166-1 alpha-2 code; `EU` renders as the EU flag. */
@@ -88,7 +95,7 @@ fun Game.clockLabel(sport: Sport): String? {
     val clock = clock ?: return null
     val time = clock.time
     time.label?.let { label ->
-        return if (sport == Sport.HOCKEY) "${time.period.label} $label" else label
+        return if (sport == Sport.HOCKEY || sport == Sport.MMA) "${time.period.label} $label" else label
     }
     return when (sport) {
         Sport.FOOTBALL -> {
@@ -104,6 +111,7 @@ fun Game.clockLabel(sport: Sport): String? {
         }
         Sport.BASEBALL -> time.period.label
         Sport.MOTORSPORT -> time.period.label
+        Sport.MMA -> time.period.label
     }
 }
 
@@ -131,6 +139,14 @@ fun Game.progress(sport: Sport): Float? {
         }
         Sport.BASEBALL -> null
         Sport.MOTORSPORT -> null
+        Sport.MMA -> {
+            // Rounds are the bout's; only the live pointer's elapsed time says where in the round we are.
+            val bout = situation as? FightSituation ?: return null
+            val elapsed = time.elapsed ?: return null
+            val total = bout.roundMinutes.sum().takeIf { it > 0 } ?: return null
+            val before = bout.roundMinutes.take(time.period.number - 1).sum()
+            ((before * 60 + elapsed.inWholeSeconds) / (total * 60f)).coerceIn(0f, 1f)
+        }
     }
 }
 
@@ -155,6 +171,7 @@ private fun Game.breakLabel(sport: Sport): String {
             when (it.half) { InningHalf.MIDDLE -> "Mid ${it.inning}"; InningHalf.END -> "End ${it.inning}"; else -> "Break" }
         } ?: "Break"
         Sport.MOTORSPORT -> "Break"
+        Sport.MMA -> "Break"
     }
 }
 
@@ -163,6 +180,33 @@ private fun Game.finalLabel(sport: Sport): String = when (sport) {
     Sport.HOCKEY -> when (ending) { GameEnding.OVERTIME -> "Final/OT"; GameEnding.SHOOTOUT -> "Final/SO"; else -> "Final" }
     Sport.BASEBALL -> if ((periodScores.size) > 9) "Final/${periodScores.size}" else "Final"
     Sport.MOTORSPORT -> "Final"
+    Sport.MMA -> (situation as? FightSituation)?.result?.label() ?: "Final"
+}
+
+/** `KO/TKO R1`, `Sub R2`, `UD`, `Draw`, `NC`: the result line a fight card shows where a score would be. */
+fun FightResult.label(): String {
+    val inRound = round?.let { " R$it" } ?: ""
+    return when (method) {
+        FightMethod.KO_TKO -> "KO/TKO$inRound"
+        FightMethod.SUBMISSION -> "Sub$inRound"
+        FightMethod.DECISION -> when {
+            homeOutcome == FightOutcome.DRAW -> "Draw"
+            methodLabel.contains("Unanimous") -> "UD"
+            methodLabel.contains("Split") -> "SD"
+            methodLabel.contains("Majority") -> "MD"
+            else -> "Dec"
+        }
+        FightMethod.NO_CONTEST, FightMethod.OVERTURNED -> "NC"
+        FightMethod.OTHER -> "Final"
+    }
+}
+
+/** `W`, `L`, `D` or `NC` for one corner, once a fight has a result. */
+fun FightOutcome.mark(): String = when (this) {
+    FightOutcome.WIN -> "W"
+    FightOutcome.LOSS -> "L"
+    FightOutcome.DRAW -> "D"
+    FightOutcome.NO_CONTEST -> "NC"
 }
 
 /** `2 - 1`, or `vs` before anything has happened. */
@@ -186,5 +230,13 @@ fun Game.halfTimeLabel(sport: Sport): String? {
 fun groupTitle(league: League?, leagueId: String): String = league?.name ?: leagueId
 
 /** The competition under a league's name, unless it only repeats it (`Allsvenskan 2026` under Allsvenskan). */
-fun groupSubtitle(league: League?, competition: String?): String? =
-    if (competition == null || league == null || competition.startsWith(league.name)) null else competition
+fun groupSubtitle(league: League?, competition: String?): String? = when {
+    competition == null || league == null -> null
+    // A fight card's name is the event (`UFC 331: Van vs. Pantoja 2`), not the league restated.
+    league.sport == Sport.MMA -> competition
+    competition.startsWith(league.name) -> null
+    else -> competition
+}
+
+/** `All football`, but `All MMA`: an acronym keeps its case in a sentence. */
+val Sport.inSentence: String get() = if (this == Sport.MMA) displayName else displayName.lowercase()

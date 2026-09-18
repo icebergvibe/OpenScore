@@ -60,7 +60,8 @@ Inside `GamesResponse.errors` the same object appears per failed league, with HT
  "capabilities": ["CLOCK", "EVENTS", "GAME", "GAMES_BY_DATE", "LINEUPS", "LIVE_UPDATES", "…"]}
 ```
 
-`sport`: `HOCKEY | FOOTBALL | BASEBALL`.
+`sport`: `HOCKEY | FOOTBALL | BASEBALL | MMA` (F1 is not a league of the feed).
+A UFC `game` has both sides as fighters and its `situation.kind` is `fight` (below).
 `capabilities`: `GAMES_BY_DATE GAME EVENTS LINEUPS STANDINGS TEAM TEAM_SCHEDULE TEAM_STATS ROSTER PLAYER LIVE_UPDATES LIVE_PUSH CLOCK CLOCK_RUNNING_FLAG INTERMISSION_STATE PERIOD_SCORES EVENT_COORDINATES LINE_GROUPS`.
 
 ### Game
@@ -107,6 +108,10 @@ Inside `GamesResponse.errors` the same object appears per failed league, with HT
   — `half` is `TOP | MIDDLE | BOTTOM | END` (`MIDDLE`/`END` are the breaks, state `INTERMISSION`).
   The baseball `clock` is period-only: `{"period": {"number": 7, "type": "REGULATION", "label": "7"}, "elapsedSeconds": null, "remainingSeconds": null, "running": null, "label": "Bot 7"}`;
   extra innings are `OVERTIME` periods labelled `10`, `11`, …
+  A fight (UFC) sends it in every state:
+  `{"kind": "fight", "scheduledRounds": 5, "roundMinutes": [5, 5, 5, 5, 5], "weightClass": "Flyweight", "title": "UFC Flyweight Title", "cardSegment": "Main", "cardPosition": 1, "result": null}`
+  — `result`, once decided, is `{"winner": "<home or away team id>" | null, "method": "KO_TKO | SUBMISSION | DECISION | NO_CONTEST | OVERTURNED | OTHER", "methodLabel": "Decision - Unanimous", "round": 5, "time": "5:00", "detail": "Rear Naked Choke" | null, "notes": null, "homeOutcome": "WIN | LOSS | DRAW | NO_CONTEST", "awayOutcome": …, "homeBonuses": ["Performance of the Night"], "awayBonuses": [], "fightOfTheNight": false, "scorecards": [{"judge": "Sal D'amato", "home": 50, "away": 45}]}`.
+  A fight's `score` is always `null`; `cardPosition` 1 is the main event.
 - `periodScores`: one entry per segment played so far, in order. A shootout is one entry
   credited 1–0 to the winner. Absent (empty) without `PERIOD_SCORES`. Baseball: one entry
   per inning; a half-inning not played reads `0`.

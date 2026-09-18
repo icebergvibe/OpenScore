@@ -264,7 +264,7 @@ public class KtorFetcher(
     public fun close(): Unit = client.close()
 
     public companion object {
-        public const val DEFAULT_USER_AGENT: String = "OpenScore/0.1 (+https://github.com/icebergvibe/OpenScore)"
+        public const val DEFAULT_USER_AGENT: String = "OpenScore/0.2 (+https://github.com/icebergvibe/OpenScore)"
 
         /** Enough for a season of days across every league. The byte limit remains authoritative. */
         public const val DEFAULT_MAX_ENTRIES: Int = 512

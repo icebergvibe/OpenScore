@@ -51,6 +51,7 @@ import androidx.compose.ui.unit.dp
 import org.openscore.app.data.Favorite
 import org.openscore.app.ui.Selection
 import org.openscore.app.ui.common.displayName
+import org.openscore.app.ui.common.inSentence
 import org.openscore.app.ui.common.flagEmoji
 import org.openscore.app.ui.common.iconRes
 import org.openscore.app.ui.theme.scoreColors
@@ -108,8 +109,8 @@ fun FilterSheet(
                     val picked = if (selection.leagueIds.isEmpty()) total else selection.leagueIds.size
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                         Text(
-                            text = if (selection.leagueIds.isEmpty()) "All of ${selection.sport.displayName.lowercase()} · $total ${if (total == 1) "league" else "leagues"}"
-                            else "$picked of $total ${selection.sport.displayName.lowercase()} leagues",
+                            text = if (selection.leagueIds.isEmpty()) "All of ${selection.sport.inSentence} · $total ${if (total == 1) "league" else "leagues"}"
+                            else "$picked of $total ${selection.sport.inSentence} leagues",
                             style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.weight(1f),

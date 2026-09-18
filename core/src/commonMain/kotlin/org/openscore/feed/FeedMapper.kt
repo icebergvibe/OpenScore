@@ -27,6 +27,7 @@ import org.openscore.model.TeamRef
 import org.openscore.model.TeamSeasonStats
 import org.openscore.model.baseball.BaseRunningDetails
 import org.openscore.model.baseball.BaseballSituation
+import org.openscore.model.combat.FightSituation
 import org.openscore.model.baseball.BaseballSubstitutionDetails
 import org.openscore.model.baseball.PlateAppearanceDetails
 import org.openscore.model.football.CardDetails
@@ -141,6 +142,33 @@ public object FeedMapper {
                 putRef("batter", s.batter)
                 putRef("pitcher", s.pitcher)
                 putRef("onDeck", s.onDeck)
+            }
+            is FightSituation -> {
+                put("kind", "fight")
+                put("scheduledRounds", s.scheduledRounds)
+                putJsonArray("roundMinutes") { s.roundMinutes.forEach { add(it) } }
+                put("weightClass", s.weightClass)
+                put("title", s.title)
+                put("cardSegment", s.cardSegment)
+                put("cardPosition", s.cardPosition)
+                val r = s.result
+                put("result", if (r == null) JsonNull else buildJsonObject {
+                    put("winner", r.winner?.id)
+                    put("method", r.method.name)
+                    put("methodLabel", r.methodLabel)
+                    put("round", r.round)
+                    put("time", r.time)
+                    put("detail", r.detail)
+                    put("notes", r.notes)
+                    put("homeOutcome", r.homeOutcome?.name)
+                    put("awayOutcome", r.awayOutcome?.name)
+                    putJsonArray("homeBonuses") { r.homeBonuses.forEach { add(it) } }
+                    putJsonArray("awayBonuses") { r.awayBonuses.forEach { add(it) } }
+                    put("fightOfTheNight", r.fightOfTheNight)
+                    putJsonArray("scorecards") {
+                        r.scorecards.forEach { c -> add(buildJsonObject { put("judge", c.judge); put("home", c.home); put("away", c.away) }) }
+                    }
+                })
             }
             else -> put("kind", s::class.simpleName ?: "unknown")
         }

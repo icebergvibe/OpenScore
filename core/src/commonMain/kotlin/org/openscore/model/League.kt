@@ -3,7 +3,7 @@ package org.openscore.model
 import kotlinx.datetime.LocalDate
 
 /** The sports OpenScore knows about. Adding one here should be a rare event. */
-public enum class Sport { HOCKEY, FOOTBALL, BASEBALL, MOTORSPORT }
+public enum class Sport { HOCKEY, FOOTBALL, BASEBALL, MOTORSPORT, MMA }
 
 /**
  * A competition served by one [org.openscore.provider.LeagueProvider].

@@ -43,6 +43,7 @@ import org.openscore.providers.sportomedia.SuperettanProvider
 import org.openscore.providers.uefa.ChampionsLeagueProvider
 import org.openscore.providers.uefa.ConferenceLeagueProvider
 import org.openscore.providers.uefa.EuropaLeagueProvider
+import org.openscore.providers.ufc.UfcProvider
 
 /**
  * All leagues behind one door. Look a provider up by league id, or ask across leagues.
@@ -153,8 +154,8 @@ public class OpenScore(
         /**
          * Every league that has a provider, sharing one [Fetcher].
          *
-         * @param seasonScheduleStore durable home of HockeyAllsvenskan's season, the one league
-         *   with no day route of its own.
+         * @param seasonScheduleStore durable home of HockeyAllsvenskan's season and the UFC's known
+         *   cards, the two leagues with no day route of their own.
          * @param dayListingStore durable home of every other league's day listings; each provider
          *   is wrapped in a [CachedDayListingProvider] that serves a settled or upcoming day from
          *   it and falls back to it when the network fails.
@@ -187,10 +188,11 @@ public class OpenScore(
                 EuropaLeagueProvider(fetcher, rosters = espnRosters),
                 ConferenceLeagueProvider(fetcher, rosters = espnRosters),
                 MlbProvider(fetcher),
+                UfcProvider(fetcher, scheduleStore = seasonScheduleStore),
             )
             return OpenScore(
-                // HockeyAllsvenskan keeps its own season snapshot; every other league's days are stored as read.
-                providers.map { if (it is HockeyAllsvenskanProvider) it else CachedDayListingProvider(it, dayListingStore) },
+                // HockeyAllsvenskan and the UFC keep their own snapshots (no day route upstream); every other league's days are stored as read.
+                providers.map { if (it is HockeyAllsvenskanProvider || it is UfcProvider) it else CachedDayListingProvider(it, dayListingStore) },
                 racing = listOf(JolpicaProvider(fetcher)),
             )
         }

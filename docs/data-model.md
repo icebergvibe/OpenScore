@@ -21,7 +21,7 @@
 ## Entities
 
 ```
-League         id, sport (HOCKEY | FOOTBALL | BASEBALL), name, country?, websiteUrl?
+League         id, sport (HOCKEY | FOOTBALL | BASEBALL | MOTORSPORT | MMA), name, country?, websiteUrl?
 Season         leagueId, id, label ("2026–27"), start?, end?, stages[], current
 Stage          id, kind (PRESEASON | REGULAR | PLAYOFF | OTHER), label
 
@@ -153,6 +153,28 @@ Innings are `Period`s (`label` = inning number, `OVERTIME` past the scheduled ni
 `Clock` carries only the period and a `Top 7` / `Bot 7` label, and `Game.situation` holds
 the rest. Events come at two granularities — one per completed plate appearance and the
 base-running / substitution plays in between; pitches are not events.
+
+## Combat extension (`model.combat`)
+
+```
+CombatEventType   KNOCKDOWN | TAKEDOWN | TAKEDOWN_ATTEMPT | SUBMISSION_ATTEMPT | REVERSAL | ROUND_START | ROUND_END |
+                  PAUSE | RESUME | WALKOUT | FIGHT_START | FIGHT_END | RESULT | OTHER
+FightMethod       KO_TKO | SUBMISSION | DECISION | NO_CONTEST | OVERTURNED | OTHER
+FightOutcome      WIN | LOSS | DRAW | NO_CONTEST
+Scorecard         judge, home, away
+FightResult       winner?, method, methodLabel, round?, time? ("2:15" into the round), detail?, notes?,
+                  homeOutcome?, awayOutcome?, scorecards[], homeBonuses[], awayBonuses[], fightOfTheNight
+FightSituation    scheduledRounds, roundMinutes[], weightClass?, title?, cardSegment?, cardPosition?, result?
+```
+
+A fight (UFC) is a `Game` between two fighters: the red corner is `home`, the blue corner
+`away` (each a `TeamRef` whose id is the fighter's), rounds are `Period`s (`R1`; a
+tournament bout's extra round is `OVERTIME`), and there is no `Score` — ever. What a
+scoreboard shows instead is the `FightSituation`, present on every fight: the bout's format
+and, once decided, the `FightResult` — winner, method, round and time, and the night's
+bonuses per corner; there are no `credits`. Events are the tracked actions, timed as results
+are stated (into the round); a pause carries its reason (`Low blow`) as the description. The card a fight belongs
+to is `Game.competition`, and its fights share the card segment's start time.
 
 ## Design notes worth knowing
 
