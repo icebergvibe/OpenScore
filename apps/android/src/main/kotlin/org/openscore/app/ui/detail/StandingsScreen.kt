@@ -94,7 +94,7 @@ private fun columnsFor(sport: Sport, table: StandingsTable): List<Column> {
             if (sample?.extra?.containsKey("pct") == true) Column("PCT", bold = true) { it.extra["pct"] ?: "–" } else null,
             if (sample?.extra?.containsKey("gamesBack") == true) Column("GB") { it.extra["gamesBack"] ?: "–" } else null,
         )
-        Sport.MOTORSPORT -> emptyList()
+        Sport.MOTORSPORT, Sport.MMA -> emptyList()
     }
 }
 

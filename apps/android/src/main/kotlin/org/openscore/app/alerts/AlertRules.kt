@@ -8,6 +8,7 @@ import org.openscore.model.GameEvent
 import org.openscore.model.GameState
 import org.openscore.model.Score
 import org.openscore.model.Sport
+import org.openscore.model.combat.FightSituation
 import org.openscore.model.football.CardDetails
 import org.openscore.model.football.FootballGoalDetails
 import org.openscore.model.football.GoalKind
@@ -68,6 +69,8 @@ object AlertRules {
         Sport.HOCKEY -> 170
         Sport.BASEBALL -> 200
         Sport.MOTORSPORT -> 180
+        // A fight is short, but its start time is its card segment's: the main event walks out hours later.
+        Sport.MMA -> 240
     }
 
     /** The rows a followed game on [date]'s listing turns into under [settings]; none for a game already over. */
@@ -190,6 +193,7 @@ object AlertRules {
             Sport.HOCKEY -> game.periodScores.size.takeIf { it > 0 }?.let { "End of period $it" } ?: "Intermission"
             Sport.BASEBALL -> "Break"
             Sport.MOTORSPORT -> "Break"
+            Sport.MMA -> period?.let { "End of round $it" } ?: "Between rounds"
         }
     }
 
@@ -323,6 +327,7 @@ object AlertRules {
             Sport.HOCKEY -> (event.time.elapsed ?: event.time.remaining)?.let { "%d:%02d".format(it.inWholeSeconds / 60, it.inWholeSeconds % 60) }
             Sport.BASEBALL -> event.time.period.label
             Sport.MOTORSPORT -> event.time.period.label
+            Sport.MMA -> event.time.period.label
         }
         return listOfNotNull(who, how, time).joinToString(" ")
     }
@@ -345,6 +350,9 @@ object AlertRules {
         Sport.HOCKEY -> when (game.ending) { GameEnding.OVERTIME -> "Final, overtime"; GameEnding.SHOOTOUT -> "Final, shootout"; else -> "Final" }
         Sport.BASEBALL -> if (game.periodScores.size > 9) "Final, ${game.periodScores.size} innings" else "Final"
         Sport.MOTORSPORT -> "Final"
+        Sport.MMA -> (game.situation as? FightSituation)?.result?.let { r ->
+            listOfNotNull(r.methodLabel, r.round?.let { "round $it" }).joinToString(", ")
+        } ?: "Final"
     }
 
     /**
@@ -364,6 +372,8 @@ object AlertRules {
             Sport.HOCKEY -> time?.let { (3 - it.period.number).coerceAtLeast(0) * 35 + (it.remaining?.inWholeMinutes?.toInt()?.let { m -> m * 3 / 2 } ?: 10) } ?: DEFAULT_RETRY_MINUTES
             Sport.BASEBALL -> DEFAULT_RETRY_MINUTES
             Sport.MOTORSPORT -> DEFAULT_RETRY_MINUTES
+            // Five-minute rounds with a minute between them; whatever is left of the bout, rounded up.
+            Sport.MMA -> (game.situation as? FightSituation)?.let { bout -> time?.let { (bout.scheduledRounds - it.period.number + 1).coerceAtLeast(1) * 6 } } ?: DEFAULT_RETRY_MINUTES
         }
         return minutes.coerceIn(MIN_RETRY_MINUTES, MAX_RETRY_MINUTES)
     }

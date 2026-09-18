@@ -61,6 +61,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 | Football | Major League Soccer (USA/CAN) | [apis/football/mls](apis/football/mls/README.md) | `mls` | MLS's own `stats-api` plus `sportapi` for pre-game metadata. Data routes are `no-store` (honoured). No live capability until a live sample is captured. |
 | Football | ESPN (squads only) | [apis/football/espn](apis/football/espn/README.md) | `EspnRosters` | Not a league: the one ESPN route adopted, `…/teams/{id}/roster`, supplies squads for the Bundesliga and the three UEFA competitions behind hand-verified ids in the club crosswalk. |
 | Motorsport | Formula 1 | — | `f1` (`RacingProvider`) | [Jolpica F1](https://github.com/jolpica/jolpica-f1), the open-source, Ergast-compatible F1 API (see [Acknowledgements](#acknowledgements)): calendar with sessions, race / qualifying / sprint classifications, driver and constructor tables. No live timing. Not yet mapped under `apis/`. |
+| MMA | UFC (+ Contender Series, Road to UFC) | [apis/mma/ufc](apis/mma/ufc/README.md) | `ufc` | The key-less live-stats JSON behind ufc.com's event pages (CloudFront). One document per card with results, scorecards and a tracked timeline; per-fight strike/takedown stats. No listing route — cards are discovered by sweeping the dense id space and kept as a snapshot. Live states pending. |
 | Football | NFL | — | ⛔ | No key-less league API (`api.nfl.com` needs credentials). |
 
 **Core** = the league id(s) a `LeagueProvider` in `core/` serves. ⏳ documented, no provider yet ·

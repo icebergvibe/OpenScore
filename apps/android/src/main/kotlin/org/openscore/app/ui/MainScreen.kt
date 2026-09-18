@@ -60,6 +60,7 @@ import org.openscore.app.data.FavoritesStore
 import org.openscore.app.data.ScoresRepository
 import org.openscore.app.data.SessionPhase
 import org.openscore.app.ui.common.displayName
+import org.openscore.app.ui.common.inSentence
 import org.openscore.app.ui.common.iconRes
 import org.openscore.app.ui.detail.MatchScreen
 import org.openscore.app.ui.detail.StandingsScreen
@@ -286,7 +287,7 @@ private fun HomeScreen(
                     spec = spec,
                     title = when (destination) {
                         Destination.FAVORITES -> "Following"
-                        else -> if (selection.leagueIds.isEmpty()) "All ${selection.sport.displayName.lowercase()}" else
+                        else -> if (selection.leagueIds.isEmpty()) "All ${selection.sport.inSentence}" else
                             selection.leagueIds.mapNotNull { repository.league(it)?.name }.joinToString(", ")
                     },
                     topContent = if (destination == Destination.GAMES || destination == Destination.LIVE) {

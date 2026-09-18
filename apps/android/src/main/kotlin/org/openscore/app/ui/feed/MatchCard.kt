@@ -37,6 +37,7 @@ import org.openscore.app.ui.common.StatusLabel
 import org.openscore.app.ui.common.StatusTone
 import org.openscore.app.ui.common.TeamBadge
 import org.openscore.app.ui.common.halfTimeLabel
+import org.openscore.app.ui.common.mark
 import org.openscore.app.ui.common.progress
 import org.openscore.app.ui.common.statusLabel
 import org.openscore.app.ui.theme.scoreColors
@@ -45,6 +46,7 @@ import org.openscore.model.GameState
 import org.openscore.model.Sport
 import org.openscore.model.TeamRef
 import org.openscore.model.baseball.BaseballSituation
+import org.openscore.model.combat.FightSituation
 
 /** Digits of equal width, so a score column and a running clock do not shift as they change. */
 val TabularFigures = TextStyle(fontFeatureSettings = "tnum")
@@ -90,9 +92,11 @@ fun MatchCard(game: Game, sport: Sport, onClick: () -> Unit, onLongClick: () -> 
             )
             Spacer(Modifier.width(10.dp))
             val showScore = game.score != null && game.state != GameState.SCHEDULED
+            // A fight has no score; once decided, each corner shows how it came out.
+            val result = (game.situation as? FightSituation)?.result
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                TeamInfo(game.home, if (showScore) game.score?.home else null)
-                TeamInfo(game.away, if (showScore) game.score?.away else null)
+                TeamInfo(game.home, if (showScore) game.score?.home else null, result?.homeOutcome?.mark())
+                TeamInfo(game.away, if (showScore) game.score?.away else null, result?.awayOutcome?.mark())
             }
             Spacer(Modifier.width(10.dp))
             GameMeta(game, sport, status)
@@ -110,7 +114,7 @@ internal fun statusAccent(label: StatusLabel): Color = when (label.tone) {
 }
 
 @Composable
-private fun TeamInfo(team: TeamRef, score: Int?) {
+private fun TeamInfo(team: TeamRef, score: Int?, mark: String? = null) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         TeamBadge(team, size = 24.dp)
         Spacer(Modifier.width(8.dp))
@@ -122,12 +126,13 @@ private fun TeamInfo(team: TeamRef, score: Int?) {
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f),
         )
-        score?.let {
+        (score?.toString() ?: mark)?.let {
             Text(
-                text = it.toString(),
+                text = it,
                 style = MaterialTheme.typography.titleMedium.merge(TabularFigures),
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.End,
+                color = if (mark == "L") MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.width(30.dp),
             )
         }
@@ -154,6 +159,21 @@ private fun GameMeta(game: Game, sport: Sport, status: StatusLabel) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
             )
+        }
+        // A fight card says the division and whether a belt is on the line where a clock would go.
+        (game.situation as? FightSituation)?.let { bout ->
+            val line = listOfNotNull(bout.weightClass, bout.title?.let { "Title" }).joinToString(" · ")
+            if (line.isNotEmpty()) {
+                Spacer(Modifier.height(3.dp))
+                Text(
+                    text = line,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
         }
         game.preview?.takeIf { game.state == org.openscore.model.GameState.SCHEDULED || game.state == org.openscore.model.GameState.PRE_GAME }?.let { preview ->
             val home = preview.home?.name ?: "TBD"

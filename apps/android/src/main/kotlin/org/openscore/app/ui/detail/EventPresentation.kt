@@ -18,6 +18,8 @@ import org.openscore.model.hockey.Strength
 private val KEY_EVENT_KEYS = setOf(
     "penalty", "yellow-card", "second-yellow", "red-card", "substitution", "penalty-missed",
     "goal-disallowed", "var", "shootout-attempt", "home-run", "ejection",
+    // A fight: what moved it, and the stoppages and the result.
+    "knockdown", "takedown", "submission-attempt", "reversal", "pause", "result",
 )
 
 fun GameEvent.isKeyEvent(): Boolean =
@@ -83,6 +85,12 @@ fun GameEvent.present(sport: Sport, onSurface: Color, colors: ScoreColors): Even
             actor = a?.shooter?.name ?: actor
         }
         "var" -> { icon = "📺"; color = onSurface; detail = description }
+        "knockdown" -> { icon = "💥"; color = colors.goal }
+        "takedown" -> { icon = "🤼"; color = onSurface }
+        "submission-attempt" -> { icon = "🔒"; color = colors.yellow }
+        "reversal" -> { icon = "🔄"; color = onSurface }
+        "pause" -> { icon = "⏸"; color = colors.yellow; detail = description; if (first == null) actor = "Pause" }
+        "result" -> { icon = "🏆"; color = colors.goal; detail = description }
         else -> {
             icon = if ((d as? PlateAppearanceDetails)?.scoringPlay == true) sport.goalIcon else ""
             color = if (icon.isNotEmpty()) colors.goal else onSurface
@@ -93,7 +101,7 @@ fun GameEvent.present(sport: Sport, onSurface: Color, colors: ScoreColors): Even
 }
 
 private fun GameEvent.timeLabel(sport: Sport): String {
-    time.label?.let { return it }
+    time.label?.let { return if (sport == Sport.MMA) "${time.period.label} $it" else it }
     return when (sport) {
         Sport.FOOTBALL -> time.elapsed?.let { "${(footballOffset(time.period.number) + it.inWholeMinutes)}'" } ?: time.period.label
         Sport.HOCKEY -> {
@@ -103,6 +111,7 @@ private fun GameEvent.timeLabel(sport: Sport): String {
         }
         Sport.BASEBALL -> time.period.label
         Sport.MOTORSPORT -> time.period.label
+        Sport.MMA -> time.period.label
     }
 }
 

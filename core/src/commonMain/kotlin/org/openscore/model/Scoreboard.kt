@@ -40,5 +40,5 @@ private fun Period.scoreboardLabel(sport: Sport): String = when (sport) {
         PeriodType.SHOOTOUT -> "SO"
         PeriodType.UNKNOWN -> label
     }
-    Sport.BASEBALL, Sport.MOTORSPORT -> label
+    Sport.BASEBALL, Sport.MOTORSPORT, Sport.MMA -> label
 }

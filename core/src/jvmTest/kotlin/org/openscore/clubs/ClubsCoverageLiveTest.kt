@@ -10,7 +10,6 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import org.openscore.OpenScore
-import org.openscore.model.Sport
 import org.openscore.model.TeamRef
 import org.openscore.net.KtorFetcher
 import org.openscore.provider.Capability
@@ -96,7 +95,7 @@ class ClubsCoverageLiveTest {
         ids += "\"${Clubs.namespace(p.league.id)}\" to \"${t.id}\""
         if (p is SportomediaProvider) fogisId(fetcher, t.id)?.let { ids += "\"fogis\" to \"$it\"" }
         if (p is SwedishLeagueProvider) t.abbreviation?.let { ids += "\"${Clubs.SPORTOMEDIA}\" to \"$it\"" }
-        val sport = when (p.league.sport) { Sport.HOCKEY -> "HOCKEY"; Sport.FOOTBALL -> "FOOTBALL"; Sport.BASEBALL -> "BASEBALL"; Sport.MOTORSPORT -> "MOTORSPORT" }
+        val sport = p.league.sport.name
         return "club(\"${slug(t.name)}\", \"${t.name}\", $sport, ${country?.let { "\"$it\"" }}, ${ids.joinToString()}),"
     }
 

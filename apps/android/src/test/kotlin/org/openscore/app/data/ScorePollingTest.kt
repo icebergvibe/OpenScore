@@ -2,6 +2,7 @@ package org.openscore.app.data
 
 import org.openscore.app.Fixtures
 import org.openscore.model.GameState
+import org.openscore.model.combat.FightSituation
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.time.Duration.Companion.hours
@@ -29,6 +30,14 @@ class ScorePollingTest {
         assertEquals(true, at(-(2.hours + 59.minutes)).wantsScorePoll(now))
         assertEquals(false, at(-(3.hours + 1.minutes)).wantsScorePoll(now), "a fixture that never went live is left alone")
         assertEquals(false, at(1.hours, GameState.PRE_GAME).wantsScorePoll(now), "warm-ups an hour out are not kick-off")
+    }
+
+    @Test
+    fun aFightWaitsForItsWalkoutLonger() {
+        val bout = FightSituation(scheduledRounds = 5)
+        assertEquals(true, at(-(5.hours + 30.minutes)).copy(situation = bout).wantsScorePoll(now), "the main event walks out hours after its segment opens")
+        assertEquals(false, at(-(6.hours + 1.minutes)).copy(situation = bout).wantsScorePoll(now))
+        assertEquals(false, at(-(5.hours + 30.minutes), GameState.FINAL).copy(situation = bout).wantsScorePoll(now))
     }
 
     @Test

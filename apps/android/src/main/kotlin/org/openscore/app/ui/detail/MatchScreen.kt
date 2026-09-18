@@ -53,6 +53,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import org.openscore.app.R
 import org.openscore.app.data.Favorite
 import org.openscore.app.data.ScoresRepository
+import org.openscore.app.ui.common.groupSubtitle
 import org.openscore.app.ui.common.TeamBadge
 import org.openscore.app.ui.common.groupTitle
 import org.openscore.app.ui.common.scoreLabel
@@ -69,6 +70,8 @@ import org.openscore.model.Sport
 import org.openscore.model.StatPair
 import org.openscore.model.TeamRef
 import org.openscore.model.baseball.BaseballSituation
+import org.openscore.model.combat.FightMethod
+import org.openscore.model.combat.FightSituation
 import org.openscore.model.scoreboardPresentation
 
 private val SECTION_SPACING = 16.dp
@@ -130,7 +133,7 @@ fun MatchScreen(
             contentPadding = PaddingValues(bottom = SECTION_SPACING),
             verticalArrangement = Arrangement.spacedBy(SECTION_SPACING),
         ) {
-            item { Header(current, sport, competition = current.competition?.takeIf { !it.startsWith(title) }, canOpenTeam = repository::hasTeamPage, onOpenTeam = onOpenTeam) }
+            item { Header(current, sport, competition = groupSubtitle(league, current.competition), canOpenTeam = repository::hasTeamPage, onOpenTeam = onOpenTeam) }
 
             item {
                 FollowRow(
@@ -152,6 +155,7 @@ fun MatchScreen(
             if (current.periodScores.isNotEmpty()) item { PeriodScoresTable(current, sport) }
 
             (current.situation as? BaseballSituation)?.takeIf { current.state.isLive }?.let { s -> item { SituationCard(s) } }
+            (current.situation as? FightSituation)?.let { s -> item { FightSection(current, s) } }
 
             val keyEvents = state.events?.filter { it.isKeyEvent() }.orEmpty()
             if (keyEvents.isNotEmpty()) item { EventsSection(current, keyEvents, sport) }
@@ -302,6 +306,39 @@ private fun SituationCard(s: BaseballSituation) {
         listOfNotNull(s.batter?.let { "At bat: ${it.name}" }, s.pitcher?.let { "Pitching: ${it.name}" }).forEach {
             Text(text = it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
+    }
+}
+
+/** The bout — division, rounds, belt, card slot — and, once it is over, how it ended and the judges' cards. */
+@Composable
+private fun FightSection(game: Game, bout: FightSituation) {
+    val result = bout.result
+    SectionCard(if (result != null) "Result" else "Bout") {
+        result?.let { r ->
+            val headline = when {
+                r.winner != null -> "${r.winner!!.name} def. ${(if (r.winner == game.home) game.away else game.home).name}"
+                r.method == FightMethod.NO_CONTEST || r.method == FightMethod.OVERTURNED -> "No contest"
+                else -> "Draw"
+            }
+            Text(headline, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.SemiBold)
+            val how = listOfNotNull(r.methodLabel, r.detail, r.round?.let { round -> "R$round" + (r.time?.let { t -> " $t" } ?: "") })
+            Text(how.joinToString(" · "), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            r.notes?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+            r.scorecards.forEach { card ->
+                Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Text(card.judge, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${card.home}–${card.away}", style = MaterialTheme.typography.bodySmall, fontWeight = FontWeight.SemiBold)
+                }
+            }
+            Spacer(Modifier.height(6.dp))
+        }
+        val format = listOfNotNull(
+            bout.weightClass,
+            "${bout.scheduledRounds} rounds",
+            bout.title,
+            bout.cardSegment?.let { seg -> if (seg.startsWith("Prelims")) "Prelims" else "$seg card" },
+        )
+        Text(format.joinToString(" · "), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
