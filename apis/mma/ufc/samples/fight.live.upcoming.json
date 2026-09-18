@@ -1,0 +1,171 @@
+{
+  "LiveFightDetail": {
+    "Event": {
+      "EventId": 1335,
+      "Name": "UFC 331: Van vs. Pantoja 2",
+      "StartTime": "2026-09-19T21:30Z",
+      "TimeZone": "GMT-07:00",
+      "Status": "Upcoming",
+      "LiveEventId": null,
+      "LiveFightId": null,
+      "LiveRoundNumber": null,
+      "LiveRoundElapsedTime": null,
+      "Location": {
+        "City": "Los Angeles",
+        "State": "California",
+        "Country": "USA",
+        "TriCode": "USA",
+        "VenueId": 160,
+        "Venue": "Crypto.com Arena"
+      }
+    },
+    "FightId": 13017,
+    "FightOrder": 1,
+    "Status": "Upcoming",
+    "OfficialStats": false,
+    "CardSegment": "Main",
+    "CardSegmentStartTime": "2026-09-20T01:00Z",
+    "CardSegmentBroadcaster": "Paramount+",
+    "Fighters": [
+      {
+        "FighterId": 3989,
+        "MMAId": 163597,
+        "Name": {
+          "FirstName": "Joshua",
+          "LastName": "Van",
+          "NickName": "The Fearless"
+        },
+        "Born": {
+          "City": "Hakha",
+          "State": "Chin",
+          "Country": "Myanmar",
+          "TriCode": "MYA"
+        },
+        "FightingOutOf": {
+          "City": "Houston",
+          "State": "Texas",
+          "Country": "USA",
+          "TriCode": "USA"
+        },
+        "Record": {
+          "Wins": 17,
+          "Losses": 2,
+          "Draws": 0,
+          "NoContests": 0
+        },
+        "DOB": "2001-10-10",
+        "Age": 24,
+        "Stance": "Orthodox",
+        "Weight": 125.0,
+        "Height": 65.0,
+        "Reach": 65.0,
+        "UFCLink": "http://www.ufc.com/athlete/Joshua-Van",
+        "WeightClasses": [
+          {
+            "WeightClassId": 8,
+            "WeightClassOrder": 1,
+            "Description": "Flyweight",
+            "Abbreviation": "FLW"
+          }
+        ],
+        "Corner": "Red",
+        "WeighIn": null,
+        "Outcome": {
+          "OutcomeId": null,
+          "Outcome": null
+        },
+        "KOOfTheNight": false,
+        "SubmissionOfTheNight": false,
+        "PerformanceOfTheNight": false
+      },
+      {
+        "FighterId": 2858,
+        "MMAId": 149191,
+        "Name": {
+          "FirstName": "Alexandre",
+          "LastName": "Pantoja",
+          "NickName": "The Cannibal"
+        },
+        "Born": {
+          "City": "Rio de Janeiro",
+          "State": "Rio de Janeiro",
+          "Country": "Brazil",
+          "TriCode": "BRA"
+        },
+        "FightingOutOf": {
+          "City": "Arraial Do Cabo",
+          "State": "Rio de Janeiro",
+          "Country": "Brazil",
+          "TriCode": "BRA"
+        },
+        "Record": {
+          "Wins": 30,
+          "Losses": 6,
+          "Draws": 0,
+          "NoContests": 0
+        },
+        "DOB": "1990-04-16",
+        "Age": 36,
+        "Stance": "Orthodox",
+        "Weight": 125.0,
+        "Height": 65.0,
+        "Reach": 67.5,
+        "UFCLink": "http://www.ufc.com/athlete/Alexandre-Pantoja",
+        "WeightClasses": [
+          {
+            "WeightClassId": 8,
+            "WeightClassOrder": 1,
+            "Description": "Flyweight",
+            "Abbreviation": "FLW"
+          }
+        ],
+        "Corner": "Blue",
+        "WeighIn": null,
+        "Outcome": {
+          "OutcomeId": null,
+          "Outcome": null
+        },
+        "KOOfTheNight": false,
+        "SubmissionOfTheNight": false,
+        "PerformanceOfTheNight": false
+      }
+    ],
+    "Result": {
+      "Method": null,
+      "EndingRound": null,
+      "EndingTime": null,
+      "EndingStrike": null,
+      "EndingTarget": null,
+      "EndingPosition": null,
+      "EndingSubmission": null,
+      "EndingNotes": null,
+      "FightOfTheNight": false,
+      "FightScores": [],
+      "RoundScores": []
+    },
+    "WeightClass": {
+      "WeightClassId": 8,
+      "CatchWeight": null,
+      "Weight": "116-125",
+      "Description": "Flyweight",
+      "Abbreviation": "FLW"
+    },
+    "Accolades": [
+      {
+        "Type": "Belt",
+        "Name": "UFC Flyweight Title"
+      }
+    ],
+    "Referee": {
+      "RefereeId": null,
+      "FirstName": null,
+      "LastName": null
+    },
+    "RuleSet": {
+      "PossibleRounds": 5,
+      "Description": "5 Rnd (5-5-5-5-5)"
+    },
+    "FightStats": [],
+    "RoundStats": []
+  }
+}
