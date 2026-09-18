@@ -55,15 +55,28 @@ jobs:
         if: always()
         run: rm -rf "$RUNNER_TEMP/signing"
 
+      # The release asset is named after the version (`OpenScore-0.2.4.apk`), with a
+      # `sha256sum`-style checksum next to it, the way the releases have been published.
+      - name: Name the APK after the release
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          cd apps/android/build/outputs/apk/release
+          mv android-release.apk "OpenScore-$version.apk"
+          sha256sum "OpenScore-$version.apk" > "OpenScore-$version.apk.sha256"
+
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: openscore-release-apk
-          path: apps/android/build/outputs/apk/release/*.apk
+          path: |
+            apps/android/build/outputs/apk/release/OpenScore-*.apk
+            apps/android/build/outputs/apk/release/OpenScore-*.apk.sha256
           retention-days: 30
 
       - name: Attach to GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: apps/android/build/outputs/apk/release/*.apk
+          files: |
+            apps/android/build/outputs/apk/release/OpenScore-*.apk
+            apps/android/build/outputs/apk/release/OpenScore-*.apk.sha256
