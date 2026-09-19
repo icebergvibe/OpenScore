@@ -1,0 +1,159 @@
+{
+  "gameNumber": 4389,
+  "homeTeam": "EBB",
+  "guestTeam": "STR",
+  "homeTeamScore": 4,
+  "guestTeamScore": 2,
+  "progressCode": "Game Completed",
+  "progressCodeName": "Game Completed",
+  "progressPerc": 100,
+  "gamestats": {
+    "tournamentID": 77,
+    "gameNumber": 4389,
+    "period": "TOT",
+    "homeScore": 4,
+    "homeSog": 21,
+    "homeTpp": "05:11",
+    "homePpg": 0,
+    "homeSsg": 28,
+    "homeShg": 0,
+    "homePim": 10,
+    "homeBully": 28,
+    "guestScore": 2,
+    "guestSog": 30,
+    "guestTpp": "05:50",
+    "guestPpg": 0,
+    "guestSsg": 17,
+    "guestShg": 0,
+    "guestPim": 8,
+    "guestBully": 37,
+    "homeShotAttempts": 42,
+    "guestShotAttempts": 66,
+    "homeShotEfficiency": 19,
+    "guestShotEfficiency": 7,
+    "homePpCount": 3,
+    "guestPpCount": 4,
+    "homePpEfficiency": 0,
+    "guestPpEfficiency": 0,
+    "uniqueID": 17797
+  },
+  "penalties": [],
+  "stats_gk": [
+    {
+      "tournamentID": 77,
+      "noc": "EBB",
+      "rank": 4,
+      "games": 1,
+      "sog": 30,
+      "goals": 2,
+      "saves": 28,
+      "efficiency": 93.33,
+      "uniqueID": "EBBt77"
+    },
+    {
+      "tournamentID": 77,
+      "noc": "STR",
+      "rank": 12,
+      "games": 1,
+      "sog": 21,
+      "goals": 4,
+      "saves": 17,
+      "efficiency": 80.95,
+      "uniqueID": "STRt77"
+    }
+  ],
+  "stats_pen": [
+    {
+      "tournamentID": 77,
+      "noc": "EBB",
+      "rank": 11,
+      "games": 1,
+      "twoMin": 5,
+      "fiveMin": 0,
+      "tenMin": 0,
+      "totalMin": 10,
+      "mp": 0,
+      "gm": 0,
+      "uniqueID": "EBBt77"
+    },
+    {
+      "tournamentID": 77,
+      "noc": "STR",
+      "rank": 5,
+      "games": 1,
+      "twoMin": 4,
+      "fiveMin": 0,
+      "tenMin": 0,
+      "totalMin": 8,
+      "mp": 0,
+      "gm": 0,
+      "uniqueID": "STRt77"
+    }
+  ],
+  "stats_se": [
+    {
+      "tournamentID": 77,
+      "noc": "EBB",
+      "rank": 4,
+      "games": 1,
+      "shots": 21,
+      "goals": 4,
+      "efficiency": 19.05,
+      "uniqueID": "EBBt77"
+    },
+    {
+      "tournamentID": 77,
+      "noc": "STR",
+      "rank": 11,
+      "games": 1,
+      "shots": 30,
+      "goals": 2,
+      "efficiency": 6.67,
+      "uniqueID": "STRt77"
+    }
+  ],
+  "stats_pp": [
+    {
+      "tournamentID": 77,
+      "noc": "EBB",
+      "rank": 12,
+      "games": 1,
+      "advantage": 3,
+      "goals": 0,
+      "efficiency": 0.0,
+      "uniqueID": "EBBt77"
+    },
+    {
+      "tournamentID": 77,
+      "noc": "STR",
+      "rank": 7,
+      "games": 1,
+      "advantage": 4,
+      "goals": 0,
+      "efficiency": 0.0,
+      "uniqueID": "STRt77"
+    }
+  ],
+  "stats_pk": [
+    {
+      "tournamentID": 77,
+      "noc": "EBB",
+      "rank": 3,
+      "games": 1,
+      "disadvantage": 4,
+      "goals": 0,
+      "efficiency": 100.0,
+      "uniqueID": "EBBt77"
+    },
+    {
+      "tournamentID": 77,
+      "noc": "STR",
+      "rank": 8,
+      "games": 1,
+      "disadvantage": 3,
+      "goals": 0,
+      "efficiency": 100.0,
+      "uniqueID": "STRt77"
+    }
+  ]
+}

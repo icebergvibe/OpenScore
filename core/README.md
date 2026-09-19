@@ -22,7 +22,7 @@ org.openscore.cache          Durable, normalized stores an app plugs in: DayList
 org.openscore.feed           Feed v1: the JSON contract (docs/feed-v1.md) + FeedMapper (model → feed)
 org.openscore.OpenScore      Aggregator: all providers behind one door, cross-league gamesOn()
 org.openscore.providers.*    One package per platform — each DTOs + Mapper + Provider:
-                             hockey: nhl, liiga, sportality (SHL, and HockeyAllsvenskan's own provider), chl, khl
+                             hockey: nhl, liiga, sportality (SHL, and HockeyAllsvenskan's own provider), chl, khl, del
                              football: ligue1, bundesliga, premierleague, efl (Championship, Carabao Cup),
                                        seriea, laliga, mls, malta,
                                        fogis (all Swedish tiers, XML; SwedishLeagueProvider cuts Allsvenskan,
@@ -46,6 +46,7 @@ org.openscore.testing (jvm)  SampleFetcher + per-league sample routes, for tests
 | `hockeyallsvenskan` | `HockeyAllsvenskanProvider` | the site has no day route: the whole season is read from the match page and kept as a normalized snapshot (`SeasonScheduleStore`), refreshed after six hours, with due/live/just-finished games re-read one by one; lineups in line/pairing structure from the game page (`LINE_GROUPS`, about two hours before the puck drop); the game document says the period and score in play but has no clock and lagged the ice on the opening night — no standings, events or `LIVE_UPDATES` (play-by-play is a POST route, push is MQTT with handed-out credentials) |
 | `chl` | `ChlProvider` | no clock, no shots/coordinates, penalty details only as text |
 | `khl` | `KhlProvider` | no clock (period only), no roster/player endpoints, MQTT push not wired |
+| `del` | `DelProvider` | the official app's backend (one `query.php`, `requestName=` selects the dataset); game ids are the feed's `uniqueID` (`4389t77`, the tournament half is required by every per-game read); events with strength and assists (assists resolved by jersey number through the two rosters, read once an hour), shots with coordinates through `events()`, lines and pairings; no team stats; the live codes and the elapsed-seconds clock are mapped from the app's string table but unobserved, so `CLOCK` is not claimed yet; playoff series games that were never needed are dropped from listings (`CANCELLED` when read directly) |
 | `ligue1` | `Ligue1Provider` | second-precision clock; 150–500 KB match resource → live() polls at 20 s |
 | `bundesliga` | `BundesligaProvider` | Firebase RTDB; whole-minute clock; squads from ESPN through the crosswalk (the DFL's own are key-gated), no player endpoint; SSE not wired |
 | `premier-league` | `PremierLeagueProvider` | five small calls per game; own goals credited to the beneficiary from the `events` grouping (the timeline attributes them to the scorer's team) |

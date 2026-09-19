@@ -18,7 +18,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 
 ## What's here
 
-- **24 leagues**: 6 hockey, 16 football, 1 baseball, 1 MMA (the UFC), each documented under
+- **25 leagues**: 7 hockey, 16 football, 1 baseball, 1 MMA (the UFC), each documented under
   [`apis/`](apis) with the exact requests, captured responses and a health check per endpoint,
   plus Formula 1 on a small racing surface of its own.
 - [`core/`](core/README.md): one sport-agnostic model and a provider per league, sharing a
@@ -47,6 +47,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 | Hockey | HockeyAllsvenskan (SWE) | [apis/hockey/hockeyallsvenskan](apis/hockey/hockeyallsvenskan/README.md) | `hockeyallsvenskan` | The site has no day route: the season is read from the match page and kept as a normalized snapshot; due and live games are re-read one by one. Schedule, results, period scores and lineups (lines and pairings from the game page). Play-by-play is a POST route, push is MQTT: both documented, neither wired. |
 | Hockey | CHL (Champions Hockey League) | [apis/hockey/chl](apis/hockey/chl/README.md) | `chl` | Static JSON files on S3. No clock, no shots. |
 | Hockey | KHL | [apis/hockey/khl](apis/hockey/khl/README.md) | `khl` | Via the official mobile-app API (webcaster.pro), CORS open. khl.ru itself is geo-blocked — out of scope. |
+| Hockey | DEL (GER) | [apis/hockey/del](apis/hockey/del/README.md) | `del` | The official app's backend (one `query.php` on appticore.com, key-less, no CORS, nothing edge-cached). Day windows in UTC, events with strength and assists, shots with coordinates, lines and pairings, standings, rosters. Live states not yet observed. |
 | Baseball | MLB | [apis/baseball/mlb](apis/baseball/mlb/README.md) | `mlb` | statsapi.mlb.com. Every live state sampled; per-pitch data, JSON-Patch diff feed, `fields=` trimming. Team pages with schedule, roster and season stats. |
 | Football | Premier League (ENG) | [apis/football/premier-league](apis/football/premier-league/README.md) | `premier-league` | Pulselive API behind premierleague.com. CORS open, kick-offs in local time. |
 | Football | EFL — Championship · Carabao Cup (ENG) | [apis/football/efl](apis/football/efl/README.md) | `championship`, `carabao-cup` | EFL Digital's Gamechanger API behind efl.com (also serves League One, League Two, EFL Trophy). One document per match with lineups and events, CORS open, nothing edge-cached. Key-less Firestore push documented, still polled. In-play states pending. |
@@ -92,7 +93,7 @@ The full contract is [docs/principles.md](docs/principles.md); the model is
 
 ```
 apis/                One folder per feed: README.md + health.json (endpoint checks) + captured samples/
-  hockey/            nhl  liiga  shl  hockeyallsvenskan  chl  khl
+  hockey/            nhl  liiga  shl  hockeyallsvenskan  chl  khl  del
   football/          premier-league  efl  malta-premier  serie-a  bundesliga  ligue-1  la-liga
                      allsvenskan  fogis-livescore  uefa  mls  espn
   baseball/          mlb

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.openscore"
-version = "0.2.4-SNAPSHOT"
+version = "0.2.5-SNAPSHOT"
 
 kotlin {
     jvmToolchain(21)

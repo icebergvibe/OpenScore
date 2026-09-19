@@ -22,6 +22,7 @@ import org.openscore.provider.RacingProvider
 import org.openscore.provider.runCatchingUnlessCancelled
 import org.openscore.providers.bundesliga.BundesligaProvider
 import org.openscore.providers.chl.ChlProvider
+import org.openscore.providers.del.DelProvider
 import org.openscore.providers.efl.CarabaoCupProvider
 import org.openscore.providers.efl.ChampionshipProvider
 import org.openscore.providers.espn.EspnRosters
@@ -177,6 +178,7 @@ public class OpenScore(
                 HockeyAllsvenskanProvider(fetcher, scheduleStore = seasonScheduleStore),
                 ChlProvider(fetcher),
                 KhlProvider(fetcher),
+                DelProvider(fetcher),
                 Ligue1Provider(fetcher),
                 BundesligaProvider(fetcher, rosters = espnRosters),
                 PremierLeagueProvider(fetcher),

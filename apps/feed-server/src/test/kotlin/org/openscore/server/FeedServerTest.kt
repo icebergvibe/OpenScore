@@ -182,7 +182,7 @@ class MultiLeagueFeedServerTest {
         application { feedModule(openScore) }
         val leagues = FeedJson.parseToJsonElement(client.get("/v1/leagues").bodyAsText()).jsonArray
         val ids = leagues.map { it.jsonObject["id"]!!.jsonPrimitive.content }
-        assertEquals(listOf("nhl", "liiga", "shl", "hockeyallsvenskan", "chl", "khl"), ids.take(6))
+        assertEquals(listOf("nhl", "liiga", "shl", "hockeyallsvenskan", "chl", "khl", "del"), ids.take(7))
         assertTrue(ids.containsAll(listOf("ligue1", "bundesliga", "premier-league", "championship", "carabao-cup", "serie-a", "la-liga", "malta-premier", "allsvenskan", "superettan", "fogis", "mlb", "ufc")))
         assertEquals(setOf("HOCKEY", "FOOTBALL", "BASEBALL", "MMA"), leagues.map { it.jsonObject["sport"]!!.jsonPrimitive.content }.toSet())
 

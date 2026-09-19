@@ -1,0 +1,325 @@
+{
+  "league": "del",
+  "name": "DEL (PENNY DEL)",
+  "baseUrl": "https://del-services.appticore.com/2026/query.php",
+  "minDelayMs": 500,
+  "checks": [
+    {
+      "name": "tournamentList",
+      "path": "?os=android&lastUpdate=0&requestName=tournamentList",
+      "sample": "tournament-list.json",
+      "keys": [
+        "[].tournamentID",
+        "[].category",
+        "[].displayName",
+        "[].startDate",
+        "[].endDate",
+        "[].gamePhases"
+      ],
+      "note": "Lists the path year's tournaments; the playoff tournament joins around February"
+    },
+    {
+      "name": "games - whole tournament",
+      "path": "?os=android&lastUpdate=0&requestName=games&tournamentId=77",
+      "sample": "games.season.json",
+      "keys": [
+        "[].gameNumber",
+        "[].tournamentID",
+        "[].dateTime",
+        "[].homeTeam",
+        "[].guestTeam",
+        "[].progressCode",
+        "[].progressCodeName",
+        "[].progressPerc",
+        "[].homeTeamScore",
+        "[].guestTeamScore",
+        "[].scoreByPeriod",
+        "[].tournamentPhase",
+        "[].gamePhase",
+        "[].venueName"
+      ],
+      "note": "2026-27 regular season, 364 rows; the sample is truncated to 21"
+    },
+    {
+      "name": "games - UTC window",
+      "path": "?os=android&lastUpdate=0&requestName=games&dateFrom={today}%2000:00:00&dateTo={today+1}%2023:59:59",
+      "sample": "games.range.json",
+      "keys": [],
+      "depth": 0,
+      "note": "May be an empty array on an off-day; dateFrom/dateTo need HH:MM:SS"
+    },
+    {
+      "name": "games - one finished game",
+      "path": "?os=android&lastUpdate=0&requestName=games&tournamentId=77&gameNumber=4389",
+      "sample": "games.final.json",
+      "keys": [
+        "[].gameNumber",
+        "[].progressCode",
+        "[].scoreByPeriod",
+        "[].spectators"
+      ],
+      "note": "Eisbären Berlin 4:2 Straubing Tigers, 2026-09-17, regulation"
+    },
+    {
+      "name": "games - shoot-out final",
+      "path": "?os=android&lastUpdate=0&requestName=games&tournamentId=77&gameNumber=4394",
+      "sample": "games.final-shootout.json",
+      "keys": [
+        "[].progressCodeName"
+      ],
+      "note": "RBM 4:3 MAN after the shoot-out; progressCodeName GWS"
+    },
+    {
+      "name": "games - playoff tournament",
+      "path": "?os=android&lastUpdate=0&requestName=games&tournamentId=76",
+      "sample": "games.playoffs.json",
+      "keys": [
+        "[].gamePhase",
+        "[].seriesNumber",
+        "[].seriesHomeTeamScore",
+        "[].seriesGuestTeamScore",
+        "[].playoffReverseTeam"
+      ],
+      "note": "2026 playoffs, 54 rows with the series fields"
+    },
+    {
+      "name": "gameTime",
+      "path": "?os=android&lastUpdate=0&requestName=gameTime&tournamentId=77&gameNumber=4389",
+      "sample": "game-time.final.json",
+      "keys": [
+        "gameNumber",
+        "progressCode",
+        "progressPerc",
+        "gameTime"
+      ],
+      "note": "Elapsed seconds as a string (3600 after regulation)"
+    },
+    {
+      "name": "gameSituations",
+      "path": "?os=android&lastUpdate=0&requestName=gameSituations&tournamentId=77&gameNumber=4389",
+      "sample": "game-situations.final.json",
+      "keys": [
+        "[].uniqueID",
+        "[].noc",
+        "[].period",
+        "[].time",
+        "[].type",
+        "[].actionCode1",
+        "[].actionCode2",
+        "[].actionCode3",
+        "[].playerId",
+        "[].playerName",
+        "[].jerseyNumber"
+      ],
+      "note": "Goals, penalties and goalkeeper changes; homeScore/guestScore only on goal rows"
+    },
+    {
+      "name": "gameSituations - shoot-out",
+      "path": "?os=android&lastUpdate=0&requestName=gameSituations&tournamentId=77&gameNumber=4394",
+      "sample": "game-situations.final-shootout.json",
+      "keys": [
+        "[].period"
+      ],
+      "note": "GWS period with the deciding GOL and SCRD / SVD_GOL attempts"
+    },
+    {
+      "name": "gameSituationsExtended",
+      "path": "?os=android&lastUpdate=0&requestName=gameSituationsExtended&tournamentId=77&gameNumber=4389",
+      "sample": "game-situations-extended.final.json",
+      "keys": [
+        "[].x",
+        "[].y"
+      ],
+      "note": "Adds every shot with rink coordinates"
+    },
+    {
+      "name": "gameResults",
+      "path": "?os=android&lastUpdate=0&requestName=gameResults&tournamentId=77&gameNumber=4389",
+      "sample": "game-results.final.json",
+      "keys": [
+        "[].period",
+        "[].homeScore",
+        "[].guestScore",
+        "[].homeSog",
+        "[].guestSog",
+        "[].homePim",
+        "[].guestPim",
+        "[].homeBully",
+        "[].guestBully"
+      ],
+      "note": "Per-period rows plus TOT; unordered"
+    },
+    {
+      "name": "scoreboard",
+      "path": "?os=android&lastUpdate=0&requestName=scoreboard&tournamentId=77&gameNumber=4389",
+      "sample": "scoreboard.final.json",
+      "keys": [
+        "gameNumber",
+        "homeTeam",
+        "guestTeam",
+        "homeTeamScore",
+        "guestTeamScore",
+        "progressCode",
+        "progressCodeName",
+        "gamestats.homeSog",
+        "stats_gk[].noc"
+      ]
+    },
+    {
+      "name": "gameLineup",
+      "path": "?os=android&lastUpdate=0&requestName=gameLineup&tournamentId=77&gameNumber=4389",
+      "sample": "game-lineup.final.json",
+      "keys": [
+        "[].lineNumber",
+        "[].linePosition",
+        "[].homePlayerMemberId",
+        "[].homePlayerName",
+        "[].homePlayerNumber",
+        "[].guestPlayerMemberId",
+        "[].guestPlayerName",
+        "[].guestPlayerNumber"
+      ],
+      "note": "22 slots: 2 goalkeepers + 4 lines of 2 D and 3 F"
+    },
+    {
+      "name": "gameOfficials",
+      "path": "?os=android&lastUpdate=0&requestName=gameOfficials&tournamentId=77&gameNumber=4389",
+      "sample": "game-officials.final.json",
+      "keys": [
+        "[].officialFamilyName",
+        "[].officialGivenName",
+        "[].officialPosition"
+      ]
+    },
+    {
+      "name": "gameDetailTeamStats",
+      "path": "?os=android&lastUpdate=0&requestName=gameDetailTeamStats&tournamentId=77&gameNumber=4389",
+      "sample": "game-detail-team-stats.final.json",
+      "keys": [
+        "homeTeam.pp.efficiency",
+        "guestTeam.gk.saves"
+      ]
+    },
+    {
+      "name": "gameDetailPlayerComparison",
+      "path": "?os=android&lastUpdate=0&requestName=gameDetailPlayerComparison&tournamentId=77&gameNumber=4389",
+      "sample": "game-detail-player-comparison.final.json",
+      "keys": [
+        "homeScoringLeader.memberID",
+        "guestBestGoalkeeper.memberID"
+      ]
+    },
+    {
+      "name": "teamList",
+      "path": "?os=android&lastUpdate=0&requestName=teamList&tournamentId=77",
+      "sample": "team-list.json",
+      "keys": [
+        "[].noc",
+        "[].name"
+      ],
+      "note": "14 rows; no crest, city or arena"
+    },
+    {
+      "name": "teamStandings - current",
+      "path": "?os=android&lastUpdate=0&requestName=teamStandings&tournamentId=77",
+      "sample": "team-standings.json",
+      "keys": [
+        "[].noc",
+        "[].rank",
+        "[].gamesPlayed",
+        "[].gamesWon",
+        "[].gamesLost",
+        "[].otw",
+        "[].otl",
+        "[].goalsFor",
+        "[].goalsAgainst",
+        "[].points"
+      ]
+    },
+    {
+      "name": "teamStandings - final 2025-26",
+      "path": "?os=android&lastUpdate=0&requestName=teamStandings&tournamentId=75",
+      "sample": "team-standings.2025-26.json",
+      "keys": [
+        "[].rank",
+        "[].points"
+      ],
+      "note": "Stable: 52 games played by every team"
+    },
+    {
+      "name": "teamMembers - roster",
+      "path": "?os=android&lastUpdate=0&requestName=teamMembers&tournamentId=77&noc=EBB",
+      "sample": "team-members.team.json",
+      "keys": [
+        "[].memberID",
+        "[].noc",
+        "[].familyName",
+        "[].givenName",
+        "[].jerseyNumber",
+        "[].position",
+        "[].shoots",
+        "[].birthday",
+        "[].nationality",
+        "[].height",
+        "[].weight",
+        "[].statistics",
+        "[].imageUrl"
+      ],
+      "note": "Includes the head coach (position HED_COA)"
+    },
+    {
+      "name": "teamMembers - one player",
+      "path": "?os=android&lastUpdate=0&requestName=teamMembers&tournamentId=77&noc=EBB&memberId=2209",
+      "sample": "team-members.player.json",
+      "keys": [
+        "[].memberID"
+      ],
+      "note": "The player plus the coach row"
+    },
+    {
+      "name": "statistics - points",
+      "path": "?os=android&lastUpdate=0&requestName=statistics&tournamentId=77&type=points",
+      "sample": "statistics.points.json",
+      "keys": [
+        "[].memberID",
+        "[].rank",
+        "[].assists",
+        "[].plusMinus",
+        "[].timeOnIceTotal"
+      ],
+      "note": "birthday is epoch milliseconds here, ISO in teamMembers"
+    },
+    {
+      "name": "statistics - goalkeeping (teams)",
+      "path": "?os=android&lastUpdate=0&requestName=statistics&tournamentId=77&type=gk",
+      "sample": "statistics.gk.json",
+      "keys": [
+        "[].noc",
+        "[].sog",
+        "[].saves",
+        "[].efficiency"
+      ]
+    },
+    {
+      "name": "statistics - power play (teams)",
+      "path": "?os=android&lastUpdate=0&requestName=statistics&tournamentId=77&type=pp",
+      "sample": "statistics.pp.json",
+      "keys": [
+        "[].noc",
+        "[].advantage",
+        "[].goals"
+      ]
+    },
+    {
+      "name": "historicalData",
+      "path": "?os=android&lastUpdate=0&requestName=historicalData&tournamentId=77&memberID=2209",
+      "sample": "historical-data.json",
+      "keys": [
+        "memberID",
+        "records[].tournamentId",
+        "records[].year",
+        "records[].statistics"
+      ]
+    }
+  ]
+}

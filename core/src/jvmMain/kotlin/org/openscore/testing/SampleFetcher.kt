@@ -87,6 +87,7 @@ public class SampleFetcher : Fetcher {
             HockeyAllsvenskanSamples.register(it, root)
             ChlSamples.register(it, root)
             KhlSamples.register(it, root)
+            DelSamples.register(it, root)
             Ligue1Samples.register(it, root)
             BundesligaSamples.register(it, root = root)
             PremierLeagueSamples.register(it, root)

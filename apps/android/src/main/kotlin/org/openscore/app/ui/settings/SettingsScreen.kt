@@ -229,7 +229,7 @@ fun SettingsScreen(
                 item {
                     // Sources that are not leagues, so the list above cannot name them.
                     Text(
-                        text = "Also read: ESPN (site.web.api.espn.com) for Bundesliga and UEFA squads only; the Swedish FA's Fogis livescore (svenskfotboll.se) for Allsvenskan and Superettan games, with their tables and squads from allsvenskan.se; the KHL's mobile-app API (khl.api.webcaster.pro); Formula 1 from Jolpica F1 (api.jolpi.ca), an open-source, community-run successor to the Ergast API — github.com/jolpica/jolpica-f1.",
+                        text = "Also read: ESPN (site.web.api.espn.com) for Bundesliga and UEFA squads only; the Swedish FA's Fogis livescore (svenskfotboll.se) for Allsvenskan and Superettan games, with their tables and squads from allsvenskan.se; the KHL's mobile-app API (khl.api.webcaster.pro); the DEL's mobile-app API (del-services.appticore.com), with crests from penny-del.org; Formula 1 from Jolpica F1 (api.jolpi.ca), an open-source, community-run successor to the Ergast API — github.com/jolpica/jolpica-f1.",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.padding(top = 8.dp),
