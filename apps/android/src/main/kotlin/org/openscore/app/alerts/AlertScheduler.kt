@@ -4,13 +4,14 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.util.Log
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.flow.last
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
+import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
@@ -20,6 +21,7 @@ import kotlinx.datetime.todayIn
 import org.openscore.GamesOnDate
 import org.openscore.app.OpenScoreApp
 import org.openscore.app.data.FavoriteFilter
+import org.openscore.app.data.ScoresRepository
 import org.openscore.app.ui.common.groupTitle
 import org.openscore.model.Game
 import org.openscore.model.GameEvent
@@ -33,8 +35,12 @@ import kotlin.time.Clock
 
 private const val TAG = "OpenScoreAlerts"
 
-/** Everything due within this window of a wake-up is delivered together. */
-private const val GATHER_WINDOW_MS = 5L * 60 * 1000
+/**
+ * A receiver pass has a 20 s ceiling. A feed is allowed less than that so one slow host cannot
+ * cancel the whole pass just before its own request timeout, leaving every due row untouched.
+ */
+private const val LISTING_TIMEOUT_MS = 10_000L
+private const val EVENTS_TIMEOUT_MS = 5_000L
 
 /** Local hour at which the next day's games are looked up. */
 private const val DAILY_REFRESH_HOUR = 3
@@ -56,10 +62,9 @@ private const val REFRESH_RETRY_MS = 15L * 60 * 1000
  * costs no network at all when it fires. Everything else re-reads the listing when it falls
  * due, and one request per league covers every followed game in it.
  *
- * Exactly one alarm is outstanding at a time. It fires, delivers whatever is due, and sets the
- * next one, so the phone is never woken speculatively. Inexact, Doze-piercing alarms need no
- * permission and no Play services; in exchange a reminder can land a few minutes late, which
- * is why it states the kick-off time rather than counting down to it.
+ * Exactly one alert alarm is outstanding at a time. It fires, delivers whatever is due, and sets
+ * the next one, so the phone is never woken speculatively. It is near-exact when Android's Alarms
+ * & reminders access is granted and remains an inexact, Doze-piercing fallback otherwise.
  */
 object AlertScheduler {
 
@@ -146,7 +151,7 @@ object AlertScheduler {
         val now = System.currentTimeMillis()
 
         val found: List<Pair<LocalDate, GamesOnDate?>> = coroutineScope {
-            dates.map { date -> async { date to runCatchingUnlessCancelled { repository.gamesOn(date, leagues).last() }.getOrNull() } }.awaitAll()
+            dates.map { date -> async { date to readListing(repository, date, leagues) } }.awaitAll()
         }
 
         val fresh = mutableListOf<PendingAlert>()
@@ -161,7 +166,10 @@ object AlertScheduler {
         found.forEach { (date, result) ->
             result ?: return@forEach
             val failed = result.errors.map { it.leagueId }.toSet()
-            scanned += (leagues - failed).map { it to date.toString() }
+            // A bounded read may have useful answers from quick leagues while others are still
+            // pending. Only call a league scanned when it actually answered; otherwise rows for
+            // the slow league would be mistaken for games that are no longer followed.
+            scanned += (result.leagues - failed - result.pending.toSet()).map { it to date.toString() }
             result.games.filter(filter::matches).forEach { game ->
                 followed += game.key
                 if (game.state == GameState.POSTPONED || game.state == GameState.CANCELLED) calledOff[game.key] = game
@@ -193,10 +201,12 @@ object AlertScheduler {
         Log.d(TAG, "queued ${merged.size} alert(s): ${merged.sortedBy { it.dueAt }.map { "${it.kind} ${it.title} @${Date(it.dueAt)}" }}")
         scheduleNext(app, merged)
 
-        // Stamped only when something was actually read. A pass in which every listing failed has
-        // learnt nothing, and stamping it anyway would have the next six hours treated as covered.
-        if (scanned.isEmpty()) {
-            Log.d(TAG, "nothing could be read; retrying in ${REFRESH_RETRY_MS / 60_000} minutes")
+        // Do not leave a slow followed league undiscovered until tomorrow merely because another
+        // league answered. The useful partial queue is already saved; retry the timed-out part
+        // soon and stamp the daily refresh only after a complete pass.
+        val incomplete = found.any { (_, result) -> result == null || result.pending.isNotEmpty() }
+        if (scanned.isEmpty() || incomplete) {
+            Log.d(TAG, "schedule read was incomplete; retrying in ${REFRESH_RETRY_MS / 60_000} minutes")
             setAlarm(app, ACTION_REFRESH, System.currentTimeMillis() + REFRESH_RETRY_MS)
             return
         }
@@ -239,8 +249,10 @@ object AlertScheduler {
         val now = System.currentTimeMillis()
 
         val pending = queue.pending()
-        val due = pending.filter { it.dueAt <= now + GATHER_WINDOW_MS }
-        val remaining = pending.filter { it.dueAt > now + GATHER_WINDOW_MS }.toMutableList()
+        // Never consume a future row merely because another alarm woke the app. That used to
+        // pull up to five minutes of reminders and polls into one batch.
+        val due = pending.filter { it.dueAt <= now }
+        val remaining = pending.filter { it.dueAt > now }.toMutableList()
         if (due.isEmpty()) {
             scheduleNext(app, remaining)
             return
@@ -257,24 +269,32 @@ object AlertScheduler {
             delivered += post.id
         }
 
-        due.filter { it.kind == AlertKind.KICKOFF }.forEach { show(AlertRules.kickoffPost(it), GameLink.of(it)) }
+        due.filter { it.kind == AlertKind.KICKOFF }.forEach { row ->
+            // An overdue pre-game reminder is no longer useful once the scheduled start has
+            // passed. The start/result watches will still report what the feed actually says.
+            AlertRules.kickoffPost(row, now)?.let { show(it, GameLink.of(row)) }
+                ?: Log.d(TAG, "dropping stale reminder for ${row.title}")
+        }
 
         val watches = due.filter { it.kind != AlertKind.KICKOFF }
         if (watches.isNotEmpty()) {
             // One listing per league-day covers every followed game in it, whatever kind is asking.
             val listings: Map<String, GamesOnDate?> = coroutineScope {
                 watches.groupBy { it.date }.map { (date, rows) ->
-                    async { date to runCatchingUnlessCancelled { repository.gamesOn(LocalDate.parse(date), rows.map { it.leagueId }.distinct()).last() }.getOrNull() }
+                    async { date to readListing(repository, LocalDate.parse(date), rows.map { it.leagueId }.distinct()) }
                 }.awaitAll().toMap()
             }
             val games: Map<String, Game> = listings.values.filterNotNull().flatMap { it.games }.associateBy { it.key }
-            fun unread(row: PendingAlert): Boolean = listings[row.date]?.errors?.none { it.leagueId == row.leagueId } != true
+            fun unread(row: PendingAlert): Boolean {
+                val listing = listings[row.date] ?: return true
+                return row.leagueId in listing.pending || listing.errors.any { it.leagueId == row.leagueId }
+            }
 
             // Events are the one read that cannot be shared between games, so the rows that need
             // them are asked for together rather than one after another.
             val events: Map<String, List<GameEvent>?> = coroutineScope {
                 watches.filter { it.kind == AlertKind.LIVE && !unread(it) && AlertRules.needsEvents(it, games[it.key], settings, repository.supports(it.leagueId, Capability.EVENTS)) }
-                    .map { row -> async { row.key to runCatchingUnlessCancelled { repository.events(row.leagueId, row.gameId) }.getOrNull() } }
+                    .map { row -> async { row.key to withTimeoutOrNull(EVENTS_TIMEOUT_MS) { runCatchingUnlessCancelled { repository.events(row.leagueId, row.gameId) }.getOrNull() } } }
                     .awaitAll().toMap()
             }
 
@@ -309,6 +329,19 @@ object AlertScheduler {
     private val Game.key: String get() = "$leagueId/$id"
 
     /**
+     * Keeps the last progressive snapshot if the slowest league misses the background budget.
+     * Quick feeds can still update their alerts, while [GamesOnDate.pending] makes the remaining
+     * rows retry instead of being treated as absent.
+     */
+    private suspend fun readListing(repository: ScoresRepository, date: LocalDate, leagues: Collection<String>): GamesOnDate? {
+        var latest: GamesOnDate? = null
+        withTimeoutOrNull(LISTING_TIMEOUT_MS) {
+            repository.gamesOn(date, leagues).collect { latest = it }
+        }
+        return latest
+    }
+
+    /**
      * The days worth scheduling from. Yesterday as well as tomorrow, because the leagues file
      * games under their own dates: an NHL game at 22:00 Eastern is that day's for the league and
      * four in the morning of the next for a European phone, which the 3 a.m. rebuild would
@@ -340,10 +373,32 @@ object AlertScheduler {
         setAlarm(context, ACTION_REFRESH, calendar.timeInMillis)
     }
 
-    /** Inexact but Doze-piercing; an exact alarm would add "Alarms & reminders" to the app's permission list for nothing. */
+    /** Whether Android has granted the special access needed for near-exact background wake-ups. */
+    fun canSchedulePrecisely(context: Context): Boolean {
+        val manager = context.getSystemService(AlarmManager::class.java) ?: return false
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.S || manager.canScheduleExactAlarms()
+    }
+
+    /**
+     * Use a near-exact, Doze-piercing alarm for the user-facing alert when permission allows it.
+     * The 3 a.m. queue refresh has no visible deadline and remains batchable. Fresh Android 13+
+     * installs do not receive exact-alarm access automatically, so the inexact form is also the
+     * safe fallback until it is enabled (or after it is revoked).
+     */
     private fun setAlarm(context: Context, action: String, atMillis: Long) {
         val manager = context.getSystemService(AlarmManager::class.java) ?: return
-        manager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, maxOf(atMillis, System.currentTimeMillis() + 5_000), intentFor(context, action))
+        val at = maxOf(atMillis, System.currentTimeMillis() + 5_000)
+        val operation = intentFor(context, action)
+        if (action == ACTION_FIRE && canSchedulePrecisely(context)) {
+            try {
+                manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, operation)
+                return
+            } catch (_: SecurityException) {
+                // Access can be revoked between the check and this call. Fall through instead
+                // of breaking the alarm chain.
+            }
+        }
+        manager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, operation)
     }
 
     private fun cancel(context: Context, action: String) {

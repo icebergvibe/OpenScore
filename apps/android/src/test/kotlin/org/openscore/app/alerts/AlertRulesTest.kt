@@ -95,6 +95,14 @@ class AlertRulesTest {
     }
 
     @Test
+    fun `an overdue pre-game reminder is dropped once kickoff has passed`() {
+        val reminder = row(AlertKind.KICKOFF).copy(dueAt = kickoffMs - 10 * 60_000L)
+        assertNotNull(AlertRules.kickoffPost(reminder, kickoffMs - 1))
+        assertNull(AlertRules.kickoffPost(reminder, kickoffMs))
+        assertNull(AlertRules.kickoffPost(reminder, kickoffMs + 30 * 60_000L))
+    }
+
+    @Test
     fun `a game already under way gets no reminder or start watch, and its live watches are due at once`() {
         val now = kickoffMs + 30 * 60_000L
         val rows = AlertRules.alertsFor(live(1, 0), Sport.FOOTBALL, "Premier League", "2026-09-13", all, now)
@@ -136,14 +144,13 @@ class AlertRulesTest {
         val quiet = AlertRules.pollLive(next, Sport.FOOTBALL, live(1, 0), listOf(card("c1", "Rice")), all, canEvents = true, now = now + 180_000L)
         assertTrue(quiet.posts.isEmpty())
 
-        // A goal and a card since: one post each, and the row now knows both.
+        // A goal and a card since: one expanded update, so a delayed poll buzzes once while the
+        // row still records both.
         val events = listOf(card("c1", "Rice"), goal("g2", "Saka", 41, 2), card("c2", "Palmer", CardKind.RED))
         val busy = AlertRules.pollLive(next, Sport.FOOTBALL, live(2, 0, minute = 42), events, all, canEvents = true, now = now + 360_000L)
-        assertEquals(2, busy.posts.size)
-        val goalPost = busy.posts.first { it.text.startsWith("⚽") }
-        assertEquals("home-1 2 - 0 away-1", goalPost.title)
-        assertEquals("⚽ Goal for home-1 · Saka 41' · Premier League", goalPost.text)
-        assertEquals("🟥 Red card · Palmer 20' · Premier League", busy.posts.first { it.text.startsWith("🟥") }.text)
+        val update = busy.posts.single()
+        assertEquals("home-1 2 - 0 away-1", update.title)
+        assertEquals("⚽ Goal for home-1 · Saka 41'\n🟥 Red card · Palmer 20'\nPremier League", update.text)
         assertEquals("2-0", busy.next!!.seenScore)
         assertEquals(setOf("c1", "c2"), busy.next.seen)
     }
@@ -154,13 +161,12 @@ class AlertRulesTest {
         val goalsOnly = all.copy(cards = false)
         val out = AlertRules.pollLive(seeded, Sport.FOOTBALL, live(0, 1), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
         assertEquals("⚽ Goal for away-1 · Premier League", out.posts.single().text)
-        // Two in one poll are two posts with distinct ids.
+        // Two found in one delayed poll are one expanded update, not two simultaneous buzzes.
         val two = AlertRules.pollLive(seeded, Sport.FOOTBALL, live(2, 0), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
-        assertEquals(2, two.posts.size)
-        assertEquals(2, two.posts.map { it.id }.distinct().size)
-        // One each: a post per side, not two for whichever side is checked first.
+        assertEquals("⚽ Goal for home-1\n⚽ Goal for home-1\nPremier League", two.posts.single().text)
+        // One each: the expanded update still attributes one line to each side.
         val each = AlertRules.pollLive(seeded, Sport.FOOTBALL, live(1, 1), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
-        assertEquals(listOf("⚽ Goal for home-1 · Premier League", "⚽ Goal for away-1 · Premier League"), each.posts.map { it.text })
+        assertEquals("⚽ Goal for home-1\n⚽ Goal for away-1\nPremier League", each.posts.single().text)
     }
 
     @Test
@@ -198,7 +204,7 @@ class AlertRulesTest {
         )
         val events = listOf(penalty("1", "Marner", 2), penalty("2", "Reaves", 5), penalty("3", "Rielly", 10), penalty("4", "Tavares", null))
         val out = AlertRules.pollLive(nhl, Sport.HOCKEY, game, events, all, canEvents = true, now = kickoffMs + 600_000L)
-        assertEquals(listOf("⏱ 5 min penalty to home-1 · Reaves 12:34 · NHL", "⏱ 10 min penalty to home-1 · Rielly 12:34 · NHL"), out.posts.map { it.text })
+        assertEquals("⏱ 5 min penalty to home-1 · Reaves 12:34\n⏱ 10 min penalty to home-1 · Rielly 12:34\nNHL", out.posts.single().text)
         // The minors are not remembered either: nothing to compare them against later.
         assertEquals(setOf("2", "3"), out.next!!.seen)
     }
@@ -213,8 +219,7 @@ class AlertRulesTest {
         val slam = AlertRules.pollLive(mlb, Sport.BASEBALL, at(4, 0), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
         assertEquals("⚾ 4 runs for home-1 · MLB", slam.posts.single().text)
         val both = AlertRules.pollLive(mlb, Sport.BASEBALL, at(2, 1), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
-        assertEquals(listOf("⚾ 2 runs for home-1 · MLB", "⚾ Run for away-1 · MLB"), both.posts.map { it.text })
-        assertEquals(2, both.posts.map { it.id }.distinct().size)
+        assertEquals("⚾ 2 runs for home-1\n⚾ Run for away-1\nMLB", both.posts.single().text)
         val down = AlertRules.pollLive(mlb.copy(seenScore = "2-0"), Sport.BASEBALL, at(1, 0), null, goalsOnly, canEvents = false, now = kickoffMs + 600_000L)
         assertEquals("🚫 Score corrected · MLB", down.posts.single().text)
     }
@@ -223,7 +228,7 @@ class AlertRulesTest {
     fun `a card names the team when the event says whose it was`() {
         val seeded = row(AlertKind.LIVE, seeded = true, seenScore = "1-0")
         val out = AlertRules.pollLive(seeded, Sport.FOOTBALL, live(1, 0), listOf(card("c1", "Rice", team = "home-1"), card("c2", "Palmer", CardKind.RED, team = "away-1")), all, canEvents = true, now = kickoffMs + 600_000L)
-        assertEquals(listOf("🟨 Yellow card for home-1 · Rice 20' · Premier League", "🟥 Red card for away-1 · Palmer 20' · Premier League"), out.posts.map { it.text })
+        assertEquals("🟨 Yellow card for home-1 · Rice 20'\n🟥 Red card for away-1 · Palmer 20'\nPremier League", out.posts.single().text)
     }
 
     @Test

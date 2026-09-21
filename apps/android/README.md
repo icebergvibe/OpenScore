@@ -99,11 +99,17 @@ posted by the app itself, with no push service and no Google Play services. The 
   change: one read of yesterday, today and tomorrow's listings for the followed leagues turns
   every followed game into `PendingAlert` rows (a fight queues only its start and its result —
   there are no goals, cards or breaks to announce, and its start is its card segment's, so the
-  reminder is filed under the card and segment). Exactly one `AlarmManager` alarm is
-  outstanding at a time (`setAndAllowWhileIdle`, so no exact-alarm permission); it fires,
-  delivers what is due, and arms the next. `AlertReceiver` runs the work with `goAsync` under a
-  20 s budget; `BootReceiver` rebuilds after a reboot or an update. Resuming the app is a free
-  wake-up: the schedule is checked for staleness and overdue rows are delivered at once.
+  reminder is filed under the card and segment). Exactly one alert `AlarmManager` alarm is
+  outstanding at a time; it fires, delivers only rows that are actually due, and arms the next.
+  Android 12+ exposes an **Improve timing** action in Settings: granting its Alarms & reminders
+  special access changes these from batchable `setAndAllowWhileIdle` wake-ups to
+  `setExactAndAllowWhileIdle`; the inexact form remains the fallback if access is not granted or
+  is revoked. `AlertReceiver` runs the work with `goAsync` under a 20 s budget, while each
+  progressive listing read is bounded to 10 s and keeps the leagues that answered instead of
+  letting one slow host cancel the entire pass. `BootReceiver` rebuilds after a reboot or an
+  update and re-arms when precise-alarm access is granted. Resuming the app is a free wake-up:
+  the schedule is checked for staleness and overdue rows are handled at once; a pre-game reminder
+  that is already past kick-off is discarded rather than posted late.
 - A pre-game reminder costs no request when it fires. Every other kind re-reads the league's
   day listing when due — the core's `gamesOn` carries state and score for finished games too,
   so a start, a goal, a break and a result are all answered by **one request per league per
@@ -113,9 +119,11 @@ posted by the app itself, with no push service and no Google Play services. The 
 - `AlertRules` holds the decisions free of Android (tested on the JVM): what a game turns into,
   when a running game is looked at again (read off the football minute or hockey period), and
   what a due row does. Live watches seed themselves silently on the first look, so switching
-  goals on at half time does not announce the first half. A game found postponed or cancelled
-  — by a rebuild that still holds rows for it, or by any watch when it falls due — is said
-  once under a shared id, and its reminder is dropped rather than fired for nothing.
+  goals on at half time does not announce the first half. If a delayed wake-up discovers several
+  goals/cards at once, their details are folded into one expanded update rather than buzzing for
+  every stale incident. A game found postponed or cancelled — by a rebuild that still holds rows
+  for it, or by any watch when it falls due — is said once under a shared id, and its reminder is
+  dropped rather than fired for nothing.
 - `AlertsStore` (which favourites notify, which kinds, lead time) and `AlertQueue` (pending
   rows, recently delivered ids, last-refresh stamp) are SharedPreferences. A notification tap
   carries a `GameLink` (league, id, day); `MainActivity` pushes a `MatchKey` for it over a

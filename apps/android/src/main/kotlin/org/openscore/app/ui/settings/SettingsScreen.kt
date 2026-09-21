@@ -3,6 +3,7 @@ package org.openscore.app.ui.settings
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -42,6 +43,7 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -59,7 +61,11 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import org.openscore.app.R
+import org.openscore.app.alerts.AlertScheduler
 import org.openscore.app.alerts.AlertSettings
 import org.openscore.app.alerts.LEAD_TIME_CHOICES
 import org.openscore.app.alerts.Notifications
@@ -92,6 +98,7 @@ fun SettingsScreen(
     // first bell goes on, which is when the answer means something.
     val context = LocalContext.current
     var systemEnabled by remember { mutableStateOf(Notifications.enabled(context)) }
+    var preciseTiming by remember { mutableStateOf(AlertScheduler.canSchedulePrecisely(context)) }
     val askPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { systemEnabled = Notifications.enabled(context) }
     fun ensurePermission() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
@@ -99,6 +106,14 @@ fun SettingsScreen(
         askPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
     }
     LaunchedEffect(alerts.keys) { systemEnabled = Notifications.enabled(context) }
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner, context) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) preciseTiming = AlertScheduler.canSchedulePrecisely(context)
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
+    }
 
     Column(Modifier.fillMaxSize()) {
         Row(
@@ -185,6 +200,22 @@ fun SettingsScreen(
                                         .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
                                 )
                             }) { Text("Open") }
+                        }
+                    }
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && alerts.active && !preciseTiming) {
+                        Row(Modifier.fillMaxWidth().padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Text(
+                                text = "Android may delay and batch match alerts while precise alarms are off.",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.weight(1f),
+                            )
+                            TextButton(onClick = {
+                                context.startActivity(
+                                    Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM, Uri.parse("package:${context.packageName}"))
+                                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+                                )
+                            }) { Text("Improve timing") }
                         }
                     }
                     ToggleRow("Pre-game reminder", alerts.kickoff, { on -> if (on) ensurePermission(); onAlertsChange { it.copy(kickoff = on) } }, "Before a followed game starts, and if it is called off")

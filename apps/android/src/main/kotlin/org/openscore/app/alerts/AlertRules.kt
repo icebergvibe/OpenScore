@@ -228,7 +228,7 @@ object AlertRules {
             // A goal in the last minute lands in the same poll as the final whistle, and it is still a goal.
             val finalScore = game?.score
             if (game != null && game.state.isFinished && settings.goals && alert.seeded && finalScore != null && alert.seenScore != null && alert.seenScore != finalScore.key) {
-                goalPosts(alert, sport, finalScore, alert.seenScore, events)
+                collapseIncidentPosts(alert, goalPosts(alert, sport, finalScore, alert.seenScore, events))
             } else emptyList()
         }?.let { return it }
         val later = alert.later(now)
@@ -252,7 +252,28 @@ object AlertRules {
         newCards.forEach { event ->
             posts += Post(AlertKind.LIVE, "${alert.id}|${event.id}", scoredTitle(alert, score), listOf(cardHeadline(event), eventDetail(event, sport), alert.competition).filter { it.isNotBlank() }.joinToString(" · "), grouped = true)
         }
-        return Outcome(later.copy(seenScore = score.key, seen = alert.seen + newCards.map { it.id }), posts)
+        return Outcome(later.copy(seenScore = score.key, seen = alert.seen + newCards.map { it.id }), collapseIncidentPosts(alert, posts))
+    }
+
+    /**
+     * A phone coming out of Doze can discover several incidents in one read. They are one late
+     * update, not several timely interruptions: keep every detail in one expanded notification
+     * and make the phone alert once.
+     */
+    private fun collapseIncidentPosts(alert: PendingAlert, posts: List<Post>): List<Post> {
+        if (posts.size <= 1) return posts
+        val competitionSuffix = " · ${alert.competition}"
+        val details = posts.joinToString("\n") { it.text.removeSuffix(competitionSuffix) }
+        val batchKey = posts.joinToString("|") { it.id }.hashCode()
+        return listOf(
+            Post(
+                kind = AlertKind.LIVE,
+                id = "${alert.id}|BATCH|$batchKey",
+                title = posts.last().title,
+                text = "$details\n${alert.competition}",
+                grouped = true,
+            ),
+        )
     }
 
     /**
@@ -417,7 +438,9 @@ object AlertRules {
     fun scoredTitle(alert: PendingAlert, score: Score?): String =
         if (score != null) "${alert.home} ${score.home} - ${score.away} ${alert.away}" else alert.title
 
-    fun kickoffPost(alert: PendingAlert): Post {
+    /** A reminder is useful only before the scheduled start; overdue delivery must not revive it. */
+    fun kickoffPost(alert: PendingAlert, now: Long): Post? {
+        if (now >= alert.kickoffAt) return null
         val clock = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date(alert.kickoffAt))
         return Post(AlertKind.KICKOFF, alert.id, alert.title, "Starts at $clock · ${alert.competition}")
     }
