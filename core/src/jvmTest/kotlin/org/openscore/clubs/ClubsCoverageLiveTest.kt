@@ -45,6 +45,7 @@ class ClubsCoverageLiveTest {
             runBlocking {
                 for (p in all.providers) {
                     if (!p.supports(Capability.STANDINGS)) continue
+                    if (p.league.id in NATIONAL_TEAM_LEAGUES) continue
                     val table = runCatching { p.standings() }.getOrElse { e -> problems += "${p.league.id}: standings failed: $e"; continue }
                     // Before the first round the table is empty; the next three weeks of fixtures name the teams instead.
                     val teams = table.rows.map { it.team }.ifEmpty { upcomingTeams(p) }.distinctBy { it.id }
@@ -112,6 +113,13 @@ class ClubsCoverageLiveTest {
 
     private companion object {
         val ESPN_SQUAD_LEAGUES = setOf("bundesliga", "ucl", "uel", "uecl")
+
+        /**
+         * The crosswalk is a table of clubs. A national side is not one, has no other feed to be
+         * joined with, and keeps a null `clubId` on purpose, so the Nations League is not checked
+         * here - adding it would report all 54 countries as unmapped every run.
+         */
+        val NATIONAL_TEAM_LEAGUES = setOf("unl")
         val DOMESTIC_SQUAD_NAMESPACES = setOf("premier-league", "la-liga", "serie-a", "ligue1", "mls", "sportomedia", "malta-premier")
         val FOLD = mapOf('å' to 'a', 'ä' to 'a', 'ö' to 'o', 'ø' to 'o', 'æ' to 'a', 'é' to 'e', 'è' to 'e', 'ü' to 'u', 'ñ' to 'n', 'ç' to 'c', 'í' to 'i', 'ó' to 'o', 'á' to 'a', 'ú' to 'u', 'ß' to 's', 'ë' to 'e', 'ı' to 'i', 'ş' to 's', 'ğ' to 'g', 'ć' to 'c', 'č' to 'c', 'š' to 's', 'ž' to 'z', 'ł' to 'l', 'ń' to 'n', 'ő' to 'o', 'ř' to 'r', 'ě' to 'e', 'ý' to 'y')
     }

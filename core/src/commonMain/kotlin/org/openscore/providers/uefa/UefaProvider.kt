@@ -44,10 +44,10 @@ public data class UefaHosts(
 )
 
 /**
- * UEFA club competitions via the key-less uefa.com micro-services — see
+ * UEFA competitions via the key-less uefa.com micro-services - see
  * apis/football/uefa/README.md. One API for every UEFA competition, selected by
  * [competitionId]: [ChampionsLeagueProvider] (1), [EuropaLeagueProvider] (14),
- * [ConferenceLeagueProvider] (2019).
+ * [ConferenceLeagueProvider] (2019), [NationsLeagueProvider] (2014).
  *
  * Ids are UEFA's global digit strings (match `2049553`, team `50051`, player `250076574`).
  * `seasonId` is the season's **end year** (`2027` = 2026/27). Dates are the venue's local
@@ -68,10 +68,12 @@ public open class UefaProvider(
 
     override suspend fun roster(teamId: String): List<Player> {
         val source = rosters ?: unsupported(Capability.ROSTER)
+        // Named one by one: a competition with no ESPN slug of its own must not inherit another's squads.
         val slug = when (competitionId) {
             CHAMPIONS_LEAGUE -> EspnRosters.CHAMPIONS_LEAGUE_SLUG
             EUROPA_LEAGUE -> EspnRosters.EUROPA_LEAGUE_SLUG
-            else -> EspnRosters.CONFERENCE_LEAGUE_SLUG
+            CONFERENCE_LEAGUE -> EspnRosters.CONFERENCE_LEAGUE_SLUG
+            else -> unsupported(Capability.ROSTER)
         }
         return source.rosterFor(league.id, teamId, slug, currentSeason() - 1)
             ?: throw NotFoundException("${league.name}: no ESPN squad id for club '$teamId' in the crosswalk", league.id)
@@ -95,7 +97,7 @@ public open class UefaProvider(
     )
 
     /** UEFA seasons are named by their end year and start with July's qualifiers. */
-    public fun currentSeason(): Int = clock.todayIn(TimeZone.UTC).let { if (it.month >= Month.JULY) it.year + 1 else it.year }
+    public open fun currentSeason(): Int = clock.todayIn(TimeZone.UTC).let { if (it.month >= Month.JULY) it.year + 1 else it.year }
 
     override suspend fun gamesOn(date: LocalDate): List<Game> {
         val list = get(
@@ -197,6 +199,7 @@ public open class UefaProvider(
         public const val CHAMPIONS_LEAGUE: Int = 1
         public const val EUROPA_LEAGUE: Int = 14
         public const val CONFERENCE_LEAGUE: Int = 2019
+        public const val NATIONS_LEAGUE: Int = 2014
 
         private val LIVESCORE_MAX_AGE = 5.seconds
         private val MATCH_MAX_AGE = 10.seconds
@@ -232,5 +235,29 @@ public class ConferenceLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaH
     UefaProvider(LEAGUE, fetcher, UefaProvider.CONFERENCE_LEAGUE, hosts, clock, rosters) {
     public companion object {
         public val LEAGUE: League = League("uecl", Sport.FOOTBALL, "UEFA Conference League", "EU", "https://www.uefa.com/uefaconferenceleague/")
+    }
+}
+
+/**
+ * UEFA Nations League (competition 2014): the same services, national teams instead of clubs.
+ *
+ * Teams are `NATIONAL_MEN_TEAM_A` with the country's flag as the logo, so there is nothing to
+ * cross-walk: [org.openscore.model.TeamRef.clubId] stays null and a team page is single-league.
+ * No squads either (UEFA has no squad endpoint and ESPN's ids in the crosswalk are club ids),
+ * so ROSTER is unsupported.
+ */
+public class NationsLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHosts(), clock: Clock = Clock.System) :
+    UefaProvider(LEAGUE, fetcher, UefaProvider.NATIONS_LEAGUE, hosts, clock, rosters = null) {
+
+    /**
+     * The competition is biennial and its seasons are the **odd** end years (2025 = 2024/25,
+     * 2027 = 2026/27); an edition also runs past its name, the 2027 relegation play-offs being
+     * played in March 2028. An even year is therefore still the previous odd season. Verified
+     * 2026-09-24: `seasonYear` 2022 / 2024 / 2026 / 2028 all answer `[]`, and standings 404.
+     */
+    override fun currentSeason(): Int = super.currentSeason().let { if (it % 2 == 0) it - 1 else it }
+
+    public companion object {
+        public val LEAGUE: League = League("unl", Sport.FOOTBALL, "UEFA Nations League", "EU", "https://www.uefa.com/uefanationsleague/")
     }
 }

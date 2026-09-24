@@ -88,14 +88,14 @@ public fun main(args: Array<String>) {
 /**
  * Which core league ids a health file speaks for (one Sportomedia file covers Allsvenskan and
  * Superettan — whose games now come from Fogis, so driving those providers exercises both feeds;
- * the Fogis file also covers Svenska Cupen; the UEFA file covers the three club competitions; the
+ * the Fogis file also covers Svenska Cupen; the UEFA file covers the three club competitions and the Nations League; the
  * EFL file covers the Championship and the Carabao Cup).
  */
 private val HealthFile.coveredLeagues: List<String>
     get() = when (league) {
         "allsvenskan" -> listOf("allsvenskan", "superettan")
         "fogis" -> listOf("fogis", "svenska-cupen")
-        "ucl" -> listOf("ucl", "uel", "uecl")
+        "ucl" -> listOf("ucl", "uel", "uecl", "unl")
         "efl" -> listOf("championship", "carabao-cup")
         else -> listOf(league)
     }

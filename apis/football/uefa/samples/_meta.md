@@ -1,6 +1,7 @@
 # How the UEFA samples were captured
 
-All files were captured on **2026-09-13 between 05:26Z and 05:50Z** with
+The club-competition files were captured on **2026-09-13 between 05:26Z and 05:50Z**, the
+Nations League ones (`*unl*`) on **2026-09-24 around 07:10Z** with the UA of the day, with
 
 ```
 curl -sS -H "User-Agent: OpenScore/0.1 (+https://github.com/openscore/OpenScore)" -H "Accept: application/json" <url>
@@ -39,5 +40,19 @@ file is in the README's endpoint tables and in [`../health.json`](../health.json
 | `teams.json` / `teams.by-id.json` | `comp.uefa.com/v2/teams?competitionId=1&seasonYear=2027&limit=100&offset=0` / `?teamIds=50051,50138` | |
 | `players.json` / `players.by-id.json` | `comp.uefa.com/v2/players?competitionId=1&seasonYear=2027&limit=50&offset=0` / `?playerIds=250076574` | |
 
+## Nations League (competition 2014, captured 2026-09-24)
+
+| File | Request | Notes |
+|---|---|---|
+| `competitions.unl.json` | `comp.uefa.com/v2/competitions?competitionIds=2014` | `code UNL`, `teamCategory NATIONAL` |
+| `matches.day-unl.json` | `match.uefa.com/v5/matches?competitionId=2014&fromDate=2026-09-24&toDate=2026-09-24&limit=100&offset=0&order=ASC` | MD1 of 2026/27, 8 upcoming |
+| `matches.unl-team.json` | same with `seasonYear=2027&teamId=88` (no date filter) | Malta's 4 group matches |
+| `match.unl-pre.json` | `.../matches/2048009` | Andorra-Malta, League D group D1, `UPCOMING` |
+| `match.unl-final-penalties.json` | `.../matches/2044949` | 2025 final Portugal 2-2 Spain, `penalty` 5-3 |
+| `match-events.main.unl-final-penalties.json` | `.../matches/2044949/events?filter=MAIN&order=ASC&limit=500&offset=0` | 55 events through extra time and the shoot-out |
+| `match-lineups.unl-final.json` | `.../matches/2044949/lineups` | 26 per side |
+| `standings.unl.json` | `standings.uefa.com/v1/standings?competitionId=2014&seasonYear=2027&phase=TOURNAMENT` | 14 groups carrying `group.league` |
+| `teams.unl.json` | `comp.uefa.com/v2/teams?teamIds=88` | Malta: a national side, flag for a crest |
+
 Live-state samples (`match.live*.json`, `match-events.main.live*.json`, `livescore.live.json`)
-are pending — see the README's "Game states".
+are pending - see the README's "Game states".

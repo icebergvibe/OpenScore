@@ -18,7 +18,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 
 ## What's here
 
-- **27 leagues in core**: 7 hockey, 2 floorball, 16 football, 1 baseball, 1 MMA (the UFC),
+- **28 leagues in core**: 7 hockey, 2 floorball, 17 football, 1 baseball, 1 MMA (the UFC),
   plus Formula 1 on a small racing surface of its own. Their APIs live under
   [`apis/`](apis) with exact requests, captured responses and a health check per supported
   endpoint.
@@ -63,7 +63,7 @@ No API keys. No accounts. No paid data providers. No analytics.
 | Football | LaLiga (ESP) | [apis/football/la-liga](apis/football/la-liga/README.md) | `la-liga` | LaLiga's own API behind laliga.com (also Hypermotion, Copa del Rey). Needs a public page-embedded key — the documented exception in [principles.md](docs/principles.md#nothing-private). Second-precision timestamps, 137 team stats. |
 | Football | Allsvenskan (SWE) | [apis/football/allsvenskan](apis/football/allsvenskan/README.md) | tables, teams, squads, players for `allsvenskan`, `superettan` | Key-less GraphQL (`gql.sportomedia.se`) behind allsvenskan.se, with open introspection. Live-tested and found too flaky for scores (429s, frozen clock), so games come from Fogis below. |
 | Football | Sweden — Allsvenskan, Superettan, Svenska Cupen (+ every tier) | [apis/football/fogis-livescore](apis/football/fogis-livescore/README.md) | `allsvenskan`, `superettan`, `svenska-cupen` + the `fogis` umbrella | The FA's Fogis livescore XML behind svenskfotboll.se: every SvFF competition. `User-Agent` required, local times, mm:ss event clock, half-time scores, per-player lineup stats. No standings (those come from allsvenskan.se). |
-| Football | UEFA Champions League · Europa League · Conference League | [apis/football/uefa](apis/football/uefa/README.md) | `ucl`, `uel`, `uecl` | uefa.com's key-less micro-services — one API for every UEFA competition. No CORS for third parties, second-precision phase timestamps, events with coordinates, a 300-byte `livescore` change detector. Squads come from ESPN (UEFA has none). |
+| Football | UEFA Champions League · Europa League · Conference League · Nations League | [apis/football/uefa](apis/football/uefa/README.md) | `ucl`, `uel`, `uecl`, `unl` | uefa.com's key-less micro-services — one API for every UEFA competition. No CORS for third parties, second-precision phase timestamps, events with coordinates, a 300-byte `livescore` change detector. Squads come from ESPN (UEFA has none). The Nations League is national sides, four tiers of groups and a biennial calendar, so it has no club crosswalk and no squads. |
 | Football | Major League Soccer (USA/CAN) | [apis/football/mls](apis/football/mls/README.md) | `mls` | MLS's own `stats-api` plus `sportapi` for pre-game metadata. Data routes are `no-store` (honoured). No live capability until a live sample is captured. |
 | Football | ESPN (squads only) | [apis/football/espn](apis/football/espn/README.md) | `EspnRosters` | Not a league: the one ESPN route adopted, `…/teams/{id}/roster`, supplies squads for the Bundesliga and the three UEFA competitions behind hand-verified ids in the club crosswalk. |
 | Motorsport | Formula 1 | — | `f1` (`RacingProvider`) | [Jolpica F1](https://github.com/jolpica/jolpica-f1), the open-source, Ergast-compatible F1 API (see [Acknowledgements](#acknowledgements)): calendar with sessions, race / qualifying / sprint classifications, driver and constructor tables. No live timing. Not yet mapped under `apis/`. |

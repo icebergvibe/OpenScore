@@ -28,8 +28,8 @@ android {
         applicationId = "org.openscore.app"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 6
-        versionName = "0.3.1"
+        versionCode = 7
+        versionName = "0.3.2"
     }
 
     signingConfigs {

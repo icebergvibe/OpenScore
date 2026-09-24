@@ -48,6 +48,7 @@ import org.openscore.providers.ssl.SslProvider
 import org.openscore.providers.uefa.ChampionsLeagueProvider
 import org.openscore.providers.uefa.ConferenceLeagueProvider
 import org.openscore.providers.uefa.EuropaLeagueProvider
+import org.openscore.providers.uefa.NationsLeagueProvider
 import org.openscore.providers.ufc.UfcProvider
 
 /**
@@ -197,6 +198,7 @@ public class OpenScore(
                 ChampionsLeagueProvider(fetcher, rosters = espnRosters),
                 EuropaLeagueProvider(fetcher, rosters = espnRosters),
                 ConferenceLeagueProvider(fetcher, rosters = espnRosters),
+                NationsLeagueProvider(fetcher),
                 MlbProvider(fetcher),
                 UfcProvider(fetcher, scheduleStore = seasonScheduleStore),
             )

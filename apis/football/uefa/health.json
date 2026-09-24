@@ -1,6 +1,6 @@
 {
   "league": "ucl",
-  "name": "UEFA club competitions (Champions League / Europa League / Conference League)",
+  "name": "UEFA competitions (Champions League / Europa League / Conference League / Nations League)",
   "baseUrl": "https://match.uefa.com/v5",
   "checks": [
     {
@@ -130,7 +130,9 @@
     {
       "name": "matches/{id} — unknown id",
       "path": "/matches/999999999",
-      "status": [404],
+      "status": [
+        404
+      ],
       "sample": "match.not-found.json",
       "keys": [
         "error.status"
@@ -321,6 +323,124 @@
         "[].birthDate",
         "[].countryCode"
       ]
+    },
+    {
+      "name": "competitions?competitionIds=2014 (Nations League)",
+      "url": "https://comp.uefa.com/v2/competitions?competitionIds=2014",
+      "sample": "competitions.unl.json",
+      "keys": [
+        "[].id",
+        "[].code",
+        "[].teamCategory",
+        "[].metaData.name"
+      ],
+      "note": "teamCategory NATIONAL; the competition id is 2014, not 2016"
+    },
+    {
+      "name": "matches - Nations League matchday",
+      "path": "/matches?competitionId=2014&fromDate=2026-09-24&toDate=2026-09-24&limit=100&offset=0&order=ASC",
+      "sample": "matches.day-unl.json",
+      "keys": [
+        "[].id",
+        "[].status",
+        "[].kickOffTime.dateTime",
+        "[].homeTeam.typeTeam",
+        "[].group.metaData.groupName",
+        "[].group.league.metaData.leagueName",
+        "[].round.metaData.name"
+      ],
+      "note": "MD1 of the 2026/27 edition, eight matches"
+    },
+    {
+      "name": "matches - Nations League even season (biennial gap)",
+      "path": "/matches?competitionId=2014&seasonYear=2026&limit=10&offset=0&order=ASC",
+      "sample": "matches.empty.json",
+      "depth": 0,
+      "note": "seasons are odd end years only; an even one answers []"
+    },
+    {
+      "name": "matches - Nations League team schedule",
+      "path": "/matches?competitionId=2014&seasonYear=2027&teamId=88&limit=100&offset=0&order=ASC",
+      "sample": "matches.unl-team.json",
+      "keys": [
+        "[].id",
+        "[].homeTeam.id",
+        "[].awayTeam.id"
+      ],
+      "note": "Malta; a three-team group plays four matches"
+    },
+    {
+      "name": "matches/{id} - Nations League (Andorra-Malta)",
+      "path": "/matches/2048009",
+      "sample": "match.unl-pre.json",
+      "keys": [
+        "id",
+        "status",
+        "competition.code",
+        "group.league.metaData.leagueName",
+        "homeTeam.countryCode",
+        "homeTeam.teamTypeDetail"
+      ]
+    },
+    {
+      "name": "matches/{id} - Nations League final on penalties",
+      "path": "/matches/2044949",
+      "sample": "match.unl-final-penalties.json",
+      "keys": [
+        "id",
+        "status",
+        "score.regular",
+        "score.penalty",
+        "winner.match.reason",
+        "round.metaData.type"
+      ],
+      "note": "2025 final: Portugal 2-2 Spain, 5-3 on penalties"
+    },
+    {
+      "name": "matches/{id}/events - Nations League shoot-out",
+      "path": "/matches/2044949/events?filter=MAIN&order=ASC&limit=500&offset=0",
+      "sample": "match-events.main.unl-final-penalties.json",
+      "keys": [
+        "[].id",
+        "[].type",
+        "[].phase",
+        "[].time.minute"
+      ]
+    },
+    {
+      "name": "matches/{id}/lineups - Nations League final",
+      "path": "/matches/2044949/lineups",
+      "sample": "match-lineups.unl-final.json",
+      "keys": [
+        "lineupStatus",
+        "homeTeam.field[].player.id",
+        "awayTeam.bench[].player.id"
+      ]
+    },
+    {
+      "name": "standings - Nations League 2027",
+      "url": "https://standings.uefa.com/v1/standings?competitionId=2014&seasonYear=2027&phase=TOURNAMENT",
+      "sample": "standings.unl.json",
+      "keys": [
+        "[].group.metaData.groupName",
+        "[].group.league.metaData.leagueName",
+        "[].group.order",
+        "[].items[].rank",
+        "[].items[].teamId"
+      ],
+      "note": "14 groups over Leagues A-D"
+    },
+    {
+      "name": "teams?teamIds=88 - a national side",
+      "url": "https://comp.uefa.com/v2/teams?teamIds=88",
+      "sample": "teams.unl.json",
+      "keys": [
+        "[].id",
+        "[].countryCode",
+        "[].typeTeam",
+        "[].logoUrl"
+      ],
+      "note": "logo is the country's flag, not a club crest"
     }
   ]
 }

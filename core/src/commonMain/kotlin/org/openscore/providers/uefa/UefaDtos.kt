@@ -75,7 +75,15 @@ public data class UefaCompetition(
 )
 
 @Serializable
-public data class UefaMetaData(val name: String? = null, val type: String? = null, val groupName: String? = null, val groupShortName: String? = null)
+public data class UefaMetaData(
+    val name: String? = null,
+    val type: String? = null,
+    val groupName: String? = null,
+    val groupShortName: String? = null,
+    /** Nations League only: the tier a group sits in, `League A` … `League D`. */
+    val leagueName: String? = null,
+    val leagueShortName: String? = null,
+)
 
 // ---- matches -----------------------------------------------------------------------------
 
@@ -108,7 +116,19 @@ public data class UefaRound(
 public data class UefaMatchday(val id: String? = null, val name: String? = null, val longName: String? = null, val type: String? = null, val sequenceNumber: String? = null)
 
 @Serializable
-public data class UefaGroup(val id: String? = null, val metaData: UefaMetaData? = null, val order: Int? = null, val teams: List<String> = emptyList(), val teamsQualifiedNumber: Int? = null)
+public data class UefaGroup(
+    val id: String? = null,
+    val metaData: UefaMetaData? = null,
+    val order: Int? = null,
+    val teams: List<String> = emptyList(),
+    val teamsQualifiedNumber: Int? = null,
+    /** Nations League only: the tier the group belongs to; absent in every club competition. */
+    val league: UefaGroupLeague? = null,
+)
+
+/** The Nations League tier a group sits in (`League A`, order 1, down to `League D`, order 4). */
+@Serializable
+public data class UefaGroupLeague(val id: String? = null, val metaData: UefaMetaData? = null, val order: Int? = null)
 
 @Serializable
 public data class UefaStadium(

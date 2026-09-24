@@ -365,7 +365,14 @@ public class UefaMapper(private val leagueId: String) {
     public fun standings(list: List<UefaStandings>, seasonId: String, leagueName: String): StandingsTable {
         val groups = list.sortedBy { it.group?.order ?: 0 }.map { s ->
             // The single league-phase table is group "League" inside round "League Phase"; the round names it better.
-            val label = s.group?.metaData?.groupName?.takeIf { it != "League" } ?: s.round?.metaData?.name ?: leagueName
+            // The Nations League has 14 groups over four tiers and only the tier says which one a table is.
+            val group = s.group?.metaData?.groupName?.takeIf { it != "League" }
+            val tier = s.group?.league?.metaData?.leagueName
+            val label = when {
+                group != null && tier != null -> "$tier · $group"
+                group != null -> group
+                else -> s.round?.metaData?.name ?: leagueName
+            }
             val rows = s.items.sortedBy { it.rank }.map { i ->
                 val team = i.team?.let { teamRef(it) } ?: TeamRef(leagueId, i.teamId ?: "?", i.teamId ?: "?")
                 StandingsRow(

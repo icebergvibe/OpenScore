@@ -3,7 +3,10 @@ package org.openscore.testing
 import org.openscore.providers.uefa.UefaHosts
 import java.io.File
 
-/** URL → sample routing for the UEFA club-competition samples captured on 2026-09-13 (season 2027). */
+/**
+ * URL → sample routing for the UEFA samples: the club competitions captured on 2026-09-13
+ * and the Nations League on 2026-09-24 (both season 2027).
+ */
 public object UefaSamples {
     public val HOSTS: UefaHosts = UefaHosts()
     public const val DAY: String = "2026-09-08" // UCL league phase MD1, all finished
@@ -19,10 +22,17 @@ public object UefaSamples {
     public const val TEAM_ID: String = "50051" // Real Madrid
     public const val PLAYER_ID: String = "250076574" // Mbappé
     public const val SEASON: String = "2027"
+
+    // Nations League (competition 2014, national teams, season 2027 = 2026/27).
+    public const val UNL_DAY: String = "2026-09-24" // MD1, eight upcoming matches
+    public const val UNL_PRE_MATCH_ID: String = "2048009" // Andorra–Malta, League D group D1
+    public const val UNL_PENALTIES_MATCH_ID: String = "2044949" // 2025 final: Portugal 2–2 Spain, 5–3 pens
+    public const val UNL_TEAM_ID: String = "88" // Malta
     /** Wall clock for the tests; no live sample yet, so it only matters for `currentSeason()`. */
     public const val NOW: String = "2026-09-13T12:00:00Z"
 
     private const val EVENTS = "/events?filter=MAIN&order=ASC&limit=500&offset=0"
+    private const val UNL = "2014"
 
     public val matchPaths: Map<String, String> = mapOf(
         "/matches?competitionId=1&fromDate=$DAY&toDate=$DAY&limit=100&offset=0&order=ASC" to "matches.day.json",
@@ -43,11 +53,22 @@ public object UefaSamples {
         "/matches/$FINAL_MATCH_ID/lineups" to "match-lineups.final.json",
         "/matches/$PRE_MATCH_ID/lineups" to "match-lineups.pre.json",
         "/livescore" to "livescore.json",
+        // Nations League.
+        "/matches?competitionId=$UNL&fromDate=$UNL_DAY&toDate=$UNL_DAY&limit=100&offset=0&order=ASC" to "matches.day-unl.json",
+        "/matches?competitionId=$UNL&fromDate=$EMPTY_DAY&toDate=$EMPTY_DAY&limit=100&offset=0&order=ASC" to "matches.empty.json",
+        "/matches?competitionId=$UNL&seasonYear=$SEASON&teamId=$UNL_TEAM_ID&limit=100&offset=0&order=ASC" to "matches.unl-team.json",
+        "/matches/$UNL_PRE_MATCH_ID" to "match.unl-pre.json",
+        "/matches/$UNL_PENALTIES_MATCH_ID" to "match.unl-final-penalties.json",
+        "/matches/$UNL_PENALTIES_MATCH_ID$EVENTS" to "match-events.main.unl-final-penalties.json",
+        "/matches/$UNL_PRE_MATCH_ID$EVENTS" to "match-events.main.pre.json",
+        "/matches/$UNL_PENALTIES_MATCH_ID/lineups" to "match-lineups.unl-final.json",
     )
 
     public val compPaths: Map<String, String> = mapOf(
         "/competitions?competitionIds=1,14,2019" to "competitions.json",
+        "/competitions?competitionIds=$UNL" to "competitions.unl.json",
         "/teams?teamIds=$TEAM_ID" to "teams.by-id.json",
+        "/teams?teamIds=$UNL_TEAM_ID" to "teams.unl.json",
         "/players?playerIds=$PLAYER_ID" to "players.by-id.json",
     )
 
@@ -55,6 +76,7 @@ public object UefaSamples {
         "/standings?competitionId=1&seasonYear=$SEASON&phase=TOURNAMENT" to "standings.json",
         "/standings?competitionId=14&seasonYear=$SEASON&phase=TOURNAMENT" to "standings.uel.json",
         "/standings?competitionId=1&seasonYear=2026&phase=TOURNAMENT" to "standings.previous-season.json",
+        "/standings?competitionId=$UNL&seasonYear=$SEASON&phase=TOURNAMENT" to "standings.unl.json",
     )
 
     public val statsPaths: Map<String, String> = mapOf(
@@ -74,6 +96,7 @@ public object UefaSamples {
         fetcher.route(HOSTS.stats + "/team-statistics/$EXTRA_TIME_MATCH_ID", File(dir, "team-statistics.pre.json"))
         fetcher.route(HOSTS.stats + "/team-statistics/$TWO_LEGS_MATCH_ID", File(dir, "team-statistics.pre.json"))
         fetcher.route(HOSTS.stats + "/team-statistics/$PENALTIES_MATCH_ID", File(dir, "team-statistics.pre.json"))
+        fetcher.route(HOSTS.stats + "/team-statistics/$UNL_PENALTIES_MATCH_ID", File(dir, "team-statistics.pre.json"))
         return fetcher
     }
 }

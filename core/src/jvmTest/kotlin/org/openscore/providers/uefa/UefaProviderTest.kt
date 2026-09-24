@@ -47,6 +47,7 @@ class UefaProviderTest {
     private val ucl = ChampionsLeagueProvider(fetcher, clock = fixedClock)
     private val uel = EuropaLeagueProvider(fetcher, clock = fixedClock)
     private val uecl = ConferenceLeagueProvider(fetcher, clock = fixedClock)
+    private val unl = NationsLeagueProvider(fetcher, clock = fixedClock)
     private val mapper = UefaMapper("ucl")
 
     private fun sample(name: String): String {
@@ -371,5 +372,98 @@ class UefaProviderTest {
         assertEquals(1, emitted.size)
         assertEquals(GameState.FINAL, emitted.single().state)
         assertTrue(fetcher.requests.any { it.endsWith("/livescore") })
+    }
+
+    // ---- Nations League (competition 2014, national teams) --------------------------------
+
+    @Test
+    fun nationsLeagueCapabilities() = runTest {
+        assertEquals("unl", unl.league.id)
+        assertTrue(unl.supports(Capability.GAMES_BY_DATE))
+        assertTrue(unl.supports(Capability.STANDINGS))
+        assertTrue(unl.supports(Capability.TEAM_SCHEDULE))
+        assertTrue(unl.supports(Capability.LIVE_UPDATES))
+        assertFalse(unl.supports(Capability.ROSTER), "national squads are not in the crosswalk")
+        assertFailsWith<UnsupportedCapabilityException> { unl.roster(UefaSamples.UNL_TEAM_ID) }
+    }
+
+    /** The competition is biennial: its seasons are odd end years, and an edition runs into the next spring. */
+    @Test
+    fun nationsLeagueSeasonsAreOddEndYears() {
+        fun seasonAt(instant: String): Int =
+            NationsLeagueProvider(fetcher, clock = object : Clock { override fun now(): Instant = Instant.parse(instant) }).currentSeason()
+        assertEquals(2027, seasonAt("2026-09-24T12:00:00Z"), "opening matchday")
+        assertEquals(2027, seasonAt("2027-06-30T12:00:00Z"), "the finals")
+        assertEquals(2027, seasonAt("2027-08-01T12:00:00Z"), "July would otherwise roll to 2028")
+        assertEquals(2027, seasonAt("2028-03-26T12:00:00Z"), "the play-offs belong to the 2027 edition")
+        assertEquals(2029, seasonAt("2028-09-01T12:00:00Z"), "the next edition")
+        // The club competitions keep the plain rule.
+        assertEquals(2027, ucl.currentSeason())
+    }
+
+    @Test
+    fun nationsLeagueMatchday() = runTest {
+        val games = unl.gamesOn(LocalDate.parse(UefaSamples.UNL_DAY))
+        assertEquals(8, games.size)
+        assertTrue(games.all { it.leagueId == "unl" && it.seasonId == "2027" && it.state == GameState.SCHEDULED })
+        val and = games.first { it.id == UefaSamples.UNL_PRE_MATCH_ID }
+        assertEquals("Andorra", and.home.name)
+        assertEquals("Malta", and.away.name)
+        assertEquals(Instant.parse("2026-09-24T16:00:00Z"), and.startTime)
+        assertEquals(StageKind.REGULAR, and.stage)
+        // The round, not the group, names the section: a matchday must stay one block in the feed.
+        assertEquals("League phase", and.competition)
+        assertTrue(games.all { it.competition == "League phase" })
+        // National teams are not clubs, and their crest is the country's flag.
+        assertNull(and.home.clubId)
+        assertNull(and.away.clubId)
+        assertTrue(and.away.logoUrl!!.contains("/flags/"))
+        assertEquals("MLT", and.away.abbreviation)
+        assertEquals(emptyList(), unl.gamesOn(LocalDate.parse(UefaSamples.EMPTY_DAY)))
+    }
+
+    @Test
+    fun nationsLeagueFinalDecidedOnPenalties() = runTest {
+        val game = unl.game(UefaSamples.UNL_PENALTIES_MATCH_ID)
+        assertEquals(GameState.FINAL, game.state)
+        assertEquals("Portugal", game.home.name)
+        assertEquals("Spain", game.away.name)
+        assertEquals(Score(2, 2), game.score)
+        assertEquals(GameEnding.SHOOTOUT, game.ending)
+        assertEquals("Final", game.competition)
+        assertEquals(StageKind.PLAYOFF, game.stage)
+        val events = assertNotNull(game.events)
+        assertTrue(events.any { it.type == FootballEventType.GOAL })
+        assertTrue(events.any { it.type == FootballEventType.SHOOTOUT_ATTEMPT }, "the shoot-out kicks are mapped")
+        val lineups = unl.lineups(UefaSamples.UNL_PENALTIES_MATCH_ID)
+        assertEquals(2, lineups.size)
+        assertTrue(lineups.all { it.players.isNotEmpty() })
+    }
+
+    /** Fourteen groups over four tiers; only the tier tells one table from another's neighbour. */
+    @Test
+    fun nationsLeagueStandingsCarryTheirTier() = runTest {
+        val table = unl.standings()
+        assertEquals("2027", table.seasonId)
+        assertEquals("group", table.grouping)
+        assertEquals(14, table.groups.size)
+        assertEquals("League A · Group A1", table.groups.first().label)
+        assertEquals("League D · Group D2", table.groups.last().label)
+        assertEquals(54, table.rows.size)
+        assertTrue(table.rows.all { it.team.clubId == null })
+        assertEquals("France", table.groups.first().rows.first().team.name)
+    }
+
+    @Test
+    fun nationsLeagueTeamAndSchedule() = runTest {
+        val malta = unl.team(UefaSamples.UNL_TEAM_ID)
+        assertEquals("Malta", malta.name)
+        assertEquals("MLT", malta.ref.abbreviation)
+        assertEquals("MLT", malta.country)
+        assertNull(malta.ref.clubId)
+        val season = unl.teamSchedule(UefaSamples.UNL_TEAM_ID, LocalDate(2026, 7, 1), LocalDate(2027, 6, 30))
+        assertEquals(4, season.size, "a three-team group plays four matches")
+        assertTrue(season.all { it.home.id == UefaSamples.UNL_TEAM_ID || it.away.id == UefaSamples.UNL_TEAM_ID })
+        assertEquals(season.sortedBy { it.startTime }, season)
     }
 }
