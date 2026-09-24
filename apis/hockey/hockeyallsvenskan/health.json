@@ -31,12 +31,11 @@
       "sample": "game.new.live.json",
       "keys": [
         "data[].currentPeriod",
-        "data[].currentPeriodStart",
         "data[].homeScoreP1",
         "data[].isCompleted",
         "data[].updatedAt"
       ],
-      "note": "The sample is the in-play document; live the same route answers whatever state the game is in now"
+      "note": "The sample is the in-play document; live the same route answers whatever state the game is in now. currentPeriodStart is null outside play and the tool counts a null as absent, so it is left to the sample comparison rather than required here."
     },
     {
       "name": "api/game — completed",
@@ -69,6 +68,24 @@
       },
       "format": "text",
       "note": "Must stay non-empty and carry \"homeLineups\"; the typed extraction is covered by the provider replay test"
+    },
+    {
+      "name": "pages/tabell - league table RSC",
+      "path": "/pages/tabell?_rsc=openscore",
+      "headers": {
+        "RSC": "1"
+      },
+      "format": "text",
+      "note": "Must remain non-empty; the standings component's shape is covered by the sample tabell.standings.rsc.txt. Query parameters are ignored upstream, so this is always the current regular-season table."
+    },
+    {
+      "name": "players/{slug} - player profile RSC",
+      "path": "/players/patrik-zackrisson?_rsc=openscore",
+      "headers": {
+        "RSC": "1"
+      },
+      "format": "text",
+      "note": "A retired or transferred player keeps his page; an unknown slug answers 200 with the not-found page, so this check proves reachability only."
     }
   ]
 }

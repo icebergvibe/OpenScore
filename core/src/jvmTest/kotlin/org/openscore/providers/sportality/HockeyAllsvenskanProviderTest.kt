@@ -242,6 +242,126 @@ class HockeyAllsvenskanProviderTest {
         assertFailsWith<NotFoundException> { provider.lineups("20261231-no-such") }
     }
 
+    /** The table page carries the whole table and the clubs' identities with it: one read, no snapshot. */
+    @Test
+    fun theTableIsOnePageReadAndCarriesBothClubSpellings() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertTrue(provider.supports(Capability.STANDINGS))
+
+        val table = provider.standings()
+        assertEquals("season_2026", table.seasonId)
+        assertEquals(1, table.groups.size)
+        assertEquals(14, table.rows.size)
+        assertEquals(listOf(HockeyAllsvenskanSamples.TABLE), fetcher.requests, "the table never reads the season page")
+
+        val leader = table.rows.first()
+        assertEquals(1, leader.rank)
+        assertEquals("LIF", leader.team.id)
+        assertEquals("Leksand", leader.team.name)
+        assertEquals("leksand", leader.team.clubId, "the crosswalk keys HockeyAllsvenskan by StatNet id")
+        assertEquals(3, leader.played)
+        assertEquals(3, leader.wins)
+        assertEquals(9, leader.points)
+        assertEquals(7, leader.goalDifference)
+        assertEquals("18.18", leader.extra["powerPlay"])
+
+        // MoDo's seven points are one regulation win and two shoot-out wins: all three are wins here.
+        val modo = assertNotNull(table.rows.firstOrNull { it.team.id == "MODO" })
+        assertEquals(3, modo.wins)
+        assertEquals(0, modo.losses)
+        assertEquals(0, modo.otherLosses)
+        assertEquals(7, modo.points)
+        assertEquals("1", modo.extra["regulationWins"])
+        assertEquals("2", modo.extra["shootoutWins"])
+        assertEquals("MoDo", modo.team.abbreviation, "the CMS spelling, which is what the squad route wants")
+
+        // The one row whose display code is not its id: the core follows the id the games use.
+        val ostersund = assertNotNull(table.rows.firstOrNull { it.team.name == "Östersund" })
+        assertEquals("OSIK", ostersund.team.id)
+        assertEquals("ÖIK", ostersund.team.abbreviation)
+        assertEquals(1, ostersund.wins, "a shoot-out win with no regulation win")
+        assertEquals(2, ostersund.otherLosses, "one in overtime, one in the shoot-out")
+        assertEquals(4, ostersund.points)
+        assertTrue(ostersund.team.logoUrl!!.startsWith("https://ha-media.hadigital.se/"))
+    }
+
+    @Test
+    fun theTableRefusesASeasonThePageCannotServe() = runTest {
+        val provider = HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock)
+        assertEquals(14, provider.standings("season_2026").rows.size)
+        assertEquals(14, provider.standings("2026").rows.size, "the applied season, spelled either way")
+        assertFailsWith<NotFoundException> { provider.standings("season_2024") }
+    }
+
+    /** A club's identity, rink and fixtures are all in the snapshot the feed has already read. */
+    @Test
+    fun clubPagesCostNothingBeyondTheSeasonSnapshot() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertTrue(provider.supports(Capability.TEAM))
+        assertTrue(provider.supports(Capability.TEAM_SCHEDULE))
+
+        val team = provider.team("AIK")
+        assertEquals("AIK", team.id)
+        assertEquals("AIK Hockey", team.name)
+        assertEquals("aik-hockey", team.ref.clubId)
+        assertEquals("Avicii Arena", team.arena, "the rink of their home game in the captured page")
+        assertEquals("SE", team.country)
+
+        val schedule = provider.teamSchedule("AIK", LocalDate(2026, 9, 1), LocalDate(2026, 9, 30))
+        assertEquals(listOf("20260918-aik-modo", "20260925-modo-aik"), schedule.map { it.id }, "home and away, in order")
+        assertEquals(listOf(HockeyAllsvenskanSamples.PAGE), fetcher.requests, "one page read served both calls")
+
+        assertEquals(0, provider.teamSchedule("AIK", LocalDate(2026, 10, 1), LocalDate(2026, 10, 31)).size)
+        assertEquals(1, provider.teamSchedule("modo", LocalDate(2026, 9, 25), LocalDate(2026, 9, 25)).size, "ids are matched case-insensitively")
+        assertFailsWith<NotFoundException> { provider.team("XYZ") }
+    }
+
+    @Test
+    fun teamStatsAreTheClubsTableRow() = runTest {
+        val provider = HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock)
+        assertTrue(provider.supports(Capability.TEAM_STATS))
+
+        val stats = provider.teamStats("LIF", "season_2026")
+        assertEquals("LIF", stats.teamId)
+        assertEquals("season_2026", stats.seasonId)
+        assertEquals(listOf("record", "goals", "specialTeams"), stats.groups.map { it.key })
+        val record = stats.groups.first().stats.associate { it.key to it.value }
+        assertEquals("3", record["gamesPlayed"])
+        assertEquals("9", record["points"])
+        assertEquals("91.67", stats.groups.last().stats.single { it.key == "penaltyKill" }.value)
+        assertFailsWith<NotFoundException> { provider.teamStats("XYZ", "season_2026") }
+    }
+
+    @Test
+    fun playerProfilesComeFromThePlayerPage() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertTrue(provider.supports(Capability.PLAYER))
+
+        val player = provider.player(HockeyAllsvenskanSamples.PLAYER_SLUG)
+        assertEquals("patrik-zackrisson", player.id, "the profile is keyed by its slug, not the StatNet id")
+        assertEquals("Patrik Zackrisson", player.name)
+        assertEquals(9, player.ref.jerseyNumber)
+        assertEquals("RW", player.ref.position)
+        assertEquals(LocalDate(1987, 3, 27), player.birthDate)
+        assertEquals("SWE", player.nationality)
+        assertEquals(180, player.heightCm)
+        assertEquals(83, player.weightKg)
+        assertEquals("R", player.handedness)
+        assertEquals("LIF", player.teamId)
+        assertTrue(player.ref.headshotUrl!!.startsWith("https://ha-media.hadigital.se/"))
+
+        // An unknown slug is answered with the site's not-found page under a 200.
+        fetcher.route(
+            "${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/players/no-such-player?_rsc=openscore",
+            File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "matcher.rsc.txt"),
+            "text/x-component",
+        )
+        assertFailsWith<NotFoundException> { provider.player("no-such-player") }
+    }
+
     private fun samplePage(): String =
         File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "matcher.rsc.txt").readText()
 

@@ -55,7 +55,8 @@ club in every league it plays in, so Bayern opened from a Champions League fixtu
 opened from the Bundesliga table are the same page. Its tabs — **Overview, Games, Standings,
 Roster, Stats** — each appear only where at least one of the club's leagues has the
 capability (`TEAM`, `TEAM_SCHEDULE`, `STANDINGS`, `ROSTER`, `TEAM_STATS`), and each loads,
-fails and retries on its own.
+fails and retries on its own. The squad is read only from a competition the club is in this
+season: a club keeps its id in a league it has left, and last season's league is not asked.
 
 - The tables of the club's leagues are read first; a table that names the club makes that
   league a member for this season, and cups without a table stay members for games. The
@@ -68,7 +69,8 @@ fails and retries on its own.
   opens its page.
 - MLB adds what its API has and the football feeds do not: regular-season record, streak and
   splits, last-five form, division tables, ballpark details, headshots, and batting and
-  pitching totals under Stats (`TEAM_STATS` is MLB-only for now).
+  pitching totals under Stats. `TEAM_STATS` is MLB and HockeyAllsvenskan, whose Stats tab is
+  its table row: record, goals and the two special-team percentages.
 
 While resumed, the page re-reads the day listings of the club's leagues every 60 s only when a
 game is live or due (`wantsScorePoll`), and every season section every five minutes; the
@@ -215,7 +217,7 @@ MainActivity ─ MainScreen (NavDisplay) ─┬─ HomeKey  ─ HomeScreen ─�
 
 ## Not yet
 
-Season selection, player pages and team leaders, team stats outside MLB,
+Season selection, player pages and team leaders, team stats outside MLB and HockeyAllsvenskan,
 push transports (the core still polls where a league offers SSE),
 desktop/web targets.
 

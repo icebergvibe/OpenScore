@@ -10,6 +10,10 @@ public object HockeyAllsvenskanSamples {
     public const val LIVE_GAME_ID: String = PRE_GAME_ID
     public const val PAGE: String = "${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/pages/matcher?_rsc=openscore"
     public const val VIEW: String = "${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/games/$LIVE_GAME_ID/view?_rsc=openscore"
+    public const val TABLE: String = "${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/pages/tabell?_rsc=openscore"
+    /** The profile the player page was captured for. */
+    public const val PLAYER_SLUG: String = "patrik-zackrisson"
+    public const val PLAYER: String = "${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/players/$PLAYER_SLUG?_rsc=openscore"
 
     public fun register(fetcher: SampleFetcher, root: File = SampleFetcher.repoRoot()): SampleFetcher {
         val dir = SampleFetcher.samplesDir("hockey", "hockeyallsvenskan", root)
@@ -18,5 +22,7 @@ public object HockeyAllsvenskanSamples {
             .route("${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/api/game?slug=$FINAL_GAME_ID", File(dir, "game.new.final.json"))
             .route("${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/api/game?slug=$LIVE_GAME_ID", File(dir, "game.new.live.json"))
             .route("${HockeyAllsvenskanProvider.DEFAULT_BASE_URL}/games/$LIVE_GAME_ID/view?_rsc=openscore", File(dir, "game-view.lineups.rsc.txt"), "text/x-component")
+            .route(TABLE, File(dir, "tabell.standings.rsc.txt"), "text/x-component")
+            .route(PLAYER, File(dir, "player-profile.rsc.txt"), "text/x-component")
     }
 }

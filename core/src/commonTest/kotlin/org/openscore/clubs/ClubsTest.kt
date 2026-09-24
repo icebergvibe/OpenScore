@@ -46,7 +46,11 @@ class ClubsTest {
 
         assertEquals("frolunda", Clubs.clubId("shl", "087a-087aTQv9u"))
         assertEquals("frolunda", Clubs.clubId("chl", "ba55abe823bed83d7c12e7b3"))
-        assertEquals("bjorkloven", Clubs.clubId("hockeyallsvenskan", "4519-4519Rdei6"))
+        // HockeyAllsvenskan left the Sportality platform and keys its teams by StatNet code now;
+        // a club that has played in both leagues carries one id per namespace.
+        assertEquals("modo", Clubs.clubId("hockeyallsvenskan", "MODO"))
+        assertEquals("modo", Clubs.clubId("shl", "110b-110bJcIAI"))
+        assertNull(Clubs.clubId("hockeyallsvenskan", "110b-110bJcIAI"), "the platform uuids are not its ids any more")
     }
 
     @Test

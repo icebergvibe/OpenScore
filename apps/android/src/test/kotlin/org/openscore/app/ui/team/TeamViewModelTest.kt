@@ -132,4 +132,56 @@ class TeamViewModelTest {
             Dispatchers.resetMain()
         }
     }
+
+    /**
+     * A club that left a league keeps its id there (HockeyAllsvenskan clubs are still known to
+     * the SHL platform). The squad must not be read from a competition whose table does not name
+     * the club: the section reports that nobody serves it, rather than an error from the wrong one.
+     */
+    @Test
+    fun theSquadIsNotReadFromACompetitionTheClubHasLeft() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val store = ViewModelStore()
+        try {
+            val leksandHa = TeamRef("hockeyallsvenskan", "LIF", "Leksand", "LIF", clubId = "leksand")
+            val leksandShl = TeamRef("shl", "9541-95418PpkP", "Leksand", "LIF", clubId = "leksand")
+            val modo = TeamRef("hockeyallsvenskan", "MODO", "MoDo", "MoDo", clubId = "modo")
+            val farjestad = TeamRef("shl", "752c-752c12zB7Z", "Färjestad", clubId = "farjestad")
+            val rosterRequests = ArrayList<String>()
+            fun table(leagueId: String, vararg teams: TeamRef) = StandingsTable(leagueId, null, null,
+                listOf(StandingsGroup("League", teams.mapIndexed { i, t -> StandingsRow(t, i + 1, 3, 3, 0, points = 9) })), "league")
+            val ha = object : BaseLeagueProvider() {
+                override val league = League("hockeyallsvenskan", Sport.HOCKEY, "HockeyAllsvenskan", "SE")
+                override val capabilities = setOf(Capability.TEAM, Capability.TEAM_SCHEDULE, Capability.STANDINGS)
+                override suspend fun standings(seasonId: String?) = table(league.id, leksandHa, modo)
+                override suspend fun team(id: String) = Team(leksandHa, arena = "Tegera Arena")
+                override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate) = emptyList<Game>()
+            }
+            val shl = object : BaseLeagueProvider() {
+                override val league = League("shl", Sport.HOCKEY, "SHL", "SE")
+                override val capabilities = setOf(Capability.TEAM, Capability.TEAM_SCHEDULE, Capability.STANDINGS, Capability.ROSTER)
+                // Leksand plays in HockeyAllsvenskan this season, so the SHL table does not name it.
+                override suspend fun standings(seasonId: String?) = table(league.id, farjestad)
+                override suspend fun team(id: String) = Team(leksandShl)
+                override suspend fun roster(teamId: String): List<Player> {
+                    rosterRequests += teamId
+                    return listOf(Player(PlayerRef("shl", "p1", "Last Season")))
+                }
+                override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate) = emptyList<Game>()
+            }
+            val repository = ScoresRepository(OpenScore(listOf(ha, shl)))
+            val vm = TeamViewModel(repository, leksandHa, LocalDate(2026, 9, 24))
+            store.put("team", vm)
+
+            val done = vm.state.first { it.profile.data != null && it.standings.data != null && !it.roster.loading }
+            assertEquals("hockeyallsvenskan", done.home.leagueId)
+            assertEquals(listOf("hockeyallsvenskan"), done.members?.map { it.leagueId }, "the SHL table does not name the club")
+            assertFalse(done.roster.supported, "no competition the club is in serves a squad")
+            assertNull(done.roster.error, "an absent squad is not a failed one")
+            assertEquals(emptyList(), rosterRequests, "the league the club has left is never asked")
+        } finally {
+            store.clear()
+            Dispatchers.resetMain()
+        }
+    }
 }

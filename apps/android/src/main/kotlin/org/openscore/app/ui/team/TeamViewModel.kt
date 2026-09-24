@@ -87,7 +87,7 @@ class TeamViewModel(private val repository: ScoresRepository, val team: TeamRef,
             when (part) {
                 TeamPart.STANDINGS -> loadStandings()
                 TeamPart.PROFILE -> load({ it.profile }, { s, v -> s.copy(profile = v) }) { repository.team(home()) }
-                TeamPart.ROSTER -> load({ it.roster }, { s, v -> s.copy(roster = v) }) { repository.roster(rosterSource()) }
+                TeamPart.ROSTER -> loadRoster()
                 TeamPart.STATS -> load({ it.stats }, { s, v -> s.copy(stats = v) }) { repository.teamStats(home(), seasonWindow(home().leagueId, today).start.year) }
                 TeamPart.GAMES -> load({ it.games }, { s, v -> s.copy(games = v) }) { loadGames() }
             }
@@ -161,8 +161,24 @@ class TeamViewModel(private val repository: ScoresRepository, val team: TeamRef,
     private fun home(): TeamRef = mutableState.value.home.takeIf { repository.supports(it.leagueId, Capability.TEAM) }
         ?: sources.first { repository.supports(it.leagueId, Capability.TEAM) }
 
-    private fun rosterSource(): TeamRef = mutableState.value.home.takeIf { repository.supports(it.leagueId, Capability.ROSTER) }
-        ?: sources.first { repository.supports(it.leagueId, Capability.ROSTER) }
+    /**
+     * The squad is read from a competition the club is actually in this season. A club keeps its
+     * id in a league it has left - the platform still knows a relegated club - and asking there
+     * returns either the wrong squad or an error, so membership, which the tables decide, says
+     * where to ask. No member with a squad means the section is not supported, not that it failed.
+     */
+    private suspend fun loadRoster() {
+        if (mutableState.value.members == null) jobs[TeamPart.STANDINGS]?.join()
+        val members = mutableState.value.members ?: sources
+        val homeLeague = mutableState.value.home.leagueId
+        val source = members.firstOrNull { it.leagueId == homeLeague && repository.supports(it.leagueId, Capability.ROSTER) }
+            ?: members.firstOrNull { repository.supports(it.leagueId, Capability.ROSTER) }
+        if (source == null) {
+            mutableState.update { it.copy(roster = TeamSection(data = null, loading = false, supported = false)) }
+            return
+        }
+        load({ it.roster }, { s, v -> s.copy(roster = v) }) { repository.roster(source) }
+    }
 
     /** The season's games from every competition the club is in, each in that league's season window. */
     private suspend fun loadGames(): List<Game> {

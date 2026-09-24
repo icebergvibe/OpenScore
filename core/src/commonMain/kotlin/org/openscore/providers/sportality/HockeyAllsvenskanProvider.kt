@@ -9,6 +9,7 @@ import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import kotlinx.serialization.DeserializationStrategy
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
 import org.openscore.cache.NoopSeasonScheduleStore
@@ -24,16 +25,25 @@ import org.openscore.model.LineupGroupKind
 import org.openscore.model.Period
 import org.openscore.model.PeriodScore
 import org.openscore.model.PeriodType
+import org.openscore.model.Player
 import org.openscore.model.PlayerNames
 import org.openscore.model.PlayerRef
 import org.openscore.model.Score
 import org.openscore.model.Sport
 import org.openscore.model.StageKind
+import org.openscore.model.StandingsGroup
+import org.openscore.model.StandingsRow
+import org.openscore.model.StandingsTable
+import org.openscore.model.Team
 import org.openscore.model.TeamRef
+import org.openscore.model.TeamSeasonStats
+import org.openscore.model.TeamStat
+import org.openscore.model.TeamStatGroup
 import org.openscore.net.Fetcher
 import org.openscore.net.OpenScoreJson
 import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
+import org.openscore.provider.Dates
 import org.openscore.provider.NotFoundException
 import org.openscore.provider.ProviderException
 import org.openscore.provider.getJson
@@ -82,6 +92,11 @@ public class HockeyAllsvenskanProvider(
         Capability.PERIOD_SCORES,
         Capability.LINEUPS,
         Capability.LINE_GROUPS,
+        Capability.STANDINGS,
+        Capability.TEAM,
+        Capability.TEAM_SCHEDULE,
+        Capability.TEAM_STATS,
+        Capability.PLAYER,
     )
 
     /** The season as last imported, games keyed by slug in schedule order. */
@@ -97,16 +112,9 @@ public class HockeyAllsvenskanProvider(
 
     override suspend fun gamesOn(date: LocalDate): List<Game> {
         val season = season()
-        val now = clock.now()
         val onDate = season.games.values.filter { it.localDate() == date }.sortedWith(compareBy({ it.startTime }, { it.id }))
-        val refreshed = coroutineScope {
-            onDate.filter { it.needsRefresh(now) }
-                .map { g -> async { runCatchingUnlessCancelled { fetchGame(g.id) }.getOrNull() } }
-                .awaitAll().filterNotNull()
-        }
-        if (refreshed.isEmpty()) return onDate
-        merge(refreshed)
-        val byId = refreshed.associateBy { it.id }
+        val byId = refreshOpen(onDate)
+        if (byId.isEmpty()) return onDate
         // A game route can move a game to another day; the day asked for keeps only what is still on it.
         return onDate.map { byId[it.id] ?: it }.filter { it.localDate() == date }
     }
@@ -168,6 +176,203 @@ public class HockeyAllsvenskanProvider(
         if (rest.isNotEmpty()) groups += LineupGroup(LineupGroupKind.OTHER, "Other", rest.map(::ref))
         return Lineup(gameId, team, groups)
     }
+
+    /**
+     * The league table, from the table page's standings component.
+     *
+     * The page serves the current regular season only: it accepts `season`, `phase` and
+     * `location` parameters and ignores them (its own pickers POST elsewhere), so [seasonId]
+     * may name the running season or be left out. The rows carry every club's name, crest and
+     * colours with them, so the table is one 15 KB read and never touches the season snapshot.
+     */
+    override suspend fun standings(seasonId: String?): StandingsTable {
+        val props = tableProps()
+        val season = props.seasonIdFor(seasonId)
+        val rows = props.standings.mapIndexed { index, row -> row.toStandingsRow(index, props.teamDisplayMap) }
+        if (rows.isEmpty()) throw ProviderException("${league.name} table was empty", leagueId = league.id)
+        return StandingsTable(
+            leagueId = league.id,
+            seasonId = season,
+            stage = StageKind.REGULAR,
+            groups = listOf(StandingsGroup(league.name, rows)),
+            grouping = "league",
+        )
+    }
+
+    /**
+     * Identity and home rink, both already in the season snapshot: every game row on the season
+     * page carries its two clubs' names, crests and arenas, keyed by the StatNet id. So a club
+     * page costs nothing beyond the schedule the feed has read anyway.
+     */
+    override suspend fun team(id: String): Team {
+        val games = season().games.values
+        val atHome = games.filter { it.home.id.equals(id, ignoreCase = true) }
+        val ref = atHome.firstOrNull()?.home
+            ?: games.firstOrNull { it.away.id.equals(id, ignoreCase = true) }?.away
+            ?: throw NotFoundException("${league.name} team '$id' is not in this season", league.id)
+        // Where the club plays most, so a one-off game in a borrowed arena is not taken for home.
+        val arena = atHome.mapNotNull { it.venue }.groupingBy { it }.eachCount().maxByOrNull { it.value }?.key
+        return Team(ref = ref, arena = arena, country = COUNTRY)
+    }
+
+    /** The club's games from the snapshot, with the ones in play re-read as [gamesOn] does. */
+    override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate): List<Game> {
+        val theirs = season().games.values
+            .filter { it.home.id.equals(teamId, ignoreCase = true) || it.away.id.equals(teamId, ignoreCase = true) }
+            .filter { it.localDate() in startDate..endDate }
+            .sortedWith(compareBy({ it.startTime }, { it.id }))
+        val byId = refreshOpen(theirs)
+        if (byId.isEmpty()) return theirs
+        return theirs.map { byId[it.id] ?: it }.filter { it.localDate() in startDate..endDate }
+    }
+
+    /**
+     * What the table says about one club: its record, its goals and its two special-team
+     * percentages. Everything past those is behind one of the site's POST routes.
+     */
+    override suspend fun teamStats(teamId: String, seasonId: String): TeamSeasonStats {
+        val props = tableProps()
+        val season = props.seasonIdFor(seasonId)
+        val row = props.standings.firstOrNull { it.teamId.equals(teamId, ignoreCase = true) }
+            ?: throw NotFoundException("${league.name} team '$teamId' is not in the table", league.id)
+        val groups = listOf(
+            TeamStatGroup("record", "Record", listOfNotNull(
+                stat("gamesPlayed", "GP", row.gamesPlayed),
+                stat("wins", "W", row.wins),
+                stat("losses", "L", row.losses),
+                stat("overtimeWins", "OTW", row.overtimeWins),
+                stat("overtimeLosses", "OTL", row.overtimeLosses),
+                stat("shootoutWins", "SOW", row.shootoutWins),
+                stat("shootoutLosses", "SOL", row.shootoutLosses),
+                stat("points", "PTS", row.totalPoints),
+            )),
+            TeamStatGroup("goals", "Goals", listOfNotNull(
+                stat("goalsFor", "GF", row.goals),
+                stat("goalsAgainst", "GA", row.goalsAgainst),
+                stat("goalDifference", "Diff", row.goalDifference),
+            )),
+            TeamStatGroup("specialTeams", "Special teams", listOfNotNull(
+                stat("powerPlay", "PP%", row.powerPlayPerc),
+                stat("penaltyKill", "PK%", row.penaltyKillPerc),
+            )),
+        ).filter { it.stats.isNotEmpty() }
+        return TeamSeasonStats(league.id, row.teamId ?: teamId, season ?: seasonId, groups)
+    }
+
+    /**
+     * One player's profile page, keyed by its slug (`patrik-zackrisson`). A lineup entry carries
+     * that slug beside the StatNet id it is keyed by; the two id spaces are the site's, not ours.
+     *
+     * An unknown slug is answered with the site's not-found page under a `200`, so it is the
+     * profile component's presence that decides, never the status.
+     */
+    override suspend fun player(id: String): Player {
+        val response = fetcher.get("$baseUrl/players/$id?_rsc=openscore", headers = mapOf("RSC" to "1"), maxAge = PLAYER_MAX_AGE)
+        if (response.status == 404) throw NotFoundException("${league.name} player '$id' has no page", league.id)
+        response.requireSuccess()
+        if (!response.body.contains(PLAYER_COMPONENT)) {
+            throw NotFoundException("${league.name} player '$id' has no profile page", league.id)
+        }
+        val props = decodeObject(response.body, PLAYER_COMPONENT, HaPlayerProps.serializer())
+        val data = props.playerData
+            ?: throw ProviderException("${league.name} profile page for '$id' carried no player", leagueId = league.id)
+        return data.toPlayer(id, props.careerStats?.playerInfo)
+    }
+
+    /** Re-reads the games the snapshot cannot vouch for, merges them, and returns them by id. */
+    private suspend fun refreshOpen(games: List<Game>): Map<String, Game> {
+        val now = clock.now()
+        val refreshed = coroutineScope {
+            games.filter { it.needsRefresh(now) }
+                .map { g -> async { runCatchingUnlessCancelled { fetchGame(g.id) }.getOrNull() } }
+                .awaitAll().filterNotNull()
+        }
+        if (refreshed.isEmpty()) return emptyMap()
+        merge(refreshed)
+        return refreshed.associateBy { it.id }
+    }
+
+    private suspend fun tableProps(): HaStandingsProps {
+        val response = fetcher.get(
+            "$baseUrl/pages/tabell?_rsc=openscore",
+            headers = mapOf("RSC" to "1"),
+            maxAge = TABLE_MAX_AGE,
+        ).requireSuccess()
+        return decodeObject(response.body, STANDINGS_COMPONENT, HaStandingsProps.serializer())
+    }
+
+    /** The season the page just served, refusing an ask for any other: no other is reachable. */
+    private fun HaStandingsProps.seasonIdFor(asked: String?): String? {
+        val season = appliedSeason?.let { "season_$it" }
+        if (asked != null && asked != season && asked != appliedSeason?.toString()) {
+            throw NotFoundException(
+                "${league.name} serves only the current table (${season ?: "season unknown"}); the page ignores a season parameter",
+                league.id,
+            )
+        }
+        return season
+    }
+
+    /** Wins are all wins, as the other hockey tables report them; the 3-2-1-0 split is in `extra`. */
+    private fun HaStandingsRow.toStandingsRow(index: Int, display: Map<String, HaDisplayTeam>): StandingsRow {
+        val id = teamId ?: teamCode ?: "?"
+        val shown = display[teamCode] ?: display[teamId]
+        val regulationWins = wins.orZero()
+        val otWins = overtimeWins.orZero()
+        val soWins = shootoutWins.orZero()
+        val otLosses = overtimeLosses.orZero()
+        val soLosses = shootoutLosses.orZero()
+        return StandingsRow(
+            team = TeamRef(
+                leagueId = league.id,
+                id = id,
+                name = shown?.name ?: statNetClubLabel ?: id,
+                // The CMS short name, which is also how the site's squad route spells this club.
+                abbreviation = shown?.shortName ?: statNetClubLabel ?: teamCode,
+                logoUrl = shown?.logo,
+            ),
+            rank = rank?.toIntOrNull() ?: (index + 1),
+            played = gamesPlayed.orZero(),
+            wins = regulationWins + otWins + soWins,
+            losses = losses.orZero(),
+            otherLosses = otLosses + soLosses,
+            points = totalPoints.orZero(),
+            goalsFor = goals?.toIntOrNull(),
+            goalsAgainst = goalsAgainst?.toIntOrNull(),
+            goalDifference = goalDifference?.toIntOrNull(),
+            extra = buildMap {
+                put("regulationWins", regulationWins.toString())
+                put("overtimeWins", otWins.toString())
+                put("shootoutWins", soWins.toString())
+                put("overtimeLosses", otLosses.toString())
+                put("shootoutLosses", soLosses.toString())
+                powerPlayPerc?.takeIf { it.isNotBlank() }?.let { put("powerPlay", it) }
+                penaltyKillPerc?.takeIf { it.isNotBlank() }?.let { put("penaltyKill", it) }
+            },
+        )
+    }
+
+    private fun HaPlayerData.toPlayer(asked: String, info: HaPlayerInfo?): Player = Player(
+        ref = PlayerRef(
+            leagueId = league.id,
+            id = slug ?: asked,
+            name = PlayerNames.fromParts(firstName, familyName, fallback = asked),
+            jerseyNumber = jerseyNumber?.toIntOrNull(),
+            position = positionCode ?: info?.position,
+            headshotUrl = headshots?.small ?: headshots?.medium,
+        ),
+        firstName = firstName,
+        lastName = familyName,
+        birthDate = Dates.localDateOrNull(birthDate ?: info?.birthdate),
+        nationality = country ?: info?.nationality,
+        heightCm = height?.toIntOrNull() ?: info?.height,
+        weightKg = weight?.toIntOrNull() ?: info?.weight,
+        handedness = shoots,
+        teamId = teamStatNetId,
+    )
+
+    private fun stat(key: String, label: String, value: String?): TeamStat? =
+        value?.takeIf { it.isNotBlank() }?.let { TeamStat(key, label, it) }
 
     private suspend fun fetchGame(id: String): Game {
         val response = fetcher.getJson(
@@ -248,11 +453,19 @@ public class HockeyAllsvenskanProvider(
 
     private fun decodeGamesArray(body: String): List<HaGame> = decodeArray(body, "\"games\":", ListSerializer(HaGame.serializer()))
 
-    /** The JSON array that follows [marker] in a React Server Components payload, found by bracket matching. */
-    private fun <T> decodeArray(body: String, marker: String, strategy: DeserializationStrategy<T>): T {
+    /** The JSON array that follows [marker] in a React Server Components payload. */
+    private fun <T> decodeArray(body: String, marker: String, strategy: DeserializationStrategy<T>): T =
+        decodeValue(body, marker, '[', ']', strategy)
+
+    /** The JSON object that follows [marker], which for a component is its props. */
+    private fun <T> decodeObject(body: String, marker: String, strategy: DeserializationStrategy<T>): T =
+        decodeValue(body, marker, '{', '}', strategy)
+
+    /** The JSON value that follows [marker] in a React Server Components payload, by bracket matching. */
+    private fun <T> decodeValue(body: String, marker: String, open: Char, close: Char, strategy: DeserializationStrategy<T>): T {
         val markerAt = body.indexOf(marker)
         if (markerAt < 0) throw ProviderException("${league.name} page contained no $marker payload", leagueId = league.id)
-        val start = body.indexOf('[', markerAt + marker.length)
+        val start = body.indexOf(open, markerAt + marker.length)
         if (start < 0) throw ProviderException("${league.name} $marker payload was malformed", leagueId = league.id)
         var depth = 0
         var inString = false
@@ -266,8 +479,8 @@ public class HockeyAllsvenskanProvider(
             } else {
                 when (char) {
                     '"' -> inString = true
-                    '[' -> depth++
-                    ']' -> if (--depth == 0) {
+                    open -> depth++
+                    close -> if (--depth == 0) {
                         val json = body.substring(start, index + 1)
                         return runCatching { OpenScoreJson.decodeFromString(strategy, json) }
                             .getOrElse { throw ProviderException("${league.name} $marker payload could not be decoded", it, league.id) }
@@ -351,6 +564,14 @@ public class HockeyAllsvenskanProvider(
         private val REFRESH_RETRY = 5.minutes
         /** Sheets are published about two hours before the game and rarely change after. */
         private val LINEUP_MAX_AGE = 10.minutes
+        /** A table only moves as games finish. */
+        private val TABLE_MAX_AGE = 5.minutes
+        /** A profile is its bio plus season totals: an hour old is still a profile. */
+        private val PLAYER_MAX_AGE = 1.hours
+        /** The trailing numbers are the CMS block's instance id, so the name is matched by prefix. */
+        private const val STANDINGS_COMPONENT = "\"stats.league-standings"
+        private const val PLAYER_COMPONENT = "\"team.player-profile"
+        private const val COUNTRY = "SE"
         private val FORWARD_POSITIONS = listOf("LW", "CE", "RW")
         private val DEFENCE_POSITIONS = listOf("LD", "RD")
     }
@@ -435,3 +656,86 @@ private data class HaLineupPlayer(
 
 @Serializable
 private data class HaHeadshots(val small: String? = null, val medium: String? = null, val large: String? = null)
+
+/** The table page's standings component (`stats.league-standings-<block>-<instance>`). */
+@Serializable
+private data class HaStandingsProps(
+    val standings: List<HaStandingsRow> = emptyList(),
+    /** Keyed by *both* club spellings, so a lookup by either resolves. */
+    val teamDisplayMap: Map<String, HaDisplayTeam> = emptyMap(),
+    val appliedSeason: Int? = null,
+)
+
+/** One table row. Every value is a string, the ranks and the percentages included. */
+@Serializable
+private data class HaStandingsRow(
+    val rank: String? = null,
+    /** Display spelling (`ÖIK`, `MORA`): the key into `teamDisplayMap`, never a join key. */
+    val teamCode: String? = null,
+    /** StatNet id (`OSIK`, `MIK`): what the games, and so the core, call this team. */
+    val teamId: String? = null,
+    @SerialName("games_played") val gamesPlayed: String? = null,
+    /** Regulation wins; a win past regulation is in the overtime or shoot-out column. */
+    val wins: String? = null,
+    val losses: String? = null,
+    @SerialName("overtime_wins") val overtimeWins: String? = null,
+    @SerialName("overtime_losses") val overtimeLosses: String? = null,
+    @SerialName("shootouts_wins") val shootoutWins: String? = null,
+    @SerialName("shootouts_losses") val shootoutLosses: String? = null,
+    val goals: String? = null,
+    @SerialName("goals_against") val goalsAgainst: String? = null,
+    @SerialName("goal_difference") val goalDifference: String? = null,
+    @SerialName("total_points") val totalPoints: String? = null,
+    @SerialName("power_play_perc") val powerPlayPerc: String? = null,
+    @SerialName("penalty_kill_perc") val penaltyKillPerc: String? = null,
+    /** The CMS short name (`MoDo`), which is how the site's squad route spells this club. */
+    val statNetClubLabel: String? = null,
+)
+
+@Serializable
+private data class HaDisplayTeam(
+    val logo: String? = null,
+    val shortName: String? = null,
+    val name: String? = null,
+)
+
+/** The player page's profile component (`team.player-profile-<block>-<instance>`). */
+@Serializable
+private data class HaPlayerProps(
+    val playerData: HaPlayerData? = null,
+    val careerStats: HaCareerStats? = null,
+)
+
+@Serializable
+private data class HaPlayerData(
+    val firstName: String? = null,
+    val familyName: String? = null,
+    val slug: String? = null,
+    val statNetId: String? = null,
+    /** The club's StatNet id, so a profile says which side the player is on. */
+    val teamStatNetId: String? = null,
+    val jerseyNumber: String? = null,
+    val positionCode: String? = null,
+    val birthDate: String? = null,
+    val country: String? = null,
+    val height: String? = null,
+    val weight: String? = null,
+    val shoots: String? = null,
+    val headshots: HaHeadshots? = null,
+)
+
+/** Only the identity half of the career block is mapped; the stat lines are not in the model. */
+@Serializable
+private data class HaCareerStats(@SerialName("player_info") val playerInfo: HaPlayerInfo? = null)
+
+@Serializable
+private data class HaPlayerInfo(
+    @SerialName("Birthdate") val birthdate: String? = null,
+    @SerialName("Nationality") val nationality: String? = null,
+    @SerialName("Height") val height: Int? = null,
+    @SerialName("Weight") val weight: Int? = null,
+    @SerialName("Position") val position: String? = null,
+)
+
+/** The table's counting columns are strings, and a missing one means none. */
+private fun String?.orZero(): Int = this?.toIntOrNull() ?: 0

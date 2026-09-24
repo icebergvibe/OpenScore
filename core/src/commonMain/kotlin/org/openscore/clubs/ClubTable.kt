@@ -18,8 +18,11 @@ import org.openscore.model.Sport.HOCKEY
  * hockey one carries `-hockey` (`djurgarden` / `djurgarden-hockey`). A slug is never reused
  * or renamed once published: a club that renames itself keeps its slug and gets a new [Club.name].
  *
- * Id namespaces are league ids; `ucl` also covers `uel`/`uecl`, `shl` covers
- * `hockeyallsvenskan` (Sportality uuids are platform-wide), and `fogis` covers `allsvenskan`,
+ * `hockeyallsvenskan` ids are the league site's StatNet codes (`MODO`, `OSIK`), which replaced
+ * the platform-wide Sportality uuids when it left that platform; a club that also plays in the
+ * SHL keeps both ids.
+ *
+ * Id namespaces are league ids; `ucl` also covers `uel`/`uecl`, and `fogis` covers `allsvenskan`,
  * `superettan` and `svenska-cupen` (the Swedish leagues carry Fogis team ids) — see
  * [Clubs.namespace]. `efl` is the Gamechanger team id (`t43`) behind `championship` and
  * `carabao-cup`: every English club has one, so a Premier League line carries it next to its
@@ -87,20 +90,20 @@ internal object ClubTable {
         club("skelleftea", "Skellefteå", HOCKEY, "SWE", "shl" to "50e6-50e6DYeWM", "chl" to "73caaf27776183ec10ea6ddc"),
         club("timra", "Timrå", HOCKEY, "SWE", "shl" to "31d1-31d1NbSlR"),
         club("vaxjo-lakers", "Växjö Lakers", HOCKEY, "SWE", "shl" to "fe02-fe02mf1FN", "chl" to "59b68db03ae141bf08f49775"),
-        club("aik-hockey", "AIK Hockey", HOCKEY, "SWE", "shl" to "f7c8-f7c8isEb3"),
-        club("almtuna", "Almtuna", HOCKEY, "SWE", "shl" to "181c-181cv0b9i"),
-        club("bik-karlskoga", "BIK Karlskoga", HOCKEY, "SWE", "shl" to "1429-1429fuhHu"),
-        club("kalmar-hc", "Kalmar HC", HOCKEY, "SWE", "shl" to "4b7a-cd81IIiWF"),
-        club("leksand", "Leksand", HOCKEY, "SWE", "shl" to "9541-95418PpkP"),
-        club("modo", "MoDo", HOCKEY, "SWE", "shl" to "110b-110bJcIAI"),
-        club("mora", "Mora", HOCKEY, "SWE", "shl" to "dcba-dcbaXSrRU"),
-        club("nybro-vikings", "Nybro Vikings", HOCKEY, "SWE", "shl" to "f32b-cd81wq7XN"),
-        club("oskarshamn", "Oskarshamn", HOCKEY, "SWE", "shl" to "259b-259bYGVIp"),
-        club("ostersund-hockey", "Östersund Hockey", HOCKEY, "SWE", "shl" to "4dbe-4dbeYflht"),
-        club("sodertalje", "Södertälje", HOCKEY, "SWE", "shl" to "936a-936aAY8bT"),
-        club("vasteras-hockey", "Västerås Hockey", HOCKEY, "SWE", "shl" to "94ce-94ce8I8r"),
-        club("vimmerby", "Vimmerby", HOCKEY, "SWE", "shl" to "d53c-cd81tOBRi"),
-        club("visby-roma", "Visby/Roma", HOCKEY, "SWE", "shl" to "c699-c699vpXxF"),
+        club("aik-hockey", "AIK Hockey", HOCKEY, "SWE", "shl" to "f7c8-f7c8isEb3", "hockeyallsvenskan" to "AIK"),
+        club("almtuna", "Almtuna", HOCKEY, "SWE", "shl" to "181c-181cv0b9i", "hockeyallsvenskan" to "AIS"),
+        club("bik-karlskoga", "BIK Karlskoga", HOCKEY, "SWE", "shl" to "1429-1429fuhHu", "hockeyallsvenskan" to "BIK"),
+        club("kalmar-hc", "Kalmar HC", HOCKEY, "SWE", "shl" to "4b7a-cd81IIiWF", "hockeyallsvenskan" to "KHC"),
+        club("leksand", "Leksand", HOCKEY, "SWE", "shl" to "9541-95418PpkP", "hockeyallsvenskan" to "LIF"),
+        club("modo", "MoDo", HOCKEY, "SWE", "shl" to "110b-110bJcIAI", "hockeyallsvenskan" to "MODO"),
+        club("mora", "Mora", HOCKEY, "SWE", "shl" to "dcba-dcbaXSrRU", "hockeyallsvenskan" to "MIK"),
+        club("nybro-vikings", "Nybro Vikings", HOCKEY, "SWE", "shl" to "f32b-cd81wq7XN", "hockeyallsvenskan" to "NYB"),
+        club("oskarshamn", "Oskarshamn", HOCKEY, "SWE", "shl" to "259b-259bYGVIp", "hockeyallsvenskan" to "IKO"),
+        club("ostersund-hockey", "Östersund Hockey", HOCKEY, "SWE", "shl" to "4dbe-4dbeYflht", "hockeyallsvenskan" to "OSIK"),
+        club("sodertalje", "Södertälje", HOCKEY, "SWE", "shl" to "936a-936aAY8bT", "hockeyallsvenskan" to "SSK"),
+        club("vasteras-hockey", "Västerås Hockey", HOCKEY, "SWE", "shl" to "94ce-94ce8I8r", "hockeyallsvenskan" to "VIK"),
+        club("vimmerby", "Vimmerby", HOCKEY, "SWE", "shl" to "d53c-cd81tOBRi", "hockeyallsvenskan" to "VHC"),
+        club("visby-roma", "Visby/Roma", HOCKEY, "SWE", "shl" to "c699-c699vpXxF", "hockeyallsvenskan" to "VIS"),
 
         // ── Liiga ────────────────────────────────────────────────────────────────────────
         club("assat", "Ässät", HOCKEY, "FIN", "liiga" to "679171680"),

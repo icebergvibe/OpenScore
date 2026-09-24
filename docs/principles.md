@@ -9,7 +9,7 @@ core, tools and apps.
 Send a descriptive `User-Agent`, e.g.
 
 ```
-User-Agent: OpenScore/0.1 (+https://github.com/<org>/OpenScore)
+User-Agent: OpenScore/0.3 (+https://github.com/icebergvibe/OpenScore)
 ```
 
 Some hosts sit behind a WAF (Cloudflare etc.) that rejects unusual agents. If a host

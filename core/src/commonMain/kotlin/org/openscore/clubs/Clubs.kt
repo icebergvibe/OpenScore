@@ -33,7 +33,6 @@ public object Clubs {
         "allsvenskan" to "fogis",
         "superettan" to "fogis",
         "svenska-cupen" to "fogis",
-        "hockeyallsvenskan" to "shl",
         // The Championship and the Carabao Cup come from one EFL API with one team-id space;
         // `efl` is not a league id because the same ids will serve League One and Two too.
         "championship" to "efl",

@@ -12,7 +12,7 @@
 | **Upstream statistics system** | TorneoPal, accessed only through F-Liiga's public proxy |
 | **Timezone** | `Europe/Helsinki`; API timestamps include their UTC offset |
 | **CORS** | WordPress REST open; schedule and AJAX routes do not expose cross-origin CORS |
-| **WAF** | Imunify360 challenges some clients for the whole domain - see below |
+| **WAF** | Imunify360 bot protection challenges a client it reads as automating, for the whole domain; it expires - see below |
 | **Last full verification** | 2026-09-23 |
 | **Status** | ✅ mapped and implemented as `FliigaProvider` (league id `f-liiga`) · 🚧 live WebSocket not yet captured |
 
@@ -70,24 +70,36 @@ parser by endpoint, not response media type.
 
 ### The Imunify360 challenge
 
-**Some clients cannot read fliiga.com at all.** The site sits behind Cloudflare and, on the
-origin, Imunify360. On 2026-09-23 every request from an Android client - the app on a
-Waydroid device, and the device's own `curl` - was challenged across the whole domain,
-including the plain `/en/matches/men/` page, while identical requests from a desktop client
-on the **same public IP**, at the same moment, were served normally. So it is a decision
-about the client, not the address, and not something a request can talk its way out of:
+The site sits behind Cloudflare and, on the origin, Imunify360, whose bot protection
+challenges a client it has decided is automating. The challenge covers the whole domain,
+including the plain `/en/matches/men/` page, and this is what a challenged client gets:
 
-| Request `Accept` | What the blocked client got |
+| Request `Accept` | What the challenged client got |
 |---|---|
-| `application/json`, or any value naming it | `403` with `{"message": "Access denied by Imunify360…"}` |
+| `application/json`, or any value naming it | `403` with `{"message": "Access denied by Imunify360 bot-protection. IPs used for automation should be whitelisted"}` |
 | `*/*`, `text/html, */*;q=0.5`, a browser's own string, or no `Accept` at all | `200` with a 12 KB `<title>One moment, please…</title>` interstitial |
 | `*/*;q=0.5` | `415` from the origin's openresty, which is WordPress rejecting the header rather than the WAF |
 
-Changing the `User-Agent` to a browser's made no difference, so only the transport is left to
-explain it. Passing the interstitial means running its JavaScript and carrying the cookie it
-sets, which is a login flow by another name and out of scope under
+**It is not a property of the platform and it is not permanent.** What was observed:
+
+| When | Client | Result |
+|---|---|---|
+| 2026-09-23 | The app on a Waydroid device, and that device's own `curl` | challenged |
+| 2026-09-23 | A desktop client on the **same public IP**, at the same moment | served |
+| 2026-09-24 | That desktop, under the OpenScore agent, a browser's agent and no agent at all | challenged |
+| 2026-09-24 | The app on a phone, on that same wifi and on mobile data | served |
+
+So the challenge follows whichever client has been making automated-looking requests, and it
+lifts again by itself. The machine that maps the feed is exactly the client that earns it:
+`tools/api-health`, the live smoke tests and a capture all aim repeat traffic at the origin
+from one address, which is worth knowing before reading a red health check here as a feed
+regression. An ordinary reader's device is served.
+
+Nothing in the request talks a challenged client out of it. The `User-Agent` makes no
+difference, and passing the interstitial means running its JavaScript and carrying the
+cookie it sets, which is a login flow by another name and out of scope under
 [`docs/principles.md`](../../../docs/principles.md). OpenScore therefore sends its ordinary
-headers and lets the failure surface: with the default `Accept`, a blocked client gets a
+headers and lets the failure surface: with the default `Accept`, a challenged client gets a
 clean `403` rather than an HTML page that fails to parse, which is the more legible of the
 two. The feed server, running where requests are served, is the way around it for a client
 that is challenged.
@@ -527,5 +539,6 @@ throw-off was less than a day ago. Outside that, a listing costs no per-match re
 
 | Date | Change |
 |---|---|
+| 2026-09-24 | Re-tested the Imunify360 challenge: the desktop that had been running the health checks and live tests is now challenged itself, while the app on a phone reads the league on the same wifi and on mobile data. Rewrote the section - the challenge follows the client that automates, not the platform, and it expires. |
 | 2026-09-23 | Implemented as `FliigaProvider` in `core/`. Adopted the `ottelut` season listing with a trimmed `_fields` as the schedule route in place of the 327 KB HTML page, whose "complete current schedule" claim was wrong - it carries this season's results and about a fortnight of fixtures. Verified that `slug` resolves several slugs at once. Recaptured `match-detail.final.json` complete, both leaderboards and the table, and trimmed the team records' `_fields` to the bridge. |
 | 2026-09-21 | Initial F-Liiga Men mapping: schedule discovery, match-id resolution, pre/final summaries, pre/final full match data, standings, teams and player statistics. WebSocket located but not yet captured live. |
