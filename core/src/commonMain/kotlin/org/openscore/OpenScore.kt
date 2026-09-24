@@ -26,6 +26,7 @@ import org.openscore.providers.del.DelProvider
 import org.openscore.providers.efl.CarabaoCupProvider
 import org.openscore.providers.efl.ChampionshipProvider
 import org.openscore.providers.espn.EspnRosters
+import org.openscore.providers.fliiga.FliigaProvider
 import org.openscore.providers.fogis.FogisProvider
 import org.openscore.providers.fogis.SwedishLeagueProvider
 import org.openscore.providers.jolpica.JolpicaProvider
@@ -43,6 +44,7 @@ import org.openscore.providers.sportality.HockeyAllsvenskanProvider
 import org.openscore.providers.sportality.ShlProvider
 import org.openscore.providers.sportomedia.AllsvenskanProvider
 import org.openscore.providers.sportomedia.SuperettanProvider
+import org.openscore.providers.ssl.SslProvider
 import org.openscore.providers.uefa.ChampionsLeagueProvider
 import org.openscore.providers.uefa.ConferenceLeagueProvider
 import org.openscore.providers.uefa.EuropaLeagueProvider
@@ -179,6 +181,8 @@ public class OpenScore(
                 ChlProvider(fetcher),
                 KhlProvider(fetcher),
                 DelProvider(fetcher),
+                SslProvider(fetcher),
+                FliigaProvider(fetcher),
                 Ligue1Provider(fetcher),
                 BundesligaProvider(fetcher, rosters = espnRosters),
                 PremierLeagueProvider(fetcher),

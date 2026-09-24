@@ -8,6 +8,7 @@ sport-agnostic model. Targets: **JVM** and **Android** today; all code lives in
 org.openscore.model          Sport-agnostic spine: League, Season, Game, GameEvent, Team,
                              Player, Lineup, StandingsTable  (docs/data-model.md)
 org.openscore.model.hockey   Hockey leaves: HockeyEventType, GoalDetails, PenaltyDetails, …
+org.openscore.model.floorball Floorball leaves: FloorballEventType; the rink details are hockey's, aliased
 org.openscore.model.football Football leaves: FootballEventType, FootballGoalDetails, CardDetails, …
 org.openscore.model.baseball Baseball leaves: BaseballEventType, PlateAppearanceDetails, BaseballSituation (Game.situation)
 org.openscore.model.motorsport Racing: RacingSeason, RacingRound, RacingSession, RacingClassification, RacingStandings
@@ -23,6 +24,7 @@ org.openscore.feed           Feed v1: the JSON contract (docs/feed-v1.md) + Feed
 org.openscore.OpenScore      Aggregator: all providers behind one door, cross-league gamesOn()
 org.openscore.providers.*    One package per platform — each DTOs + Mapper + Provider:
                              hockey: nhl, liiga, sportality (SHL, and HockeyAllsvenskan's own provider), chl, khl, del
+                             floorball: ssl (the Sportality platform again, so it reuses its DTOs), fliiga
                              football: ligue1, bundesliga, premierleague, efl (Championship, Carabao Cup),
                                        seriea, laliga, mls, malta,
                                        fogis (all Swedish tiers, XML; SwedishLeagueProvider cuts Allsvenskan,
@@ -47,6 +49,8 @@ org.openscore.testing (jvm)  SampleFetcher + per-league sample routes, for tests
 | `chl` | `ChlProvider` | no clock, no shots/coordinates, penalty details only as text |
 | `khl` | `KhlProvider` | no clock (period only), no roster/player endpoints, MQTT push not wired |
 | `del` | `DelProvider` | the official app's backend (one `query.php`, `requestName=` selects the dataset); game ids are the feed's `uniqueID` (`4389t77`, the tournament half is required by every per-game read); events with strength and assists (assists resolved by jersey number through the two rosters, read once an hour), shots with coordinates through `events()`, lines and pairings; no team stats; the live codes and the elapsed-seconds clock are mapped from the app's string table but unobserved, so `CLOCK` is not claimed yet; playoff series games that were never needed are dropped from listings (`CANCELLED` when read directly) |
+| `ssl` | `SslProvider` | ssl.se is the same Sportality platform as shl.se, so the bootstrap, scoreboard, schedule, game, team and athlete routes reuse the `Spt*` DTOs and only the table's `Reg*`/`OTW` columns and the promo-bar totals are SSL's own; the shared game-day routes answer empty (or `500` for the boxscore) for a floorball game, so there are no events, lineups, period scores or clock, and `Game.events` is `null` rather than empty; a scoreboard row that should be under way is refined from `game-info`, the only route with a state; no `LIVE_UPDATES` until a match is captured |
+| `f-liiga` | `FliigaProvider` | the season's fixtures come from the `ottelut` WordPress records with a trimmed `_fields` (three pages, ~2 KB each) rather than the 327 KB page; teams are TorneoPal club ids, bridged from the season-team ids the match documents carry through the table and `joukkueet`; `match_teams` is the whole match (lineups by line, events with rink coordinates, period scores) and is never the score poll - a match inside the result window is read from the 5 KB card instead; a record's goals are written after the match, sometimes hours late, so they count as a result only once they say something; the overtime period score is derived (the feed's `overtime` entry is the score *entering* overtime) and a shoot-out is told from the events' running shoot-out score; `Live`/`Break`/`Penalties` are mapped from the site's own script but unobserved, so no `LIVE_UPDATES`, `CLOCK` or `INTERMISSION_STATE` |
 | `ligue1` | `Ligue1Provider` | second-precision clock; 150–500 KB match resource → live() polls at 20 s |
 | `bundesliga` | `BundesligaProvider` | Firebase RTDB; whole-minute clock; squads from ESPN through the crosswalk (the DFL's own are key-gated), no player endpoint; SSE not wired |
 | `premier-league` | `PremierLeagueProvider` | five small calls per game; own goals credited to the beneficiary from the `events` grouping (the timeline attributes them to the scorer's team) |

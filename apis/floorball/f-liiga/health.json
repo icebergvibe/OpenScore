@@ -1,0 +1,172 @@
+{
+  "league": "f-liiga",
+  "name": "F-Liiga Men",
+  "baseUrl": "https://fliiga.com",
+  "headers": {
+    "User-Agent": "OpenScore/0.1 (+https://github.com/icebergvibe/OpenScore)"
+  },
+  "minDelayMs": 1000,
+  "checks": [
+    {
+      "name": "season match records, page 1",
+      "path": "/wp-json/wp/v2/ottelut?per_page=100&page=1&orderby=id&order=desc&_fields=id,slug,modified,meta._torneopal_id,meta._ottelu_aika,meta._kotijoukkue_torneopal_id,meta._kotijoukkue_wp_id,meta._vierasjoukkue_torneopal_id,meta._vierasjoukkue_wp_id,meta._kotimaalit,meta._vierasmaalit,meta._kausi,meta._sarja,meta._ryhma_nimi,meta._kierros_nimi,meta._yleisomaara",
+      "sample": "matches.page1.json",
+      "keys": [
+        "[].id",
+        "[].slug",
+        "[].meta._torneopal_id",
+        "[].meta._ottelu_aika",
+        "[].meta._kotijoukkue_wp_id",
+        "[].meta._vierasjoukkue_wp_id",
+        "[].meta._kotimaalit",
+        "[].meta._kausi",
+        "[].meta._sarja"
+      ]
+    },
+    {
+      "name": "season match records, page 2",
+      "path": "/wp-json/wp/v2/ottelut?per_page=100&page=2&orderby=id&order=desc&_fields=id,slug,modified,meta._torneopal_id,meta._ottelu_aika,meta._kotijoukkue_torneopal_id,meta._kotijoukkue_wp_id,meta._vierasjoukkue_torneopal_id,meta._vierasjoukkue_wp_id,meta._kotimaalit,meta._vierasmaalit,meta._kausi,meta._sarja,meta._ryhma_nimi,meta._kierros_nimi,meta._yleisomaara",
+      "sample": "matches.page2.json",
+      "keys": [
+        "[].id",
+        "[].slug",
+        "[].meta._torneopal_id",
+        "[].meta._ottelu_aika",
+        "[].meta._kotijoukkue_wp_id",
+        "[].meta._vierasjoukkue_wp_id",
+        "[].meta._kotimaalit",
+        "[].meta._kausi",
+        "[].meta._sarja"
+      ]
+    },
+    {
+      "name": "season match records, page 3",
+      "path": "/wp-json/wp/v2/ottelut?per_page=100&page=3&orderby=id&order=desc&_fields=id,slug,modified,meta._torneopal_id,meta._ottelu_aika,meta._kotijoukkue_torneopal_id,meta._kotijoukkue_wp_id,meta._vierasjoukkue_torneopal_id,meta._vierasjoukkue_wp_id,meta._kotimaalit,meta._vierasmaalit,meta._kausi,meta._sarja,meta._ryhma_nimi,meta._kierros_nimi,meta._yleisomaara",
+      "sample": "matches.page3.json",
+      "keys": [
+        "[].id",
+        "[].slug",
+        "[].meta._torneopal_id",
+        "[].meta._ottelu_aika",
+        "[].meta._kotijoukkue_wp_id",
+        "[].meta._vierasjoukkue_wp_id",
+        "[].meta._kotimaalit",
+        "[].meta._kausi",
+        "[].meta._sarja"
+      ]
+    },
+    {
+      "name": "men's schedule page",
+      "path": "/en/matches/men/",
+      "format": "text",
+      "sample": "schedule.html",
+      "depth": 0
+    },
+    {
+      "name": "match metadata by slug",
+      "path": "/wp-json/wp/v2/ottelut?slug=ols-o2-jyvaskyla-20-9-2026&_fields=id,slug,link,modified,meta",
+      "sample": "match-by-slug.final.json",
+      "keys": [
+        "[].id",
+        "[].meta._torneopal_id",
+        "[].meta._ottelu_aika",
+        "[].meta._kotijoukkue_wp_id",
+        "[].meta._vierasjoukkue_wp_id"
+      ]
+    },
+    {
+      "name": "match summary (final)",
+      "path": "/wp-admin/admin-ajax.php?action=match_live_data&lang=en&match_id=929774",
+      "sample": "match-summary.final.json",
+      "keys": [
+        "torneopal_id",
+        "status",
+        "home_team.torneopal_id",
+        "away_team.torneopal_id",
+        "player_stats[].player.torneopal_id"
+      ]
+    },
+    {
+      "name": "match detail (final)",
+      "path": "/wp-admin/admin-ajax.php?action=match_teams&match_id=929774",
+      "sample": "match-detail.final.json",
+      "keys": [
+        "torneopal_id",
+        "season.torneopal_id",
+        "result.period_scores.p1.home",
+        "lineups.home.players[].torneopal_id",
+        "lineups.away.players[].torneopal_id",
+        "events[].event_code"
+      ]
+    },
+    {
+      "name": "standings",
+      "path": "/wp-admin/admin-ajax.php?action=fliiga_scoreboard_standings&season=2026-2027&phase=&series=miehet&lang=en",
+      "sample": "standings.json",
+      "keys": [
+        "[].wp_post_id",
+        "[].club.torneopal_id",
+        "[].standing",
+        "[].games",
+        "[].points"
+      ]
+    },
+    {
+      "name": "player points",
+      "path": "/wp-admin/admin-ajax.php?action=fliiga_scoreboard_points&season=2026-2027&phase=&series=miehet&lang=en",
+      "sample": "player-points.json",
+      "keys": [
+        "[].torneopal_id",
+        "[].wp_post_id",
+        "[].games_played",
+        "[].goals",
+        "[].assists"
+      ]
+    },
+    {
+      "name": "goalkeepers",
+      "path": "/wp-admin/admin-ajax.php?action=fliiga_scoreboard_goalkeepers&season=2026-2027&phase=&series=miehet&lang=en",
+      "sample": "goalkeepers.json",
+      "keys": [
+        "[].torneopal_id",
+        "[].games_played",
+        "[].saves",
+        "[].conceded",
+        "[].save_percentage"
+      ]
+    },
+    {
+      "name": "current teams",
+      "path": "/wp-json/wp/v2/joukkueet?include=8152,8154,8146,8157,8153,8155,8145,8141,8142,8147,8158,8150&per_page=12&orderby=include&_fields=id,slug,link,title,meta._torneopal_id,meta._liittyva_seura_torneopal_id,meta._liittyva_seura_wp_id",
+      "sample": "teams.json",
+      "keys": [
+        "[].id",
+        "[].meta._torneopal_id",
+        "[].meta._liittyva_seura_torneopal_id"
+      ]
+    },
+    {
+      "name": "player profile metadata",
+      "path": "/wp-json/wp/v2/pelaajat/24997",
+      "sample": "player.json",
+      "keys": [
+        "id",
+        "meta._torneopal_id",
+        "meta._liittyva_joukkue_torneopal_id",
+        "meta._liittyva_joukkue_wp_id"
+      ]
+    },
+    {
+      "name": "match summary (final, second game of the day)",
+      "path": "/wp-admin/admin-ajax.php?action=match_live_data&lang=en&match_id=929785",
+      "sample": "match-summary.final-krp.json",
+      "keys": [
+        "torneopal_id",
+        "status",
+        "home_goals",
+        "away_goals",
+        "venue_name"
+      ]
+    }
+  ]
+}

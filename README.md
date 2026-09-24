@@ -18,9 +18,10 @@ No API keys. No accounts. No paid data providers. No analytics.
 
 ## What's here
 
-- **25 leagues**: 7 hockey, 16 football, 1 baseball, 1 MMA (the UFC), each documented under
-  [`apis/`](apis) with the exact requests, captured responses and a health check per endpoint,
-  plus Formula 1 on a small racing surface of its own.
+- **27 leagues in core**: 7 hockey, 2 floorball, 16 football, 1 baseball, 1 MMA (the UFC),
+  plus Formula 1 on a small racing surface of its own. Their APIs live under
+  [`apis/`](apis) with exact requests, captured responses and a health check per supported
+  endpoint.
 - [`core/`](core/README.md): one sport-agnostic model and a provider per league, sharing a
   polite HTTP layer, a club crosswalk that links the same club across competitions, team
   pages, and durable stores an app can plug in. Every provider is replay-tested against the
@@ -48,6 +49,10 @@ No API keys. No accounts. No paid data providers. No analytics.
 | Hockey | CHL (Champions Hockey League) | [apis/hockey/chl](apis/hockey/chl/README.md) | `chl` | Static JSON files on S3. No clock, no shots. |
 | Hockey | KHL | [apis/hockey/khl](apis/hockey/khl/README.md) | `khl` | Via the official mobile-app API (webcaster.pro), CORS open. khl.ru itself is geo-blocked — out of scope. |
 | Hockey | DEL (GER) | [apis/hockey/del](apis/hockey/del/README.md) | `del` | The official app's backend (one `query.php` on appticore.com, key-less, no CORS, nothing edge-cached). Day windows in UTC, events with strength and assists, shots with coordinates, lines and pairings, standings, rosters. Live states not yet observed. |
+| Floorball | SSL Herr (SWE) | [apis/floorball/ssl](apis/floorball/ssl/README.md) | `ssl` | The same Sportality platform as the SHL, with IBIS statistics: schedule, results, standings, teams, rosters, players and post-game totals. The shared game-day routes return no floorball data at all (empty bodies, or `500`), so there are no events, lineups or clock, and live states await an in-play capture. |
+| Floorball | F-Liiga Men (FIN) | [apis/floorball/f-liiga](apis/floorball/f-liiga/README.md) | `f-liiga` | The league's own key-less WordPress proxy over TorneoPal. The whole season's fixtures come from the match records in a few kilobytes; one document per match carries lineups with lines, events with rink coordinates and period scores. Live WebSocket located but not yet captured in play. **The origin's Imunify360 challenges some clients across the whole domain** - an Android device was blocked where a desktop on the same IP was not; passing the challenge needs its JavaScript and cookie, so it stays out of scope and the feed server is the way around it. |
+| Floorball | Allsvenskan Herr (SWE) | [access audit](apis/floorball/ssl/README.md#out-of-scope-allsvenskan-on-statsinnebandyse) | ⛔ | stats.innebandy.se exchanges for a short-lived Bearer token; the supported iBIS API requires credentials and a paid agreement. |
+| Floorball | Lidl Unihockey Prime League Men (SUI) | [access audit](apis/floorball/swiss-prime-league/README.md) | ⛔ | The web data API requires a member Bearer token; the Android alternative relies on a private packaged app credential. Legacy key-less routes expose only a table and isolated team headers, with no schedule or game-id discovery path. |
 | Baseball | MLB | [apis/baseball/mlb](apis/baseball/mlb/README.md) | `mlb` | statsapi.mlb.com. Every live state sampled; per-pitch data, JSON-Patch diff feed, `fields=` trimming. Team pages with schedule, roster and season stats. |
 | Football | Premier League (ENG) | [apis/football/premier-league](apis/football/premier-league/README.md) | `premier-league` | Pulselive API behind premierleague.com. CORS open, kick-offs in local time. |
 | Football | EFL — Championship · Carabao Cup (ENG) | [apis/football/efl](apis/football/efl/README.md) | `championship`, `carabao-cup` | EFL Digital's Gamechanger API behind efl.com (also serves League One, League Two, EFL Trophy). One document per match with lineups and events, CORS open, nothing edge-cached. Key-less Firestore push documented, still polled. In-play states pending. |
@@ -92,10 +97,11 @@ The full contract is [docs/principles.md](docs/principles.md); the model is
 ## Repository layout
 
 ```
-apis/                One folder per feed: README.md + health.json (endpoint checks) + captured samples/
+apis/                One folder per feed: README.md + health.json + samples; blocked audits may be README-only
   hockey/            nhl  liiga  shl  hockeyallsvenskan  chl  khl  del
   football/          premier-league  efl  malta-premier  serie-a  bundesliga  ligue-1  la-liga
                      allsvenskan  fogis-livescore  uefa  mls  espn
+  floorball/         ssl  f-liiga  swiss-prime-league (access audit)
   baseball/          mlb
   mma/               ufc
 docs/                principles (how we treat the APIs), data-model, the Feed v1 contract, screenshots

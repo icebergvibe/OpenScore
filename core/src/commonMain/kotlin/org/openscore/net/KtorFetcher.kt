@@ -6,6 +6,7 @@ import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.HttpTimeoutCapability
 import io.ktor.client.plugins.HttpTimeoutConfig
 import io.ktor.client.request.get
+import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.header
 import io.ktor.client.request.prepareGet
 import io.ktor.client.statement.bodyAsChannel
@@ -151,8 +152,8 @@ public class KtorFetcher(
         val limit = state.withLock { hostLimits.getOrPut(host) { Semaphore(maxConcurrentPerHost) } }
         limit.withPermit {
             client.prepareGet(url) {
-                header(HttpHeaders.UserAgent, userAgent)
-                header(HttpHeaders.Accept, "text/event-stream")
+                defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
+                defaultHeader(headers, HttpHeaders.Accept, "text/event-stream")
                 headers.forEach { (key, value) -> header(key, value) }
                 setCapability(
                     HttpTimeoutCapability,
@@ -207,8 +208,8 @@ public class KtorFetcher(
         val limit = state.withLock { hostLimits.getOrPut(host) { Semaphore(maxConcurrentPerHost) } }
         return limit.withPermit {
             val http = client.get(url) {
-                header(HttpHeaders.UserAgent, userAgent)
-                header(HttpHeaders.Accept, "application/json, */*;q=0.5")
+                defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
+                defaultHeader(headers, HttpHeaders.Accept, "application/json, */*;q=0.5")
                 cached?.response?.etag?.let { header(HttpHeaders.IfNoneMatch, it) }
                 cached?.response?.lastModified?.let { header(HttpHeaders.IfModifiedSince, it) }
                 headers.forEach { (k, v) -> header(k, v) }
@@ -278,6 +279,15 @@ public class KtorFetcher(
         /** Longer than the provider-level quiet watchdog, so it owns reconnect semantics. */
         private const val SSE_SOCKET_TIMEOUT_MILLIS: Long = 70_000
     }
+}
+
+/**
+ * Sets a header the fetcher supplies itself, unless the caller asked for that header: a
+ * provider's own `Accept` replaces the default rather than being appended to it, which Ktor
+ * would otherwise send as one combined value.
+ */
+private fun HttpRequestBuilder.defaultHeader(callerHeaders: Map<String, String>, name: String, value: String) {
+    if (callerHeaders.keys.none { it.equals(name, ignoreCase = true) }) header(name, value)
 }
 
 private fun hostOf(url: String): String = url.substringAfter("://", url).substringBefore('/').substringBefore('?').lowercase()

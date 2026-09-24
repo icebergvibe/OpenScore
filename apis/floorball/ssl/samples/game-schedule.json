@@ -1,0 +1,1860 @@
+{
+  "_openscore_note": "TRUNCATED: gameInfo reduced from 182 to 8 entries; teamList intact.",
+  "gameInfo": [
+    {
+      "uuid": "atv3g9mjch",
+      "rawStartDateTime": "2026-09-18T17:00:00.000Z",
+      "startDateTime": "2026-09-18 19:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "c437-b283ovsh6",
+        "ownerInstanceId": "wic1_wic",
+        "code": "WIC",
+        "names": {
+          "code": "WIC",
+          "full": "Warberg Innebandyclub",
+          "long": "Warberg IC",
+          "short": "Warberg",
+          "codeSite": "WIC",
+          "fullSite": "Warberg Innebandyclub",
+          "longSite": "Warberg IC",
+          "shortSite": "Warberg"
+        },
+        "score": 3,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/wic1_wic.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "1c79-bb6dyljzt",
+        "ownerInstanceId": "sto1_sto",
+        "code": "Storvr",
+        "names": {
+          "code": "SIBK",
+          "full": "Storvreta Innebandyklubb",
+          "long": "Storvreta IBK",
+          "short": "Storvreta",
+          "codeSite": "SIBK",
+          "fullSite": "Storvreta Innebandyklubb",
+          "longSite": "Storvreta IBK",
+          "shortSite": "Storvreta"
+        },
+        "score": 6,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/sto1_sto.svg"
+      },
+      "venueInfo": {
+        "uuid": "i20uq8ct2b",
+        "name": "Sparbanken Wictory Center, Unihocplanen "
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "gte3a51l8n",
+      "rawStartDateTime": "2026-09-19T14:00:00.000Z",
+      "startDateTime": "2026-09-19 16:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "WIN",
+        "uuid": "e7cb-035exdeHN",
+        "ownerInstanceId": "fal1_fal",
+        "code": "Falun",
+        "names": {
+          "code": "FAL",
+          "full": "Innebandyföreningen Falun",
+          "long": "IBF Falun",
+          "short": "Falun",
+          "codeSite": "IBF",
+          "fullSite": "Innebandyföreningen Falun",
+          "longSite": "IBF Falun",
+          "shortSite": "Falun"
+        },
+        "score": 12,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/fal1_fal.svg"
+      },
+      "awayTeamInfo": {
+        "status": "LOSE",
+        "uuid": "a10c-6f9evklgz",
+        "ownerInstanceId": "vax1_vax",
+        "code": "VXO",
+        "names": {
+          "code": "VXO",
+          "full": "Växjö Vipers IBK",
+          "long": "Växjö Vipers",
+          "short": "Vipers",
+          "codeSite": "VXO",
+          "fullSite": "Växjö Vipers IBK",
+          "longSite": "Växjö Vipers",
+          "shortSite": "Vipers"
+        },
+        "score": 5,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/vax1_vax.svg"
+      },
+      "venueInfo": {
+        "uuid": "u5mioswqec",
+        "name": "Uw-Tech Arena"
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "kq1xgro1s6",
+      "rawStartDateTime": "2026-09-19T14:00:00.000Z",
+      "startDateTime": "2026-09-19 16:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "ddfe-cd81c3YP1",
+        "ownerInstanceId": "lund1_lund",
+        "code": "HERR",
+        "names": {
+          "code": "LUND",
+          "full": "IBK Lund Elit",
+          "long": "IBK Lund",
+          "short": "Lund",
+          "codeSite": "LUND Herr",
+          "fullSite": "IBK Lund Elit Herr",
+          "longSite": "IBK Lund Herr",
+          "shortSite": "Lund Herr"
+        },
+        "score": 4,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/lund1_lund.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "8615-d492oYxBh",
+        "ownerInstanceId": "pix1_pix",
+        "code": "Pixbo",
+        "names": {
+          "code": "PIX",
+          "full": "Pixbo Idrottsklubb",
+          "long": "Pixbo IBK",
+          "short": "Pixbo",
+          "codeSite": "PIBK",
+          "fullSite": "Pixbo Idrottsklubb",
+          "longSite": "Pixbo IBK",
+          "shortSite": "Pixbo"
+        },
+        "score": 8,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/pix1_pix.svg"
+      },
+      "venueInfo": {
+        "uuid": "rowk71tfb8",
+        "name": "Lunds Idrottshall "
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "e2mqlwetm3",
+      "rawStartDateTime": "2026-09-19T15:00:00.000Z",
+      "startDateTime": "2026-09-19 17:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "WIN",
+        "uuid": "e40a-781fGVFZV",
+        "ownerInstanceId": "dal1_dal",
+        "code": "Dalen",
+        "names": {
+          "code": "DAL",
+          "full": "Innebandyklubben Dalen",
+          "long": "IBK Dalen",
+          "short": "Dalen",
+          "codeSite": "DAL",
+          "fullSite": "Innebandyklubben Dalen",
+          "longSite": "IBK Dalen",
+          "shortSite": "Dalen"
+        },
+        "score": 7,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/dal1_dal.svg"
+      },
+      "awayTeamInfo": {
+        "status": "LOSE",
+        "uuid": "5b11-cd81tVTqP",
+        "ownerInstanceId": "jik1_jik",
+        "code": "Jönköp",
+        "names": {
+          "code": "JIK",
+          "full": "Jönköpings Innebandyklubb",
+          "long": "Jönköpings IK",
+          "short": "Jönköping",
+          "codeSite": "JIK",
+          "fullSite": "Jönköpings Innebandyklubb",
+          "longSite": "Jönköpings IK",
+          "shortSite": "Jönköping"
+        },
+        "score": 6,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/jik1_jik.svg"
+      },
+      "venueInfo": {
+        "uuid": "jvr6xzt5ww",
+        "name": "Umeå Energi Arena Vatten"
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "tljasamkgs",
+      "rawStartDateTime": "2026-09-19T15:00:00.000Z",
+      "startDateTime": "2026-09-19 17:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "f7c8-49eaNieTr",
+        "ownerInstanceId": "aik2_aik",
+        "code": "AIK",
+        "names": {
+          "code": "AIK",
+          "full": "AIK IBF SSL Herr",
+          "long": "AIK IBF",
+          "short": "AIK"
+        },
+        "score": 3,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/aik2_aik.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "5452-cd8111QiTe",
+        "ownerInstanceId": "nyk2_nyk",
+        "code": "Nykvar",
+        "names": {
+          "code": "NYK",
+          "full": "Nykvarns Innebandy",
+          "long": "Nykvarns IBF",
+          "short": "Nykvarn",
+          "codeSite": "NYK",
+          "fullSite": "Nykvarns Innebandy",
+          "longSite": "Nykvarns IBF",
+          "shortSite": "Nykvarn"
+        },
+        "score": 9,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/nyk2_nyk.svg"
+      },
+      "venueInfo": {
+        "uuid": "e723edvze6",
+        "name": "Solnahallen "
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "wvszu1xwbw",
+      "rawStartDateTime": "2026-09-19T16:30:00.000Z",
+      "startDateTime": "2026-09-19 18:30:00",
+      "state": "post-game",
+      "overtime": true,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "LOSE",
+        "uuid": "90c3-21d6xSlWc",
+        "ownerInstanceId": "lin1_lin",
+        "code": "Linköp",
+        "names": {
+          "code": "LIN",
+          "full": "Linköping Innebandyklubb",
+          "long": "Linköping IBK",
+          "short": "Linköping",
+          "codeSite": "LIN",
+          "fullSite": "Linköping Innebandyklubb",
+          "longSite": "Linköping IBK",
+          "shortSite": "Linköping"
+        },
+        "score": 4,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/lin1_lin.svg"
+      },
+      "awayTeamInfo": {
+        "status": "WIN",
+        "uuid": "4b7a-cd81hZAEl",
+        "ownerInstanceId": "kal1_kal",
+        "code": "HERR",
+        "names": {
+          "code": "FBC",
+          "full": "Floorball Club Kalmarsund",
+          "long": "FBC Kalmarsund",
+          "short": "Kalmarsund",
+          "codeSite": "FBC",
+          "fullSite": "Floorball Club Kalmarsund",
+          "longSite": "FBC Kalmarsund",
+          "shortSite": "Kalmarsund"
+        },
+        "score": 5,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/kal1_kal.svg"
+      },
+      "venueInfo": {
+        "uuid": "ruhsk1lyno",
+        "name": "Linköpings Sporthall "
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "msmb27in1v",
+      "rawStartDateTime": "2026-09-20T14:00:00.000Z",
+      "startDateTime": "2026-09-20 16:00:00",
+      "state": "post-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "WIN",
+        "uuid": "2cdf-32c4bo2vU",
+        "ownerInstanceId": "mul1_mul",
+        "code": "Mullsj",
+        "names": {
+          "code": "MAIS",
+          "full": "Mullsjö Allmänna Innebandysällskap ",
+          "long": "Mullsjö AIS",
+          "short": "Mullsjö",
+          "codeSite": "MAIS",
+          "fullSite": "Mullsjö Allmänna Innebandysällskap ",
+          "longSite": "Mullsjö AIS",
+          "shortSite": "Mullsjö"
+        },
+        "score": 10,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/mul1_mul.svg"
+      },
+      "awayTeamInfo": {
+        "status": "LOSE",
+        "uuid": "c699-cd81gmNJ2",
+        "ownerInstanceId": "vis2_vis",
+        "code": "HERR",
+        "names": {
+          "code": "VIS",
+          "full": "Visby IBK",
+          "long": "Visby IBK",
+          "short": "Visby",
+          "codeSite": "VIS",
+          "fullSite": "Visby IBK",
+          "longSite": "Visby IBK",
+          "shortSite": "Visby"
+        },
+        "score": 6,
+        "icon": "https://sportality.cdn.s8y.se/team-logos/vis2_vis.svg"
+      },
+      "venueInfo": {
+        "uuid": "jbxbn4guvi",
+        "name": "Nyhemshallen - Mullsjö "
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 1,
+      "roundLabel": ""
+    },
+    {
+      "uuid": "l3vlqyge1x",
+      "rawStartDateTime": "2026-09-22T16:30:00.000Z",
+      "startDateTime": "2026-09-22 18:30:00",
+      "state": "pre-game",
+      "overtime": false,
+      "shootout": false,
+      "ssgtUuid": "qqing3frfp",
+      "homeTeamInfo": {
+        "status": "N/A",
+        "uuid": "5b11-cd81tVTqP",
+        "ownerInstanceId": "jik1_jik",
+        "code": "Jönköp",
+        "names": {
+          "code": "JIK",
+          "full": "Jönköpings Innebandyklubb",
+          "long": "Jönköpings IK",
+          "short": "Jönköping",
+          "codeSite": "JIK",
+          "fullSite": "Jönköpings Innebandyklubb",
+          "longSite": "Jönköpings IK",
+          "shortSite": "Jönköping"
+        },
+        "score": "N/A",
+        "icon": "https://sportality.cdn.s8y.se/team-logos/jik1_jik.svg"
+      },
+      "awayTeamInfo": {
+        "status": "N/A",
+        "uuid": "c437-b283ovsh6",
+        "ownerInstanceId": "wic1_wic",
+        "code": "WIC",
+        "names": {
+          "code": "WIC",
+          "full": "Warberg Innebandyclub",
+          "long": "Warberg IC",
+          "short": "Warberg",
+          "codeSite": "WIC",
+          "fullSite": "Warberg Innebandyclub",
+          "longSite": "Warberg IC",
+          "shortSite": "Warberg"
+        },
+        "score": "N/A",
+        "icon": "https://sportality.cdn.s8y.se/team-logos/wic1_wic.svg"
+      },
+      "venueInfo": {
+        "uuid": "vuzm43c7tl",
+        "name": "Jönköpings Idrotthus Arenan"
+      },
+      "seriesInfo": {
+        "uuid": "qRl-8B5kOFjKL",
+        "code": "SSL Herr",
+        "displayName": "SSL Herr"
+      },
+      "roundNumber": 2,
+      "roundLabel": ""
+    }
+  ],
+  "teamList": [
+    {
+      "uuid": "f7c8-49eaNieTr",
+      "createdAt": "2016-10-24T11:05:05.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "",
+      "graphicsLibrary": "aik2-aik-4f397",
+      "lastModified": "2024-06-27T10:46:34.000Z",
+      "nationality": "SE",
+      "ownerInstanceId": "aik2_aik",
+      "ownersite": "AIK2",
+      "teamCode": "AIK",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "AIK",
+        "full": "AIK IBF SSL Herr",
+        "long": "AIK IBF",
+        "short": "AIK"
+      },
+      "clubName": {},
+      "teamInfo": {
+        "email": "marita.lieback@aikinnebandy.se",
+        "contactPerson": "Marita Lieback"
+      },
+      "teamExtIds": [
+        {
+          "id": 373,
+          "extId": "4050",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 373,
+          "extId": "4050",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/aik2_aik.svg",
+      "socialMedia": [],
+      "displayName": "AIK"
+    },
+    {
+      "uuid": "e40a-781fGVFZV",
+      "createdAt": "2016-10-24T11:19:15.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "dal1-dal-54844",
+      "lastModified": "2024-08-07T09:15:27.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "dal1_dal",
+      "ownersite": "DAL",
+      "teamCode": "Dalen",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "DAL",
+        "full": "Innebandyklubben Dalen",
+        "long": "IBK Dalen",
+        "short": "Dalen",
+        "codeSite": "DAL",
+        "fullSite": "Innebandyklubben Dalen",
+        "longSite": "IBK Dalen",
+        "shortSite": "Dalen"
+      },
+      "clubName": {
+        "code": "DAL",
+        "short": "Dalen",
+        "long": "IBK Dalen",
+        "full": "Innebandyklubben Dalen"
+      },
+      "teamInfo": {
+        "email": "karlsson@ibkdalen.se",
+        "contactPerson": "Urban Karlsson"
+      },
+      "teamExtIds": [
+        {
+          "id": 369,
+          "extId": "4080",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 369,
+          "extId": "4080",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/dal1_dal.svg",
+      "socialMedia": [],
+      "displayName": "Dalen"
+    },
+    {
+      "uuid": "e7cb-035exdeHN",
+      "createdAt": "2016-10-24T11:12:41.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "fal1-fal-8274e",
+      "lastModified": "2024-10-25T01:11:58.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "fal1_fal",
+      "ownersite": "FAL",
+      "teamCode": "Falun",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "FAL",
+        "full": "Innebandyföreningen Falun",
+        "long": "IBF Falun",
+        "short": "Falun",
+        "codeSite": "IBF",
+        "fullSite": "Innebandyföreningen Falun",
+        "longSite": "IBF Falun",
+        "shortSite": "Falun"
+      },
+      "clubName": {
+        "code": "IBF",
+        "short": "Falun",
+        "long": "IBF Falun",
+        "full": "Innebandyföreningen Falun"
+      },
+      "teamInfo": {
+        "email": "",
+        "contactPerson": "Emilia Bodell"
+      },
+      "teamExtIds": [
+        {
+          "id": 364,
+          "extId": "4091",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 364,
+          "extId": "4091",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/fal1_fal.svg",
+      "socialMedia": [],
+      "displayName": "Falun"
+    },
+    {
+      "uuid": "ddfe-cd81c3YP1",
+      "createdAt": "2019-09-27T11:28:25.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "lund1-lund-adcc2",
+      "lastModified": "2024-09-24T16:03:15.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "lund1_lund",
+      "ownersite": "LUND",
+      "teamCode": "HERR",
+      "series": [
+        {
+          "uuid": "qTL-1fgMUvw59",
+          "code": "FloorballAllsvenskanSouthM",
+          "createdAt": "2017-07-05T14:42:38.000Z",
+          "createdBy": "ssl1_ssl",
+          "deleted": false,
+          "lastModified": "2024-06-28T09:53:16.000Z",
+          "displayName": "H Allsv S",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "H Allsv S"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "LUND",
+        "full": "IBK Lund Elit",
+        "long": "IBK Lund",
+        "short": "Lund",
+        "codeSite": "LUND Herr",
+        "fullSite": "IBK Lund Elit Herr",
+        "longSite": "IBK Lund Herr",
+        "shortSite": "Lund Herr"
+      },
+      "clubName": {
+        "code": "LUND Herr",
+        "short": "Lund Herr",
+        "long": "IBK Lund Herr",
+        "full": "IBK Lund Elit Herr"
+      },
+      "teamInfo": {
+        "address": "https://ibklund.sportadmin.se/start/?ID=95343",
+        "founded": "2015",
+        "instagram": "https://www.instagram.com/ibklundh1/"
+      },
+      "teamExtIds": [
+        {
+          "id": 973,
+          "extId": "4710",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 973,
+          "extId": "4710",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/lund1_lund.svg",
+      "socialMedia": [],
+      "displayName": "Lund"
+    },
+    {
+      "uuid": "c699-cd81gmNJ2",
+      "createdAt": "2017-08-28T17:08:15.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "",
+      "graphicsLibrary": "vis2-vis-c423d",
+      "lastModified": "2023-08-15T13:44:54.000Z",
+      "nationality": "SE",
+      "ownerInstanceId": "vis2_vis",
+      "ownersite": "VIS2",
+      "teamCode": "HERR",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "VIS",
+        "full": "Visby IBK",
+        "long": "Visby IBK",
+        "short": "Visby",
+        "codeSite": "VIS",
+        "fullSite": "Visby IBK",
+        "longSite": "Visby IBK",
+        "shortSite": "Visby"
+      },
+      "clubName": {
+        "code": "VIS",
+        "short": "Visby",
+        "long": "Visby IBK",
+        "full": "Visby IBK"
+      },
+      "teamInfo": {
+        "email": "kansli@visbyibk.com",
+        "phone": "0498-27 98 56",
+        "address": "Visborgsallén 34\r\n62150 Visby",
+        "founded": "1988",
+        "manager": "Joakim Bandholtz",
+        "chairman": "Viktoria Kleven",
+        "retiredNumbers": "7 och 9"
+      },
+      "teamExtIds": [
+        {
+          "id": 404,
+          "extId": "4620",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 404,
+          "extId": "4620",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/vis2_vis.svg",
+      "socialMedia": [],
+      "displayName": "Visby"
+    },
+    {
+      "uuid": "4b7a-cd81hZAEl",
+      "createdAt": "2017-08-28T17:05:38.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "kal1-kal-86df4",
+      "lastModified": "2025-09-28T11:44:11.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "kal1_kal",
+      "ownersite": "KAL",
+      "teamCode": "HERR",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "FBC",
+        "full": "Floorball Club Kalmarsund",
+        "long": "FBC Kalmarsund",
+        "short": "Kalmarsund",
+        "codeSite": "FBC",
+        "fullSite": "Floorball Club Kalmarsund",
+        "longSite": "FBC Kalmarsund",
+        "shortSite": "Kalmarsund"
+      },
+      "clubName": {},
+      "teamInfo": {
+        "email": "info@fbckalmarsund.se",
+        "founded": "2011",
+        "instagram": "https://www.instagram.com/fbckalmarsund/",
+        "contactPerson": "Henrik Milton"
+      },
+      "teamExtIds": [
+        {
+          "id": 402,
+          "extId": "4253",
+          "locked": false,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 402,
+          "extId": "4253",
+          "locked": false,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/kal1_kal.svg",
+      "socialMedia": [],
+      "displayName": "Kalmarsund"
+    },
+    {
+      "uuid": "5b11-cd81tVTqP",
+      "createdAt": "2017-04-25T11:41:23.000Z",
+      "createdBy": "jik1_jik",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "jik1-jik-06c8e",
+      "lastModified": "2024-09-09T21:11:40.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "jik1_jik",
+      "ownersite": "JIK",
+      "teamCode": "Jönköp",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "JIK",
+        "full": "Jönköpings Innebandyklubb",
+        "long": "Jönköpings IK",
+        "short": "Jönköping",
+        "codeSite": "JIK",
+        "fullSite": "Jönköpings Innebandyklubb",
+        "longSite": "Jönköpings IK",
+        "shortSite": "Jönköping"
+      },
+      "clubName": {
+        "code": "JIK",
+        "short": "Jönköping",
+        "long": "Jönköpings IK",
+        "full": "Jönköpings Innebandyklubb"
+      },
+      "teamInfo": {
+        "email": "fredrik.kronander@procurator.com",
+        "contactPerson": "Fredrik Kronander"
+      },
+      "teamExtIds": [
+        {
+          "id": 378,
+          "extId": "4221",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 378,
+          "extId": "4221",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/jik1_jik.svg",
+      "socialMedia": [],
+      "displayName": "Jönköping"
+    },
+    {
+      "uuid": "90c3-21d6xSlWc",
+      "createdAt": "2016-10-24T11:20:17.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "lin1-lin-b90cf",
+      "lastModified": "2024-10-08T14:20:49.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "lin1_lin",
+      "ownersite": "LIN",
+      "teamCode": "Linköp",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "LIN",
+        "full": "Linköping Innebandyklubb",
+        "long": "Linköping IBK",
+        "short": "Linköping",
+        "codeSite": "LIN",
+        "fullSite": "Linköping Innebandyklubb",
+        "longSite": "Linköping IBK",
+        "shortSite": "Linköping"
+      },
+      "clubName": {
+        "code": "LIN",
+        "short": "Linköping",
+        "long": "Linköping IBK",
+        "full": "Linköping Innebandyklubb"
+      },
+      "teamInfo": {
+        "email": "johan.fredriksson@linkopinginnebandy.se",
+        "contactPerson": "Johan Fredriksson"
+      },
+      "teamExtIds": [
+        {
+          "id": 368,
+          "extId": "4088",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 368,
+          "extId": "4088",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/lin1_lin.svg",
+      "socialMedia": [],
+      "displayName": "Linköping"
+    },
+    {
+      "uuid": "2cdf-32c4bo2vU",
+      "createdAt": "2016-10-24T11:20:26.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "mul1-mul-04fe8",
+      "lastModified": "2024-08-23T12:29:06.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "mul1_mul",
+      "ownersite": "MUL",
+      "teamCode": "Mullsj",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "MAIS",
+        "full": "Mullsjö Allmänna Innebandysällskap ",
+        "long": "Mullsjö AIS",
+        "short": "Mullsjö",
+        "codeSite": "MAIS",
+        "fullSite": "Mullsjö Allmänna Innebandysällskap ",
+        "longSite": "Mullsjö AIS",
+        "shortSite": "Mullsjö"
+      },
+      "clubName": {
+        "code": "MAIS",
+        "short": "Mullsjö",
+        "long": "Mullsjö AIS",
+        "full": "Mullsjö Allmänna Innebandysällskap "
+      },
+      "teamInfo": {
+        "email": "joakim.davidsson@mullsjoais.se",
+        "contactPerson": "Joakim Davidsson"
+      },
+      "teamExtIds": [
+        {
+          "id": 366,
+          "extId": "4097",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 366,
+          "extId": "4097",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/mul1_mul.svg",
+      "socialMedia": [],
+      "displayName": "Mullsjö"
+    },
+    {
+      "uuid": "5452-cd8111QiTe",
+      "createdAt": "2019-08-22T14:35:41.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "nyk2-herr-e8d55",
+      "lastModified": "2024-08-29T16:09:59.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "nyk2_nyk",
+      "ownersite": "NYK",
+      "teamCode": "Nykvar",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "NYK",
+        "full": "Nykvarns Innebandy",
+        "long": "Nykvarns IBF",
+        "short": "Nykvarn",
+        "codeSite": "NYK",
+        "fullSite": "Nykvarns Innebandy",
+        "longSite": "Nykvarns IBF",
+        "shortSite": "Nykvarn"
+      },
+      "clubName": {
+        "code": "NYK",
+        "short": "Nykvarn",
+        "long": "Nykvarns IBF",
+        "full": "Nykvarns Innebandy"
+      },
+      "teamInfo": {
+        "email": "Thomas.Nilsson@tocbygg.se",
+        "twitter": "https://x.com/nykvarnsteelers",
+        "facebook": "https://www.facebook.com/nykvarnsteelers",
+        "instagram": "https://www.instagram.com/nykvarnsifherr/",
+        "contactPerson": "Thomas Nilsson"
+      },
+      "teamExtIds": [
+        {
+          "id": 931,
+          "extId": "14584",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 931,
+          "extId": "14584",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/nyk2_nyk.svg",
+      "socialMedia": [],
+      "displayName": "Nykvarn"
+    },
+    {
+      "uuid": "8615-d492oYxBh",
+      "createdAt": "2016-10-24T11:20:39.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "pix1-pix-3f22e",
+      "lastModified": "2024-10-24T15:16:53.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "pix1_pix",
+      "ownersite": "PIX",
+      "teamCode": "Pixbo",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "PIX",
+        "full": "Pixbo Idrottsklubb",
+        "long": "Pixbo IBK",
+        "short": "Pixbo",
+        "codeSite": "PIBK",
+        "fullSite": "Pixbo Idrottsklubb",
+        "longSite": "Pixbo IBK",
+        "shortSite": "Pixbo"
+      },
+      "clubName": {
+        "code": "PIBK",
+        "short": "Pixbo",
+        "long": "Pixbo IBK",
+        "full": "Pixbo Idrottsklubb"
+      },
+      "teamInfo": {
+        "email": "peter.runnestig@pixbo.se",
+        "contactPerson": "Peter Runnestig"
+      },
+      "teamExtIds": [
+        {
+          "id": 370,
+          "extId": "4081",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 370,
+          "extId": "4081",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/pix1_pix.svg",
+      "socialMedia": [],
+      "displayName": "Pixbo"
+    },
+    {
+      "uuid": "1c79-bb6dyljzt",
+      "createdAt": "2016-10-24T11:26:26.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "sto1-sto-6b493",
+      "lastModified": "2024-10-10T11:05:33.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "sto1_sto",
+      "ownersite": "STO",
+      "teamCode": "Storvr",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "SIBK",
+        "full": "Storvreta Innebandyklubb",
+        "long": "Storvreta IBK",
+        "short": "Storvreta",
+        "codeSite": "SIBK",
+        "fullSite": "Storvreta Innebandyklubb",
+        "longSite": "Storvreta IBK",
+        "shortSite": "Storvreta"
+      },
+      "clubName": {
+        "code": "SIBK",
+        "short": "Storvreta",
+        "long": "Storvreta IBK",
+        "full": "Storvreta Innebandyklubb"
+      },
+      "teamInfo": {
+        "email": "hannes@storvretaibk.se",
+        "contactPerson": "Hannes Öhman"
+      },
+      "teamExtIds": [
+        {
+          "id": 367,
+          "extId": "4079",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 367,
+          "extId": "4079",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/sto1_sto.svg",
+      "socialMedia": [],
+      "displayName": "Storvreta"
+    },
+    {
+      "uuid": "a10c-6f9evklgz",
+      "createdAt": "2016-10-24T11:27:02.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "vax1-vax-90b9c",
+      "lastModified": "2025-06-27T11:31:26.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "vax1_vax",
+      "ownersite": "VAX",
+      "teamCode": "VXO",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "VXO",
+        "full": "Växjö Vipers IBK",
+        "long": "Växjö Vipers",
+        "short": "Vipers",
+        "codeSite": "VXO",
+        "fullSite": "Växjö Vipers IBK",
+        "longSite": "Växjö Vipers",
+        "shortSite": "Vipers"
+      },
+      "clubName": {},
+      "teamInfo": {
+        "email": "anders@griffel.se",
+        "contactPerson": "Anders Tränk"
+      },
+      "teamExtIds": [
+        {
+          "id": 365,
+          "extId": "4082",
+          "locked": false,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 365,
+          "extId": "4082",
+          "locked": false,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/vax1_vax.svg",
+      "socialMedia": [],
+      "displayName": "Vipers"
+    },
+    {
+      "uuid": "c437-b283ovsh6",
+      "createdAt": "2016-10-24T11:27:19.000Z",
+      "createdBy": "ramses",
+      "deleted": false,
+      "gender": "male",
+      "graphicsLibrary": "wic1-wic-b54e0",
+      "lastModified": "2024-09-16T14:59:17.000Z",
+      "nationality": "sv",
+      "ownerInstanceId": "wic1_wic",
+      "ownersite": "WIC",
+      "teamCode": "WIC",
+      "series": [
+        {
+          "uuid": "qRl-8B5kOFjKL",
+          "code": "SSLHerr",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2024-02-20T14:32:15.000Z",
+          "displayName": "SSL Herr",
+          "names": [
+            {
+              "language": "sv",
+              "translation": "SSL Herr"
+            },
+            {
+              "language": "display",
+              "translation": "SSL Herr"
+            }
+          ]
+        }
+      ],
+      "sport": [
+        {
+          "uuid": "qRl-4vg2IgRUF",
+          "code": "floorball",
+          "createdAt": null,
+          "createdBy": null,
+          "deleted": false,
+          "lastModified": "2017-04-26T12:44:27.000Z"
+        }
+      ],
+      "teamMedia": [],
+      "teamNames": {
+        "code": "WIC",
+        "full": "Warberg Innebandyclub",
+        "long": "Warberg IC",
+        "short": "Warberg",
+        "codeSite": "WIC",
+        "fullSite": "Warberg Innebandyclub",
+        "longSite": "Warberg IC",
+        "shortSite": "Warberg"
+      },
+      "clubName": {
+        "code": "WIC",
+        "short": "Warberg",
+        "long": "Warberg IC",
+        "full": "Warberg Innebandyclub"
+      },
+      "teamInfo": {
+        "email": "johan.astbrant@warbergic.se",
+        "teamCode": "WIC",
+        "contactPerson": "Johan Astbrant"
+      },
+      "teamExtIds": [
+        {
+          "id": 377,
+          "extId": "4083",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "extIds": [
+        {
+          "id": 377,
+          "extId": "4083",
+          "locked": true,
+          "extIdType": {
+            "uuid": "6def-342b14pXbK",
+            "code": "innebandyse",
+            "createdAt": "2017-09-27T15:34:48.000Z",
+            "createdBy": "shl1_shl",
+            "deleted": false,
+            "lastModified": "2017-09-27T15:34:48.000Z",
+            "visible": true,
+            "name": "Innebandy.se"
+          }
+        }
+      ],
+      "logo": "https://sportality.cdn.s8y.se/team-logos/wic1_wic.svg",
+      "socialMedia": [],
+      "displayName": "Warberg"
+    }
+  ],
+  "ssgtUuid": "qqing3frfp"
+}

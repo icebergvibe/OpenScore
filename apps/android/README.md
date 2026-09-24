@@ -18,7 +18,7 @@ Four destinations on a bottom bar, three of them feeds over one timeline:
 
 | Destination | What it is |
 |---|---|
-| **Scores** | A day-by-day timeline of every league the core covers for the selected sport (Hockey · Football · Baseball · Motorsport · MMA). Each day is a sticky heading, then one band per league with its games under it. |
+| **Scores** | A day-by-day timeline of every league the core covers for the selected sport (Hockey · Floorball · Football · Baseball · Motorsport · MMA). Each day is a sticky heading, then one band per league with its games under it. |
 | **Live** | The same timeline cut to one day and to games in play, polled while on screen. |
 | **Following** | Games of followed teams and leagues across every sport, filtered on the device from the same day listings. |
 | **Settings** | Dark mode, the followed list with a bell per favourite, notification choices, the offline scores store, and where the scores come from. |

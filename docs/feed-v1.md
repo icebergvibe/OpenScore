@@ -60,7 +60,7 @@ Inside `GamesResponse.errors` the same object appears per failed league, with HT
  "capabilities": ["CLOCK", "EVENTS", "GAME", "GAMES_BY_DATE", "LINEUPS", "LIVE_UPDATES", "…"]}
 ```
 
-`sport`: `HOCKEY | FOOTBALL | BASEBALL | MMA` (F1 is not a league of the feed).
+`sport`: `HOCKEY | FLOORBALL | FOOTBALL | BASEBALL | MMA` (F1 is not a league of the feed).
 A UFC `game` has both sides as fighters and its `situation.kind` is `fight` (below).
 `capabilities`: `GAMES_BY_DATE GAME EVENTS LINEUPS STANDINGS TEAM TEAM_SCHEDULE TEAM_STATS ROSTER PLAYER LIVE_UPDATES LIVE_PUSH CLOCK CLOCK_RUNNING_FLAG INTERMISSION_STATE PERIOD_SCORES EVENT_COORDINATES LINE_GROUPS`.
 

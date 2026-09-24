@@ -13,6 +13,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 import kotlin.time.Clock
+import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.Instant
@@ -45,6 +46,26 @@ class KtorFetcherTest {
         assertEquals(2, hits)
         assertEquals("""{"ok":2}""", third.body)
         assertTrue(!third.fromCache)
+    }
+
+    /** Ktor appends a repeated header, so a provider asking for one must get its value and not a joined pair. */
+    @Test
+    fun aCallersHeaderReplacesTheDefaultRatherThanJoiningIt() = runTest {
+        val accepts = mutableListOf<String?>()
+        val agents = mutableListOf<String?>()
+        val engine = MockEngine { request ->
+            accepts += request.headers[HttpHeaders.Accept]
+            agents += request.headers[HttpHeaders.UserAgent]
+            respond("{}", HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json"))
+        }
+        val fetcher = KtorFetcher(engine, clock = FakeClock())
+
+        fetcher.get("https://example.test/default", maxAge = Duration.ZERO)
+        fetcher.get("https://example.test/own", mapOf("Accept" to "*/*"), maxAge = Duration.ZERO)
+        fetcher.get("https://example.test/case", mapOf("accept" to "text/csv"), maxAge = Duration.ZERO)
+
+        assertEquals(listOf<String?>("application/json, */*;q=0.5", "*/*", "text/csv"), accepts.toList())
+        assertTrue(agents.all { it != null && it.startsWith("OpenScore/") }, "the User-Agent default still applies")
     }
 
     @Test

@@ -1,0 +1,103 @@
+{
+  "homeTeam": {
+    "name": "J\u00f6nk\u00f6pings IK",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/jik1_jik.svg"
+  },
+  "awayTeam": {
+    "name": "Warberg IC",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/wic1_wic.svg"
+  },
+  "stats": [
+    {
+      "homeTeam": {
+        "left": {
+          "type": "GP",
+          "value": 1
+        },
+        "right": {
+          "type": "G",
+          "value": 6
+        },
+        "center": {
+          "type": "GA",
+          "value": 7
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "GP",
+          "value": 1
+        },
+        "right": {
+          "type": "G",
+          "value": 3
+        },
+        "center": {
+          "type": "GA",
+          "value": 6
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "left": {
+          "type": "L",
+          "value": 1
+        },
+        "right": {
+          "type": "T",
+          "value": 0
+        },
+        "center": {
+          "type": "W",
+          "value": 0
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "L",
+          "value": 1
+        },
+        "right": {
+          "type": "T",
+          "value": 0
+        },
+        "center": {
+          "type": "W",
+          "value": 0
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "left": {
+          "type": "OTW",
+          "value": 0
+        },
+        "right": {
+          "type": "W",
+          "value": 0
+        },
+        "center": {
+          "type": "T",
+          "value": 0
+        }
+      },
+      "awayTeam": {
+        "left": {
+          "type": "OTW",
+          "value": 0
+        },
+        "right": {
+          "type": "W",
+          "value": 0
+        },
+        "center": {
+          "type": "T",
+          "value": 0
+        }
+      }
+    }
+  ],
+  "provider": "ibis"
+}

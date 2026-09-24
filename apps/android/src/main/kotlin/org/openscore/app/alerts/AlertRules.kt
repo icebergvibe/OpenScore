@@ -77,6 +77,8 @@ object AlertRules {
     fun typicalDurationMinutes(sport: Sport): Int = when (sport) {
         Sport.FOOTBALL -> 115
         Sport.HOCKEY -> 170
+        // Three twenty-minute periods with two intermissions; a floorball evening is shorter than hockey's.
+        Sport.FLOORBALL -> 140
         Sport.BASEBALL -> 200
         Sport.MOTORSPORT -> 180
         // A fight is short, but its start time is its card segment's: the main event walks out hours later.
@@ -207,7 +209,7 @@ object AlertRules {
             }
             // Which period the clock names during an intermission differs by feed (the one just
             // finished, or the next), so the count of periods scored is the safer number.
-            Sport.HOCKEY -> game.periodScores.size.takeIf { it > 0 }?.let { "End of period $it" } ?: "Intermission"
+            Sport.HOCKEY, Sport.FLOORBALL -> game.periodScores.size.takeIf { it > 0 }?.let { "End of period $it" } ?: "Intermission"
             Sport.BASEBALL -> "Break"
             Sport.MOTORSPORT -> "Break"
             Sport.MMA -> period?.let { "End of round $it" } ?: "Between rounds"
@@ -366,7 +368,7 @@ object AlertRules {
         }?.let { "($it)" }
         val time = event.time.label ?: when (sport) {
             Sport.FOOTBALL -> event.time.elapsed?.let { "${footballOffsetMinutes(event.time.period.number) + it.inWholeMinutes}'" }
-            Sport.HOCKEY -> (event.time.elapsed ?: event.time.remaining)?.let { "%d:%02d".format(it.inWholeSeconds / 60, it.inWholeSeconds % 60) }
+            Sport.HOCKEY, Sport.FLOORBALL -> (event.time.elapsed ?: event.time.remaining)?.let { "%d:%02d".format(it.inWholeSeconds / 60, it.inWholeSeconds % 60) }
             Sport.BASEBALL -> event.time.period.label
             Sport.MOTORSPORT -> event.time.period.label
             Sport.MMA -> event.time.period.label
@@ -390,6 +392,7 @@ object AlertRules {
     fun finalHeadline(game: Game, sport: Sport): String = when (sport) {
         Sport.FOOTBALL -> when (game.ending) { GameEnding.OVERTIME -> "After extra time"; GameEnding.SHOOTOUT -> "After penalties"; else -> "Full time" }
         Sport.HOCKEY -> when (game.ending) { GameEnding.OVERTIME -> "Final, overtime"; GameEnding.SHOOTOUT -> "Final, shootout"; else -> "Final" }
+        Sport.FLOORBALL -> when (game.ending) { GameEnding.OVERTIME -> "Final, overtime"; GameEnding.SHOOTOUT -> "Final, penalty shots"; else -> "Final" }
         Sport.BASEBALL -> if (game.periodScores.size > 9) "Final, ${game.periodScores.size} innings" else "Final"
         Sport.MOTORSPORT -> "Final"
         Sport.MMA -> (game.situation as? FightSituation)?.result?.let { r -> fightHeadline(game, r) } ?: "Final"
@@ -425,7 +428,9 @@ object AlertRules {
                     ?: DEFAULT_RETRY_MINUTES
             }
             // A twenty-minute period takes about thirty-five on the wall, plus an intermission each.
+            // The same three periods, but floorball's run closer to the wall clock than hockey's.
             Sport.HOCKEY -> time?.let { (3 - it.period.number).coerceAtLeast(0) * 35 + (it.remaining?.inWholeMinutes?.toInt()?.let { m -> m * 3 / 2 } ?: 10) } ?: DEFAULT_RETRY_MINUTES
+            Sport.FLOORBALL -> time?.let { (3 - it.period.number).coerceAtLeast(0) * 30 + (it.remaining?.inWholeMinutes?.toInt() ?: 10) } ?: DEFAULT_RETRY_MINUTES
             Sport.BASEBALL -> DEFAULT_RETRY_MINUTES
             Sport.MOTORSPORT -> DEFAULT_RETRY_MINUTES
             // Five-minute rounds with a minute between them; whatever is left of the bout, rounded up.

@@ -20,7 +20,7 @@ public fun Game.scoreboardPresentation(sport: Sport): ScoreboardPresentation = S
     note = when (ending) {
         GameEnding.SHOOTOUT -> when (sport) {
             Sport.FOOTBALL -> "Penalty shootout shown separately from the match score."
-            Sport.HOCKEY -> "Shootout winner shown separately."
+            Sport.HOCKEY, Sport.FLOORBALL -> "Shootout winner shown separately."
             else -> null
         }
         else -> null
@@ -34,7 +34,7 @@ private fun Period.scoreboardLabel(sport: Sport): String = when (sport) {
         PeriodType.SHOOTOUT -> "PENS"
         PeriodType.UNKNOWN -> label
     }
-    Sport.HOCKEY -> when (type) {
+    Sport.HOCKEY, Sport.FLOORBALL -> when (type) {
         PeriodType.REGULATION -> number.toString()
         PeriodType.OVERTIME -> if (number == 4) "OT" else "${number - 3}OT"
         PeriodType.SHOOTOUT -> "SO"

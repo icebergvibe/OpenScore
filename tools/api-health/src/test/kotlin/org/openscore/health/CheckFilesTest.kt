@@ -21,9 +21,17 @@ class CheckFilesTest {
     fun everyMappedLeagueHasAHealthFile() {
         val leagueDirs = File(root, "apis").listFiles { f -> f.isDirectory && !f.name.startsWith("_") }!!
             .flatMap { sport -> sport.listFiles { f -> f.isDirectory }!!.toList() }
-        val missing = leagueDirs.filter { File(it, "README.md").isFile && !File(it, CheckFiles.FILE_NAME).isFile }
+        val missing = leagueDirs
+            .filter { File(it, "README.md").isFile && !File(it, CheckFiles.FILE_NAME).isFile }
+            // An access audit records why a feed cannot be used; it has no endpoint to check.
+            .filterNot { outOfScope(File(it, "README.md")) }
         assertTrue(missing.isEmpty(), "leagues without health.json: ${missing.map { it.relativeTo(root).path }}")
         assertTrue(files.size >= 15, "expected at least 15 health files, found ${files.size}")
+    }
+
+    /** True when the README's header table marks the feed out of scope (`| **Status** | ⛔ out of scope: …`). */
+    private fun outOfScope(readme: File): Boolean = readme.useLines { lines ->
+        lines.any { it.startsWith("| **Status**") && it.contains("out of scope", ignoreCase = true) }
     }
 
     @Test

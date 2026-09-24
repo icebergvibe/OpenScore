@@ -31,6 +31,7 @@ data class StatusLabel(val text: String, val tone: StatusTone)
 val Sport.displayName: String
     get() = when (this) {
         Sport.HOCKEY -> "Hockey"
+        Sport.FLOORBALL -> "Floorball"
         Sport.FOOTBALL -> "Football"
         Sport.BASEBALL -> "Baseball"
         Sport.MOTORSPORT -> "Motorsport"
@@ -40,6 +41,7 @@ val Sport.displayName: String
 val Sport.iconRes: Int
     get() = when (this) {
         Sport.HOCKEY -> R.drawable.ic_sport_hockey
+        Sport.FLOORBALL -> R.drawable.ic_sport_floorball
         Sport.FOOTBALL -> R.drawable.ic_sport_football
         Sport.BASEBALL -> R.drawable.ic_sport_baseball
         Sport.MOTORSPORT -> R.drawable.ic_sport_motorsport
@@ -50,6 +52,7 @@ val Sport.iconRes: Int
 val Sport.goalIcon: String
     get() = when (this) {
         Sport.HOCKEY -> "🏒"
+        Sport.FLOORBALL -> "🏑"
         Sport.FOOTBALL -> "⚽"
         Sport.BASEBALL -> "⚾"
         Sport.MOTORSPORT -> "🏎️"
@@ -105,7 +108,7 @@ fun Game.clockLabel(sport: Sport): String? {
             val minute = elapsed.inWholeMinutes.toInt() + 1
             if (nominal != null && elapsed >= nominal) "${offset + nominal.inWholeMinutes}'+${(elapsed - nominal).inWholeMinutes + 1}" else "${offset + minute}'"
         }
-        Sport.HOCKEY -> {
+        Sport.HOCKEY, Sport.FLOORBALL -> {
             val shown = time.remaining ?: time.elapsed ?: return time.period.label
             "${time.period.label} ${shown.mmss()}"
         }
@@ -133,7 +136,7 @@ fun Game.progress(sport: Sport): Float? {
             val elapsed = time.elapsed ?: return null
             ((footballOffsetMinutes(time.period.number) + elapsed.inWholeMinutes) / 90f).coerceIn(0f, 1f)
         }
-        Sport.HOCKEY -> {
+        Sport.HOCKEY, Sport.FLOORBALL -> {
             val inPeriod = time.elapsed ?: time.remaining?.let { 20.minutes - it } ?: return null
             (((time.period.number - 1) * 20 + inPeriod.inWholeMinutes) / 60f).coerceIn(0f, 1f)
         }
@@ -166,7 +169,7 @@ private fun Game.breakLabel(sport: Sport): String {
     val period = clock?.time?.period
     return when (sport) {
         Sport.FOOTBALL -> when (period?.number) { null, 1 -> "HT"; 3 -> "ET HT"; else -> "Break" }
-        Sport.HOCKEY -> period?.let { "Int ${it.label}" } ?: "Intermission"
+        Sport.HOCKEY, Sport.FLOORBALL -> period?.let { "Int ${it.label}" } ?: "Intermission"
         Sport.BASEBALL -> (situation as? BaseballSituation)?.let {
             when (it.half) { InningHalf.MIDDLE -> "Mid ${it.inning}"; InningHalf.END -> "End ${it.inning}"; else -> "Break" }
         } ?: "Break"
@@ -178,6 +181,8 @@ private fun Game.breakLabel(sport: Sport): String {
 private fun Game.finalLabel(sport: Sport): String = when (sport) {
     Sport.FOOTBALL -> when (ending) { GameEnding.OVERTIME -> "AET"; GameEnding.SHOOTOUT -> "Pens"; else -> "FT" }
     Sport.HOCKEY -> when (ending) { GameEnding.OVERTIME -> "Final/OT"; GameEnding.SHOOTOUT -> "Final/SO"; else -> "Final" }
+    // Floorball settles a tie with penalty shots, which it calls exactly that.
+    Sport.FLOORBALL -> when (ending) { GameEnding.OVERTIME -> "Final/OT"; GameEnding.SHOOTOUT -> "Final/PS"; else -> "Final" }
     Sport.BASEBALL -> if ((periodScores.size) > 9) "Final/${periodScores.size}" else "Final"
     Sport.MOTORSPORT -> "Final"
     Sport.MMA -> (situation as? FightSituation)?.result?.label() ?: "Final"

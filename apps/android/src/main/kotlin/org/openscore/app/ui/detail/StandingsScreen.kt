@@ -81,7 +81,7 @@ private fun columnsFor(sport: Sport, table: StandingsTable): List<Column> {
             Column("GD") { it.goalDifference?.let { d -> if (d > 0) "+$d" else "$d" } ?: "–" },
             Column("Pts", bold = true) { it.points.toString() },
         )
-        Sport.HOCKEY -> listOfNotNull(
+        Sport.HOCKEY, Sport.FLOORBALL -> listOfNotNull(
             Column("GP") { it.played.toString() },
             Column("W") { it.wins.toString() },
             Column("L") { it.losses.toString() },

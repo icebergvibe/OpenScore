@@ -1,0 +1,109 @@
+{
+  "homeTeam": {
+    "name": "Mullsj\u00f6 AIS",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/mul1_mul.svg"
+  },
+  "awayTeam": {
+    "name": "Visby IBK",
+    "logo": "https://sportality.cdn.s8y.se/team-logos/vis2_vis.svg"
+  },
+  "stats": [
+    {
+      "homeTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 10
+        },
+        "right": {
+          "type": "SOG",
+          "value": 27
+        },
+        "center": {
+          "type": "G",
+          "value": 10
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "G",
+        "left": {
+          "type": "G",
+          "value": 6
+        },
+        "right": {
+          "type": "SOG",
+          "value": 22
+        },
+        "center": {
+          "type": "G",
+          "value": 6
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "SVS",
+        "left": {
+          "type": "SVS",
+          "value": 16
+        },
+        "right": {
+          "type": "SOG",
+          "value": 27
+        },
+        "center": {
+          "type": "SVS",
+          "value": 16
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "SVS",
+        "left": {
+          "type": "SVS",
+          "value": 17
+        },
+        "right": {
+          "type": "SOG",
+          "value": 22
+        },
+        "center": {
+          "type": "SVS",
+          "value": 17
+        }
+      }
+    },
+    {
+      "homeTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 2
+        },
+        "right": {
+          "type": "PIM",
+          "value": 2
+        },
+        "center": {
+          "type": "PIM",
+          "value": 2
+        }
+      },
+      "awayTeam": {
+        "sideTranslateKey": "PIM",
+        "left": {
+          "type": "PIM",
+          "value": 4
+        },
+        "right": {
+          "type": "PIM",
+          "value": 4
+        },
+        "center": {
+          "type": "PIM",
+          "value": 4
+        }
+      }
+    }
+  ],
+  "provider": "ibis"
+}

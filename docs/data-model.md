@@ -7,7 +7,7 @@
 
 - **Sport-agnostic spine, sport-specific leaves.** `Game`, `Team`, `GameState`, `GameEvent`
   are shared. Event types, event payloads and live "situation" payloads come from a
-  per-sport package (`model.hockey`, `model.football`, `model.baseball`).
+  per-sport package (`model.hockey`, `model.floorball`, `model.football`, `model.baseball`).
 - **Everything is keyed by (league, id).** IDs are strings; league ids are stable slugs
   (`nhl`, `shl`, `liiga`, …). Never assume ids are numeric or globally unique.
 - **Clubs are linked across leagues by a curated crosswalk**, not by name: `TeamRef.clubId`
@@ -110,6 +110,20 @@ HitDetails        hitter, hittee
 StoppageDetails   reason
 ShootoutAttemptDetails  shooter, goalie, scored, shotType?
 ```
+
+## Floorball extension (`model.floorball`)
+
+```
+FloorballEventType  GOAL | PENALTY | SHOT | MISSED_SHOT | BLOCKED_SHOT | SAVE | FACEOFF |
+                    LINE_CHANGE | GOALIE_CHANGE | TIMEOUT | PERIOD_START | PERIOD_END |
+                    GAME_START | GAME_END | SHOOTOUT_ATTEMPT | OTHER
+```
+
+The rink sports agree on what a goal, a penalty, a shot and a faceoff carry, so floorball
+reuses hockey's `GoalDetails`, `PenaltyDetails`, `ShotDetails`, `FaceoffDetails` and
+`Strength` through aliases in its own package rather than declaring a second identical set:
+a floorball mapper reads as floorball, and a consumer keeps one `when` over the event key.
+The keys match hockey's wherever the two sports mean the same thing.
 
 ## Football extension (`model.football`)
 

@@ -2,6 +2,7 @@ package org.openscore.clubs
 
 import org.openscore.model.Sport
 import org.openscore.model.Sport.BASEBALL
+import org.openscore.model.Sport.FLOORBALL
 import org.openscore.model.Sport.FOOTBALL
 import org.openscore.model.Sport.HOCKEY
 
@@ -159,6 +160,37 @@ internal object ClubTable {
         club("red-bull-munchen", "EHC Red Bull München", HOCKEY, "GER", "del" to "RBM"),
         club("schwenninger-wild-wings", "Schwenninger Wild Wings", HOCKEY, "GER", "del" to "SWW"),
         club("straubing-tigers", "Straubing Tigers", HOCKEY, "GER", "del" to "STR"),
+
+        // ── SSL Herr (Sportality team UUIDs) ─────────────────────────────────────────────
+        club("aik-ibf", "AIK IBF", FLOORBALL, "SWE", "ssl" to "f7c8-49eaNieTr"),
+        club("fbc-kalmarsund", "FBC Kalmarsund", FLOORBALL, "SWE", "ssl" to "4b7a-cd81hZAEl"),
+        club("ibf-falun", "IBF Falun", FLOORBALL, "SWE", "ssl" to "e7cb-035exdeHN"),
+        club("ibk-dalen", "IBK Dalen", FLOORBALL, "SWE", "ssl" to "e40a-781fGVFZV"),
+        club("ibk-lund", "IBK Lund", FLOORBALL, "SWE", "ssl" to "ddfe-cd81c3YP1"),
+        club("jonkopings-ik", "Jönköpings IK", FLOORBALL, "SWE", "ssl" to "5b11-cd81tVTqP"),
+        club("linkoping-ibk", "Linköping IBK", FLOORBALL, "SWE", "ssl" to "90c3-21d6xSlWc"),
+        club("mullsjo-ais", "Mullsjö AIS", FLOORBALL, "SWE", "ssl" to "2cdf-32c4bo2vU"),
+        club("nykvarns-ibf", "Nykvarns IBF", FLOORBALL, "SWE", "ssl" to "5452-cd8111QiTe"),
+        club("pixbo-ibk", "Pixbo IBK", FLOORBALL, "SWE", "ssl" to "8615-d492oYxBh"),
+        club("storvreta-ibk", "Storvreta IBK", FLOORBALL, "SWE", "ssl" to "1c79-bb6dyljzt"),
+        club("visby-ibk", "Visby IBK", FLOORBALL, "SWE", "ssl" to "c699-cd81gmNJ2"),
+        club("vaxjo-vipers", "Växjö Vipers", FLOORBALL, "SWE", "ssl" to "a10c-6f9evklgz"),
+        club("warberg-ic", "Warberg IC", FLOORBALL, "SWE", "ssl" to "c437-b283ovsh6"),
+
+        // ── F-Liiga Men (TorneoPal club ids, which outlive a season's team registration) ──
+        club("classic", "SC Classic", FLOORBALL, "FIN", "f-liiga" to "486"),
+        club("eraviikingit", "EräViikingit", FLOORBALL, "FIN", "f-liiga" to "49"),
+        club("esport-oilers", "Esport Oilers", FLOORBALL, "FIN", "f-liiga" to "56"),
+        club("hawks", "Hawks", FLOORBALL, "FIN", "f-liiga" to "598"),
+        club("jymy", "Jymy", FLOORBALL, "FIN", "f-liiga" to "4464"),
+        club("lasb", "LASB", FLOORBALL, "FIN", "f-liiga" to "302"),
+        club("nokian-krp", "Nokian KrP", FLOORBALL, "FIN", "f-liiga" to "374"),
+        club("o2-jyvaskyla", "O2-Jyväskylä", FLOORBALL, "FIN", "f-liiga" to "384"),
+        club("ols", "OLS", FLOORBALL, "FIN", "f-liiga" to "393"),
+        club("spv", "SPV", FLOORBALL, "FIN", "f-liiga" to "622"),
+        // The hockey TPS already holds `tps`; both are sections of Turun Palloseura.
+        club("tps-salibandy", "TPS Salibandy", FLOORBALL, "FIN", "f-liiga" to "687"),
+        club("westend-indians", "Westend Indians", FLOORBALL, "FIN", "f-liiga" to "757"),
 
         // ── CHL-only clubs (their domestic leagues are not in OpenScore yet) ─────────────
         club("bili-tygri-liberec", "Bílí Tygři Liberec", HOCKEY, "CZE", "chl" to "865ec7e2959da256a2a97a8b"),

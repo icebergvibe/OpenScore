@@ -1,0 +1,623 @@
+{
+  "dataColumn": [
+    {
+      "key": "Rank",
+      "shortKey": "Rank",
+      "sortKey": "Rank",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "Team",
+      "shortKey": "Team",
+      "sortKey": "Team",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "GP",
+      "shortKey": "GP",
+      "sortKey": "GP",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "Diff",
+      "shortKey": "Diff",
+      "sortKey": "Diff",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "G",
+      "shortKey": "G",
+      "sortKey": "G",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "GA",
+      "shortKey": "GA",
+      "sortKey": "GA",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "OTW",
+      "shortKey": "OTW",
+      "sortKey": "OTW",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "Points",
+      "shortKey": "Points",
+      "sortKey": "Points",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "RegL",
+      "shortKey": "RegL",
+      "sortKey": "RegL",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "RegT",
+      "shortKey": "RegT",
+      "sortKey": "RegT",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    },
+    {
+      "key": "RegW",
+      "shortKey": "RegW",
+      "sortKey": "RegW",
+      "format": "integer",
+      "highlighted": false,
+      "group": "",
+      "homeTeamOnly": false
+    }
+  ],
+  "groupings": [
+    {
+      "description": "Playoff",
+      "first": 1,
+      "last": 8
+    },
+    {
+      "description": "MissedPlayoff",
+      "first": 9,
+      "last": 12
+    },
+    {
+      "description": "Relegation",
+      "first": 13,
+      "last": 14
+    }
+  ],
+  "leagueStandings": [
+    {
+      "Rank": 1,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 7,
+      "G": 12,
+      "GA": 5,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Falun",
+        "teamId": 4091,
+        "teamInfo": {
+          "teamId": 4091,
+          "teamOwnerInstanceId": "fal1_fal",
+          "teamUuid": "e7cb-035exdeHN",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/fal1_fal.svg",
+          "teamNames": {
+            "code": "FAL",
+            "full": "Innebandyf\u00f6reningen Falun",
+            "long": "IBF Falun",
+            "short": "Falun",
+            "code_site": "IBF",
+            "full_site": "Innebandyf\u00f6reningen Falun",
+            "long_site": "IBF Falun",
+            "short_site": "Falun"
+          },
+          "siteTeamDisplayName": "IBF Falun",
+          "siteTeamDisplayCode": "Falun",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 2,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 6,
+      "G": 9,
+      "GA": 3,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Nykvarn",
+        "teamId": 14584,
+        "teamInfo": {
+          "teamId": 14584,
+          "teamOwnerInstanceId": "nyk2_nyk",
+          "teamUuid": "5452-cd8111QiTe",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/nyk2_nyk.svg",
+          "teamNames": {
+            "code": "NYK",
+            "full": "Nykvarns Innebandy",
+            "long": "Nykvarns IBF",
+            "short": "Nykvarn",
+            "code_site": "NYK",
+            "full_site": "Nykvarns Innebandy",
+            "long_site": "Nykvarns IBF",
+            "short_site": "Nykvarn"
+          },
+          "siteTeamDisplayName": "Nykvarns IBF",
+          "siteTeamDisplayCode": "Nykvarn",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 3,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 4,
+      "G": 10,
+      "GA": 6,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Mullsj\u00f6",
+        "teamId": 4097,
+        "teamInfo": {
+          "teamId": 4097,
+          "teamOwnerInstanceId": "mul1_mul",
+          "teamUuid": "2cdf-32c4bo2vU",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/mul1_mul.svg",
+          "teamNames": {
+            "code": "MAIS",
+            "full": "Mullsj\u00f6 Allm\u00e4nna Innebandys\u00e4llskap ",
+            "long": "Mullsj\u00f6 AIS",
+            "short": "Mullsj\u00f6",
+            "code_site": "MAIS",
+            "full_site": "Mullsj\u00f6 Allm\u00e4nna Innebandys\u00e4llskap ",
+            "long_site": "Mullsj\u00f6 AIS",
+            "short_site": "Mullsj\u00f6"
+          },
+          "siteTeamDisplayName": "Mullsj\u00f6 AIS",
+          "siteTeamDisplayCode": "Mullsj\u00f6",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 4,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 4,
+      "G": 8,
+      "GA": 4,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Pixbo",
+        "teamId": 4081,
+        "teamInfo": {
+          "teamId": 4081,
+          "teamOwnerInstanceId": "pix1_pix",
+          "teamUuid": "8615-d492oYxBh",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/pix1_pix.svg",
+          "teamNames": {
+            "code": "PIX",
+            "full": "Pixbo Idrottsklubb",
+            "long": "Pixbo IBK",
+            "short": "Pixbo",
+            "code_site": "PIBK",
+            "full_site": "Pixbo Idrottsklubb",
+            "long_site": "Pixbo IBK",
+            "short_site": "Pixbo"
+          },
+          "siteTeamDisplayName": "Pixbo IBK",
+          "siteTeamDisplayCode": "Pixbo",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 5,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 3,
+      "G": 6,
+      "GA": 3,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Storvreta",
+        "teamId": 4079,
+        "teamInfo": {
+          "teamId": 4079,
+          "teamOwnerInstanceId": "sto1_sto",
+          "teamUuid": "1c79-bb6dyljzt",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/sto1_sto.svg",
+          "teamNames": {
+            "code": "SIBK",
+            "full": "Storvreta Innebandyklubb",
+            "long": "Storvreta IBK",
+            "short": "Storvreta",
+            "code_site": "SIBK",
+            "full_site": "Storvreta Innebandyklubb",
+            "long_site": "Storvreta IBK",
+            "short_site": "Storvreta"
+          },
+          "siteTeamDisplayName": "Storvreta IBK",
+          "siteTeamDisplayCode": "Storvreta",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 6,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 1,
+      "G": 7,
+      "GA": 6,
+      "OTW": 0,
+      "Points": 3,
+      "RegL": 0,
+      "RegT": 0,
+      "RegW": 1,
+      "info": {
+        "code": "Dalen",
+        "teamId": 4080,
+        "teamInfo": {
+          "teamId": 4080,
+          "teamOwnerInstanceId": "dal1_dal",
+          "teamUuid": "e40a-781fGVFZV",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/dal1_dal.svg",
+          "teamNames": {
+            "code": "DAL",
+            "full": "Innebandyklubben Dalen",
+            "long": "IBK Dalen",
+            "short": "Dalen",
+            "code_site": "DAL",
+            "full_site": "Innebandyklubben Dalen",
+            "long_site": "IBK Dalen",
+            "short_site": "Dalen"
+          },
+          "siteTeamDisplayName": "IBK Dalen",
+          "siteTeamDisplayCode": "Dalen",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 7,
+      "Team": 0,
+      "GP": 1,
+      "Diff": 1,
+      "G": 5,
+      "GA": 4,
+      "OTW": 1,
+      "Points": 2,
+      "RegL": 0,
+      "RegT": 1,
+      "RegW": 0,
+      "info": {
+        "code": "Kalmarsund",
+        "teamId": 4253,
+        "teamInfo": {
+          "teamId": 4253,
+          "teamOwnerInstanceId": "kal1_kal",
+          "teamUuid": "4b7a-cd81hZAEl",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/kal1_kal.svg",
+          "teamNames": {
+            "code": "FBC",
+            "full": "Floorball Club Kalmarsund",
+            "long": "FBC Kalmarsund",
+            "short": "Kalmarsund",
+            "codeSite": "FBC",
+            "fullSite": "Floorball Club Kalmarsund",
+            "longSite": "FBC Kalmarsund",
+            "shortSite": "Kalmarsund"
+          },
+          "siteTeamDisplayName": "FBC Kalmarsund",
+          "siteTeamDisplayCode": "Kalmarsund",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 8,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -1,
+      "G": 4,
+      "GA": 5,
+      "OTW": 0,
+      "Points": 1,
+      "RegL": 0,
+      "RegT": 1,
+      "RegW": 0,
+      "info": {
+        "code": "Link\u00f6ping",
+        "teamId": 4088,
+        "teamInfo": {
+          "teamId": 4088,
+          "teamOwnerInstanceId": "lin1_lin",
+          "teamUuid": "90c3-21d6xSlWc",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/lin1_lin.svg",
+          "teamNames": {
+            "code": "LIN",
+            "full": "Link\u00f6ping Innebandyklubb",
+            "long": "Link\u00f6ping IBK",
+            "short": "Link\u00f6ping",
+            "code_site": "LIN",
+            "full_site": "Link\u00f6ping Innebandyklubb",
+            "long_site": "Link\u00f6ping IBK",
+            "short_site": "Link\u00f6ping"
+          },
+          "siteTeamDisplayName": "Link\u00f6ping IBK",
+          "siteTeamDisplayCode": "Link\u00f6ping",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 9,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -1,
+      "G": 6,
+      "GA": 7,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "J\u00f6nk\u00f6ping",
+        "teamId": 4221,
+        "teamInfo": {
+          "teamId": 4221,
+          "teamOwnerInstanceId": "jik1_jik",
+          "teamUuid": "5b11-cd81tVTqP",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/jik1_jik.svg",
+          "teamNames": {
+            "code": "JIK",
+            "full": "J\u00f6nk\u00f6pings Innebandyklubb",
+            "long": "J\u00f6nk\u00f6pings IK",
+            "short": "J\u00f6nk\u00f6ping",
+            "code_site": "JIK",
+            "full_site": "J\u00f6nk\u00f6pings Innebandyklubb",
+            "long_site": "J\u00f6nk\u00f6pings IK",
+            "short_site": "J\u00f6nk\u00f6ping"
+          },
+          "siteTeamDisplayName": "J\u00f6nk\u00f6pings IK",
+          "siteTeamDisplayCode": "J\u00f6nk\u00f6ping",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 10,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -3,
+      "G": 3,
+      "GA": 6,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "Warberg",
+        "teamId": 4083,
+        "teamInfo": {
+          "teamId": 4083,
+          "teamOwnerInstanceId": "wic1_wic",
+          "teamUuid": "c437-b283ovsh6",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/wic1_wic.svg",
+          "teamNames": {
+            "code": "WIC",
+            "full": "Warberg Innebandyclub",
+            "long": "Warberg IC",
+            "short": "Warberg",
+            "code_site": "WIC",
+            "full_site": "Warberg Innebandyclub",
+            "long_site": "Warberg IC",
+            "short_site": "Warberg"
+          },
+          "siteTeamDisplayName": "Warberg IC",
+          "siteTeamDisplayCode": "Warberg",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 11,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -4,
+      "G": 6,
+      "GA": 10,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "Visby",
+        "teamId": 4620,
+        "teamInfo": {
+          "teamId": 4620,
+          "teamOwnerInstanceId": "vis2_vis",
+          "teamUuid": "c699-cd81gmNJ2",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/vis2_vis.svg",
+          "teamNames": {
+            "code": "VIS",
+            "full": "Visby IBK",
+            "long": "Visby IBK",
+            "short": "Visby",
+            "code_site": "VIS",
+            "full_site": "Visby IBK",
+            "long_site": "Visby IBK",
+            "short_site": "Visby"
+          },
+          "siteTeamDisplayName": "Visby IBK",
+          "siteTeamDisplayCode": "Visby",
+          "clubPageLink": "http://www.visbyibk.com"
+        }
+      }
+    },
+    {
+      "Rank": 12,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -4,
+      "G": 4,
+      "GA": 8,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "Lund",
+        "teamId": 4710,
+        "teamInfo": {
+          "teamId": 4710,
+          "teamOwnerInstanceId": "lund1_lund",
+          "teamUuid": "ddfe-cd81c3YP1",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/lund1_lund.svg",
+          "teamNames": {
+            "code": "LUND",
+            "full": "IBK Lund Elit",
+            "long": "IBK Lund",
+            "short": "Lund",
+            "code_site": "LUND Herr",
+            "full_site": "IBK Lund Elit Herr",
+            "long_site": "IBK Lund Herr",
+            "short_site": "Lund Herr"
+          },
+          "siteTeamDisplayName": "IBK Lund",
+          "siteTeamDisplayCode": "Lund",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 13,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -6,
+      "G": 3,
+      "GA": 9,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "AIK",
+        "teamId": 4050,
+        "teamInfo": {
+          "teamId": 4050,
+          "teamOwnerInstanceId": "aik2_aik",
+          "teamUuid": "f7c8-49eaNieTr",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/aik2_aik.svg",
+          "teamNames": {
+            "code": "AIK",
+            "full": "AIK IBF SSL Herr",
+            "long": "AIK IBF",
+            "short": "AIK"
+          },
+          "siteTeamDisplayName": "AIK IBF",
+          "siteTeamDisplayCode": "AIK",
+          "clubPageLink": null
+        }
+      }
+    },
+    {
+      "Rank": 14,
+      "Team": 0,
+      "GP": 1,
+      "Diff": -7,
+      "G": 5,
+      "GA": 12,
+      "OTW": 0,
+      "Points": 0,
+      "RegL": 1,
+      "RegT": 0,
+      "RegW": 0,
+      "info": {
+        "code": "Vipers",
+        "teamId": 4082,
+        "teamInfo": {
+          "teamId": 4082,
+          "teamOwnerInstanceId": "vax1_vax",
+          "teamUuid": "a10c-6f9evklgz",
+          "teamMedia": "https://sportality.cdn.s8y.se/team-logos/vax1_vax.svg",
+          "teamNames": {
+            "code": "VXO",
+            "full": "V\u00e4xj\u00f6 Vipers IBK",
+            "long": "V\u00e4xj\u00f6 Vipers",
+            "short": "Vipers",
+            "codeSite": "VXO",
+            "fullSite": "V\u00e4xj\u00f6 Vipers IBK",
+            "longSite": "V\u00e4xj\u00f6 Vipers",
+            "shortSite": "Vipers"
+          },
+          "siteTeamDisplayName": "V\u00e4xj\u00f6 Vipers",
+          "siteTeamDisplayCode": "Vipers",
+          "clubPageLink": null
+        }
+      }
+    }
+  ],
+  "provider": "ibis"
+}

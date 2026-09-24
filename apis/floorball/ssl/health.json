@@ -1,0 +1,192 @@
+{
+  "league": "ssl",
+  "name": "SSL Herr",
+  "baseUrl": "https://www.ssl.se/api",
+  "minDelayMs": 500,
+  "checks": [
+    {
+      "name": "sports-v2/season-series-game-types-filter",
+      "path": "/sports-v2/season-series-game-types-filter",
+      "sample": "season-series-game-types-filter.json",
+      "keys": [
+        "series[].uuid",
+        "series[].code",
+        "season[].uuid",
+        "gameType[].uuid",
+        "defaultSsgtFilter.season",
+        "defaultSsgtFilter.series",
+        "defaultSsgtFilter.gameType",
+        "ssgtUuid"
+      ]
+    },
+    {
+      "name": "gameday/gameheader",
+      "path": "/gameday/gameheader",
+      "sample": "gameheader.json",
+      "depth": 0,
+      "note": "Object keyed by the dates in its rolling window"
+    },
+    {
+      "name": "sports-v2/game-schedule — SSL Herr 2026/27",
+      "path": "/sports-v2/game-schedule?seasonUuid=vt4kt77vxk&seriesUuid=qRl-8B5kOFjKL&gameTypeUuid=qQ9-af37Ti40B&gamePlace=all&played=all",
+      "sample": "game-schedule.json",
+      "keys": [
+        "gameInfo[].uuid",
+        "gameInfo[].rawStartDateTime",
+        "gameInfo[].state",
+        "gameInfo[].homeTeamInfo.uuid",
+        "gameInfo[].awayTeamInfo.uuid",
+        "teamList[].uuid",
+        "ssgtUuid"
+      ]
+    },
+    {
+      "name": "sports-v2/game-info/{game} — pre",
+      "path": "/sports-v2/game-info/l3vlqyge1x",
+      "sample": "game-info.pre.json",
+      "keys": [
+        "gameInfo.gameUuid",
+        "gameInfo.state",
+        "gameInfo.startDateTime",
+        "homeTeam.uuid",
+        "awayTeam.uuid",
+        "ssgtUuid"
+      ]
+    },
+    {
+      "name": "sports-v2/game-info/{game} — final",
+      "path": "/sports-v2/game-info/msmb27in1v",
+      "sample": "game-info.final.json",
+      "keys": [
+        "gameInfo.gameUuid",
+        "gameInfo.state",
+        "gameInfo.overtime",
+        "gameInfo.shootout",
+        "homeTeam.score",
+        "awayTeam.score"
+      ]
+    },
+    {
+      "name": "statistics-v2/league-standings",
+      "path": "/statistics-v2/league-standings?ssgtUuid=qqing3frfp",
+      "sample": "league-standings.json",
+      "keys": [
+        "dataColumn[].key",
+        "groupings[].description",
+        "leagueStandings[].Rank",
+        "leagueStandings[].GP",
+        "leagueStandings[].RegW",
+        "leagueStandings[].RegT",
+        "leagueStandings[].RegL",
+        "leagueStandings[].OTW",
+        "leagueStandings[].Points",
+        "leagueStandings[].info.teamInfo.teamUuid"
+      ]
+    },
+    {
+      "name": "sports-v2/all-teams/{ssgt}",
+      "path": "/sports-v2/all-teams/qqing3frfp",
+      "sample": "all-teams.json",
+      "keys": [
+        "[].uuid",
+        "[].teamNames.code",
+        "[].teamNames.long",
+        "[].logo"
+      ]
+    },
+    {
+      "name": "sports-v2/teams/{team}",
+      "path": "/sports-v2/teams/2cdf-32c4bo2vU",
+      "sample": "team.json",
+      "keys": [
+        "uuid",
+        "names.code",
+        "names.long",
+        "icon"
+      ]
+    },
+    {
+      "name": "sports-v2/athletes/by-team-uuid/{team}",
+      "path": "/sports-v2/athletes/by-team-uuid/2cdf-32c4bo2vU",
+      "sample": "athletes-by-team.json",
+      "keys": [
+        "[].positionCode",
+        "[].players[].uuid",
+        "[].players[].fullName",
+        "[].players[].jerseyNumber"
+      ]
+    },
+    {
+      "name": "statistics-v2/athlete/profile-page",
+      "path": "/statistics-v2/athlete/profile-page?playerUuid=ihdjejtzeo&masterSiteInstanceId=",
+      "sample": "athlete-profile-page.json",
+      "keys": [
+        "uuid",
+        "fullName",
+        "positionCode",
+        "team.uuid",
+        "statisticsProvider"
+      ]
+    },
+    {
+      "name": "gameday/game-info/{game} — final statistics",
+      "path": "/gameday/game-info/msmb27in1v",
+      "sample": "gameday-game-info.final.json",
+      "keys": [
+        "teamHead2Head[].homeTeam.center.type",
+        "teamHead2Head[].awayTeam.center.value",
+        "teamPeriod.stats[]",
+        "bestScorers[]",
+        "statisticsProvider"
+      ]
+    },
+    {
+      "name": "gameday/post-game-data/team-stats/{game}",
+      "path": "/gameday/post-game-data/team-stats/msmb27in1v?ssgtUuid=qqing3frfp&homeTeamUuid=2cdf-32c4bo2vU&awayTeamUuid=c699-cd81gmNJ2",
+      "sample": "post-game-team-stats.final.json",
+      "keys": [
+        "homeTeam.name",
+        "awayTeam.name",
+        "stats[].homeTeam.center.type",
+        "stats[].awayTeam.center.value",
+        "provider"
+      ]
+    },
+    {
+      "name": "gameday/post-game-data/promo-bar-stats/{game}/{home}/{away}",
+      "path": "/gameday/post-game-data/promo-bar-stats/msmb27in1v/2cdf-32c4bo2vU/c699-cd81gmNJ2?ssgtUuid=qqing3frfp",
+      "sample": "promo-bar-stats.final.json",
+      "keys": [
+        "statistics[].caption",
+        "statistics[].homeTeamValue",
+        "statistics[].awayTeamValue",
+        "statisticsProvider"
+      ]
+    },
+    {
+      "name": "statistics-v2/game-center/team-h2h",
+      "path": "/statistics-v2/game-center/team-h2h?ssgtUuid=qqing3frfp&homeTeamUuid=5b11-cd81tVTqP&awayTeamUuid=c437-b283ovsh6",
+      "sample": "team-h2h.pre.json",
+      "keys": [
+        "homeTeam.name",
+        "awayTeam.name",
+        "stats[].homeTeam.center.type",
+        "stats[].awayTeam.center.value",
+        "provider"
+      ]
+    },
+    {
+      "name": "statistics-v2/game-form",
+      "path": "/statistics-v2/game-form?ssgtUuid=qqing3frfp&homeTeamUuid=5b11-cd81tVTqP&awayTeamUuid=c437-b283ovsh6",
+      "sample": "game-form.pre.json",
+      "keys": [
+        "lastMeetings[].uuid",
+        "homeTeam.playedGames[].uuid",
+        "homeTeam.stats.statisticsProvider",
+        "homeTeam.standing",
+        "awayTeam.playedGames[].uuid",
+        "awayTeam.standing"
+      ]
+    }
+  ]
+}

@@ -344,6 +344,7 @@ private fun recordFor(row: StandingsRow, sport: Sport): String = when (sport) {
 private fun standingsLegend(sport: Sport): String = when (sport) {
     Sport.FOOTBALL -> "W wins · D draws · L losses · PTS points"
     Sport.HOCKEY -> "W wins · L losses · OTL overtime/shootout losses · PTS points"
+    Sport.FLOORBALL -> "W wins · L losses · OTL overtime/penalty-shot losses · PTS points"
     Sport.BASEBALL -> "W wins · L losses · PCT win percentage · GB games behind"
     Sport.MOTORSPORT, Sport.MMA -> ""
 }
@@ -454,7 +455,7 @@ private fun TeamGameRow(game: Game, team: TeamRef, sport: Sport, competition: St
 private fun DivisionTable(group: StandingsGroup, selected: TeamRef, sport: Sport, onOpenTeam: (TeamRef) -> Unit) {
     val columns = when (sport) {
         Sport.FOOTBALL -> listOf("W", "D", "L", "PTS")
-        Sport.HOCKEY -> listOf("W", "L", "OTL", "PTS")
+        Sport.HOCKEY, Sport.FLOORBALL -> listOf("W", "L", "OTL", "PTS")
         Sport.BASEBALL -> listOf("W", "L", "PCT", "GB")
         Sport.MOTORSPORT, Sport.MMA -> emptyList()
     }
@@ -475,7 +476,7 @@ private fun DivisionTable(group: StandingsGroup, selected: TeamRef, sport: Sport
             Text(row.team.abbreviation ?: row.team.name, style = MaterialTheme.typography.labelMedium, fontWeight = if (isSelected) FontWeight.Bold else null, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f).padding(start = 6.dp))
             val values = when (sport) {
                 Sport.FOOTBALL -> listOf(row.wins.toString(), row.draws?.toString() ?: "–", row.losses.toString(), row.points.toString())
-                Sport.HOCKEY -> listOf(row.wins.toString(), row.losses.toString(), row.otherLosses?.toString() ?: "–", row.points.toString())
+                Sport.HOCKEY, Sport.FLOORBALL -> listOf(row.wins.toString(), row.losses.toString(), row.otherLosses?.toString() ?: "–", row.points.toString())
                 Sport.BASEBALL -> listOf(row.wins.toString(), row.losses.toString(), row.extra["pct"] ?: "–", row.extra["gamesBack"] ?: "–")
                 Sport.MOTORSPORT, Sport.MMA -> emptyList()
             }

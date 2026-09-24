@@ -104,7 +104,7 @@ private fun GameEvent.timeLabel(sport: Sport): String {
     time.label?.let { return if (sport == Sport.MMA) "${time.period.label} $it" else it }
     return when (sport) {
         Sport.FOOTBALL -> time.elapsed?.let { "${(footballOffset(time.period.number) + it.inWholeMinutes)}'" } ?: time.period.label
-        Sport.HOCKEY -> {
+        Sport.HOCKEY, Sport.FLOORBALL -> {
             val t = time.elapsed ?: time.remaining ?: return time.period.label
             val s = t.inWholeSeconds
             "%d:%02d".format(s / 60, s % 60)
