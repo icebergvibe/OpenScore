@@ -8,6 +8,7 @@ import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.JsonObject
 import org.openscore.net.FetchResponse
 import org.openscore.net.Fetcher
+import org.openscore.net.QueryFetcher
 import java.io.File
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.TimeSource
@@ -54,6 +55,7 @@ public class Runner(
         val base = CheckResult(file.league, check.label, null, Status.SKIP, note = check.note)
         val url: String
         val headers: Map<String, String>
+        val body: String?
         try {
             url = when {
                 check.url != null -> placeholders.resolve(check.url)
@@ -61,6 +63,7 @@ public class Runner(
                 else -> file.baseUrl + placeholders.resolve(check.path!!)
             }
             headers = (file.headers + check.headers).mapValues { placeholders.resolve(it.value) }
+            body = check.body?.let { placeholders.resolve(it) }
         } catch (e: UnresolvedPlaceholder) {
             return base.copy(message = "skipped: ${e.message}")
         }
@@ -68,7 +71,11 @@ public class Runner(
         val mark = TimeSource.Monotonic.markNow()
         val response = try {
             // maxAge 0: the whole point is a fresh request.
-            fetcher.get(url, headers, maxAge = 0.seconds)
+            when {
+                body == null -> fetcher.get(url, headers, maxAge = 0.seconds)
+                fetcher is QueryFetcher -> fetcher.query(url, body, headers = headers, maxAge = 0.seconds)
+                else -> return base.copy(url = url, message = "skipped: this fetcher cannot POST")
+            }
         } catch (e: Exception) {
             return base.copy(url = url, status = Status.FAIL, millis = mark.elapsedNow().inWholeMilliseconds, message = "request failed: ${e::class.simpleName}: ${e.message}")
         }

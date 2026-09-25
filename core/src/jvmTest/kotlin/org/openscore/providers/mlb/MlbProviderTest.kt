@@ -1,5 +1,6 @@
 package org.openscore.providers.mlb
 
+import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.LocalDate
 import org.openscore.model.GameEnding
@@ -13,6 +14,8 @@ import org.openscore.model.baseball.BaseballEventType
 import org.openscore.model.baseball.BaseballSituation
 import org.openscore.model.baseball.InningHalf
 import org.openscore.model.baseball.PlateAppearanceDetails
+import org.openscore.net.FetchResponse
+import org.openscore.net.Fetcher
 import org.openscore.provider.Capability
 import org.openscore.provider.NotFoundException
 import org.openscore.testing.MlbSamples
@@ -24,6 +27,7 @@ import kotlin.test.assertIs
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
+import kotlin.time.Duration
 
 /** Drives [MlbProvider] end-to-end against the captured samples. */
 class MlbProviderTest {
@@ -31,6 +35,21 @@ class MlbProviderTest {
     private val fetcher = MlbSamples.register(SampleFetcher())
     private val mlb = MlbProvider(fetcher)
     private val live = MlbProvider(MlbSamples.registerLive(SampleFetcher()))
+
+    /** A live view opened on a flaky connection must not end on its very first read. */
+    @Test
+    fun aFirstReadThatFailsIsRetriedRatherThanEndingTheLiveFlow() = runTest {
+        val samples = MlbSamples.register(SampleFetcher())
+        var failures = 1
+        val flaky = object : Fetcher {
+            override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse {
+                if (url.endsWith("/feed/live") && failures-- > 0) return FetchResponse(url, 503, "text/plain", "busy")
+                return samples.get(url, headers, maxAge)
+            }
+        }
+        val updates = MlbProvider(flaky).live(MlbSamples.FINAL_GAME_ID).toList()
+        assertEquals(listOf(GameState.FINAL), updates.map { it.state })
+    }
 
     @Test
     fun scheduledGamesTheDayBefore() = runTest {

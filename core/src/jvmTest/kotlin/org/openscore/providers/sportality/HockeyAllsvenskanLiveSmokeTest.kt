@@ -9,8 +9,9 @@ import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 
 /**
- * Talks to the real site: the league table, a club's identity, its season and its table row, and
- * a player's profile. Off by default;
+ * Talks to the real site: the league table, a club's identity, its season and its table row, a
+ * player's profile, a club's squad and a finished game's play-by-play - the last three through
+ * the read-only POST transport, which is the only way to any of them. Off by default;
  * `-Dopenscore.live=true --tests '*HockeyAllsvenskanLiveSmokeTest*'`.
  */
 class HockeyAllsvenskanLiveSmokeTest {
@@ -53,6 +54,31 @@ class HockeyAllsvenskanLiveSmokeTest {
             val stats = ha.teamStats(leader.team.id, "2026")
             println("stats: ${stats.groups.map { g -> "${g.label}: " + g.stats.joinToString(" ") { "${it.label} ${it.value}" } }} in ${ms(t)}")
             assertTrue(stats.groups.isNotEmpty())
+
+            // The squad is a POST, keyed by the CMS spelling the snapshot carries.
+            t = System.currentTimeMillis()
+            val squad = ha.roster(leader.team.id)
+            println("squad ${team.name}: ${squad.size} players in ${ms(t)}")
+            squad.take(3).forEach { println("  #${it.ref.jerseyNumber} ${it.name} ${it.ref.position} ${it.nationality} ${it.heightCm} cm") }
+            assertTrue(squad.size in 20..40, "a squad runs 23 to 30")
+            assertTrue(squad.all { it.teamId == leader.team.id }, "the core's id, not the CMS spelling")
+            assertTrue(squad.count { it.ref.position == "GK" } >= 2)
+
+            // The play-by-play, also a POST, for the most recent game that has actually finished.
+            val played = season.filter { it.state.isFinished }
+            if (played.isNotEmpty()) {
+                val last = played.maxBy { it.startTime }
+                t = System.currentTimeMillis()
+                val events = ha.events(last.id)
+                val byType = events.groupingBy { it.type.key }.eachCount()
+                println("events ${last.id} (${last.home.id} ${last.score} ${last.away.id}): ${events.size} in ${ms(t)} $byType")
+                assertTrue(events.isNotEmpty(), "a finished game has a play-by-play")
+                val goals = events.filter { it.type.isGoal }
+                goals.forEach { println("  P${it.time.period.number} ${it.time.label} ${it.team?.id} ${it.players.firstOrNull()?.name} ${it.score}") }
+                assertEquals(last.score, goals.lastOrNull()?.score, "the last goal's running score is the final score")
+            } else {
+                println("events: no finished game for ${team.name} yet")
+            }
 
             // A profile is keyed by its page slug; a lineup entry carries one for every dressed player.
             t = System.currentTimeMillis()

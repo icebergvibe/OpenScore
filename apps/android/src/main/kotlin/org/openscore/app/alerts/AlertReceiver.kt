@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -22,6 +23,12 @@ private fun BroadcastReceiver.work(app: Context, block: suspend () -> Unit) {
             // an unarmed chain is dead until the app is next opened; so the queue as it stands
             // is re-armed from here.
             if (withTimeoutOrNull(WORK_TIMEOUT_MS) { block() } == null) AlertScheduler.rearm(app)
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Exception) {
+            // Uncaught, this would reach the thread's handler and take the process down, with
+            // the chain unarmed behind it.
+            AlertScheduler.recover(app, e)
         } finally {
             result.finish()
         }

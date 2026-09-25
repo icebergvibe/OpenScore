@@ -31,6 +31,16 @@ Prefer honesty; fall back to a browser UA only when there is no other way.
 
 Only `GET` requests. Never call anything that looks like it mutates state.
 
+Some sites put a *read* behind `POST`: a route that answers with exactly what an anonymous
+visitor sees, whose parameters are too many or too structured for a query string.
+HockeyAllsvenskan serves its squads, its league table, its per-club stat leaderboards and its
+play-by-play this way, and answers `405` to a `GET` on any of them. Those are reachable through
+`QueryFetcher`, which is a separate interface from `Fetcher` so that "read-only by construction"
+stays true of the transport every other provider uses. The bar for using it: the route must
+answer a question, there must be no `GET` that answers the same one, and the body must carry
+nothing but the question. Anything that creates, changes or deletes is still out, whatever
+method it wants.
+
 ## Budget every read
 
 - A list screen uses one compact date or season response. Do not fan out per fixture

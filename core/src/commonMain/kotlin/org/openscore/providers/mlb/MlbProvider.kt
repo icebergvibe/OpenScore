@@ -80,8 +80,14 @@ public class MlbProvider(
      */
     override fun live(gameId: String, interval: Duration): Flow<Game> = flow {
         val budget = LivePollBudget(maxOf(interval, LIVE_MAX_AGE))
-        var document = feedDocument(gameId)
-        var current = decodeFeed(document, gameId)
+        // The opening document is read through the budget like every tick after it. Unguarded,
+        // one failed first read ended the flow before it had emitted anything.
+        var opening: Pair<JsonElement, MlbLiveFeed>? = null
+        while (opening == null && budget.open) {
+            opening = budget.read { feedDocument(gameId).let { it to decodeFeed(it, gameId) } }.getOrNull()
+            if (opening == null) budget.wait()
+        }
+        var (document, current) = opening ?: return@flow
         var game = MlbMapper.game(current)
         emit(game)
 

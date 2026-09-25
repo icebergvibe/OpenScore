@@ -368,10 +368,12 @@ public class Ligue1Mapper(private val leagueId: String) {
                 time = GameTime(period, Duration.ZERO, label = FootballPeriods.label(FootballPeriods.offsetMinutes(period))), sortOrder = -1,
                 description = "Start of ${period.label}",
             )
-            if (endedAt != null) withScore += GameEvent(
+            // Both ends, not only this one: a half published with an end and no start would
+            // otherwise fail the whole match document on a null.
+            if (startedAt != null && endedAt != null) withScore += GameEvent(
                 id = "${period.label}-end", type = if (period.number == 2 && m.period == "fullTime" && d?.extraFirstHalfStartedAt == null) FootballEventType.GAME_END else FootballEventType.PERIOD_END,
                 rawType = "period",
-                time = GameTime(period, Instant.parse(endedAt) - Instant.parse(startedAt!!), label = null), sortOrder = Int.MAX_VALUE,
+                time = GameTime(period, Instant.parse(endedAt) - Instant.parse(startedAt), label = null), sortOrder = Int.MAX_VALUE,
                 description = "End of ${period.label}",
             )
         }

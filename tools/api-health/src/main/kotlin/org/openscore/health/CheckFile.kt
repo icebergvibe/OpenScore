@@ -41,6 +41,13 @@ public data class Check(
     val url: String? = null,
     /** GraphQL query sent as `?query=` on the base URL; the response must carry `data` and no `errors`. */
     val query: String? = null,
+    /**
+     * A JSON request body, which makes this check a `POST` through
+     * [org.openscore.net.QueryFetcher] rather than a `GET`. Only for a route that answers a
+     * *read* this way and has no `GET` equivalent - the tool never calls anything that mutates,
+     * and docs/principles.md says why. Placeholders are resolved in it as they are in [path].
+     */
+    val body: String? = null,
     val headers: Map<String, String> = emptyMap(),
     /** Accepted HTTP status codes. */
     val status: List<Int> = listOf(200),
@@ -59,6 +66,7 @@ public data class Check(
 ) {
     init {
         require(listOfNotNull(path, url, query).size == 1) { "check '${name ?: path ?: url ?: query}' needs exactly one of path, url, query" }
+        require(body == null || query == null) { "check '${name ?: path ?: url}' cannot be both a GraphQL query and a POST body" }
         require(format in setOf("json", "xml", "text")) { "format must be json, xml or text" }
     }
 

@@ -39,13 +39,18 @@ class OpenScoreApp : Application(), SingletonImageLoader.Factory {
         val engine = OkHttp.create {
             config { cache(Cache(File(cacheDir, "openscore-http"), HTTP_CACHE_BYTES)) }
         }
-        KtorFetcher(engine = engine, userAgent = USER_AGENT, observer = fetchMetrics)
+        KtorFetcher(engine = engine, userAgent = userAgent(packageManager.getPackageInfo(packageName, 0).versionName), observer = fetchMetrics)
     }
     /** Durable, normalized: the two season snapshots (HockeyAllsvenskan, the UFC's cards) and every league's day listings as last read. */
     val scoresCache: RoomScoresCache by lazy { RoomScoresCache.create(this) }
     val openScore: OpenScore by lazy { OpenScore.default(fetcher, seasonScheduleStore = scoresCache, dayListingStore = scoresCache) }
     val repository: ScoresRepository by lazy { ScoresRepository(openScore, scoresCache) }
-    val favorites: FavoritesStore by lazy { FavoritesStore(this) }
+    /**
+     * Alert opt-ins are keyed on favourites, so a favourite the crosswalk rekeys on load takes its
+     * opt-in along before anything can read either: the scheduler's `retain` would otherwise drop
+     * the old key as unfollowed.
+     */
+    val favorites: FavoritesStore by lazy { FavoritesStore(this).also { alerts.rename(it.renamed) } }
     val settings: SettingsStore by lazy { SettingsStore(this) }
     val alerts: AlertsStore by lazy { AlertsStore(this) }
 
@@ -66,7 +71,19 @@ class OpenScoreApp : Application(), SingletonImageLoader.Factory {
             .build()
 
     companion object {
-        const val USER_AGENT = "OpenScore-Android/0.1 (+https://github.com/icebergvibe/OpenScore)"
+        /**
+         * What every league sees this app as: `OpenScore-Android/0.3 (+…)` for 0.3.5. Taken from
+         * the installed version rather than written here, where it stood at 0.1 through three
+         * releases; major.minor only, as the core's own `OpenScore/0.3` has always moved, so a
+         * patch release does not show upstreams a new client. A version that does not start
+         * with two numbers gives the name without one rather than a wrong one.
+         */
+        fun userAgent(versionName: String?): String {
+            val version = versionName?.let { MAJOR_MINOR.find(it)?.value }
+            return "OpenScore-Android${version?.let { "/$it" }.orEmpty()} (+https://github.com/icebergvibe/OpenScore)"
+        }
+
+        private val MAJOR_MINOR = Regex("^[0-9]+\\.[0-9]+")
         private const val HTTP_CACHE_BYTES: Long = 32L * 1024 * 1024
         private const val IMAGE_CACHE_BYTES: Long = 32L * 1024 * 1024
 

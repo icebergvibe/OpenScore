@@ -1,0 +1,1875 @@
+{
+  "game_info": {
+    "game_finished": true,
+    "game_finished_at": "2026-09-18T19:26:36.398505Z",
+    "decided_in": "FT",
+    "game_time": {}
+  },
+  "game_events": [
+    {
+      "Period": "1",
+      "period_label": "Period 1",
+      "StartTime": "2026-09-18T17:03:37.149583Z",
+      "EndTime": "2026-09-18T17:37:09.936116Z",
+      "Finisehd": true,
+      "Events": [
+        {
+          "type": "GoalkeeperEvent",
+          "time": "0",
+          "isEntering": true,
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "920",
+            "firstName": "Jhonas",
+            "familyName": "Enroth",
+            "jerseyNumber": "88"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "0",
+          "isEntering": true,
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3666",
+            "firstName": "Jakob",
+            "familyName": "Hellsten",
+            "jerseyNumber": "30"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "44",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7028",
+            "firstName": "Bryan",
+            "familyName": "Yoon",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "98",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "123",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7080",
+            "firstName": "Max",
+            "familyName": "Eriksson",
+            "jerseyNumber": "63"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "139",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6721",
+            "firstName": "Sid",
+            "familyName": "Boije",
+            "jerseyNumber": "45"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "171",
+          "eventDescription": "frame hit",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "3697",
+            "firstName": "Samuel",
+            "familyName": "Jonsson",
+            "jerseyNumber": "8"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "188",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4382",
+            "firstName": "Oskar",
+            "familyName": "Magnusson",
+            "jerseyNumber": "58"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "194",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7028",
+            "firstName": "Bryan",
+            "familyName": "Yoon",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "293",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7026",
+            "firstName": "Milan",
+            "familyName": "Sundström",
+            "jerseyNumber": "24"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "298",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6323",
+            "firstName": "Oskar",
+            "familyName": "Wahlberg",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "316",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "316",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "387",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "393",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4772",
+            "firstName": "Oliver",
+            "familyName": "Johansson",
+            "jerseyNumber": "78"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "415",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2778",
+            "firstName": "Oscar",
+            "familyName": "Nord",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "444",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6323",
+            "firstName": "Oskar",
+            "familyName": "Wahlberg",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "451",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4048",
+            "firstName": "August",
+            "familyName": "Berg",
+            "jerseyNumber": "5"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "499",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6162",
+            "firstName": "Elias",
+            "familyName": "Rosén",
+            "jerseyNumber": "28"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "543",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6323",
+            "firstName": "Oskar",
+            "familyName": "Wahlberg",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "557",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "634",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "647",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "657",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "716",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6131",
+            "firstName": "Olli",
+            "familyName": "Vainio",
+            "jerseyNumber": "6"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "734",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4048",
+            "firstName": "August",
+            "familyName": "Berg",
+            "jerseyNumber": "5"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "743",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4048",
+            "firstName": "August",
+            "familyName": "Berg",
+            "jerseyNumber": "5"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "819",
+          "eventDescription": "2 min, Tripping",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3819",
+            "firstName": "Marcus",
+            "familyName": "Karlberg",
+            "jerseyNumber": "7"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "896",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "941",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "969",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7026",
+            "firstName": "Milan",
+            "familyName": "Sundström",
+            "jerseyNumber": "24"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1017",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2387",
+            "firstName": "Erik",
+            "familyName": "Jinesjö Karlsson",
+            "jerseyNumber": "19"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1057",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "1160",
+          "eventDescription": "2 min, Holding the stick",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6131",
+            "firstName": "Olli",
+            "familyName": "Vainio",
+            "jerseyNumber": "6"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1166",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6806",
+            "firstName": "Elton",
+            "familyName": "Hermansson",
+            "jerseyNumber": "17"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "1186",
+          "eventDescription": "2 min, Interference",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6796",
+            "firstName": "Arvid",
+            "familyName": "Caderoth",
+            "jerseyNumber": "20"
+          }
+        }
+      ]
+    },
+    {
+      "Period": "2",
+      "period_label": "Period 2",
+      "StartTime": "2026-09-18T17:55:49.521132Z",
+      "EndTime": "2026-09-18T18:33:18.929837Z",
+      "Finisehd": true,
+      "Events": [
+        {
+          "type": "Shot",
+          "time": "36",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7100",
+            "firstName": "Jackson",
+            "familyName": "Jutting",
+            "jerseyNumber": "10"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "46",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4589",
+            "firstName": "Daniel",
+            "familyName": "Ljungman",
+            "jerseyNumber": "29"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "55",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "3719",
+            "firstName": "Anders",
+            "familyName": "Grönlund",
+            "jerseyNumber": "15"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "86",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "160",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3563",
+            "firstName": "Jacob",
+            "familyName": "Bjerselius",
+            "jerseyNumber": "15"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "165",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3564",
+            "firstName": "Victor",
+            "familyName": "Berglund",
+            "jerseyNumber": "51"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "214",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2288",
+            "firstName": "Christopher",
+            "familyName": "Bengtsson",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "228",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2375",
+            "firstName": "Emil",
+            "familyName": "Larsson",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "237",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7080",
+            "firstName": "Max",
+            "familyName": "Eriksson",
+            "jerseyNumber": "63"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "269",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6613",
+            "firstName": "Hugo",
+            "familyName": "Hallin",
+            "jerseyNumber": "34"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "292",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4388",
+            "firstName": "Tyler",
+            "familyName": "Vesel",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "302",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4388",
+            "firstName": "Tyler",
+            "familyName": "Vesel",
+            "jerseyNumber": "23"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "326",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7026",
+            "firstName": "Milan",
+            "familyName": "Sundström",
+            "jerseyNumber": "24"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "330",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "7026",
+            "firstName": "Milan",
+            "familyName": "Sundström",
+            "jerseyNumber": "24"
+          }
+        },
+        {
+          "type": "Goal",
+          "time": "345",
+          "eventDescription": "EQ",
+          "runningScore": "0-1",
+          "scorerSeasonGoals": "1",
+          "isPenaltyShot": "false",
+          "Assist1": {
+            "name": "Victor Berglund",
+            "jerseyToday": "51",
+            "seasonAssists": "1"
+          },
+          "Assist2": {
+            "name": "Elias Rosén",
+            "jerseyToday": "28",
+            "seasonAssists": "1"
+          },
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4043",
+            "firstName": "Carl",
+            "familyName": "Mattsson",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "373",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3563",
+            "firstName": "Jacob",
+            "familyName": "Bjerselius",
+            "jerseyNumber": "15"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "387",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2787",
+            "firstName": "Sebastian",
+            "familyName": "Ohlsson",
+            "jerseyNumber": "36"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "397",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "425",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6806",
+            "firstName": "Elton",
+            "familyName": "Hermansson",
+            "jerseyNumber": "17"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "431",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4043",
+            "firstName": "Carl",
+            "familyName": "Mattsson",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "460",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5860",
+            "firstName": "Christoffer",
+            "familyName": "Björk",
+            "jerseyNumber": "27"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "472",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "3697",
+            "firstName": "Samuel",
+            "familyName": "Jonsson",
+            "jerseyNumber": "8"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "488",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "3697",
+            "firstName": "Samuel",
+            "familyName": "Jonsson",
+            "jerseyNumber": "8"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "493",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2288",
+            "firstName": "Christopher",
+            "familyName": "Bengtsson",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "596",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6131",
+            "firstName": "Olli",
+            "familyName": "Vainio",
+            "jerseyNumber": "6"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "628",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "631",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6131",
+            "firstName": "Olli",
+            "familyName": "Vainio",
+            "jerseyNumber": "6"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "634",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "641",
+          "eventDescription": "2 min, Tripping",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6162",
+            "firstName": "Elias",
+            "familyName": "Rosén",
+            "jerseyNumber": "28"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "697",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3563",
+            "firstName": "Jacob",
+            "familyName": "Bjerselius",
+            "jerseyNumber": "15"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "754",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "7058",
+            "firstName": "Ryder",
+            "familyName": "Rolston",
+            "jerseyNumber": "71"
+          }
+        },
+        {
+          "type": "Goal",
+          "time": "787",
+          "eventDescription": "EQ",
+          "runningScore": "0-2",
+          "scorerSeasonGoals": "1",
+          "isPenaltyShot": "false",
+          "Assist1": {
+            "name": "Emil Larsson",
+            "jerseyToday": "26",
+            "seasonAssists": "1"
+          },
+          "Assist2": {
+            "name": "Hugo Hallin",
+            "jerseyToday": "34",
+            "seasonAssists": "1"
+          },
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2387",
+            "firstName": "Erik",
+            "familyName": "Jinesjö Karlsson",
+            "jerseyNumber": "19"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "829",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2375",
+            "firstName": "Emil",
+            "familyName": "Larsson",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "898",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6538",
+            "firstName": "Borna",
+            "familyName": "Kopac",
+            "jerseyNumber": "13"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "952",
+          "eventDescription": "on target",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3565",
+            "firstName": "Oscar",
+            "familyName": "Pettersson",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "969",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4949",
+            "firstName": "Viktor",
+            "familyName": "Lennartsson",
+            "jerseyNumber": "72"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "969",
+          "eventDescription": "2 min, Roughing",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4949",
+            "firstName": "Viktor",
+            "familyName": "Lennartsson",
+            "jerseyNumber": "72"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "969",
+          "eventDescription": "2 min, Roughing",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6162",
+            "firstName": "Elias",
+            "familyName": "Rosén",
+            "jerseyNumber": "28"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "990",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "4048",
+            "firstName": "August",
+            "familyName": "Berg",
+            "jerseyNumber": "5"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1006",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4589",
+            "firstName": "Daniel",
+            "familyName": "Ljungman",
+            "jerseyNumber": "29"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1079",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4772",
+            "firstName": "Oliver",
+            "familyName": "Johansson",
+            "jerseyNumber": "78"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1130",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6538",
+            "firstName": "Borna",
+            "familyName": "Kopac",
+            "jerseyNumber": "13"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1136",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6131",
+            "firstName": "Olli",
+            "familyName": "Vainio",
+            "jerseyNumber": "6"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1197",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2387",
+            "firstName": "Erik",
+            "familyName": "Jinesjö Karlsson",
+            "jerseyNumber": "19"
+          }
+        }
+      ]
+    },
+    {
+      "Period": "3",
+      "period_label": "Period 3",
+      "StartTime": "2026-09-18T18:51:59.617037Z",
+      "EndTime": "2026-09-18T19:26:36.398505Z",
+      "Finisehd": true,
+      "Events": [
+        {
+          "type": "Shot",
+          "time": "62",
+          "eventDescription": "frame hit",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "74",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2778",
+            "firstName": "Oscar",
+            "familyName": "Nord",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "128",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "3004",
+            "firstName": "William",
+            "familyName": "Pethrus",
+            "jerseyNumber": "33"
+          }
+        },
+        {
+          "type": "Goal",
+          "time": "148",
+          "eventDescription": "EQ",
+          "runningScore": "1-2",
+          "scorerSeasonGoals": "1",
+          "isPenaltyShot": "false",
+          "Assist1": {
+            "name": "Anders Grönlund",
+            "jerseyToday": "15",
+            "seasonAssists": "1"
+          },
+          "Assist2": {
+            "name": "Sid Boije",
+            "jerseyToday": "45",
+            "seasonAssists": "1"
+          },
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2288",
+            "firstName": "Christopher",
+            "familyName": "Bengtsson",
+            "jerseyNumber": "25"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "195",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "218",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "266",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "339",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6806",
+            "firstName": "Elton",
+            "familyName": "Hermansson",
+            "jerseyNumber": "17"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "380",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3564",
+            "firstName": "Victor",
+            "familyName": "Berglund",
+            "jerseyNumber": "51"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "410",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4949",
+            "firstName": "Viktor",
+            "familyName": "Lennartsson",
+            "jerseyNumber": "72"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "473",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Penalty",
+          "time": "483",
+          "eventDescription": "Team Penalty 2 min, Too many players on the ice",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "534",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "537",
+          "eventDescription": "save",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "2778",
+            "firstName": "Oscar",
+            "familyName": "Nord",
+            "jerseyNumber": "26"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "602",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4772",
+            "firstName": "Oliver",
+            "familyName": "Johansson",
+            "jerseyNumber": "78"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "688",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3564",
+            "firstName": "Victor",
+            "familyName": "Berglund",
+            "jerseyNumber": "51"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "756",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6796",
+            "firstName": "Arvid",
+            "familyName": "Caderoth",
+            "jerseyNumber": "20"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "776",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "6796",
+            "firstName": "Arvid",
+            "familyName": "Caderoth",
+            "jerseyNumber": "20"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "789",
+          "eventDescription": "save",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3564",
+            "firstName": "Victor",
+            "familyName": "Berglund",
+            "jerseyNumber": "51"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "802",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4772",
+            "firstName": "Oliver",
+            "familyName": "Johansson",
+            "jerseyNumber": "78"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "877",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "4382",
+            "firstName": "Oskar",
+            "familyName": "Magnusson",
+            "jerseyNumber": "58"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "897",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5860",
+            "firstName": "Christoffer",
+            "familyName": "Björk",
+            "jerseyNumber": "27"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "915",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "Timeout",
+          "time": "1070",
+          "eventDescription": "Requested timeout",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1085",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "1093",
+          "isEntering": false,
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "920",
+            "firstName": "Jhonas",
+            "familyName": "Enroth",
+            "jerseyNumber": "88"
+          }
+        },
+        {
+          "type": "Goal",
+          "time": "1104",
+          "eventDescription": "EQ",
+          "runningScore": "1-3",
+          "scorerSeasonGoals": "2",
+          "isPenaltyShot": "false",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "2387",
+            "firstName": "Erik",
+            "familyName": "Jinesjö Karlsson",
+            "jerseyNumber": "19"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "1104",
+          "isEntering": true,
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "920",
+            "firstName": "Jhonas",
+            "familyName": "Enroth",
+            "jerseyNumber": "88"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1105",
+          "eventDescription": "outside",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "5731",
+            "firstName": "Scott",
+            "familyName": "Pooley",
+            "jerseyNumber": "12"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1146",
+          "eventDescription": "covered by player",
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "6268",
+            "firstName": "Tim",
+            "familyName": "Theocharidis",
+            "jerseyNumber": "98"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "1167",
+          "isEntering": false,
+          "team": {
+            "name": "AIK",
+            "code": "AIK",
+            "statNetId": "AIK"
+          },
+          "player": {
+            "statNetId": "920",
+            "firstName": "Jhonas",
+            "familyName": "Enroth",
+            "jerseyNumber": "88"
+          }
+        },
+        {
+          "type": "Shot",
+          "time": "1191",
+          "eventDescription": "outside",
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3564",
+            "firstName": "Victor",
+            "familyName": "Berglund",
+            "jerseyNumber": "51"
+          }
+        },
+        {
+          "type": "GoalkeeperEvent",
+          "time": "1200",
+          "isEntering": false,
+          "team": {
+            "name": "MoDo Hockey",
+            "code": "MoDo",
+            "statNetId": "MODO"
+          },
+          "player": {
+            "statNetId": "3666",
+            "firstName": "Jakob",
+            "familyName": "Hellsten",
+            "jerseyNumber": "30"
+          }
+        }
+      ]
+    }
+  ]
+}

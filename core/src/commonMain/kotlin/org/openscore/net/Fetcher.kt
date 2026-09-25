@@ -91,6 +91,44 @@ public interface Fetcher {
     }
 }
 
+/**
+ * Optional transport for the one thing a `GET` cannot reach: an upstream that puts a *read*
+ * behind `POST`.
+ *
+ * docs/principles.md says "Only `GET` requests. Never call anything that looks like it mutates
+ * state." This is the named exception to it, and the name is the contract: [query] asks a
+ * question. It is for routes that answer with data the site itself renders read-only pages
+ * from, whose parameters are simply too many or too structured for a query string.
+ * HockeyAllsvenskan's squad, leaderboard and play-by-play routes are the case it was built
+ * for: each returns exactly what an anonymous browser sees, each answers `405` to a `GET`, and
+ * none of them has any other route to the same data.
+ *
+ * It is a separate interface, not a method on [Fetcher], so that [Fetcher] keeps saying what it
+ * has always said: read-only by construction, there is only `get`. A provider handed a plain
+ * [Fetcher] must go without whatever this unlocks rather than fail at the call - see
+ * `HockeyAllsvenskanProvider`, which then leaves out `ROSTER`, `LIVE_UPDATES`, `STANDINGS` and
+ * `TEAM_STATS`, the way `SportalityProvider` drops `LIVE_PUSH` without an [EventStreamFetcher].
+ *
+ * Implementations cache, coalesce and count a [query] exactly as they do a [Fetcher.get]: the
+ * body is part of the request identity, so two clubs' squads are two entries and two callers
+ * asking for one club's squad at once make one request.
+ */
+public interface QueryFetcher : Fetcher {
+    /**
+     * @param body the request body, sent verbatim.
+     * @param contentType what [body] is. The routes met so far are all JSON.
+     * @param maxAge as [Fetcher.get]. These routes rarely carry cache directives of their own,
+     *   so the caller's limit is usually the only one.
+     */
+    public suspend fun query(
+        url: String,
+        body: String,
+        contentType: String = "application/json",
+        headers: Map<String, String> = emptyMap(),
+        maxAge: Duration = Fetcher.DEFAULT_MAX_AGE,
+    ): FetchResponse
+}
+
 /** A decoded event from a direct Server-Sent Events connection. */
 public data class ServerSentEvent(
     val event: String? = null,
@@ -118,10 +156,16 @@ public data class FetchResponse(
     val lastModified: String? = null,
     /** Upstream cache directives, retained so [KtorFetcher] can honour `no-store`, `no-cache`, and `max-age`. */
     val cacheControl: String? = null,
-    /** True when served from the fetcher's cache (fresh, or revalidated with 304). */
-    val fromCache: Boolean = false,
     val source: FetchSource = FetchSource.NETWORK,
 ) {
+    /**
+     * True when served from the fetcher's cache (fresh, or revalidated with 304). Read off
+     * [source] rather than kept beside it, so the two cannot disagree. A [FetchSource.COALESCED]
+     * copy is not from the cache: it is another caller's answer, which is what a per-game
+     * recorder sharing one fetcher needs to keep too.
+     */
+    val fromCache: Boolean get() = source == FetchSource.MEMORY || source == FetchSource.REVALIDATED
+
     val isSuccess: Boolean get() = status in 200..299
     val isJson: Boolean get() = contentType?.contains("json", ignoreCase = true) == true
 

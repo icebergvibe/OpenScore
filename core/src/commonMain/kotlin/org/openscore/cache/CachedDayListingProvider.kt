@@ -64,7 +64,10 @@ public class CachedDayListingProvider(
             games.any { it.isDue(now) } -> return false
             else -> UPCOMING_MAX_AGE
         }
-        return now - fetchedAt < maxAge
+        val age = now - fetchedAt
+        // A negative age is a clock that moved backwards (a phone correcting its time) and reads
+        // as younger than any limit; as in the fetcher's own cache, it means "read again".
+        return age >= Duration.ZERO && age < maxAge
     }
 
     /** Not over, and kick-off is at hand or behind us: the listing is what says what happened next. */

@@ -160,15 +160,18 @@ internal class Capture(
     private fun saveRaw(r: RecordingFetcher.Recorded, at: String, stateTag: String): String? {
         val body = r.response?.body
         val hash = body?.let { sha1(it) } ?: "error"
-        if (lastBodyHash[r.url] == hash) return null
-        lastBodyHash[r.url] = hash
+        // Keyed by the whole request, not the URL: HockeyAllsvenskan asks one POST route for
+        // several different things, and keying by URL alone would call the second one "unchanged".
+        val identity = r.url + (r.body?.let { " $it" } ?: "")
+        if (lastBodyHash[identity] == hash) return null
+        lastBodyHash[identity] = hash
         val ext = when {
             body == null -> "txt"
             r.response.isJson || body.trimStart().let { it.startsWith("{") || it.startsWith("[") } -> "json"
             body.trimStart().startsWith("<") -> "xml"
             else -> "txt"
         }
-        val name = "${seq.pad()}-$stateTag-${slug(r.url)}.$ext"
+        val name = "${seq.pad()}-$stateTag-${slug(r.url, r.body)}.$ext"
         File(dir, name).writeText(body ?: (r.error?.toString() ?: ""))
         val entry = IndexEntry(
             seq, at, stateTag, r.url, name, r.response?.status, r.response?.contentType, body?.length ?: 0,
@@ -208,7 +211,7 @@ internal class Capture(
             MessageDigest.getInstance("SHA-1").digest(s.toByteArray()).joinToString("") { "%02x".format(it) }
 
         /**
-         * A short, stable, filesystem-safe name for an endpoint URL: its path, or the GraphQL root
+         * A short, stable, filesystem-safe name for one request: its path, or the GraphQL root
          * field.
          *
          * A long path keeps its head *and* its tail with a hash of the whole between them, because
@@ -216,8 +219,12 @@ internal class Capture(
          * Serie A's `header`, `summary`, `lineups` and `teamstats` all hang off the same
          * 90-character season-and-match prefix, so one poll wrote four bodies to one file and only
          * the last survived (2026-09-13 capture, three of four endpoints lost per poll).
+         *
+         * [body] is a POST's body, hashed into the name for the same reason: HockeyAllsvenskan
+         * asks one POST URL several different questions, and without it every answer would be
+         * written to one file.
          */
-        fun slug(url: String): String {
+        fun slug(url: String, body: String? = null): String {
             val noScheme = url.substringAfter("://")
             val path = noScheme.substringBefore('?').substringAfter('/', "")
             val query = noScheme.substringAfter('?', "")
@@ -233,7 +240,8 @@ internal class Capture(
                 val tail = cleaned.takeLast(24).trim('_')
                 "${head}_p${sha1(cleaned).take(6)}_$tail"
             }
-            return if (query.isEmpty()) base else base + "_q" + sha1(query).take(6)
+            val withQuery = if (query.isEmpty()) base else base + "_q" + sha1(query).take(6)
+            return if (body == null) withQuery else withQuery + "_b" + sha1(body).take(6)
         }
     }
 }

@@ -54,6 +54,20 @@ class CachedDayListingProviderTest {
         assertEquals(2, upstream.reads, "a moved kick-off shows within the hour")
     }
 
+    /**
+     * A phone whose clock ran a day ahead stored the listing "tomorrow". Once the clock is set
+     * right, that listing must not look younger than any limit until the clock catches up.
+     */
+    @Test
+    fun aListingStoredAheadOfACorrectedClockIsReadAgain() = runTest {
+        upstream.games = listOf(game("a", GameState.SCHEDULED, clock.now + 8.hours))
+        clock.now += 1.days
+        provider.gamesOn(day)
+        clock.now -= 1.days
+        provider.gamesOn(day)
+        assertEquals(2, upstream.reads, "stored in the future is not fresh")
+    }
+
     @Test
     fun aDayWithAGameDueOrRunningAlwaysReadsTheNetwork() = runTest {
         upstream.games = listOf(game("a", GameState.SCHEDULED, clock.now + 4.minutes))

@@ -229,8 +229,8 @@ So `TeamRef.clubId` is filled from a **hand-curated crosswalk**,
 [`core/src/commonMain/kotlin/org/openscore/clubs/ClubTable.kt`](../core/src/commonMain/kotlin/org/openscore/clubs/ClubTable.kt):
 one line per club, every native id it has in our feeds on that line, keyed by an *id
 namespace* (a league id, except where several leagues share one team-id space — `ucl` also
-covers `uel`/`uecl`, `fogis` covers the Swedish leagues, `shl` covers HockeyAllsvenskan,
-`efl` covers the Championship and the Carabao Cup — plus `sportomedia` and `espn` for the
+covers `uel`/`uecl`, `fogis` covers the Swedish football leagues, `efl` covers the
+Championship and the Carabao Cup - plus `sportomedia` and `espn` for the
 two non-league sources; `Clubs.namespace(leagueId)` is the one place that is encoded). Nothing is derived at runtime and nothing is matched by
 name. `null` means "not in the table", normal for lower-tier cup sides; apps key favourites
 on `clubId ?: "$leagueId/$id"`.

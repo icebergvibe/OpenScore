@@ -69,7 +69,15 @@ Per check: exactly one of `path` (relative to `baseUrl`), `url` (absolute) or `q
 `headers`, `status` (accepted codes, default `[200]`; a documented non-2xx status is the
 whole check), `format` (`json` | `xml` | `text`), `sample`, `depth` (`0` disables the shape
 comparison), `mapOfObjects` (the response is an id-keyed map — compare the first value's
-shape), `keys`, `note`.
+shape), `keys`, `body`, `note`.
+
+**`body`** makes the check a `POST` instead of a `GET`, carrying that JSON as the request
+body (placeholders resolve in it as they do in a path). It is only for a route that answers a
+*read* this way and has no `GET` equivalent - HockeyAllsvenskan's table, squads, leaderboards
+and play-by-play, which all answer `405` to a `GET`. The tool never calls anything that
+mutates; docs/principles.md, "Read-only", says where the line is. Since the body is usually
+what picks the answer, pin it whole: a wrong field there is often a `200` with nothing in it
+rather than an error.
 
 **Key paths**: `games[].id` (any element), `clock.running`, `[].id` for a bare array; XML
 uses `/` and `@attr`: `schedule/tournament/round/game/@status`. Arrays are unions, so a

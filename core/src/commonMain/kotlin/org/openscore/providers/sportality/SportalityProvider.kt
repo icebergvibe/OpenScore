@@ -1,16 +1,10 @@
 package org.openscore.providers.sportality
 
-import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.cancelAndJoin
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
@@ -34,6 +28,7 @@ import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
 import org.openscore.provider.LivePollBudget
 import org.openscore.provider.NotFoundException
+import org.openscore.provider.consumeStream
 import org.openscore.provider.getJson
 import org.openscore.provider.getJsonOrNull
 import org.openscore.provider.runCatchingUnlessCancelled
@@ -237,44 +232,18 @@ public open class SportalityProvider(
     private fun blankOverview(gameId: String) = SptOverview(gameUuid = gameId, state = "Ongoing")
 
     /**
-     * Feeds [onMessage] until it answers false, the upstream closes or fails, [STREAM_QUIET_TIMEOUT]
-     * passes in silence, or [onQuiet] (asked after every [STREAM_CHECK_INTERVAL] of silence) answers
-     * false. The reader is a child so a failing connection ends the loop instead of the flow.
+     * [consumeStream] with the platform's frames decoded: [onMessage] until it answers false,
+     * the upstream closes or fails, [STREAM_QUIET_TIMEOUT] passes in silence, or [onQuiet]
+     * (asked after every [STREAM_CHECK_INTERVAL] of silence) answers false. A frame that does
+     * not decode is skipped.
      */
     private suspend fun consume(
         stream: Flow<ServerSentEvent>,
         onQuiet: suspend () -> Boolean,
         onMessage: suspend (SptStreamMessage) -> Boolean,
-    ): Unit = coroutineScope {
-        val events = Channel<ServerSentEvent>(Channel.BUFFERED)
-        val reader = launch {
-            try {
-                stream.collect { events.send(it) }
-            } catch (e: CancellationException) {
-                throw e
-            } catch (_: Exception) {
-                // A reset or a timeout: the caller reconnects from a fresh snapshot.
-            } finally {
-                events.close()
-            }
-        }
-        try {
-            var silence = Duration.ZERO
-            while (true) {
-                val received = withTimeoutOrNull(STREAM_CHECK_INTERVAL) { events.receiveCatching() }
-                if (received == null) {
-                    silence += STREAM_CHECK_INTERVAL
-                    if (silence >= STREAM_QUIET_TIMEOUT || !onQuiet()) break
-                    continue
-                }
-                val event = received.getOrNull() ?: break
-                silence = Duration.ZERO
-                val message = runCatching { OpenScoreJson.decodeFromString(SptStreamMessage.serializer(), event.data) }.getOrNull() ?: continue
-                if (!onMessage(message)) break
-            }
-        } finally {
-            reader.cancelAndJoin()
-        }
+    ): Unit = consumeStream(stream, STREAM_CHECK_INTERVAL, STREAM_QUIET_TIMEOUT, onQuiet) { event ->
+        val message = runCatching { OpenScoreJson.decodeFromString(SptStreamMessage.serializer(), event.data) }.getOrNull()
+        message == null || onMessage(message)
     }
 
     /**

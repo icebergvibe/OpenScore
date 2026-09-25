@@ -99,6 +99,17 @@ class FeedServerTest {
         assertEquals("bad_request", err["code"]!!.jsonPrimitive.content)
     }
 
+    /** An id reaches an upstream URL, so one that could walk out of its path never gets that far. */
+    @Test
+    fun anIdThatWouldLeaveItsPathIsRefused() = app { client ->
+        for (path in listOf("/v1/players/nhl/..%2F..%2Fapi%2Fsecret", "/v1/games/nhl/1%3Fx%3Dy", "/v1/teams/nhl/TOR%2F..")) {
+            val res = client.get(path)
+            assertEquals(HttpStatusCode.BadRequest, res.status, path)
+            val err = FeedJson.parseToJsonElement(res.bodyAsText()).jsonObject["error"]!!.jsonObject
+            assertEquals("bad_request", err["code"]!!.jsonPrimitive.content)
+        }
+    }
+
     @Test
     fun gameWithEventsAndDetails() = app { client ->
         val res = client.get("/v1/games/nhl/${NhlSamples.SHOOTOUT_GAME_ID}")

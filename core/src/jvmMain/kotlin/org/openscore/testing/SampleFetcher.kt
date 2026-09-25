@@ -4,6 +4,7 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonObject
 import org.openscore.net.FetchResponse
 import org.openscore.net.Fetcher
+import org.openscore.net.QueryFetcher
 import java.io.File
 import java.util.Collections
 import kotlin.time.Duration
@@ -13,13 +14,18 @@ import kotlin.time.Duration
  * tests, the feed-server tests, and the server's `--offline` mode so an app can be
  * developed without touching any league API.
  */
-public class SampleFetcher : Fetcher {
+public class SampleFetcher : QueryFetcher {
 
     private class Route(val file: File?, val contentType: String, val status: Int = 200, val body: String = "")
 
     private val routes = HashMap<String, Route>()
+    private val failedPosts = HashSet<String>()
+    private var failedPostStatus = 503
     /** Every URL asked for, in order. The aggregator asks leagues concurrently, so appends are synchronised. */
     public val requests: MutableList<String> = Collections.synchronizedList(mutableListOf())
+
+    /** Every POST asked for, as URL to body, so a test can assert what was sent, not just where. */
+    public val postBodies: MutableList<Pair<String, String>> = Collections.synchronizedList(mutableListOf())
 
     /** Map full [url] to a sample [file]. */
     public fun route(url: String, file: File, contentType: String = "application/json; charset=utf-8", status: Int = 200): SampleFetcher {
@@ -40,20 +46,57 @@ public class SampleFetcher : Fetcher {
         return this
     }
 
+    /**
+     * Map a POST [url] with exactly this request [body] to a sample [file]. The body is part of
+     * the key because it is what picks the answer: one club's squad is a different response
+     * from another's at the same URL.
+     */
+    public fun postRoute(url: String, body: String, file: File, contentType: String = "application/json; charset=utf-8", status: Int = 200): SampleFetcher {
+        require(file.isFile) { "Sample not found: ${file.absolutePath}" }
+        routes[postKey(url, body)] = Route(file, contentType, status)
+        return this
+    }
+
+    /** Make every POST to [url] fail with [status], whatever its body: an upstream having a bad day. */
+    public fun failPost(url: String, status: Int = 503): SampleFetcher {
+        failedPosts += url
+        failedPostStatus = status
+        return this
+    }
+
     /** Map every entry of [paths] (URL path → file name) under [baseUrl] to files in [dir]. */
     public fun routes(baseUrl: String, dir: File, paths: Map<String, String>): SampleFetcher {
         paths.forEach { (path, name) -> route(baseUrl + path, File(dir, name)) }
         return this
     }
 
-    override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse {
+    override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse =
+        serve(url, routes[url])
+
+    override suspend fun query(
+        url: String,
+        body: String,
+        contentType: String,
+        headers: Map<String, String>,
+        maxAge: Duration,
+    ): FetchResponse {
+        postBodies += url to body
+        if (url in failedPosts) return FetchResponse(url, failedPostStatus, "text/plain", "upstream is down")
+        return serve(url, routes[postKey(url, body)])
+    }
+
+    private fun serve(url: String, route: Route?): FetchResponse {
         requests += url
-        val route = routes[url]
+        route
             ?: return FetchResponse(url, 404, "text/html", "<html><body>404 Not Found</body></html>")
         val file = route.file ?: return FetchResponse(url, route.status, route.contentType, route.body)
         if (route.status != 200) return FetchResponse(url, route.status, route.contentType, file.readText())
         return FetchResponse(url, route.status, route.contentType, unwrapTruncated(file.readText()))
     }
+
+    /** Canonical JSON, so a body that differs only in key order or spacing still matches. */
+    private fun postKey(url: String, body: String): String =
+        "POST $url " + runCatching { Json.parseToJsonElement(body).toString() }.getOrDefault(body)
 
     /**
      * Truncated bare-array samples are stored as `{"_openscore_note": …, "_truncated_array": [...]}`

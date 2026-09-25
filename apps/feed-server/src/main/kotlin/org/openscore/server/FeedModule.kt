@@ -165,7 +165,19 @@ private const val MAX_LEAGUES_PER_REQUEST = 40
 private val SEASON_YEAR = Regex("[0-9]{4}")
 
 private val ApplicationCall.league: String get() = parameters["league"]!!.lowercase()
-private val ApplicationCall.id: String get() = parameters["id"]!!
+private val ApplicationCall.id: String get() = parameters["id"]!!.also(::requireId)
+
+/**
+ * Providers put an id into an upstream URL as a path segment or a query value, and Ktor decodes
+ * `%2F` in a path parameter. Unchecked, `/v1/players/hockeyallsvenskan/..%2F..%2Fapi%2Fhivemq-config`
+ * would make this server fetch any path on a league's host - that one hands out MQTT
+ * credentials. No league's ids use these characters; names used as ids have spaces, which pass.
+ */
+private fun requireId(id: String) {
+    if (id.isBlank() || ".." in id || id.any { it in UNSAFE_ID_CHARACTERS }) throw BadRequestException("not a valid id")
+}
+
+private const val UNSAFE_ID_CHARACTERS = "/\\?#&%"
 
 class BadRequestException(message: String) : IllegalArgumentException(message)
 

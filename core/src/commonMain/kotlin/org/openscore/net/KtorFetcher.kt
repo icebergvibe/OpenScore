@@ -6,6 +6,8 @@ import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.HttpTimeoutCapability
 import io.ktor.client.plugins.HttpTimeoutConfig
 import io.ktor.client.request.get
+import io.ktor.client.request.post
+import io.ktor.client.request.setBody
 import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.header
 import io.ktor.client.request.prepareGet
@@ -14,6 +16,7 @@ import io.ktor.client.statement.bodyAsText
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.utils.io.readLine
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -36,7 +39,7 @@ import kotlin.time.TimeSource
  *   it while younger than the caller's and upstream's freshness limits,
  * - honours upstream `Cache-Control: no-store`, `no-cache`, and `max-age`, and revalidates with
  *   `ETag` and `Last-Modified` validators when supplied,
- * - never issues anything but GET.
+ * - issues GET, and POST only through [query], the named read-only exception in [QueryFetcher].
  *
  * Requests with different identities run concurrently; matching identities are single-flight,
  * so overlapping callers of one endpoint (three Swedish leagues reading the same Fogis overview)
@@ -62,7 +65,7 @@ public class KtorFetcher(
     private val requestTimeoutMillis: Long = DEFAULT_REQUEST_TIMEOUT_MILLIS,
     private val connectTimeoutMillis: Long = DEFAULT_CONNECT_TIMEOUT_MILLIS,
     private val socketTimeoutMillis: Long = DEFAULT_SOCKET_TIMEOUT_MILLIS,
-) : EventStreamFetcher {
+) : EventStreamFetcher, QueryFetcher {
 
     init {
         require(maxConcurrentPerHost > 0) { "maxConcurrentPerHost must be positive" }
@@ -81,15 +84,20 @@ public class KtorFetcher(
 
     private class Entry(val response: FetchResponse, val fetchedAt: Instant, val bytes: Long)
 
-    /** URL plus a canonical, case-insensitive representation of caller-supplied headers. */
-    private data class RequestKey(val url: String, val headers: List<Pair<String, String>>) {
+    /**
+     * URL plus a canonical, case-insensitive representation of caller-supplied headers, plus the
+     * request body for a [query]. The body belongs in the identity for the same reason the
+     * headers do: it is what makes one club's squad a different response from another's.
+     */
+    private data class RequestKey(val url: String, val headers: List<Pair<String, String>>, val body: String? = null) {
         companion object {
-            fun of(url: String, headers: Map<String, String>): RequestKey =
+            fun of(url: String, headers: Map<String, String>, body: String? = null): RequestKey =
                 RequestKey(
                     url,
                     headers.entries
                         .map { it.key.lowercase() to it.value }
                         .sortedWith(compareBy({ it.first }, { it.second })),
+                    body,
                 )
         }
     }
@@ -103,6 +111,12 @@ public class KtorFetcher(
          * populated for `no-store` and error responses so a burst still costs one request.
          */
         var completed: FetchResponse? = null
+        /**
+         * The same, for a request that threw. A caller in line behind a request that timed out
+         * gets that failure rather than a request of its own: with a host timing out, three
+         * callers of one URL would otherwise wait out three timeouts one after another.
+         */
+        var failed: Throwable? = null
     }
 
     private val cache = LinkedHashMap<RequestKey, Entry>()
@@ -113,9 +127,31 @@ public class KtorFetcher(
     /** Guards [cache], [locks] and [hostLimits] only; never held across a request. */
     private val state = Mutex()
 
-    override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse {
+    override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse =
+        fetch(RequestKey.of(url, headers), url, headers, maxAge, post = null)
+
+    /**
+     * The read-behind-POST exception, with every guarantee [get] gives: one in-flight request
+     * per identity, the same bounded cache, the same per-host cap, the same metrics. Validators
+     * are the one thing left out - no upstream met so far offers an `ETag` on such a route, and
+     * conditional headers on a POST are not a thing servers reliably understand.
+     */
+    override suspend fun query(
+        url: String,
+        body: String,
+        contentType: String,
+        headers: Map<String, String>,
+        maxAge: Duration,
+    ): FetchResponse = fetch(RequestKey.of(url, headers, body), url, headers, maxAge, post = body to contentType)
+
+    private suspend fun fetch(
+        key: RequestKey,
+        url: String,
+        headers: Map<String, String>,
+        maxAge: Duration,
+        post: Pair<String, String>?,
+    ): FetchResponse {
         val started = TimeSource.Monotonic.markNow()
-        val key = RequestKey.of(url, headers)
         state.withLock { fresh(key, maxAge) }?.let { return report(url, it, started.elapsedNow()) }
         val lock = state.withLock {
             locks.getOrPut(key) { UrlLock() }.also { it.waiters++ }
@@ -126,13 +162,22 @@ public class KtorFetcher(
                 // result. Preserve whether a 304 supplied a cached body; a no-store response
                 // remains non-cached and disappears with this group of callers.
                 lock.completed?.let { return@withLock it.copy(source = FetchSource.COALESCED) }
+                lock.failed?.let { throw it }
                 // Whoever held the lock before us may have just fetched this exact request.
                 val already = state.withLock { fresh(key, maxAge) }
                 if (already != null) {
                     already
                 } else {
                     val cached = state.withLock { cache[key] }
-                    val response = request(url, headers, cached)
+                    val response = try {
+                        request(url, headers, cached, post)
+                    } catch (e: CancellationException) {
+                        // This caller left; the next one in line still wants an answer.
+                        throw e
+                    } catch (e: Exception) {
+                        lock.failed = e
+                        throw e
+                    }
                     state.withLock { remember(key, response) }.also { lock.completed = it }
                 }
             }
@@ -162,7 +207,13 @@ public class KtorFetcher(
     override fun events(url: String, headers: Map<String, String>): Flow<ServerSentEvent> = flow {
         val host = hostOf(url)
         val limit = state.withLock { hostLimits.getOrPut(host) { Semaphore(maxConcurrentPerHost) } }
-        limit.withPermit {
+        // The host's request slot is held while connecting and given back once the response has
+        // started. A stream stays open for a whole match, and holding a slot that long left the
+        // host one short for everything else: Bundesliga streams from the host its REST reads
+        // use, four open streams left none, and waiting for a slot has no timeout at all.
+        limit.acquire()
+        var holding = true
+        try {
             client.prepareGet(url) {
                 defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
                 defaultHeader(headers, HttpHeaders.Accept, "text/event-stream")
@@ -176,6 +227,8 @@ public class KtorFetcher(
                     ),
                 )
             }.execute { response ->
+                limit.release()
+                holding = false
                 if (response.status.value !in 200..299) {
                     throw HttpException(url, response.status.value, response.bodyAsText())
                 }
@@ -201,6 +254,8 @@ public class KtorFetcher(
                 }
                 if (event != null || data.isNotEmpty()) emit(ServerSentEvent(event, data.joinToString("\n")))
             }
+        } finally {
+            if (holding) limit.release()
         }
     }
 
@@ -217,26 +272,35 @@ public class KtorFetcher(
         // LinkedHashMap is insertion ordered. Reinsert fresh hits to make eviction true LRU.
         cache.remove(key)
         cache[key] = cached
-        return cached.response.copy(fromCache = true, source = FetchSource.MEMORY)
+        return cached.response.copy(source = FetchSource.MEMORY)
     }
 
-    private suspend fun request(url: String, headers: Map<String, String>, cached: Entry?): FetchResponse {
+    private suspend fun request(url: String, headers: Map<String, String>, cached: Entry?, post: Pair<String, String>?): FetchResponse {
         val host = hostOf(url)
         val limit = state.withLock { hostLimits.getOrPut(host) { Semaphore(maxConcurrentPerHost) } }
         return limit.withPermit {
-            val http = client.get(url) {
-                defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
-                defaultHeader(headers, HttpHeaders.Accept, "application/json, */*;q=0.5")
-                cached?.response?.etag?.let { header(HttpHeaders.IfNoneMatch, it) }
-                cached?.response?.lastModified?.let { header(HttpHeaders.IfModifiedSince, it) }
-                headers.forEach { (k, v) -> header(k, v) }
+            val http = if (post == null) {
+                client.get(url) {
+                    defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
+                    defaultHeader(headers, HttpHeaders.Accept, "application/json, */*;q=0.5")
+                    cached?.response?.etag?.let { header(HttpHeaders.IfNoneMatch, it) }
+                    cached?.response?.lastModified?.let { header(HttpHeaders.IfModifiedSince, it) }
+                    headers.forEach { (k, v) -> header(k, v) }
+                }
+            } else {
+                client.post(url) {
+                    defaultHeader(headers, HttpHeaders.UserAgent, userAgent)
+                    defaultHeader(headers, HttpHeaders.Accept, "application/json, */*;q=0.5")
+                    defaultHeader(headers, HttpHeaders.ContentType, post.second)
+                    headers.forEach { (k, v) -> header(k, v) }
+                    setBody(post.first)
+                }
             }
             if (http.status == HttpStatusCode.NotModified && cached != null) {
                 return@withPermit cached.response.copy(
                     etag = http.headers[HttpHeaders.ETag] ?: cached.response.etag,
                     lastModified = http.headers[HttpHeaders.LastModified] ?: cached.response.lastModified,
                     cacheControl = http.headers[HttpHeaders.CacheControl] ?: cached.response.cacheControl,
-                    fromCache = true,
                     source = FetchSource.REVALIDATED,
                 )
             }

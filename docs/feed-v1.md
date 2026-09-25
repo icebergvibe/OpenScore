@@ -41,7 +41,7 @@ Conventions:
 
 | `code` | HTTP | Meaning |
 |---|---|---|
-| `bad_request` | 400 | Malformed parameter (e.g. `date`). |
+| `bad_request` | 400 | Malformed parameter (e.g. `date`, or an id containing `/`, `\`, `?`, `#`, `&`, `%` or `..`). |
 | `not_found` | 404 | The league does not know this id. |
 | `unknown_league` | 404 | No provider for `{league}`. |
 | `unsupported` | 501 | The league lacks this capability (see `/v1/leagues`). |

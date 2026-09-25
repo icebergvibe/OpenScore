@@ -16,6 +16,7 @@ import org.openscore.cache.DayListing
 import org.openscore.cache.DayListingStore
 import org.openscore.cache.SeasonScheduleStore
 import org.openscore.cache.SeasonSnapshot
+import org.openscore.clubs.Clubs
 import org.openscore.model.Game
 import org.openscore.model.GameEnding
 import org.openscore.model.GameState
@@ -52,9 +53,14 @@ object NoopScoresCache : ScoresCache {
 
 /**
  * Everything a scorecard and a match header draw from a [Game] that a listing can carry: a
- * final's period scores and how it was decided included, so a restored result is never a
- * poorer record than the one that was fetched. Clock, events, lineups and stats are live detail
+ * final's period scores and how it was decided included, and the pre-game preview a scheduled
+ * card shows (MLB's probable pitchers), so a restored day is never a poorer record than the one
+ * that was fetched. Clock, events, lineups, stats and credits are live or match-screen detail
  * and stay out. Embedded in both tables so the two never drift apart.
+ *
+ * The club ids are kept for teams the crosswalk cannot name, but a restored team takes the one
+ * the crosswalk gives today when it has one: it is compiled into the app, so it can only be as
+ * new as the row or newer, and a season row outlives a build (only day rows are dropped on one).
  */
 data class GameRecord(
     val leagueId: String,
@@ -73,6 +79,8 @@ data class GameRecord(
     val periodScores: String,
     val ending: String?,
     val rawState: String?,
+    /** [GamePreviewCodec] form of [Game.preview]. */
+    val preview: String?,
     val homeId: String,
     val homeName: String,
     val homeAbbreviation: String?,
@@ -154,12 +162,12 @@ interface CachedGameDao {
     suspend fun pruneOrphanDayGames()
 
     @Query(
-        "SELECT COALESCE(SUM(LENGTH(leagueId) + LENGTH(id) + LENGTH(homeName) + LENGTH(awayName) + LENGTH(periodScores) + IFNULL(LENGTH(competition), 0) + IFNULL(LENGTH(venue), 0) + IFNULL(LENGTH(homeLogoUrl), 0) + IFNULL(LENGTH(awayLogoUrl), 0) + 160), 0) FROM cached_games",
+        "SELECT COALESCE(SUM(LENGTH(leagueId) + LENGTH(id) + LENGTH(homeName) + LENGTH(awayName) + LENGTH(periodScores) + IFNULL(LENGTH(competition), 0) + IFNULL(LENGTH(venue), 0) + IFNULL(LENGTH(homeLogoUrl), 0) + IFNULL(LENGTH(awayLogoUrl), 0) + IFNULL(LENGTH(preview), 0) + 160), 0) FROM cached_games",
     )
     suspend fun seasonPayloadBytes(): Long
 
     @Query(
-        "SELECT COALESCE(SUM(LENGTH(leagueId) + LENGTH(id) + LENGTH(date) + LENGTH(homeName) + LENGTH(awayName) + LENGTH(periodScores) + IFNULL(LENGTH(competition), 0) + IFNULL(LENGTH(venue), 0) + IFNULL(LENGTH(homeLogoUrl), 0) + IFNULL(LENGTH(awayLogoUrl), 0) + 160), 0) FROM cached_day_games",
+        "SELECT COALESCE(SUM(LENGTH(leagueId) + LENGTH(id) + LENGTH(date) + LENGTH(homeName) + LENGTH(awayName) + LENGTH(periodScores) + IFNULL(LENGTH(competition), 0) + IFNULL(LENGTH(venue), 0) + IFNULL(LENGTH(homeLogoUrl), 0) + IFNULL(LENGTH(awayLogoUrl), 0) + IFNULL(LENGTH(preview), 0) + 160), 0) FROM cached_day_games",
     )
     suspend fun dayPayloadBytes(): Long
 
@@ -183,7 +191,7 @@ interface CachedGameDao {
     suspend fun clearDayGames()
 }
 
-@Database(entities = [CachedGame::class, CachedSeason::class, CachedDay::class, CachedDayGame::class], version = 6, exportSchema = false)
+@Database(entities = [CachedGame::class, CachedSeason::class, CachedDay::class, CachedDayGame::class], version = 7, exportSchema = false)
 abstract class OpenScoreCacheDatabase : RoomDatabase() {
     abstract fun games(): CachedGameDao
 }
@@ -284,7 +292,8 @@ class RoomScoresCache private constructor(
 
         fun create(context: Context): RoomScoresCache {
             // A cache: an older schema is dropped and the data read again on first use rather
-            // than migrated. Version 6 added the day listings and the shared game record.
+            // than migrated. Version 6 added the day listings and the shared game record, 7 the
+            // pre-game preview.
             val db = Room.databaseBuilder(context.applicationContext, OpenScoreCacheDatabase::class.java, "openscore-read-cache")
                 .fallbackToDestructiveMigration(dropAllTables = true)
                 .build()
@@ -294,19 +303,20 @@ class RoomScoresCache private constructor(
     }
 }
 
-private fun Game.toRecord() = GameRecord(
+internal fun Game.toRecord() = GameRecord(
     leagueId = leagueId, id = id, seasonId = seasonId, stage = stage?.name,
     competition = competition, venue = venue, startTimeEpochMs = startTime.toEpochMilliseconds(),
     startTimeTbd = startTimeTbd, scheduleDate = scheduleDate?.toString(), state = state.name,
     homeScore = score?.home, awayScore = score?.away,
     periodScores = PeriodScoresCodec.encode(periodScores), ending = ending?.name, rawState = rawState,
+    preview = GamePreviewCodec.encode(preview),
     homeId = home.id, homeName = home.name, homeAbbreviation = home.abbreviation,
     homeLogoUrl = home.logoUrl, homeClubId = home.clubId,
     awayId = away.id, awayName = away.name, awayAbbreviation = away.abbreviation,
     awayLogoUrl = away.logoUrl, awayClubId = away.clubId,
 )
 
-private fun GameRecord.toGame() = Game(
+internal fun GameRecord.toGame() = Game(
     leagueId = leagueId, id = id, seasonId = seasonId,
     stage = stage?.let { runCatching { enumValueOf<StageKind>(it) }.getOrNull() },
     competition = competition, venue = venue,
@@ -314,11 +324,12 @@ private fun GameRecord.toGame() = Game(
     // Every field of a restored row is read defensively: this is a cache an older build may
     // have written, and one unreadable value must not fail the whole day it belongs to.
     scheduleDate = scheduleDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() },
-    home = TeamRef(leagueId, homeId, homeName, homeAbbreviation, homeLogoUrl, homeClubId),
-    away = TeamRef(leagueId, awayId, awayName, awayAbbreviation, awayLogoUrl, awayClubId),
+    home = TeamRef(leagueId, homeId, homeName, homeAbbreviation, homeLogoUrl, Clubs.clubId(leagueId, homeId) ?: homeClubId),
+    away = TeamRef(leagueId, awayId, awayName, awayAbbreviation, awayLogoUrl, Clubs.clubId(leagueId, awayId) ?: awayClubId),
     state = runCatching { enumValueOf<GameState>(state) }.getOrDefault(GameState.UNKNOWN),
     score = if (homeScore != null && awayScore != null) Score(homeScore, awayScore) else null,
     periodScores = PeriodScoresCodec.decode(periodScores),
     ending = ending?.let { runCatching { enumValueOf<GameEnding>(it) }.getOrNull() },
     rawState = rawState,
+    preview = GamePreviewCodec.decode(preview),
 )

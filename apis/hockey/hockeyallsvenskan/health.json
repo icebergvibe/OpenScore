@@ -70,13 +70,13 @@
       "note": "Must stay non-empty and carry \"homeLineups\"; the typed extraction is covered by the provider replay test"
     },
     {
-      "name": "pages/tabell - league table RSC",
+      "name": "pages/tabell - page still answers (standings moved out of it 2026-09-25)",
       "path": "/pages/tabell?_rsc=openscore",
       "headers": {
         "RSC": "1"
       },
       "format": "text",
-      "note": "Must remain non-empty; the standings component's shape is covered by the sample tabell.standings.rsc.txt. Query parameters are ignored upstream, so this is always the current regular-season table."
+      "note": "The page used to server-render a stats.league-standings component with all 14 rows; on 2026-09-25 it became a client-rendered shell and the rows moved to POST /api/league-standings-all-time. Kept as a plain liveness check so a move back, or the page disappearing, is both visible."
     },
     {
       "name": "players/{slug} - player profile RSC",
@@ -86,6 +86,117 @@
       },
       "format": "text",
       "note": "A retired or transferred player keeps his page; an unknown slug answers 200 with the not-found page, so this check proves reachability only."
+    },
+    {
+      "name": "api/all-players - a club's squad (POST)",
+      "path": "/api/all-players",
+      "body": "{\"scope\":\"team\",\"orderBy\":\"name\",\"teamShortName\":\"MoDo\",\"leagueShortName\":\"HA\",\"searchQuery\":\"\",\"page\":1,\"pageSize\":60}",
+      "sample": "all-players.team-modo.json",
+      "keys": [
+        "players[].slug",
+        "players[].firstName",
+        "players[].familyName",
+        "players[].positionCode",
+        "players[].jerseyNumber",
+        "pagination.total"
+      ],
+      "note": "Keyed by the CMS short name (MoDo), not the StatNet id (MODO): the wrong one answers 200 with an empty list, so a silent drift here would look like a club with no squad. A read behind POST, which is why this check needs one."
+    },
+    {
+      "name": "api/all-players - the wrong club code is an empty 200 (POST)",
+      "path": "/api/all-players",
+      "body": "{\"scope\":\"team\",\"orderBy\":\"name\",\"teamShortName\":\"MODO\",\"leagueShortName\":\"HA\",\"searchQuery\":\"\",\"page\":1,\"pageSize\":60}",
+      "sample": "all-players.unknown-team.json",
+      "keys": [
+        "pagination.total"
+      ],
+      "note": "Pins the failure mode itself: the StatNet id is not the squad route's key and never errors when used as one. If this ever starts returning players, the two code systems have been merged upstream."
+    },
+    {
+      "name": "api/player-leaderboard - a club's scorers (POST)",
+      "path": "/api/player-leaderboard",
+      "body": "{\"league\":\"HA\",\"team\":\"LIF\",\"phase\":\"HA\",\"metric\":\"TP\",\"isGoalkeeper\":false,\"page\":1,\"pageSize\":60}",
+      "sample": "player-leaderboard.team.json",
+      "keys": [
+        "players[].rank",
+        "players[].player",
+        "players[].metricValue",
+        "players[].playerStatNetId",
+        "players[].slug"
+      ],
+      "note": "Keyed by the StatNet id here, the opposite of the squad route. Omitting phase empties the answer with no error, so the body is pinned whole."
+    },
+    {
+      "name": "api/team-leaderboard - shots on goal (POST)",
+      "path": "/api/team-leaderboard",
+      "body": "{\"league\":\"HA\",\"phase\":\"HA\",\"metric\":\"SOG\",\"page\":1,\"pageSize\":20}",
+      "sample": "team-leaderboard.sog.json",
+      "keys": [
+        "teams[].rank",
+        "teams[].teamID",
+        "teams[].metric",
+        "teams[].metricValue"
+      ],
+      "note": "SOG and SVSPerc are the only two columns the standings row has not got, which is the whole reason this route is called."
+    },
+    {
+      "name": "api/play-by-play - a finished game (POST)",
+      "path": "/api/play-by-play",
+      "body": "{\"statNetGameNumber\":\"23401\",\"homeStatNetId\":\"AIK\",\"awayStatNetId\":\"MODO\",\"scheduledDateTime\":\"2026-09-18T17:00:00Z\"}",
+      "sample": "play-by-play.new.final.json",
+      "keys": [
+        "game_info.game_finished",
+        "game_events[].Period",
+        "game_events[].Events"
+      ],
+      "note": "All four body fields are required (a missing one is a 400); playedDateTime, which the site sends, is not. Only statNetGameNumber selects the game. The server proxies StatNet, which answered one call in three under opening-night load, so a fail here can be upstream rather than drift."
+    },
+    {
+      "name": "api/play-by-play - a game StatNet has no sheet for (POST)",
+      "path": "/api/play-by-play",
+      "body": "{\"statNetGameNumber\":\"99999\",\"homeStatNetId\":\"AIK\",\"awayStatNetId\":\"MODO\",\"scheduledDateTime\":\"2026-09-18T17:00:00Z\"}",
+      "status": [
+        404
+      ],
+      "format": "text",
+      "note": "All four fields are required - omitting any gives 400 \"Missing required fields\" - but only statNetGameNumber selects the game: a wrong scheduledDateTime or side id still answers the right one. An unknown number is what 404s, and that is also what a fixture before its opening face-off answers, which the provider reads as \"no events yet\" rather than a failure."
+    },
+    {
+      "name": "api/league-standings-all-time - the table (POST)",
+      "path": "/api/league-standings-all-time",
+      "body": "{\"league\":\"HA\",\"phase\":\"HA\",\"season\":2026,\"location\":\"all\"}",
+      "sample": "league-standings-all-time.json",
+      "keys": [
+        "standings[].rank",
+        "standings[].teamCode",
+        "standings[].statNetClubLabel",
+        "standings[].games_played",
+        "standings[].total_points",
+        "standings[].goal_difference"
+      ],
+      "note": "Where the league table went when /pages/tabell stopped server-rendering it. No StatNet id on a row any more, only the display code, so the core joins through the season snapshot; power_play_perc and penalty_kill_perc are empty strings in every season seen and come from the team leaderboard instead."
+    },
+    {
+      "name": "api/league-standings-all-time - a finished season (POST)",
+      "path": "/api/league-standings-all-time",
+      "body": "{\"league\":\"HA\",\"phase\":\"HA\",\"season\":2025,\"location\":\"all\"}",
+      "sample": "league-standings-all-time.past-season.json",
+      "keys": [
+        "standings[].rank",
+        "standings[].total_points"
+      ],
+      "note": "The one thing the old page could not do: it ignored every season parameter. 2025-26 is finished, so this check is stable - 52 games and IF Bjorkloven on 119 points."
+    },
+    {
+      "name": "api/team-leaderboard - power play (POST)",
+      "path": "/api/team-leaderboard",
+      "body": "{\"league\":\"HA\",\"phase\":\"HA\",\"metric\":\"PPPerc\",\"page\":1,\"pageSize\":20}",
+      "sample": "team-leaderboard.pp.json",
+      "keys": [
+        "teams[].teamID",
+        "teams[].metricValue"
+      ],
+      "note": "PP% and PK% are no longer on a standings row, so these two calls are what the table's special-teams columns are made of. The route takes no season: current only."
     }
   ]
 }

@@ -1,8 +1,18 @@
 package org.openscore.capture
 
+import kotlinx.coroutines.test.runTest
+import org.openscore.net.FetchResponse
+import org.openscore.net.Fetcher
+import org.openscore.net.QueryFetcher
+import org.openscore.provider.Capability
+import org.openscore.providers.sportality.HockeyAllsvenskanProvider
+import org.openscore.testing.HockeyAllsvenskanSamples
+import org.openscore.testing.SampleFetcher
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.time.Duration
 
 class CaptureTest {
     @Test
@@ -29,6 +39,29 @@ class CaptureTest {
         assertTrue(slugs.all { it.length <= 110 }, "still short enough for a file name: $slugs")
         assertTrue(slugs[0].endsWith("header") && slugs[3].endsWith("teamstats"), "the endpoint name survives: $slugs")
         assertTrue(slugs.all { it.startsWith("v1_serie-a_football_seasons_") }, "and the head still says what it is: $slugs")
+    }
+
+    /**
+     * A provider decides what it claims from what its fetcher can do, so a recorder in front of
+     * a fetcher that cannot POST must not claim it can, and one in front of one that can must
+     * keep the body with what it records.
+     */
+    @Test
+    fun aRecorderCanPostExactlyWhenWhatItWrapsCan() = runTest {
+        val plain = object : Fetcher {
+            override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration) = FetchResponse(url, 200, "application/json", "{}")
+        }
+        val getOnly = RecordingFetcher.of(plain)
+        assertFalse(getOnly is QueryFetcher)
+        assertFalse(HockeyAllsvenskanProvider(getOnly).supports(Capability.ROSTER), "no squad promised through a recorder that cannot ask for one")
+
+        val samples = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val recorder = RecordingFetcher.of(samples)
+        val provider = HockeyAllsvenskanProvider(recorder)
+        assertTrue(provider.supports(Capability.ROSTER))
+        provider.roster(HockeyAllsvenskanSamples.TEAM_ID)
+        val post = recorder.drain().single { it.url == HockeyAllsvenskanSamples.SQUAD }
+        assertEquals(HockeyAllsvenskanSamples.squadBody(HockeyAllsvenskanSamples.TEAM_LABEL), post.body)
     }
 
     @Test

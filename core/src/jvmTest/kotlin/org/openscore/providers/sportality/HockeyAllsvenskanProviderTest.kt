@@ -1,18 +1,33 @@
 package org.openscore.providers.sportality
 
+import kotlinx.coroutines.flow.take
+import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.LocalDate
+import kotlinx.serialization.json.JsonArray
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.jsonObject
 import org.openscore.cache.SeasonScheduleStore
 import org.openscore.cache.SeasonSnapshot
 import org.openscore.model.Game
 import org.openscore.model.GameEnding
 import org.openscore.model.GameState
+import org.openscore.model.PeriodType
 import org.openscore.model.Score
+import org.openscore.model.hockey.GoalDetails
+import org.openscore.model.hockey.HockeyEventType
+import org.openscore.model.hockey.PenaltyDetails
+import org.openscore.model.hockey.Strength
 import org.openscore.net.FetchResponse
 import org.openscore.net.Fetcher
 import org.openscore.net.HttpException
+import org.openscore.net.OpenScoreJson
+import org.openscore.net.QueryFetcher
 import org.openscore.provider.Capability
 import org.openscore.provider.NotFoundException
+import org.openscore.provider.ProviderException
+import org.openscore.provider.UnsupportedCapabilityException
 import org.openscore.testing.HockeyAllsvenskanSamples
 import org.openscore.testing.SampleFetcher
 import java.io.File
@@ -20,6 +35,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 import kotlin.test.assertFalse
+import kotlin.test.assertIs
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
@@ -27,6 +43,7 @@ import kotlin.time.Clock
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours
 import kotlin.time.Duration.Companion.minutes
+import kotlin.time.Duration.Companion.seconds
 import kotlin.time.Instant
 
 class HockeyAllsvenskanProviderTest {
@@ -47,7 +64,7 @@ class HockeyAllsvenskanProviderTest {
         val saved = assertNotNull(store.snapshot)
         assertEquals("season_2026", saved.seasonId)
         assertEquals(clock.now(), saved.savedAt)
-        assertEquals(2, saved.games.size, "both dates were persisted by one import")
+        assertEquals(3, saved.games.size, "every date was persisted by one import")
         assertEquals(1, fetcher.requests.size)
 
         assertEquals(1, provider.gamesOn(LocalDate(2026, 9, 25)).size)
@@ -181,8 +198,8 @@ class HockeyAllsvenskanProviderTest {
         assertEquals(listOf("1", "2", "3"), game.periodScores.map { it.period.label })
         assertEquals("Södertälje SK", game.home.name)
         assertTrue(provider.supports(Capability.PERIOD_SCORES))
-        assertFalse(provider.supports(Capability.EVENTS))
-        assertFalse(provider.supports(Capability.LIVE_UPDATES))
+        assertTrue(provider.supports(Capability.EVENTS), "the game page carries the play-by-play, so this needs no POST")
+        assertNull(game.events, "a game document alone never carries a timeline; events() is the second call")
         assertNull(HockeyAllsvenskanProvider(SampleFetcher(), clock = clock).let { runCatching { it.game("nope") }.getOrNull() })
     }
 
@@ -242,9 +259,272 @@ class HockeyAllsvenskanProviderTest {
         assertFailsWith<NotFoundException> { provider.lineups("20261231-no-such") }
     }
 
-    /** The table page carries the whole table and the clubs' identities with it: one read, no snapshot. */
+    /**
+     * `ROSTER` and `LIVE_UPDATES` exist only where the fetcher can ask behind a POST. `EVENTS`
+     * does not depend on it: the game page carries the same play-by-play document inline.
+     */
     @Test
-    fun theTableIsOnePageReadAndCarriesBothClubSpellings() = runTest {
+    fun thePostOnlyCapabilitiesFollowTheFetcher() = runTest {
+        val withPost = HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock)
+        assertTrue(withPost.supports(Capability.ROSTER))
+        assertTrue(withPost.supports(Capability.LIVE_UPDATES))
+        assertTrue(withPost.supports(Capability.EVENTS))
+
+        val getOnly = HockeyAllsvenskanProvider(ScriptedFetcher(page = samplePage()), clock = clock)
+        assertFalse(getOnly.supports(Capability.ROSTER), "no POST, no squad route, so the tab does not appear")
+        assertFalse(getOnly.supports(Capability.LIVE_UPDATES))
+        assertTrue(getOnly.supports(Capability.EVENTS), "still reachable through the page")
+        assertFailsWith<UnsupportedCapabilityException> { getOnly.roster("LIF") }
+    }
+
+    /**
+     * The squad route is keyed by the CMS short name, which differs from the StatNet id for six
+     * of the fourteen clubs and answers `200` with nothing when it is wrong. The table row is
+     * what carries both spellings, so it is the join.
+     */
+    @Test
+    fun theSquadIsAskedForByTheClubsCmsSpelling() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+
+        // MoDo is asked for by `MoDo`, not the `MODO` the core keys it by. Asking with the
+        // StatNet id is routed here to what the site really answers: a 200 with no players.
+        val squad = provider.roster(HockeyAllsvenskanSamples.TWO_CODE_TEAM_ID)
+        assertEquals(29, squad.size)
+        assertEquals(
+            listOf(HockeyAllsvenskanSamples.SQUAD to HockeyAllsvenskanSamples.squadBody("MoDo")),
+            fetcher.postBodies,
+            "one POST, and the body carries every field the route needs, not just the club",
+        )
+        val first = squad.first()
+        assertNotNull(first.id, "the slug, so a roster row opens the profile player() serves")
+        assertEquals(HockeyAllsvenskanSamples.TWO_CODE_TEAM_ID, first.teamId, "the core's id, not the CMS one")
+        assertTrue(squad.any { it.birthDate != null })
+        assertTrue(squad.count { it.ref.position == "GK" } >= 2, "the goalies are in the squad")
+
+        assertFailsWith<NotFoundException> { provider.roster("XYZ") }
+    }
+
+    /**
+     * An unknown club is a `200` with an empty list, never an error, so an empty squad is the
+     * one answer that means the join is wrong rather than the club being small.
+     */
+    @Test
+    fun anEmptySquadIsReportedRatherThanServedAsAnEmptyTab() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        // Answer MoDo's own spelling with the empty body the wrong spelling really produces.
+        fetcher.postRoute(
+            HockeyAllsvenskanSamples.SQUAD,
+            HockeyAllsvenskanSamples.squadBody(HockeyAllsvenskanSamples.TWO_CODE_TEAM_LABEL),
+            File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "all-players.unknown-team.json"),
+        )
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertFailsWith<ProviderException> { provider.roster(HockeyAllsvenskanSamples.TWO_CODE_TEAM_ID) }
+    }
+
+    /**
+     * The table has no shots or save-percentage column and cannot say who leads the club. Those
+     * four numbers are four POSTs, and none of them may fail the screen the record is on.
+     */
+    @Test
+    fun teamStatsGainTheLeaderboardColumnsAndSurviveWithoutThem() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+
+        val stats = provider.teamStats(HockeyAllsvenskanSamples.TEAM_ID, "season_2026")
+        assertEquals(listOf("record", "goals", "specialTeams", "shooting", "leaders"), stats.groups.map { it.key })
+        val shooting = stats.groups.first { it.key == "shooting" }.stats.associate { it.key to it.value }
+        assertEquals("86", shooting["shotsOnGoal"], "Leksand's row of the SOG leaderboard")
+        assertEquals("94.03", shooting["savePercentage"])
+        val leaders = stats.groups.first { it.key == "leaders" }.stats.associate { it.key to it.value }
+        assertEquals("Patrik Zackrisson 4", leaders["pointsLeader"], "rank 1 of the club's points leaderboard")
+        assertEquals("Marcus Gidlöf 90.00", leaders["savePercentageLeader"])
+
+        // A leaderboard that will not answer costs its own column and nothing else.
+        val degraded = HockeyAllsvenskanProvider(
+            HockeyAllsvenskanSamples.register(SampleFetcher()).also { it.failPost(HockeyAllsvenskanSamples.TEAM_LEADERBOARD) },
+            clock = clock,
+        ).teamStats(HockeyAllsvenskanSamples.TEAM_ID, "season_2026")
+        // Special teams live on that leaderboard now, so they go down with it - the record,
+        // which comes from the standings row, does not.
+        assertEquals(listOf("record", "goals", "leaders"), degraded.groups.map { it.key })
+        assertEquals("3", degraded.groups.first().stats.first { it.key == "gamesPlayed" }.value, "the record is untouched")
+    }
+
+    /**
+     * The cheap route needs the game's StatNet number, which only the season page and the game
+     * page carry. The captured season row has it, so the POST is used straight away.
+     */
+    @Test
+    fun theTimelineComesFromThePostWhenTheSeasonPageGaveItsNumber() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+
+        val events = provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(
+            listOf(HockeyAllsvenskanSamples.PLAY_BY_PLAY to HockeyAllsvenskanSamples.pollPayload("23401", "AIK", "MODO", "2026-09-18T17:00:00Z")),
+            fetcher.postBodies,
+            "one POST carrying the season page's own game number; the 235 KB page was not read",
+        )
+        assertTrue(fetcher.requests.none { it == HockeyAllsvenskanSamples.VIEW })
+
+        val goal = assertNotNull(events.firstOrNull { it.type == HockeyEventType.GOAL })
+        assertEquals("MODO", goal.team?.id, "the event's StatNet id resolved against the game's sides")
+        assertEquals(Score(0, 1), goal.score, "the running score, home first")
+        assertEquals(5.minutes + 45.seconds, goal.time.elapsed, "seconds inside the period, counted from 0 again each period")
+        assertEquals("5:45", goal.time.label)
+        assertEquals(2, goal.time.period.number, "MoDo's opener came in the second")
+        val details = assertIs<GoalDetails>(goal.details)
+        assertEquals("Carl Mattsson", details.scorer?.name)
+        assertEquals(listOf("Victor Berglund", "Elias Rosén"), details.assists.map { it.name })
+        assertEquals(Strength.EV, details.strength, "`EQ` is even strength")
+        assertEquals(1, details.scorerSeasonTotal)
+    }
+
+    /** The whole arc: three periods, penalties with their minutes, and shots told apart by outcome. */
+    @Test
+    fun aFinishedGamesTimelineCarriesPenaltiesAndShotOutcomes() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+
+        val events = provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(listOf(1, 2, 3), events.map { it.time.period.number }.distinct())
+        assertEquals(113, events.size)
+
+        val penalty = assertNotNull(events.firstOrNull { it.type == HockeyEventType.PENALTY })
+        val penaltyDetails = assertIs<PenaltyDetails>(penalty.details)
+        assertEquals(2, penaltyDetails.minutes)
+        assertNotNull(penaltyDetails.infraction)
+        assertNotNull(penaltyDetails.player)
+
+        // `outside` and `frame hit` never reached the goalie; `save` and `covered by player` did.
+        val missed = events.filter { it.type == HockeyEventType.MISSED_SHOT }
+        val onGoal = events.filter { it.type == HockeyEventType.SHOT }
+        assertTrue(missed.isNotEmpty() && onGoal.isNotEmpty())
+        assertTrue(missed.all { it.description in setOf("outside", "frame hit") })
+        assertTrue(onGoal.none { it.description in setOf("outside", "frame hit") })
+        // Which way each goalie went, as SHL's feed says it: both starters in, AIK's pulled and
+        // back once, and both off at the end.
+        val goalies = events.filter { it.type == HockeyEventType.GOALIE_CHANGE }.map { it.description.orEmpty() }
+        assertEquals(3, goalies.count { it.endsWith(" in") })
+        assertEquals(3, goalies.count { it.endsWith(" out") })
+        assertTrue(goalies.first().endsWith("Enroth in"), goalies.first())
+    }
+
+    /**
+     * No captured game has gone to a shoot-out, so this block is built by hand in the shape of
+     * the three real ones. What it pins is the rule: the block's attempts make it the shoot-out,
+     * not its number - numbered 4 here, which by number alone would have read as overtime.
+     */
+    @Test
+    fun aBlockOfShootoutAttemptsIsTheShootout() = runTest {
+        val full = playByPlaySample()
+        val shootout = OpenScoreJson.parseToJsonElement(
+            """{"Period":"4","Events":[{"type":"ShootoutPenaltyShot","time":"0","player":{"statNetId":"5731","firstName":"Oscar","familyName":"Tellström"},"team":{"statNetId":"AIK"}}]}""",
+        )
+        val withShootout = JsonObject(full + ("game_events" to JsonArray(full.getValue("game_events").jsonArray + shootout)))
+        val provider = HockeyAllsvenskanProvider(servingPlayByPlay { withShootout.toString() }, clock = clock)
+
+        val attempt = provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID).last()
+        assertEquals(HockeyEventType.SHOOTOUT_ATTEMPT, attempt.type)
+        assertEquals(PeriodType.SHOOTOUT, attempt.time.period.type)
+        assertEquals("SO", attempt.time.period.label)
+    }
+
+    /**
+     * Without the number, the page answers instead - and leaves the number behind, so the next
+     * call is the cheap one. This is the shape of a cold start from the durable snapshot.
+     */
+    @Test
+    fun aGameWithNoKnownNumberFallsBackToThePageAndLearnsFromIt() = runTest {
+        val dir = SampleFetcher.samplesDir("hockey", "hockeyallsvenskan")
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        // The page as it really is: the play-by-play component with the whole document inline,
+        // and the game object that carries the StatNet number.
+        fetcher.route(HockeyAllsvenskanSamples.VIEW, File(dir, "game-view.play-by-play.rsc.txt"), "text/x-component")
+        // A cold start: the season is restored from the store, so no import has seen the
+        // numbers, which is the one situation the page has to answer.
+        val store = MemorySeasonStore()
+        HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock, scheduleStore = store)
+            .gamesOn(openingDay)
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock, scheduleStore = store)
+
+        val fromPage = provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(113, fromPage.size, "the page carries the same document")
+        assertTrue(fetcher.postBodies.isEmpty(), "no number, so no POST was possible")
+        assertTrue(fetcher.requests.contains(HockeyAllsvenskanSamples.VIEW))
+
+        // Having read the page once, the number is known and the cheap route takes over.
+        val fromPost = provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(fromPage.size, fromPost.size)
+        assertEquals(listOf(HockeyAllsvenskanSamples.PLAY_BY_PLAY), fetcher.postBodies.map { it.first })
+    }
+
+    /**
+     * The game route carries the number too, and a match screen reads the game before its
+     * timeline - so a cold start's timeline is the POST, not the 235 KB page.
+     */
+    @Test
+    fun aColdStartLearnsTheGameNumberFromTheGameRoute() = runTest {
+        val store = MemorySeasonStore()
+        HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock, scheduleStore = store)
+            .gamesOn(openingDay)
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock, scheduleStore = store)
+
+        provider.game(HockeyAllsvenskanSamples.LIVE_GAME_ID)
+        assertEquals(113, provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID).size)
+        assertEquals(listOf(HockeyAllsvenskanSamples.PLAY_BY_PLAY), fetcher.postBodies.map { it.first }, "the game route's number made the POST possible")
+        assertTrue(fetcher.requests.none { it == HockeyAllsvenskanSamples.VIEW }, "the game page was not read")
+    }
+
+    /**
+     * The document does not move on a penalty or a shot, so a live view that re-read the
+     * timeline only when the score or period changed left them off until the next goal. The
+     * live flow carries the timeline itself and reads it on a cadence while the document
+     * stands still.
+     */
+    @Test
+    fun theLiveFlowCarriesItsTimelineAndReadsItWithoutWaitingForAGoal() = runTest {
+        val full = playByPlaySample()
+        val periods = full.getValue("game_events").jsonArray
+        val firstPeriodOnly = JsonObject(full + ("game_events" to JsonArray(listOf(periods.first()))))
+        val firstPeriodEvents = periods.first().jsonObject.getValue("Events").jsonArray.size
+        // The same live document on every read; the play-by-play fills in behind it.
+        var posts = 0
+        val fetcher = servingPlayByPlay { (if (posts++ == 0) firstPeriodOnly else full).toString() }
+
+        val updates = HockeyAllsvenskanProvider(fetcher, clock = clock).live(HockeyAllsvenskanSamples.LIVE_GAME_ID).take(2).toList()
+        assertEquals(firstPeriodEvents, updates.first().events?.size, "the first emission already has its timeline")
+        assertEquals(113, updates.last().events?.size, "what happened since reached the timeline with no goal to prompt it")
+        assertEquals(updates.first().score, updates.last().score)
+        assertEquals(2, posts, "read when the document first arrived, then after 30 s of it standing still - not every tick")
+    }
+
+    /** StatNet has no sheet until the opening face-off, and says so with a 404. That is a state. */
+    @Test
+    fun aGameThatHasNotStartedHasNoTimelineRatherThanAnError() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        // The same game, before the opening face-off: StatNet has no sheet and answers 404.
+        fetcher.postRoute(
+            HockeyAllsvenskanSamples.PLAY_BY_PLAY,
+            HockeyAllsvenskanSamples.pollPayload("23401", "AIK", "MODO", "2026-09-18T17:00:00Z"),
+            File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "play-by-play.new.not-started.json"),
+            status = 404,
+        )
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+        assertEquals(emptyList(), provider.events(HockeyAllsvenskanSamples.LIVE_GAME_ID))
+    }
+
+    /**
+     * The table stopped being a page read on 2026-09-25: `/pages/tabell` went client-rendered
+     * and the rows now come from the route its shell calls. That route gives the display code
+     * (`ÖIK`, `MORA`, `NVIF`), not the StatNet id the core keys clubs by, so the season
+     * snapshot does the join - and a club the snapshot has no game for keeps the display code,
+     * which is what a past season's relegated clubs get.
+     */
+    @Test
+    fun theTableIsARouteNowAndTheSnapshotSuppliesTheIds() = runTest {
         val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
         val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
         assertTrue(provider.supports(Capability.STANDINGS))
@@ -253,45 +533,61 @@ class HockeyAllsvenskanProviderTest {
         assertEquals("season_2026", table.seasonId)
         assertEquals(1, table.groups.size)
         assertEquals(14, table.rows.size)
-        assertEquals(listOf(HockeyAllsvenskanSamples.TABLE), fetcher.requests, "the table never reads the season page")
+        assertEquals(HockeyAllsvenskanSamples.TABLE, fetcher.postBodies.first().first)
 
         val leader = table.rows.first()
         assertEquals(1, leader.rank)
         assertEquals("LIF", leader.team.id)
-        assertEquals("Leksand", leader.team.name)
+        assertEquals("Leksand", leader.team.name, "the snapshot's name, not the table's code")
         assertEquals("leksand", leader.team.clubId, "the crosswalk keys HockeyAllsvenskan by StatNet id")
+        assertTrue(leader.team.logoUrl!!.startsWith("https://ha-media.hadigital.se/"), "the crest comes from the snapshot too")
         assertEquals(3, leader.played)
         assertEquals(3, leader.wins)
         assertEquals(9, leader.points)
         assertEquals(7, leader.goalDifference)
+        // The row's own column is empty now; this is the team leaderboard's value.
         assertEquals("18.18", leader.extra["powerPlay"])
+        assertEquals("91.67", leader.extra["penaltyKill"])
 
-        // MoDo's seven points are one regulation win and two shoot-out wins: all three are wins here.
+        // MoDo's seven points are one regulation win and two overtime wins: all three are wins
+        // here, and the 3-2-1-0 split that explains the points is in `extra`.
         val modo = assertNotNull(table.rows.firstOrNull { it.team.id == "MODO" })
         assertEquals(3, modo.wins)
         assertEquals(0, modo.losses)
         assertEquals(0, modo.otherLosses)
         assertEquals(7, modo.points)
         assertEquals("1", modo.extra["regulationWins"])
-        assertEquals("2", modo.extra["shootoutWins"])
+        assertEquals("2", modo.extra["overtimeWins"])
         assertEquals("MoDo", modo.team.abbreviation, "the CMS spelling, which is what the squad route wants")
 
-        // The one row whose display code is not its id: the core follows the id the games use.
-        val ostersund = assertNotNull(table.rows.firstOrNull { it.team.name == "Östersund" })
-        assertEquals("OSIK", ostersund.team.id)
-        assertEquals("ÖIK", ostersund.team.abbreviation)
-        assertEquals(1, ostersund.wins, "a shoot-out win with no regulation win")
-        assertEquals(2, ostersund.otherLosses, "one in overtime, one in the shoot-out")
+        // Östersund is `ÖIK` in the table and `OSIK` in the games. The trimmed season sample has
+        // no Östersund fixture, so this is the fallback: the display code stands in for the id.
+        val ostersund = assertNotNull(table.rows.firstOrNull { it.team.abbreviation == "ÖIK" })
+        assertEquals("ÖIK", ostersund.team.id, "no snapshot game for this club, so no StatNet id to join to")
+        assertNull(ostersund.team.logoUrl)
+        assertEquals(1, ostersund.wins, "an overtime win with no regulation win")
+        assertEquals(2, ostersund.otherLosses, "both past regulation")
         assertEquals(4, ostersund.points)
-        assertTrue(ostersund.team.logoUrl!!.startsWith("https://ha-media.hadigital.se/"))
     }
 
+
     @Test
-    fun theTableRefusesASeasonThePageCannotServe() = runTest {
-        val provider = HockeyAllsvenskanProvider(HockeyAllsvenskanSamples.register(SampleFetcher()), clock = clock)
+    fun aPastSeasonIsServedNowThatTheTableIsARoute() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
         assertEquals(14, provider.standings("season_2026").rows.size)
-        assertEquals(14, provider.standings("2026").rows.size, "the applied season, spelled either way")
-        assertFailsWith<NotFoundException> { provider.standings("season_2024") }
+
+        // The page ignored every parameter it was given; the route does not. This is 2025-26,
+        // won by IF Björklöven with 119 points from 52 games - a club not in this season's
+        // snapshot, so it keeps the table's own code.
+        val past = provider.standings("season_2025")
+        assertEquals("season_2025", past.seasonId)
+        val champion = past.rows.first()
+        assertEquals("IFB", champion.team.id)
+        assertEquals(52, champion.played)
+        assertEquals(119, champion.points)
+        assertNull(champion.extra["powerPlay"], "the leaderboard route takes no season, so special teams are current-only")
+        assertFailsWith<NotFoundException> { provider.standings("not-a-season") }
     }
 
     /** A club's identity, rink and fixtures are all in the snapshot the feed has already read. */
@@ -326,12 +622,35 @@ class HockeyAllsvenskanProviderTest {
         val stats = provider.teamStats("LIF", "season_2026")
         assertEquals("LIF", stats.teamId)
         assertEquals("season_2026", stats.seasonId)
-        assertEquals(listOf("record", "goals", "specialTeams"), stats.groups.map { it.key })
+        assertEquals(listOf("record", "goals", "specialTeams", "shooting", "leaders"), stats.groups.map { it.key })
         val record = stats.groups.first().stats.associate { it.key to it.value }
         assertEquals("3", record["gamesPlayed"])
         assertEquals("9", record["points"])
-        assertEquals("91.67", stats.groups.last().stats.single { it.key == "penaltyKill" }.value)
+        assertEquals("91.67", stats.groups.first { it.key == "specialTeams" }.stats.single { it.key == "penaltyKill" }.value)
         assertFailsWith<NotFoundException> { provider.teamStats("XYZ", "season_2026") }
+    }
+
+    /**
+     * The leaderboards take no season, so a past season's stats are its table row alone -
+     * not last year's record beside this year's power play. A club this season's snapshot does
+     * not know is found by the table's own code, which is the id [standings] gave it.
+     */
+    @Test
+    fun aPastSeasonsStatsAreItsTableRowAlone() = runTest {
+        val fetcher = HockeyAllsvenskanSamples.register(SampleFetcher())
+        val provider = HockeyAllsvenskanProvider(fetcher, clock = clock)
+
+        val aik = provider.teamStats("AIK", "season_2025")
+        assertEquals(listOf("record", "goals"), aik.groups.map { it.key })
+        assertEquals("85", aik.groups.first().stats.first { it.key == "points" }.value)
+        assertTrue(
+            fetcher.postBodies.none { it.first == HockeyAllsvenskanSamples.TEAM_LEADERBOARD || it.first == HockeyAllsvenskanSamples.PLAYER_LEADERBOARD },
+            "no leaderboard was asked for a season it cannot answer for",
+        )
+
+        val champion = provider.teamStats("IFB", "season_2025")
+        assertEquals("IFB", champion.teamId)
+        assertEquals("119", champion.groups.first().stats.first { it.key == "points" }.value)
     }
 
     @Test
@@ -360,6 +679,21 @@ class HockeyAllsvenskanProviderTest {
             "text/x-component",
         )
         assertFailsWith<NotFoundException> { provider.player("no-such-player") }
+    }
+
+    private fun playByPlaySample(): JsonObject = OpenScoreJson.parseToJsonElement(
+        File(SampleFetcher.samplesDir("hockey", "hockeyallsvenskan"), "play-by-play.new.final.json").readText(),
+    ).jsonObject
+
+    /** The samples, except that the play-by-play POST answers [document]. */
+    private fun servingPlayByPlay(document: () -> String): QueryFetcher {
+        val samples = HockeyAllsvenskanSamples.register(SampleFetcher())
+        return object : QueryFetcher {
+            override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse = samples.get(url, headers, maxAge)
+            override suspend fun query(url: String, body: String, contentType: String, headers: Map<String, String>, maxAge: Duration): FetchResponse =
+                if (url == HockeyAllsvenskanSamples.PLAY_BY_PLAY) FetchResponse(url, 200, "application/json", document())
+                else samples.query(url, body, contentType, headers, maxAge)
+        }
     }
 
     private fun samplePage(): String =

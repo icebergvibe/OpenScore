@@ -3,11 +3,19 @@ package org.openscore.net
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
 import io.ktor.http.HttpHeaders
+import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
+import io.ktor.http.content.TextContent
 import io.ktor.http.headersOf
+import io.ktor.utils.io.ByteChannel
+import io.ktor.utils.io.writeStringUtf8
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeout
 import kotlinx.coroutines.test.runTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -22,6 +30,61 @@ class KtorFetcherTest {
 
     private class FakeClock(var now: Instant = Instant.fromEpochSeconds(1_800_000_000)) : Clock {
         override fun now(): Instant = now
+    }
+
+    @Test
+    fun aQueryPostsItsBodyAndCachesTheAnswer() = runTest {
+        var hits = 0
+        val engine = MockEngine { request ->
+            hits++
+            assertEquals(HttpMethod.Post, request.method)
+            assertEquals("""{"team":"LIF"}""", (request.body as TextContent).text)
+            assertEquals("application/json", request.body.contentType?.withoutParameters()?.toString())
+            assertTrue(request.headers[HttpHeaders.UserAgent]!!.startsWith("OpenScore/"), "a POST is as identifiable as a GET")
+            respond("""{"players":$hits}""", HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json"))
+        }
+        val clock = FakeClock()
+        val fetcher = KtorFetcher(engine, clock = clock)
+
+        val first = fetcher.query("https://example.test/api/all-players", """{"team":"LIF"}""", maxAge = 10.seconds)
+        val second = fetcher.query("https://example.test/api/all-players", """{"team":"LIF"}""", maxAge = 10.seconds)
+        assertEquals(1, hits, "the same question inside maxAge is answered from cache")
+        assertEquals(first.body, second.body)
+        assertTrue(second.fromCache)
+
+        clock.now += 11.seconds
+        fetcher.query("https://example.test/api/all-players", """{"team":"LIF"}""", maxAge = 10.seconds)
+        assertEquals(2, hits)
+    }
+
+    /**
+     * The whole point of putting the body in the request identity. One URL answers a different
+     * question per body, and keying on the URL alone would serve one club's squad as another's.
+     */
+    @Test
+    fun twoBodiesToOneUrlAreTwoCacheEntries() = runTest {
+        val engine = MockEngine { request ->
+            respond((request.body as TextContent).text, HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json"))
+        }
+        val fetcher = KtorFetcher(engine)
+        val url = "https://example.test/api/all-players"
+
+        assertEquals("""{"team":"LIF"}""", fetcher.query(url, """{"team":"LIF"}""", maxAge = 1.hours).body)
+        assertEquals("""{"team":"MoDo"}""", fetcher.query(url, """{"team":"MoDo"}""", maxAge = 1.hours).body)
+        assertTrue(fetcher.query(url, """{"team":"LIF"}""", maxAge = 1.hours).fromCache, "the first one is still there")
+    }
+
+    /** A GET and a POST to one URL are different requests, so one must never answer the other. */
+    @Test
+    fun aQueryAndAGetOnOneUrlDoNotShareACacheEntry() = runTest {
+        val engine = MockEngine { request ->
+            respond(request.method.value, HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "text/plain"))
+        }
+        val fetcher = KtorFetcher(engine)
+        val url = "https://example.test/api/thing"
+
+        assertEquals("GET", fetcher.get(url, maxAge = 1.hours).body)
+        assertEquals("POST", fetcher.query(url, "{}", maxAge = 1.hours).body)
     }
 
     @Test
@@ -268,6 +331,53 @@ class KtorFetcherConcurrencyTest {
         assertEquals(1, hits, "concurrent callers of one URL share one request")
         assertEquals(1, results.count { it.source == FetchSource.NETWORK })
         assertEquals(2, results.count { it.source == FetchSource.COALESCED })
+    }
+
+    @Test
+    fun aFailedRequestIsSharedWithTheCallersWaitingOnIt() = runTest {
+        var hits = 0
+        val release = kotlinx.coroutines.CompletableDeferred<Unit>()
+        val engine = MockEngine {
+            hits++
+            release.await()
+            error("host unreachable")
+        }
+        val fetcher = KtorFetcher(engine, clock = FakeClock())
+        val calls = (1..3).map { async { runCatching { fetcher.get("https://example.test/down") } } }
+        testScheduler.runCurrent()
+        release.complete(Unit)
+
+        val results = calls.awaitAll()
+        assertTrue(results.all { it.isFailure }, "every caller hears about the failure")
+        assertEquals(1, hits, "one failed request, not one per caller in line")
+
+        runCatching { fetcher.get("https://example.test/down") }
+        assertEquals(2, hits, "once that group has gone, the next caller tries again")
+    }
+
+    /**
+     * A stream holds its connection for a whole match. It must not hold one of its host's
+     * request slots for as long: Bundesliga streams from the host its REST reads use.
+     */
+    @Test
+    fun anOpenStreamDoesNotHoldItsHostsRequestSlot() = runTest {
+        val stream = ByteChannel()
+        val engine = MockEngine { request ->
+            if (request.url.encodedPath == "/stream") respond(stream, HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "text/event-stream"))
+            else respond("""{"ok":true}""", HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json"))
+        }
+        val fetcher = KtorFetcher(engine, clock = FakeClock(), maxConcurrentPerHost = 1)
+        val first = kotlinx.coroutines.CompletableDeferred<ServerSentEvent>()
+        val listening = launch { fetcher.events("https://example.test/stream").collect { first.complete(it) } }
+        stream.writeStringUtf8("data: hello\n\n")
+        stream.flush()
+        assertEquals("hello", first.await().data, "the stream is open and delivering")
+
+        // Real time, not the test clock: the engine answers on its own threads.
+        val response = withContext(Dispatchers.Default) { withTimeout(5.seconds) { fetcher.get("https://example.test/api") } }
+        assertEquals(200, response.status, "the host's only slot was free for a plain read")
+        listening.cancel()
+        stream.close()
     }
 
     @Test

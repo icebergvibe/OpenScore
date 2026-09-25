@@ -50,6 +50,9 @@ data class AlertSettings(
         AlertKind.BREAK -> breaks
     }
 
+    /** The same opt-ins, moved onto the keys their favourites now have ([org.openscore.app.data.rekey]). */
+    fun renamed(renamed: Map<String, String>): AlertSettings = copy(keys = keys.mapTo(LinkedHashSet()) { renamed[it] ?: it })
+
     /** What the schedule is built from; an unchanged one means an app launch costs no request. */
     val signature: String
         get() = listOf(kickoff, results, started, goals, cards, breaks, leadMinutes).joinToString("|") +
@@ -102,6 +105,14 @@ class AlertsStore(context: Context) {
 
     @Synchronized
     fun update(change: (AlertSettings) -> AlertSettings) = persist(change(_settings.value))
+
+    /** Moves opt-ins onto the keys their favourites were renamed to, before [retain] can drop them as unknown. */
+    @Synchronized
+    fun rename(renamed: Map<String, String>) {
+        val current = _settings.value
+        if (renamed.keys.none { it in current.keys }) return
+        persist(current.renamed(renamed))
+    }
 
     /** Forgets alerts whose favourite has since been removed, so the set cannot grow stale. */
     @Synchronized

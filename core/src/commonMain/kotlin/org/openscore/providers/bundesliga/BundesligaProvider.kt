@@ -1,13 +1,9 @@
 package org.openscore.providers.bundesliga
 
 import kotlinx.coroutines.async
-import kotlinx.coroutines.cancelAndJoin
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
@@ -36,13 +32,16 @@ import org.openscore.provider.Capability
 import org.openscore.provider.Dates
 import org.openscore.provider.LivePollBudget
 import org.openscore.provider.NotFoundException
+import org.openscore.provider.consumeStream
 import org.openscore.provider.decodeJson
 import org.openscore.provider.getJson
+import org.openscore.provider.runCatchingUnlessCancelled
 import org.openscore.providers.espn.EspnRosters
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Duration.Companion.seconds
+import kotlin.time.TimeSource
 
 /**
  * Bundesliga (and 2. Bundesliga via [competitionId]) from the Firebase Realtime Database
@@ -81,10 +80,16 @@ public class BundesligaProvider(
             ?: throw NotFoundException("${league.name}: no season name in configNode for $competitionId", league.id)
 
     /**
-     * Firebase's single-match node sends an initial `put` and shallow `patch` events. The
-     * renderer keeps the richer first REST result (venue, events and stats) while the stream
-     * replaces its volatile scoreboard fields. If comments stop arriving for a minute, reconnect
-     * and take a fresh direct snapshot rather than showing a silently stale score.
+     * Firebase's single-match node sends an initial `put` and shallow `patch` events carrying
+     * the scoreboard - score, status, minute - and never the timeline or the stats. Those are
+     * the ticker's and the stats node's, read again whenever the scoreboard gets ahead of them
+     * (a goal, a break, the whistle) and otherwise at most every [DETAIL_MAX_AGE], so a card or
+     * a substitution shows within a minute or so; an unchanged re-read is a `304`. Before this
+     * the first snapshot's timeline stood for as long as the stream stayed up, which during play
+     * is the whole match: goals moved the score and never reached the timeline.
+     *
+     * If the stream fails or stops for a minute, reconnect and take a fresh direct snapshot
+     * rather than showing a silently stale score.
      */
     override fun live(gameId: String, interval: Duration): Flow<Game> {
         val streamFetcher = fetcher as? EventStreamFetcher ?: return super.live(gameId, interval)
@@ -105,24 +110,42 @@ public class BundesligaProvider(
                 }
                 val (season, opened, openedDetail) = opening
                 var current = opened
-                var detailed = openedDetail
-                if (detailed != last) emit(detailed)
-                last = detailed
-                if (detailed.state.isTerminal) return@flow
+                // The ticker as last read: the venue, timeline and stats the stream never carries.
+                var detail = openedDetail
+                var detailReadAt = TimeSource.Monotonic.markNow()
+                var shown = openedDetail
+                if (shown != last) emit(shown)
+                last = shown
+                if (shown.state.isTerminal) return@flow
 
                 val path = "${seasonPath(season)}/matches/$gameId.json"
-                collectStreamUntilQuiet(streamFetcher.events(path)) { event ->
-                    current = current.applyFirebaseEvent(event) ?: return@collectStreamUntilQuiet
-                    val next = mapper.game(current, withEvents = false).copy(
-                        venue = detailed.venue,
-                        events = detailed.events,
-                        stats = detailed.stats,
-                    )
-                    if (next != last) emit(next)
-                    last = next
-                    detailed = next
+                consumeStream(streamFetcher.events(path), STREAM_QUIET_TIMEOUT) { event ->
+                    current = current.applyFirebaseEvent(event) ?: return@consumeStream true
+                    val scoreboard = mapper.game(current, withEvents = false)
+                    if (detail.isBehind(scoreboard) || detailReadAt.elapsedNow() >= DETAIL_MAX_AGE) {
+                        // A failed re-read keeps the timeline it has; the next patch asks again.
+                        runCatchingUnlessCancelled { detailedGame(season, current) }.getOrNull()?.let {
+                            detail = it
+                            detailReadAt = TimeSource.Monotonic.markNow()
+                        }
+                    }
+                    shown = scoreboard.withDetail(detail)
+                    if (shown != last) emit(shown)
+                    last = shown
+                    !shown.state.isTerminal
                 }
-                if (last.state.isTerminal) return@flow
+                if (shown.state.isTerminal) {
+                    // The ticker can trail the stream at the whistle, and this is the last state
+                    // the reader is left with, so it is chased a little before the flow ends.
+                    var reads = 0
+                    while (detail.isBehind(shown) && reads++ < MAX_CATCH_UP_READS) {
+                        budget.wait()
+                        runCatchingUnlessCancelled { detailedGame(season, current) }.getOrNull()?.let { detail = it }
+                    }
+                    val final = shown.withDetail(detail)
+                    if (final != last) emit(final)
+                    return@flow
+                }
                 // A graceful close and a quiet connection both need a short pause. This avoids a
                 // reconnect spin while still recovering much faster than polling the full game.
                 budget.wait(STREAM_RECONNECT_DELAY)
@@ -130,28 +153,11 @@ public class BundesligaProvider(
         }
     }
 
-    /** Feeds [onEvent] until the upstream closes the stream or stays silent for [STREAM_QUIET_TIMEOUT]. */
-    private suspend fun collectStreamUntilQuiet(
-        stream: Flow<ServerSentEvent>,
-        onEvent: suspend (ServerSentEvent) -> Unit,
-    ): Unit = coroutineScope {
-        val events = Channel<ServerSentEvent>(Channel.BUFFERED)
-        val reader = launch {
-            try {
-                stream.collect { events.send(it) }
-            } finally {
-                events.close()
-            }
-        }
-        try {
-            while (true) {
-                val event = withTimeoutOrNull(STREAM_QUIET_TIMEOUT) { events.receiveCatching().getOrNull() } ?: break
-                onEvent(event)
-            }
-        } finally {
-            reader.cancelAndJoin()
-        }
-    }
+    /** The ticker has not yet caught up with what the stream says. */
+    private fun Game.isBehind(scoreboard: Game): Boolean = score != scoreboard.score || state != scoreboard.state
+
+    /** The streamed scoreboard with the ticker's venue, timeline and stats. */
+    private fun Game.withDetail(detail: Game): Game = copy(venue = detail.venue, events = detail.events, stats = detail.stats)
 
     private suspend fun seasonId(): String =
         fetcher.getJson(configUrl, MapSerializer(String.serializer(), BlConfig.serializer()), STATIC_MAX_AGE, league.id)[competitionId]?.season?.dflDatalibrarySeasonId
@@ -233,9 +239,13 @@ public class BundesligaProvider(
         node("${seasonPath(season)}/matches/$id.json", BlMatch.serializer(), LIVE_MAX_AGE)
             ?: throw NotFoundException("${league.name}: match '$id' not found", league.id)
 
-    /** Firebase answers a missing node with a `200 null`. */
+    /**
+     * Firebase answers a missing node with a `200 null`. Every read asks for an `ETag`, which
+     * Firebase only sends when asked, so the fetcher can revalidate: an unchanged 30-70 KB
+     * ticker or the 330 KB season list then costs a `304`.
+     */
     private suspend fun <T> node(url: String, strategy: DeserializationStrategy<T>, maxAge: Duration): T? {
-        val response = fetcher.get(url, maxAge = maxAge)
+        val response = fetcher.get(url, FIREBASE_ETAG, maxAge)
         response.requireSuccess()
         if (response.body.trim() == "null" || response.body.isBlank()) return null
         return decodeJson(response, strategy, league.id)
@@ -268,6 +278,12 @@ public class BundesligaProvider(
         private val LIVE_MAX_AGE = 10.seconds
         private val STREAM_QUIET_TIMEOUT = 60.seconds
         private val STREAM_RECONNECT_DELAY = 2.seconds
+        /** How old the ticker may get under a live stream before a patch asks for it again. */
+        private val DETAIL_MAX_AGE = 1.minutes
+        /** Ticker re-reads at the final whistle while it trails the stream: a minute at the 10 s floor. */
+        private const val MAX_CATCH_UP_READS = 6
+        /** Asks Firebase for the `ETag` it otherwise leaves out (README, "Firebase REST conventions"). */
+        private val FIREBASE_ETAG = mapOf("X-Firebase-ETag" to "true")
         private val TABLE_MAX_AGE = 2.minutes
         private val STATIC_MAX_AGE = 1.hours
     }

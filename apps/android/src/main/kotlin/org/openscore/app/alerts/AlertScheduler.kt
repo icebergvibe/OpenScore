@@ -118,6 +118,18 @@ object AlertScheduler {
         scheduleDailyRefresh(context)
     }
 
+    /**
+     * After a pass that failed outright rather than running out of time. The chain is re-armed,
+     * but through a rebuild no sooner than [REFRESH_RETRY_MS] and not from the stored queue at
+     * once: a row that fails every pass would otherwise wake the phone every few seconds.
+     */
+    fun recover(context: Context, cause: Throwable) {
+        Log.w(TAG, "alert pass failed; rebuilding in ${REFRESH_RETRY_MS / 60_000} minutes", cause)
+        val retryAt = System.currentTimeMillis() + REFRESH_RETRY_MS
+        AlertQueue(context).pending().minOfOrNull { it.dueAt }?.let { setAlarm(context, ACTION_FIRE, maxOf(it, retryAt)) }
+        setAlarm(context, ACTION_REFRESH, retryAt)
+    }
+
     /** Opening the app is the one moment a wake-up is free, so anything the system has been sitting on arrives at once. */
     suspend fun deliverOverdue(context: Context) {
         val now = System.currentTimeMillis()
@@ -220,15 +232,14 @@ object AlertScheduler {
      * same finding when it fell due, and the reminder would fire for nothing.
      */
     private fun announceCalledOff(app: OpenScoreApp, queue: AlertQueue, rows: List<PendingAlert>, games: Map<String, Game>, notified: Set<String>) {
-        val delivered = mutableListOf<String>()
         rows.distinctBy { it.key }.forEach { row ->
             val post = AlertRules.calledOffPost(row, games.getValue(row.key)) ?: return@forEach
             if (post.id in notified) return@forEach
             Log.d(TAG, "called off: ${row.title} (${games.getValue(row.key).state})")
+            // Recorded as it is posted, for the reason [deliver] gives.
+            queue.markNotified(listOf(post.id))
             Notifications.post(app, post, GameLink.of(row))
-            delivered += post.id
         }
-        queue.markNotified(delivered)
     }
 
     /**
@@ -260,13 +271,16 @@ object AlertScheduler {
         Log.d(TAG, "firing ${due.size} of ${pending.size}: ${due.map { "${it.kind} ${it.title}" }}")
 
         Notifications.ensureChannels(app)
-        val delivered = mutableListOf<String>()
         // Read once and added to as we go, so a duplicate inside this batch is caught too.
         val notified = queue.notifiedIds().toMutableSet()
         fun show(post: Post, link: GameLink) {
             if (!notified.add(post.id)) return
+            // Recorded as it is posted, not at the end of the pass. A pass that runs out of time
+            // (a slow listing after the kick-off reminders went out) is re-armed from the queue
+            // as stored, which still holds the rows it posted, and the next pass would post them
+            // again - replacing the notification and sounding it a second time.
+            queue.markNotified(listOf(post.id), now)
             Notifications.post(app, post, link)
-            delivered += post.id
         }
 
         due.filter { it.kind == AlertKind.KICKOFF }.forEach { row ->
@@ -320,7 +334,6 @@ object AlertScheduler {
             }
         }
 
-        queue.markNotified(delivered, now)
         queue.savePending(remaining)
         scheduleNext(app, remaining)
         scheduleDailyRefresh(app)

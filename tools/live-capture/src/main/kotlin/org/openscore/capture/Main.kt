@@ -82,7 +82,7 @@ public fun main(args: Array<String>) {
             coroutineScope {
                 selected.map { (leagueId, gameId) ->
                     async {
-                        val recording = RecordingFetcher(shared)
+                        val recording = RecordingFetcher.of(shared)
                         val provider = OpenScore.default(recording).provider(leagueId)
                         val dir = File(opts.out, "$leagueId/${gameId.replace(Regex("[^A-Za-z0-9._-]"), "_")}")
                         Capture(provider, recording, gameId, dir, opts.capture, log = { println(it) }).run()

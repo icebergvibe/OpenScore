@@ -1,7 +1,9 @@
 package org.openscore.providers.bundesliga
 
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.take
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.LocalDate
@@ -17,6 +19,7 @@ import org.openscore.model.football.FootballEventType
 import org.openscore.model.football.FootballGoalDetails
 import org.openscore.net.EventStreamFetcher
 import org.openscore.net.FetchResponse
+import org.openscore.net.Fetcher
 import org.openscore.net.OpenScoreJson
 import org.openscore.net.ServerSentEvent
 import org.openscore.provider.Capability
@@ -25,6 +28,7 @@ import org.openscore.provider.UnsupportedCapabilityException
 import org.openscore.testing.BundesligaSamples
 import org.openscore.testing.SampleFetcher
 import java.io.File
+import java.io.IOException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
@@ -38,14 +42,27 @@ import kotlin.time.Duration.Companion.minutes
 
 class BundesligaProviderTest {
 
+    /** GETs from [delegate], SSE from a script: one flow per connection, in order. */
     private class StreamingFetcher(
-        private val delegate: SampleFetcher,
-        private val stream: Flow<ServerSentEvent>,
+        private val delegate: Fetcher,
+        private vararg val connections: Flow<ServerSentEvent>,
     ) : EventStreamFetcher {
+        var opened: Int = 0
+            private set
+
         override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse =
             delegate.get(url, headers, maxAge)
 
-        override fun events(url: String, headers: Map<String, String>): Flow<ServerSentEvent> = stream
+        override fun events(url: String, headers: Map<String, String>): Flow<ServerSentEvent> =
+            connections.getOrNull(opened++) ?: error("no scripted connection #$opened")
+    }
+
+    private fun sample(name: String): String = File(SampleFetcher.samplesDir("football", "bundesliga"), name).readText()
+
+    /** The patch Firebase sends at the final whistle of the sampled match: status and the 1-3 score. */
+    private fun finalWhistle(): ServerSentEvent {
+        val final = OpenScoreJson.parseToJsonElement(sample("match-basic.final.json")).jsonObject
+        return ServerSentEvent("patch", """{"path":"/","data":{"matchStatus":"FINAL_WHISTLE","score":${final.getValue("score")}}}""")
     }
 
     private fun provider(state: String): Pair<BundesligaProvider, SampleFetcher> {
@@ -104,17 +121,63 @@ class BundesligaProviderTest {
     @Test
     fun directFirebaseStreamPatchesTheScoreboardWithoutPollingTheFullGame() = runTest {
         val delegate = BundesligaSamples.register(SampleFetcher(), "live")
-        val final = OpenScoreJson.parseToJsonElement(
-            File(SampleFetcher.samplesDir("football", "bundesliga"), "match-basic.final.json").readText(),
-        ).jsonObject
-        val patch = """{"path":"/","data":{"matchStatus":"FINAL_WHISTLE","score":${final.getValue("score")}}}"""
-        val provider = BundesligaProvider(StreamingFetcher(delegate, flowOf(ServerSentEvent("patch", patch))))
+        val provider = BundesligaProvider(StreamingFetcher(delegate, flowOf(finalWhistle())))
 
         val updates = provider.live(BundesligaSamples.MATCH_ID).toList()
         assertTrue(provider.supports(Capability.LIVE_PUSH))
         assertEquals(listOf(GameState.LIVE, GameState.FINAL), updates.map { it.state })
         assertEquals(Score(1, 3), updates.last().score)
         assertEquals(1, delegate.requests.count { it.endsWith("/matches/${BundesligaSamples.MATCH_ID}.json") }, "stream supplied the changed fields")
+    }
+
+    @Test
+    fun aDroppedConnectionReconnectsInsteadOfEndingTheLiveView() = runTest {
+        val delegate = BundesligaSamples.register(SampleFetcher(), "live")
+        val streams = StreamingFetcher(delegate, flow { throw IOException("connection reset") }, flowOf(finalWhistle()))
+
+        val updates = BundesligaProvider(streams).live(BundesligaSamples.MATCH_ID).toList()
+        assertEquals(listOf(GameState.LIVE, GameState.FINAL), updates.map { it.state })
+        assertEquals(2, streams.opened, "reconnected after the reset")
+        assertEquals(2, delegate.requests.count { it.endsWith("/matches/${BundesligaSamples.MATCH_ID}.json") }, "each connect starts from a fresh snapshot")
+    }
+
+    @Test
+    fun aGoalOnTheStreamReachesTheTimelineAndNotJustTheScore() = runTest {
+        val delegate = BundesligaSamples.register(SampleFetcher(), "live")
+        val halfTime = flow {
+            // By the time the stream says 0-1 at the break, the ticker has the goal too.
+            BundesligaSamples.register(delegate, "halftime")
+            emit(ServerSentEvent("put", """{"path":"/","data":${sample("match-basic.halftime.json")}}"""))
+        }
+
+        val updates = BundesligaProvider(StreamingFetcher(delegate, halfTime)).live(BundesligaSamples.MATCH_ID).take(2).toList()
+        assertEquals(0, updates.first().events!!.count { it.type.isGoal })
+        val atBreak = updates.last()
+        assertEquals(GameState.INTERMISSION, atBreak.state)
+        assertEquals(Score(0, 1), atBreak.score)
+        assertEquals(1, atBreak.events!!.count { it.type.isGoal }, "the ticker was read again once the stream got ahead of it")
+    }
+
+    @Test
+    fun aTickerTrailingTheFinalWhistleIsChasedBeforeTheFlowEnds() = runTest {
+        val live = BundesligaSamples.register(SampleFetcher(), "live")
+        val final = BundesligaSamples.register(SampleFetcher(), "final")
+        var tickerReads = 0
+        // The ticker (the `/en/` node) still reads 0-0 for the snapshot, the whistle and the
+        // first chase, and has the four goals from the read after that.
+        val trailing = object : Fetcher {
+            override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse {
+                val ticker = url.contains("/en/")
+                if (ticker) tickerReads++
+                return (if (ticker && tickerReads > 3) final else live).get(url, headers, maxAge)
+            }
+        }
+
+        val updates = BundesligaProvider(StreamingFetcher(trailing, flowOf(finalWhistle()))).live(BundesligaSamples.MATCH_ID).toList()
+        assertEquals(GameState.FINAL, updates.last().state)
+        assertEquals(Score(1, 3), updates.last().score)
+        assertEquals(4, updates.last().events!!.count { it.type.isGoal }, "the timeline the reader is left with has every goal")
+        assertEquals(4, tickerReads)
     }
 
     @Test

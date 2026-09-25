@@ -57,15 +57,52 @@ sealed class Favorite {
 /** The team key a [Favorite.Team] would have for this side, so a game can be matched without building one. */
 fun TeamRef.favoriteKey(): String = clubId ?: "$leagueId/$id"
 
-/** Persisted in SharedPreferences as one JSON list; small enough that a whole rewrite per change is fine. */
+/** Favourites as the crosswalk keys them today, and each key that changed on the way, old to new. */
+data class Rekeyed(val favorites: Set<Favorite>, val renamed: Map<String, String>)
+
+/**
+ * [favorites] with every team's club id taken from the crosswalk as it is now. A favourite
+ * stores the club id it was followed with, while a game's side is keyed on today's
+ * ([favoriteKey]); a club added to the crosswalk afterwards would otherwise never match again.
+ * That is not hypothetical: every HockeyAllsvenskan club had no club id from 2026-09-15 until
+ * 0.3.1, so Leksand followed then is `hockeyallsvenskan/LIF` while its games say `leksand`.
+ *
+ * A club id the crosswalk no longer resolves is kept rather than dropped: that happens when a
+ * league's team ids change under it (HockeyAllsvenskan's Sportality uuids), and the club's
+ * games elsewhere still carry the stored id. Two favourites that end up with one key are one.
+ */
+fun rekey(favorites: Collection<Favorite>): Rekeyed {
+    val renamed = LinkedHashMap<String, String>()
+    val current = favorites.map { favorite ->
+        val now = when (favorite) {
+            is Favorite.Team -> Clubs.clubId(favorite.leagueId, favorite.teamId)?.let { favorite.copy(clubId = it) } ?: favorite
+            is Favorite.League -> favorite
+        }
+        if (now.key != favorite.key) renamed[favorite.key] = now.key
+        now
+    }
+    return Rekeyed(current.distinctBy { it.key }.toSet(), renamed)
+}
+
+/**
+ * Persisted in SharedPreferences as one JSON list; small enough that a whole rewrite per change is fine.
+ *
+ * Loaded through [rekey], and the result is not written back until the next change: until then
+ * every start finds the same [renamed] keys again, so whatever moves alert opt-ins onto them
+ * ([org.openscore.app.alerts.AlertsStore.rename]) gets another chance if a process dies first.
+ */
 class FavoritesStore(context: Context) {
 
     private val prefs: SharedPreferences = context.getSharedPreferences("favorites", Context.MODE_PRIVATE)
     private val json = Json { ignoreUnknownKeys = true; classDiscriminator = "kind" }
     private val serializer = ListSerializer(Favorite.serializer())
 
-    private val _favorites = MutableStateFlow(load())
+    private val loaded = rekey(load())
+    private val _favorites = MutableStateFlow(loaded.favorites)
     val favorites: StateFlow<Set<Favorite>> = _favorites
+
+    /** Keys the crosswalk now spells differently from when they were followed, old to new. */
+    val renamed: Map<String, String> = loaded.renamed
 
     fun has(favorite: Favorite): Boolean = _favorites.value.any { it.key == favorite.key }
 

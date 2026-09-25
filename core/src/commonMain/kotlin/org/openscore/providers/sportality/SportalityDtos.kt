@@ -7,8 +7,9 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
 
 /*
- * DTOs for the Sportality platform behind shl.se and hockeyallsvenskan.se.
- * See apis/hockey/shl/README.md (HockeyAllsvenskan is documented as a delta).
+ * DTOs for the Sportality platform behind shl.se, and behind SSL floorball through
+ * `SslProvider`. See apis/hockey/shl/README.md. hockeyallsvenskan.se left the platform for its
+ * own site in 2026-09 and has its own shapes in HockeyAllsvenskanDtos.kt.
  */
 
 // ---- /api/sports-v2/season-series-game-types-filter -----------------------------------

@@ -2,6 +2,7 @@ package org.openscore.app.data
 
 import kotlinx.datetime.TimeZone
 import org.openscore.app.Fixtures
+import org.openscore.app.alerts.AlertSettings
 import org.openscore.model.League
 import org.openscore.model.Sport
 import org.openscore.model.TeamRef
@@ -44,6 +45,42 @@ class FavoritesTest {
         assertTrue(filter.matches(Fixtures.game("nhl", "g", home = team)))
         assertFalse(filter.matches(Fixtures.game("nhl", "g2")))
         assertEquals(listOf("nhl"), filter.leaguesToFetch(leagues))
+    }
+
+    @Test
+    fun `a team followed before the crosswalk knew it matches its games again`() {
+        // Every HockeyAllsvenskan club had no club id from 2026-09-15 until 0.3.1, so a club
+        // followed then was stored on its league and id.
+        val followed = Favorite.Team(null, "hockeyallsvenskan", "LIF", "Leksand", Sport.HOCKEY)
+        val game = Fixtures.game("hockeyallsvenskan", "g", home = TeamRef("hockeyallsvenskan", "LIF", "Leksands IF"))
+        assertEquals("leksand", game.home.favoriteKey(), "today's games carry the club id")
+        assertFalse(FavoriteFilter(setOf(followed)).matches(game), "which the stored key never meets")
+
+        val rekeyed = rekey(listOf(followed))
+        assertEquals(listOf("leksand"), rekeyed.favorites.map { it.key })
+        assertEquals(mapOf("hockeyallsvenskan/LIF" to "leksand"), rekeyed.renamed)
+        assertTrue(FavoriteFilter(rekeyed.favorites).matches(game))
+    }
+
+    @Test
+    fun `a club id the crosswalk no longer resolves is kept`() {
+        // Followed while HockeyAllsvenskan still used Sportality uuids, which no longer resolve.
+        val followed = Favorite.Team("leksand", "hockeyallsvenskan", "9541-95418PpkP", "Leksand", Sport.HOCKEY)
+        val rekeyed = rekey(listOf(followed))
+        assertEquals(setOf<Favorite>(followed), rekeyed.favorites)
+        assertTrue(rekeyed.renamed.isEmpty())
+    }
+
+    @Test
+    fun `a team followed twice under two keys becomes one favourite and keeps its alert`() {
+        val orphan = Favorite.Team(null, "hockeyallsvenskan", "LIF", "Leksand", Sport.HOCKEY)
+        val again = Favorite.team(TeamRef("hockeyallsvenskan", "LIF", "Leksand"), Sport.HOCKEY)
+        val rekeyed = rekey(listOf(orphan, again))
+        assertEquals(listOf("leksand"), rekeyed.favorites.map { it.key })
+
+        val alerts = AlertSettings(keys = setOf("hockeyallsvenskan/LIF", "nhl/TOR")).renamed(rekeyed.renamed)
+        assertEquals(setOf("leksand", "nhl/TOR"), alerts.keys)
+        assertTrue(alerts.notifies(rekeyed.favorites.single()))
     }
 
     @Test

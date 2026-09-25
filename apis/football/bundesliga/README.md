@@ -442,7 +442,17 @@ ran the full 2 h. Implement a watchdog — no event (incl. `keep-alive`) for 60 
 reconnect — and re-read the node on reconnect; do not rely on a single connection.
 
 Polling with `X-Firebase-ETag: true` + `If-None-Match` remains a fine fallback
-(`304` verified) at ≥ 10 s.
+(`304` verified, and again on a ticker node on 2026-09-25) at ≥ 10 s.
+
+**What the provider does with this.** The single-match node is streamed for the
+scoreboard; the ticker and stats nodes, which carry the timeline and the stats the
+stream never does, are read over REST: at each connect, whenever the streamed score or
+status gets ahead of the ticker's (a goal, a break, the whistle - the ticker can trail
+the stream), and otherwise at most once a minute, so bookings and substitutions reach
+the timeline too. Every node read asks for an `ETag`, so an unchanged ticker costs a
+`304`. A stream that fails or sends nothing for 60 s is reconnected from a fresh
+snapshot; at the final whistle a ticker still behind is re-read up to six times at the
+10 s floor before the live flow ends.
 
 ## Quirks & gotchas
 
@@ -546,5 +556,6 @@ Polling with `X-Firebase-ETag: true` + `If-None-Match` remains a fine fallback
 
 | Date | Change |
 |---|---|
+| 2026-09-25 | Provider behaviour under the stream documented ("What the provider does with this"): the ticker is re-read when the scoreboard gets ahead of it and at most once a minute otherwise, every node read carries `X-Firebase-ETag: true` (the `304` re-verified on a ticker node), and a failed stream is reconnected rather than ending the live view. |
 | 2026-09-11 (evening) | Live verification: Union Berlin–Schalke followed from `PRE_MATCH` to `FINAL_WHISTLE` (15 live samples), all five `matchStatus` values, SSE patch shapes on three streams, `videoAssistant` entry type, live table updates, clock-regression and running-copy score quirks. |
 | 2026-09-11 | Initial mapping: Firebase RTDB tree (config, matches, match, ticker, lineup, stats, rankings, 4 tables, season stats), pre-match + finished samples for Bundesliga, table samples for 2. Bundesliga and 2025/26. Paths extracted from the bundesliga.com Angular bundle (`["","all",comp,"seasons",season,…].join("/")` builders). |
