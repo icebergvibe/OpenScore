@@ -119,7 +119,7 @@ public class LaLigaProvider(
         val weeks = cal.calendars.flatMap { it.calendar_gameweeks }.filter { it.has_games && (it.competition?.slug == competitionSlug || it.competition == null) }.mapNotNull { it.gameweek?.week }.distinct()
         val listed = weeks.flatMap { week ->
             public("/api/v1/matches?subscriptionSlug=${sub.slug}&week=$week&limit=100&orderField=date&orderType=asc", LlMatches.serializer(), LIVE_MAX_AGE).matches
-        }.filter { m -> m.date?.let { Dates.instant(it).toLocalDateTime(MADRID).date } == date }
+        }.filter { m -> m.date?.let { Dates.instant(it).toLocalDateTime(league.zone).date } == date }
         // The week listing says only `FirstHalf`/`SecondHalf` while a match runs (no `match_time`,
         // no `period_started`; checked 2026-09-13 during Celta–Málaga). The 2.6 KB match resource
         // has the second-precision period timestamps, so live entries are read from it instead.
@@ -178,12 +178,12 @@ public class LaLigaProvider(
         val now = clock.now()
         return public("/api/v1/matches?subscriptionSlug=${sub.slug}&teamSlug=$teamId&limit=100&orderField=date&orderType=asc", LlMatches.serializer(), SCHEDULE_MAX_AGE).matches
             .map { mapper.game(it, now, seasonId = sub.slug) }
-            .filter { it.startTime.toLocalDateTime(MADRID).date in startDate..endDate }
+            .filter { it.startTime.toLocalDateTime(league.zone).date in startDate..endDate }
             .sortedBy { it.startTime }
     }
 
     override suspend fun roster(teamId: String): List<Player> {
-        val year = subscription().year ?: clock.now().toLocalDateTime(MADRID).year
+        val year = subscription().year ?: clock.now().toLocalDateTime(league.zone).year
         val squad = public("/api/v1/teams/$teamId/squad?seasonYear=$year&limit=50", LlSquads.serializer(), STATIC_MAX_AGE)
         return squad.squads.mapNotNull { row -> row.person?.let { mapper.player(it, row.shirt_number, row.position?.name, teamId) } }
     }
@@ -208,8 +208,7 @@ public class LaLigaProvider(
         public const val DEFAULT_PUBLIC_URL: String = "https://apim.laliga.com/public-service"
         public const val DEFAULT_WEBVIEW_URL: String = "https://apim.laliga.com/webview"
         public const val PRIMERA_DIVISION: String = "primera-division"
-        public val LEAGUE: League = League("la-liga", Sport.FOOTBALL, "LaLiga", "ES", "https://www.laliga.com")
-        private val MADRID = TimeZone.of("Europe/Madrid")
+        public val LEAGUE: League = League("la-liga", Sport.FOOTBALL, "LaLiga", "ES", TimeZone.of("Europe/Madrid"), "https://www.laliga.com")
         private val LIVE_MAX_AGE = 30.seconds
         private val STATS_MAX_AGE = 3.minutes
         private val LINEUP_MAX_AGE = 5.minutes

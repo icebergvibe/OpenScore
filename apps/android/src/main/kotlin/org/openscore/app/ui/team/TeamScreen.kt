@@ -70,6 +70,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil3.compose.AsyncImage
 import kotlinx.coroutines.delay
+import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toJavaLocalDate
 import kotlinx.datetime.toLocalDateTime
 import org.openscore.app.R
@@ -88,6 +89,7 @@ import org.openscore.model.Sport
 import org.openscore.model.StandingsGroup
 import org.openscore.model.StandingsRow
 import org.openscore.model.TeamRef
+import org.openscore.model.leagueDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 import kotlin.time.Clock
@@ -150,8 +152,8 @@ fun TeamScreen(
     val ownRow = homeStandings?.table?.rowFor(team)
     val homeGroup = homeStandings?.table?.groups?.firstOrNull { group -> group.rows.any { it.team.isSameClub(team) } }
     val games = state.games.data.orEmpty()
-    val upcoming = teamGames(games, team, GameFilter.UPCOMING, now)
-    val latest = teamGames(games, team, GameFilter.RESULTS, now)
+    val upcoming = teamGames(games, team, GameFilter.UPCOMING, now, repository::zoneOf)
+    val latest = teamGames(games, team, GameFilter.RESULTS, now, repository::zoneOf)
 
     val favorite = Favorite.team(ref, sport)
     val following = favorites.any { it.key == favorite.key }
@@ -210,7 +212,7 @@ fun TeamScreen(
                                     SectionTitle(if (featured?.state?.isLive == true) "Live now" else "Next game", "All games") { tab = TeamTab.GAMES }
                                     if (featured == null && !state.games.loading && state.games.error == null) Muted("No upcoming games scheduled for $season.")
                                     featured?.let { game ->
-                                        Muted(game.dateLabel())
+                                        Muted(game.dateLabel(repository.zoneOf(game.leagueId)))
                                         MatchCard(game, sport, onClick = { onOpenGame(game) }, onLongClick = { onOpenGame(game) })
                                     }
                                 }
@@ -225,7 +227,7 @@ fun TeamScreen(
                                 }
                                 if (latest.isNotEmpty()) {
                                     item { SectionTitle("Recent results", "View all") { gameFilter = GameFilter.RESULTS; tab = TeamTab.GAMES } }
-                                    items(latest.take(3), key = { "recent-${it.leagueId}-${it.id}" }) { game -> TeamGameRow(game, team, sport, competitionLabel(game, state.home.leagueId, repository)) { onOpenGame(game) } }
+                                    items(latest.take(3), key = { "recent-${it.leagueId}-${it.id}" }) { game -> TeamGameRow(game, team, sport, competitionLabel(game, state.home.leagueId, repository), repository.zoneOf(game.leagueId)) { onOpenGame(game) } }
                                 }
                             }
                             // One card per competition the club is in: its own group of each table, home league first.
@@ -256,9 +258,9 @@ fun TeamScreen(
                                 Muted("$season season · times are local")
                             }
                             item { SectionStatus(state.games, "Games", { vm.retry(TeamPart.GAMES) }) }
-                            val shown = teamGames(games, team, gameFilter, now)
+                            val shown = teamGames(games, team, gameFilter, now, repository::zoneOf)
                             if (shown.isEmpty() && !state.games.loading && state.games.error == null) item { Muted("No ${gameFilter.label.lowercase()} for $season.") }
-                            items(shown, key = { "${it.leagueId}-${it.id}" }) { game -> TeamGameRow(game, team, sport, competitionLabel(game, state.home.leagueId, repository)) { onOpenGame(game) } }
+                            items(shown, key = { "${it.leagueId}-${it.id}" }) { game -> TeamGameRow(game, team, sport, competitionLabel(game, state.home.leagueId, repository), repository.zoneOf(game.leagueId)) { onOpenGame(game) } }
                         }
                         TeamTab.STANDINGS -> {
                             item { Muted("$season season standings") }
@@ -348,7 +350,7 @@ private fun standingsLegend(sport: Sport): String = when (sport) {
     Sport.BASEBALL -> "W wins · L losses · PCT win percentage · GB games behind"
     Sport.MOTORSPORT, Sport.MMA -> ""
 }
-private fun Game.dateLabel(): String = gameDateFormat.format((scheduleDate ?: startTime.toLocalDateTime(leagueTimeZone(leagueId)).date).toJavaLocalDate())
+private fun Game.dateLabel(zone: TimeZone): String = gameDateFormat.format(leagueDate(zone).toJavaLocalDate())
 
 
 @Composable
@@ -428,12 +430,12 @@ private fun ResultChip(result: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun TeamGameRow(game: Game, team: TeamRef, sport: Sport, competition: String?, onClick: () -> Unit) {
+private fun TeamGameRow(game: Game, team: TeamRef, sport: Sport, competition: String?, zone: TimeZone, onClick: () -> Unit) {
     val home = game.home.isSameClub(team)
     val opponent = if (home) game.away else game.home
     Column(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Muted(game.dateLabel())
+            Muted(game.dateLabel(zone))
             StatusBadge(game.statusLabel(sport))
         }
         Row(verticalAlignment = Alignment.CenterVertically) {

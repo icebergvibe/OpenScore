@@ -33,3 +33,27 @@ Arrays only (or map entries where noted); objects are intact.
 | `championship-match-oppositions.json` | `oppositionsMatches[]` first 5 of 100 |
 
 Everything else is complete as returned.
+
+## The VAR cancellation (2026-09-25)
+
+`championship-match.live-var-review.json` and `championship-match.live-goal-canceled.json`
+are two adjacent polls of a `tools/live-capture` recording of
+`l1_championship_match_73852` (Auxerre 2-0 Lorient, 2026-09-13), 502 polls at ~20 s from
+05:17Z to 14:58Z.
+
+```
+./gradlew :tools:live-capture:run --args="--league ligue1 --game l1_championship_match_73852 --max 10h"
+```
+
+| Sample | Poll | Feed state |
+|---|---|---|
+| `championship-match.live-var-review.json` | 209 (13:04:28Z) | `firstHalf`, `matchTime` `"4'"`, the 2nd-minute goal in `home.goals` with `varDecision: 1`, score 1-0 |
+| `championship-match.live-goal-canceled.json` | 210 (13:05:10Z) | the same goal in `home.canceledGoals` with `varDecision: 2` and its time corrected to 3', score back to 0-0 |
+
+The poll before these two (208) had the same goal with `varDecision: 0`, so all three values
+were seen on one goal inside four minutes. These are the only bodies in the recording with a
+non-zero `varDecision` on a live goal: 90 live goal entries carried `0`, one carried `1`, and
+every one of the 97 `canceledGoals` entries carried `2`.
+
+Pretty-printed with `jq .`; nothing truncated (each is ~220 KB, under the 300 KB rule). The
+raw recording is under `build/capture/ligue1/` and is git-ignored.

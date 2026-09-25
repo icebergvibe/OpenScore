@@ -205,13 +205,17 @@ public class PremierLeagueMapper(private val leagueId: String) {
                 "FIRST_HALF_END" -> marker(id, FootballEventType.PERIOD_END, FootballPeriods.FIRST_HALF, e, "Half-time")
                 "SECOND_HALF_START" -> marker(id, FootballEventType.PERIOD_START, FootballPeriods.SECOND_HALF, e, "Second half")
                 "SECOND_HALF_END" -> marker(id, FootballEventType.GAME_END, FootballPeriods.SECOND_HALF, e, "Full-time")
-                "GOAL", "PENALTY_GOAL", "OWN_GOAL" -> {
+                // `PENALTY_SCORED` is the value the feed actually sends for a converted penalty
+                // (Groß, Coventry-Brighton 2026-09-13); `PENALTY_GOAL` is kept as the name the
+                // site's own typings use. Missing one here costs more than a mislabelled row:
+                // the goal drops out of the timeline and every later running score is short.
+                "GOAL", "PENALTY_SCORED", "PENALTY_GOAL", "OWN_GOAL" -> {
                     val (creditedByEvents, info) = goalInfo.firstOrNull { (_, g) ->
                         g.playerId == e.playerId && g.time?.toIntOrNull()?.let { it == e.minutes + 1 || it == e.minutes } == true
                     } ?: (null to null)
                     val kind = when {
                         e.eventType == "OWN_GOAL" || info?.goalType.equals("Own", true) -> GoalKind.OWN_GOAL
-                        e.eventType == "PENALTY_GOAL" || info?.goalType.equals("Penalty", true) -> GoalKind.PENALTY
+                        e.eventType.startsWith("PENALTY") || info?.goalType.equals("Penalty", true) -> GoalKind.PENALTY
                         else -> GoalKind.OPEN_PLAY
                     }
                     val type = when (kind) { GoalKind.OWN_GOAL -> FootballEventType.OWN_GOAL; GoalKind.PENALTY -> FootballEventType.PENALTY_GOAL; else -> FootballEventType.GOAL }

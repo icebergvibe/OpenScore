@@ -6,6 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
 import org.openscore.model.Game
 import org.openscore.model.GameState
 import org.openscore.model.League
@@ -22,7 +23,7 @@ import kotlin.time.Instant
 class OpenScoreTest {
 
     private class Stub(id: String, private val games: List<Game>) : BaseLeagueProvider() {
-        override val league = League(id, Sport.FOOTBALL, id, "SE")
+        override val league = League(id, Sport.FOOTBALL, id, "SE", TimeZone.of("Europe/Stockholm"))
         override val capabilities = setOf(Capability.GAMES_BY_DATE)
         override suspend fun gamesOn(date: LocalDate): List<Game> = games
     }
@@ -69,7 +70,7 @@ class OpenScoreProgressiveTest {
 
     /** Answers after [gate] completes, so the test decides who is slow. */
     private class Gated(id: String, private val games: List<Game>, private val gate: CompletableDeferred<Unit>?) : BaseLeagueProvider() {
-        override val league = League(id, Sport.FOOTBALL, id, "SE")
+        override val league = League(id, Sport.FOOTBALL, id, "SE", TimeZone.of("Europe/Stockholm"))
         override val capabilities = setOf(Capability.GAMES_BY_DATE)
         override suspend fun gamesOn(date: LocalDate): List<Game> { gate?.await(); return games }
     }
@@ -124,7 +125,7 @@ class OpenScoreProgressiveTest {
     @Test
     fun errorsArriveWithTheLeagueThatFailed() = runTest {
         val failing = object : BaseLeagueProvider() {
-            override val league = League("khl", Sport.HOCKEY, "khl", "RU")
+            override val league = League("khl", Sport.HOCKEY, "khl", "RU", TimeZone.of("Europe/Moscow"))
             override val capabilities = setOf(Capability.GAMES_BY_DATE)
             override suspend fun gamesOn(date: LocalDate): List<Game> = throw IllegalStateException("down")
         }

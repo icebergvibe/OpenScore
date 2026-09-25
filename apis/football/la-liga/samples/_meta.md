@@ -45,3 +45,26 @@ Arrays only; objects are intact.
 
 No live-state samples yet (first MD 5 kick-off was 6 h after capture). See the README
 TODO list.
+
+## Live states
+
+`wv-match.live.json`, `wv-match.halftime.json` and `wv-match.live-second-half.json` are
+three polls of one `tools/live-capture` recording of RC Celta 1-1 Málaga CF
+(`temporada-2026-2027-laliga-ea-sports-rc-celta-malaga-cf-5`, MD 5, 2026-09-13), 366 polls
+at 5 s from 05:17Z to 14:02Z.
+
+```
+./gradlew :tools:live-capture:run --args="--league la-liga --game temporada-2026-2027-laliga-ea-sports-rc-celta-malaga-cf-5 --max 10h"
+```
+
+| Sample | Poll | Feed state |
+|---|---|---|
+| `wv-match.live.json` | 241 (12:46:43Z) | `FirstHalf`, `match_time` 44, 1-0 |
+| `wv-match.halftime.json` | 248 (12:51:14Z) | `HalfTime`, `match_time` 48, `FirstHalf.stop` set |
+| `wv-match.live-second-half.json` | 279 (13:08:08Z) | `SecondHalf`, `match_time` 45, `SecondHalf.start` set |
+
+The capture polled the match resource 59 times but `…/events` only 11 and `…/lineups` 3,
+so it says nothing about how those two behave under load.
+
+Pretty-printed with `jq .`; nothing truncated. The raw recording is under
+`build/capture/la-liga/` and is git-ignored.

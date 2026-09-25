@@ -1,7 +1,7 @@
 package org.openscore.providers.mlb
 
+import kotlinx.datetime.TimeZone
 import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.datetime.LocalDate
@@ -22,6 +22,7 @@ import org.openscore.net.Fetcher
 import org.openscore.net.OpenScoreJson
 import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
+import org.openscore.provider.LivePollBudget
 import org.openscore.provider.NotFoundException
 import org.openscore.provider.ProviderException
 import org.openscore.provider.decodeJson
@@ -78,17 +79,23 @@ public class MlbProvider(
      * If MLB loses the cursor or changes the patch shape, a full feed safely re-establishes it.
      */
     override fun live(gameId: String, interval: Duration): Flow<Game> = flow {
-        val effective = maxOf(interval, LIVE_MAX_AGE)
+        val budget = LivePollBudget(maxOf(interval, LIVE_MAX_AGE))
         var document = feedDocument(gameId)
         var current = decodeFeed(document, gameId)
         var game = MlbMapper.game(current)
         emit(game)
 
-        while (!game.state.isTerminal) {
-            delay(effective)
-            document = nextFeedDocument(gameId, current.metaData.timeStamp, document)
-            current = decodeFeed(document, gameId)
-            val next = MlbMapper.game(current)
+        while (budget.open && !game.state.isTerminal) {
+            budget.wait()
+            // A failed diff leaves `document` and `current` untouched, so the next tick asks
+            // from the same timestamp and picks up everything that was missed.
+            val next = budget.read {
+                val fetched = nextFeedDocument(gameId, current.metaData.timeStamp, document)
+                val decoded = decodeFeed(fetched, gameId)
+                document = fetched
+                current = decoded
+                MlbMapper.game(decoded)
+            }.getOrNull() ?: continue
             if (next != game) emit(next)
             game = next
         }
@@ -190,6 +197,7 @@ public class MlbProvider(
             sport = Sport.BASEBALL,
             name = "Major League Baseball",
             country = "US",
+            zone = TimeZone.of("America/New_York"),
             websiteUrl = "https://www.mlb.com",
         )
 

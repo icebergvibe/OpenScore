@@ -41,7 +41,7 @@ class OpenScoreApp : Application(), SingletonImageLoader.Factory {
         }
         KtorFetcher(engine = engine, userAgent = USER_AGENT, observer = fetchMetrics)
     }
-    /** Durable, normalized: HockeyAllsvenskan's season and every league's day listings as last read. */
+    /** Durable, normalized: the two season snapshots (HockeyAllsvenskan, the UFC's cards) and every league's day listings as last read. */
     val scoresCache: RoomScoresCache by lazy { RoomScoresCache.create(this) }
     val openScore: OpenScore by lazy { OpenScore.default(fetcher, seasonScheduleStore = scoresCache, dayListingStore = scoresCache) }
     val repository: ScoresRepository by lazy { ScoresRepository(openScore, scoresCache) }

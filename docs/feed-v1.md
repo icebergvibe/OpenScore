@@ -56,11 +56,15 @@ Inside `GamesResponse.errors` the same object appears per failed league, with HT
 
 ```json
 {"id": "nhl", "sport": "HOCKEY", "name": "National Hockey League", "country": "US",
- "websiteUrl": "https://www.nhl.com",
+ "zone": "America/New_York", "websiteUrl": "https://www.nhl.com",
  "capabilities": ["CLOCK", "EVENTS", "GAME", "GAMES_BY_DATE", "LINEUPS", "LIVE_UPDATES", "…"]}
 ```
 
 `sport`: `HOCKEY | FLOORBALL | FOOTBALL | BASEBALL | MMA` (F1 is not a league of the feed).
+`zone`: the IANA zone this league keeps its calendar in, which is the convention `date` on
+`/v1/games` is read in. It is also what a `startTime` must be converted to to get the day a game
+is filed under: an NHL game at 20:00 New York is the NHL's day and the next day in Europe, and
+only one of those two days answers with that game.
 A UFC `game` has both sides as fighters and its `situation.kind` is `fight` (below).
 `capabilities`: `GAMES_BY_DATE GAME EVENTS LINEUPS STANDINGS TEAM TEAM_SCHEDULE TEAM_STATS ROSTER PLAYER LIVE_UPDATES LIVE_PUSH CLOCK CLOCK_RUNNING_FLAG INTERMISSION_STATE PERIOD_SCORES EVENT_COORDINATES LINE_GROUPS`.
 
@@ -272,7 +276,9 @@ Games have an additive nullable `scheduleDate` (`YYYY-MM-DD`): the official date
 under which the provider files the game, where supplied. This can differ from
 `startTime`'s calendar date in UTC or the viewer's timezone. MLB schedule responses
 supply it through `officialDate`; other providers and match detail responses may
-leave it null.
+leave it null. Where it is null, the day a game is filed under is `startTime` read in the
+league's `zone` - never in the viewer's, which names a different day either side of midnight
+and is not a day `/v1/games` would return that game for.
 
 `startTimeTbd` (additive boolean, default `false`) says the league has fixed the day but
 not the kick-off time yet: `startTime` is then the start of that day in the league's zone

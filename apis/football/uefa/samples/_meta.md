@@ -54,5 +54,35 @@ file is in the README's endpoint tables and in [`../health.json`](../health.json
 | `standings.unl.json` | `standings.uefa.com/v1/standings?competitionId=2014&seasonYear=2027&phase=TOURNAMENT` | 14 groups carrying `group.league` |
 | `teams.unl.json` | `comp.uefa.com/v2/teams?teamIds=88` | Malta: a national side, flag for a crest |
 
-Live-state samples (`match.live*.json`, `match-events.main.live*.json`, `livescore.live.json`)
-are pending - see the README's "Game states".
+## Live states (captured 2026-09-24)
+
+The Nations League MD1 matchday was recorded end to end with `tools/live-capture`:
+
+```
+./gradlew :tools:live-capture:installDist
+tools/live-capture/build/install/live-capture/bin/live-capture \
+    --league unl --date 2026-09-24 --all --idle 10m --max 6h
+```
+
+Eight matches, ~5,400 polls at the 15 s live interval, 0 provider errors. The tool keeps every
+raw body the provider read, so these files are bodies as served, with the UA of the day
+(`OpenScore/0.3`); they were pretty-printed with `jq .` on the way in. `/livescore` is not on
+the provider's `game()` path, so those two were polled alongside with `curl` once a minute.
+
+All eight files below come from **Andorra 1-2 Malta (`2048009`, 16:00Z)** except the two
+`livescore` ones, which list whatever UEFA had in its +/-1 h window at that moment.
+
+| File | Request | Notes |
+|---|---|---|
+| `match.live.json` | `.../matches/2048009` | `LIVE` / `FIRST_HALF`, `minute 23+0`, 1-0 |
+| `match.live-stoppage.json` | same | `FIRST_HALF`, `minute 45+2`, 1-1: stoppage time is `injury` on a `normal` pinned at 45 |
+| `match.halftime.json` | same | `LIVE` / `HALF_TIME_BREAK`, **no `minute` field at all** |
+| `match.live-second-half.json` | same | `SECOND_HALF`, `minute 90+3`, 1-2 |
+| `match-events.main.live.json` | `.../matches/2048009/events?filter=MAIN&order=ASC&limit=500&offset=0` | the match at ~23': `START_PHASE`, two yellows, the 17' goal |
+| `match-events.main.halftime.json` | same | the same timeline at half time, with `END_PHASE` logged |
+| `team-statistics.live.json` | `matchstats.uefa.com/v1/team-statistics/2048009` | at ~23'; the statistics are published and move while the match runs |
+| `livescore.live.json` | `match.uefa.com/v5/livescore` | 19:10Z: the seven 18:45Z matches all in `FIRST_HALF` with minutes |
+| `livescore.halftime.json` | same | 16:48Z: `2048009` in `HALF_TIME_BREAK` with no `minute`, beside finished and upcoming entries |
+
+Not captured, because a league-phase matchday cannot produce them: extra time, an extra-time
+break, and a shoot-out in progress. The finished-match samples cover how those read afterwards.

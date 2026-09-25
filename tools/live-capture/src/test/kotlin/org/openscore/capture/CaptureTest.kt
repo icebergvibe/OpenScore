@@ -14,6 +14,23 @@ class CaptureTest {
         assertTrue(a.startsWith("api_khl_mobile_event_v2.json_q") && a != b, "$a / $b")
     }
 
+    /**
+     * Serie A's four match endpoints share a 90-character prefix and differ only in the last
+     * segment, so a head-truncating slug gave them all one file name and three of every four
+     * bodies were overwritten.
+     */
+    @Test
+    fun slugKeepsTheEndpointNameOffTheEndOfALongPath() {
+        val base = "https://api-sdp.legaseriea.it/v1/serie-a/football/seasons/serie-a::Football_Season::ed7fdc2a3e7b408b942ec177b7b956b5"
+        val match = "serie-a::Football_Match::b7ecdcd497b3445490aa0f0ba58468b5"
+        val slugs = listOf("$base/matches/$match/header", "$base/match/$match/summary", "$base/match/$match/lineups", "$base/match/$match/teamstats")
+            .map(Capture::slug)
+        assertEquals(slugs.size, slugs.toSet().size, "each endpoint needs its own file: $slugs")
+        assertTrue(slugs.all { it.length <= 110 }, "still short enough for a file name: $slugs")
+        assertTrue(slugs[0].endsWith("header") && slugs[3].endsWith("teamstats"), "the endpoint name survives: $slugs")
+        assertTrue(slugs.all { it.startsWith("v1_serie-a_football_seasons_") }, "and the head still says what it is: $slugs")
+    }
+
     @Test
     fun slugNamesGraphqlByRootField() {
         assertEquals("graphql-matchesForLeague", Capture.slug("https://gql.sportomedia.se/?query=%7BmatchesForLeague(configLeagueName%3A%22allsvenskan%22)%7Bmatches%7Bid%7D%7D%7D"))

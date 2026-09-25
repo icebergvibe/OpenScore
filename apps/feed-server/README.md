@@ -13,6 +13,16 @@ a browser app needs for leagues whose APIs have no CORS headers (NHL, SHL, CHL â
 Options: `--port N` (or `PORT`), `--offline`, `OPENSCORE_USER_AGENT` to override the
 `User-Agent` (keep it descriptive â€” see docs/principles.md).
 
+It binds `0.0.0.0` and is meant for your own machine or your own network. There is no auth
+and no rate limit, and one `/v1/games` asking for every league fans out to one upstream per
+league: the shared fetcher caps concurrency per host, but the leagues sit on two dozen
+different hosts, so the cap does not bound the request as a whole. Exposed to the open
+internet it lets anyone drive that fan-out at the league APIs under your IP and your
+`User-Agent`, which is how a project gets rate-limited or blocked by the feeds it depends on.
+Put it behind something that authenticates and rate-limits before letting it out, or keep it
+local. The Android app needs none of this: it talks to the leagues directly, with no server
+in between.
+
 ```
 curl localhost:8080/v1/leagues
 curl "localhost:8080/v1/games?date=2026-10-07&league=nhl"

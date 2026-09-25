@@ -229,6 +229,53 @@ class Ligue1ProviderTest {
         assertEquals(Ligue1Samples.CLUB_ID, p.teamId)
     }
 
+    private fun match(name: String) = OpenScoreJson.decodeFromString(L1Match.serializer(), sample(name))
+
+    /**
+     * Auxerre 2-0 Lorient (2026-09-13): a 2nd-minute goal was published, flagged `varDecision: 1`
+     * on the next poll, and moved into `canceledGoals` with `varDecision: 2` on the one after,
+     * the score going 0-0 to 1-0 and back inside two minutes. `1` therefore marks a goal VAR is
+     * *looking at*, not one VAR has allowed - and a finished document carries a `1` on a goal that
+     * stood, so the value only settles when the match does.
+     */
+    @Test
+    fun aGoalUnderVarReviewIsNotYetConfirmed() {
+        val m = match("championship-match.live-var-review.json")
+        assertEquals("firstHalf", m.period)
+        assertEquals(1, m.home.score)
+        val goal = m.home.goals.single()
+        assertEquals(1, goal.varDecision, "the feed's own flag")
+        val mapped = mapper.events(m).single { it.type.isGoal }
+        assertNull(
+            assertIs<FootballGoalDetails>(mapped.details).varDecision,
+            "no claim while the match is live: this goal is cancelled on the next poll",
+        )
+    }
+
+    /** The next poll: the goal has left `goals` for `canceledGoals` and the score is 0-0 again. */
+    @Test
+    fun aCancelledGoalBecomesADisallowedEventAndGivesTheScoreBack() {
+        val m = match("championship-match.live-goal-canceled.json")
+        assertEquals(0, m.home.score)
+        assertTrue(m.home.goals.isEmpty())
+        assertEquals(2, m.home.canceledGoals.single().varDecision)
+        val g = mapper.game(m, Instant.parse("2026-09-13T13:05:10Z"))
+        assertEquals(Score(0, 0), g.score)
+        assertEquals(listOf(0 to 0), g.periodScores.map { it.home to it.away })
+        val disallowed = assertNotNull(g.events).single { it.type == FootballEventType.GOAL_DISALLOWED }
+        assertEquals("3'", disallowed.time.label)
+        assertTrue(assertNotNull(g.events).none { it.type.isGoal }, "the goal is gone, not both listed")
+    }
+
+    /** At full time a `varDecision: 1` goal has survived the check, so the confirmation is real. */
+    @Test
+    fun aConfirmedGoalIsReportedOnceTheMatchIsFinished() {
+        val m = match("championship-match.final.json")
+        assertEquals("fullTime", m.period)
+        val checked = mapper.events(m).first { it.type.isGoal && it.time.label == "31'" }
+        assertEquals(VarDecision.CONFIRMED, assertIs<FootballGoalDetails>(checked.details).varDecision)
+    }
+
     @Test
     fun notFoundAndCapabilities() = runTest {
         assertFailsWith<NotFoundException> { l1.game("l1_championship_match_1") }

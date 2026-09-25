@@ -11,7 +11,7 @@
 | **CORS** | **No** `Access-Control-Allow-Origin` header. Browser apps need a proxy. |
 | **WAF / UA requirement** | None. Cloudflare in front, but requests with any or no `User-Agent` succeed. |
 | **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-game + final states) · 🚧 live-state samples pending (first preseason game 2026-09-19) |
+| **Status** | ✅ verified (pre-game + final states) · 🚧 live-state samples pending: no capture has been taken, and the 2026-09-19 preseason opener named here as the first chance was not recorded |
 
 ## Overview
 

@@ -175,7 +175,10 @@ public class UefaMapper(private val leagueId: String) {
             ending = if (state.isFinished) ending(m, events) else null,
             events = mapped,
             stats = stats?.let { stats(it, home.id, away.id) } ?: emptyMap(),
-            rawState = listOfNotNull(m.status, m.phase, m.minute?.let { "${it.normal}+${it.injury ?: 0}" }).joinToString("/"),
+            rawState = listOfNotNull(
+                phaseMarker(m.status, m.phase).takeIf(String::isNotEmpty),
+                m.minute?.let { "${it.normal}+${it.injury ?: 0}" },
+            ).joinToString("/"),
         )
     }
 
@@ -391,6 +394,16 @@ public class UefaMapper(private val leagueId: String) {
     }
 
     public companion object {
+        /**
+         * The `status`/`phase` pair that decides the state, as `/matches/{id}` and `/livescore`
+         * both carry it and as [Game.rawState] leads with. The two routes are not in step - the
+         * livescore list reaches a new phase 15-20 s before the match document does - so
+         * `UefaProvider.live` compares the two markers to tell a document that has caught up
+         * from one that has not. Kept here so the marker and `rawState` cannot drift apart.
+         */
+        public fun phaseMarker(status: String?, phase: String?): String =
+            listOfNotNull(status, phase).joinToString("/")
+
         /** Core stat key → `team-statistics` name. */
         public val STAT_NAMES: List<Pair<String, String>> = listOf(
             "possession" to "ball_possession",

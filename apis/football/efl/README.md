@@ -11,8 +11,8 @@
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *` on every REST response; `OPTIONS` preflight `200` allowing `GET,OPTIONS`. Firestore echoes the request `Origin` |
 | **Live push** | **Yes** — Firestore collection `live-feed` (goals, red cards, HT, FT, end of 90 before pens) that efl.com subscribes to with `onSnapshot`. Readable key-less over Firestore's REST `runQuery`, ~20 s behind Opta's event timestamp |
 | **WAF / UA requirement** | None. AWS API Gateway behind CloudFront; a request with no `User-Agent` succeeds |
-| **Last full verification** | 2026-09-17 |
-| **Status** | ✅ verified pre-match, full-time, penalty shoot-out, extra time, two-leg play-offs; `ChampionshipProvider` / `CarabaoCupProvider` in `core` · 🚧 in-play REST states not yet observed (next: Bristol City v Watford 2026-09-18 19:00Z, Championship round 8 on 2026-09-19) |
+| **Last full verification** | 2026-09-17 (live states 2026-09-25 from the 2026-09-18 capture) |
+| **Status** | ✅ verified pre-match, the whole in-play arc (`PreMatch` → `FirstHalf` → `HalfTime` → `SecondHalf` → `FullTime`), full-time, penalty shoot-out, extra time, two-leg play-offs; `ChampionshipProvider` / `CarabaoCupProvider` in `core` · 🚧 the **day listing** was not polled while a match was live, so whether its `matchPeriod` tracks the live state is still open, and it matters (see Game states) |
 
 ## Overview
 
@@ -162,7 +162,7 @@ normal wins **and** shoot-out wins in this list (unlike the detail's top-level
 |---|---|
 | **Purpose** | Everything about one match: header, officials, kits, lineups, events |
 | **Parameters** | path: `id` `g…` |
-| **Samples** | [`match.pre.json`](samples/match.pre.json) · [`match.final.json`](samples/match.final.json) (Man City 5–0 Norwich, cup) · [`match.final.shootout.json`](samples/match.final.shootout.json) (Peterborough 3–3 Barnsley, 7–6 pens) · [`match.final.extra-time.json`](samples/match.final.extra-time.json) (Southampton 2–1 Middlesbrough aet, play-off semi 2nd leg) · [`match.final.playoff-final.json`](samples/match.final.playoff-final.json) (Hull 1–0 Middlesbrough, Wembley — four `matchTeams`) · [`match.404.json`](samples/match.404.json) |
+| **Samples** | [`match.pre.json`](samples/match.pre.json) · [`match.pre-matchday.json`](samples/match.pre-matchday.json) (50 min before kick-off) · [`match.live.json`](samples/match.live.json) (`FirstHalf`, 31') · [`match.halftime.json`](samples/match.halftime.json) · [`match.live-second-half.json`](samples/match.live-second-half.json) (90'+3) · [`match.final.json`](samples/match.final.json) (Man City 5–0 Norwich, cup) · [`match.final.shootout.json`](samples/match.final.shootout.json) (Peterborough 3–3 Barnsley, 7–6 pens) · [`match.final.extra-time.json`](samples/match.final.extra-time.json) (Southampton 2–1 Middlesbrough aet, play-off semi 2nd leg) · [`match.final.playoff-final.json`](samples/match.final.playoff-final.json) (Hull 1–0 Middlesbrough, Wembley, four `matchTeams`) · [`match.404.json`](samples/match.404.json) |
 | **Last verified** | 2026-09-17 |
 | **Cache** | none |
 
@@ -237,7 +237,11 @@ Unknown id → `404 {"errors":[{"detail":"Match not found","title":"Not Found","
 | | |
 |---|---|
 | **Purpose** | Team totals for one match |
-| **Samples** | [`stats-match.final.json`](samples/stats-match.final.json) · [`stats-match.pre.json`](samples/stats-match.pre.json) (`{"data": []}`) |
+| **Samples** | [`stats-match.final.json`](samples/stats-match.final.json) · [`stats-match.live.json`](samples/stats-match.live.json) · [`stats-match.pre.json`](samples/stats-match.pre.json) (`{"data": []}`) |
+
+The route answers `{"data": []}` until play starts and fills within about a minute of
+kick-off (19:01:49Z for a 19:00Z kick-off), so an empty body is not a sign the match has not
+begun.
 | **Last verified** | 2026-09-17 |
 | **Cache** | none |
 
@@ -400,19 +404,43 @@ The site's own state machine (from the bundle) over `period` / `matchPeriod`:
 | complete | `FullTime` |
 | postponed | `Postponed` in `period` **or** `resultType` |
 
-Only `PreMatch` and `FullTime` have been observed on the REST routes so far (the two
-matches in play on 2026-09-17 had finished by the time the API was found); the others are
-Opta's standard period names and the ones the site renders (`HT`, `FT`, `PEN`, `P`).
-`Abandoned`/`Cancelled` are unverified.
+`FirstHalf`, `HalfTime`, `SecondHalf` and `FullTime` were all observed on the REST routes in
+a 601-poll recording of Bristol City 1-0 Watford (`g2647335`, 2026-09-18). `ExtraFirstHalf`,
+`ExtraSecondHalf`, `ShootOut`, `FullTime90`, `FullTimePens`, `Abandoned` and `Cancelled`
+remain unverified in play (the finished cup documents do carry the extra-time and shoot-out
+shapes).
 
-| | Pre-match | Live (expected) | Full-time |
-|---|---|---|---|
-| list `matchPeriod` / `matchMinutes` / `formattedMatchTime` | `PreMatch` / `null` / `""` | period / minute / `"37'"` | `FullTime` / 93 / `"90' +3'"` |
-| detail `matchDetails` | `null` | object | object with `attendance`, `resultType` |
-| detail `players` | `{}` | `{Start, Sub}` (when the lineups appear is unverified — likely ~1 h before kick-off) | `{Start, Sub}` |
-| detail `events.*` | `[]` | growing | complete |
-| `/stats/match` | `{"data": []}` | rows | rows |
-| `resultType` | `null` | `null`? | `NormalResult` / `PenaltyShootout` / `Aggregate` |
+### The detail document has two `period` fields and only one of them moves
+
+**`attributes.period` is stale for the entire match.** It read `PreMatch` in **69 of the 70
+bodies** recorded, flipping straight to `FullTime` at the final whistle and never showing a
+half. The live state lives in **`attributes.matchDetails.period`**. Read the outer field and
+every match in play looks like it has not kicked off.
+
+The list route is a different projection with its own flat `matchPeriod` / `matchMinutes` /
+`formattedMatchTime`, and in the finished sample those agree with `matchDetails`
+(`FullTime` / 93 / `"90' +3'"`). **Whether `matchPeriod` tracks a live match or is stale in
+the same way is not known**: this capture polled only `/matches/{id}` and `/stats/match/{id}`.
+Worth settling on the next Championship evening, because the day view depends on it.
+
+| | Pre-match (day before) | ~50 min before kick-off | Live | Half time | Full-time |
+|---|---|---|---|---|---|
+| `attributes.period` | `PreMatch` | `PreMatch` | **`PreMatch`** | **`PreMatch`** | `FullTime` |
+| `matchDetails` | `null` | object, `period: "PreMatch"`, `matchTime: 0` | `period`, `matchTime` | `period: "HalfTime"`, `matchTime: 48` | + `attendance`, `resultType` |
+| `matchDetails.formattedMatchTime` | n/a | `"0'"` | `"31'"` | `"45' +3'"` | `"90' +5'"` |
+| `matchTeams[].players` | `{}` | `{Start: 11, Sub: 9}` | as published | as published | as published |
+| `matchTeams[].score` | `null` | `0` | running | running | final |
+| `matchTeams[].halfScore` | `null` | `null` | `null` | **`null`** | `1` |
+| `matchTeams[].events.*` | `[]` | `[]` | growing | as at the break | complete |
+| `/stats/match` | `{"data": []}` | `{"data": []}` | 2 rows from ~1 min in | 2 rows | 2 rows |
+| `resultType` | `null` | `null` | `null` | `null` | `NormalResult` / `PenaltyShootout` / `Aggregate` |
+
+Three things follow. **`matchDetails` and the line-ups both appear about 50 minutes before
+kick-off** (18:10Z for a 19:00Z kick-off), so a null `matchDetails` means "not close to
+kick-off" and a published line-up is not a sign that play has started - only
+`matchDetails.period` is. **`halfScore` stays null through half time** and fills only at
+`FullTime`, so a half-time linescore has to be counted from the goal rows. And
+**`matchTime` is not monotonic**: it runs to 48 during the break and restarts at 45.
 
 A postponed-then-replayed match keeps its `postponementReason` after it is played
 (`"Frozen Pitch"` on a `FullTime` row), so the reason alone does not mean "currently
@@ -499,4 +527,5 @@ postponed" — only `period`/`resultType == "Postponed"` does.
 | Date | Change |
 |---|---|
 | 2026-09-17 | Initial mapping from the efl.com Nuxt bundle: `multi-club-matches` v2 (11 routes, 24 samples incl. shoot-out, extra time and play-off final), Firestore `live-feed` (4 samples), enum survey over 25 finished matches; health checks pass live (23/23 on 2026-09-18). In-play REST states pending. |
+| 2026-09-25 | Live states curated from the 2026-09-18 capture of Bristol City 1-0 Watford (601 polls): 5 new samples across `PreMatch`/`FirstHalf`/`HalfTime`/`SecondHalf`. The find is that the detail document's top-level `attributes.period` never leaves `PreMatch` while a match is in play - the live state is only in `matchDetails.period`, which is what the core already reads and now has a test pinning it. Also recorded: `matchDetails` and the line-ups appear ~50 min before kick-off, `halfScore` stays null until `FullTime`, `matchTime` runs to 48 in the break and restarts at 45, and `/stats/match` fills ~1 min after kick-off. The day listing was not polled live, so its `matchPeriod` is still unverified. |
 | 2026-09-18 | `EflProvider` in `core` (`ChampionshipProvider`, `CarabaoCupProvider`) replaying every sample; `TBC` corrected to the string `"DATE_AND_TIME"` (seen on the round-4 cup ties with a placeholder kick-off), `matchTeams` noted as unordered; `efl` crosswalk namespace. Provider discovery passes live (27/27 with the endpoint checks). |

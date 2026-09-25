@@ -1,5 +1,6 @@
 package org.openscore.app.data
 
+import kotlinx.datetime.TimeZone
 import org.openscore.app.Fixtures
 import org.openscore.model.League
 import org.openscore.model.Sport
@@ -12,10 +13,10 @@ import kotlin.test.assertTrue
 class FavoritesTest {
 
     private val leagues = listOf(
-        League("premier-league", Sport.FOOTBALL, "Premier League", "GB"),
-        League("ucl", Sport.FOOTBALL, "UEFA Champions League", "EU"),
-        League("uel", Sport.FOOTBALL, "UEFA Europa League", "EU"),
-        League("nhl", Sport.HOCKEY, "NHL", "US"),
+        League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London")),
+        League("ucl", Sport.FOOTBALL, "UEFA Champions League", "EU", TimeZone.UTC),
+        League("uel", Sport.FOOTBALL, "UEFA Europa League", "EU", TimeZone.UTC),
+        League("nhl", Sport.HOCKEY, "NHL", "US", TimeZone.of("America/New_York")),
     )
 
     @Test

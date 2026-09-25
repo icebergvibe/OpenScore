@@ -3,11 +3,17 @@ package org.openscore.testing
 import org.openscore.providers.premierleague.PremierLeagueProvider
 import java.io.File
 
-/** URL → sample routing for the Premier League samples captured on 2026-09-11 (season 2026, MW 3/4). */
+/**
+ * URL → sample routing for the Premier League samples captured on 2026-09-11 (season 2026, MW 3/4),
+ * plus the live states recorded from Coventry 0-5 Brighton on 2026-09-13 (364 polls at 5 s).
+ */
 public object PremierLeagueSamples {
     public const val DAY: String = "2026-09-13"
     public const val FINAL_MATCH_ID: String = "2645215" // Arsenal 2–1 Chelsea
     public const val PRE_MATCH_ID: String = "2645225" // Bournemouth–Brentford
+
+    /** Coventry 0-5 Brighton, read at `SecondHalf/94'`: the routed bodies are one poll of the capture. */
+    public const val LIVE_MATCH_ID: String = "2645228"
     public const val TEAM_ID: String = "3" // Arsenal
     public const val PLAYER_ID: String = "219847" // Havertz
 
@@ -18,6 +24,11 @@ public object PremierLeagueSamples {
         "/v1/matches/$FINAL_MATCH_ID/events" to "events.final.json",
         "/v3/matches/$FINAL_MATCH_ID/lineups" to "lineups.final.json",
         "/v3/matches/$FINAL_MATCH_ID/stats" to "stats.final.json",
+        "/v2/matches/$LIVE_MATCH_ID" to "match.live-second-half.json",
+        "/v1/matches/$LIVE_MATCH_ID/timeline" to "timeline.live-second-half.json",
+        "/v1/matches/$LIVE_MATCH_ID/events" to "events.live-second-half.json",
+        "/v3/matches/$LIVE_MATCH_ID/lineups" to "lineups.live.json",
+        "/v3/matches/$LIVE_MATCH_ID/stats" to "stats.live.json",
         "/v2/matches/$PRE_MATCH_ID" to "match.pre.json",
         "/v1/matches/$PRE_MATCH_ID/timeline" to "timeline.pre.json",
         "/v1/matches/$PRE_MATCH_ID/events" to "events.pre.json",

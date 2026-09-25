@@ -28,8 +28,8 @@ android {
         applicationId = "org.openscore.app"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 7
-        versionName = "0.3.2"
+        versionCode = 10
+        versionName = "0.3.5"
     }
 
     signingConfigs {
@@ -60,6 +60,15 @@ android {
 
     buildFeatures {
         compose = true
+    }
+
+    testOptions {
+        unitTests {
+            // `android.util.Log` throws "not mocked" on the JVM, and a view model that logs
+            // inside a `try` would have that surface as a load failure rather than as a broken
+            // test. Logging is not what these tests are about, so let it do nothing.
+            isReturnDefaultValues = true
+        }
     }
 }
 

@@ -67,6 +67,16 @@ fun Application.feedModule(openScore: OpenScore, clock: Clock = Clock.System) {
                     ?: clock.todayIn(TimeZone.UTC)
                 val leagues = call.request.queryParameters["league"]
                     ?.split(',')?.map { it.trim().lowercase() }?.filter { it.isNotEmpty() }
+                    ?.also {
+                        // One request already fans out to one upstream per league, and the
+                        // fetcher's per-host cap does nothing about that: the leagues are on
+                        // ~24 different hosts. Asking for the same league twice is free (the
+                        // aggregator resolves each provider once), so this only bites a caller
+                        // naming more distinct leagues than exist.
+                        if (it.distinct().size > MAX_LEAGUES_PER_REQUEST) {
+                            throw BadRequestException("at most $MAX_LEAGUES_PER_REQUEST leagues per request")
+                        }
+                    }
                 val result = openScore.gamesOn(date, leagues)
                 call.respond(
                     FeedGamesResponse(
@@ -144,6 +154,13 @@ fun Application.feedModule(openScore: OpenScore, clock: Clock = Clock.System) {
         }
     }
 }
+
+/**
+ * Enough for every league at once with room to grow, so an ordinary caller never meets it.
+ * This is a politeness bound on upstream fan-out (docs/principles.md), not access control:
+ * the server has no auth and no rate limit, and is not hardened for public exposure.
+ */
+private const val MAX_LEAGUES_PER_REQUEST = 40
 
 private val SEASON_YEAR = Regex("[0-9]{4}")
 

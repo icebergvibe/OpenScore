@@ -218,8 +218,104 @@ class ChlProviderTest {
     @Test
     fun missingFileIsNotFound() = runTest {
         assertFailsWith<NotFoundException> { chl.game("nope") }
-        assertTrue(!chl.supports(Capability.CLOCK))
+        assertTrue(chl.supports(Capability.CLOCK))
+        assertTrue(!chl.supports(Capability.CLOCK_RUNNING_FLAG), "the feed has no play/stop flag")
         assertTrue(!chl.supports(Capability.EVENT_COORDINATES))
         assertTrue(chl.supports(Capability.LINE_GROUPS))
+    }
+
+    /**
+     * Without this a club in both CHL and a domestic league showed only its domestic fixtures,
+     * because a club page merges games per member competition and CHL contributed none.
+     */
+    @Test
+    fun aClubsCupFixturesCanBeMergedIntoItsPage() = runTest {
+        assertTrue(chl.supports(Capability.TEAM_SCHEDULE))
+        val all = chl.teamSchedule(ChlSamples.TEAM_ID, LocalDate(2026, 8, 1), LocalDate(2027, 6, 30))
+
+        assertEquals(6, all.size, "the group stage, from the club's own season file")
+        assertTrue(all.all { it.home.id == ChlSamples.TEAM_ID || it.away.id == ChlSamples.TEAM_ID })
+
+        // The window really filters rather than returning the file whole.
+        val narrowed = chl.teamSchedule(ChlSamples.TEAM_ID, LocalDate(2026, 9, 5), LocalDate(2026, 9, 11))
+        assertTrue(narrowed.size in 1 until all.size, "got ${narrowed.size} of ${all.size}")
+    }
+
+    private fun scoreboard(state: String): ChlMatch {
+        val text = SampleFetcher.samplesDir("hockey", "chl").resolve("live-event-scoreboard.$state.json").readText()
+        val r = OpenScoreJson.decodeFromString(ChlResponse.serializer(ChlMatch.serializer()), text)
+        return assertNotNull(r.data)
+    }
+
+    /**
+     * From the 509-poll capture of 2026-09-13 (Fribourg-Gottéron 3-4 Adler Mannheim). `in-progress` was only
+     * expected before this; the bundle checked `isMatchLive` and the mapping recorded the live
+     * status as unknown.
+     */
+    @Test
+    fun aPeriodInPlayIsLiveWithARunningClock() {
+        val g = ChlMapper.game(scoreboard("live"), withEvents = true)
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("in-progress/1stP", g.rawState)
+        assertEquals(Score(2, 1), g.score)
+        val clock = assertNotNull(g.clock)
+        assertEquals(1, clock.period.number)
+        // regularTime 1182 is cumulative from the opening face-off; the first period starts at 0.
+        assertEquals(1182.seconds, clock.time.elapsed)
+        assertEquals(18.seconds, clock.time.remaining)
+    }
+
+    /** The clock holds at the period boundary through the break, and the break is a known stop. */
+    @Test
+    fun anIntermissionPinsTheClockToThePeriodEnd() {
+        val g = ChlMapper.game(scoreboard("intermission"), withEvents = false)
+
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals("in-progress/1stI", g.rawState)
+        val clock = assertNotNull(g.clock)
+        assertEquals(1, clock.period.number)
+        assertEquals(20.minutes, clock.time.elapsed)
+        assertEquals(0.seconds, clock.time.remaining)
+        assertEquals(false, clock.running)
+    }
+
+    /** The third period runs 2400 to 3600 in feed seconds, so the offset has to come back off. */
+    @Test
+    fun aCumulativeClockIsTakenBackToItsOwnPeriod() {
+        val g = ChlMapper.game(scoreboard("live-third"), withEvents = false)
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("in-progress/3rdP", g.rawState)
+        assertEquals(Score(3, 4), g.score)
+        val clock = assertNotNull(g.clock)
+        assertEquals(3, clock.period.number)
+        assertEquals((3138 - 2400).seconds, clock.time.elapsed, "cumulative 3138 is 12:18 into the third")
+        assertEquals((1200 - 738).seconds, clock.time.remaining)
+    }
+
+    /**
+     * Sixty minutes gone and the game decided, but the feed still says `in-progress` for another
+     * minute or so before it settles on `finished`. It must not read as a final yet: the ending
+     * (`F`/`F/OT`/`F/SO`) is only known once it does.
+     */
+    @Test
+    fun regulationEndingIsNotYetAFinal() {
+        val g = ChlMapper.game(scoreboard("regulation-ended"), withEvents = false)
+
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals("in-progress/3rdI", g.rawState)
+        assertNull(g.ending)
+        val clock = assertNotNull(g.clock)
+        assertEquals(3, clock.period.number)
+        assertEquals(20.minutes, clock.time.elapsed)
+        assertEquals(false, clock.running)
+    }
+
+    /** Before the opening face-off and after the final there is no `duration` at all. */
+    @Test
+    fun thereIsNoClockOutsidePlay() {
+        assertNull(ChlMapper.game(scoreboard("pre"), withEvents = false).clock)
+        assertNull(ChlMapper.game(scoreboard("final"), withEvents = false).clock)
     }
 }

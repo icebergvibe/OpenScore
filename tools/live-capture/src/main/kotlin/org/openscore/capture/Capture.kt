@@ -142,7 +142,7 @@ internal class Capture(
             if (done) {
                 finalPolls++
                 if (finalPolls > opts.afterFinal) {
-                    log("$tag: ${state?.name?.lowercase()} — stopping after ${seq} polls")
+                    log("$tag: ${state.name.lowercase()} - stopping after ${seq} polls")
                     return game
                 }
             }
@@ -201,10 +201,22 @@ internal class Capture(
     private fun Int.pad(): String = toString().padStart(4, '0')
 
     companion object {
+        /** Longest path kept verbatim in a file name; beyond it the slug carries a hash (see [slug]). */
+        private const val MAX_SLUG = 90
+
         private fun sha1(s: String): String =
             MessageDigest.getInstance("SHA-1").digest(s.toByteArray()).joinToString("") { "%02x".format(it) }
 
-        /** A short, stable, filesystem-safe name for an endpoint URL: its path, or the GraphQL root field. */
+        /**
+         * A short, stable, filesystem-safe name for an endpoint URL: its path, or the GraphQL root
+         * field.
+         *
+         * A long path keeps its head *and* its tail with a hash of the whole between them, because
+         * the tail is what names the endpoint. Truncating the head alone silently overwrote bodies:
+         * Serie A's `header`, `summary`, `lineups` and `teamstats` all hang off the same
+         * 90-character season-and-match prefix, so one poll wrote four bodies to one file and only
+         * the last survived (2026-09-13 capture, three of four endpoints lost per poll).
+         */
         fun slug(url: String): String {
             val noScheme = url.substringAfter("://")
             val path = noScheme.substringBefore('?').substringAfter('/', "")
@@ -214,8 +226,13 @@ internal class Capture(
                 val root = Regex("\\{\\s*([A-Za-z_][A-Za-z0-9_]*)").find(q)?.groupValues?.get(1) ?: "query"
                 return "graphql-$root"
             }
-            val base = path.ifEmpty { noScheme.substringBefore('?') }
-                .replace(Regex("[^A-Za-z0-9._-]+"), "_").trim('_').take(90)
+            val cleaned = path.ifEmpty { noScheme.substringBefore('?') }
+                .replace(Regex("[^A-Za-z0-9._-]+"), "_").trim('_')
+            val base = if (cleaned.length <= MAX_SLUG) cleaned else {
+                val head = cleaned.take(MAX_SLUG - 40).trim('_')
+                val tail = cleaned.takeLast(24).trim('_')
+                "${head}_p${sha1(cleaned).take(6)}_$tail"
+            }
             return if (query.isEmpty()) base else base + "_q" + sha1(query).take(6)
         }
     }

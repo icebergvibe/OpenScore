@@ -1,5 +1,6 @@
 package org.openscore.providers.ufc
 
+import kotlinx.datetime.TimeZone
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
@@ -263,7 +264,7 @@ public class UfcProvider(
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://d29dxerjsp82wz.cloudfront.net/api/v3"
-        public val LEAGUE: League = League(UfcMapper.LEAGUE_ID, Sport.MMA, "UFC", "US", "https://www.ufc.com")
+        public val LEAGUE: League = League(UfcMapper.LEAGUE_ID, Sport.MMA, "UFC", "US", TimeZone.UTC, "https://www.ufc.com")
         /** What the store files the snapshot under; every game's `seasonId`. */
         public const val SNAPSHOT_ID: String = UfcMapper.SEASON_ID
         /** UFC 326 (2026-03-07). */

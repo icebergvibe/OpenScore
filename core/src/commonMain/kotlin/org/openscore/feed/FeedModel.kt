@@ -29,6 +29,12 @@ public data class FeedLeague(
     val sport: String,
     val name: String,
     val country: String?,
+    /**
+     * IANA zone this league keeps its calendar in: the one `date` on `/v1/games` is read in,
+     * and the one a game's `startTime` has to be converted to to get the day it is filed under.
+     * A client that uses its own zone instead asks for days the league has no such game on.
+     */
+    val zone: String,
     val websiteUrl: String?,
     val capabilities: List<String>,
 )

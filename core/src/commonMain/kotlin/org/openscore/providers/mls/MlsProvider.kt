@@ -142,7 +142,7 @@ public class MlsProvider(
         public const val DEFAULT_STATS_URL: String = "https://stats-api.mlssoccer.com"
         public const val DEFAULT_METADATA_URL: String = "https://sportapi.mlssoccer.com"
         public const val COMPETITION_ID: String = "MLS-COM-000001"
-        public val LEAGUE: League = League("mls", Sport.FOOTBALL, "Major League Soccer", "US", "https://www.mlssoccer.com/")
+        public val LEAGUE: League = League("mls", Sport.FOOTBALL, "Major League Soccer", "US", TimeZone.UTC, "https://www.mlssoccer.com/")
         private val LIVE_MAX_AGE: Duration = 10.seconds
         private val TABLE_MAX_AGE: Duration = 5.minutes
         private val STATIC_MAX_AGE: Duration = 1.hours

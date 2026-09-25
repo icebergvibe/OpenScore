@@ -36,8 +36,12 @@ import kotlin.time.Duration.Companion.seconds
  *
  * Ids are Opta ids as strings (match `2645215`, team `3`, player `154561`); `seasonId`
  * is the start year (`2026`). Dates are English local dates. A full game needs five
- * small calls (match, timeline, events, lineups, stats); live states are not yet
- * observed, so clock handling follows the documented enum.
+ * small calls (match, timeline, events, lineups, stats).
+ *
+ * Live states were recorded end to end on 2026-09-13: `clock` is whole cumulative
+ * minutes with no seconds, it freezes through `HalfTime` and steps back to 45 at the
+ * restart, and a zeroed score block appears about an hour before kick-off while
+ * `period` is still `PreMatch` - which is why the state is read from `period` alone.
  */
 public class PremierLeagueProvider(
     private val fetcher: Fetcher,
@@ -68,7 +72,7 @@ public class PremierLeagueProvider(
 
     /** Seasons are keyed by start year; a new one begins in July. */
     public fun currentSeason(): String {
-        val today = clock.todayIn(LONDON)
+        val today = clock.todayIn(league.zone)
         return (if (today.month >= Month.JULY) today.year else today.year - 1).toString()
     }
 
@@ -137,7 +141,7 @@ public class PremierLeagueProvider(
     override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate): List<Game> {
         val page = get("/v2/matches?competition=$competitionId&season=${currentSeason()}&team=$teamId&_limit=100", PlPage.serializer(PlMatch.serializer()), SCHEDULE_MAX_AGE)
         return page.data.filter { it.kickoff != null }.map { mapper.game(it, withEvents = false) }
-            .filter { it.startTime.toLocalDateTime(LONDON).date in startDate..endDate }.sortedBy { it.startTime }
+            .filter { it.startTime.toLocalDateTime(league.zone).date in startDate..endDate }.sortedBy { it.startTime }
     }
 
     override suspend fun roster(teamId: String): List<Player> {
@@ -154,8 +158,7 @@ public class PremierLeagueProvider(
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://sdp-prem-prod.premier-league-prod.pulselive.com/api"
         public const val PREMIER_LEAGUE: String = "8"
-        public val LEAGUE: League = League("premier-league", Sport.FOOTBALL, "Premier League", "GB", "https://www.premierleague.com")
-        private val LONDON = TimeZone.of("Europe/London")
+        public val LEAGUE: League = League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London"), "https://www.premierleague.com")
         private val LIVE_MAX_AGE = 10.seconds
         private val LINEUP_MAX_AGE = 1.minutes
         private val STATS_MAX_AGE = 30.seconds

@@ -252,6 +252,7 @@ public class Ligue1Mapper(private val leagueId: String) {
         val away = teamRef(m.away.clubId, m.away.clubIdentity)
         val out = ArrayList<GameEvent>()
         var seq = 0
+        val settled = gameState(m.period).isFinished
 
         for ((team, side) in listOf(home to m.home, away to m.away)) {
             for (g in side.goals) {
@@ -263,7 +264,17 @@ public class Ligue1Mapper(private val leagueId: String) {
                     "penalty" -> FootballEventType.PENALTY_GOAL to GoalKind.PENALTY
                     else -> FootballEventType.GOAL to GoalKind.OPEN_PLAY
                 }
-                val varDecision = when (g.varDecision) { 1 -> VarDecision.CONFIRMED; 2 -> VarDecision.OVERTURNED; else -> null }
+                // `varDecision: 1` marks a goal VAR is involved with, not one VAR has allowed:
+                // in the 2026-09-13 capture a 2nd-minute goal went 0 then 1 and, on the very next
+                // poll, moved into `canceledGoals` with 2, while a finished document carries a 1
+                // on a goal that stood. The value only settles when the match does, so a
+                // confirmation is claimed only at full time - otherwise the reader is told VAR
+                // allowed a goal one poll before it is disallowed.
+                val varDecision = when {
+                    g.varDecision == 2 -> VarDecision.OVERTURNED
+                    g.varDecision == 1 && settled -> VarDecision.CONFIRMED
+                    else -> null
+                }
                 out += GameEvent(
                     id = g.eventId ?: "goal-$seq", type = type, rawType = "goal:${g.type ?: "goal"}",
                     time = eventTime(m, g.time, g.timestamp), team = team,

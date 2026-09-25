@@ -6,6 +6,7 @@ import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
+import org.openscore.model.Game
 import org.openscore.model.GameEnding
 import org.openscore.model.GameState
 import org.openscore.model.LineupGroupKind
@@ -191,5 +192,56 @@ class KhlProviderTest {
         assertFailsWith<NotFoundException> { khl.game("1") }
         assertFailsWith<UnsupportedCapabilityException> { khl.roster("40") }
         assertTrue(!khl.supports(Capability.ROSTER) && !khl.supports(Capability.PLAYER) && !khl.supports(Capability.CLOCK))
+    }
+
+    private fun captured(state: String): Game {
+        val text = SampleFetcher.samplesDir("hockey", "khl").resolve("event_v2.$state.json").readText()
+        val w = OpenScoreJson.decodeFromString(KhlEventWrapper.serializer(), text)
+        return KhlMapper.game(assertNotNull(w.event), withEvents = true)
+    }
+
+    /**
+     * From the 599-poll capture of 2026-09-13 (Sibir 2-5 Avangard), recorded face-off to final.
+     * `in_progress` had only been assumed before this.
+     */
+    @Test
+    fun aPeriodInPlayIsLive() {
+        val g = captured("live")
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("in_progress/period=1", g.rawState)
+        assertEquals(Score(1, 1), g.score)
+        assertEquals(1, assertNotNull(g.clock).period.number)
+        assertTrue(assertNotNull(g.events).isNotEmpty())
+    }
+
+    /**
+     * The feed says `period: 10` during every break, which is not a period number (a finished
+     * game reads -1). Passing it through the period table made it 5, and 5 is the shootout, so
+     * all three intermissions of a game that never left regulation rendered as `SO`.
+     */
+    @Test
+    fun anIntermissionBelongsToThePeriodThatJustEnded() {
+        val g = captured("intermission")
+
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals("in_progress/period=10", g.rawState, "the raw marker is kept as the feed sent it")
+        val clock = assertNotNull(g.clock)
+        assertEquals(1, clock.period.number, "the first break follows the first period")
+        assertEquals("1", clock.period.label)
+        assertEquals(PeriodType.REGULATION, clock.period.type, "not the shootout")
+        assertEquals(false, clock.running)
+    }
+
+    /** The third period in play, so a break marker is not mistaken for every non-regulation value. */
+    @Test
+    fun theThirdPeriodInPlayKeepsItsOwnNumber() {
+        val g = captured("live-third")
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("in_progress/period=3", g.rawState)
+        assertEquals(Score(2, 5), g.score)
+        assertEquals(3, assertNotNull(g.clock).period.number)
+        assertEquals(listOf(1 to 1, 0 to 2), g.periodScores.take(2).map { it.home to it.away })
     }
 }

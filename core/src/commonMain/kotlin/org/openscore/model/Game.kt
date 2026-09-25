@@ -1,6 +1,8 @@
 package org.openscore.model
 
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import kotlin.time.Duration
 import kotlin.time.Instant
 
@@ -150,3 +152,18 @@ public data class Game(
 
 /** One statistic for both sides. */
 public data class StatPair(val home: String, val away: String)
+
+/**
+ * The league's own calendar day this game is filed under: what
+ * [org.openscore.provider.LeagueProvider.gamesOn] would have to be asked for to find it again,
+ * and the day to label it with.
+ *
+ * [Game.scheduleDate] where the provider supplied one, and otherwise [Game.startTime] read in
+ * [League.zone]. Never the reader's own zone: a 20:00 Eastern NHL game is the NHL's Saturday
+ * and a European phone's Sunday, and only one of those two days has the game in it.
+ */
+public fun Game.leagueDate(league: League): LocalDate = leagueDate(league.zone)
+
+/** [leagueDate] where the caller holds the zone rather than the whole [League]. */
+public fun Game.leagueDate(zone: TimeZone): LocalDate =
+    scheduleDate ?: startTime.toLocalDateTime(zone).date

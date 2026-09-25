@@ -248,7 +248,7 @@ class DelProviderTest {
         assertEquals(21, shots.count { it.type == HockeyEventType.MISSED_SHOT })
         val s = shots.first()
         assertNotNull(s.coordinates)
-        assertEquals(0.683, s.coordinates!!.x)
+        assertEquals(0.683, s.coordinates.x)
         assertEquals("Korbinian Geibel", s.players.single().name)
         assertEquals(6, events.count { it.type == HockeyEventType.GOAL })
     }

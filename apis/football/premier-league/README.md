@@ -10,8 +10,8 @@
 | **Format** | JSON (UTF-8). Errors are JSON (`{"title", "status", "detail"}`) |
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *` (sent when an `Origin` header is present; `Vary: Origin`). `OPTIONS` preflight returns `200`. |
 | **WAF / UA requirement** | None. CloudFront in front; requests with no `User-Agent`, no `Origin` and no `Referer` succeed. |
-| **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-match + full-time states) · 🚧 live-state samples not yet captured |
+| **Last full verification** | 2026-09-11 (live states 2026-09-25 from the 2026-09-13 capture) |
+| **Status** | ✅ verified across every state a league match reaches: `PreMatch`, `FirstHalf`, `HalfTime`, `SecondHalf`, `FullTime` |
 
 ## Overview
 
@@ -31,11 +31,12 @@ League) is verified here.
 
 The older API the previous site used, `https://footballapi.pulselive.com/football/…`,
 is still live and is documented briefly under [Legacy API](#legacy-api-footballapipulselivecom)
-because it currently returns a running clock in seconds and the new one has not
-yet been observed live.
+because it returns a running clock in seconds, where the new one - now observed live -
+gives whole cumulative minutes only.
 
 All samples in [`samples/`](samples/) were captured on **2026-09-11** (between
-matchweeks 3 and 4 of 2026/27). See [`samples/_meta.md`](samples/_meta.md).
+matchweeks 3 and 4 of 2026/27), except the live states, which come from a 2026-09-13
+recording. See [`samples/_meta.md`](samples/_meta.md).
 
 ## Identifiers
 
@@ -112,7 +113,7 @@ objects here lack `abbr`.
 |---|---|
 | **Purpose** | Filterable match list across the season (or across competitions), and a single match header. |
 | **Parameters** | `competition=8`, `season=2026`, `matchweek=`, `team=` (one id), `period=` (e.g. `PreMatch`), `kickoff>…` / `kickoff<…` (ISO local datetime, URL-encode `>`/`<`), `_sort=kickoff:desc`, `_limit` (default 10, 100 works), `_next`/`_prev` (cursor from `pagination`) |
-| **Samples** | [`matches.json`](samples/matches.json) (first 5) · [`matches-daterange.json`](samples/matches-daterange.json) (2026-09-12/13) · [`matches-team.json`](samples/matches-team.json) (Arsenal) · [`matches-period.json`](samples/matches-period.json) · [`match.final.json`](samples/match.final.json) · [`match.pre.json`](samples/match.pre.json) · [`match.404.json`](samples/match.404.json) |
+| **Samples** | [`matches.json`](samples/matches.json) (first 5) · [`matches-daterange.json`](samples/matches-daterange.json) (2026-09-12/13) · [`matches-team.json`](samples/matches-team.json) (Arsenal) · [`matches-period.json`](samples/matches-period.json) · [`match.final.json`](samples/match.final.json) · [`match.pre.json`](samples/match.pre.json) · [`match.pre-matchday.json`](samples/match.pre-matchday.json) · [`match.live.json`](samples/match.live.json) · [`match.halftime.json`](samples/match.halftime.json) · [`match.live-second-half.json`](samples/match.live-second-half.json) · [`match.404.json`](samples/match.404.json) |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `max-age=5, stale-while-revalidate=120` |
 
@@ -126,8 +127,11 @@ period, clock "95", resultType "NormalResult", attendance, ground
 homeTeam / awayTeam { id, name, shortName, abbr, score, halfTimeScore, redCards }
 ```
 
-Before kick-off `score`, `halfTimeScore`, `redCards`, `clock`, `resultType` and
-`attendance` are absent. Without `competition=` the list spans **every competition
+`score`, `halfTimeScore`, `redCards` and `clock` are absent the day before a match but
+**appear, all zero, about an hour before kick-off while `period` is still `PreMatch`**
+(11:52:52Z for a 13:00Z kick-off, 2026-09-13). Presence of a score is therefore not a
+sign that the match has started: only `period` says that. `resultType` and `attendance`
+really are absent until `FullTime`. Without `competition=` the list spans **every competition
 in the platform** (FA Cup, EFL, women's, youth …), and those rows can lack
 `kickoff` and team names — always pass `competition`. Unknown id → `404`
 `{"title": "The service encountered an error", "status": 404, "detail": "Could not find requested entity"}`.
@@ -142,8 +146,8 @@ one page (38 rows, verified 2026-09-16).
 | | |
 |---|---|
 | **Purpose** | Ordered event stream of the match with UTC timestamps. The best single events source. |
-| **Samples** | [`timeline.final.json`](samples/timeline.final.json) (33 events) · [`timeline.pre.json`](samples/timeline.pre.json) (`[]`) |
-| **Last verified** | 2026-09-11 |
+| **Samples** | [`timeline.final.json`](samples/timeline.final.json) (33 events) · [`timeline.pre.json`](samples/timeline.pre.json) (`[]`) · [`timeline.live.json`](samples/timeline.live.json) (3 events, 35') · [`timeline.halftime.json`](samples/timeline.halftime.json) (4 events) · [`timeline.live-second-half.json`](samples/timeline.live-second-half.json) (28 events, with a penalty and a straight red) |
+| **Last verified** | 2026-09-11 (live 2026-09-13) |
 | **Cache** | `max-age=5` |
 
 Array of `{ periodId "1"|"2", minutes, seconds, eventType, tag, teamId?, playerId?,
@@ -151,27 +155,38 @@ isoTimestampUtc, timestampUtc, timestamp (local) }`. `minutes`/`seconds` are the
 match clock at the event (`minutes: 1, seconds: 17` = 1:17; 45+ is expressed as
 `minutes ≥ 45` within `periodId "1"`).
 
-**Observed `eventType`** *(one match; may be incomplete)*: `FIRST_HALF_START`,
-`FIRST_HALF_END`, `SECOND_HALF_START`, `SECOND_HALF_END`, `GOAL`, `GOAL_DISALLOWED`,
-`VAR_GOAL_DISALLOWED`, `YELLOW_CARD`, `PLAYER_SUBSTITUTE_OFF`, `PLAYER_SUBSTITUTE_ON`.
-`tag` groups them: `phase`, `goals`, `disallowed goals`, `booking`, `substitutes`.
-Expected but not yet seen: `RED_CARD`, `SECOND_YELLOW`, `PENALTY_*`, `OWN_GOAL`,
-extra-time / penalty-shootout phases (not applicable in the league).
+**Observed `eventType`** *(four matches; may be incomplete)*: `LINEUP_CONFIRMED`,
+`FIRST_HALF_START`, `FIRST_HALF_END`, `SECOND_HALF_START`, `SECOND_HALF_END`, `GOAL`,
+**`PENALTY_SCORED`**, `OWN_GOAL`, `GOAL_DISALLOWED`, `VAR_GOAL_DISALLOWED`,
+`YELLOW_CARD`, **`RED_CARD`**, `PLAYER_SUBSTITUTE_OFF`, `PLAYER_SUBSTITUTE_ON`.
+`tag` groups them: `lineup`, `phase`, `goals`, `penalty`, `disallowed goals`,
+`booking`, `substitutes`.
+
+**A converted penalty is `PENALTY_SCORED`, not `PENALTY_GOAL`** (Groß, 69:12,
+2026-09-13; `tag: "penalty"`). The name matters: it is a goal, and a consumer that
+does not recognise it loses both the row and every running score after it. `events`
+files the same goal under the scoring side with `goalType: "Penalty"`.
+
+Still unseen: `SECOND_YELLOW`, a missed or saved penalty, and the extra-time /
+shoot-out phases (not applicable in the league).
+
+`periodId` is `"1"`/`"2"` for the halves and **`"16"` for `LINEUP_CONFIRMED`**, which is
+stamped `minutes: 0` about an hour before kick-off.
 
 ### `GET /v1/matches/{id}/events`
 
 | | |
 |---|---|
 | **Purpose** | Goals, cards and substitutions grouped per team — the scoring-summary view. |
-| **Samples** | [`events.final.json`](samples/events.final.json) · [`events.pre.json`](samples/events.pre.json) |
-| **Last verified** | 2026-09-11 |
+| **Samples** | [`events.final.json`](samples/events.final.json) · [`events.pre.json`](samples/events.pre.json) · [`events.live-second-half.json`](samples/events.live-second-half.json) (a penalty and a straight red) |
+| **Last verified** | 2026-09-11 (live 2026-09-13) |
 | **Cache** | `max-age=5` |
 
 ```
 homeTeam / awayTeam
   id, name, shortName
-  goals[] { goalType "Goal", period "FirstHalf"|"SecondHalf", time "25", playerId, assistPlayerId?, timestamp "20260906T165505+0100" }
-  cards[] { type "Yellow", period, time, playerId, timestamp }
+  goals[] { goalType "Goal"|"Penalty"|"Own", period "FirstHalf"|"SecondHalf", time "25", playerId, assistPlayerId?, timestamp "20260906T165505+0100" }
+  cards[] { type "Yellow"|"StraightRed", period, time, playerId, timestamp }
   subs[]  { period, time, playerOnId, playerOffId, timestamp }
 ```
 
@@ -184,8 +199,8 @@ ISO — prefer the timeline's `isoTimestampUtc`.
 | | |
 |---|---|
 | **Purpose** | Starting XI, substitutes, formation grid, managers. |
-| **Samples** | [`lineups.final.json`](samples/lineups.final.json) · [`lineups.pre.json`](samples/lineups.pre.json) (empty until ~1 h before kick-off) |
-| **Last verified** | 2026-09-11 |
+| **Samples** | [`lineups.final.json`](samples/lineups.final.json) · [`lineups.pre.json`](samples/lineups.pre.json) (empty until ~1 h before kick-off) · [`lineups.live.json`](samples/lineups.live.json) |
+| **Last verified** | 2026-09-11 (live 2026-09-13) |
 | **Cache** | `max-age=10` |
 
 ```
@@ -200,13 +215,26 @@ home_team / away_team
 Note the snake_case keys (`home_team`), unique to this endpoint. Players who came on
 keep `position: "Substitute"`; combine with `events.subs` to know who is on the pitch.
 
+**The document is written once and never changes again.** Over 364 polls of
+2026-09-13 it was published at 11:53Z and was byte-identical for the rest of the match,
+through nine substitutions and a sending-off, so `lineups.live.json` above is the
+pre-match body. Treat it as static from publication (`max-age=10` notwithstanding) and
+take who is on the pitch from the timeline.
+
 ### `GET /v3/matches/{id}/stats`
 
 Array of two `{ side "Home"|"Away", teamId, stats{…} }` with ~180 Opta team stats
 (`goals`, `possessionPercentage`, `totalScoringAtt`, `ontargetScoringAtt`,
 `expectedGoals`, `expectedGoalsOnTarget`, `totalPass`, `accuratePass`, `cornerTaken`,
-`fkFoulLost`, `yellowCard`, `totalTackle`, `saves` …). [Sample](samples/stats.final.json).
-Returns `[]` before kick-off. `max-age=30`. Values are floats.
+`fkFoulLost`, `yellowCard`, `totalTackle`, `saves` …). Samples:
+[`stats.final.json`](samples/stats.final.json) ·
+[`stats.live.json`](samples/stats.live.json). Returns `[]` before kick-off and fills
+within about four minutes of it, then moves on almost every poll. `max-age=30`. Values
+are floats.
+
+**The two rows are not in a fixed order** - the 2026-09-13 live bodies put `Away`
+first. Pick the side by `teamId` or `side`, never by index. The count differs per side
+too (178 keys away, 172 home in the same body), so a key missing on one side is normal.
 
 ### `GET /v1/matches/{id}/momentum`
 
@@ -348,25 +376,44 @@ not build on it, it is the retired site's API and may vanish.
 
 ## Game states
 
-`period` on match objects *(observed: `PreMatch`, `FullTime`; the rest are the
-values the site's UI handles and the legacy API emits — verify live)*:
+`period` on match objects. Every value in the regulation sequence was observed end to
+end in a 364-poll recording of Coventry City 0-5 Brighton (match `2645228`, MW 4,
+2026-09-13, polled at 5 s from 05:17Z to 14:58Z); the extra-time and shoot-out values
+are the ones the site's UI handles and the legacy API emits, and a league match cannot
+produce them.
 
-| `period` | Core `GameState` | Notes |
-|---|---|---|
-| `PreMatch` | `SCHEDULED` | No score fields |
-| `FirstHalf` | `LIVE` | `clock` = minutes elapsed (string) |
-| `HalfTime` | `INTERMISSION` | |
-| `SecondHalf` | `LIVE` | `clock` continues from 45 |
-| `ExtraFirstHalf`, `ExtraHalfTime`, `ExtraSecondHalf`, `ShootOut` | `LIVE`/`INTERMISSION` | Cups only |
-| `FullTime` | `FINAL` | `resultType` (`NormalResult` observed; expect `AbandonedResult`, `Postponed`, `Awarded`…) |
+| `period` | Core `GameState` | `clock` | Observed |
+|---|---|---|---|
+| `PreMatch` | `SCHEDULED` | absent until ~1 h before kick-off, then `"0"` | ✅ |
+| `FirstHalf` | `LIVE` | cumulative minutes, `"0"`…`"46"` | ✅ |
+| `HalfTime` | `INTERMISSION` | **frozen** at the first half's last minute (`"47"`) | ✅ |
+| `SecondHalf` | `LIVE` | restarts at `"45"` and runs to `"96"` | ✅ |
+| `FullTime` | `FINAL` | frozen at the last minute (`"97"`), `resultType: "NormalResult"` | ✅ |
+| `ExtraFirstHalf`, `ExtraHalfTime`, `ExtraSecondHalf`, `ShootOut` | `LIVE`/`INTERMISSION` | n/a | ✗ cups only |
+| `FullTime90` | `INTERMISSION` | n/a | ✗ cups only |
 
-Postponed/abandoned fixtures have not been observed yet; they may surface as a
-`period` value, a `resultType`, or by disappearing from the matchweek — see TODO.
+The transition timings from that recording, all UTC, for a 13:00 kick-off:
 
-What changes between states (observed pre → final): `score`, `halfTimeScore`,
-`redCards`, `clock`, `resultType`, `attendance` appear on the match; `lineups`
-fills (~1 h before kick-off); `timeline`/`events` fill; `stats` goes from `[]` to two
-entries; `standings.live` presumably flips during matches.
+| At | What happened |
+|---|---|
+| 11:52:52 | `period` still `PreMatch`, but `clock`, `score`, `halfTimeScore` and `redCards` appear, all zero |
+| 11:56:34 | `LINEUP_CONFIRMED` in the timeline; `lineups` had filled at 11:53 |
+| 13:01:00 | `FirstHalf` (the `FIRST_HALF_START` event is stamped 13:00:17) |
+| 13:47:35 | `HalfTime`, `clock` `"47"` |
+| 14:03:21 | `SecondHalf`, `clock` back to `"45"` |
+| 14:54:45 | `FullTime` with `resultType` and `attendance` |
+
+`resultType` was `NormalResult`; `AbandonedResult`, `Postponed` and `Awarded` are
+still unobserved and may instead surface as a `period` value or by the fixture
+disappearing from the matchweek - see TODO.
+
+What changes between states (all confirmed): the zeroed `score` / `halfTimeScore` /
+`redCards` / `clock` block appears about an hour before kick-off and `resultType` /
+`attendance` only at `FullTime`; `lineups` fills ~1 h before and then **never changes
+again** (see that endpoint); `timeline` and `events` fill; `stats` goes from `[]` to
+two entries within four minutes of kick-off and then moves on almost every poll;
+`halfTimeScore` **tracks the live score during the first half** and freezes at the
+break, so it is only a half-time score from `HalfTime` onwards.
 
 ## Quirks & gotchas
 
@@ -375,6 +422,26 @@ entries; `standings.live` presumably flips during matches.
   label. Convert with the IANA zone; do not assume `+01:00`. `momentum.matchInfo`
   has the UTC time, and timeline events have `isoTimestampUtc`. `events[].timestamp`
   is a compact `20260906T165505+0100`.
+- **A zeroed score appears before kick-off.** About an hour before a match the header
+  gains `score: 0`, `halfTimeScore: 0`, `redCards: 0` and `clock: "0"` while `period` is
+  still `PreMatch` (11:52:52Z for a 13:00Z kick-off, 2026-09-13). Read the state from
+  `period` alone; keying on the presence of a score shows `0-0` and a running clock for
+  a match that has not started.
+- **`clock` is a whole cumulative minute with no seconds, and it is not monotonic.** It
+  freezes at the first half's last minute through half time (`"47"`) and then **steps
+  back to `"45"`** when the second half starts, because the second half's minutes are
+  cumulative from 45 rather than from where the first half stopped. A clock that only
+  ever moves forwards will be wrong for one poll per match.
+- **`halfTimeScore` is the live score during the first half.** It tracks `score` until
+  the break and freezes there, so it is only a half-time score from `HalfTime` onwards.
+  Before that, deriving a first-half period score from it is the same as using `score`.
+- **A converted penalty is `PENALTY_SCORED`** in the timeline (and `goalType: "Penalty"`
+  in `events`), not the `PENALTY_GOAL` the site's typings suggest. See the timeline
+  endpoint.
+- **`/v3/matches/{id}/stats` rows are unordered** and the two sides carry different
+  numbers of keys. Select by `teamId`/`side`.
+- **`/v3/matches/{id}/lineups` never changes after publication** - substitutions are
+  only in the timeline.
 - **Everything is a string** — ids, `clock` (`"95"`), `season`, `period`,
   `shirtNum` in lineups (but an **int** in squads). Stats are floats.
 - **Default page size is 10** on every list endpoint (`pagination._limit`). Pass
@@ -425,11 +492,11 @@ entries; `standings.live` presumably flips during matches.
 |---|---|---|---|
 | League / season | `/v2/competitions/8/details` | `seasons[]` | Stage = `structure.currentPhase`; single `L` phase for the league |
 | Game (id, teams, start time) | matchweek list / `/v2/matches` | `matchId`, `homeTeam`, `awayTeam`, `kickoff` + `kickoffTimezoneString`, `ground` | **Convert kickoff from Europe/London**; UTC directly available only in `momentum.matchInfo` |
-| GameState | match object | `period`, `resultType` | see table; live values unverified |
-| Score by period | match object | `halfTimeScore`, `score` per team | Only HT and FT totals; per-half from `timeline` goals |
-| Clock / period | match object (`clock` minutes), `momentum.liveData.matchDetails.period[]` (UTC start/end, injury time) | | **Gap:** only whole minutes in the match object; derive seconds from period start times, or use the legacy API's `clock.secs` |
-| GameEvent | `/v1/matches/{id}/timeline` (+ `/events` for assists) | `eventType`, `minutes`/`seconds`, `teamId`, `playerId`, `isoTimestampUtc` | Assist ids only in `events.goals[].assistPlayerId`, stamped with the **conventional** minute while the timeline carries the floor minute (1:17 → timeline `1`, events `"2"`); join on `minutes + 1`. An `OWN_GOAL` timeline event carries the **scorer's** `teamId` (Miley, Leeds–Newcastle 2026-09-14) while `events` files it under the beneficiary with `goalType: "Own"` — the core credits the beneficiary |
-| Lineups | `/v3/matches/{id}/lineups` | `players[]`, `formation.lineup`, `formation.subs`, `managers[]` | Full, with formation grid. Player names inline |
+| GameState | match object | `period`, `resultType` | see table; every regulation value confirmed live 2026-09-13. A zeroed score appears while `period` is still `PreMatch`, so read the state from `period` alone |
+| Score by period | match object | `halfTimeScore`, `score` per team | Only HT and FT totals; per-half from `timeline` goals. `halfTimeScore` tracks the live score until the break, so it is a half-time score only from `HalfTime` on |
+| Clock / period | match object (`clock` minutes), `momentum.liveData.matchDetails.period[]` (UTC start/end, injury time) | | **Gap:** whole cumulative minutes only, confirmed live - no seconds anywhere in the match object. It freezes through half time and **steps back** from 47 to 45 at the restart, so it is not monotonic. Derive seconds from period start times, or use the legacy API's `clock.secs` |
+| GameEvent | `/v1/matches/{id}/timeline` (+ `/events` for assists) | `eventType`, `minutes`/`seconds`, `teamId`, `playerId`, `isoTimestampUtc` | Assist ids only in `events.goals[].assistPlayerId`, stamped with the **conventional** minute while the timeline carries the floor minute (1:17 → timeline `1`, events `"2"`); join on `minutes + 1`. A converted penalty is `PENALTY_SCORED` (`goalType: "Penalty"` in `events`), **not** `PENALTY_GOAL`. An `OWN_GOAL` timeline event carries the **scorer's** `teamId` (Miley, Leeds–Newcastle 2026-09-14) while `events` files it under the beneficiary with `goalType: "Own"`, and the core credits the beneficiary |
+| Lineups | `/v3/matches/{id}/lineups` | `players[]`, `formation.lineup`, `formation.subs`, `managers[]` | Full, with formation grid. Player names inline. Written once ~1 h before kick-off and never updated, so substitutions come from the timeline |
 | Team | `/v1/competitions/8/seasons/2026/teams` | `id`, `name`, `shortName`, `abbr`, `stadium` | No crest URL |
 | Player | `/v1/competitions/8/seasons/2026/playerinfo/{id}` or `squad` | bio | Full (nationality, DOB, height, weight, foot) |
 | Standings | `/v5/…/standings` | `tables[0].entries[]` | Overall + home + away splits; compute GD; `deductions[]` |
@@ -437,12 +504,16 @@ entries; `standings.live` presumably flips during matches.
 
 ## TODO
 
-- [ ] Capture live samples on **2026-09-12** (kick-offs 12:30, 15:00 ×5, 17:30, 20:00
-      BST): `match` (period/clock values), `timeline`, `events`, `lineups`, `stats`,
-      `standings` (`live: true`?), and `momentum` (`matchStatus`/`periodId` while
-      playing). Check whether `clock` ever has seconds.
+- [x] Live samples captured 2026-09-13 and curated 2026-09-25 (Coventry 0-5 Brighton,
+      364 polls): `match`, `timeline`, `events`, `lineups` and `stats` in `FirstHalf`,
+      `HalfTime` and `SecondHalf`. `clock` has **no** seconds, only whole cumulative
+      minutes.
+- [ ] `standings` during a match: whether `live` flips to `true` is still unobserved
+      (the capture followed one match, not the table).
+- [ ] `momentum` while playing (`matchStatus` / `periodId`) - not polled by the capture.
 - [ ] Observe a postponed/abandoned fixture and record how it is represented.
-- [ ] Observe `RED_CARD`, `PENALTY`, `OWN_GOAL` event types.
+- [x] `RED_CARD`, `PENALTY_SCORED` and `OWN_GOAL` observed. Still missing:
+      `SECOND_YELLOW`, a missed or saved penalty.
 - [ ] Decide whether the legacy `footballapi.pulselive.com` clock is worth keeping
       as a fallback once SDP live behaviour is known.
 
@@ -450,5 +521,6 @@ entries; `standings.live` presumably flips during matches.
 
 | Date | Change |
 |---|---|
+| 2026-09-25 | Live states curated from the 2026-09-13 capture of Coventry 0-5 Brighton (364 polls): 9 new samples across `FirstHalf`/`HalfTime`/`SecondHalf` and a pre-kick-off match-day header. Game states table and transition timings rewritten from observation. Found and fixed: a converted penalty is `PENALTY_SCORED`, which the mapper did not recognise, so the goal vanished from the timeline and every later running score was one short. Also recorded: the zeroed score that appears an hour before kick-off, the clock stepping back from 47 to 45 at the restart, `halfTimeScore` tracking the live score in the first half, `lineups` never changing after publication, unordered `stats` rows, `RED_CARD` / `StraightRed` and `periodId: "16"` for `LINEUP_CONFIRMED`. |
 | 2026-09-12 | Core provider built. Correction: the `kickoff>`/`kickoff<` filter is a string comparison — use date-only bounds (see quirks). |
 | 2026-09-11 | Initial mapping. Endpoint map extracted from the premierleague.com bundle; 45 endpoints verified; 46 samples (pre-match + full-time, standings, squads, players, legacy API). |

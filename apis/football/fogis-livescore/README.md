@@ -310,6 +310,12 @@ real kick-off, goals within a tick of the site's ticker.
 - **Empty `User-Agent` → 403.**
 - `<score>` includes shootout goals; `<ball-possession/>` and `*-ball-possession`
   are always empty/`0`; `x/y-position` carry no coordinates.
+- **`HALFENDED` only exists for a half that is over**, so nothing in the feed states the
+  running half's score directly. Take it as `score home-team/away-team` minus the sum of the
+  `HALFENDED` markers. Leaving the running half out instead looks harmless and is not:
+  Hammarby went 3-1 in the 57th minute on 2026-09-13 and a linescore built from markers alone
+  read `1H 2-1` beside a 3-1 score for the remaining 85 polls of the match
+  ([`samples/game-info.live.second-half-goal.xml`](samples/game-info.live.second-half-goal.xml)).
 - Events are newest-first; the `HALFENDED` of the last phase is effectively the
   full-time marker (no separate "match ended" event was observed, though id 23 exists
   in the JS).
@@ -357,7 +363,7 @@ opening the game; it carries no `HALFENDED`, so a second half's first-half score
 | League / season | `tournaments-1` | `tournament id`/`name`; `competition-category-id` for the stable "kind" | Tournament ids are per season; the cup is split into per-stage tournaments |
 | Game (id, teams, start time) | `schedule-{t}`, `overview-{f}-{d}` | `game id`, `date` + `start` (local), `home-team`/`away-team` or `teams/team[@home-team]` | Convert local → UTC |
 | GameState | `overview`, `game-info` | `status id`/`desc` | Enum above; `FIRST_HALF_IN_PROGRESS` / `SECOND_HALF_IN_PROGRESS` observed live 2026-09-13 |
-| Score by period | `game-info` | `score home-team/away-team`, `…-half-time`; per-event `home-score`/`away-score` at `HALFENDED` | Total includes shootout goals |
+| Score by period | `game-info` | `score home-team/away-team`, `…-half-time`; per-event `home-score`/`away-score` at `HALFENDED` | Total includes shootout goals. **A `HALFENDED` marker exists only for a half that has finished**, so the half in progress has to come from the running total less the halves already ended - see the quirk below |
 | Clock / period | `game-info` events | `phase`, `game-time` (mm:ss), `day-time` of `HALFSTARTED` → derive running clock | No clock field; derive from last `HALFSTARTED` wall-clock |
 | GameEvent | `game-info` events | `event-type-id`/`type`, `game-time`, `home-team`, participants (`id`, names, `number`, `type`) | Assist = second participant of a goal |
 | Lineups | `lineup-{id}` | `formation-desc`, `player position`/`Sub`, `is-captain`, `is-goalkeeper`, per-player stats | Empty before publication |
@@ -372,3 +378,4 @@ opening the game; it carries no `HALFENDED`, so a second half's first-half score
 |---|---|
 | 2026-09-12 | Initial mapping: 6 file types, 18 samples (pre/final/cup-shootout/stub, overview/changes/tournaments/schedule); live capture in progress |
 | 2026-09-13 | Live verified through two Allsvenskan games polled at the 10 s floor (no missed tick, minute-by-minute clock); `overview.live.xml`, `overview.live.second-half.xml` and `game-info.live.second-half.xml` added. Chosen over the allsvenskan.se GraphQL feed for games, live state, events and lineups |
+| 2026-09-25 | Curated the rest of the 2026-09-13 recording of Hammarby 3-1 Brommapojkarna. `game-info.live.second-half-goal.xml` added: a goal scored in a half that is still running, which no earlier sample had. It showed that a linescore built from `HALFENDED` markers alone contradicts the score for the whole of the half in progress, so the core now derives the running half from the running total (the quirk above). Affects all four Swedish football leagues, which share this feed |

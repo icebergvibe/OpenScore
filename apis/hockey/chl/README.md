@@ -11,7 +11,7 @@
 | **CORS** | `Access-Control-Allow-Origin: https://admin.corebine.com` only — browser apps need a proxy |
 | **WAF / UA requirement** | None (Cloudflare in front; no `User-Agent` needed) |
 | **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-game + final REG/OT/SO) · 🚧 live-state samples pending |
+| **Status** | ✅ verified (pre-game + final REG/OT/SO) · ✅ live states captured end to end 2026-09-13 |
 
 ## Overview
 
@@ -102,9 +102,12 @@ id, `{M}` = match id, `{T}` = team id, `{P}` = player id.
 ```
 _entityId, externalId, _modifyDate
 startDate            – ISO-8601 UTC ("2026-09-10T15:30:00.000Z"); startDateNotConfirmed bool
-status               – not-started | finished  (live value NOT YET CAPTURED — expected "in-progress")
+status               – not-started | in-progress | finished
 state                – { name, shortName }: "Before game"/"BG", "Fulltime"/"F", "Fulltime/Overtime"/"F/OT",
-                       "Fulltime/Shootout"/"F/SO"  (live values not yet captured)
+                       "Fulltime/Shootout"/"F/SO"; in play "1st period"/"1stP", "1stI",
+                       "2ndP", "2ndI", "3rdP", "3rdI"
+duration.regularTime – elapsed play in seconds, cumulative across the game; absent
+                       before the opening face-off and once finished
 stage                – { group{order, name "Regular Season"|"Round of 16"|…}, round{order, name "Game Day 3"} }
 teams.home / .away   – { _entityId, externalId, name, shortName, link{url} }
 results.scores       – { home, away }   (0–0 before the game)
@@ -132,7 +135,7 @@ Same Match object as above. Playoff rounds appear as `stage.group.name` =
 | | |
 |---|---|
 | **Purpose** | **The** match endpoint: header, state, score by period, and structured events with player objects. |
-| **Samples** | [`live-event-scoreboard.pre.json`](samples/live-event-scoreboard.pre.json) · [`live-event-scoreboard.final.json`](samples/live-event-scoreboard.final.json) (REG) · [`live-event-scoreboard.final-overtime.json`](samples/live-event-scoreboard.final-overtime.json) · [`live-event-scoreboard.final-shootout.json`](samples/live-event-scoreboard.final-shootout.json) |
+| **Samples** | [`live-event-scoreboard.pre.json`](samples/live-event-scoreboard.pre.json) · [`live-event-scoreboard.live.json`](samples/live-event-scoreboard.live.json) (1st period) · [`live-event-scoreboard.intermission.json`](samples/live-event-scoreboard.intermission.json) · [`live-event-scoreboard.live-third.json`](samples/live-event-scoreboard.live-third.json) · [`live-event-scoreboard.regulation-ended.json`](samples/live-event-scoreboard.regulation-ended.json) · [`live-event-scoreboard.final.json`](samples/live-event-scoreboard.final.json) (REG) · [`live-event-scoreboard.final-overtime.json`](samples/live-event-scoreboard.final-overtime.json) · [`live-event-scoreboard.final-shootout.json`](samples/live-event-scoreboard.final-shootout.json) |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `max-age=5` |
 
@@ -140,14 +143,17 @@ Same Match object as above. Playoff rounds appear as `stage.group.name` =
 data (Match) + audience (attendance) +
 results.scores{home, away}
 results.periods[]   { name "1st Period"|"2nd Period"|"3rd Period"|"Overtime"|"Shootout", shortName,
-                      status not-started|finished (live: presumably "in-progress"),
+                      status not-started|finished|in-progress,
                       scores{home, away}   (absent before the period starts),
                       actions[] }
 ```
 
-Periods are listed **newest first** in finished games. There is **no game clock**
-field; the current period and its `status` are the only live-state signals found
-so far (see TODO).
+Periods are listed **newest first** in finished games. `duration.regularTime` is the
+game clock: elapsed play in seconds counted from the opening face-off and **not reset per
+period**, so the second period runs 1200-2400 and the third 2400-3600. It advances with
+play, holds at the boundary through an intermission, and the key is absent entirely before
+the game and once it is finished. It was missed in the original mapping because a pre-game
+body has no `duration` at all.
 
 **Action** (`results.periods[].actions[]`):
 
@@ -254,9 +260,18 @@ Also referenced by the site but not sampled: `statistic-players-advanced-{C}-{S}
 
 | Source | Values | Core `GameState` |
 |---|---|---|
-| `status` | `not-started`, `finished`; live value **not captured** (bundle checks `isMatchLive`; expected `in-progress`) | SCHEDULED / FINAL / LIVE |
-| `state.shortName` | `BG` Before game, `F` Fulltime, `F/OT`, `F/SO`; live values not captured | outcome REG/OT/SO |
-| `results.periods[].status` | `not-started`, `finished` (+ presumably `in-progress`) | period / INTERMISSION heuristic: all listed periods finished but `status` not finished |
+| `status` | `not-started`, `in-progress`, `finished` | SCHEDULED / LIVE / FINAL |
+| `state.shortName` | `BG` before game; in play `1stP`, `1stI`, `2ndP`, `2ndI`, `3rdP`, `3rdI`; then `F`, `F/OT`, `F/SO` | current period, and the outcome REG/OT/SO once finished |
+| `results.periods[].status` | `not-started`, `in-progress`, `finished` | period / INTERMISSION heuristic: all listed periods finished but `status` not finished |
+| `duration.regularTime` | elapsed seconds, cumulative across the game | Clock (minus the period offset) |
+
+Observed end to end on 2026-09-13 over 509 polls at 15 s (match
+`9f0d43a32e2a32093c865142`, Fribourg-Gottéron 3-4 Adler Mannheim, seven goals):
+`not-started/BG` → `in-progress/1stP` → `1stI` → `2ndP` → `2ndI` → `3rdP` → `3rdI` →
+`finished/F`. The `I` states are real intermissions, and the **third** one is the wind-down
+after the final buzzer: the game sat at `in-progress/3rdI` with the clock pinned to 3600 for
+about 80 seconds before flipping to `finished`. A decided game therefore reads as
+INTERMISSION briefly, and the ending (`F`/`F/OT`/`F/SO`) is only known once `status` settles.
 
 ## Quirks & gotchas
 
@@ -273,7 +288,7 @@ Also referenced by the site but not sampled: `statistic-players-advanced-{C}-{S}
 - **Everything is `_type`-tagged** and wrapped; nested `actions[]` repeat the parent
   action. Player objects are repeated in full (with `source`, `position`) every
   time they appear — files are verbose but compress well (gzip ≈ 10×).
-- **No clock, no shots, no coordinates.** CHL exposes far less live detail than the
+- **No shots and no coordinates.** CHL exposes far less live detail than the
   domestic leagues. For Swedish/Finnish clubs' CHL games, SHL's `gameheader` and
   Liiga's game lists also carry the same fixtures (SHL keys them by `gameExtId` =
   CHL `externalId`), sometimes with richer data.
@@ -304,7 +319,7 @@ Also referenced by the site but not sampled: `statistic-players-advanced-{C}-{S}
 | Game (id, teams, start time) | `live-events.json` / `schedule-*` | `_entityId`, `startDate`, `teams`, `venue`, `stage` | |
 | GameState | `live-event-*-scoreboard` | `status`, `state`, `periods[].status` | Live values unverified |
 | Score by period | `scoreboard.results.periods[].scores` | | |
-| Clock / period | `periods[]` | period name + status | **Gap:** no clock at all |
+| Clock / period | `state.shortName` + `duration.regularTime` | current period + elapsed seconds | Cumulative across the game, so subtract 1200 per completed period. No play/stop flag, so `running` is only known (false) during an intermission |
 | GameEvent | `scoreboard.periods[].actions[]` | goals (scorer + assists), penalties (player only), goalie changes, timeouts, SO attempts | No shots/coords; penalty type only as text in `actions.json` |
 | Lineups | `live-event-*-lineups` | `position.category/index` | Full lines + pairs + officials + coaches ✔ |
 | Team | `teams-*` | `_entityId`, `shortName`, `country` | |
@@ -326,3 +341,5 @@ Also referenced by the site but not sampled: `statistic-players-advanced-{C}-{S}
 | Date | Change |
 |---|---|
 | 2026-09-11 | Initial mapping. Corebine S3 file catalogue recovered from page module configs; 25 file types verified, 33 samples captured. Unverified note's hosts confirmed non-existent. |
+| 2026-09-25 | Live states captured from the 2026-09-13 recording of match `9f0d43a32e2a32093c865142` (4 scoreboard samples). Live `status` is `in-progress` and `state.shortName` carries the period (`1stP`/`1stI`/…), both previously only expected. `duration.regularTime` found: a real game clock, so CLOCK is now claimed and the "no clock at all" gap is closed. |
+| 2026-09-25 | `team-schedule-{C}-{S}-{T}.json` wired up as `TEAM_SCHEDULE`: the endpoint was verified and sampled from the first mapping but the provider never used it, so a club in both CHL and a domestic league showed only its domestic fixtures. |

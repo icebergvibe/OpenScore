@@ -10,6 +10,14 @@ public object SerieASamples {
     public const val DAY: String = "2026-08-22"
     public const val FINAL_MATCH_ID: String = "serie-a::Football_Match::8f81947dbf6149b7b2801dbf1fa8d68c" // Udinese 1–2 Lazio
     public const val PRE_MATCH_ID: String = "serie-a::Football_Match::07028ce41c0d4c43b0c207a2561310f3" // Inter–Sassuolo
+
+    /**
+     * Lecce 3-2 Monza (2026-09-13), read in the first half. The header is poll 144 and the summary
+     * poll 131, because the capture wrote all four match endpoints to one file name (fixed since)
+     * and the summary of poll 144 did not survive - which makes this pair a *deeper* version of the
+     * lag the run actually showed.
+     */
+    public const val LIVE_MATCH_ID: String = "serie-a::Football_Match::b7ecdcd497b3445490aa0f0ba58468b5"
     public const val TEAM_ID: String = "serie-a::Football_Team::b7421caff23448c49134fa4f9095ee09" // Inter
     private const val C = SerieAProvider.SERIE_A
 
@@ -21,6 +29,10 @@ public object SerieASamples {
         "/seasons/$SEASON/match/$FINAL_MATCH_ID/summary" to "match-summary.final.json",
         "/seasons/$SEASON/match/$FINAL_MATCH_ID/teamstats" to "match-teamstats.final.json",
         "/seasons/$SEASON/matches/$FINAL_MATCH_ID/lineups" to "match-lineups.final.json",
+        "/seasons/$SEASON/matches/$LIVE_MATCH_ID/header" to "match-header.live.json",
+        "/seasons/$SEASON/match/$LIVE_MATCH_ID/summary" to "match-summary.live.json",
+        "/seasons/$SEASON/match/$LIVE_MATCH_ID/teamstats" to "match-teamstats.live.json",
+        "/seasons/$SEASON/matches/$LIVE_MATCH_ID/lineups" to "match-lineups.live.json",
         "/seasons/$SEASON/matches/$PRE_MATCH_ID/header" to "match-header.pre.json",
         "/seasons/$SEASON/match/$PRE_MATCH_ID/summary" to "match-summary.pre.json",
         "/seasons/$SEASON/match/$PRE_MATCH_ID/teamstats" to "match-teamstats.pre.json",

@@ -44,8 +44,8 @@ class FliigaLiveSmokeTest {
             assertEquals(GameEnding.OVERTIME, game.ending)
             assertEquals(listOf("1", "2", "3", "OT"), game.periodScores.map { it.period.label })
             assertEquals(7, game.events!!.count { it.type.isGoal })
-            assertEquals(1, game.events!!.count { it.type.key == "penalty" })
-            assertTrue(game.events!!.count { it.coordinates != null } > 50, "shots carry rink coordinates")
+            assertEquals(1, game.events.count { it.type.key == "penalty" })
+            assertTrue(game.events.count { it.coordinates != null } > 50, "shots carry rink coordinates")
 
             t = System.currentTimeMillis()
             val lineups = fliiga.lineups("929774")

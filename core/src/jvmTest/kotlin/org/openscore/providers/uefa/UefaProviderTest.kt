@@ -1,7 +1,9 @@
 package org.openscore.providers.uefa
 
+import kotlinx.coroutines.flow.take
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
+import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.builtins.ListSerializer
@@ -17,6 +19,8 @@ import org.openscore.model.football.FootballEventType
 import org.openscore.model.football.FootballGoalDetails
 import org.openscore.model.football.GoalKind
 import org.openscore.model.football.SubstitutionDetails
+import org.openscore.net.FetchResponse
+import org.openscore.net.Fetcher
 import org.openscore.net.OpenScoreJson
 import org.openscore.provider.Capability
 import org.openscore.provider.NotFoundException
@@ -34,6 +38,7 @@ import kotlin.test.assertNull
 import kotlin.test.assertTrue
 import kotlin.test.fail
 import kotlin.time.Clock
+import kotlin.time.Duration
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.Instant
@@ -465,5 +470,135 @@ class UefaProviderTest {
         assertEquals(4, season.size, "a three-team group plays four matches")
         assertTrue(season.all { it.home.id == UefaSamples.UNL_TEAM_ID || it.away.id == UefaSamples.UNL_TEAM_ID })
         assertEquals(season.sortedBy { it.startTime }, season)
+    }
+
+    // ---- live states, captured 2026-09-24 (Andorra 1-2 Malta, Nations League MD1) ----------
+    // The first live samples any UEFA competition has; before this every in-play state was
+    // simulated from a finished match.
+
+    @Test
+    fun aFirstHalfInPlayMapsFromTheCapturedSamples() {
+        val m = OpenScoreJson.decodeFromString(UefaMatch.serializer(), sample("match.live.json"))
+        val raw = OpenScoreJson.decodeFromString(ListSerializer(UefaEvent.serializer()), sample("match-events.main.live.json"))
+        val stats = OpenScoreJson.decodeFromString(ListSerializer(UefaTeamStatistics.serializer()), sample("team-statistics.live.json"))
+        val g = mapper.game(m, raw, stats, Instant.parse("2026-09-24T16:23:00Z"))
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("LIVE/FIRST_HALF/23+0", g.rawState)
+        assertEquals(Score(1, 0), g.score)
+        assertEquals(listOf(1 to 0), g.periodScores.map { it.home to it.away })
+        val clock = assertNotNull(g.clock)
+        assertEquals(FootballPeriods.FIRST_HALF, clock.period)
+        assertEquals(true, clock.running)
+        assertTrue(g.stats.isNotEmpty(), "team statistics are published while the match runs")
+    }
+
+    @Test
+    fun theHalfTimeBreakStopsTheClockAndKeepsThePeriodScore() {
+        val m = OpenScoreJson.decodeFromString(UefaMatch.serializer(), sample("match.halftime.json"))
+        val raw = OpenScoreJson.decodeFromString(ListSerializer(UefaEvent.serializer()), sample("match-events.main.halftime.json"))
+        val g = mapper.game(m, raw, null, Instant.parse("2026-09-24T16:49:00Z"))
+
+        assertEquals(GameState.INTERMISSION, g.state)
+        // The break carries no `minute` at all, so the raw state is the status/phase pair alone.
+        assertEquals("LIVE/HALF_TIME_BREAK", g.rawState)
+        assertEquals(Score(1, 1), g.score)
+        assertEquals(listOf(1 to 1), g.periodScores.map { it.home to it.away })
+        val clock = assertNotNull(g.clock)
+        assertEquals(FootballPeriods.FIRST_HALF, clock.period, "a break belongs to the period that just ended")
+        assertEquals(false, clock.running)
+    }
+
+    @Test
+    fun stoppageTimeIsCarriedAsAddedMinutes() {
+        val m = OpenScoreJson.decodeFromString(UefaMatch.serializer(), sample("match.live-stoppage.json"))
+        val g = mapper.game(m, emptyList(), null, Instant.parse("2026-09-24T16:47:50Z"))
+        assertEquals("LIVE/FIRST_HALF/45+2", g.rawState)
+        assertEquals(GameState.LIVE, g.state)
+    }
+
+    @Test
+    fun aSecondHalfInPlayKeepsBothPeriodScores() {
+        val m = OpenScoreJson.decodeFromString(UefaMatch.serializer(), sample("match.live-second-half.json"))
+        val raw = OpenScoreJson.decodeFromString(ListSerializer(UefaEvent.serializer()), sample("match-events.main.halftime.json"))
+        val g = mapper.game(m, raw, null, Instant.parse("2026-09-24T17:52:00Z"))
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("LIVE/SECOND_HALF/90+3", g.rawState)
+        assertEquals(Score(1, 2), g.score)
+        assertEquals(FootballPeriods.SECOND_HALF, assertNotNull(g.clock).period)
+    }
+
+    // ---- `/livescore` reaching a phase before `/matches/{id}` does -------------------------
+
+    /** Serves `/livescore` and `/matches/{id}` from scripts, one step per read. */
+    private class RaceFetcher(private val livescore: List<String>, private val match: List<String>) : Fetcher {
+        var matchReads: Int = 0
+            private set
+
+        private var livescoreReads = 0
+
+        override suspend fun get(url: String, headers: Map<String, String>, maxAge: Duration): FetchResponse {
+            val body = when {
+                url.endsWith("/livescore") -> livescore[minOf(livescoreReads++, livescore.lastIndex)]
+                url.contains("/events?") || url.contains("/team-statistics/") -> "[]"
+                else -> match[minOf(matchReads++, match.lastIndex)]
+            }
+            return FetchResponse(url, 200, "application/json", body)
+        }
+    }
+
+    private fun livescoreEntry(hash: String, phase: String, minute: Int?): String {
+        val minuteField = minute?.let { ",\"minute\":{\"normal\":$it}" } ?: ""
+        return """[{"id":"${UefaSamples.UNL_PRE_MATCH_ID}","status":"LIVE","hash":"$hash","phase":"$phase"$minuteField}]"""
+    }
+
+    @Test
+    fun aMatchDocumentBehindTheLivescorePhaseIsReReadOnTheNextTick() = runTest {
+        // Observed at half time and full time on 2026-09-24: `/livescore` flips 15-20 s before
+        // `/matches/{id}` does. Recording the new hash off the document read inside that window
+        // used to leave the old state standing, because the entry then carries no `minute` and
+        // its hash stops changing, so nothing asked again until LIVE_REFRESH.
+        val fetcher = RaceFetcher(
+            livescore = listOf(
+                livescoreEntry("a", "FIRST_HALF", 45),
+                livescoreEntry("b", "HALF_TIME_BREAK", null),
+                livescoreEntry("b", "HALF_TIME_BREAK", null),
+                livescoreEntry("b", "HALF_TIME_BREAK", null),
+            ),
+            match = listOf(
+                sample("match.live-stoppage.json"),
+                sample("match.live-stoppage.json"), // a poll behind: still the first half
+                sample("match.halftime.json"),
+                sample("match.halftime.json"),
+            ),
+        )
+
+        val seen = NationsLeagueProvider(fetcher, clock = fixedClock)
+            .live(UefaSamples.UNL_PRE_MATCH_ID, 10.seconds)
+            .take(2)
+            .toList()
+
+        assertEquals(GameState.LIVE, seen[0].state)
+        // Without the catch-up read this never arrives: the hash no longer moves and the fixed
+        // clock never makes the entry stale.
+        assertEquals(GameState.INTERMISSION, seen[1].state)
+    }
+
+    @Test
+    fun chasingADocumentThatNeverCatchesUpIsBounded() = runTest {
+        // A mismatch the feed never resolves must not turn the expensive read into a per-tick poll.
+        val fetcher = RaceFetcher(
+            livescore = listOf(livescoreEntry("a", "FIRST_HALF", 45)) + List(30) { livescoreEntry("b", "HALF_TIME_BREAK", null) },
+            match = List(40) { sample("match.live-stoppage.json") },
+        )
+
+        withTimeoutOrNull(5.minutes) {
+            NationsLeagueProvider(fetcher, clock = fixedClock).live(UefaSamples.UNL_PRE_MATCH_ID, 10.seconds).collect { }
+        }
+
+        // One read on the first tick, one when the hash changed, then six chases before it gives
+        // up - the point LIVE_REFRESH would have asked anyway. Thirty ticks, seven reads.
+        assertEquals(7, fetcher.matchReads)
     }
 }

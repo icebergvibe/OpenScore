@@ -67,7 +67,7 @@ public class MaltaProvider(
         // `pastMatches` answers 400 "Can't accept a future date" and `upcomingMatches` the
         // reverse (checked 2026-09-13), so only today needs both. The two are independent, and
         // this host is the slowest of the football set.
-        val today = clock.now().toLocalDateTime(MALTA).date
+        val today = clock.now().toLocalDateTime(league.zone).date
         val (past, upcoming) = coroutineScope {
             val past = async { if (date > today) emptyList() else get("/competitions/$competitionTypeId/pastMatches?date=$date&pageSize=50", ListSerializer(MtMatch.serializer()), LIVE_MAX_AGE) }
             val upcoming = async { if (date < today) emptyList() else get("/competitions/$competitionTypeId/upcomingMatches?date=$date&pageSize=50", ListSerializer(MtMatch.serializer()), LIVE_MAX_AGE) }
@@ -114,7 +114,7 @@ public class MaltaProvider(
 
     private suspend fun result(m: MtMatch): MtResult = get("/matches/${m.id}/result", MtResult.serializer(), resultMaxAge(m))
 
-    private fun localDate(m: MtMatch): LocalDate = Instant.parse(m.startDate).toLocalDateTime(MALTA).date
+    private fun localDate(m: MtMatch): LocalDate = Instant.parse(m.startDate).toLocalDateTime(league.zone).date
 
     override suspend fun game(id: String): Game {
         val match = get("/matches/$id", MtMatch.serializer(), LIVE_MAX_AGE)
@@ -154,8 +154,7 @@ public class MaltaProvider(
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://api.mfa.com.mt/api"
         public const val MALTA_PREMIER: Int = 58539
-        public val LEAGUE: League = League("malta-premier", Sport.FOOTBALL, "Malta Premier", "MT", "https://matchcentre.mfa.com.mt")
-        private val MALTA = TimeZone.of("Europe/Malta")
+        public val LEAGUE: League = League("malta-premier", Sport.FOOTBALL, "Malta Premier", "MT", TimeZone.of("Europe/Malta"), "https://matchcentre.mfa.com.mt")
         private val LIVE_MAX_AGE = 15.seconds
         private val SCHEDULE_MAX_AGE = 2.minutes
         private val FINAL_RESULT_MAX_AGE = 24.hours

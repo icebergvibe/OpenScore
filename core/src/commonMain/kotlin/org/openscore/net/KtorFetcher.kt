@@ -146,6 +146,18 @@ public class KtorFetcher(
     /**
      * Opens one upstream SSE connection. Unlike GET bodies this is intentionally not cached;
      * callers must close/reconnect it according to the upstream's event protocol.
+     *
+     * Known limit: [readLine] has no length bound, so a stream that sends a very long line with
+     * no delimiter grows in memory until the socket timeout fires - bounded in time, not in
+     * bytes. Still deliberate, but the bound is looser than it was: raising
+     * [SSE_SOCKET_TIMEOUT_MILLIS] from 70 s to 200 s for the SHL stream nearly tripled the
+     * window such a line would have to grow in, so the day this is worth fixing came closer.
+     * The bounded call, `readLineStrict`, throws `EOFException` when a channel ends after
+     * content but before a delimiter, which is an ordinary way for a stream to close: adopting
+     * it means catching that and treating it as a close, and the judgement of what else it
+     * changes still wants a real stream rather than a sample. Both users are known feeds
+     * (Bundesliga's Firebase ticker, SHL's Sportality stream) and no capture has shown such a
+     * line. Next SHL game day is the chance to settle it.
      */
     override fun events(url: String, headers: Map<String, String>): Flow<ServerSentEvent> = flow {
         val host = hostOf(url)
@@ -196,7 +208,12 @@ public class KtorFetcher(
     private fun fresh(key: RequestKey, maxAge: Duration): FetchResponse? {
         val cached = cache[key] ?: return null
         val freshness = cached.response.cacheMaxAge()?.let { minOf(maxAge, it) } ?: maxAge
-        if (clock.now() - cached.fetchedAt >= freshness) return null
+        val age = clock.now() - cached.fetchedAt
+        // A negative age means the wall clock moved backwards under us (a phone correcting its
+        // time). Left alone that reads as "younger than any limit", and a 10 s live entry would
+        // be served until the clock caught up - a frozen score for as long as the jump was.
+        // Re-reading costs one request; serving a stale score costs the thing the app is for.
+        if (age < Duration.ZERO || age >= freshness) return null
         // LinkedHashMap is insertion ordered. Reinsert fresh hits to make eviction true LRU.
         cache.remove(key)
         cache[key] = cached
@@ -276,8 +293,12 @@ public class KtorFetcher(
         public const val DEFAULT_REQUEST_TIMEOUT_MILLIS: Long = 20_000
         public const val DEFAULT_CONNECT_TIMEOUT_MILLIS: Long = 10_000
         public const val DEFAULT_SOCKET_TIMEOUT_MILLIS: Long = 20_000
-        /** Longer than the provider-level quiet watchdog, so it owns reconnect semantics. */
-        private const val SSE_SOCKET_TIMEOUT_MILLIS: Long = 70_000
+        /**
+         * Longer than any provider-level quiet watchdog, so the provider owns reconnect
+         * semantics. Healthy SHL streams pause up to 100 s between heartbeats (observed
+         * 2026-09-19), which is why this is not the 70 s it started at.
+         */
+        private const val SSE_SOCKET_TIMEOUT_MILLIS: Long = 200_000
     }
 }
 

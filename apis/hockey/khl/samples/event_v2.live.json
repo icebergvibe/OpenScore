@@ -1,0 +1,4892 @@
+{
+  "event": {
+    "game_state_key": "in_progress",
+    "period": 1,
+    "hd": true,
+    "id": 3000195,
+    "season": "2026/2027",
+    "stage_id": 407,
+    "type_id": 24,
+    "commentator": true,
+    "likes_enabled": null,
+    "is_vertical_video": false,
+    "khl_id": 902014,
+    "arena": {
+      "id": 743,
+      "capacity": 11650,
+      "phone": "",
+      "website": "",
+      "name": "Sibir-Arena",
+      "address": "Nemirovich-Danchenko st., 160, Novosibirsk, Novosibirsk Region, Russia, 630048",
+      "city": "Novosibirsk",
+      "image": "https://www.khl.ru/images/arenas/205/1.jpg",
+      "geo": {
+        "lat": 54.993398,
+        "long": 82.923428
+      }
+    },
+    "team_a": {
+      "id": 24,
+      "khl_id": 29,
+      "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/24/original/sibir_rus__200x200.png",
+      "name": "Sibir",
+      "location": "Novosibirsk Region",
+      "shots": 6,
+      "gf": 1,
+      "ppg": 0,
+      "shg": 0,
+      "ppc": 1,
+      "vbr": 5,
+      "pim": 2,
+      "total_puck_control_time": 3.33,
+      "total_distance_travelled": 8.82,
+      "offensive_blue_line_crossings_count": 9,
+      "top_players": [
+        {
+          "id": "hardestShot",
+          "name": "Hardest shot",
+          "value": "133.67 km/h",
+          "player": {
+            "id": 22105,
+            "khl_id": 25801,
+            "shirt_number": 91,
+            "name": "Valitov Daniil",
+            "image": "https://www.khl.ru/img/teamplayers_db/15556/25801.jpg"
+          }
+        },
+        {
+          "id": "playerWithMostDistanceTravelled",
+          "name": "Most distance travelled",
+          "value": "0.84 km",
+          "player": {
+            "id": 18997,
+            "khl_id": 27268,
+            "shirt_number": 44,
+            "name": "Dietz Darren",
+            "image": "https://www.khl.ru/img/teamplayers_db/15556/27268.jpg"
+          }
+        },
+        {
+          "id": "playerWithHighestTopSpeed",
+          "name": "Fastest player",
+          "value": "36.32 km/h",
+          "player": {
+            "id": 4321,
+            "khl_id": 20766,
+            "shirt_number": 96,
+            "name": "Korshkov Yegor",
+            "image": "https://www.khl.ru/img/teamplayers_db/15556/20766.jpg"
+          }
+        }
+      ],
+      "start_fives": [
+        {
+          "id": 28509,
+          "khl_id": 26698,
+          "shirt_number": 21,
+          "name": "Alanov Yegor",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/26698.jpg"
+        },
+        {
+          "id": 18921,
+          "khl_id": 27280,
+          "shirt_number": 85,
+          "name": "Beck Taylor",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/27280.jpg"
+        },
+        {
+          "id": 31001,
+          "khl_id": 22513,
+          "shirt_number": 1,
+          "name": "Berdin Mikhail",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/22513.jpg"
+        },
+        {
+          "id": 18997,
+          "khl_id": 27268,
+          "shirt_number": 44,
+          "name": "Dietz Darren",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/27268.jpg"
+        },
+        {
+          "id": 4321,
+          "khl_id": 20766,
+          "shirt_number": 96,
+          "name": "Korshkov Yegor",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/20766.jpg"
+        },
+        {
+          "id": 5975,
+          "khl_id": 19277,
+          "shirt_number": 12,
+          "name": "Nekolenko Arkhip",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/19277.jpg"
+        }
+      ],
+      "players": [
+        {
+          "id": 43535,
+          "khl_id": 30941,
+          "shirt_number": 97,
+          "name": "Abramov Mikhail B.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/30941.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 2,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 2,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.3,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 34.27,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 6,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 6,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 28509,
+          "khl_id": 26698,
+          "shirt_number": 21,
+          "name": "Alanov Yegor",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/26698.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 3.56666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 5,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 2,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 28.4,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.8,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 11,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 8,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 18921,
+          "khl_id": 27280,
+          "shirt_number": 85,
+          "name": "Beck Taylor",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/27280.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.86666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 31.46,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.68,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 5,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 4,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 31001,
+          "khl_id": 22513,
+          "shirt_number": 1,
+          "name": "Berdin Mikhail",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/22513.jpg",
+          "match_stats": [
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 2,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 22105,
+          "khl_id": 25801,
+          "shirt_number": 91,
+          "name": "Valitov Daniil",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/25801.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.15,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 32.15,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.45,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 50172,
+          "khl_id": 42807,
+          "shirt_number": 4,
+          "name": "Volkov Daniil",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/42807.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 50180,
+          "khl_id": 42279,
+          "shirt_number": 90,
+          "name": "Gabdrakhmanov Denis",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/42279.jpg",
+          "match_stats": [
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 39835,
+          "khl_id": 43049,
+          "shirt_number": 27,
+          "name": "Gordeyev Fyodor",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/43049.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.11666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 25.74,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.27,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 18997,
+          "khl_id": 27268,
+          "shirt_number": 44,
+          "name": "Dietz Darren",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/27268.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 2,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.83333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 28.76,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.84,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 9,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 9,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 4321,
+          "khl_id": 20766,
+          "shirt_number": 96,
+          "name": "Korshkov Yegor",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/20766.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.65,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 36.32,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.63,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 6,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 5,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 35781,
+          "khl_id": 32627,
+          "shirt_number": 15,
+          "name": "Kosolapov Anton",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/32627.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.65,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 28.12,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.47,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 4,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 2,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 5707,
+          "khl_id": 17903,
+          "shirt_number": 11,
+          "name": "Koshelev Semyon",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/17903.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.46666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 29.16,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.54,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 6,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 5,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 968,
+          "khl_id": 15306,
+          "shirt_number": 92,
+          "name": "Kuznetsov Evgeny",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/15306.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 1,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.633333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 29.16,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.44,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 5,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 3,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 44443,
+          "khl_id": 41344,
+          "shirt_number": 86,
+          "name": "Lyuzenkov Ilya",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/41344.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 40371,
+          "khl_id": 34526,
+          "shirt_number": 31,
+          "name": "Mirzabalayev Alexander",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/34526.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.31666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 26.93,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.3,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 5975,
+          "khl_id": 19277,
+          "shirt_number": 12,
+          "name": "Nekolenko Arkhip",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/19277.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 3,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 3.1,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 29.77,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.78,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 5,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 5,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 34673,
+          "khl_id": 30641,
+          "shirt_number": 13,
+          "name": "Nikulin Stepan",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/30641.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.766666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 26.93,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.17,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 3797,
+          "khl_id": 17459,
+          "shirt_number": 23,
+          "name": "Osipov Maxim I.",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/17459.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.91666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 23.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.3,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 35959,
+          "khl_id": 41382,
+          "shirt_number": 34,
+          "name": "Popov Sergei S.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/41382.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.81666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 26.6,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.62,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 5,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 4,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 35121,
+          "khl_id": 33887,
+          "shirt_number": 6,
+          "name": "Smirnov Nikita And.",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/33887.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.3,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 23.94,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.42,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 31993,
+          "khl_id": 33176,
+          "shirt_number": 18,
+          "name": "Tyutnev Pavel",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/33176.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 3,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.31666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 28.73,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.27,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 4069,
+          "khl_id": 17661,
+          "shirt_number": 61,
+          "name": "Yakovlev Alexei An.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15556/17661.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.88333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 2,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 33.91,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.36,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 3,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 2,
+              "max": 9
+            }
+          ]
+        }
+      ],
+      "active": true
+    },
+    "team_b": {
+      "id": 56,
+      "khl_id": 190,
+      "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png",
+      "name": "Avtomobilist",
+      "location": "Ekaterinburg",
+      "shots": 5,
+      "gf": 1,
+      "ppg": 0,
+      "shg": 0,
+      "ppc": 2,
+      "vbr": 4,
+      "pim": 25,
+      "total_puck_control_time": 1.0,
+      "total_distance_travelled": 4.34,
+      "offensive_blue_line_crossings_count": 4,
+      "top_players": [
+        {
+          "id": "hardestShot",
+          "name": "Hardest shot",
+          "value": "138.71 km/h",
+          "player": {
+            "id": 19141,
+            "khl_id": 27236,
+            "shirt_number": 9,
+            "name": "Blacker Jesse",
+            "image": "https://www.khl.ru/img/teamplayers_db/15543/27236.jpg"
+          }
+        },
+        {
+          "id": "playerWithMostDistanceTravelled",
+          "name": "Most distance travelled",
+          "value": "0.64 km",
+          "player": {
+            "id": 43587,
+            "khl_id": 24959,
+            "shirt_number": 21,
+            "name": "Ruzicka Adam",
+            "image": "https://www.khl.ru/img/teamplayers_db/15543/24959.jpg"
+          }
+        },
+        {
+          "id": "playerWithHighestTopSpeed",
+          "name": "Fastest player",
+          "value": "32.58 km/h",
+          "player": {
+            "id": 43587,
+            "khl_id": 24959,
+            "shirt_number": 21,
+            "name": "Ruzicka Adam",
+            "image": "https://www.khl.ru/img/teamplayers_db/15543/24959.jpg"
+          }
+        }
+      ],
+      "start_fives": [
+        {
+          "id": 5491,
+          "khl_id": 18488,
+          "shirt_number": 18,
+          "name": "Alikin Evgeny",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/18488.jpg"
+        },
+        {
+          "id": 18621,
+          "khl_id": 21055,
+          "shirt_number": 92,
+          "name": "Gorbunov Roman S.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/21055.jpg"
+        },
+        {
+          "id": 2585,
+          "khl_id": 16696,
+          "shirt_number": 78,
+          "name": "Kadeikin Alexander",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/16696.jpg"
+        },
+        {
+          "id": 8911,
+          "khl_id": 23446,
+          "shirt_number": 89,
+          "name": "Karpukhin Ilya",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/23446.jpg"
+        },
+        {
+          "id": 48643,
+          "khl_id": 46084,
+          "shirt_number": 10,
+          "name": "Clague Kale",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/46084.jpg"
+        },
+        {
+          "id": 1450,
+          "khl_id": 17504,
+          "shirt_number": 72,
+          "name": "Slepyshev Anton",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/17504.jpg"
+        }
+      ],
+      "players": [
+        {
+          "id": 5491,
+          "khl_id": 18488,
+          "shirt_number": 18,
+          "name": "Alikin Evgeny",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/18488.jpg",
+          "match_stats": [
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 8.63333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 3893,
+          "khl_id": 17210,
+          "shirt_number": 17,
+          "name": "Barabanov Alexander",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/17210.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.06666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 27.11,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.44,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 19141,
+          "khl_id": 27236,
+          "shirt_number": 9,
+          "name": "Blacker Jesse",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/27236.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 3.28333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 5,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 32.15,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.63,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 5093,
+          "khl_id": 18999,
+          "shirt_number": 55,
+          "name": "Vorobyov Kirill",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/18999.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 3.25,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 25.67,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.5,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 25433,
+          "khl_id": 27076,
+          "shirt_number": 1,
+          "name": "Galkin Vladimir",
+          "role_key": "goaltender",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/27076.jpg",
+          "match_stats": [
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 2941,
+          "khl_id": 19058,
+          "shirt_number": 15,
+          "name": "Golyshev Anatoly",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/19058.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.38333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 29.88,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.5,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 3,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 18621,
+          "khl_id": 21055,
+          "shirt_number": 92,
+          "name": "Gorbunov Roman S.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/21055.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 42227,
+          "khl_id": 44127,
+          "shirt_number": 79,
+          "name": "Gross Jordan",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/44127.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 49592,
+          "khl_id": 34649,
+          "shirt_number": 66,
+          "name": "Gushchin Danil",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/34649.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 25409,
+          "khl_id": 25396,
+          "shirt_number": 24,
+          "name": "Denezhkin Maxim",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/25396.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.78333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 29.05,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.48,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 2585,
+          "khl_id": 16696,
+          "shirt_number": 78,
+          "name": "Kadeikin Alexander",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/16696.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 4,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 2,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.66666666666667,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 4,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 26.46,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.33,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 8911,
+          "khl_id": 23446,
+          "shirt_number": 89,
+          "name": "Karpukhin Ilya",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/23446.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 38083,
+          "khl_id": 40130,
+          "shirt_number": 76,
+          "name": "Kashtanov Artyom",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/40130.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 1,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 48643,
+          "khl_id": 46084,
+          "shirt_number": 10,
+          "name": "Clague Kale",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/46084.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 1.58333333333333,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 30.2,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.31,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 1,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 1,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 43587,
+          "khl_id": 24959,
+          "shirt_number": 21,
+          "name": "Ruzicka Adam",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/24959.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 1,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 3.8,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 32.58,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.64,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 1450,
+          "khl_id": 17504,
+          "shirt_number": 72,
+          "name": "Slepyshev Anton",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/17504.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 46995,
+          "khl_id": 45421,
+          "shirt_number": 11,
+          "name": "Sprong Daniel",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/45421.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 2.25,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 3,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 25,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 30.85,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0.51,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 2,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 2,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 47411,
+          "khl_id": 41506,
+          "shirt_number": 77,
+          "name": "Tarasov Maxim",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/41506.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 1818,
+          "khl_id": 17594,
+          "shirt_number": 88,
+          "name": "Tryamkin Nikita",
+          "role_key": "defensemen",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/17594.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 4061,
+          "khl_id": 19000,
+          "shirt_number": 86,
+          "name": "Sharov Alexander A.",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/19000.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 2,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 3,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 1,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        },
+        {
+          "id": 23005,
+          "khl_id": 24177,
+          "shirt_number": 99,
+          "name": "Shashkov Nikita",
+          "role_key": "forward",
+          "image": "https://www.khl.ru/img/teamplayers_db/15543/24177.jpg",
+          "match_stats": [
+            {
+              "id": "shots",
+              "title": "Shots",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "goals",
+              "title": "Goals",
+              "val": 0,
+              "max": 1
+            },
+            {
+              "id": "fo",
+              "title": "Faceoff",
+              "val": 0,
+              "max": 4
+            },
+            {
+              "id": "fow",
+              "title": "Faceoff won",
+              "val": 0,
+              "max": 2
+            },
+            {
+              "id": "toi",
+              "title": "Time on ice",
+              "val": 0.0,
+              "max": 8.63333333333333
+            },
+            {
+              "id": "si",
+              "title": "Shifts",
+              "val": 0,
+              "max": 5
+            },
+            {
+              "id": "pim",
+              "title": "Penalty in minutes",
+              "val": 0,
+              "max": 25
+            },
+            {
+              "id": "hits",
+              "title": "Hits",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "bls",
+              "title": "Blocked shots",
+              "val": 1,
+              "max": 1
+            },
+            {
+              "id": "topSpeed",
+              "title": "Top speed, km/h",
+              "val": 0.0,
+              "max": 36.32
+            },
+            {
+              "id": "distanceTravelled",
+              "title": "Total distance, km",
+              "val": 0,
+              "max": 0.84
+            },
+            {
+              "id": "allPasses",
+              "title": "Passes",
+              "val": 0,
+              "max": 11
+            },
+            {
+              "id": "successfulPasses",
+              "title": "Successful passes",
+              "val": 0,
+              "max": 9
+            }
+          ]
+        }
+      ],
+      "active": true
+    },
+    "quotes": [
+      {
+        "quote": {
+          "id": 2599364,
+          "start_ts": 1789295786196,
+          "finish_ts": 1789295851580,
+          "is_vertical_video": false,
+          "description": "Гол. 0:1. Шаров Александр (Автомобилист) открывает счёт",
+          "image_url": "https://bl.webcaster.pro/quotes/2599364/main_thumbnail/big.jpg",
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "quote_type_name_key": "Goals",
+          "quote_type_name": "Goals",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      },
+      {
+        "quote": {
+          "id": 2599432,
+          "start_ts": 1789296153003,
+          "finish_ts": 1789296355264,
+          "is_vertical_video": false,
+          "description": "Удаление. Спронг Даниэль (Автомобилист). 5 мин. Атака в область головы и шеи.",
+          "image_url": "https://bl.webcaster.pro/quotes/2599432/main_thumbnail/big.jpg",
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "quote_type_name_key": "Penalties",
+          "quote_type_name": "Penalties",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      },
+      {
+        "quote": {
+          "id": 2599324,
+          "start_ts": 1789295520376,
+          "finish_ts": 1789295572974,
+          "is_vertical_video": false,
+          "description": "Удаление. Аланов Егор (Сибирь). 2 мин. Задержка соперника клюшкой.",
+          "image_url": "https://bl.webcaster.pro/quotes/2599324/main_thumbnail/big.jpg",
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "quote_type_name_key": "Penalties",
+          "quote_type_name": "Penalties",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      },
+      {
+        "quote": {
+          "id": 2599344,
+          "start_ts": 1789295637950,
+          "finish_ts": 1789295660420,
+          "is_vertical_video": false,
+          "description": "Кадейкин Александр (Автомобилист) набрасывает по воротам",
+          "image_url": "https://bl.webcaster.pro/quotes/2599344/main_thumbnail/big.jpg",
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_7929fdad8c84082ad1bfd071751d30cc/q2599344/1a4a79558f1946ca3508bad046687996/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_7929fdad8c84082ad1bfd071751d30cc/q2599344/1a4a79558f1946ca3508bad046687996/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_7929fdad8c84082ad1bfd071751d30cc/q2599344/1a4a79558f1946ca3508bad046687996/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_7929fdad8c84082ad1bfd071751d30cc/q2599344/1a4a79558f1946ca3508bad046687996/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "quote_type_name_key": "Scoring chance",
+          "quote_type_name": "Scoring chance",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Опасные моменты",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      }
+    ],
+    "goals": [
+      {
+        "time": 385,
+        "score": "1:1",
+        "period": 1,
+        "status": "",
+        "status_abbr": null,
+        "assistants": [],
+        "author": null,
+        "quote": null
+      },
+      {
+        "time": 248,
+        "score": "0:1",
+        "period": 1,
+        "status": "Even strength",
+        "status_abbr": "ES",
+        "assistants": [
+          {
+            "shirt_number": 11,
+            "name": "Sprong Daniel",
+            "aps": 1
+          },
+          {
+            "shirt_number": 15,
+            "name": "Golyshev Anatoly",
+            "aps": 1
+          }
+        ],
+        "author": {
+          "shirt_number": 86,
+          "name": "Sharov Alexander A.",
+          "gps": 0,
+          "team_id": 56
+        },
+        "quote": {
+          "id": 2599364,
+          "start_ts": 1789295786196,
+          "finish_ts": 1789295851580,
+          "is_vertical_video": false,
+          "description": "Гол. 0:1. Шаров Александр (Автомобилист) открывает счёт",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2599364/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Голы",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      }
+    ],
+    "violations": [
+      {
+        "time": 384,
+        "penalty_time": 20,
+        "period": 1,
+        "penalty_reason": "Game Misconduct Penalty",
+        "violator": {
+          "shirt_number": 11,
+          "name": "Sprong Daniel",
+          "team_id": 56,
+          "team": {
+            "id": 56
+          }
+        },
+        "quote": {
+          "id": 2599432,
+          "start_ts": 1789296153003,
+          "finish_ts": 1789296355264,
+          "is_vertical_video": false,
+          "description": "Удаление. Спронг Даниэль (Автомобилист). 5 мин. Атака в область головы и шеи.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2599432/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      },
+      {
+        "time": 384,
+        "penalty_time": 5,
+        "period": 1,
+        "penalty_reason": "Checking to the Head and Neck Area",
+        "violator": {
+          "shirt_number": 11,
+          "name": "Sprong Daniel",
+          "team_id": 56,
+          "team": {
+            "id": 56
+          }
+        },
+        "quote": {
+          "id": 2599432,
+          "start_ts": 1789296153003,
+          "finish_ts": 1789296355264,
+          "is_vertical_video": false,
+          "description": "Удаление. Спронг Даниэль (Автомобилист). 5 мин. Атака в область головы и шеи.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2599432/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      },
+      {
+        "time": 13,
+        "penalty_time": 2,
+        "period": 1,
+        "penalty_reason": "Hooking",
+        "violator": {
+          "shirt_number": 21,
+          "name": "Alanov Yegor",
+          "team_id": 24,
+          "team": {
+            "id": 24
+          }
+        },
+        "quote": {
+          "id": 2599324,
+          "start_ts": 1789295520376,
+          "finish_ts": 1789295572974,
+          "is_vertical_video": false,
+          "description": "Удаление. Аланов Егор (Сибирь). 2 мин. Задержка соперника клюшкой.",
+          "audio_tracks": [
+            {
+              "id": "main",
+              "title": "Основная"
+            },
+            {
+              "id": "a_noise",
+              "title": "Интершум"
+            }
+          ],
+          "m3u8_url": "https://bl.webcaster.pro/quote/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761.m3u8?locale=en&sr=109",
+          "feed_url": "https://bl.webcaster.pro/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&locale=en&type_id=24",
+          "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+          "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+          "image_url": "https://bl.webcaster.pro/quotes/2599324/main_thumbnail/big.jpg",
+          "stage_id": 407,
+          "free": true,
+          "yandex_rights": true,
+          "yandex_id": "m751560",
+          "match_id": "902014",
+          "balancer_type": "quote",
+          "event_or_quote_type_name": "Удаления",
+          "outer_stage_id": 1436,
+          "stage_name": "Regular 2026/2027"
+        }
+      }
+    ],
+    "other_events_with_both_teams": [
+      {
+        "event": {
+          "id": 2785786,
+          "score": "2:0",
+          "type_id": 18,
+          "khl_id": 898005,
+          "team_a": {
+            "id": 56,
+            "tv_image": "/images/khl_tv/teams/56.png",
+            "khl_id": 190,
+            "name": "Avtomobilist",
+            "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/56/original/avtomobilist__200x200.png"
+          },
+          "team_b": {
+            "id": 24,
+            "tv_image": "/images/khl_tv/teams/24.png",
+            "khl_id": 29,
+            "name": "Sibir",
+            "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png"
+          },
+          "name": "Avtomobilist - Sibir",
+          "start_at": 1768917600000,
+          "event_start_at": 1768917000000,
+          "end_at": 1768926014000,
+          "scores": {
+            "first_period": "0:0",
+            "second_period": "0:0",
+            "third_period": "2:0",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2785354,
+          "score": "0:5",
+          "type_id": 18,
+          "khl_id": 897899,
+          "team_a": {
+            "id": 24,
+            "tv_image": "/images/khl_tv/teams/24.png",
+            "khl_id": 29,
+            "name": "Sibir",
+            "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png"
+          },
+          "team_b": {
+            "id": 56,
+            "tv_image": "/images/khl_tv/teams/56.png",
+            "khl_id": 190,
+            "name": "Avtomobilist",
+            "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png"
+          },
+          "name": "Sibir - Avtomobilist",
+          "start_at": 1766493000000,
+          "event_start_at": 1766492400000,
+          "end_at": 1766501517000,
+          "scores": {
+            "first_period": "0:1",
+            "second_period": "0:3",
+            "third_period": "0:1",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2785070,
+          "score": "2:4",
+          "type_id": 18,
+          "khl_id": 897828,
+          "team_a": {
+            "id": 24,
+            "tv_image": "/images/khl_tv/teams/24.png",
+            "khl_id": 29,
+            "name": "Sibir",
+            "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png"
+          },
+          "team_b": {
+            "id": 56,
+            "tv_image": "/images/khl_tv/teams/56.png",
+            "khl_id": 190,
+            "name": "Avtomobilist",
+            "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png"
+          },
+          "name": "Sibir - Avtomobilist",
+          "start_at": 1764412200000,
+          "event_start_at": 1764411600000,
+          "end_at": 1764420925000,
+          "scores": {
+            "first_period": "0:1",
+            "second_period": "1:1",
+            "third_period": "1:2",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2784598,
+          "score": "7:1",
+          "type_id": 18,
+          "khl_id": 897711,
+          "team_a": {
+            "id": 56,
+            "tv_image": "/images/khl_tv/teams/56.png",
+            "khl_id": 190,
+            "name": "Avtomobilist",
+            "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png"
+          },
+          "team_b": {
+            "id": 24,
+            "tv_image": "/images/khl_tv/teams/24.png",
+            "khl_id": 29,
+            "name": "Sibir",
+            "image": "https://thumbs.webcaster.pro/rec-2-16.webcaster.pro/fc/sdd/team_pics/24/original/sibir_rus__200x200.png"
+          },
+          "name": "Avtomobilist - Sibir",
+          "start_at": 1761919200000,
+          "event_start_at": 1761918300000,
+          "end_at": 1761927331000,
+          "scores": {
+            "first_period": "1:0",
+            "second_period": "4:1",
+            "third_period": "2:0",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      },
+      {
+        "event": {
+          "id": 2538111,
+          "score": "0:5",
+          "type_id": 18,
+          "khl_id": 890484,
+          "team_a": {
+            "id": 24,
+            "tv_image": "/images/khl_tv/teams/24.png",
+            "khl_id": 29,
+            "name": "Sibir",
+            "image": "https://thumbs.webcaster.pro/rec-1-2.webcaster.pro/fc/sda/team_pics/24/original/sibir_rus__200x200.png"
+          },
+          "team_b": {
+            "id": 56,
+            "tv_image": "/images/khl_tv/teams/56.png",
+            "khl_id": 190,
+            "name": "Avtomobilist",
+            "image": "https://thumbs.webcaster.pro/rec-2-10.webcaster.pro/fc/sdc/team_pics/56/original/avtomobilist__200x200.png"
+          },
+          "name": "Sibir - Avtomobilist",
+          "start_at": 1739795400000,
+          "event_start_at": 1739794800000,
+          "end_at": 1739804590000,
+          "scores": {
+            "first_period": "0:3",
+            "second_period": "0:0",
+            "third_period": "0:2",
+            "overtime": null,
+            "bullitt": null
+          }
+        }
+      }
+    ],
+    "social_tags": [
+      "мыэтохксибирь",
+      "ХКАвтомобилист",
+      "Автомобилист",
+      "hcavto",
+      "ДавайАвто"
+    ],
+    "free": false,
+    "yandex_rights": true,
+    "yandex_id": "m751560",
+    "match_id": "902014",
+    "balancer_type": "live",
+    "event_or_quote_type_name": "Трансляция",
+    "outer_stage_id": 1436,
+    "stage_name": "Regular 2026/2027",
+    "parent_id": null,
+    "name": "Sibir - Avtomobilist",
+    "mref1": "Белов Алексей",
+    "mref2": "Шалагин Никита",
+    "lref1": "Берсенёв Максим",
+    "lref2": "Юдин Евгений",
+    "announce": null,
+    "views": "0",
+    "stage_type": "regular",
+    "audio_tracks": [
+      {
+        "id": "main",
+        "title": "Основная"
+      },
+      {
+        "id": "a_noise",
+        "title": "Интершум"
+      }
+    ],
+    "image_big": "https://thumbs.webcaster.pro/rec-2-3.webcaster.pro/fc/sdn/thumbnails/events/3000195/11297255740.jpg",
+    "location": "Novosibirsk",
+    "start_at_day": 1789246800,
+    "start_at": 1789295400000,
+    "event_start_at": 1789294800000,
+    "end_at": 1789313100000,
+    "tickets": null,
+    "text_events": [
+      {
+        "seconds": 385,
+        "type": "goal",
+        "period": 1,
+        "time_s": "",
+        "text": "Goal. 1:1. Sibir.",
+        "score": "1:1",
+        "m3u8_url": "https://bl.webcaster.pro/quote/start/free_87cdec30b0ff134581a258da894c1570/q2599452/3d405a82db128409d0755aec883dd638/1789339761.m3u8?locale=en&sr=109",
+        "feed_url": "https://bl.webcaster.pro/feed/start/free_87cdec30b0ff134581a258da894c1570/q2599452/3d405a82db128409d0755aec883dd638/1789339761?sr=109&locale=en&type_id=24",
+        "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_87cdec30b0ff134581a258da894c1570/q2599452/3d405a82db128409d0755aec883dd638/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+        "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_87cdec30b0ff134581a258da894c1570/q2599452/3d405a82db128409d0755aec883dd638/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+        "quote_id": 2599452,
+        "quote_name": "Гол. 1:1. Сибирь.",
+        "is_vertical_video": false,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": "quote",
+        "event_or_quote_type_name": "Рабочие моменты",
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 384,
+        "type": "violation",
+        "period": 1,
+        "time_s": "06:24",
+        "text": "Penalty. 11.Sprong Daniel (Avtomobilist). 20 min. Game Misconduct Penalty.",
+        "score": "0:1",
+        "m3u8_url": "https://bl.webcaster.pro/quote/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761.m3u8?locale=en&sr=109",
+        "feed_url": "https://bl.webcaster.pro/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&locale=en&type_id=24",
+        "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+        "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+        "quote_id": 2599432,
+        "quote_name": "Удаление. Спронг Даниэль (Автомобилист). 5 мин. Атака в область головы и шеи.",
+        "is_vertical_video": false,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": "quote",
+        "event_or_quote_type_name": "Удаления",
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 384,
+        "type": "violation",
+        "period": 1,
+        "time_s": "06:24",
+        "text": "Penalty. 11.Sprong Daniel (Avtomobilist). 5 min. Checking to the Head and Neck Area.",
+        "score": "0:1",
+        "m3u8_url": "https://bl.webcaster.pro/quote/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761.m3u8?locale=en&sr=109",
+        "feed_url": "https://bl.webcaster.pro/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&locale=en&type_id=24",
+        "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+        "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_02acbdd1beb66e2fe7f4e8a094471796/q2599432/18cc0076c58854aa89989028faf0a758/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+        "quote_id": 2599432,
+        "quote_name": "Удаление. Спронг Даниэль (Автомобилист). 5 мин. Атака в область головы и шеи.",
+        "is_vertical_video": false,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": "quote",
+        "event_or_quote_type_name": "Удаления",
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 248,
+        "type": "goal",
+        "period": 1,
+        "time_s": "04:08",
+        "text": "Goal. 0:1. 86.Sharov Alexander A. (11.Sprong Daniel, 15.Golyshev Anatoly). Avtomobilist. Even strength",
+        "score": "0:1",
+        "m3u8_url": "https://bl.webcaster.pro/quote/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761.m3u8?locale=en&sr=109",
+        "feed_url": "https://bl.webcaster.pro/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&locale=en&type_id=24",
+        "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+        "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_281f48dfb646f63c6d92fa38e8427e24/q2599364/e1d41c159f4e59ac115257034d73b61e/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+        "quote_id": 2599364,
+        "quote_name": "Гол. 0:1. Шаров Александр (Автомобилист) открывает счёт",
+        "is_vertical_video": false,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": "quote",
+        "event_or_quote_type_name": "Голы",
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 13,
+        "type": "violation",
+        "period": 1,
+        "time_s": "00:13",
+        "text": "Penalty. 21.Alanov Yegor (Sibir). 2 min. Hooking.",
+        "score": "0:0",
+        "m3u8_url": "https://bl.webcaster.pro/quote/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761.m3u8?locale=en&sr=109",
+        "feed_url": "https://bl.webcaster.pro/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&locale=en&type_id=24",
+        "iframe_url": "//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=640&height=397&iframe_width=640&iframe_height=397&lang=en&skin_name=khl",
+        "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/free_be97059ee2c9b12aa11e11be47b5bef3/q2599324/c31932ef2485c1dd5024309795cc6969/1789339761?sr=109&type_id=24&width=100%25&height=100%25&iframe_width=640&iframe_height=397&lang=en&skin_name=khl\" width=\"640\"></iframe>",
+        "quote_id": 2599324,
+        "quote_name": "Удаление. Аланов Егор (Сибирь). 2 мин. Задержка соперника клюшкой.",
+        "is_vertical_video": false,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": "quote",
+        "event_or_quote_type_name": "Удаления",
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 5,
+        "type": "state",
+        "period": 1,
+        "time_s": "17:32",
+        "text": "Start of 1 period",
+        "score": "0:0",
+        "m3u8_url": null,
+        "feed_url": null,
+        "iframe_url": null,
+        "iframe_code": null,
+        "quote_id": null,
+        "quote_name": null,
+        "is_vertical_video": null,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": null,
+        "event_or_quote_type_name": null,
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 4,
+        "type": "state",
+        "period": null,
+        "time_s": "17:30",
+        "text": "Start of the game",
+        "score": "0:0",
+        "m3u8_url": null,
+        "feed_url": null,
+        "iframe_url": null,
+        "iframe_code": null,
+        "quote_id": null,
+        "quote_name": null,
+        "is_vertical_video": null,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": null,
+        "event_or_quote_type_name": null,
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 3,
+        "type": "info",
+        "period": null,
+        "time_s": "- min",
+        "text": "Представляем стартовые составы играющих команд:",
+        "score": "0:0",
+        "m3u8_url": null,
+        "feed_url": null,
+        "iframe_url": null,
+        "iframe_code": null,
+        "quote_id": null,
+        "quote_name": null,
+        "is_vertical_video": null,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": null,
+        "event_or_quote_type_name": null,
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 2,
+        "type": "info",
+        "period": null,
+        "time_s": "- min",
+        "text": "\"Сибирь\" Новосибирская область: Коршков Егор (96) - Неколенко Архип (12) - Бек Тэйлор (85); Диц Даррен (44) - Аланов Егор (21)",
+        "score": "0:0",
+        "m3u8_url": null,
+        "feed_url": null,
+        "iframe_url": null,
+        "iframe_code": null,
+        "quote_id": null,
+        "quote_name": null,
+        "is_vertical_video": null,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": null,
+        "event_or_quote_type_name": null,
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      },
+      {
+        "seconds": 1,
+        "type": "info",
+        "period": null,
+        "time_s": "- min",
+        "text": "\"Автомобилист\" г. Екатеринбург: Слепышев Антон (72) - Кадейкин Александр (78) - Горбунов Роман (92); Карпухин Илья (89) - Клэг Кейл (10)",
+        "score": "0:0",
+        "m3u8_url": null,
+        "feed_url": null,
+        "iframe_url": null,
+        "iframe_code": null,
+        "quote_id": null,
+        "quote_name": null,
+        "is_vertical_video": null,
+        "stage_id": 407,
+        "free": true,
+        "yandex_rights": true,
+        "yandex_id": "m751560",
+        "match_id": "902014",
+        "balancer_type": null,
+        "event_or_quote_type_name": null,
+        "outer_stage_id": 1436,
+        "stage_name": "Regular 2026/2027"
+      }
+    ],
+    "not_regular": false,
+    "infographics": "With scoreboard",
+    "infographics_enabled": true,
+    "score": "1:1",
+    "condensed_game": null,
+    "highlight": null,
+    "outer_url": "https://www.khl.ru/game/1436/902014/preview/",
+    "m3u8_url": null,
+    "feed_url": null,
+    "iframe_url": "//api-video.khl.ru/iframe/feed/start/na_e40dbc3d3ba5caeabb81bdac3473a165/2_902014/9cf32920c19ed545cd7a5ff194c00091/1789339761?sr=42&type_id=24&width=730&height=397&iframe_width=730&iframe_height=397&lang=en&skin_name=khl",
+    "iframe_code": "<iframe allow=\"encrypted-media; autoplay; fullscreen\" frameborder=\"0\" height=\"397\" onload=\"this.contentWindow.postMessage({ referrer: window.location.toString(), prevPageUrl: window.parent.document.referrer.toString() }, new window.URL(this.src).origin)\" referrerpolicy=\"no-referrer-when-downgrade\" scrolling=\"no\" src=\"//api-video.khl.ru/iframe/feed/start/na_e40dbc3d3ba5caeabb81bdac3473a165/2_902014/9cf32920c19ed545cd7a5ff194c00091/1789339761?sr=42&type_id=24&width=100%25&height=100%25&iframe_width=730&iframe_height=397&lang=en&skin_name=khl\" width=\"730\"></iframe>",
+    "scores": {
+      "first_period": "1:1",
+      "second_period": null,
+      "third_period": null,
+      "overtime": null,
+      "bullitt": null
+    },
+    "this_pair_stat": {
+      "events_count": 52,
+      "team_a": {
+        "wins_count": 29,
+        "goals_count": 119,
+        "points_count": 62
+      },
+      "team_b": {
+        "wins_count": 23,
+        "goals_count": 121,
+        "points_count": 55
+      }
+    },
+    "transaction_types": [
+      {
+        "id": 17,
+        "platforms": "browser,smarttv",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "535618b2-c814-45b8-b2c5-5f530a6b0507",
+        "name": "Single match (HD)",
+        "time": 0,
+        "amount": 9900,
+        "season": false,
+        "events_filter_rule": "one_from_all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1213,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_buy_one_game",
+        "smarttv_app_product_id": "",
+        "name": "One game (HD)",
+        "time": 0,
+        "amount": 9900,
+        "season": false,
+        "events_filter_rule": "one_from_all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1895,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_month_sub_month_one_2025_2026",
+        "smarttv_app_product_id": "",
+        "name": "Month (1 team) ios'25/26",
+        "time": 2592000,
+        "amount": 34900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1225,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Month (1 team)",
+        "time": 2592000,
+        "amount": 34900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1899,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_month_sub_month_all_2025_2026",
+        "smarttv_app_product_id": "",
+        "name": "Month (all matches) ios'25/26",
+        "time": 2592000,
+        "amount": 44900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1233,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Month (all matches)",
+        "time": 2592000,
+        "amount": 44900,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1313,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Season (1 team)",
+        "time": 31557600,
+        "amount": 199000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1988,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_season_one_team_2026_2027",
+        "smarttv_app_product_id": "",
+        "name": "Season (1 team) ios'26/27",
+        "time": 31557600,
+        "amount": 199000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "one_from_all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1317,
+        "platforms": "smarttv,browser",
+        "android_app_product_id": "",
+        "ios_app_product_id": "",
+        "smarttv_app_product_id": "",
+        "name": "Season (all matches)",
+        "time": 31557600,
+        "amount": 299000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      },
+      {
+        "id": 1992,
+        "platforms": "ios",
+        "android_app_product_id": "",
+        "ios_app_product_id": "ru.khl.app_season_all_2026_2027",
+        "smarttv_app_product_id": "",
+        "name": "Season (all matches) ios'26/27",
+        "time": 31557600,
+        "amount": 299000,
+        "season": true,
+        "events_filter_rule": "all",
+        "event_ids": "",
+        "teams_filter_rule": "all",
+        "team_ids": "",
+        "stages_filter_rule": "all",
+        "stage_ids": "",
+        "description": "",
+        "custom_data": null
+      }
+    ],
+    "sscore": null,
+    "commentators_names": "Vitaly Magranov",
+    "bets": {
+      "team_a_win": 4.2,
+      "draw": 5.5,
+      "team_b_win": 1.58,
+      "url": "https://af-bk6bba.com/click?offer_id=803&partner_id=16996&url=https://fon.bet/sports/hockey/13283/67959818/?utm_source=default&utm_medium=cpc&utm_campaign=des_base&utm_content=odds&utm_medium=sponsorship&sub_1={khl}&sub_2={feed}&sub_3={odds}"
+    },
+    "transactions": [],
+    "has_video": true,
+    "geo_error": null
+  }
+}

@@ -103,7 +103,7 @@ class SwedishLeagueProviderTest {
         assertEquals(2, hammarby.clock?.period?.number)
         // Second half kicked off 15:04:35 local; 3:11 in → the 49th minute.
         assertEquals("49'", hammarby.clock?.time?.label)
-        assertEquals(listOf(2 to 1), hammarby.periodScores.map { it.home to it.away }, "the finished half; the running one is not listed")
+        assertEquals(listOf(2 to 1, 0 to 0), hammarby.periodScores.map { it.home to it.away }, "the ended half from its marker, the running one from the running total")
         assertNotNull(hammarby.events, "the game resource brings the timeline with it")
         // The other second-half game has no resource routed here: the overview's game is kept rather than the day failing.
         assertTrue(games.any { it.id == "6529995" && it.state.isLive && it.clock?.time?.elapsed == null })

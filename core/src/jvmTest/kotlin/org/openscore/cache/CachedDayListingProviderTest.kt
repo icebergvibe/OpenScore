@@ -2,6 +2,7 @@ package org.openscore.cache
 
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
 import org.openscore.model.Game
 import org.openscore.model.GameState
 import org.openscore.model.League
@@ -138,7 +139,7 @@ class CachedDayListingProviderTest {
     }
 
     private class ScriptedProvider : BaseLeagueProvider() {
-        override val league = League("test", Sport.HOCKEY, "Test", "SE")
+        override val league = League("test", Sport.HOCKEY, "Test", "SE", TimeZone.of("Europe/Stockholm"))
         override val capabilities = setOf(Capability.GAMES_BY_DATE)
         var games: List<Game> = emptyList()
         var down = false

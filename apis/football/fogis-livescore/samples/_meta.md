@@ -28,3 +28,22 @@ at the same time, pretty-printed with `python3 -m json.tool`.
 | `lineup.final.xml` | `lineup-6536131.xml` | |
 
 Nothing is truncated.
+
+## Live states, second round (2026-09-25)
+
+`game-info.live.second-half-goal.xml` is poll 310 of a `tools/live-capture` recording of
+game `6529991` (Hammarby 3-1 IF Brommapojkarna, Allsvenskan, 2026-09-13), 381 polls at
+15 s from 05:17Z to 13:57Z.
+
+```
+./gradlew :tools:live-capture:run --args="--league allsvenskan --game 6529991 --max 10h"
+```
+
+It is the first body in which a goal has been scored in a half that is **still running**:
+`<status id="2" desc="SECOND_HALF_IN_PROGRESS" />`, `<score home-team="3" away-team="1"
+home-team-half-time="2" away-team-half-time="1" />`, and a `HALFENDED` marker for phase 1
+only. The existing `game-info.live.second-half.xml` cannot show this, because its second
+half was still 0-0 - which is why the missing linescore row went unnoticed for so long.
+Saved verbatim as served (the feed is XML; nothing was reformatted or truncated).
+
+The raw recording is under `build/capture/fogis/` and is git-ignored.

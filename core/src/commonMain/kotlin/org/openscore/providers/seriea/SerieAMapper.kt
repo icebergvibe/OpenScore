@@ -132,9 +132,20 @@ public class SerieAMapper(private val leagueId: String) {
         val last = current ?: if (state.isFinished) FootballPeriods.SECOND_HALF else return emptyList()
         if (events == null) return emptyList()
         val goals = events.filter { it.type.isGoal }
-        return (1..last.number).map { n ->
+        val rows = (1..last.number).map { n ->
             val p = when (n) { 1 -> FootballPeriods.FIRST_HALF; 2 -> FootballPeriods.SECOND_HALF; 3 -> FootballPeriods.EXTRA_FIRST; 4 -> FootballPeriods.EXTRA_SECOND; else -> FootballPeriods.PENALTIES }
             PeriodScore(p, goals.count { it.period.number == n && it.team?.id == m.home?.teamId }, goals.count { it.period.number == n && it.team?.id == m.away?.teamId })
+        }
+        // The headline score comes from the header and these counts from the summary, two documents
+        // that are read together but do not move together: a goal reaches the header before its
+        // event row lands in the summary (observed 2026-09-13, header 3-1 against three summary
+        // goals at 21', for one poll). Credit the shortfall to the period in progress so the
+        // linescore can never add up to less than the score printed beside it.
+        val shortHome = (score.home - rows.sumOf { it.home }).coerceAtLeast(0)
+        val shortAway = (score.away - rows.sumOf { it.away }).coerceAtLeast(0)
+        if (shortHome == 0 && shortAway == 0) return rows
+        return rows.mapIndexed { i, r ->
+            if (i == rows.lastIndex) r.copy(home = r.home + shortHome, away = r.away + shortAway) else r
         }
     }
 
@@ -269,4 +280,4 @@ public class SerieAMapper(private val leagueId: String) {
     }
 }
 
-private val ROME: TimeZone = TimeZone.of("Europe/Rome")
+private val ROME: TimeZone = SerieAProvider.LEAGUE.zone

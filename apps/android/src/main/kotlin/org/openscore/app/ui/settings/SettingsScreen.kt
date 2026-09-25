@@ -172,7 +172,7 @@ fun SettingsScreen(
                     HorizontalDivider()
                     SectionHeader(
                         "Offline scores",
-                        "${cacheSizeLabel(cacheBytes)}: the days you have opened, as last read, and HockeyAllsvenskan's season. Results are kept a week, fixtures an hour; a day with a game running is always read live. Match details are not stored.",
+                        "${cacheSizeLabel(cacheBytes)}: the days you have opened, as last read, plus the seasons of the leagues with no day listing of their own (HockeyAllsvenskan, the UFC's cards). Results are kept a week, fixtures an hour; a day with a game running is always read live. Match details are not stored.",
                     )
                     TextButton(onClick = onClearCache, enabled = cacheBytes > 0) { Text("Clear offline scores") }
                 }

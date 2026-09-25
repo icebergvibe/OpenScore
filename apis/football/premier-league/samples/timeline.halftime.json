@@ -1,0 +1,45 @@
+[
+  {
+    "periodId": "16",
+    "seconds": 0,
+    "isoTimestampUtc": "2026-09-13T11:56:34.794Z",
+    "minutes": 0,
+    "teamId": "36",
+    "timestampUtc": "2026-09-13T11:56:34.794",
+    "eventType": "LINEUP_CONFIRMED",
+    "tag": "lineup",
+    "timestamp": "2026-09-13T12:56:34.794"
+  },
+  {
+    "periodId": "1",
+    "seconds": 0,
+    "isoTimestampUtc": "2026-09-13T13:00:17.293Z",
+    "minutes": 0,
+    "timestampUtc": "2026-09-13T13:00:17.293",
+    "eventType": "FIRST_HALF_START",
+    "tag": "phase",
+    "timestamp": "2026-09-13T14:00:17.293"
+  },
+  {
+    "periodId": "1",
+    "seconds": 56,
+    "isoTimestampUtc": "2026-09-13T13:35:13.913Z",
+    "minutes": 34,
+    "teamId": "36",
+    "timestampUtc": "2026-09-13T13:35:13.913",
+    "eventType": "GOAL",
+    "tag": "goals",
+    "timestamp": "2026-09-13T14:35:13.913",
+    "playerId": "647850"
+  },
+  {
+    "periodId": "1",
+    "seconds": 41,
+    "isoTimestampUtc": "2026-09-13T13:46:58.352Z",
+    "minutes": 46,
+    "timestampUtc": "2026-09-13T13:46:58.352",
+    "eventType": "FIRST_HALF_END",
+    "tag": "phase",
+    "timestamp": "2026-09-13T14:46:58.352"
+  }
+]

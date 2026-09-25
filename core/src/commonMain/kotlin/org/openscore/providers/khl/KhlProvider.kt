@@ -55,8 +55,8 @@ public class KhlProvider(
     )
 
     override suspend fun gamesOn(date: LocalDate): List<Game> {
-        val from = date.atStartOfDayIn(MOSCOW).epochSeconds
-        val to = date.plus(1, DateTimeUnit.DAY).atStartOfDayIn(MOSCOW).epochSeconds
+        val from = date.atStartOfDayIn(league.zone).epochSeconds
+        val to = date.plus(1, DateTimeUnit.DAY).atStartOfDayIn(league.zone).epochSeconds
         val url = "$baseUrl/events_v2.json?locale=en&order_direction=asc&q[start_at_gt_time_from_unixtime]=$from&q[start_at_lt_time_from_unixtime]=$to"
         val events = get(url, ListSerializer(KhlEventWrapper.serializer()), LIVE_MAX_AGE)
         return events.map { KhlMapper.game(it.event, withEvents = false) }.sortedBy { it.startTime }
@@ -110,8 +110,7 @@ public class KhlProvider(
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://khl.api.webcaster.pro/api/khl_mobile"
-        public val LEAGUE: League = League("khl", Sport.HOCKEY, "KHL", "RU", "https://www.khl.ru")
-        private val MOSCOW = TimeZone.of("Europe/Moscow")
+        public val LEAGUE: League = League("khl", Sport.HOCKEY, "KHL", "RU", TimeZone.of("Europe/Moscow"), "https://www.khl.ru")
         private val LIVE_MAX_AGE = 10.seconds
         private val TABLE_MAX_AGE = 10.minutes
         private val STATIC_MAX_AGE = 1.hours

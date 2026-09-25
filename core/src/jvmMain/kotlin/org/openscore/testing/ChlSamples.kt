@@ -29,6 +29,7 @@ public object ChlSamples {
         "/live?q=standings-groups-$C-$S.json" to "standings-groups.json",
         "?q=teams-$C-$S.json" to "teams.json",
         "?q=team-players-info-$C-$S-$TEAM_ID.json" to "team-players-info.json",
+        "?q=team-schedule-$C-$S-$TEAM_ID.json" to "team-schedule.json",
         "?q=player-$C-$PLAYER_ID.json" to "player.json",
     )
 

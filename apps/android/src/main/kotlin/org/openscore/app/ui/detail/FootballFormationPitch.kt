@@ -37,8 +37,8 @@ import org.openscore.model.PlayerRef
 /** A full football pitch: home attacks towards the top, away towards the bottom. */
 @Composable
 internal fun FootballFormationPitch(home: Lineup, away: Lineup) {
-    val homePlayers = home.startersInFormationOrder() ?: return
-    val awayPlayers = away.startersInFormationOrder() ?: return
+    val homeFormation = home.formationOrNull() ?: return
+    val awayFormation = away.formationOrNull() ?: return
     val playerColor = Color(0xff626863)
 
     BoxWithConstraints(
@@ -49,10 +49,10 @@ internal fun FootballFormationPitch(home: Lineup, away: Lineup) {
             .background(Color(0xff247146)),
     ) {
         PitchMarkings()
-        formationPositions(home, attackUp = true).zip(homePlayers).forEach { (position, player) ->
+        formationPositions(homeFormation.lines, attackUp = true).zip(homeFormation.starters).forEach { (position, player) ->
             PitchPlayer(player, position, playerColor)
         }
-        formationPositions(away, attackUp = false).zip(awayPlayers).forEach { (position, player) ->
+        formationPositions(awayFormation.lines, attackUp = false).zip(awayFormation.starters).forEach { (position, player) ->
             PitchPlayer(player, position, playerColor)
         }
     }
@@ -162,14 +162,17 @@ private const val PITCH_FRONT_LINE = .55f
 private const val PITCH_TOUCHLINE = .10f
 private const val PITCH_MAX_GAP = .30f
 
-private fun Lineup.startersInFormationOrder(): List<PlayerRef>? {
+/** The starters in formation order, with the formation already parsed into its rows. */
+private data class Formation(val starters: List<PlayerRef>, val lines: List<Int>)
+
+private fun Lineup.formationOrNull(): Formation? {
     val starters = groups.firstOrNull { it.kind == LineupGroupKind.STARTERS }?.players ?: return null
     val lines = formation?.filter(Char::isDigit)?.map(Char::digitToInt) ?: return null
-    return starters.takeIf { it.size >= 11 && lines.sum() == 10 }
+    if (starters.size < 11 || lines.sum() != 10) return null
+    return Formation(starters, lines)
 }
 
-private fun formationPositions(lineup: Lineup, attackUp: Boolean): List<PitchPosition> {
-    val lines = lineup.formation!!.filter(Char::isDigit).map(Char::digitToInt)
+private fun formationPositions(lines: List<Int>, attackUp: Boolean): List<PitchPosition> {
     // Home starts at the bottom and attacks up; away is its mirror. The outfield rows spread
     // evenly from the back line (in front of the keeper) to just before halfway.
     val yFor = { ownGoalDepth: Float -> if (attackUp) ownGoalDepth else 1f - ownGoalDepth }

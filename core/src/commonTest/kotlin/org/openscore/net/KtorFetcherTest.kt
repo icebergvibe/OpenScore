@@ -48,6 +48,26 @@ class KtorFetcherTest {
         assertTrue(!third.fromCache)
     }
 
+    /**
+     * A phone correcting its clock moves it backwards. The cached entry then reads as younger
+     * than any limit, and a live score would be served from it until the clock caught up.
+     */
+    @Test
+    fun aClockThatMovesBackwardsDoesNotMakeTheCacheEternallyFresh() = runTest {
+        var hits = 0
+        val engine = MockEngine { respond("""{"ok":${++hits}}""", HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json")) }
+        val clock = FakeClock()
+        val fetcher = KtorFetcher(engine, clock = clock)
+
+        fetcher.get("https://example.test/x", maxAge = 10.seconds)
+        assertEquals(1, hits)
+
+        clock.now -= 1.hours
+        val afterJump = fetcher.get("https://example.test/x", maxAge = 10.seconds)
+        assertEquals(2, hits, "the entry is re-read rather than held for the length of the jump")
+        assertTrue(!afterJump.fromCache)
+    }
+
     /** Ktor appends a repeated header, so a provider asking for one must get its value and not a joined pair. */
     @Test
     fun aCallersHeaderReplacesTheDefaultRatherThanJoiningIt() = runTest {

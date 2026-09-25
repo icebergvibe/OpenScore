@@ -116,7 +116,7 @@ public data class SptGameInfo(
     val extId: String? = null,
     val startDateTime: String = "",
     val arenaName: String? = null,
-    /** pre_game | live | post_game */
+    /** pre_game | post_game - stays `pre_game` while the game is on (2026-09-19). */
     val state: String? = null,
     val overtime: Boolean = false,
     val shootout: Boolean = false,
@@ -142,8 +142,9 @@ public data class SptOverview(
     val gameUuid: String,
     val homeGoals: Int = 0,
     val awayGoals: Int = 0,
-    /** NotStarted | Ongoing | PeriodBreak | GameEnded */
+    /** NotStarted | Ongoing | PeriodBreak | GameEnded - see [SportalityMapper.overviewState] for what `Ongoing` covers. */
     val state: String,
+    /** `{}` until the first record of the game; then the game time of the latest record. */
     val time: SptOverviewTime? = null,
 )
 
@@ -152,11 +153,18 @@ public data class SptOverviewTime(val period: Int = 0, val periodTime: String? =
 
 // ---- /api/gameday/play-by-play/{uuid} -------------------------------------------------
 
-/** Union of all event shapes; `type` decides which fields are meaningful. */
+/**
+ * Union of all event shapes; `type` decides which fields are meaningful. Types seen: `period`,
+ * `goal`, `shot`, `penalty`, `goalkeeper`, `timeout`, `shootout-penalty-shot` and the editorial
+ * `insight` (Swedish title/description, same `eventId` as the goal it describes). Rows carry a
+ * `revision` and may be `deleted`; `eventUuid` is the only id unique across types.
+ */
 @Serializable
 public data class SptEvent(
     val type: String,
     val eventId: Int? = null,
+    val eventUuid: String? = null,
+    val deleted: Boolean = false,
     val period: Int = 0,
     /** `MM:SS` elapsed in the period. */
     val time: String? = null,
@@ -348,3 +356,29 @@ public data class SptMeasure(val value: Double? = null, val format: String? = nu
 
 @Serializable
 public data class SptProfileTeam(val uuid: String? = null, val name: String? = null, val code: String? = null, val media: String? = null)
+
+// ---- game-broadcaster.s8y.se/live/game?gameUuid= (SSE) ----------------------------------
+
+/**
+ * One `data:` object of the live stream. Exactly one key is set and names the message kind;
+ * `teamStatistics` and `playerStatistics` (about forty per event) are not decoded.
+ */
+@Serializable
+public data class SptStreamMessage(
+    val liveState: SptLiveState? = null,
+    /** A play-by-play row in the REST shape, `period` records included; revisions are re-sent. */
+    val liveEvent: SptEvent? = null,
+    /** `{period, periodTime}` of the latest record, sent alongside events only. */
+    val gameTime: SptOverviewTime? = null,
+)
+
+/** Heartbeat every ~20 s (`updated: false`) and one message per transition (`updated: true`). */
+@Serializable
+public data class SptLiveState(
+    /** unknown | ongoing | intermission | overtime | decided */
+    val liveState: String,
+    val updated: Boolean = false,
+    val previousLiveState: String? = null,
+    /** `GameEnded` alongside `decided`. */
+    val gameState: String? = null,
+)

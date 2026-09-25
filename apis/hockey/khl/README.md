@@ -11,7 +11,7 @@
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *` |
 | **WAF / UA requirement** | None on webcaster.pro. `khl.ru` itself requires a browser `User-Agent` and an anti-bot cookie, and geo-blocks some regions. |
 | **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-game + final REG/OT/SO) · 🚧 live-state samples pending |
+| **Status** | ✅ verified · ✅ live states captured end to end 2026-09-13 (`not_yet_started` → in play → intermission × 2 → `finished`) |
 
 ## Overview
 
@@ -100,7 +100,7 @@ tickets, infographics, infographics_enabled, likes_enabled, commentator, yandex_
 | | |
 |---|---|
 | **Purpose** | Full game detail — the live/boxscore endpoint. |
-| **Samples** | [`event_v2.pre.json`](samples/event_v2.pre.json) (3000171, CSKA–Admiral) · [`event_v2.final.json`](samples/event_v2.final.json) (3000051, REG 5–1) · [`event_v2.final-overtime.json`](samples/event_v2.final-overtime.json) (2786578) · [`event_v2.final-shootout.json`](samples/event_v2.final-shootout.json) (2786714) · [`event_v2.not-found.json`](samples/event_v2.not-found.json) — all `quotes[]` truncated to 2 |
+| **Samples** | [`event_v2.pre.json`](samples/event_v2.pre.json) (3000171, CSKA–Admiral) · [`event_v2.live.json`](samples/event_v2.live.json) (3000195, 1st period 1–1) · [`event_v2.intermission.json`](samples/event_v2.intermission.json) (`period: 10`) · [`event_v2.live-third.json`](samples/event_v2.live-third.json) (3rd period 2–5) · [`event_v2.final.json`](samples/event_v2.final.json) (3000051, REG 5–1) · [`event_v2.final-overtime.json`](samples/event_v2.final-overtime.json) (2786578) · [`event_v2.final-shootout.json`](samples/event_v2.final-shootout.json) (2786714) · [`event_v2.not-found.json`](samples/event_v2.not-found.json) - all `quotes[]` truncated to 2 |
 | **Last verified** | 2026-09-11 |
 
 `{ "event": {…} }` with everything from the summary plus:
@@ -204,10 +204,16 @@ unknown. Polling `event_v2.json` is the fallback. See TODO.
 
 | Source | Values | Core `GameState` |
 |---|---|---|
-| `game_state_key` | `not_yet_started`, `finished` observed; `in_progress` expected live | SCHEDULED / LIVE / FINAL |
-| `period` | `null` pre, `-1` final; live 1–3, 4 = OT, 5 = SO (from `text_events.period`) | clock/period |
+| `game_state_key` | `not_yet_started`, `in_progress`, `finished` | SCHEDULED / LIVE / FINAL |
+| `period` | `null` pre, `-1` final, **`10` during every intermission**; live 1–3, 4 = OT, 5 = SO | clock/period, except `10`, which is a marker and not a period (see Quirks) |
 | `scores.overtime` / `scores.bullitt` | non-null when played | REG / OT / SO |
 | `text_events[0]` (newest) `type=state` | `"Start of 2 period"`, `"End of 2 period"` … | INTERMISSION detection: last state text starts with `End of` and game not finished |
+
+Observed end to end on 2026-09-13 over 599 polls at 15 s (game `3000195`, Sibir 2-5 Avangard):
+`not_yet_started` → `in_progress/period=1` → break → `period=2` → break → `period=3` → break →
+`finished/period=-1`. The third break is the wind-down after the final horn: the game sits in
+it for about half a minute before `game_state_key` turns over, so a decided game reads as an
+intermission briefly.
 
 **Correction (2026-09-12):** `text_events.time_s` is the **local wall-clock time** (`"19:31"` start of
 period 1, `"21:56"` end of game) and `seconds` counts broadcast seconds — neither is game
@@ -215,6 +221,14 @@ time. Game time exists only on `goals[].time` and `violations[].time` (seconds f
 start of the game; period 2 starts at 1200, OT at 3600). There is no running-clock field.
 
 ## Quirks & gotchas
+
+- **`period: 10` is an intermission marker, not a period.** Every break in the 2026-09-13
+  capture reported `period: 10` (a finished game reports `-1`). Anything above 4 in the period
+  table is the shootout, so passing `10` straight through made all three intermissions of a game
+  that never left regulation render as `SO`. The period a break belongs to is the one that just
+  ended, and the newest `state` text names it (`End of 1 period`) - the same text that makes the
+  state an intermission in the first place, so the two cannot drift apart.
+
 
 - **Two id systems everywhere:** webcaster `id` vs `khl_id` on events, teams and
   players. Use webcaster `id` for API calls; `khl_id` only to link to khl.ru.
@@ -278,3 +292,4 @@ start of the game; period 2 starts at 1200, OT at 3600). There is no running-clo
 |---|---|
 | 2026-09-11 | Initial mapping via the webcaster.pro mobile API; 12 endpoints verified, 19 samples captured. khl.ru documented as out of scope (geo-block + anti-bot cookie); unverified note's routes confirmed fictional. |
 | 2026-09-12 | Core provider (`org.openscore.providers.khl`) built on this doc. Corrections: `text_events.time_s` is wall-clock, not game time; playoff entries in `tables_v2` are brackets (`level`/`pairs`), not rows. |
+| 2026-09-25 | Live states curated from the 2026-09-13 recording of game `3000195` (3 samples). `in_progress` confirmed, and `period: 10` found to be the intermission marker rather than a period number, which had been rendering every break as `SO`. |

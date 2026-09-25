@@ -10,6 +10,7 @@ import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
 import org.openscore.OpenScore
 import org.openscore.app.Fixtures
 import org.openscore.app.data.ScoresRepository
@@ -29,6 +30,7 @@ import org.openscore.model.TeamSeasonStats
 import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
 import org.openscore.providers.mlb.MlbProvider
+import java.util.concurrent.CopyOnWriteArrayList
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
@@ -93,8 +95,11 @@ class TeamViewModelTest {
         try {
             val arsenalPl = TeamRef("premier-league", "3", "Arsenal", "ARS")
             val arsenalUefa = TeamRef("ucl", "52280", "Arsenal", "ARS")
-            val scheduleRequests = ArrayList<String>()
-            val profileRequests = ArrayList<String>()
+            // Appended from `Dispatchers.Default`, which is where `ScoresRepository` does its
+            // work, and read back on the test thread. A plain ArrayList gives no happens-before
+            // edge between the two, so the assertion could miss a request that had been made.
+            val scheduleRequests = CopyOnWriteArrayList<String>()
+            val profileRequests = CopyOnWriteArrayList<String>()
             fun table(leagueId: String, vararg teams: TeamRef) = StandingsTable(leagueId, null, null,
                 listOf(StandingsGroup("League", teams.mapIndexed { i, t -> StandingsRow(t, i + 1, 4, 3, 1, 0, points = 9) })), "league")
             fun provider(league: League, own: TeamRef?, others: List<TeamRef>, schedule: List<Game>) = object : BaseLeagueProvider() {
@@ -113,9 +118,9 @@ class TeamViewModelTest {
             val plGame = Fixtures.game(leagueId = "premier-league", id = "2645215", home = arsenalPl, away = chelsea, state = GameState.FINAL, score = Score(2, 1))
             val uclGame = Fixtures.game(leagueId = "ucl", id = "2049560", home = napoli, away = arsenalUefa, state = GameState.FINAL, score = Score(1, 2), startTime = Instant.parse("2026-09-09T19:00:00Z"))
             val repository = ScoresRepository(OpenScore(listOf(
-                provider(League("premier-league", Sport.FOOTBALL, "Premier League", "GB"), arsenalPl, listOf(chelsea), listOf(plGame)),
-                provider(League("ucl", Sport.FOOTBALL, "Champions League", "EU"), arsenalUefa, listOf(napoli), listOf(uclGame)),
-                provider(League("uel", Sport.FOOTBALL, "Europa League", "EU"), null, listOf(TeamRef("uel", "50033", "Sparta Praha")), emptyList()),
+                provider(League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London")), arsenalPl, listOf(chelsea), listOf(plGame)),
+                provider(League("ucl", Sport.FOOTBALL, "Champions League", "EU", TimeZone.UTC), arsenalUefa, listOf(napoli), listOf(uclGame)),
+                provider(League("uel", Sport.FOOTBALL, "Europa League", "EU", TimeZone.UTC), null, listOf(TeamRef("uel", "50033", "Sparta Praha")), emptyList()),
             )))
             val vm = TeamViewModel(repository, arsenalUefa, LocalDate(2026, 9, 16))
             store.put("team", vm)
@@ -147,18 +152,18 @@ class TeamViewModelTest {
             val leksandShl = TeamRef("shl", "9541-95418PpkP", "Leksand", "LIF", clubId = "leksand")
             val modo = TeamRef("hockeyallsvenskan", "MODO", "MoDo", "MoDo", clubId = "modo")
             val farjestad = TeamRef("shl", "752c-752c12zB7Z", "Färjestad", clubId = "farjestad")
-            val rosterRequests = ArrayList<String>()
+            val rosterRequests = CopyOnWriteArrayList<String>()
             fun table(leagueId: String, vararg teams: TeamRef) = StandingsTable(leagueId, null, null,
                 listOf(StandingsGroup("League", teams.mapIndexed { i, t -> StandingsRow(t, i + 1, 3, 3, 0, points = 9) })), "league")
             val ha = object : BaseLeagueProvider() {
-                override val league = League("hockeyallsvenskan", Sport.HOCKEY, "HockeyAllsvenskan", "SE")
+                override val league = League("hockeyallsvenskan", Sport.HOCKEY, "HockeyAllsvenskan", "SE", TimeZone.of("Europe/Stockholm"))
                 override val capabilities = setOf(Capability.TEAM, Capability.TEAM_SCHEDULE, Capability.STANDINGS)
                 override suspend fun standings(seasonId: String?) = table(league.id, leksandHa, modo)
                 override suspend fun team(id: String) = Team(leksandHa, arena = "Tegera Arena")
                 override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate) = emptyList<Game>()
             }
             val shl = object : BaseLeagueProvider() {
-                override val league = League("shl", Sport.HOCKEY, "SHL", "SE")
+                override val league = League("shl", Sport.HOCKEY, "SHL", "SE", TimeZone.of("Europe/Stockholm"))
                 override val capabilities = setOf(Capability.TEAM, Capability.TEAM_SCHEDULE, Capability.STANDINGS, Capability.ROSTER)
                 // Leksand plays in HockeyAllsvenskan this season, so the SHL table does not name it.
                 override suspend fun standings(seasonId: String?) = table(league.id, farjestad)

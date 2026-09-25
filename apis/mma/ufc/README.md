@@ -11,7 +11,7 @@
 | **CORS** | `Access-Control-Allow-Origin: *`, `Access-Control-Allow-Methods: GET`. Preflight (`OPTIONS`) is `403`, so only simple GETs work from browsers — which is all that is needed |
 | **WAF / UA requirement** | None. API Gateway behind CloudFront; any or no `User-Agent` succeeds |
 | **Last full verification** | 2026-09-18 |
-| **Status** | ✅ verified (upcoming + final states, DWCS / Road to UFC, draw, no contest, canceled) · ✅ `UfcProvider` in core · 🚧 live-state samples pending (UFC 331, 2026-09-19 21:30Z) |
+| **Status** | ✅ verified (upcoming + final states, DWCS / Road to UFC, draw, no contest, canceled) · ✅ `UfcProvider` in core · 🚧 live-state samples pending: the UFC 331 attempt of 2026-09-19 produced an empty capture directory, so it still wants a card |
 
 ## Overview
 

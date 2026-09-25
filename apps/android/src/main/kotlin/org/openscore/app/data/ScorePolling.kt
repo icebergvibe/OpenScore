@@ -1,14 +1,18 @@
 package org.openscore.app.data
 
+import org.openscore.cache.CachedDayListingProvider
 import org.openscore.model.Game
 import org.openscore.model.GameState
 import org.openscore.model.combat.FightSituation
 import kotlin.time.Duration.Companion.hours
-import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Instant
 
-/** A listing is asked again a little before kick-off, so the first minute is not missed. */
-private val KICKOFF_LEAD = 5.minutes
+/**
+ * A listing is asked again a little before kick-off, so the first minute is not missed. Taken
+ * from the core's day cache rather than repeated here: the two decide the same thing from either
+ * side, and the cache serving a stored day the poll thinks is due would freeze a score.
+ */
+private val KICKOFF_LEAD = CachedDayListingProvider.KICKOFF_LEAD
 
 /**
  * How long after kick-off a game the listing still calls scheduled is worth asking about. Past

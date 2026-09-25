@@ -11,7 +11,7 @@
 | **CORS** | **No** `Access-Control-Allow-Origin` header (an `OPTIONS` request answers `Allow: GET, HEAD, POST, PUT, DELETE, OPTIONS` and nothing else). Browser apps need a proxy |
 | **WAF / UA requirement** | None. Plain nginx, no edge cache; requests with any or no `User-Agent` succeed |
 | **Last full verification** | 2026-09-19 |
-| **Status** | ✅ verified (scheduled + final states, regular season and playoffs) · 🚧 live-state samples not yet captured (first chance: game day 2, 2026-09-20) |
+| **Status** | ✅ verified (scheduled + final states, regular season and playoffs) · 🚧 live-state samples not yet captured: the 2026-09-20 game day named here as the first chance was not recorded, so `CLOCK` stays unclaimed |
 
 ## Overview
 

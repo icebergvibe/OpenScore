@@ -4,7 +4,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
@@ -35,6 +34,7 @@ import org.openscore.net.ServerSentEvent
 import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
 import org.openscore.provider.Dates
+import org.openscore.provider.LivePollBudget
 import org.openscore.provider.NotFoundException
 import org.openscore.provider.decodeJson
 import org.openscore.provider.getJson
@@ -89,11 +89,23 @@ public class BundesligaProvider(
     override fun live(gameId: String, interval: Duration): Flow<Game> {
         val streamFetcher = fetcher as? EventStreamFetcher ?: return super.live(gameId, interval)
         return flow {
+            val budget = LivePollBudget(interval)
             var last: Game? = null
-            while (true) {
-                val season = seasonId()
-                var current = basic(season, gameId)
-                var detailed = detailedGame(season, current)
+            while (budget.open) {
+                // The snapshot each connect starts from. Before this it was unguarded, so one
+                // failed read between reconnects ended the stream for good.
+                val opening = budget.read {
+                    val season = seasonId()
+                    val basic = basic(season, gameId)
+                    Triple(season, basic, detailedGame(season, basic))
+                }.getOrNull()
+                if (opening == null) {
+                    budget.wait(STREAM_RECONNECT_DELAY)
+                    continue
+                }
+                val (season, opened, openedDetail) = opening
+                var current = opened
+                var detailed = openedDetail
                 if (detailed != last) emit(detailed)
                 last = detailed
                 if (detailed.state.isTerminal) return@flow
@@ -113,7 +125,7 @@ public class BundesligaProvider(
                 if (last.state.isTerminal) return@flow
                 // A graceful close and a quiet connection both need a short pause. This avoids a
                 // reconnect spin while still recovering much faster than polling the full game.
-                delay(STREAM_RECONNECT_DELAY)
+                budget.wait(STREAM_RECONNECT_DELAY)
             }
         }
     }
@@ -229,17 +241,16 @@ public class BundesligaProvider(
         return decodeJson(response, strategy, league.id)
     }
 
-    private fun localDate(iso: String): LocalDate = Dates.instant(iso).toLocalDateTime(GERMANY).date
+    private fun localDate(iso: String): LocalDate = Dates.instant(iso).toLocalDateTime(league.zone).date
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://bundesliga-web-prod.europe-west1.firebasedatabase.app"
         public const val DEFAULT_CONFIG_URL: String = "https://wapp.bapi.bundesliga.com/config/configNode.json"
         public const val BUNDESLIGA: String = "DFL-COM-000001"
         public const val BUNDESLIGA_2: String = "DFL-COM-000002"
-        public val LEAGUE: League = League("bundesliga", Sport.FOOTBALL, "Bundesliga", "DE", "https://www.bundesliga.com")
-        public val LEAGUE_2: League = League("bundesliga2", Sport.FOOTBALL, "2. Bundesliga", "DE", "https://www.bundesliga.com")
+        public val LEAGUE: League = League("bundesliga", Sport.FOOTBALL, "Bundesliga", "DE", TimeZone.of("Europe/Berlin"), "https://www.bundesliga.com")
+        public val LEAGUE_2: League = League("bundesliga2", Sport.FOOTBALL, "2. Bundesliga", "DE", TimeZone.of("Europe/Berlin"), "https://www.bundesliga.com")
 
-        private val GERMANY = TimeZone.of("Europe/Berlin")
         private val BASE_CAPABILITIES: Set<Capability> = setOf(
             Capability.GAMES_BY_DATE,
             Capability.GAME,

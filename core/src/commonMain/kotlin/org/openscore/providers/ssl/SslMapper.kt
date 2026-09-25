@@ -183,7 +183,7 @@ public class SslMapper(private val leagueId: String) {
 
     private companion object {
         /** The league files its days by Swedish local dates, whatever zone the reader is in. */
-        val SWEDEN = TimeZone.of("Europe/Stockholm")
+        val SWEDEN: TimeZone = SslProvider.LEAGUE.zone
         val STAT_KEYS = mapOf("SOG" to "shotsOnGoal", "SVS" to "saves", "PIM" to "penaltyMinutes")
     }
 }

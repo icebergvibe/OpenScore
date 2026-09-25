@@ -151,4 +151,50 @@ class SerieAProviderTest {
     fun notFound() = runTest {
         assertFailsWith<NotFoundException> { sa.game("serie-a::Football_Match::00000000000000000000000000000000") }
     }
+
+    /**
+     * Lecce 3-2 Monza (2026-09-13), the first live Serie A data: `providerStatus: "Live"` and
+     * `phase: "HALF_TIME_BREAK"` were both guesses in the README before this.
+     */
+    @Test
+    fun aLiveFirstHalfIsMappedFromTheHeader() = runTest {
+        val g = sa.game(SerieASamples.LIVE_MATCH_ID)
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("LIVE/FIRST_HALF", g.rawState)
+        assertEquals(Score(3, 1), g.score, "the score is `homeScorePush`, not anything under `home`")
+        val clock = assertNotNull(g.clock)
+        assertEquals("21'", clock.time.label)
+        assertEquals(true, clock.running)
+        assertEquals("Lecce", g.home.name)
+        assertTrue(g.stats.isNotEmpty(), "teamstats are published while the match runs")
+    }
+
+    /**
+     * The headline score is the header's, the linescore is counted from the summary's goal rows,
+     * and the summary can be a poll behind. Whatever it is missing belongs to the period in
+     * progress, so the halves must still add up to the score beside them.
+     */
+    @Test
+    fun theLinescoreAddsUpToTheHeadlineEvenWhenTheSummaryIsBehind() = runTest {
+        val g = sa.game(SerieASamples.LIVE_MATCH_ID)
+        val goals = assertNotNull(g.events).count { it.type.isGoal }
+        assertEquals(2, goals, "the paired summary body holds two goals against a 3-1 header")
+        assertEquals(listOf(3 to 1), g.periodScores.map { it.home to it.away })
+        val score = assertNotNull(g.score)
+        assertEquals(score.home, g.periodScores.sumOf { it.home })
+        assertEquals(score.away, g.periodScores.sumOf { it.away })
+    }
+
+    /** `phase: "HALF_TIME_BREAK"` at `time: 45`: an intermission that is not running. */
+    @Test
+    fun halfTimeBreakIsAnIntermission() {
+        val m = OpenScoreJson.decodeFromString(SaMatch.serializer(), sample("match-header.halftime.json"))
+        val g = SerieAMapper("serie-a").game(m, null, null)
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals("LIVE/HALF_TIME_BREAK", g.rawState)
+        assertEquals("Live", m.providerStatus, "the value the README could only guess at")
+        val clock = assertNotNull(g.clock)
+        assertEquals("45'", clock.time.label, "the feed drops `additionalTime` during the break")
+        assertEquals(false, clock.running)
+    }
 }

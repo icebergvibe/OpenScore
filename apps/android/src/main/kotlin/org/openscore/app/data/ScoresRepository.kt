@@ -53,6 +53,19 @@ class ScoresRepository(private val openScore: OpenScore, private val cache: Scor
     fun league(id: String): League? = leagues.firstOrNull { it.id == id }
 
     /**
+     * The zone [id] keeps its calendar in, for working out the day one of its games is filed
+     * under ([org.openscore.model.leagueDate]). Asked of the core rather than [leagues], which
+     * leaves the umbrella feeds out; every provider the app can hold a game from answers here.
+     *
+     * The reader's own zone is the last resort and not the default: an NHL game at 20:00 Eastern
+     * belongs to the NHL's day, not to whichever day it happens to be where the phone is.
+     */
+    fun zoneOf(leagueId: String): TimeZone =
+        openScore.providerOrNull(leagueId)?.league?.zone
+            ?: openScore.racingProviderOrNull(leagueId)?.league?.zone
+            ?: TimeZone.currentSystemDefault()
+
+    /**
      * Whether a league is served by a [LeagueProvider] — two-team games with a day listing.
      * The racing league (`f1`) is in [leagues] for the rail, the filter sheet and Following,
      * but has no games to ask for: a feed shows its sessions ([racingSessionsOn]) instead.

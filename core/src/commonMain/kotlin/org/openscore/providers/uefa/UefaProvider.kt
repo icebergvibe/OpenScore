@@ -2,7 +2,6 @@ package org.openscore.providers.uefa
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.datetime.LocalDate
@@ -23,7 +22,7 @@ import org.openscore.model.Team
 import org.openscore.net.Fetcher
 import org.openscore.provider.BaseLeagueProvider
 import org.openscore.provider.Capability
-import org.openscore.provider.MIN_LIVE_POLL_INTERVAL
+import org.openscore.provider.LivePollBudget
 import org.openscore.provider.NotFoundException
 import org.openscore.provider.getJson
 import org.openscore.provider.runCatchingUnlessCancelled
@@ -51,8 +50,10 @@ public data class UefaHosts(
  *
  * Ids are UEFA's global digit strings (match `2049553`, team `50051`, player `250076574`).
  * `seasonId` is the season's **end year** (`2027` = 2026/27). Dates are the venue's local
- * dates (`kickOffTime.date`). No roster endpoint exists. [live] polls the 300-byte
- * `livescore` list and re-reads the match only when its `hash` changed.
+ * dates (`kickOffTime.date`). No roster endpoint exists. [live] polls the `livescore` list
+ * (~300 B on a quiet day, 7-15 KB once finished matches carry a `winner.team`) and re-reads
+ * the match when its `hash` changed, trusting that hash only once the match document reports
+ * the same phase - see [caughtUp].
  */
 public open class UefaProvider(
     override val league: League,
@@ -156,28 +157,57 @@ public open class UefaProvider(
 
     /**
      * Polls `/livescore` every [interval] (≥ 10 s) and re-reads the match when its `hash`
-     * changes, when it is missing from the list (more than an hour from kick-off), or at
+     * changes, when it is missing from the list (more than an hour from kick-off), when the
+     * document last read had not yet caught up with the list's phase (see [caughtUp]), or at
      * least every [LIVE_REFRESH]; ends once the game is final.
      */
     override fun live(gameId: String, interval: Duration): Flow<Game> = flow {
-        val effective = maxOf(interval, MIN_LIVE_POLL_INTERVAL)
+        val budget = LivePollBudget(interval)
         var last: Game? = null
         var lastHash: String? = null
         var lastRead = Instant.DISTANT_PAST
-        while (true) {
-            val entry = runCatchingUnlessCancelled { livescore().firstOrNull { it.id == gameId } }.getOrNull()
+        var catchUps = 0
+        while (budget.open) {
+            val entry = budget.read { livescore().firstOrNull { it.id == gameId } }.getOrNull()
             val now = clock.now()
             val stale = now - lastRead >= LIVE_REFRESH
-            if (entry == null || entry.hash != lastHash || stale) {
-                val game = game(gameId)
-                lastRead = now
-                lastHash = entry?.hash
-                if (game != last) emit(game)
-                last = game
-                if (game.state.isTerminal) return@flow
+            if (entry == null || entry.hash != lastHash || catchUps > 0 || stale) {
+                // The full reload is read through the budget too: it is the expensive call, and
+                // before this it was the one unguarded read that could end the flow outright.
+                val game = budget.read { game(gameId) }.getOrNull()
+                if (game != null) {
+                    lastRead = now
+                    lastHash = entry?.hash
+                    catchUps = when {
+                        caughtUp(entry, game) -> 0
+                        // Chasing forever would turn the expensive read into a per-tick poll if a
+                        // mismatch never resolved; give up at the point LIVE_REFRESH would have
+                        // asked anyway, so the worst case is no worse than before.
+                        catchUps + 1 >= MAX_CATCH_UP_READS -> 0
+                        else -> catchUps + 1
+                    }
+                    if (game != last) emit(game)
+                    last = game
+                    if (game.state.isTerminal) return@flow
+                }
             }
-            delay(effective)
+            budget.wait()
         }
+    }
+
+    /**
+     * Whether the match document just read reports the phase `/livescore` already does.
+     *
+     * The two routes are not in step: the livescore list flips 15-20 s before the match document
+     * (observed at half time and full time of Andorra v Malta, 2026-09-24). Recording the new
+     * hash off a document read inside that window left the old state standing, because during a
+     * break the entry carries no `minute` and its hash then stops changing - so nothing asked
+     * again until [LIVE_REFRESH] and the app showed `45'+3` for a minute after the whistle.
+     */
+    private fun caughtUp(entry: UefaLivescore?, game: Game): Boolean {
+        val marker = UefaMapper.phaseMarker(entry?.status, entry?.phase).ifEmpty { return true }
+        val raw = game.rawState ?: return true
+        return raw == marker || raw.startsWith("$marker/")
     }
 
     public suspend fun livescore(): List<UefaLivescore> =
@@ -211,6 +241,13 @@ public open class UefaProvider(
         private val STATIC_MAX_AGE = 1.hours
         /** Re-read a live match at least this often even when the livescore hash is unchanged. */
         private val LIVE_REFRESH = 60.seconds
+
+        /**
+         * How many ticks in a row `live` will re-read a match document that has not caught up
+         * with `/livescore`. Six at the 10 s floor is [LIVE_REFRESH], the interval that would
+         * have asked anyway.
+         */
+        private const val MAX_CATCH_UP_READS = 6
     }
 }
 
@@ -218,7 +255,7 @@ public open class UefaProvider(
 public class ChampionsLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHosts(), clock: Clock = Clock.System, rosters: EspnRosters? = null) :
     UefaProvider(LEAGUE, fetcher, UefaProvider.CHAMPIONS_LEAGUE, hosts, clock, rosters) {
     public companion object {
-        public val LEAGUE: League = League("ucl", Sport.FOOTBALL, "UEFA Champions League", "EU", "https://www.uefa.com/uefachampionsleague/")
+        public val LEAGUE: League = League("ucl", Sport.FOOTBALL, "UEFA Champions League", "EU", TimeZone.UTC, "https://www.uefa.com/uefachampionsleague/")
     }
 }
 
@@ -226,7 +263,7 @@ public class ChampionsLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHo
 public class EuropaLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHosts(), clock: Clock = Clock.System, rosters: EspnRosters? = null) :
     UefaProvider(LEAGUE, fetcher, UefaProvider.EUROPA_LEAGUE, hosts, clock, rosters) {
     public companion object {
-        public val LEAGUE: League = League("uel", Sport.FOOTBALL, "UEFA Europa League", "EU", "https://www.uefa.com/uefaeuropaleague/")
+        public val LEAGUE: League = League("uel", Sport.FOOTBALL, "UEFA Europa League", "EU", TimeZone.UTC, "https://www.uefa.com/uefaeuropaleague/")
     }
 }
 
@@ -234,7 +271,7 @@ public class EuropaLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHosts
 public class ConferenceLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHosts(), clock: Clock = Clock.System, rosters: EspnRosters? = null) :
     UefaProvider(LEAGUE, fetcher, UefaProvider.CONFERENCE_LEAGUE, hosts, clock, rosters) {
     public companion object {
-        public val LEAGUE: League = League("uecl", Sport.FOOTBALL, "UEFA Conference League", "EU", "https://www.uefa.com/uefaconferenceleague/")
+        public val LEAGUE: League = League("uecl", Sport.FOOTBALL, "UEFA Conference League", "EU", TimeZone.UTC, "https://www.uefa.com/uefaconferenceleague/")
     }
 }
 
@@ -258,6 +295,6 @@ public class NationsLeagueProvider(fetcher: Fetcher, hosts: UefaHosts = UefaHost
     override fun currentSeason(): Int = super.currentSeason().let { if (it % 2 == 0) it - 1 else it }
 
     public companion object {
-        public val LEAGUE: League = League("unl", Sport.FOOTBALL, "UEFA Nations League", "EU", "https://www.uefa.com/uefanationsleague/")
+        public val LEAGUE: League = League("unl", Sport.FOOTBALL, "UEFA Nations League", "EU", TimeZone.UTC, "https://www.uefa.com/uefanationsleague/")
     }
 }

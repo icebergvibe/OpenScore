@@ -14,20 +14,18 @@ import org.openscore.model.StageKind
 import org.openscore.model.StandingsRow
 import org.openscore.model.StandingsTable
 import org.openscore.model.TeamRef
+import org.openscore.model.leagueDate
 import kotlin.time.Instant
 
 enum class TeamTab(val label: String) { OVERVIEW("Overview"), GAMES("Games"), STANDINGS("Standings"), ROSTER("Roster"), STATS("Stats") }
 enum class GameFilter(val label: String) { UPCOMING("Upcoming"), RESULTS("Results"), ALL("All games") }
 
-/** MLB is the one provider whose schedule is explicitly keyed to its Eastern official date. */
-val MlbTimeZone: TimeZone = TimeZone.of("America/New_York")
-val MaltaTimeZone: TimeZone = TimeZone.of("Europe/Malta")
-
-fun leagueTimeZone(leagueId: String): TimeZone = when (leagueId) {
-    "mlb" -> MlbTimeZone
-    "malta-premier" -> MaltaTimeZone
-    else -> TimeZone.currentSystemDefault()
-}
+/**
+ * Which zone a league keeps its calendar in, as [org.openscore.model.League.zone] states it.
+ * Taken as a parameter rather than looked up here so these functions stay pure and a test can
+ * hand them a fixed zone; the screens pass [org.openscore.app.data.ScoresRepository.zoneOf].
+ */
+typealias LeagueZones = (String) -> TimeZone
 
 /** The Malta Premier API labels 2026/27 with its end year, 2027. */
 fun teamSeasonYear(leagueId: String, date: LocalDate): Int =
@@ -72,7 +70,8 @@ fun TeamRef.isSameClub(other: TeamRef): Boolean =
 
 fun StandingsTable.rowFor(team: TeamRef): StandingsRow? = rows.firstOrNull { it.team.isSameClub(team) }
 
-private fun Instant.displayDate(leagueId: String): LocalDate = toLocalDateTime(leagueTimeZone(leagueId)).date
+/** Today, as [leagueId] counts days. */
+private fun Instant.dayIn(zones: LeagueZones, leagueId: String): LocalDate = toLocalDateTime(zones(leagueId)).date
 
 /** The game is one of this club's, in whichever competition. */
 fun Game.belongsTo(team: TeamRef): Boolean = home.isSameClub(team) || away.isSameClub(team)
@@ -86,15 +85,15 @@ fun Game.resultFor(team: TeamRef): String? {
     return when { own > other -> "W"; own < other -> "L"; else -> "T" }
 }
 
-fun teamGames(games: List<Game>, team: TeamRef, filter: GameFilter, now: Instant): List<Game> {
+fun teamGames(games: List<Game>, team: TeamRef, filter: GameFilter, now: Instant, zones: LeagueZones): List<Game> {
     val selected = games.filter { it.belongsTo(team) }.distinctBy { it.leagueId to it.id }.filter {
-        val today = now.displayDate(it.leagueId)
+        val today = now.dayIn(zones, it.leagueId)
         when (filter) {
             GameFilter.ALL -> true
             GameFilter.RESULTS -> it.state.isFinished
             GameFilter.UPCOMING -> it.state.isLive || it.state == GameState.SUSPENDED ||
                 (it.state in listOf(GameState.SCHEDULED, GameState.PRE_GAME) &&
-                    (it.scheduleDate ?: it.startTime.displayDate(it.leagueId)) >= today)
+                    it.leagueDate(zones(it.leagueId)) >= today)
         }
     }.sortedBy { it.startTime }
     return if (filter == GameFilter.RESULTS) selected.reversed() else selected
@@ -105,10 +104,14 @@ fun recentForm(games: List<Game>, team: TeamRef): List<Game> = games
     .filter { it.stage != StageKind.PRESEASON && it.stage != StageKind.PLAYOFF && it.resultFor(team) != null }
     .distinctBy { it.leagueId to it.id }.sortedBy { it.startTime }.takeLast(5)
 
-/** Wake up near kick-off; off-days and distant/cancelled fixtures need no score poll. Keyed by league, each in its own date convention. */
-fun scoreRefreshDates(games: List<Game>, now: Instant): Map<String, Set<LocalDate>> = games
+/**
+ * Wake up near kick-off; off-days and distant/cancelled fixtures need no score poll. Keyed by
+ * league, each in its own date convention - these dates are handed straight back to that
+ * league's day listing, so they have to be the days it files its games under.
+ */
+fun scoreRefreshDates(games: List<Game>, now: Instant, zones: LeagueZones): Map<String, Set<LocalDate>> = games
     .filter { it.wantsScorePoll(now) }
-    .groupBy({ it.leagueId }, { it.scheduleDate ?: it.startTime.displayDate(it.leagueId) })
+    .groupBy({ it.leagueId }, { it.leagueDate(zones(it.leagueId)) })
     .mapValues { (_, dates) -> dates.toSet() }
 
 fun rosterGroup(player: Player): String = when (player.ref.position) {

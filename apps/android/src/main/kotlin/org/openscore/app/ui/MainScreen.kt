@@ -124,7 +124,7 @@ fun MainScreen(darkMode: Boolean?, onDarkModeChange: (Boolean?) -> Unit, link: G
     val feedViewModel: FeedViewModel = viewModel { FeedViewModel(repository) }
     val seeds: GameSeeds = viewModel()
     val backStack = rememberNavBackStack(HomeKey)
-    val navigator = remember(backStack, seeds) { Navigator(backStack, seeds) }
+    val navigator = remember(backStack, seeds) { Navigator(backStack, seeds, repository::zoneOf) }
     // Every team tap goes through here: a club with no provider behind it has no page to open.
     val openTeam: (TeamRef) -> Unit = { team -> if (repository.hasTeamPage(team)) navigator.openTeam(team) }
 

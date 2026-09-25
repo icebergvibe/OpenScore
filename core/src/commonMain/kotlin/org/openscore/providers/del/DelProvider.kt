@@ -143,8 +143,8 @@ public class DelProvider(
 
     /** One `games` window in UTC covering the German days [start]..[end]; never-needed series games are dropped. */
     private suspend fun gamesBetween(start: LocalDate, end: LocalDate): List<Game> {
-        val from = start.atStartOfDayIn(BERLIN)
-        val to = end.plus(1, DateTimeUnit.DAY).atStartOfDayIn(BERLIN) - 1.seconds
+        val from = start.atStartOfDayIn(league.zone)
+        val to = end.plus(1, DateTimeUnit.DAY).atStartOfDayIn(league.zone) - 1.seconds
         val rows = query("games", listOf("dateFrom" to utcStamp(from), "dateTo" to utcStamp(to)), ListSerializer(DelGame.serializer().nullable), LIVE_MAX_AGE)
             .filterNotNull()
             .filter { it.deleted == 0 && !DelMapper.isUnplayed(it) }
@@ -220,10 +220,10 @@ public class DelProvider(
             sport = Sport.HOCKEY,
             name = "DEL",
             country = "DE",
+            zone = TimeZone.of("Europe/Berlin"),
             websiteUrl = "https://www.penny-del.org",
         )
 
-        private val BERLIN = TimeZone.of("Europe/Berlin")
         private val LIVE_MAX_AGE = 10.seconds
         private val STATS_MAX_AGE = 30.seconds
         private val LINEUP_MAX_AGE = 5.minutes

@@ -164,15 +164,17 @@ public class HockeyAllsvenskanProvider(
         val groups = ArrayList<LineupGroup>()
         val goalies = dressed.filter { it.positionToday == "GK" }.sortedWith(compareBy({ !it.isStarting }, { it.line?.toIntOrNull() ?: 99 }))
         if (goalies.isNotEmpty()) groups += LineupGroup(LineupGroupKind.GOALIES, "Goalies", goalies.map(::ref))
+        // Grouped in one pass, with each entry's line number read once rather than on every
+        // comparison; `SKATER_POSITIONS` is built once rather than per skater in the predicate.
         val skaters = dressed.filter { it.positionToday != "GK" }
-        for (line in skaters.mapNotNull { it.line?.toIntOrNull() }.distinct().sorted()) {
-            val onLine = skaters.filter { it.line?.toIntOrNull() == line }
+        val byLine = skaters.groupBy { it.line?.toIntOrNull() }
+        for ((line, onLine) in byLine.entries.filter { it.key != null }.sortedBy { it.key }) {
             val forwards = onLine.filter { it.positionToday in FORWARD_POSITIONS }.sortedBy { FORWARD_POSITIONS.indexOf(it.positionToday) }
             val defence = onLine.filter { it.positionToday in DEFENCE_POSITIONS }.sortedBy { DEFENCE_POSITIONS.indexOf(it.positionToday) }
             if (forwards.isNotEmpty()) groups += LineupGroup(LineupGroupKind.LINE, "Line $line", forwards.map(::ref))
             if (defence.isNotEmpty()) groups += LineupGroup(LineupGroupKind.PAIRING, "Pairing $line", defence.map(::ref))
         }
-        val rest = skaters.filter { it.line?.toIntOrNull() == null || it.positionToday !in FORWARD_POSITIONS + DEFENCE_POSITIONS }
+        val rest = skaters.filter { it.line?.toIntOrNull() == null || it.positionToday !in SKATER_POSITIONS }
         if (rest.isNotEmpty()) groups += LineupGroup(LineupGroupKind.OTHER, "Other", rest.map(::ref))
         return Lineup(gameId, team, groups)
     }
@@ -393,7 +395,7 @@ public class HockeyAllsvenskanProvider(
     private fun Game.needsRefresh(now: Instant): Boolean =
         !state.isTerminal && startTime <= now && startTime > now - RESULT_WINDOW
 
-    private fun Game.localDate(): LocalDate = scheduleDate ?: startTime.toLocalDateTime(SWEDEN).date
+    private fun Game.localDate(): LocalDate = scheduleDate ?: startTime.toLocalDateTime(league.zone).date
 
     /** The snapshot, imported or re-imported from the page when there is none or it is too old. */
     private suspend fun season(): Snapshot {
@@ -505,7 +507,7 @@ public class HockeyAllsvenskanProvider(
             // `HA` is the regular season, every game this season; only another type is worth a label.
             competition = gameType?.takeUnless { it == "HA" },
             startTime = start,
-            scheduleDate = start.toLocalDateTime(SWEDEN).date,
+            scheduleDate = start.toLocalDateTime(league.zone).date,
             venue = venue ?: homeTeam?.teamArena,
             home = homeTeam.toRef(homeStatNetId),
             away = awayTeam.toRef(awayStatNetId),
@@ -553,8 +555,7 @@ public class HockeyAllsvenskanProvider(
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://hockeyallsvenskan.se"
-        public val LEAGUE: League = League("hockeyallsvenskan", Sport.HOCKEY, "HockeyAllsvenskan", "SE", DEFAULT_BASE_URL)
-        private val SWEDEN = TimeZone.of("Europe/Stockholm")
+        public val LEAGUE: League = League("hockeyallsvenskan", Sport.HOCKEY, "HockeyAllsvenskan", "SE", TimeZone.of("Europe/Stockholm"), DEFAULT_BASE_URL)
         private val LIVE_MAX_AGE = 10.seconds
         /** The 1.5 MB season page: kick-off changes and late results can wait this long. */
         private val SCHEDULE_MAX_AGE = 6.hours
@@ -574,6 +575,8 @@ public class HockeyAllsvenskanProvider(
         private const val COUNTRY = "SE"
         private val FORWARD_POSITIONS = listOf("LW", "CE", "RW")
         private val DEFENCE_POSITIONS = listOf("LD", "RD")
+        /** Built once; this used to be `FORWARD_POSITIONS + DEFENCE_POSITIONS` inside a filter. */
+        private val SKATER_POSITIONS = FORWARD_POSITIONS + DEFENCE_POSITIONS
     }
 }
 

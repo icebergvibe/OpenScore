@@ -203,6 +203,17 @@ public class FogisMapper(private val leagueId: String) {
         if (shootout) {
             val last = events.lastOrNull { it.int("phase") == 5 && (it["type"] == "pg" || it["type"] == "pm") }
             if (last != null) out += PeriodScore(FootballPeriods.PENALTIES, (last.int("home-score") ?: 0) - prevH, (last.int("away-score") ?: 0) - prevA)
+            return out
+        }
+        // The half in progress has no `HALFENDED` marker of its own, so it needs the running total
+        // less the halves already ended. This used to be left out deliberately ("the finished half;
+        // the running one is not listed"), and a capture showed what that costs: Hammarby went
+        // 3-1 in the 57th minute of 2026-09-13 and the linescore read `1H 2-1` beside it for the
+        // remaining 85 polls of the half. A linescore that contradicts the score is worse than one
+        // whose last row is still moving.
+        if (state == GameState.LIVE && period != null && period != FootballPeriods.PENALTIES && out.none { it.period == period }) {
+            val total = Score(scoreNode.int("home-team") ?: 0, scoreNode.int("away-team") ?: 0)
+            out += PeriodScore(period, (total.home - prevH).coerceAtLeast(0), (total.away - prevA).coerceAtLeast(0))
         }
         return out
     }

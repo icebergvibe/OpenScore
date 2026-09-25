@@ -252,4 +252,36 @@ class LaLigaProviderTest {
         assertEquals(1, f.requests.count { it.contains("/api/web/matches/temporada") }, "one match resource, for the one live match")
         assertTrue(games.filter { it.state == GameState.SCHEDULED }.all { it.clock == null })
     }
+
+    /**
+     * The same match at half time (poll 248 of the 2026-09-13 capture): `status: "HalfTime"` and
+     * `period_started.FirstHalf.stop` set, so the clock stands still at the minute the half
+     * actually ended rather than at 45.
+     */
+    @Test
+    fun halfTimeFreezesTheClockWhereTheHalfEnded() {
+        val dir = SampleFetcher.samplesDir("football", "la-liga")
+        val m = OpenScoreJson.decodeFromString(LlMatchWrapper.serializer(), dir.resolve("wv-match.halftime.json").readText()).match
+        val at = Instant.parse("2026-09-13T12:51:14Z")
+        val g = LaLigaMapper("la-liga").game(m, now = at)
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals("HalfTime/48'", g.rawState)
+        assertEquals(Score(1, 0), g.score)
+        val clock = assertNotNull(g.clock)
+        assertEquals("45'+3", clock.time.label, "12:02:33Z to 12:50:31Z is 47:58 of first half")
+        assertEquals(false, clock.running, "`stop` is what says the half is over")
+    }
+
+    /** `status: "SecondHalf"` with a second `period_started` entry; `match_time` restarts at 45. */
+    @Test
+    fun theSecondHalfClockRunsFromItsOwnPeriodStart() {
+        val dir = SampleFetcher.samplesDir("football", "la-liga")
+        val m = OpenScoreJson.decodeFromString(LlMatchWrapper.serializer(), dir.resolve("wv-match.live-second-half.json").readText()).match
+        val g = LaLigaMapper("la-liga").game(m, now = Instant.parse("2026-09-13T13:08:08Z"))
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("SecondHalf/45'", g.rawState)
+        assertEquals(2, assertNotNull(g.clock).time.period.number)
+        assertEquals("47'", g.clock?.time?.label, "13:06:49Z restart, 1:19 in")
+        assertEquals(true, g.clock?.running)
+    }
 }

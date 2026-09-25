@@ -149,7 +149,7 @@ class EflProviderTest {
         assertEquals(g.home, goals.first().team)
         val subs = events.filter { it.type == FootballEventType.SUBSTITUTION }
         assertEquals(7, subs.size, "both sides' substitutions")
-        assertTrue(subs.all { assertIs<SubstitutionDetails>(it.details).playerOff != null && it.details.let { d -> (d as SubstitutionDetails).playerOn != null } })
+        assertTrue(subs.all { assertIs<SubstitutionDetails>(it.details).playerOff != null && it.details.playerOn != null })
         assertEquals(FootballPeriods.SECOND_HALF, subs.first().period, "substitutions carry the numeric period")
         assertEquals(events.sortedBy { it.sortOrder }, events, "in time order across both sides")
     }
@@ -283,6 +283,87 @@ class EflProviderTest {
     @Test
     fun notFound() = runTest {
         assertFailsWith<NotFoundException> { championship.game("g1") }
+    }
+
+    private fun liveDoc(name: String): EflRow<EflMatch> =
+        OpenScoreJson.decodeFromString(
+            EflDocument.serializer(EflMatch.serializer()),
+            SampleFetcher.samplesDir("football", "efl").resolve(name).readText(),
+        ).data
+
+    /**
+     * Bristol City 1-0 Watford (g2647335), 2026-09-18, 601 polls. The detail document carries
+     * **two** `period` fields and only one of them moves: `attributes.period` read `PreMatch` in 69
+     * of the 70 bodies, flipping straight to `FullTime` at the end, while
+     * `attributes.matchDetails.period` walked the whole arc. Reading the outer one would show every
+     * EFL match in play as not yet kicked off.
+     */
+    @Test
+    fun theLivePeriodIsTheOneInsideMatchDetails() {
+        val mapper = EflMapper("championship", EflMapper.CHAMPIONSHIP)
+        for ((file, expected) in listOf(
+            "match.live.json" to GameState.LIVE,
+            "match.halftime.json" to GameState.INTERMISSION,
+            "match.live-second-half.json" to GameState.LIVE,
+        )) {
+            val doc = liveDoc(file)
+            assertEquals("PreMatch", doc.attributes.period, "$file: the outer period never moves")
+            assertEquals(expected, mapper.game(doc).state, "$file: the state comes from matchDetails")
+        }
+    }
+
+    @Test
+    fun aLiveFirstHalfAndTheBreakThatFollows() {
+        val mapper = EflMapper("championship", EflMapper.CHAMPIONSHIP)
+        val live = mapper.game(liveDoc("match.live.json"))
+        assertEquals(GameState.LIVE, live.state)
+        assertEquals("FirstHalf/31'", live.rawState)
+        assertEquals(Score(1, 0), live.score)
+        assertEquals("31'", assertNotNull(live.clock).time.label)
+        assertEquals(true, live.clock?.running)
+        assertEquals(listOf(1 to 0), live.periodScores.map { it.home to it.away })
+
+        val half = mapper.game(liveDoc("match.halftime.json"))
+        assertEquals(GameState.INTERMISSION, half.state)
+        assertEquals("HalfTime/48'", half.rawState)
+        assertEquals("45'+3", assertNotNull(half.clock).time.label, "the feed's own label is \"45' +3'\"")
+        assertEquals(false, half.clock?.running)
+        // `halfScore` is still null here, so the first half has to come from the goal rows.
+        assertNull(liveDoc("match.halftime.json").attributes.matchTeams.first().halfScore)
+        assertEquals(listOf(1 to 0), half.periodScores.map { it.home to it.away })
+    }
+
+    /** `matchTime` runs to 48 in the break and restarts at 45, so it is not monotonic. */
+    @Test
+    fun theSecondHalfRestartsTheMinuteAt45() {
+        val mapper = EflMapper("championship", EflMapper.CHAMPIONSHIP)
+        assertEquals(48, liveDoc("match.halftime.json").attributes.matchDetails?.matchTime)
+        val g = mapper.game(liveDoc("match.live-second-half.json"))
+        assertEquals("SecondHalf/93'", g.rawState)
+        assertEquals("90'+3", assertNotNull(g.clock).time.label)
+        assertEquals(listOf(1 to 0, 0 to 0), g.periodScores.map { it.home to it.away })
+        val events = assertNotNull(g.events)
+        assertEquals(1, events.count { it.type.isGoal })
+        assertEquals(7, events.count { it.type == FootballEventType.YELLOW_CARD })
+        assertEquals(9, events.count { it.type == FootballEventType.SUBSTITUTION })
+    }
+
+    /**
+     * `matchDetails` and the line-ups both appear about 50 minutes before kick-off, while `period`
+     * is still `PreMatch` - so a null `matchDetails` means "not close to kick-off", not "not
+     * started", and a published line-up is not a sign that play has begun.
+     */
+    @Test
+    fun matchDetailsAndLineupsAppearBeforeKickOff() {
+        val doc = liveDoc("match.pre-matchday.json")
+        val details = assertNotNull(doc.attributes.matchDetails, "published 50 min before kick-off")
+        assertEquals("PreMatch", details.period)
+        assertEquals(0, details.matchTime)
+        assertEquals(11, doc.attributes.matchTeams.first().players?.start?.size)
+        val g = EflMapper("championship", EflMapper.CHAMPIONSHIP).game(doc)
+        assertEquals(GameState.SCHEDULED, g.state)
+        assertNull(g.score)
+        assertNull(g.clock)
     }
 
     @Test

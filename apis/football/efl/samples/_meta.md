@@ -33,3 +33,31 @@ Firestore epoch bounds: `1789603200` = 2026-09-17 00:00Z (`runquery`),
   each with a full `team` object). Objects are intact.
 
 Everything else is complete as returned.
+
+## Live states
+
+The five live bodies are polls of a `tools/live-capture` recording of `g2647335` (Bristol
+City 1-0 Watford, Championship round 8, 2026-09-18), 601 polls at ~15 s from 17:04Z to
+20:55Z, over `/matches/{id}` and `/stats/match/{id}`.
+
+```
+nohup tools/live-capture/build/install/live-capture/bin/live-capture --league championship --game g2647335 --max 4h
+```
+
+| Sample | Poll | Feed state |
+|---|---|---|
+| `match.pre-matchday.json` | 67 (18:10:25Z) | `attributes.period: "PreMatch"`, `matchDetails` and both line-ups have just appeared, 50 min before kick-off |
+| `match.live.json` | 282 (19:31:28Z) | `matchDetails.period: "FirstHalf"`, `matchTime` 31, 1-0 |
+| `match.halftime.json` | 346 (19:47:49Z) | `matchDetails.period: "HalfTime"`, `matchTime` 48, `formattedMatchTime` `"45' +3'"`, `halfScore` still null |
+| `match.live-second-half.json` · `stats-match.live.json` | 590 (20:50:10Z) | `matchDetails.period: "SecondHalf"`, `matchTime` 93, 17 events, one poll so the pair is consistent |
+
+In every one of those live bodies the **outer** `attributes.period` still reads `PreMatch`;
+across the whole recording it said `PreMatch` 69 times and `FullTime` once. That is the point
+of keeping `match.live.json` and `match.halftime.json` rather than only the half-time one.
+
+The day listing (`/matches?from=…`) was **not** polled by this capture, so there is still no
+live `matches-date` sample and no evidence about whether its flat `matchPeriod` goes stale the
+same way.
+
+Pretty-printed with `jq .`; nothing truncated. The raw recording is under
+`build/capture/championship/` and is git-ignored.

@@ -1,5 +1,6 @@
 package org.openscore.providers.jolpica
 
+import kotlinx.datetime.TimeZone
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.serialization.SerialName
@@ -52,7 +53,7 @@ public class JolpicaProvider(private val fetcher: Fetcher, private val baseUrl: 
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://api.jolpi.ca/ergast/f1"
-        public val LEAGUE: League = League("f1", Sport.MOTORSPORT, "Formula 1", "INT", "https://jolpi.ca")
+        public val LEAGUE: League = League("f1", Sport.MOTORSPORT, "Formula 1", "INT", TimeZone.UTC, "https://jolpi.ca")
         public fun sessionId(year: Int, round: Int, kind: RacingSessionKind): String = "f1-$year-$round-${kind.name.lowercase()}"
     }
 }

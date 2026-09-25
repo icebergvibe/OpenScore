@@ -87,7 +87,7 @@ public object KhlMapper {
     }
 
     /**
-     * `game_state_key` is the flag (live value not captured yet: anything other than
+     * `game_state_key` is the flag (`in_progress` observed 2026-09-13; anything other than
      * not_yet_started/finished is live). During a live game the newest `state` text event
      * saying "End of …" means an intermission.
      */
@@ -95,11 +95,32 @@ public object KhlMapper {
         "not_yet_started" -> GameState.SCHEDULED
         "finished" -> GameState.FINAL
         "" -> GameState.UNKNOWN
-        else -> {
-            val latestState = e.text_events.firstOrNull { it.type == "state" }?.text
-            if (latestState != null && latestState.startsWith("End of", ignoreCase = true) && !latestState.contains("game", true)) GameState.INTERMISSION else GameState.LIVE
-        }
+        else -> if (isBreakText(latestStateText(e))) GameState.INTERMISSION else GameState.LIVE
     }
+
+    private fun latestStateText(e: KhlEvent): String? = e.text_events.firstOrNull { it.type == "state" }?.text
+
+    private fun isBreakText(text: String?): Boolean =
+        text != null && text.startsWith("End of", ignoreCase = true) && !text.contains("game", true)
+
+    /**
+     * The period an intermission follows, from the same `End of …` text that makes it an
+     * intermission: `End of 1 period` → 1, `End of overtime` → 4.
+     *
+     * The feed's own `period` is **10** during every break, which is not a period number at all
+     * (a finished game reads -1). Passing it through [period] made it period 5, and period 5 is
+     * the shootout, so all three intermissions of the 2026-09-13 capture rendered as `SO` on a
+     * game that never went past regulation. A break belongs to the period that just ended.
+     */
+    private fun breakPeriod(e: KhlEvent): Int? {
+        val text = latestStateText(e)?.takeIf(::isBreakText) ?: return null
+        if (text.contains("overtime", true)) return 4
+        return Regex("""\d+""").find(text)?.value?.toIntOrNull()
+    }
+
+    /** The period to show: during a break the one that just ended, otherwise the feed's own. */
+    private fun currentPeriod(e: KhlEvent, state: GameState): Int? =
+        if (state == GameState.INTERMISSION) breakPeriod(e) else e.period?.takeIf { it >= 1 }
 
     public fun periodScores(s: KhlScores?): List<PeriodScore> {
         if (s == null) return emptyList()
@@ -127,7 +148,8 @@ public object KhlMapper {
             state = state,
             score = if (state == GameState.SCHEDULED) null else score(e.score),
             // The feed has the current period but no clock; elapsed/remaining stay null.
-            clock = if (state.isLive && (e.period ?: 0) >= 1) Clock(GameTime(period(e.period!!)), running = null) else null,
+            clock = currentPeriod(e, state)?.takeIf { state.isLive }
+                ?.let { Clock(GameTime(period(it)), running = if (state == GameState.INTERMISSION) false else null) },
             periodScores = periodScores(e.scores),
             ending = if (state.isFinished) ending(e.scores) else null,
             events = if (withEvents) events(e, stage) else null,

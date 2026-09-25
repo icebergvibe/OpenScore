@@ -218,8 +218,8 @@ MainActivity ─ MainScreen (NavDisplay) ─┬─ HomeKey  ─ HomeScreen ─�
 ## Not yet
 
 Season selection, player pages and team leaders, team stats outside MLB and HockeyAllsvenskan,
-push transports (the core still polls where a league offers SSE),
-desktop/web targets.
+the push transports the core still polls (HockeyAllsvenskan and KHL over MQTT, Allsvenskan's
+and the EFL's own streams; SHL and the Bundesliga already follow theirs), desktop/web targets.
 
 ## Verifying on a device
 

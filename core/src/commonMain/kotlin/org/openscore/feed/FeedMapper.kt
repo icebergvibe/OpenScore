@@ -54,6 +54,7 @@ public object FeedMapper {
         sport = l.sport.name,
         name = l.name,
         country = l.country,
+        zone = l.zone.id,
         websiteUrl = l.websiteUrl,
         capabilities = capabilities.sorted(),
     )

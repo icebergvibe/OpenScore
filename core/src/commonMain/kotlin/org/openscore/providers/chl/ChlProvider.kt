@@ -49,10 +49,13 @@ public class ChlProvider(
         Capability.LINEUPS,
         Capability.STANDINGS,
         Capability.TEAM,
+        Capability.TEAM_SCHEDULE,
         Capability.ROSTER,
         Capability.PLAYER,
         Capability.LIVE_UPDATES,
         Capability.INTERMISSION_STATE,
+        // `duration.regularTime`, elapsed play in seconds; no play/stop flag, so not CLOCK_RUNNING_FLAG.
+        Capability.CLOCK,
         Capability.PERIOD_SCORES,
         Capability.LINE_GROUPS,
     )
@@ -93,6 +96,17 @@ public class ChlProvider(
         return ChlMapper.team(t)
     }
 
+    /**
+     * The club's whole season in one file, filtered to the window. CHL is a short competition
+     * (six group games plus the knock-out rounds), so there is no cheaper route and no paging;
+     * without this a club that plays in CHL and a domestic league showed only the domestic
+     * fixtures on its page, because the merge is per member competition.
+     */
+    override suspend fun teamSchedule(teamId: String, startDate: LocalDate, endDate: LocalDate): List<Game> =
+        static("team-schedule-$COMPETITION-$seasonId-$teamId.json", ListSerializer(ChlMatch.serializer()), STATIC_MAX_AGE)
+            .filter { localDate(it.startDate) in startDate..endDate }
+            .map { ChlMapper.game(it, withEvents = false) }
+
     override suspend fun roster(teamId: String): List<Player> {
         val t = static("team-players-info-$COMPETITION-$seasonId-$teamId.json", ChlTeamWithAthletes.serializer(), STATIC_MAX_AGE)
         return t.athletes.map { ChlMapper.player(it, teamId = t.entityId) }
@@ -106,7 +120,7 @@ public class ChlProvider(
 
     private fun localDate(iso: String): LocalDate = localDate(Instant.parse(iso))
 
-    private fun localDate(instant: Instant): LocalDate = instant.toLocalDateTime(CET).date
+    private fun localDate(instant: Instant): LocalDate = instant.toLocalDateTime(league.zone).date
 
     private suspend fun <T> live(file: String, strategy: KSerializer<T>, maxAge: Duration): T =
         file("$baseUrl/live?q=$file", strategy, maxAge)
@@ -140,9 +154,8 @@ public class ChlProvider(
             "2014/15" to "0acaee27317455a72a914215",
         )
 
-        public val LEAGUE: League = League("chl", Sport.HOCKEY, "Champions Hockey League", "EU", "https://www.chl.hockey")
+        public val LEAGUE: League = League("chl", Sport.HOCKEY, "Champions Hockey League", "EU", TimeZone.of("Europe/Zurich"), "https://www.chl.hockey")
 
-        private val CET = TimeZone.of("Europe/Zurich")
         private val LIVE_MAX_AGE = 10.seconds
         private val TABLE_MAX_AGE = 5.minutes
         private val STATIC_MAX_AGE = 1.hours

@@ -4,6 +4,7 @@ import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.intOrNull
+import org.openscore.model.Clock
 import org.openscore.model.Game
 import org.openscore.model.GameEnding
 import org.openscore.model.GameEvent
@@ -78,6 +79,27 @@ public object ChlMapper {
         else -> null
     }
 
+    /**
+     * `duration.regularTime` is elapsed play in seconds, cumulative across the game, so the third
+     * period runs 2400 to 3600 rather than 0 to 1200; [periodStart] takes it back to the period.
+     * It advances with play, holds at the period boundary through the intermission, and is absent
+     * before the opening face-off and once the game is finished. Observed over the 509-poll
+     * capture of 2026-09-13, which is why the clock is mapped at all: the field was undiscovered
+     * when CHL was first mapped and the mapper recorded "CHL publishes no clock".
+     */
+    private fun clock(m: ChlMatch, state: GameState, stage: StageKind?): Clock? {
+        if (!state.isLive) return null
+        val period = m.state?.shortName?.let { period(it) }?.takeIf { it.type != PeriodType.UNKNOWN } ?: return null
+        val total = m.duration?.regularTime ?: return null
+        val elapsed = (total - periodStart(period)).coerceAtLeast(0).seconds
+        val len = periodLength(period, stage)
+        return Clock(
+            GameTime(period, elapsed = elapsed, remaining = if (len != null && elapsed <= len) len - elapsed else null),
+            // The feed has no play/stop flag; an intermission is the one state known to be stopped.
+            running = if (state == GameState.INTERMISSION) false else null,
+        )
+    }
+
     public fun stage(m: ChlMatch): StageKind = when (m.stage?.group?.name) {
         null, "Regular Season" -> StageKind.REGULAR
         else -> StageKind.PLAYOFF
@@ -128,7 +150,7 @@ public object ChlMapper {
             away = teamRef(m.teams.away),
             state = state,
             score = score,
-            clock = null, // CHL publishes no clock
+            clock = clock(m, state, stage),
             periodScores = periods.mapNotNull { (p, raw) -> raw.scores?.let { PeriodScore(p, it.home, it.away) } },
             ending = if (state.isFinished) ending(m.state) else null,
             events = if (withEvents) events(m, stage) else null,

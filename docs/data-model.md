@@ -21,7 +21,8 @@
 ## Entities
 
 ```
-League         id, sport (HOCKEY | FOOTBALL | BASEBALL | MOTORSPORT | MMA), name, country?, websiteUrl?
+League         id, sport (HOCKEY | FLOORBALL | FOOTBALL | BASEBALL | MOTORSPORT | MMA), name, country?,
+               zone (the league's own calendar zone), websiteUrl?
 Season         leagueId, id, label ("2026–27"), start?, end?, stages[], current
 Stage          id, kind (PRESEASON | REGULAR | PLAYOFF | OTHER), label
 
@@ -73,7 +74,7 @@ StandingsRow   team, rank, played, wins, losses, draws?, otherLosses?, points,
 interface LeagueProvider {
     val league: League
     val capabilities: Set<Capability>
-    suspend fun gamesOn(date: LocalDate): List<Game>   // date in the league's own convention
+    suspend fun gamesOn(date: LocalDate): List<Game>   // date in the league's own convention (League.zone)
     suspend fun game(id: String): Game
     suspend fun events(gameId: String): List<GameEvent>
     suspend fun lineups(gameId: String): List<Lineup>
@@ -93,7 +94,9 @@ mapping revealed (`CLOCK`, `CLOCK_RUNNING_FLAG`, `INTERMISSION_STATE`, `PERIOD_S
 
 `BaseLeagueProvider` gives every method an "unsupported" default and a polling `live()`
 that calls `game()` no faster than every 10 s until the game is final. Push-capable
-leagues (SHL/HA via SSE, KHL via MQTT, Bundesliga/Allsvenskan via SSE) will override it.
+leagues override it: SHL and Bundesliga follow their SSE streams when the fetcher can open
+one (`LIVE_PUSH`), from a REST snapshot at every connect; KHL (MQTT) and Allsvenskan (SSE)
+still poll.
 
 ## Hockey extension (`model.hockey`)
 
@@ -198,12 +201,15 @@ to is `Game.competition`, and its fights share the card segment's start time.
 - **`Clock` is `GameTime` + `running?`** because leagues count in different directions (NHL
   down, Liiga up, football up in minutes) and some have no running flag. CHL, KHL and MLB
   have no clock at all → `CLOCK` is absent from their capabilities; KHL and MLB still send a
-  period-only `Clock` so a scoreboard knows where the game is.
+  period-only `Clock` so a scoreboard knows where the game is. The SHL clock is the game time
+  of the latest recorded event (nothing on that platform ticks), so it moves in steps and
+  `running` stays null.
 - **`Game.situation`** exists because a baseball scoreboard is inning half, outs, count and
   runners, none of which fit a `Clock`. It is a sport-specific leaf behind a marker
   interface, so hockey and football never see it.
 - **`INTERMISSION` is opt-in per league** (`INTERMISSION_STATE`): NHL and SHL/HA expose it,
-  others stay `LIVE` between periods.
+  others stay `LIVE` between periods. The SHL feed never says so itself; the provider reads
+  the break off the clock sitting at the period's full length.
 - **`Period.number` counts across all segments** (NHL: 1–3, OT = 4, SO = 5); the human label
   is separate so "2OT" and "ET1" need no sport logic in apps.
 - **`LineupGroupKind`** distinguishes positional groups (NHL boxscore) from real

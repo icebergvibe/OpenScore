@@ -14,6 +14,8 @@ public class SportalitySamples(
     public val seriesUuid: String,
     public val gameTypeUuid: String,
     public val preGameId: String,
+    /** A game captured under way (2026-09-19, second period): `game-info`, `game-overview` and `play-by-play` in their live shapes. */
+    public val liveGameId: String,
     public val finalGameId: String,
     public val shootoutGameId: String,
     public val teamId: String,
@@ -27,6 +29,9 @@ public class SportalitySamples(
         "/sports-v2/all-teams/$ssgtCurrent" to "all-teams.json",
         "/sports-v2/game-schedule?seasonUuid=$seasonUuid&seriesUuid=$seriesUuid&gameTypeUuid=$gameTypeUuid&gamePlace=all&played=all" to "game-schedule.json",
         "/sports-v2/game-info/$preGameId" to "game-info.pre.json",
+        "/sports-v2/game-info/$liveGameId" to "game-info.live.json",
+        "/gameday/game-overview/$liveGameId" to "game-overview.live.json",
+        "/gameday/play-by-play/$liveGameId" to "play-by-play.live.json",
         "/sports-v2/game-info/$finalGameId" to "game-info.final.json",
         "/gameday/game-overview/$finalGameId" to "game-overview.final.json",
         "/gameday/play-by-play/$finalGameId" to "play-by-play.final.json",
@@ -54,7 +59,7 @@ public class SportalitySamples(
             baseUrl = ShlProvider.DEFAULT_BASE_URL, sampleDir = "shl", filterSeries = "shl",
             ssgtCurrent = "qa98unlbd6", ssgtPrevious = "iuzqg7dqk9",
             seasonUuid = "ndcf81nlb3", seriesUuid = "qQ9-bb0bzEWUk", gameTypeUuid = "qQ9-af37Ti40B",
-            preGameId = "p2qoh7wot5", finalGameId = "bdhvuc5tex", shootoutGameId = "zfvdpfi2hk",
+            preGameId = "p2qoh7wot5", liveGameId = "d0ucyo36vb", finalGameId = "bdhvuc5tex", shootoutGameId = "zfvdpfi2hk",
             teamId = "50e6-50e6DYeWM", playerId = "acnem5beey", headerDate = "2026-09-19",
         )
     }

@@ -211,13 +211,12 @@ public class FogisProvider(
 
         public const val DEFAULT_BASE_URL: String = "https://c01.fogis.se/fogistemplates.se/livescore/xml/"
         public const val NATIONAL: Int = 1
-        public val LEAGUE: League = League("fogis", Sport.FOOTBALL, "Swedish football (SvFF livescore)", "SE", "https://www.svenskfotboll.se/livescore/")
-        public val SWEDEN: TimeZone = TimeZone.of("Europe/Stockholm")
+        public val LEAGUE: League = League("fogis", Sport.FOOTBALL, "Swedish football (SvFF livescore)", "SE", TimeZone.of("Europe/Stockholm"), "https://www.svenskfotboll.se/livescore/")
         private val LIVE_MAX_AGE = 45.seconds
         private val LINEUP_MAX_AGE = 5.minutes
 
         /** Local `YYYY-MM-DD` + `HH:MM:SS` → instant. */
         public fun localInstant(date: String, time: String): kotlin.time.Instant =
-            LocalDateTime(LocalDate.parse(date), LocalTime.parse(time)).toInstant(SWEDEN)
+            LocalDateTime(LocalDate.parse(date), LocalTime.parse(time)).toInstant(LEAGUE.zone)
     }
 }

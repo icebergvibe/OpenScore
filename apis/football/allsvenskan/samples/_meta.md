@@ -33,3 +33,32 @@ Arrays only; objects are intact.
 
 Everything else is complete as returned. Error responses (`match-stats.pre.json`)
 are saved verbatim because they are the documented behaviour.
+
+## Live states
+
+The five live bodies are polls of a `tools/live-capture` recording of game `6529991`
+(Hammarby 3-1 IF Brommapojkarna, Allsvenskan round 21, 2026-09-13), 375 polls at ~15 s
+from 05:17Z to 13:59Z.
+
+```
+./gradlew :tools:live-capture:run --args="--league allsvenskan --game 6529991 --max 10h"
+```
+
+| Sample | Poll | Feed state |
+|---|---|---|
+| `match.pre-starting.json` | 130 (12:01:11Z) | `UPCOMING`/`UPCOMING_STARTING`, newest event `START` |
+| `match.live.json` | 155 (12:11:31Z) | `ONGOING`, `PERIOD_FIRST_HALF`, `"11'"`, 1-0 |
+| `match.halftime.json` | 247 (12:48:34Z) | `ONGOING`, `PERIOD_FIRST_HALF`, **`"HT"`**, newest `PERIOD_RESULT`, 2-1 |
+| `match.live.stale-during-break.json` | 249 (12:49:31Z) | the **same break**, but an older in-play view again: `"45+1"` with newest `GOAL` |
+| `match.live-second-half.json` | 288 (13:09:23Z) | `ONGOING`, `PERIOD_SECOND_HALF`, `"49'"`, 2-1 |
+
+`match.live.stale-during-break.json` is kept on purpose. Two polls after `"HT"` the feed
+served an in-play body again, so any state read from a single response flaps during the
+break. That is upstream, it cannot be mapped away, and it is one more reason the core
+reads Swedish games from Fogis.
+
+108 of the 375 polls returned nothing at all (62 `429` on `match`, 29 `429` on `lineups`,
+12 socket timeouts), which is why several adjacent polls have no body on disk.
+
+Pretty-printed with `jq .`; nothing truncated. The raw recording is under
+`build/capture/allsvenskan/` and is git-ignored.

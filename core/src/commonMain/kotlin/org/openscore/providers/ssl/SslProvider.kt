@@ -85,7 +85,7 @@ public class SslProvider(
     override suspend fun gamesOn(date: LocalDate): List<Game> {
         val header = header()[date.toString()]
             ?: return schedule().gameInfo
-                .filter { Instant.parse(it.rawStartDateTime).toLocalDateTime(SWEDEN).date == date }
+                .filter { Instant.parse(it.rawStartDateTime).toLocalDateTime(league.zone).date == date }
                 .map(mapper::game)
                 .sortedBy { it.startTime }
         val rows = header.filter { it.seriesCode == SERIES_CODE }
@@ -117,7 +117,7 @@ public class SslProvider(
         schedule().gameInfo
             .filter { it.homeTeamInfo.uuid == teamId || it.awayTeamInfo.uuid == teamId }
             .map(mapper::game)
-            .filter { it.startTime.toLocalDateTime(SWEDEN).date in startDate..endDate }
+            .filter { it.startTime.toLocalDateTime(league.zone).date in startDate..endDate }
             .sortedBy { it.startTime }
 
     // ---- standings / teams / players ----------------------------------------------------------
@@ -205,13 +205,13 @@ public class SslProvider(
             sport = Sport.FLOORBALL,
             name = "SSL",
             country = "SE",
+            zone = TimeZone.of("Europe/Stockholm"),
             websiteUrl = "https://www.ssl.se",
         )
 
         /** The bootstrap's code for the men's division; `gameheader` mixes it with `SSLDam`. */
         private const val SERIES_CODE = "SSLHerr"
 
-        private val SWEDEN = TimeZone.of("Europe/Stockholm")
         private val LIVE_MAX_AGE = 10.seconds
         private val STATS_MAX_AGE = 5.minutes
         private val TABLE_MAX_AGE = 5.minutes

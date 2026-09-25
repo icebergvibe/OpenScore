@@ -97,7 +97,7 @@ public class Ligue1Provider(
         get("/championship-club-summary/$teamId", L1ClubSummary.serializer(), SCHEDULE_MAX_AGE).matches.values
             .filter { it.championshipId == championshipId }
             .map(mapper::game)
-            .filter { it.startTime.toLocalDateTime(PARIS).date in startDate..endDate }
+            .filter { it.startTime.toLocalDateTime(league.zone).date in startDate..endDate }
             .sortedBy { it.startTime }
 
     override suspend fun player(id: String): Player =
@@ -113,8 +113,7 @@ public class Ligue1Provider(
         public const val LIGUE_1: Int = 1
         public const val LIGUE_2: Int = 4
         public const val TIMEZONE: String = "Europe/Paris"
-        private val PARIS = TimeZone.of(TIMEZONE)
-        public val LEAGUE: League = League("ligue1", Sport.FOOTBALL, "Ligue 1", "FR", "https://ligue1.com")
+        public val LEAGUE: League = League("ligue1", Sport.FOOTBALL, "Ligue 1", "FR", TimeZone.of(TIMEZONE), "https://ligue1.com")
 
         private val LIVE_MAX_AGE = 20.seconds
         private val LIVE_POLL_FLOOR = 20.seconds

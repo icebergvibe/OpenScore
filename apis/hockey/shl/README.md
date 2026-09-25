@@ -10,8 +10,8 @@
 | **Format** | JSON. Errors are JSON (`{"message","error","statusCode"}`) |
 | **CORS** | **No** usable CORS on `www.shl.se/api` (only `Access-Control-Allow-Credentials`, never `Allow-Origin`). The SSE host sends `Access-Control-Allow-Origin: *`. |
 | **WAF / UA requirement** | None. Cloudflare + Varnish in front; no `User-Agent` needed. |
-| **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-game + final states) · 🚧 live-state / SSE samples not yet captured (SHL opens 2026-09-19) |
+| **Last full verification** | 2026-09-11 (all endpoints) · 2026-09-19 (live states, opening day, seven games) |
+| **Status** | ✅ verified: pre-game, pre-game window, live, intermission, overtime and final states; SSE payloads captured and the transport built (2026-09-19) |
 
 ## Overview
 
@@ -74,15 +74,18 @@ VLH Växjö ([`samples/all-teams.json`](samples/all-teams.json)).
 4. **A game:** `GET /api/sports-v2/game-info/{gameUuid}` for header/state, then
    `GET /api/gameday/play-by-play/{gameUuid}` for events and
    `GET /api/gameday/boxscore/{gameUuid}` for lineups + per-player stats.
-5. **Live:** open the SSE stream (below) or poll `game-overview` / `play-by-play`.
+5. **Live:** open the SSE stream (below) or poll `game-overview` / `play-by-play`. Read the
+   state off `game-overview.time`, not `state` alone (see Game states).
 6. **Standings:** `GET /api/statistics-v2/league-standings?ssgtUuid=…`.
    **Rosters:** `GET /api/sports-v2/athletes/by-team-uuid/{teamUuid}`.
 
-Recommended poll interval: **10 s** on `gameday/game-overview` (tiny). The direct client
-keeps its initial `play-by-play` (100+ KB; send `Accept-Encoding: gzip`) and reloads it only
-after a score or state transition; use SSE instead once its payload schema is captured.
-Responses carry weak `ETag`s and honour `If-None-Match` (→ `304`), so conditional
-requests are worthwhile here.
+Live: the direct client opens the SSE stream (below) after one REST snapshot
+(`game-info` + `game-overview` + `play-by-play`), and patches that snapshot from the stream.
+Without a stream it polls: **10 s** on `gameday/game-overview` (tiny), keeping its
+`play-by-play` (100+ KB; send `Accept-Encoding: gzip`) and reloading it only when the
+overview moved: `time.periodTime` is the game time of the latest record, so a change there
+is a new event, and the score and state catch the rest. Responses carry weak `ETag`s and
+honour `If-None-Match` (→ `304`), so conditional requests are worthwhile here.
 
 ## Endpoints
 
@@ -151,7 +154,7 @@ ssgtUuid
 | **Last verified** | 2026-09-11 |
 
 ```
-gameInfo   { gameUuid, extId, startDateTime (UTC), arenaName, state pre_game|post_game (underscore here!),
+gameInfo   { gameUuid, extId, startDateTime (UTC), arenaName, state pre_game|post_game (underscore here! stays pre_game while the game is on),
              overtime, shootout, seriesCode, seriesName, roundNumber, roundLabel, seriesDisplayName }
 homeTeam / awayTeam { names{code, short, long, full, codeSite…}, uuid, instanceId, foundedOn, address, email, icon, score ("" before game) }
 ssgtUuid, seriesUuid, instanceContext{…}   – ignore instanceContext (site-relative flags)
@@ -165,12 +168,13 @@ ssgtUuid, seriesUuid, instanceContext{…}   – ignore instanceContext (site-re
 | | |
 |---|---|
 | **Purpose** | Every event of a game, newest first, with rink coordinates. |
-| **Samples** | [`play-by-play.final.json`](samples/play-by-play.final.json) (131 events) · [`play-by-play.final-shootout.json`](samples/play-by-play.final-shootout.json) (OT + SO) |
-| **Last verified** | 2026-09-11 |
+| **Samples** | [`play-by-play.final.json`](samples/play-by-play.final.json) (131 events) · [`play-by-play.final-shootout.json`](samples/play-by-play.final-shootout.json) (OT + SO) · [`play-by-play.pregame.json`](samples/play-by-play.pregame.json) (`[]`, two hours before the game) · [`play-by-play.intermission.json`](samples/play-by-play.intermission.json) (first break) · [`play-by-play.live.json`](samples/play-by-play.live.json) + [`play-by-play.live-later.json`](samples/play-by-play.live-later.json) (second period, three minutes apart) · [`play-by-play.final-overtime.json`](samples/play-by-play.final-overtime.json) (rows `GameEnded` while the overview still said `Ongoing`) |
+| **Last verified** | 2026-09-19 |
 | **Cache** | `ETag` honoured |
 
-Bare array, **sorted by `eventId` descending** (latest event first). Empty array (`0`
-bytes body, not `[]`!) for games that have not started. Every event repeats a big
+Bare array, **sorted by `eventId` descending** (latest event first). Empty body (`0`
+bytes, not `[]`!) for games the arena has not opened yet, `[]` in the two hours before
+the puck drops. Every event repeats a big
 header (`gameSourceId "20250913-FHC-LHC", gameId, round, gameType "Elitserien",
 arena, attendance, startDateAndTime (LOCAL, no zone), gameState, revision,
 realWorldTime, updatedTime, homeTeam{teamId, teamName, teamCode, score},
@@ -185,8 +189,16 @@ Per-event fields:
 | `penalty` | `period, time, eventTeam, player, offence (code), variant{shortName Minor/Bench/Major…, description "2 min", minorTime…}, didRenderInPenaltyShot` |
 | `goalkeeper` | `period, time, eventTeam, player, isEntering` — goalie in/out |
 | `timeout` | `period, time, eventTeam` |
-| `period` | `period, started, startedAt (UTC), finished, finishedAt (UTC)` — **no eventId/gameState**; use these to detect intermissions |
+| `period` | `period, started, startedAt, finished, finishedAt` — **no eventId/gameState**; these detect intermissions (the overview does not, see Game states). `startedAt`/`finishedAt` end in `Z` but are **local Swedish time** (`"2026-09-19T15:17:18.070Z"` was 13:17Z) |
 | `shootout-penalty-shot` | `period 99, time "00:00", eventTeam, player, isGoal, isPenaltyShot` |
+| `insight` | `period, time, eventTeam, title, description (Swedish editorial text), timestamp, deleted` — **same `eventId` as the goal it describes**; no `gameState`. Skip it, or key on `eventUuid` |
+
+Every row also carries `eventUuid` (the only id unique across types), `revision` and,
+on some types, `deleted`. **Rows are revised**: on 2026-09-19 three goals were entered in
+one burst out of game order, and `homeGoals`/`awayGoals` (and the header score) of the
+earlier goals were rewritten over the following minutes to the running score in game
+order (`revision` 2 → 7). Shots get deleted and re-entered too, so the array can shrink
+between polls. Derive period scores from the goal rows sorted by `period`, `time`.
 
 **Periods:** 1–3 regulation, 4 = OT, **99 = shootout** (not 5). **`time` counts up**
 within the period (`"19:59"` is late in the period).
@@ -200,7 +212,8 @@ Looks like x along the length in some unit where ~0 is the defending goal line a
 ~480 the far end; not calibrated. `goalSection` is 1–9 for the net grid (−1/−3 = wide?).
 
 **`gameState`** on events (from the bundle enum `NotStarted | Ongoing | PeriodBreak |
-GameEnded`); only `GameEnded` observed so far.
+GameEnded`): `Ongoing` while the game is on, including intermissions; every row flips to
+`GameEnded` after the game. `PeriodBreak` has not been observed.
 
 ### `GET /api/gameday/boxscore/{gameUuid}` &nbsp;·&nbsp; `GET /api/gameday/player-stats/{gameUuid}`
 
@@ -224,11 +237,43 @@ bytes)** before the game.
 
 ### `GET /api/gameday/game-overview/{gameUuid}`
 
-Verified 2026-09-11 · [`samples/game-overview.final.json`](samples/game-overview.final.json).
+Verified 2026-09-11, live 2026-09-19 · samples [`game-overview.final.json`](samples/game-overview.final.json)
+· [`game-overview.pregame.json`](samples/game-overview.pregame.json) · [`game-overview.live.json`](samples/game-overview.live.json)
+· [`game-overview.live-later.json`](samples/game-overview.live-later.json) · [`game-overview.intermission.json`](samples/game-overview.intermission.json).
 The lightest live-state call: `{gameUuid, homeTeam{teamCode…}, awayTeam, homeGoals,
 awayGoals, state NotStarted|Ongoing|PeriodBreak|GameEnded, time{period, periodTime
-"MM:SS"}}`. Empty body before the game. **Poll this**, not play-by-play, to detect
-changes.
+"MM:SS"}}`. **Poll this**, not play-by-play, to detect changes. What it says, observed
+over seven games on 2026-09-19:
+
+- Empty body until the arena opens the game in the system, **about two hours before
+  the puck drops** (14:00-14:15Z for 16:00Z games). From then on `state` is `Ongoing`
+  with `time: {}` and `0-0`: that is the pre-game window, not a live game.
+- `time` fills with the first record of the game (the period record, two to six minutes
+  after the nominal start: 16:02-16:03Z for the 16:00Z games, 13:21Z for a 13:15Z game)
+  and from then on is the **game time of the latest record**, not a running clock: it
+  sat at `00:52` for three minutes, then jumped to `02:52`. Nothing on this platform
+  ticks (the SSE `gameTime` message is also only sent alongside events). The score can
+  run a read ahead of the goal row in play-by-play (15 s on 2026-09-19), so a linescore
+  tallied from the rows briefly disagrees with it.
+- **Intermissions are not `PeriodBreak`**: all four first-period breaks (about 19 min
+  each) were `Ongoing`, `period 1`, `periodTime "20:00"`. The break is the clock at the
+  period's full length (`20:00`; `05:00` in overtime), confirmed by the `period` record's
+  `finished: true` in play-by-play and by the SSE `liveState` `intermission`.
+- Now and then the edge answers a live game's overview (and play-by-play) with **`200`
+  and no body** (13:33:07Z, two games at once, gone on the next read). Treat an empty
+  body for a game that has started as no news, not as a game that has not started.
+- **`GameEnded` is the slowest end signal.** SKE-BIF 7-2: overview at `20:00` 15:32:53Z,
+  `gameheader.played` true 15:33:26Z (result still `0-0`, until 15:37:24Z), overview
+  `GameEnded` 15:36:17Z, `game-info.state` `post_game` about ten minutes after. HV71-MIF
+  4-5 after 2:27 of overtime: every play-by-play row `GameEnded` within seconds
+  (15:37:57Z), `played` 15:39:38Z (with `0-0` and `overtime: false` for five minutes
+  more), the overview `Ongoing` at `period 4, "00:00"` with the 4-5 score for minutes
+  (`periodTime` lagging the goal's `02:27` as well). So: a third period at its full
+  length with a lead is final; `played` is final; a `GameEnded` on any play-by-play row is
+  final; read OT/SO off the last period seen, not the flags; take the score from the
+  overview while a `played` row still says `0-0`
+  ([`game-overview.overtime-decided.json`](samples/game-overview.overtime-decided.json),
+  [`play-by-play.final-overtime.json`](samples/play-by-play.final-overtime.json)).
 
 ### `GET /api/gameday/team-stats/{gameUuid}` &nbsp;·&nbsp; `GET /api/gameday/game-info/{gameUuid}` &nbsp;·&nbsp; `GET /api/gameday/post-game-data/team-stats/{gameUuid}`
 
@@ -337,14 +382,42 @@ The site does **not poll** for live games; it opens an `EventSource` to
 https://game-broadcaster.s8y.se/live/game?gameUuid={gameUuid}
 ```
 
-Verified 2026-09-11: responds `200 text/event-stream` with
-`Access-Control-Allow-Origin: *` and `Cache-Control: no-store`; stays open and
-**silent for games that are not live** (no initial snapshot). From the bundle, the
-client state it feeds is `gameData{gameId, gameTime, gameState, period,
-homeTeamScore, awayTeamScore, statusString}`, `dynamicPeriods[]`, `playByPlay`,
-`teamStats`, `goalScorers`, `insights` — so expect events carrying those. Without
-`gameUuid` the stream is a firehose for all games. **Event names and payload shapes
-are not yet captured** (see TODO). The bundle also references an internal
+Verified 2026-09-11, payloads captured 2026-09-19 (seven games, sample
+[`sse.live-game.txt`](samples/sse.live-game.txt)): responds `200 text/event-stream` with
+`Access-Control-Allow-Origin: *` and `Cache-Control: no-store`, a blank line at connect,
+then unnamed events (`id: <n>` sequential per game, `data: <JSON>`), no initial snapshot.
+Each `data` object has exactly one key naming the message kind:
+
+| Key | Content | Cadence |
+|---|---|---|
+| `liveState` | `{gameUuid, gameSourceId, liveState unknown\|ongoing\|intermission\|overtime\|decided, updated, previousLiveState?, gameState?}` | heartbeat every ~20 s (`updated: false`); a transition once (`updated: true`, with `previousLiveState`; `decided` also carries `gameState: "GameEnded"` and is repeated) |
+| `liveEvent` | one play-by-play row in the REST shape, including `period` records (`started`/`finished`) and `insight` rows; revisions are re-sent | per event and per revision |
+| `gameTime` | `{gameUuid, gameSourceId, period, periodTime}` | with events only; no ticking clock |
+| `teamStatistics` | `{teamId, teamCode, place, statistics[{period, parsedTotalStatistics[{caption, value}]}]}` per team (the `team-stats` shape with `caption` for `key`) | after each event |
+| `playerStatistics` | `{playerId, playerInfo{firstName, familyName, jerseyToday, dateOfBirth, lineup{jerseyNumber, position, lineNumber, starts}}, statistics{G, A, TOI, …}, playerType player\|goalkeeper, team home\|away}` | one message per player after each event: about 40 per event, the bulk of the stream |
+
+Old frames are **re-broadcast** with every revision of a row (a goal came round every
+five minutes with its `gameTime`), so a consumer keys rows by `eventUuid` and lets
+`gameTime` move the clock forward only. `realWorldTime` on events is local Swedish time,
+`updatedTime` is UTC; an event reaches the stream about 15 s after it happened. `liveState` is `unknown` in the pre-game window
+while the REST overview already says `Ongoing`, and flips to `intermission` together with
+the `period` record. An overtime ran `intermission` → `overtime` (P4 record) →
+`intermission` (P4 `finished` after the goal) → `decided` 40 s later. Before a game the
+stream carries only the `unknown` heartbeat.
+**The broadcaster is several instances behind one host, and they disagree**: at 13:34Z every
+open stream was reset at once (HTTP/2 `INTERNAL_ERROR`); `id` counters differ per instance
+(four fresh connections to one live game started at 158, 310, 449 and 327), so
+`Last-Event-ID` replays nothing; and for FBK-ÖRE one instance kept answering `unknown`
+heartbeats twenty minutes into the game (a stream opened two hours before, and one of
+two fresh connections) while the others sent `ongoing` and the events. The transport in
+`SportalityProvider.live()` therefore: takes the REST snapshot at every connect and never
+relies on replay; reconnects after a close or failure (2 s, with backoff to 30 s while the
+snapshot itself fails); leaves an instance that answers three `unknown` heartbeats more than
+ten minutes after the nominal start; after a minute of silence compares the overview with
+its own view and reconnects if the stream fell behind; drops a connection silent for three
+minutes; ends when the game is decided. Streams stayed up for hours otherwise: seven
+recorder connections opened at 14:18Z were still delivering at 17:30Z. Without `gameUuid`
+the stream is a firehose for all games. The bundle also references an internal
 `site-service-cached.frontend.svc.cluster.local` variant — ignore.
 
 ### Broken / unstable
@@ -367,18 +440,54 @@ Three different vocabularies, depending on the endpoint:
 |---|---|---|
 | `game-schedule`, `gameheader`-adjacent, `today-games`, `upcoming-games` (`state`) | `pre-game`, `live`, `post-game`; bundle also has `canceled` | SCHEDULED / LIVE / FINAL / CANCELLED |
 | `sports-v2/game-info` (`gameInfo.state`) | `pre_game`, `post_game` (underscores; live value presumably `live`) | same |
-| `game-overview.state`, play-by-play `gameState` | `NotStarted`, `Ongoing`, `PeriodBreak`, `GameEnded` | SCHEDULED / LIVE / INTERMISSION / FINAL |
+| `game-overview.state`, play-by-play `gameState` | `NotStarted`, `Ongoing`, `PeriodBreak`, `GameEnded` | SCHEDULED / see below / INTERMISSION / FINAL |
+| SSE `liveState.liveState` | `unknown` (before the game), `ongoing`, `intermission`, `overtime`, `decided` (+ `gameState: GameEnded`) | SCHEDULED or PRE_GAME / LIVE / INTERMISSION / LIVE / FINAL |
+| `gameheader.played` | `true` within two minutes of the end, before `result`, `overtime`, `shootout` fill in | FINAL (score from the overview meanwhile) |
 
-`overtime` / `shootout` booleans on the game object give REG/OT/SO. `gameheader` uses
-`played: true/false` only.
+`Ongoing` covers four of ours (2026-09-19): `time: {}` → PRE_GAME (arena has opened the
+game, up to two hours early); `time.periodTime` at the period's full length (`20:00`,
+`05:00` in OT) → INTERMISSION, or FINAL when it is the third period and the score is not
+tied; anything else → LIVE. `PeriodBreak` was never sent, and `game-info.state` stayed
+`pre_game` through every live game (`post_game` some ten minutes after the end), so it
+decides nothing once the overview or the events exist. `overtime` / `shootout` booleans
+on the game object give REG/OT/SO once they are in; the last period seen (4+, 99) says
+the same at once. `gameheader` uses `played: true/false` only.
 
 Before the game: `play-by-play`, `boxscore`, `game-overview`, `team-stats` all return
 an **empty body** (`Content-Length: 0`, `200`), not JSON. Handle that explicitly.
 
 ## Quirks & gotchas
 
+- **A club playing in the CHL has no team stats here.**
+  `statistics-v2/team-page/stats-header` answers `{"statisticsProvider":"statnet"}` with no
+  `stats` array at all for a club that is also in the Champions Hockey League, while every other
+  club answers the usual four fields. Measured 2026-09-25 across all 14 SHL clubs: the four that
+  came back empty (Frölunda, Rögle, Skellefteå, Växjö) are exactly this season's four Swedish CHL
+  entrants, and all 14 had played two or three league games, so it is not "no games yet". The
+  health check pins a club that is not a CHL entrant for that reason; if it ever reports the
+  `stats` paths missing, check whether the pinned club has entered the CHL before suspecting
+  upstream drift.
+
 - **Empty body ≠ empty JSON.** Several gameday endpoints return `200` with zero bytes
-  for games that have not started. A strict JSON parser will throw.
+  for games that have not started. A strict JSON parser will throw. The same empty body
+  turns up **mid-game** once in a while (edge glitch, see `game-overview`): for a game
+  under way it means "no data this time", never "no events".
+- **`Ongoing` two hours early, no `PeriodBreak`, no running clock.** See `game-overview`
+  and Game states; read the state off `time`.
+- **The platform's ingestion can stall.** In the 16:00Z slot of opening day (three SHL
+  games at once) a goal reached the overview six minutes after its `updatedTime`, SSE
+  delivery lag (first sight of an event against its `updatedTime`) grew from 20 s at
+  16:30Z to 3-20 min by 17:00Z on every stream, and from about 16:45Z the three games
+  froze in period 1 on every route (a cache-busted read and `team-stats` agree) while the
+  federation's Statnet site, the source every message names (`statnet-xml-parser`), had
+  them in the third period with the right scores (Färjestad 7-0, Luleå 3-2, Djurgården
+  0-3 at 18:21Z). One record arrived forty minutes late, old frames kept being
+  re-broadcast. The 13:15Z games and HockeyAllsvenskan were unaffected. Nothing
+  client-side helps; the app shows what the platform knows.
+- **Rows entered after a period ended** carry their game time (`19:55`), so the
+  overview's `periodTime` steps back from `20:00` during the break. The `period` records
+  in play-by-play (`finished: true`) say the truth; the clock rule is only for the
+  listing, where no rows are read.
 - **Two time formats.** `rawStartDateTime`/`startDateTime` on `game-info`, `gameheader`
   are UTC ISO-8601 (`Z`). `startDateTime` on `game-schedule` and `startDateAndTime` on
   play-by-play events are **local Swedish time with no zone** (`"2026-09-19 15:15:00"`).
@@ -421,10 +530,10 @@ an **empty body** (`Content-Length: 0`, `200`), not JSON. Handle that explicitly
 |---|---|---|---|
 | League / season | `season-series-game-types-filter` | `season[]`, `series[]`, `ssgtUuid` | Stage = game type UUID; only regular season seen so far |
 | Game (id, teams, start time) | `gameheader` / `game-schedule` / `game-info` | `uuid`, `rawStartDateTime`, `homeTeamInfo`, `awayTeamInfo`, `venueInfo` | |
-| GameState | `game-overview.state` (live) / `game-schedule.state` | see table | Intermission is explicit (`PeriodBreak`) |
+| GameState | `game-overview.state` + `time` (live) / `game-schedule.state` | see Game states | Pre-game window and intermission both read off `time`; the `period` records in play-by-play confirm a break |
 | Score by period | `gameday/team-stats` | `statistics[period].parsedTotalStatistics[G]` | or derive from goal events |
-| Clock / period | `game-overview.time` | `period`, `periodTime` (elapsed) | No `running` flag — **gap**; SSE may provide |
-| GameEvent | `play-by-play` | `goal`, `shot`, `penalty`, `goalkeeper`, `timeout`, `period`, `shootout-penalty-shot` | Coordinates on goals/shots; no blocked/missed shots, hits or faceoffs |
+| Clock / period | `game-overview.time` | `period`, `periodTime` (elapsed) | The latest record's game time, not a running clock; nothing on the platform ticks, SSE included |
+| GameEvent | `play-by-play` | `goal`, `shot`, `penalty`, `goalkeeper`, `timeout`, `period`, `shootout-penalty-shot` | Coordinates on goals/shots; no blocked/missed shots, hits or faceoffs. `insight` rows and `deleted` rows are skipped |
 | Lineups | `boxscore.stats` | `LINE`, `POS`, `NR` | Good: lines + positions. Scratches not exposed |
 | Team | `all-teams` | `uuid`, `teamCode`, `teamNames`, `icon` | |
 | Player | `athletes/by-team-uuid` + `athlete/profile-page` | | Two id systems (see quirks) |
@@ -433,11 +542,11 @@ an **empty body** (`Content-Length: 0`, `200`), not JSON. Handle that explicitly
 
 ## TODO
 
-- [ ] Capture live samples: `game-overview` (Ongoing/PeriodBreak), `play-by-play`
-      mid-game, and **SSE events** (`curl -N …/live/game?gameUuid=…`) — first chance
-      **2026-09-11 17:00Z** (CHL: TAP@VLH `qQ1-5b5lthEyb`, RBS@RBK `qQ1-5b5lM018m`),
-      then SHL opening day **2026-09-19**.
-- [ ] Confirm `live` value of `game-info.gameInfo.state` and `game-schedule.state`.
+- [x] Capture live samples: `game-overview`, `play-by-play` mid-game and SSE events -
+      done 2026-09-19 (opening day), one overtime included. Still unseen: a shootout under
+      way, and `game-schedule.state` during a game.
+- [x] `game-info.gameInfo.state` has no `live` value: it stays `pre_game` (2026-09-19).
+- [x] Build the SSE transport - 2026-09-19, verified on the opening-day streams.
 - [ ] Get the playoff / play-in game type UUIDs once those schedules exist.
 - [ ] Re-test `latest-ssgt`, `periodstats`, `initial-events`, `game-series/by-ssgt`.
 - [ ] Calibrate shot coordinates.
@@ -448,3 +557,4 @@ an **empty body** (`Content-Length: 0`, `200`), not JSON. Handle that explicitly
 | Date | Change |
 |---|---|
 | 2026-09-11 | Initial mapping. Routes recovered from the shl.se bundle; 30+ endpoints verified, 38 samples captured. SSE live channel identified. |
+| 2026-09-19 | Opening day, seven games observed live. `Ongoing` starts two hours early with an empty `time`; intermissions are the clock at `20:00`, never `PeriodBreak`; `periodTime` is the latest record's time; empty bodies mid-game; `insight` rows share the goal's `eventId`; revisions rewrite earlier goals. End sequence timed (play-by-play `GameEnded` → `played` → overview `GameEnded` → header result/flags → `game-info` `post_game`), one overtime captured. SSE payload kinds documented, sample added, transport built. `game-info.state` never says live. |

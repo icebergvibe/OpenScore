@@ -1,0 +1,155 @@
+{
+  "match": {
+    "id": 102290,
+    "name": "Temporada 2026/2027 - LALIGA EA SPORTS - Celta - Málaga CF - 5",
+    "slug": "temporada-2026-2027-laliga-ea-sports-rc-celta-malaga-cf-5",
+    "date": "2026-09-13T12:00:00+00:00",
+    "time": "2026-09-13T12:00:00+00:00",
+    "match_time": 45,
+    "hashtag": "CeltaMálaga",
+    "competition": {
+      "id": 1,
+      "name": "LALIGA EA SPORTS",
+      "slug": "primera-division",
+      "opta_id": "23"
+    },
+    "home_score": 1,
+    "away_score": 0,
+    "status": "SecondHalf",
+    "attempt": 18575,
+    "attempt_official": false,
+    "home_team": {
+      "id": 6,
+      "slug": "rc-celta",
+      "name": "Real Club Celta de Vigo SAD",
+      "nickname": "Celta",
+      "boundname": "Celta",
+      "shortname": "CEL",
+      "color": "#52c3f1",
+      "color_secondary": "#ffffff",
+      "sprite_status": "created",
+      "shield": {
+        "id": 891421,
+        "url": "https://assets.laliga.com/assets/2025/07/11/medium/0a796827f9e758d7d750db805adde7c5.png"
+      },
+      "competitions": [],
+      "opta_id": "t176"
+    },
+    "away_team": {
+      "id": 12,
+      "slug": "malaga-cf",
+      "name": "Málaga Club de Fútbol SAD",
+      "nickname": "Málaga CF",
+      "boundname": "Málaga CF",
+      "shortname": "MGA",
+      "color": "#1476c4",
+      "sprite_status": "created",
+      "shield": {
+        "id": 143,
+        "url": "https://assets.laliga.com/assets/2019/06/07/medium/malaga.png"
+      },
+      "competitions": [],
+      "opta_id": "t182"
+    },
+    "home_formation": "343",
+    "away_formation": "4141",
+    "gameweek": {
+      "week": 5,
+      "name": "Matchday 5",
+      "shortname": "M5"
+    },
+    "venue": {
+      "name": "Estadio ABANCA Balaídos"
+    },
+    "persons_role": [
+      {
+        "person": {
+          "name": "Carlos Muñiz Muñoz",
+          "nickname": "Muñiz Muñoz",
+          "firstname": "Carlos",
+          "lastname": "Muñiz Muñoz"
+        },
+        "role": {
+          "id": 5
+        }
+      },
+      {
+        "person": {
+          "name": "Luis Enrique Morona Del Campo Morona Del Campo",
+          "nickname": "Morona Del Campo",
+          "firstname": "Luis Enrique Morona Del Campo",
+          "lastname": "Morona Del Campo"
+        },
+        "role": {
+          "id": 8
+        }
+      },
+      {
+        "person": {
+          "name": "Jorge Figueroa Vázquez",
+          "nickname": "Jorge Figueroa Vázquez",
+          "firstname": "Jorge",
+          "lastname": "Figueroa Vázquez"
+        },
+        "role": {
+          "id": 9
+        }
+      },
+      {
+        "person": {
+          "name": "Álvaro Moreno Aragón",
+          "nickname": "Álvaro Moreno Aragón",
+          "firstname": "Álvaro",
+          "lastname": "Moreno Aragón"
+        },
+        "role": {
+          "id": 10
+        }
+      },
+      {
+        "person": {
+          "name": "Fernando Estela Bravo",
+          "nickname": "Fernando Estela Bravo",
+          "firstname": "Fernando",
+          "lastname": "Estela Bravo"
+        },
+        "role": {
+          "id": 6
+        }
+      },
+      {
+        "person": {
+          "name": "Israel Bárcena Rodríguez",
+          "nickname": "Israel Bárcena Rodríguez",
+          "firstname": "Israel",
+          "lastname": "Bárcena Rodríguez"
+        },
+        "role": {
+          "id": 7
+        }
+      }
+    ],
+    "season": {
+      "id": 102,
+      "name": "Season 2026/2027",
+      "opta_id": "2026"
+    },
+    "subscription": {
+      "id": 395,
+      "slug": "laliga-easports-2026",
+      "teams": [],
+      "rounds": []
+    },
+    "is_brand_day": false,
+    "period_started": {
+      "FirstHalf": {
+        "stop": "2026-09-13T12:50:31+00:00",
+        "start": "2026-09-13T12:02:33+00:00"
+      },
+      "SecondHalf": {
+        "start": "2026-09-13T13:06:49+00:00"
+      }
+    },
+    "opta_id": "g2650803"
+  }
+}

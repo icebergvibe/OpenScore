@@ -51,13 +51,18 @@ public data class ChlMatch(
     val externalId: String? = null,
     val startDate: String,
     val startDateNotConfirmed: Boolean = false,
-    /** not-started | finished (live value expected: in-progress) */
+    /** not-started | in-progress | finished (`in-progress` observed 2026-09-13). */
     val status: String = "",
     val venue: ChlVenue? = null,
     val stage: ChlStage? = null,
     val teams: ChlTeams,
-    /** BG, F, F/OT, F/SO. Absent on unplayed games in `live-events`. */
+    /**
+     * BG, F, F/OT, F/SO, and in play 1stP/1stI/2ndP/2ndI/3rdP/3rdI (observed 2026-09-13).
+     * Absent on unplayed games in `live-events`.
+     */
     val state: ChlNamed? = null,
+    /** Elapsed play, cumulative across the game. Absent before the opening face-off and once finished. */
+    val duration: ChlTimestamp? = null,
     val audience: Int? = null,
     val results: ChlResults? = null,
 )

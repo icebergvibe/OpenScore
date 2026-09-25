@@ -123,7 +123,7 @@ public class LiigaProvider(
 
     /** Liiga seasons are keyed by their ending year; a new one starts with the August pre-season. */
     public fun currentSeason(): String {
-        val today = clock.todayIn(TimeZone.of("Europe/Helsinki"))
+        val today = clock.todayIn(league.zone)
         return (if (today.month >= Month.JUNE) today.year + 1 else today.year).toString()
     }
 
@@ -135,6 +135,7 @@ public class LiigaProvider(
             sport = Sport.HOCKEY,
             name = "Liiga",
             country = "FI",
+            zone = TimeZone.of("Europe/Helsinki"),
             websiteUrl = "https://liiga.fi",
         )
 

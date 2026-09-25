@@ -28,8 +28,8 @@ class RacingSessionRowsTest {
 
     private val today = LocalDate(2026, 9, 26)
     private val dates = (-1..1).map { today.plus(it, DateTimeUnit.DAY) }
-    private val f1 = League("f1", Sport.MOTORSPORT, "Formula 1", "INT")
-    private val leagues = listOf(League("premier-league", Sport.FOOTBALL, "Premier League", "GB"), f1)
+    private val f1 = League("f1", Sport.MOTORSPORT, "Formula 1", "INT", TimeZone.UTC)
+    private val leagues = listOf(League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London")), f1)
 
     private val qualifying = RacingSession("f1-2026-17-qualifying", "2026-17", "Qualifying", RacingSessionKind.QUALIFYING, Instant.parse("2026-09-26T12:00:00Z"))
     private val race = RacingSession("f1-2026-17-race", "2026-17", "Race", RacingSessionKind.RACE, Instant.parse("2026-09-27T11:00:00Z"))

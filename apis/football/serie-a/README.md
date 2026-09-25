@@ -10,8 +10,8 @@
 | **Format** | JSON (UTF-8). Every response carries `apiCallRequestTime` (origin timestamp, UTC) |
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *`; `OPTIONS` preflight `204`, `Access-Control-Max-Age: 86400`. Only the `X-Expose-Header` request header is allowed, so keep requests "simple" (no custom headers) |
 | **WAF / UA requirement** | None. Akamai in front; works with no `User-Agent` and no `Accept` header |
-| **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (pre-match + finished states) · 🚧 live-state samples not yet captured |
+| **Last full verification** | 2026-09-11 (live states 2026-09-25 from the 2026-09-13 capture) |
+| **Status** | ✅ verified pre-match, `FIRST_HALF`, `HALF_TIME_BREAK` and finished · 🚧 the live `header` at `SECOND_HALF` and `FULL_TIME` was **lost** by the capture tool, not by the feed (see [`samples/_meta.md`](samples/_meta.md)); a fresh capture would close it |
 
 ## Overview
 
@@ -191,7 +191,7 @@ returns each team's finished matches (union, not only mutual meetings).
 | | |
 |---|---|
 | **Purpose** | **The live-score object.** Score, minute, phase, scorers, red cards, venue, matchday, competition |
-| **Sample** | [`samples/match-header.pre.json`](samples/match-header.pre.json) · [`samples/match-header.final.json`](samples/match-header.final.json) captured 2026-09-11 |
+| **Sample** | [`samples/match-header.pre.json`](samples/match-header.pre.json) · [`samples/match-header.final.json`](samples/match-header.final.json) captured 2026-09-11 · [`samples/match-header.live.json`](samples/match-header.live.json) (`FIRST_HALF`) · [`samples/match-header.halftime.json`](samples/match-header.halftime.json) (`HALF_TIME_BREAK`) captured 2026-09-13 |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `private, max-age=40` |
 
@@ -210,7 +210,7 @@ for a draw).
 | | |
 |---|---|
 | **Purpose** | Key events timeline: goals, cards, substitutions, period starts/ends |
-| **Sample** | [`samples/match-summary.pre.json`](samples/match-summary.pre.json) · [`samples/match-summary.final.json`](samples/match-summary.final.json) captured 2026-09-11 |
+| **Sample** | [`samples/match-summary.pre.json`](samples/match-summary.pre.json) · [`samples/match-summary.final.json`](samples/match-summary.final.json) captured 2026-09-11 · [`samples/match-summary.live.json`](samples/match-summary.live.json) (2 goals, 11') · [`samples/match-summary.live-later.json`](samples/match-summary.live-later.json) (4 goals, 33') captured 2026-09-13 |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `private, max-age=40` |
 
@@ -259,7 +259,7 @@ header's `scores[].events[].type` is plain `goal`. Whether the summary uses dist
 | | |
 |---|---|
 | **Purpose** | Starting XI, bench, staff, formation, kit colours, pitch positions |
-| **Sample** | [`samples/match-lineups.pre.json`](samples/match-lineups.pre.json) · [`samples/match-lineups.final.json`](samples/match-lineups.final.json) captured 2026-09-11 |
+| **Sample** | [`samples/match-lineups.pre.json`](samples/match-lineups.pre.json) · [`samples/match-lineups.final.json`](samples/match-lineups.final.json) captured 2026-09-11 · [`samples/match-lineups.live.json`](samples/match-lineups.live.json) (`SECOND_HALF`) captured 2026-09-13 |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `private, max-age=40` |
 
@@ -297,7 +297,7 @@ for state.
 | | |
 |---|---|
 | **Purpose** | Match team statistics, home vs away |
-| **Sample** | [`samples/match-teamstats.pre.json`](samples/match-teamstats.pre.json) · [`samples/match-teamstats.final.json`](samples/match-teamstats.final.json) captured 2026-09-11 |
+| **Sample** | [`samples/match-teamstats.pre.json`](samples/match-teamstats.pre.json) · [`samples/match-teamstats.final.json`](samples/match-teamstats.final.json) captured 2026-09-11 · [`samples/match-teamstats.live.json`](samples/match-teamstats.live.json) (`SECOND_HALF`) captured 2026-09-13 |
 | **Last verified** | 2026-09-11 |
 | **Cache** | `private, max-age=40` |
 
@@ -429,7 +429,7 @@ period. The header, match list, summary, feed and preview all carry the trio; us
 |---|---|---|---|
 | `UPCOMING` | `Upcoming` | `PRE_MATCH` | scheduled; `time: 0`, scores `null` |
 | `UNKNOWN` | `null` | `PRE_MATCH` | `feed`/`summary` before kick-off report this instead of `UPCOMING` |
-| `LIVE` | *(unverified)* | `FIRST_HALF` / `SECOND_HALF` / `END_SECOND_HALF` observed on `matchfacts`; a half-time phase presumably `HALF_TIME_BREAK` (event spelling `HalfTimeBreak`) | in play; `time` = minute, `additionalTime` = stoppage minute once past 45/90 |
+| `LIVE` | `Live` | `FIRST_HALF`, `HALF_TIME_BREAK`, `SECOND_HALF`, all three observed 2026-09-13 | in play; `time` = minute, `additionalTime` = stoppage minute once past 45/90. `winReason` is `""` (empty, not null) until the end |
 | `FINISHED` | `Finished` | `FULL_TIME` | final; `winReason` `RegularTime` or `Draw` |
 
 Phase names appear in two spellings: `SCREAMING_SNAKE` on match/header objects
@@ -437,8 +437,24 @@ Phase names appear in two spellings: `SCREAMING_SNAKE` on match/header objects
 `PascalCase` on events (`FirstHalf`, `HalfTimeBreak`, `SecondHalf`, `EndSecondHalf`).
 The client bundle's status enum lists `Unknown, Upcoming, Postponed, Canceled, Lineup,
 Tactical, Live, Suspended, Abandoned, Finished` — the site treats `Lineup`/`Tactical`
-as "upcoming" and `Suspended` as "live". `LIVE` values, extra-time/penalty phases and
-the postponed/abandoned representations are **not yet observed**.
+as "upcoming" and `Suspended` as "live". Extra-time and penalty phases and the
+postponed/abandoned representations are still **not observed**.
+
+Observed live, from Lecce 3-2 Monza (match `…b7ecdcd4`, 2026-09-13, 385 polls at 5 s):
+
+| At | `status` / `phase` | `time` |
+|---|---|---|
+| 13:02:58Z | `LIVE` / `FIRST_HALF` | 1 |
+| 13:49:58Z | `LIVE` / `HALF_TIME_BREAK` | 45, `additionalTime` 2 |
+| 14:00:52Z | `LIVE` / `HALF_TIME_BREAK` | 45, `additionalTime` **back to 0** |
+| 14:10:34Z | `LIVE` / `SECOND_HALF` | 46 |
+| 15:00:15Z | `FINISHED` / `FULL_TIME` | 90 |
+
+Two things to know about that break. `status` stays `LIVE` throughout it - only `phase`
+says it is an intermission, so a consumer keying on `status` alone will call half time
+"in play". And `additionalTime` is dropped part-way through the break while `time` stays
+45, so a label built from the pair steps back from `45'+2` to `45'`. Neither is wrong,
+but a clock that is expected to move forward will notice.
 
 `scheduleStatus` is `UNKNOWN` on all 380 matches.
 
@@ -453,6 +469,17 @@ the postponed/abandoned representations are **not yet observed**.
   Mixing them up yields `404`/empty bodies.
 - **Time zones:** `matchDateUtc` is proper UTC (`Z`). `matchDateLocal` is Europe/Rome
   wall-clock without offset; `localTimeUtcOffset` gives it. Event `timeStamp` is UTC.
+- **`status` stays `LIVE` through half time** - `phase: "HALF_TIME_BREAK"` is the only
+  signal that play has stopped. Read the intermission from `phase`.
+- **`additionalTime` is dropped part-way through the break** while `time` stays 45, so a
+  label derived from the pair goes `45'+2` then `45'`. Observed 2026-09-13 at 13:49:58Z
+  and 14:00:52Z.
+- **The headline score and the goal rows come from different documents and do not move
+  together.** `header.homeScorePush` had the goal about a poll before the matching row
+  appeared in `summary.events` (3-1 in the header against three summary goals at 21',
+  2026-09-13). Anything counted from the events - a linescore, a scorer list - will be
+  briefly short of the score printed beside it; the core credits the shortfall to the
+  period in progress so the halves always add up.
 - **Clock is whole minutes only** (`time` + `additionalTime`); no seconds anywhere.
   Derive a running clock from the last `timeStamp` of a period-start event in `summary`
   (`first-half`, `second-half`) plus wall time, as for the Premier League.
@@ -496,7 +523,7 @@ the postponed/abandoned representations are **not yet observed**.
 |---|---|---|---|
 | League / season | `/competitions/{id}/seasons` | `seasonId`, `seasonName`, `competitionId` | Competition id is a constant; season dates are `null` (use `matchdays[0].startDateUtc` / `[37].endDateUtc`) |
 | Game (id, teams, start time) | `/seasons/{s}/matches?matchDayId=` | `matchId`, `home.teamId`, `away.teamId`, `matchDateUtc`, `stadiumName`, `matchSet.name` | UTC directly available |
-| GameState | `header` | `status`, `phase` | Live values unverified (see table) |
+| GameState | `header` | `status`, `phase` | `LIVE`/`Live` with `FIRST_HALF`, `HALF_TIME_BREAK` and `SECOND_HALF` confirmed 2026-09-13. `status` stays `LIVE` through half time, so the intermission is read from `phase` |
 | Score by period | `header` / `summary` | `homeScorePush`/`awayScorePush`; per-half from `summary` goal events' `phase` | No explicit half-time score field |
 | Clock / period | `header` | `time`, `additionalTime`, `phase` | **Whole minutes only**; period start wall-clock from `summary` period events |
 | GameEvent | `summary` (key) / `feed` (all) | `type`, `home|away.time/additionalTime/phase`, `player.playerId`, `player.assistPlayerId`, `timeStamp` | Newest first; own goal/penalty types not yet observed |
@@ -522,4 +549,5 @@ the postponed/abandoned representations are **not yet observed**.
 
 | Date | Change |
 |---|---|
+| 2026-09-25 | Live states curated from the 2026-09-13 capture of Lecce 3-2 Monza. Confirmed what the mapping could only guess: `providerStatus: "Live"`, `phase: "HALF_TIME_BREAK"`, and that `status` stays `LIVE` through the break. 6 new samples (`header` live + half time, `summary` at two points in the first half, `teamstats` and `lineups` in the second). Found and fixed: the linescore is counted from `summary` while the score comes from `header`, so it could add up to less than the score shown beside it. Also recorded: `additionalTime` dropping to 0 mid-break, and `winReason: ""` while live. The live `header` for `SECOND_HALF` and `FULL_TIME` was lost to a capture-tool file-name collision (since fixed), not to the feed. |
 | 2026-09-11 | Initial mapping: 22 endpoints, 33 samples (pre-match + finished). Endpoint list extracted from the legaseriea.it widget bundle (Deltatre SDP client proxy). |

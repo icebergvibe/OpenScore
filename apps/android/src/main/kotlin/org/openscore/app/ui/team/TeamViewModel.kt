@@ -64,7 +64,7 @@ enum class TeamPart { PROFILE, GAMES, STANDINGS, ROSTER, STATS }
  * club is in one of the three UEFA competitions at most); the other sections follow from that.
  * Independent requests keep a partial API failure local to its section.
  */
-class TeamViewModel(private val repository: ScoresRepository, val team: TeamRef, val today: LocalDate = Clock.System.now().toLocalDateTime(leagueTimeZone(team.leagueId)).date) : ViewModel() {
+class TeamViewModel(private val repository: ScoresRepository, val team: TeamRef, val today: LocalDate = Clock.System.now().toLocalDateTime(repository.zoneOf(team.leagueId)).date) : ViewModel() {
     private val sources = clubSources(team, repository.leagues)
     private val mutableState = MutableStateFlow(initialState())
     val state = mutableState.asStateFlow()
@@ -214,7 +214,7 @@ class TeamViewModel(private val repository: ScoresRepository, val team: TeamRef,
         jobs[TeamPart.GAMES]?.join()
         val held = mutableState.value.games.data ?: return
         val now = Clock.System.now()
-        for ((leagueId, dates) in scoreRefreshDates(held, now)) {
+        for ((leagueId, dates) in scoreRefreshDates(held, now, repository::zoneOf)) {
             for (date in dates) {
                 try {
                     val result = repository.gamesOn(date, listOf(leagueId)).last()

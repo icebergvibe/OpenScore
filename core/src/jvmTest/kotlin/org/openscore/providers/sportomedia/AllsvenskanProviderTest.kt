@@ -109,18 +109,19 @@ class AllsvenskanProviderTest {
 
     @Test
     fun liveHeuristics() {
-        val m = OpenScoreJson.decodeFromString(GqlResponse.serializer(SmMatchData.serializer()), SampleFetcher.samplesDir("football", "allsvenskan").resolve("match.final.json").readText()).data!!.match!!.match!!
+        // Every body here is one the feed really sent (2026-09-13). This used to synthesise a live
+        // match by copying `match.final.json` and overwriting `status`/`period`, which left the
+        // finished match's `PERIOD_RESULT` at the head of the event list - a combination the feed
+        // never sends, and the reason the broken half-time rule below survived a test that looked
+        // like it covered the case.
         val mapper = SportomediaMapper("allsvenskan")
-        val live = m.copy(status = "ONGOING", extendedStatus = "ONGOING", period = "PERIOD_SECOND_HALF", matchMinute = 67, matchMinuteWithStoppageTime = "67'")
-        val g = mapper.game(live, withEvents = false)
+        val g = mapper.game(liveSample("match.live-second-half.json"), withEvents = false)
         assertEquals(GameState.LIVE, g.state)
         assertEquals("2H", g.clock!!.period.label)
-        assertEquals("67'", g.clock.time.label)
-        assertEquals(22.minutes, g.clock.time.elapsed)
-        val ht = m.copy(status = "ONGOING", period = null, matchEvents = listOf(SmEvent(type = "PERIOD_RESULT", period = "PERIOD_FIRST_HALF", minuteWithStoppageTime = "45+2'")) + m.matchEvents)
-        assertEquals(GameState.INTERMISSION, mapper.game(ht, withEvents = false).state)
-        val pre = m.copy(status = "UPCOMING", extendedStatus = "UPCOMING_STARTING")
-        assertEquals(GameState.PRE_GAME, mapper.game(pre, withEvents = false).state)
+        assertEquals("49'", g.clock.time.label)
+        assertEquals(4.minutes, g.clock.time.elapsed)
+        assertEquals(GameState.INTERMISSION, mapper.game(liveSample("match.halftime.json"), withEvents = false).state)
+        assertEquals(GameState.PRE_GAME, mapper.game(liveSample("match.pre-starting.json"), withEvents = false).state)
     }
 
     @Test
@@ -175,5 +176,61 @@ class AllsvenskanProviderTest {
     fun notFoundAndSeasons() = runTest {
         assertFailsWith<NotFoundException> { sv.game("1") }
         assertEquals(2026, sv.currentSeason())
+    }
+
+    private fun liveSample(name: String): SmMatch =
+        OpenScoreJson.decodeFromString(GqlResponse.serializer(SmMatchData.serializer()), SampleFetcher.samplesDir("football", "allsvenskan").resolve(name).readText())
+            .data!!.match!!.match!!
+
+    /**
+     * Hammarby 3-1 IF Brommapojkarna, 2026-09-13: the first live bodies this feed has been sampled
+     * in. Half time keeps `period: "PERIOD_FIRST_HALF"` and puts `"HT"` in
+     * `matchMinuteWithStoppageTime`, so the old rule (`ONGOING` with **no** period) could never
+     * fire and a 13-minute break read as in play.
+     */
+    @Test
+    fun halfTimeIsAnIntermissionEvenThoughThePeriodStaysSet() {
+        val m = liveSample("match.halftime.json")
+        assertEquals("ONGOING", m.status)
+        assertEquals("PERIOD_FIRST_HALF", m.period, "the feed does not clear the period during the break")
+        assertEquals("HT", m.matchMinuteWithStoppageTime)
+        assertEquals("PERIOD_RESULT", m.matchEvents.first().type)
+        val g = SportomediaMapper("allsvenskan").game(m, withEvents = false)
+        assertEquals(GameState.INTERMISSION, g.state)
+        assertEquals(Score(2, 1), g.score)
+        assertEquals(false, g.clock?.running, "a break is not running")
+    }
+
+    @Test
+    fun aHalfInPlayIsLive() {
+        val g = SportomediaMapper("allsvenskan").game(liveSample("match.live.json"), withEvents = false)
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("ONGOING/ONGOING/PERIOD_FIRST_HALF/11'", g.rawState)
+        assertEquals(true, g.clock?.running)
+    }
+
+    /**
+     * `"HT"` outlives the restart by a poll: the newest event is already `START` and the period is
+     * still `PERIOD_FIRST_HALF`, so the minute text is the *worse* of the two break signals.
+     */
+    @Test
+    fun theRestartIsLiveEvenWhileTheMinuteStillReadsHt() {
+        val m = liveSample("match.live-second-half.json")
+        val g = SportomediaMapper("allsvenskan").game(m, withEvents = false)
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals(2, assertNotNull(g.clock).time.period.number)
+    }
+
+    /**
+     * During the break the feed also serves an older in-play view again (`45+1` with the newest
+     * event back to `GOAL`, two polls after `HT`), so the state flaps. Upstream, and one more
+     * reason the core reads games from Fogis rather than here.
+     */
+    @Test
+    fun aStaleBodyDuringTheBreakReadsAsLiveAgain() {
+        val m = liveSample("match.live.stale-during-break.json")
+        assertEquals("45+1", m.matchMinuteWithStoppageTime)
+        assertEquals("GOAL", m.matchEvents.first().type)
+        assertEquals(GameState.LIVE, SportomediaMapper("allsvenskan").game(m, withEvents = false).state)
     }
 }

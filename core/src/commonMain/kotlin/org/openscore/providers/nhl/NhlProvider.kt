@@ -1,5 +1,6 @@
 package org.openscore.providers.nhl
 
+import kotlinx.datetime.TimeZone
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.DeserializationStrategy
 import org.openscore.model.Game
@@ -103,6 +104,7 @@ public class NhlProvider(
             sport = Sport.HOCKEY,
             name = "National Hockey League",
             country = "US",
+            zone = TimeZone.of("America/New_York"),
             websiteUrl = "https://www.nhl.com",
         )
 

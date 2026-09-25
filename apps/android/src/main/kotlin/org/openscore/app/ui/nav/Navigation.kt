@@ -4,12 +4,13 @@ import androidx.compose.runtime.Stable
 import androidx.lifecycle.ViewModel
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import kotlinx.datetime.toLocalDateTime
+import kotlinx.datetime.TimeZone
 import kotlinx.serialization.Serializable
-import org.openscore.app.ui.team.leagueTimeZone
+import org.openscore.app.ui.team.LeagueZones
 import org.openscore.model.Game
 import org.openscore.model.League
 import org.openscore.model.TeamRef
+import org.openscore.model.leagueDate
 
 /*
  * The screens, as the keys of one back stack: the tab scaffold at the bottom, then whatever
@@ -25,10 +26,9 @@ data object HomeKey : NavKey
 @Serializable
 data class MatchKey(val leagueId: String, val gameId: String, val date: String) : NavKey {
     companion object {
-        fun of(game: Game): MatchKey {
-            val day = game.scheduleDate ?: game.startTime.toLocalDateTime(leagueTimeZone(game.leagueId)).date
-            return MatchKey(game.leagueId, game.id, day.toString())
-        }
+        /** [zone] is the league's own, from [org.openscore.app.data.ScoresRepository.zoneOf]. */
+        fun of(game: Game, zone: TimeZone): MatchKey =
+            MatchKey(game.leagueId, game.id, game.leagueDate(zone).toString())
     }
 }
 
@@ -70,10 +70,15 @@ class GameSeeds : ViewModel() {
 
 /** What the screens can do to the stack. Pushing the key already on top is a no-op, so a double tap opens one screen. */
 @Stable
-class Navigator(private val backStack: NavBackStack<NavKey>, private val seeds: GameSeeds) {
+class Navigator(
+    private val backStack: NavBackStack<NavKey>,
+    private val seeds: GameSeeds,
+    /** So a game opened from a card is keyed to its league's day, not to the reader's. */
+    private val zones: LeagueZones,
+) {
 
     fun openGame(game: Game) {
-        val key = MatchKey.of(game)
+        val key = MatchKey.of(game, zones(game.leagueId))
         seeds.put(key, game)
         push(key)
     }

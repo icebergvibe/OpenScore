@@ -22,14 +22,17 @@ import org.openscore.model.GameState
 import org.openscore.model.Score
 import org.openscore.model.StageKind
 import org.openscore.model.TeamRef
+import org.openscore.providers.sportality.HockeyAllsvenskanProvider
+import org.openscore.providers.ufc.UfcProvider
 import kotlin.time.Instant
 
 /**
  * What the settings screen can see of the local score storage. Room holds two normalized
  * things and nothing else — never a response body, never match detail (events, lineups, stats):
  *
- * - HockeyAllsvenskan's complete season, the one league without a day route
- *   ([SeasonScheduleStore]); its provider re-imports it and re-reads the games that can change;
+ * - the complete season of each league without a day route of its own ([SeasonScheduleStore]):
+ *   HockeyAllsvenskan's schedule and the UFC's known cards. Each provider re-imports its own and
+ *   re-reads the games that can change; one league's snapshot never displaces another's;
  * - every other league's day listings as last read ([DayListingStore]); the core's
  *   `CachedDayListingProvider` decides from a day's games whether it can be served or must be
  *   read again, and a stored day is only ever served whole.
@@ -118,7 +121,7 @@ interface CachedGameDao {
     @Query("SELECT * FROM cached_seasons WHERE leagueId = :leagueId AND seasonId = :seasonId")
     suspend fun season(leagueId: String, seasonId: String): CachedSeason?
 
-    /** The one season stored for a league; [RoomScoresCache.save] keeps it to one. */
+    /** The one season stored for a league; [RoomScoresCache.save] keeps each league to one. */
     @Query("SELECT * FROM cached_seasons WHERE leagueId = :leagueId ORDER BY savedAtEpochMs DESC LIMIT 1")
     suspend fun season(leagueId: String): CachedSeason?
 
@@ -166,6 +169,13 @@ interface CachedGameDao {
     @Query("DELETE FROM cached_seasons")
     suspend fun clearSeasons()
 
+    /** One league's stored season only: the leagues with a snapshot must not evict each other. */
+    @Query("DELETE FROM cached_games WHERE leagueId = :leagueId")
+    suspend fun clear(leagueId: String)
+
+    @Query("DELETE FROM cached_seasons WHERE leagueId = :leagueId")
+    suspend fun clearSeasons(leagueId: String)
+
     @Query("DELETE FROM cached_days")
     suspend fun clearDays()
 
@@ -184,10 +194,12 @@ class RoomScoresCache private constructor(
     /** The installed APK's update time; day rows from any other build are never served. */
     private val build: Long,
 ) : ScoresCache, SeasonScheduleStore, DayListingStore {
+    /** Concurrent league saves race here; the worst a lost update costs is one extra prune. */
+    @Volatile
     private var pruned = false
 
     override suspend fun load(leagueId: String): SeasonSnapshot? = database.withTransaction {
-        if (leagueId != HOCKEY_ALLSVENSKAN_ID) return@withTransaction null
+        if (leagueId !in SNAPSHOT_LEAGUES) return@withTransaction null
         val season = dao.season(leagueId) ?: return@withTransaction null
         SeasonSnapshot(
             season.seasonId,
@@ -197,19 +209,20 @@ class RoomScoresCache private constructor(
     }
 
     override suspend fun save(leagueId: String, snapshot: SeasonSnapshot) {
-        require(leagueId == HOCKEY_ALLSVENSKAN_ID) { "Only HockeyAllsvenskan season snapshots are persisted" }
+        require(leagueId in SNAPSHOT_LEAGUES) { "No season snapshot is persisted for '$leagueId'" }
         requireSeason(leagueId, snapshot.seasonId, snapshot.games)
         database.withTransaction {
-            // The season payload is atomic and complete, so replace the stored season whole.
-            dao.clearSeasons()
-            dao.clear()
+            // The season payload is atomic and complete, so replace this league's stored season
+            // whole - and only this league's, so the other snapshot league keeps its own.
+            dao.clearSeasons(leagueId)
+            dao.clear(leagueId)
             dao.upsert(snapshot.games.map { CachedGame(it.toRecord()) })
             dao.upsertSeason(CachedSeason(leagueId, snapshot.seasonId, snapshot.savedAt.toEpochMilliseconds()))
         }
     }
 
     override suspend fun update(leagueId: String, seasonId: String, games: List<Game>) {
-        if (leagueId != HOCKEY_ALLSVENSKAN_ID || games.isEmpty()) return
+        if (leagueId !in SNAPSHOT_LEAGUES || games.isEmpty()) return
         requireSeason(leagueId, seasonId, games)
         database.withTransaction {
             // Only a season that was imported whole may be amended; rows without a marker would
@@ -258,7 +271,14 @@ class RoomScoresCache private constructor(
     }
 
     companion object {
-        private const val HOCKEY_ALLSVENSKAN_ID = "hockeyallsvenskan"
+        /**
+         * The leagues with no day route upstream, whose providers are handed this store as their
+         * [SeasonScheduleStore] by `OpenScore.default`. Taken from the providers rather than
+         * spelled out here: a store that silently refused a league it was given would cost that
+         * league its snapshot on every process start, and say nothing about it.
+         */
+        val SNAPSHOT_LEAGUES: Set<String> = setOf(HockeyAllsvenskanProvider.LEAGUE.id, UfcProvider.LEAGUE.id)
+
         /** Longer than the timeline's look-back, so a day scrolled to once a month stays free. */
         private const val DAY_RETENTION_MS = 30L * 24 * 60 * 60 * 1000
 
@@ -288,15 +308,17 @@ private fun Game.toRecord() = GameRecord(
 
 private fun GameRecord.toGame() = Game(
     leagueId = leagueId, id = id, seasonId = seasonId,
-    stage = stage?.let { s -> StageKind.entries.firstOrNull { it.name == s } },
+    stage = stage?.let { runCatching { enumValueOf<StageKind>(it) }.getOrNull() },
     competition = competition, venue = venue,
     startTime = Instant.fromEpochMilliseconds(startTimeEpochMs), startTimeTbd = startTimeTbd,
-    scheduleDate = scheduleDate?.let(LocalDate::parse),
+    // Every field of a restored row is read defensively: this is a cache an older build may
+    // have written, and one unreadable value must not fail the whole day it belongs to.
+    scheduleDate = scheduleDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() },
     home = TeamRef(leagueId, homeId, homeName, homeAbbreviation, homeLogoUrl, homeClubId),
     away = TeamRef(leagueId, awayId, awayName, awayAbbreviation, awayLogoUrl, awayClubId),
-    state = GameState.entries.firstOrNull { it.name == state } ?: GameState.UNKNOWN,
+    state = runCatching { enumValueOf<GameState>(state) }.getOrDefault(GameState.UNKNOWN),
     score = if (homeScore != null && awayScore != null) Score(homeScore, awayScore) else null,
     periodScores = PeriodScoresCodec.decode(periodScores),
-    ending = ending?.let { e -> GameEnding.entries.firstOrNull { it.name == e } },
+    ending = ending?.let { runCatching { enumValueOf<GameEnding>(it) }.getOrNull() },
     rawState = rawState,
 )

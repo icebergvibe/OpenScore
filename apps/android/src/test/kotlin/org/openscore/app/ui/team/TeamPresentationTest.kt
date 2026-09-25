@@ -1,5 +1,6 @@
 package org.openscore.app.ui.team
 
+import kotlinx.datetime.TimeZone
 import org.openscore.app.Fixtures.game
 import org.openscore.app.Fixtures.team
 import org.openscore.model.GameState
@@ -16,12 +17,36 @@ import kotlin.time.Instant
 import kotlinx.datetime.LocalDate
 
 class TeamPresentationTest {
+    /** MLB keeps its calendar in US Eastern, as its [League.zone] says. */
+    private val zones: LeagueZones = { TimeZone.of("America/New_York") }
     private val yankees = team("mlb", "147")
     private val mets = team("mlb", "121")
     private val now = Instant.parse("2026-09-14T12:00:00Z")
     private fun fixture(id: String, state: GameState = GameState.SCHEDULED, score: Score? = null) =
         game(leagueId = "mlb", id = id, home = yankees, away = mets, state = state, score = score,
             startTime = Instant.parse("2026-09-14T23:00:00Z")).copy(stage = StageKind.REGULAR)
+
+    /**
+     * The whole point of [LeagueZones]. A 20:00 Eastern game is the NHL's 14th and, for a phone
+     * in Tokyo, nine in the morning of the 15th. Only the 14th has the game in it, so only the
+     * 14th may be handed back to the league's day listing - which is what these dates are for.
+     */
+    @Test
+    fun aGameIsFiledUnderItsLeaguesDayNotTheReaders() {
+        val eastern: LeagueZones = { TimeZone.of("America/New_York") }
+        val tokyo: LeagueZones = { TimeZone.of("Asia/Tokyo") }
+        val night = fixture("night", GameState.LIVE).copy(startTime = Instant.parse("2026-09-15T00:00:00Z"), scheduleDate = null)
+
+        assertEquals(
+            mapOf("mlb" to setOf(LocalDate(2026, 9, 14))),
+            scoreRefreshDates(listOf(night), Instant.parse("2026-09-15T00:30:00Z"), eastern),
+        )
+        // The reader's own zone would ask for a day the league has no such game on.
+        assertEquals(
+            mapOf("mlb" to setOf(LocalDate(2026, 9, 15))),
+            scoreRefreshDates(listOf(night), Instant.parse("2026-09-15T00:30:00Z"), tokyo),
+        )
+    }
 
     @Test
     fun maltaPremierUsesTheApiSeasonEndYear() {
@@ -43,9 +68,9 @@ class TeamPresentationTest {
     @Test
     fun doubleheadersRemainSeparateAndPostponementsAreVisibleInAllGames() {
         val games = listOf(fixture("game-1"), fixture("game-2"), fixture("postponed", GameState.POSTPONED), fixture("cancelled", GameState.CANCELLED))
-        assertEquals(listOf("game-1", "game-2"), teamGames(games, yankees, GameFilter.UPCOMING, now).map { it.id })
-        assertEquals(4, teamGames(games, yankees, GameFilter.ALL, now).size)
-        assertEquals(2, teamGames(games + games, yankees, GameFilter.UPCOMING, now).size)
+        assertEquals(listOf("game-1", "game-2"), teamGames(games, yankees, GameFilter.UPCOMING, now, zones).map { it.id })
+        assertEquals(4, teamGames(games, yankees, GameFilter.ALL, now, zones).size)
+        assertEquals(2, teamGames(games + games, yankees, GameFilter.UPCOMING, now, zones).size)
     }
 
     @Test
@@ -53,8 +78,8 @@ class TeamPresentationTest {
         val yesterday = Instant.parse("2026-09-13T23:00:00Z")
         val games = listOf(fixture("live", GameState.LIVE), fixture("suspended", GameState.SUSPENDED), fixture("stale"), fixture("final", GameState.FINAL, Score(1, 0)))
             .map { it.copy(startTime = yesterday) }
-        assertEquals(listOf("live", "suspended"), teamGames(games, yankees, GameFilter.UPCOMING, now).map { it.id })
-        assertEquals(listOf("final"), teamGames(games, yankees, GameFilter.RESULTS, now).map { it.id })
+        assertEquals(listOf("live", "suspended"), teamGames(games, yankees, GameFilter.UPCOMING, now, zones).map { it.id })
+        assertEquals(listOf("final"), teamGames(games, yankees, GameFilter.RESULTS, now, zones).map { it.id })
     }
 
     @Test
@@ -62,8 +87,8 @@ class TeamPresentationTest {
         val live = fixture("overnight", GameState.LIVE).copy(scheduleDate = LocalDate(2026, 9, 13))
         val imminent = fixture("soon").copy(startTime = Instant.parse("2026-09-14T12:03:00Z"))
         val postponed = fixture("postponed", GameState.POSTPONED).copy(startTime = Instant.parse("2026-09-14T11:00:00Z"))
-        assertEquals(emptyMap(), scoreRefreshDates(listOf(fixture("tonight"), postponed), now))
-        assertEquals(mapOf("mlb" to setOf(LocalDate(2026, 9, 13), LocalDate(2026, 9, 14))), scoreRefreshDates(listOf(live, imminent), now))
+        assertEquals(emptyMap(), scoreRefreshDates(listOf(fixture("tonight"), postponed), now, zones))
+        assertEquals(mapOf("mlb" to setOf(LocalDate(2026, 9, 13), LocalDate(2026, 9, 14))), scoreRefreshDates(listOf(live, imminent), now, zones))
     }
 
     @Test
@@ -78,10 +103,10 @@ class TeamPresentationTest {
     @Test
     fun aClubIsFoundInEveryLeagueTheCrosswalkNamesItIn() {
         val leagues = listOf(
-            League("ucl", Sport.FOOTBALL, "Champions League", "EU"),
-            League("uel", Sport.FOOTBALL, "Europa League", "EU"),
-            League("premier-league", Sport.FOOTBALL, "Premier League", "GB"),
-            League("nhl", Sport.HOCKEY, "NHL", "US"),
+            League("ucl", Sport.FOOTBALL, "Champions League", "EU", TimeZone.UTC),
+            League("uel", Sport.FOOTBALL, "Europa League", "EU", TimeZone.UTC),
+            League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London")),
+            League("nhl", Sport.HOCKEY, "NHL", "US", TimeZone.of("America/New_York")),
         )
         val fromUefa = TeamRef("ucl", "52280", "Arsenal", "ARS")
         val sources = clubSources(fromUefa, leagues)
@@ -111,6 +136,6 @@ class TeamPresentationTest {
         val finals = (1..7).map { fixture("$it", GameState.FINAL, Score(it, 0)).copy(startTime = Instant.parse("2026-09-0${it}T23:00:00Z")) }
         val spring = fixture("spring", GameState.FINAL, Score(10, 0)).copy(stage = StageKind.PRESEASON)
         assertEquals(listOf("3", "4", "5", "6", "7"), recentForm(finals.reversed() + spring + fixture("live", GameState.LIVE), yankees).map { it.id })
-        assertEquals(listOf("7", "6", "5", "4", "3", "2", "1"), teamGames(finals, yankees, GameFilter.RESULTS, now).map { it.id })
+        assertEquals(listOf("7", "6", "5", "4", "3", "2", "1"), teamGames(finals, yankees, GameFilter.RESULTS, now, zones).map { it.id })
     }
 }

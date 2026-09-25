@@ -63,7 +63,7 @@ public open class EflProvider(
     )
 
     /** Seasons are keyed by start year; the cup's first round is played in early August. */
-    public fun currentSeason(): String = seasonFor(clock.todayIn(LONDON))
+    public fun currentSeason(): String = seasonFor(clock.todayIn(league.zone))
 
     private fun seasonFor(date: LocalDate): String = (if (date.month >= Month.JULY) date.year else date.year - 1).toString()
 
@@ -140,7 +140,6 @@ public open class EflProvider(
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://multi-club-matches.webapi.gc.eflservices.co.uk/v2"
-        private val LONDON = TimeZone.of("Europe/London")
         private val LIVE_MAX_AGE = 10.seconds
         private val LIVE_POLL_FLOOR = 15.seconds
         private val LIST_MAX_AGE = 30.seconds
@@ -155,7 +154,7 @@ public open class EflProvider(
 public class ChampionshipProvider(fetcher: Fetcher, baseUrl: String = EflProvider.DEFAULT_BASE_URL, clock: Clock = Clock.System) :
     EflProvider(LEAGUE, fetcher, EflMapper.CHAMPIONSHIP, baseUrl, clock) {
     public companion object {
-        public val LEAGUE: League = League("championship", Sport.FOOTBALL, "Championship", "GB", "https://www.efl.com/")
+        public val LEAGUE: League = League("championship", Sport.FOOTBALL, "Championship", "GB", TimeZone.of("Europe/London"), "https://www.efl.com/")
     }
 }
 
@@ -163,6 +162,6 @@ public class ChampionshipProvider(fetcher: Fetcher, baseUrl: String = EflProvide
 public class CarabaoCupProvider(fetcher: Fetcher, baseUrl: String = EflProvider.DEFAULT_BASE_URL, clock: Clock = Clock.System) :
     EflProvider(LEAGUE, fetcher, EflMapper.CARABAO_CUP, baseUrl, clock) {
     public companion object {
-        public val LEAGUE: League = League("carabao-cup", Sport.FOOTBALL, "Carabao Cup", "GB", "https://www.efl.com/")
+        public val LEAGUE: League = League("carabao-cup", Sport.FOOTBALL, "Carabao Cup", "GB", TimeZone.of("Europe/London"), "https://www.efl.com/")
     }
 }

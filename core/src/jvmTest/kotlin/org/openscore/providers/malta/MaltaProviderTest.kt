@@ -5,6 +5,7 @@ import kotlinx.datetime.LocalDate
 import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.JsonElement
+import org.openscore.model.Game
 import org.openscore.model.GameState
 import org.openscore.model.LineupGroupKind
 import org.openscore.model.Score
@@ -16,6 +17,7 @@ import org.openscore.net.OpenScoreJson
 import org.openscore.provider.Capability
 import org.openscore.provider.NotFoundException
 import org.openscore.provider.UnsupportedCapabilityException
+import org.openscore.providers.football.FootballPeriods
 import org.openscore.testing.MaltaSamples
 import org.openscore.testing.SampleFetcher
 import kotlin.test.Test
@@ -182,5 +184,76 @@ class MaltaProviderTest {
     @Test
     fun notFound() = runTest {
         assertFailsWith<NotFoundException> { mt.game("1") }
+    }
+
+    private fun sample(name: String): String =
+        SampleFetcher.samplesDir("football", "malta-premier").resolve(name).readText()
+
+    private fun captured(state: String): Game {
+        val match = OpenScoreJson.decodeFromString(MtMatch.serializer(), sample("match.$state.json"))
+        val result = OpenScoreJson.decodeFromString(MtResult.serializer(), sample("result.$state.json"))
+        return MaltaMapper("malta-premier").game(match, result, withEvents = true)
+    }
+
+    /**
+     * The 2026-09-13 capture of match 53142621 dropped `isLive` for the last four minutes while
+     * `status` still read `RUNNING`, and 12 polls mapped to UNKNOWN. UNKNOWN is not live, so
+     * `wantsScorePoll` stops asking and the score freezes through stoppage time.
+     */
+    @Test
+    fun stoppageTimeStaysLiveWhenTheFeedDropsIsLive() {
+        val g = captured("live-stoppage")
+
+        assertEquals(GameState.LIVE, g.state, "RUNNING is a live status even with isLive false")
+        assertEquals(Score(2, 2), g.score)
+        val clock = assertNotNull(g.clock)
+        assertEquals(FootballPeriods.SECOND_HALF, clock.period)
+        assertEquals("90'+4", clock.time.label)
+        assertEquals(true, clock.running)
+    }
+
+    /**
+     * The same `90+N'` shape one half earlier, while `isLive` was still true, always mapped
+     * correctly. Kept so the next reader can see the minute format was never the fault.
+     */
+    @Test
+    fun firstHalfStoppageWasNeverTheProblem() {
+        val g = captured("live-first-half")
+
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("45'+8", assertNotNull(g.clock).time.label)
+        assertEquals(FootballPeriods.FIRST_HALF, g.clock!!.period)
+    }
+
+    @Test
+    fun theHalfTimeBreakStopsTheClockAndTheSecondHalfRestartsIt() {
+        val ht = captured("halftime")
+        assertEquals(GameState.INTERMISSION, ht.state)
+        assertEquals(Score(1, 2), ht.score)
+        assertEquals(false, assertNotNull(ht.clock).running)
+
+        val second = captured("live")
+        assertEquals(GameState.LIVE, second.state)
+        assertEquals(FootballPeriods.SECOND_HALF, assertNotNull(second.clock).period)
+        assertEquals("52'", second.clock!!.time.label)
+        assertEquals(true, second.clock.running)
+    }
+
+    /**
+     * `status` and `isLive` disagree at both ends of the match, so neither alone decides it.
+     * Every pair here is from the capture; the old test invented `status = "LIVE"`, which this
+     * feed does not send, and so never exercised the real values.
+     */
+    @Test
+    fun statusAndIsLiveDisagreeAtBothEndsOfTheMatch() {
+        val m = MaltaMapper("malta-premier")
+        // Kick-off: isLive leads, status lags.
+        assertEquals(GameState.LIVE, m.gameState("SCHEDULED", true, "3'"))
+        // Stoppage time: status holds, isLive drops.
+        assertEquals(GameState.LIVE, m.gameState("RUNNING", false, "90+4'"))
+        assertEquals(GameState.INTERMISSION, m.gameState("RUNNING", true, "HT"))
+        assertEquals(GameState.LIVE, m.gameState("RUNNING", true, "52'"))
+        assertEquals(GameState.FINAL, m.gameState("PLAYED", false, "FT"))
+        assertEquals(GameState.SCHEDULED, m.gameState("SCHEDULED", false, null))
     }
 }

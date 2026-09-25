@@ -60,9 +60,13 @@ public object DelMapper {
 
     /**
      * penny-del.org's crest per club, keyed by the site's own numeric team id (the API has no
-     * crest route). Ingolstadt's SVG sits small on an A4 artboard and renders as a dot, so its
-     * PNG next to it is used; Krefeld is the one club the site serves only as a processed PNG
-     * at a hashed path.
+     * crest route). Ingolstadt's SVG sits small on an A4 artboard (`viewBox="0 0 841.9 595.3"`,
+     * A4 landscape in points) and renders as a dot, so its PNG next to it is used; Krefeld is
+     * the one club the site serves only as a processed PNG at a hashed path.
+     *
+     * Ingolstadt is the only one: all twelve SVGs were rendered at 128 px on 2026-09-25 and the
+     * ink measured. Ingolstadt covers 6.1% of its box, the next lowest 12.1%, the rest 31-70%.
+     * No need to check the others again unless the site reissues them.
      */
     public fun crestUrl(noc: String): String? = when (noc) {
         "ING" -> "$CREST_BASE/team_1.png"

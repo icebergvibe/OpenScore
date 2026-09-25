@@ -3,6 +3,7 @@ package org.openscore.app.ui.feed
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.plus
+import kotlinx.datetime.TimeZone
 import org.openscore.app.Fixtures
 import org.openscore.model.GameState
 import org.openscore.model.League
@@ -17,8 +18,8 @@ class TimelineRowsTest {
     private val today = LocalDate(2026, 9, 13)
     private val dates = (-3..3).map { today.plus(it, DateTimeUnit.DAY) }
     private val leagues = listOf(
-        League("premier-league", Sport.FOOTBALL, "Premier League", "GB"),
-        League("serie-a", Sport.FOOTBALL, "Serie A", "IT"),
+        League("premier-league", Sport.FOOTBALL, "Premier League", "GB", TimeZone.of("Europe/London")),
+        League("serie-a", Sport.FOOTBALL, "Serie A", "IT", TimeZone.of("Europe/Rome")),
     )
     private val spec = FeedSpec(FeedKind.GAMES, Sport.FOOTBALL, leagues.map { it.id })
 

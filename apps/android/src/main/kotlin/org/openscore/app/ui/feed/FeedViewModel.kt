@@ -44,13 +44,29 @@ sealed class DayState {
  * a feed shows what it showed before without a request. Every fetch goes through the core's
  * aggregator, which asks the leagues concurrently and reports a failing league rather than
  * failing the day.
+ *
+ * **Main-confined.** [held] and [jobs] are plain maps: every entry point is called from the
+ * screen, and [viewModelScope] is `Dispatchers.Main.immediate`, so they are only ever touched
+ * from one thread. The requests themselves are concurrent, but they are started and retired
+ * here. A caller from another thread, or a test that hands Main a thread pool, breaks that.
  */
 class FeedViewModel(private val repository: ScoresRepository) : ViewModel() {
 
     private val held = LinkedHashMap<List<String>, MutableStateFlow<Map<LocalDate, DayState>>>()
     private val spec = MutableStateFlow<FeedSpec?>(null)
-    private val jobs = HashMap<Pair<List<String>, LocalDate>, Job>()
+    private val jobs = HashMap<Pair<List<String>, LocalDate>, DayJob>()
     private var hunt: Job? = null
+
+    /**
+     * A fetch in flight, with what it was asked for. Two requests for the same feed and day
+     * coalesce only when the one already running will deliver what the new one wants: a reader's
+     * pull goes to the network where a stored day would have done, and a whole-day fetch covers
+     * leagues that a poll of the few due ones does not.
+     */
+    private class DayJob(val job: Job, val fresh: Boolean, val leagues: Set<String>) {
+        fun answers(fresh: Boolean, leagues: List<String>): Boolean =
+            (this.fresh || !fresh) && this.leagues.containsAll(leagues)
+    }
 
     /**
      * The days held for [spec]. Handed out per feed rather than switched behind one flow, so a
@@ -63,16 +79,19 @@ class FeedViewModel(private val repository: ScoresRepository) : ViewModel() {
     val inFlight: StateFlow<Int> = _inFlight
 
     private fun flowFor(key: List<String>): MutableStateFlow<Map<LocalDate, DayState>> {
-        held[key]?.let { return it }
+        // Reinsert on a hit: LinkedHashMap is insertion ordered, so without this the eviction
+        // below would drop the feed opened longest ago rather than the one left alone longest -
+        // and the feed someone keeps coming back to is the first one opened.
+        held.remove(key)?.let { held[key] = it; return it }
         // A handful of feeds is plenty; the rail has three sports and Favorites is one more.
         if (held.size >= 6) {
             val evicted = held.keys.first()
             held.remove(evicted)
             // An evicted feed is no longer visible. Do not keep its network work or completed
             // Job objects for the rest of this ViewModel's lifetime.
-            jobs.entries.removeAll { (jobKey, job) ->
+            jobs.entries.removeAll { (jobKey, running) ->
                 if (jobKey.first != evicted) false else {
-                    job.cancel()
+                    running.job.cancel()
                     true
                 }
             }
@@ -138,11 +157,20 @@ class FeedViewModel(private val repository: ScoresRepository) : ViewModel() {
         fresh: Boolean = false,
     ) {
         val jobKey = s.fetchKey to date
-        if (jobs[jobKey]?.isActive == true) return
+        val running = jobs[jobKey]
+        if (running != null && running.job.isActive) {
+            if (running.answers(fresh, leagues)) return
+            // It does not. The reader pulled while a poll was running, or a whole day was asked
+            // for while only the due leagues were: let the weaker request go.
+            running.job.cancel()
+        }
         val initial = flow.value[date] as? DayState.Loaded
         if (initial == null) flow.value = flow.value + (date to DayState.Loading)
-        _inFlight.value++
-        jobs[jobKey] = viewModelScope.launch {
+        val job = viewModelScope.launch {
+            // Counted inside the coroutine, so a job cancelled before its body ever ran cannot
+            // leave the count standing at one for the rest of this ViewModel's life. `update`
+            // rather than `++` because this is a read-modify-write on shared state.
+            _inFlight.update { it + 1 }
             val previous: DayState.Loaded? = initial
             // Each writer below merges into whatever the day holds by then, so the games and the
             // sessions can land in either order without one blanking the other.
@@ -202,18 +230,19 @@ class FeedViewModel(private val repository: ScoresRepository) : ViewModel() {
             } catch (e: Exception) {
                 flow.value = flow.value + (date to (previous ?: DayState.Error(e.message ?: "Could not load this day")))
             } finally {
-                _inFlight.value--
-                // A cancelled, evicted request can finish after this feed/day has been selected
-                // again. It must not erase that replacement job from the coalescing map.
-                if (jobs[jobKey] === coroutineContext[Job]) jobs.remove(jobKey)
+                _inFlight.update { it - 1 }
+                // A cancelled, evicted or superseded request can finish after this feed/day has
+                // been asked for again. It must not erase that replacement from the map.
+                if (jobs[jobKey]?.job === coroutineContext[Job]) jobs.remove(jobKey)
             }
         }
+        jobs[jobKey] = DayJob(job, fresh, leagues.toSet())
     }
 
     private suspend fun loadDayAndWait(s: FeedSpec, date: LocalDate): DayState? {
         val flow = flowFor(s.fetchKey)
         if (flow.value[date] == null) fetch(s, date, flow)
-        jobs[s.fetchKey to date]?.join()
+        jobs[s.fetchKey to date]?.job?.join()
         return flow.value[date]
     }
 

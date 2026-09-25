@@ -11,7 +11,7 @@
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *`; `OPTIONS` preflight `204` and allows the `x-version` header; `PageCount`/`ItemCount` exposed |
 | **WAF / UA requirement** | None. Cloudflare in front; no `User-Agent` needed. The site sends `x-version: 2` on every data call — responses are identical without it, but send it anyway to get what the site gets |
 | **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified (scheduled + played states) · 🚧 live-state samples not yet captured (matches most Fri/Sat/Sun) |
+| **Status** | ✅ verified · ✅ live states captured end to end 2026-09-13 (`SCHEDULED` → `LIVE` → `INTERMISSION` → `LIVE` → `FINAL`) |
 
 ## Overview
 
@@ -125,7 +125,7 @@ filtered.
 | | |
 |---|---|
 | **Purpose** | Match header: teams, kick-off, venue, referees, status. Same object as the list items, plus referee `image` and the full `competitionName`. |
-| **Samples** | [`match.final.json`](samples/match.final.json) · [`match.pre.json`](samples/match.pre.json) |
+| **Samples** | [`match.final.json`](samples/match.final.json) · [`match.pre.json`](samples/match.pre.json) · [`match.live-first-half.json`](samples/match.live-first-half.json) · [`match.halftime.json`](samples/match.halftime.json) · [`match.live.json`](samples/match.live.json) · [`match.live-stoppage.json`](samples/match.live-stoppage.json) |
 | **Last verified** | 2026-09-11 |
 | **Cache** | weak `ETag`, `If-None-Match` → `304` ✔ |
 
@@ -136,11 +136,11 @@ Unknown id → `404` with an empty body.
 | | |
 |---|---|
 | **Purpose** | **The live endpoint**: score, penalties, match clock label and the event list. |
-| **Samples** | [`result.final.json`](samples/result.final.json) · [`result.pre.json`](samples/result.pre.json) |
+| **Samples** | [`result.final.json`](samples/result.final.json) · [`result.pre.json`](samples/result.pre.json) · [`result.live-first-half.json`](samples/result.live-first-half.json) · [`result.halftime.json`](samples/result.halftime.json) · [`result.live.json`](samples/result.live.json) · [`result.live-stoppage.json`](samples/result.live-stoppage.json) |
 | **Last verified** | 2026-09-11 |
 
 ```
-id, status "SCHEDULED"|"PLAYED", isLive, matchTime "FT"  (absent pre-match)
+id, status "SCHEDULED"|"RUNNING"|"PLAYED", isLive, matchTime "FT"|"HT"|"52'"|"90+4'"  (absent pre-match)
 homeScore "1", awayScore "2", homePenalties "0", awayPenalties "0"     – strings; "0" pre-match
 events[] { id, type, team "HOME"|"AWAY", time "16'"|"90+3'", playerName, playerId,
            playerNameTwo?, playerIdTwo? }   – for SUBSTITUTION: playerName = on, playerNameTwo = off
@@ -260,14 +260,22 @@ map a `competitionId` seen on a match to its phase name.
 
 ## Game states
 
-`status` *(observed: `SCHEDULED`, `PLAYED`; the client also handles `LIVE`)*:
+`status` *(observed: `SCHEDULED`, `RUNNING`, `PLAYED`; the client also handles `LIVE`,
+which this feed has never been seen to send)*:
 
 | `status` / `isLive` | `matchTime` | Core `GameState` |
 |---|---|---|
 | `SCHEDULED`, `isLive: false` | absent | `SCHEDULED` |
-| `LIVE` / `isLive: true` | `"12'"`, `"45+2'"`, `"HT"`, `"60'"` … *(expected format, not yet observed)* | `LIVE` / `INTERMISSION` when `HT` |
+| `SCHEDULED`, `isLive: true` | absent, then `"3'"` | `LIVE` - `isLive` leads `status` at kick-off |
+| `RUNNING`, `isLive: true` | `"12'"`, `"45+8'"`, `"52'"` | `LIVE` |
+| `RUNNING`, `isLive: true` | `"HT"` | `INTERMISSION` |
+| `RUNNING`, `isLive: **false**` | `"90+4'"` | `LIVE` - `isLive` drops before the whistle |
 | `PLAYED`, `isLive: false` | `"FT"` | `FINAL` |
 | postponed / abandoned | — | *unknown — not observed; COMET statuses include `POSTPONED`, `CANCELLED`, `ABANDONED`* |
+
+Observed end to end on 2026-09-13 (match 53142621, Valletta 2-2 Balzan, 656 polls
+at 15 s): `SCHEDULED` → `LIVE` → `INTERMISSION` → `LIVE` → `FINAL`, with a goal in first-half
+stoppage time. The live status is `RUNNING`, not the `LIVE` the client also accepts.
 
 What changes SCHEDULED → PLAYED: `matchTime` appears (`"FT"`), `isLineupAvailable`
 flips, `result` gains scores + `events`, `lineup` fills, `standings` updates.
@@ -286,6 +294,12 @@ pre-match in lists).
 - **Scores are strings** (`"1"`), and `"0"`/`"0"` before kick-off — check `status`,
   not the score, for "not started".
 - **No scores in match lists.** One `result` call per match; there is no batch.
+- **`status` and `isLive` disagree at both ends of a match, in opposite directions.** At
+  kick-off `isLive` turns true while `status` still reads `SCHEDULED` (12 polls in the
+  2026-09-13 capture); in stoppage time `isLive` goes back to **false** while `status` still
+  reads `RUNNING` (12 polls, 90+4' to the whistle). Neither field alone carries a live match,
+  so treat a match as live if **either** says so. Taking `isLive` alone froze the score for
+  the last four minutes, because a non-live state stops the score poll.
 - **Events have minute labels only** (`"90+3'"`), no period, no seconds, no running
   score, no event for kick-off/half-time/full-time. `SUBSTITUTION`: `playerName` is
   the player coming **on**, `playerNameTwo` the one going off.
@@ -322,7 +336,7 @@ pre-match in lists).
 |---|---|---|---|
 | League / season | CMS `getCompetitionItemStub`, `/competitions/{type}/seasons` | `competitionTypeId`, `season` | Stage = COMET phase (`competitionId`); phase names only via `standings` or `/competitions` |
 | Game (id, teams, start time) | `upcomingMatches` / `pastMatches` | `id`, `homeTeam`, `awayTeam`, `startDate` (UTC), `venue` | Crest URLs included |
-| GameState | match / result | `status`, `isLive`, `matchTime` | Live values not yet observed |
+| GameState | match / result | `status`, `isLive`, `matchTime` | Live values observed 2026-09-13; a live match is one where `status` is `RUNNING`/`LIVE` **or** `isLive` is true |
 | Score by period | — | — | **Gap:** no half-time score; derive from event minutes ≤ 45 |
 | Clock / period | `result.matchTime` | `"12'"`, `"HT"`, `"FT"` | **Gap:** minute label only; no seconds, no period start time |
 | GameEvent | `result.events[]` | `type`, `time`, `team`, `playerId`, `playerIdTwo` | Chronological array; no assists, no period, no running score |
@@ -350,3 +364,4 @@ pre-match in lists).
 |---|---|
 | 2026-09-11 | Initial mapping. Endpoint map extracted from the match-centre client bundle; 25 endpoints verified; 29 samples (scheduled + played, standings incl. multi-phase 2025/26, squads, players, CMS metadata). |
 | 2026-09-14 | Disabled roster capability: the documented team-player route returns the whole league, not a club squad. |
+| 2026-09-25 | Live states captured from the 2026-09-13 recording of match 53142621 (8 samples). Live `status` is `RUNNING`, never the `LIVE` the client also accepts; `status` and `isLive` disagree at both ends of a match, which had mapped stoppage time to `UNKNOWN` and frozen the score. |

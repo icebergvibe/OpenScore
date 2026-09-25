@@ -1,5 +1,6 @@
 package org.openscore.providers.fogis
 
+import kotlinx.datetime.TimeZone
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
@@ -137,7 +138,7 @@ public class SwedishLeagueProvider(
     public companion object {
         private val TABLE_CAPABILITIES = setOf(Capability.STANDINGS, Capability.TEAM, Capability.ROSTER, Capability.PLAYER)
 
-        public val SVENSKA_CUPEN: League = League("svenska-cupen", Sport.FOOTBALL, "Svenska Cupen", "SE", "https://www.svenskfotboll.se/")
+        public val SVENSKA_CUPEN: League = League("svenska-cupen", Sport.FOOTBALL, "Svenska Cupen", "SE", TimeZone.of("Europe/Stockholm"), "https://www.svenskfotboll.se/")
 
         /** The three Swedish leagues the default aggregator serves, sharing one [FogisProvider]. */
         public fun default(fetcher: Fetcher, fogis: FogisProvider = FogisProvider(fetcher)): List<SwedishLeagueProvider> = listOf(

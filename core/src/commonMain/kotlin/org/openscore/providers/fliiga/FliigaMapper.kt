@@ -288,7 +288,7 @@ public class FliigaMapper(private val leagueId: String) {
     /** Team totals summed from the two lineups; the feed publishes no team-level object. */
     public fun stats(m: FlMatch): Map<String, StatPair> {
         val home = m.lineups?.home?.players ?: return emptyMap()
-        val away = m.lineups?.away?.players ?: return emptyMap()
+        val away = m.lineups.away?.players ?: return emptyMap()
         if (home.isEmpty() || away.isEmpty()) return emptyMap()
         fun pair(of: (FlLineupPlayer) -> Int) = StatPair(home.sumOf(of).toString(), away.sumOf(of).toString())
         return mapOf(
@@ -517,7 +517,7 @@ public class FliigaMapper(private val leagueId: String) {
         value.split(' ').joinToString(" ") { w -> w.lowercase().replaceFirstChar { it.uppercase() } }
 
     private companion object {
-        val HELSINKI = TimeZone.of("Europe/Helsinki")
+        val HELSINKI: TimeZone = FliigaProvider.LEAGUE.zone
         const val PERIOD_MINUTES = 20
         val PERIOD_LENGTH = PERIOD_MINUTES.minutes
 

@@ -11,8 +11,8 @@
 | **CORS** | **No, for third parties** — `Access-Control-Allow-Origin: https://www.uefa.com` (fixed, `Vary: Origin`, not reflected). A browser app needs a proxy (the feed-server) |
 | **WAF / UA requirement** | None on the API hosts — plain `curl` with our descriptive `User-Agent` works. **`www.uefa.com` itself resets non-browser TLS connections** (Akamai Bot Manager), so the site's JS bundles could not be fetched; the endpoint list below comes from the community bindings (see [Discovery](#discovery-path)) and was verified request by request |
 | **Conditional requests** | Strong `ETag` on every 200 (exposed via `Access-Control-Expose-Headers`); `Cache-Control: public, max-age=…, s-maxage=…` everywhere — see [Caching](#caching) |
-| **Last full verification** | 2026-09-13 (club competitions) · 2026-09-24 (Nations League) |
-| **Status** | ✅ verified for pre-match, finished, extra-time and shoot-out matches (2025/26 final Paris–Arsenal, 2025/26 play-off Juventus–Galatasaray) and for all three club competitions of 2026/27 (UCL MD1 played, UEL MD1 2026-09-16/17, UECL MD1 2026-10-15), plus the Nations League 2026/27 (MD1 2026-09-24) and the 2025 final. **Live states not yet observed** — see [Game states](#game-states) |
+| **Last full verification** | 2026-09-13 (club competitions) · 2026-09-24 (Nations League, including a full matchday captured live) |
+| **Status** | ✅ verified for pre-match, finished, extra-time and shoot-out matches (2025/26 final Paris–Arsenal, 2025/26 play-off Juventus–Galatasaray) and for all three club competitions of 2026/27 (UCL MD1 played, UEL MD1 2026-09-16/17, UECL MD1 2026-10-15), plus the Nations League 2026/27 (MD1 2026-09-24) and the 2025 final. **In-play states verified 2026-09-24** across a whole matchday - first half, stoppage time, half-time break, second half and full time - see [Game states](#game-states); extra time and penalties are still unobserved live, the knock-out rounds being the first chance |
 
 ## Overview
 
@@ -177,7 +177,7 @@ compares against `kickOffTime.date` (the **local** calendar date, see quirks).
 | | |
 |---|---|
 | **Purpose** | **The match object** — schedule, state, score, teams, round, venue, scorers/red cards, related leg, winner |
-| **Sample** | [`samples/match.pre.json`](samples/match.pre.json) (`2050063` Omonia–Celta, `UPCOMING`, `lineupStatus NOT_AVAILABLE`) · [`samples/match.final.json`](samples/match.final.json) (`2049553` Real Madrid 2–1 Inter, league phase) · [`samples/match.final-two-legs.json`](samples/match.final-two-legs.json) (`2048635` TNS–Sabah, second leg, `aggregate`, `winner.aggregate`) · [`samples/match.final-extra-time.json`](samples/match.final-extra-time.json) (`2047770` Juventus–Galatasaray 2025/26 play-off: `regular` 3–0, `total` 3–2, `winner.aggregate.reason WIN_ON_EXTRA_TIME`) · [`samples/match.final-penalties.json`](samples/match.final-penalties.json) (`2047742` 2026 final Paris–Arsenal 1–1, `penalty` 4–3, `WIN_ON_PENALTIES`, `playerEvents.penaltyScorers`) · [`samples/match.not-found.json`](samples/match.not-found.json) captured 2026-09-13; [`samples/match.unl-pre.json`](samples/match.unl-pre.json) (`2048009` Andorra–Malta, Nations League League D group D1, `UPCOMING`) · [`samples/match.unl-final-penalties.json`](samples/match.unl-final-penalties.json) (`2044949` 2025 final Portugal 2–2 Spain, `penalty` 5–3) captured 2026-09-24 |
+| **Sample** | [`samples/match.pre.json`](samples/match.pre.json) (`2050063` Omonia–Celta, `UPCOMING`, `lineupStatus NOT_AVAILABLE`) · [`samples/match.final.json`](samples/match.final.json) (`2049553` Real Madrid 2–1 Inter, league phase) · [`samples/match.final-two-legs.json`](samples/match.final-two-legs.json) (`2048635` TNS–Sabah, second leg, `aggregate`, `winner.aggregate`) · [`samples/match.final-extra-time.json`](samples/match.final-extra-time.json) (`2047770` Juventus–Galatasaray 2025/26 play-off: `regular` 3–0, `total` 3–2, `winner.aggregate.reason WIN_ON_EXTRA_TIME`) · [`samples/match.final-penalties.json`](samples/match.final-penalties.json) (`2047742` 2026 final Paris–Arsenal 1–1, `penalty` 4–3, `WIN_ON_PENALTIES`, `playerEvents.penaltyScorers`) · [`samples/match.not-found.json`](samples/match.not-found.json) captured 2026-09-13; [`samples/match.unl-pre.json`](samples/match.unl-pre.json) (`2048009` Andorra–Malta, Nations League League D group D1, `UPCOMING`) · [`samples/match.unl-final-penalties.json`](samples/match.unl-final-penalties.json) (`2044949` 2025 final Portugal 2–2 Spain, `penalty` 5–3) captured 2026-09-24. **In play** (`2048009` Andorra 1–2 Malta, captured tick by tick 2026-09-24): [`samples/match.live.json`](samples/match.live.json) (`FIRST_HALF` 23', 1–0) · [`samples/match.live-stoppage.json`](samples/match.live-stoppage.json) (`FIRST_HALF` 45+2) · [`samples/match.halftime.json`](samples/match.halftime.json) (`HALF_TIME_BREAK`, no `minute`) · [`samples/match.live-second-half.json`](samples/match.live-second-half.json) (`SECOND_HALF` 90+3) |
 | **Last verified** | 2026-09-24 |
 
 **Shape** (top level): `id`, `seasonYear`, `competition { id, code, … }`,
@@ -220,7 +220,7 @@ tie has started; `winner.aggregate` appears on the second leg).
 |---|---|
 | **Purpose** | The match timeline |
 | **Parameters** | `filter` (**required**; `ALL`, `MAIN`, `LINEUP`, `GOALS`, `CARDS`, `PHASES` verified — anything else → 404 `"[X] is not valid for filter"`), `order` (`ASC`/`DESC`), `limit`, `offset` |
-| **Sample** | [`samples/match-events.main.final.json`](samples/match-events.main.final.json) (`filter=MAIN`, Real Madrid–Inter: 38 events) · [`samples/match-events.all.final.json`](samples/match-events.all.final.json) (`ALL`, 152 events, **truncated to 40**) · [`samples/match-events.lineup.final.json`](samples/match-events.lineup.final.json) (`LINEUP`: goals, cards, subs) · [`samples/match-events.phases.final.json`](samples/match-events.phases.final.json) (`PHASES`) · [`samples/match-events.main.final-penalties.json`](samples/match-events.main.final-penalties.json) (final with extra time + shoot-out) · [`samples/match-events.main.own-goal.json`](samples/match-events.main.own-goal.json) (`subType: OWN`, `PENALTY`) · [`samples/match-events.phases.final-extra-time.json`](samples/match-events.phases.final-extra-time.json) · [`samples/match-events.main.pre.json`](samples/match-events.main.pre.json) (`[]`) captured 2026-09-13 · [`samples/match-events.main.unl-final-penalties.json`](samples/match-events.main.unl-final-penalties.json) (Nations League 2025 final: 55 events through extra time and the shoot-out) captured 2026-09-24 |
+| **Sample** | [`samples/match-events.main.final.json`](samples/match-events.main.final.json) (`filter=MAIN`, Real Madrid–Inter: 38 events) · [`samples/match-events.all.final.json`](samples/match-events.all.final.json) (`ALL`, 152 events, **truncated to 40**) · [`samples/match-events.lineup.final.json`](samples/match-events.lineup.final.json) (`LINEUP`: goals, cards, subs) · [`samples/match-events.phases.final.json`](samples/match-events.phases.final.json) (`PHASES`) · [`samples/match-events.main.final-penalties.json`](samples/match-events.main.final-penalties.json) (final with extra time + shoot-out) · [`samples/match-events.main.own-goal.json`](samples/match-events.main.own-goal.json) (`subType: OWN`, `PENALTY`) · [`samples/match-events.phases.final-extra-time.json`](samples/match-events.phases.final-extra-time.json) · [`samples/match-events.main.pre.json`](samples/match-events.main.pre.json) (`[]`) captured 2026-09-13 · [`samples/match-events.main.unl-final-penalties.json`](samples/match-events.main.unl-final-penalties.json) (Nations League 2025 final: 55 events through extra time and the shoot-out) · [`samples/match-events.main.live.json`](samples/match-events.main.live.json) (Andorra–Malta in play: a goal and two cards) · [`samples/match-events.main.halftime.json`](samples/match-events.main.halftime.json) (the same match at half time, `END_PHASE` logged) captured 2026-09-24 |
 | **Last verified** | 2026-09-24 |
 
 Event: `{ id (UUID), matchId, type, [subType], [detail], phase, time { minute, second,
@@ -276,12 +276,20 @@ countryCode, translations { name, firstName, lastName } }, role: COACH, imageUrl
 | | |
 |---|---|
 | **Purpose** | Cheap "what changed" list: every match (all competitions) from 1 h before kick-off to 1 h after the end |
-| **Sample** | [`samples/livescore.json`](samples/livescore.json) (two upcoming Regions' Cup matches) captured 2026-09-13 |
-| **Last verified** | 2026-09-13 |
+| **Sample** | [`samples/livescore.json`](samples/livescore.json) (two upcoming Regions' Cup matches) captured 2026-09-13 · [`samples/livescore.live.json`](samples/livescore.live.json) (seven Nations League matches in play) · [`samples/livescore.halftime.json`](samples/livescore.halftime.json) captured 2026-09-24 |
+| **Last verified** | 2026-09-24 |
 
 `[ { id, status, lineupStatus, hash, [score, minute, phase, winner, fullTimeAt,
-matchAttendance, translations.phaseName] } ]` — `hash` changes whenever any exposed
-property changes. `Cache-Control: max-age=4, s-maxage=2`. Live shape pending.
+matchAttendance, translations.phaseName] } ]` - `hash` changes whenever any exposed
+property changes. `Cache-Control: max-age=3, s-maxage=2` (4 on 2026-09-13), `ETag` present.
+
+A live entry carries `status: "LIVE"`, `phase`, `minute.normal` and `score`; a finished one
+`status: "FINISHED"`, `fullTimeAt`, `winner` and `matchAttendance`, with no `phase` or
+`minute`. **During `HALF_TIME_BREAK` the entry carries no `minute` either**, so nothing in it
+changes for the length of the break and its `hash` stands still - the one case where the list
+stops working as a change detector. The body is not always small: ~300 B when only upcoming
+matches are listed, but 7-15 KB once finished ones appear, since each carries a full
+`winner.team` with nine translations.
 
 ### Statistics (`matchstats.uefa.com/v1`)
 
@@ -290,7 +298,7 @@ property changes. `Cache-Control: max-age=4, s-maxage=2`. Live shape pending.
 | | |
 |---|---|
 | **Purpose** | Per-team match statistics |
-| **Sample** | [`samples/team-statistics.final.json`](samples/team-statistics.final.json) (429 statistics per team, 516 KB) · [`samples/team-statistics.pre.json`](samples/team-statistics.pre.json) (`[]`) captured 2026-09-13 |
+| **Sample** | [`samples/team-statistics.final.json`](samples/team-statistics.final.json) (429 statistics per team, 516 KB) · [`samples/team-statistics.pre.json`](samples/team-statistics.pre.json) (`[]`) captured 2026-09-13 · [`samples/team-statistics.live.json`](samples/team-statistics.live.json) (Andorra–Malta at 23', 215 KB: the statistics are published and move while the match runs) captured 2026-09-24 |
 | **Last verified** | 2026-09-13 |
 
 `[ { teamId, idProvider, statistics: [ { name, value (string), translations.name } ] } ]`.
@@ -327,20 +335,34 @@ groupFairPlayCoefficient } ] } ]`. `Cache-Control: max-age=20` during the season
 
 ## Game states
 
-Observed so far (`status` on the match object):
+Observed (`status` on the match object):
 
 | `status` | Meaning | Also present |
 |---|---|---|
-| `UPCOMING` | scheduled; `lineupStatus` flips from `NOT_AVAILABLE` to `TACTICAL_AVAILABLE` / `AVAILABLE` about an hour before kick-off | no `score`, `minute`, `phase` |
-| `LIVE` | in play (from the community typings; **not yet observed** — also `CURRENT`?) | `phase` ∈ `FIRST_HALF`, `HALF_TIME_BREAK`, `SECOND_HALF`, `EXTRA_TIME_FIRST_HALF`, `EXTRA_TIME_SECOND_HALF`, `PENALTY` (+ an extra-time break value?), `minute { normal, injury }`, `score`, `translations.phaseName` |
-| `FINISHED` | full time | `fullTimeAt`, `winner`, `score.total` / `penalty` |
-| `ABANDONED`, `CANCELED` | from the typings, not observed | |
+| `UPCOMING` | scheduled; `lineupStatus` flips from `NOT_AVAILABLE` to `TACTICAL_AVAILABLE` / `AVAILABLE` about an hour before kick-off (50 min on the 2026-09-24 matchday) | no `score`, `minute`, `phase` |
+| `LIVE` | in play **or** in a break; `phase` says which | `phase`, `minute { normal, injury }`, `score.regular` / `score.total`, `translations.phaseName` |
+| `FINISHED` | full time | `fullTimeAt`, `winner`, `score.total` / `penalty`; no `phase`, no `minute` |
+| `ABANDONED`, `CANCELED` | from the community typings, not observed | |
 
-Pending: the live shape of `matches/{id}` and `livescore` (how `minute` counts through
-stoppage time and extra time, whether `phase` flips at `CHANGE_PHASE` or `START_PHASE`,
-what the half-time and extra-time breaks look like, edge TTLs while live). A capture of
-the Regions' Cup matches on 2026-09-13 and of UEL MD1 (2026-09-16/17) is scheduled;
-this section will be rewritten from it.
+`phase` while `LIVE`, from the Nations League matchday of 2026-09-24 (eight matches, one at
+16:00Z and seven at 18:45Z, all polled at 15 s from kick-off to full time):
+
+| `phase` | `minute` | Sample | Maps to |
+|---|---|---|---|
+| `FIRST_HALF` | `{ normal: 1..45, injury: 0..n }` | [`match.live.json`](samples/match.live.json) (23'), [`match.live-stoppage.json`](samples/match.live-stoppage.json) (45+2) | `LIVE`, clock running |
+| `HALF_TIME_BREAK` | **absent** | [`match.halftime.json`](samples/match.halftime.json) | `INTERMISSION`, clock stopped on the period that just ended |
+| `SECOND_HALF` | `{ normal: 46..90, injury: 0..n }` | [`match.live-second-half.json`](samples/match.live-second-half.json) (90+3) | `LIVE`, clock running |
+
+`minute` names the minute **in progress**: it reads `23` for the whole of the 23rd minute, so
+the core interpolates the seconds between polls rather than showing a value that only steps
+once a minute. Stoppage time is `injury` on top of a `normal` pinned at the period's last
+minute (`45+2`, `90+3`), never `47`. `CURRENT`, which the community typings list beside
+`LIVE`, did not appear in ~5,400 polls.
+
+Still unobserved, because a league-phase matchday cannot produce them: `EXTRA_TIME_FIRST_HALF`,
+`EXTRA_TIME_SECOND_HALF`, an extra-time break value, and `PENALTY`. The knock-out rounds are
+the first chance; the finished-match samples already cover how extra time and a shoot-out read
+once they are over.
 
 ## Nations League
 
@@ -391,9 +413,12 @@ Every 200 carries `Cache-Control: public, max-age=N, s-maxage=M` with `N` counti
 (the browser TTL) and `M` the Akamai TTL. Observed `s-maxage`: **587 s** on finished
 matches, their events and line-ups; **137 s** on upcoming matches and on match lists
 of the current round; **597 s** on team statistics; **300 s** on teams / players /
-competitions; **10 s** on standings; **2 s** on `livescore`. What a live match gets is
-the open question — the site relies on `livescore` (`s-maxage=2`) to know *when* to
-re-read the match, which suggests the match object itself keeps a non-trivial TTL.
+competitions; **10 s** on standings; **2 s** on `livescore` (re-measured 2026-09-24
+during a live match: `max-age=3, s-maxage=2`). What a live match object gets is still not
+read off a header - the 2026-09-24 capture kept bodies, not response headers - but it is
+bounded by observation: a phase change reached `/matches/{id}` within 20 s of reaching
+`/livescore`, and the minute advanced on the first poll after it turned, so the edge is not
+holding the live match object for anything like the 137 s an upcoming one gets.
 `server-timing: cdn-cache; desc=HIT|MISS` shows whether the edge answered. `ETag` is
 strong and stable across edges; `If-None-Match` → `304` not yet verified.
 
@@ -414,6 +439,23 @@ strong and stable across edges; `If-None-Match` → `304` not yet verified.
   `KNOCK_OUT`) tell them apart.
 - **Translations bloat.** Nine languages on every nested team/player/round; a match
   list of 18 upcoming games is 270 KB (45 KB gzipped). Nothing trims them.
+- **`/livescore` reaches a new phase 15-20 s before `/matches/{id}` does.** Measured twice on
+  2026-09-24: at half time the list read `HALF_TIME_BREAK` at 16:48:29Z while the match
+  document still read `FIRST_HALF/45+2` at 16:48:34Z; at full time the list read `FINISHED` at
+  17:52:31Z against `SECOND_HALF/90` at 17:52:44Z. A poller that re-reads the match on a `hash`
+  change and then trusts what came back will store a state that is already stale, and because
+  the entry carries no `minute` during a break its hash then stops moving, so nothing asks
+  again. `UefaProvider.live` compares the two `status`/`phase` markers and keeps re-reading
+  until they agree, bounded to six ticks.
+- **`/events` is not append-only: the feed withdraws rows.** Twice on 2026-09-24. In
+  Andorra-Malta a `CORNER` at 17' was published, removed on the next poll, and replaced by the
+  `GOAL` it had led to. In Netherlands-Germany a goal at 13' was overturned by VAR: the event
+  left the list and `score.total` went back from 1-0 to 0-0. Replace the timeline on every
+  read - a consumer that accumulates keeps goals that never happened.
+- **A goal reaches `/events` one poll before `score.total` moves.** At 17' in Andorra-Malta the
+  event list already carried the `GOAL` while `/matches/{id}` still read 0-0, so a period score
+  derived from events leads the headline score by up to one poll (≤ 15 s at the 10 s floor). It
+  settles itself; worth knowing rather than fixing.
 - **`totalScore` on goal events is the final score**, not the score at that moment.
 - **`CHANGE_PHASE` precedes `START_PHASE`** by up to 15 minutes (feed operator switches
   the phase, then the whistle goes). Only in `filter=ALL`.
@@ -459,11 +501,13 @@ Provider: `org.openscore.providers.uefa.UefaProvider` (shared) with
 | Team | `/teams?teamIds=` | `internationalName`, `teamCode`, `countryCode`, `mediumLogoUrl` | `Team.country` is the alpha-3 code as given; a Nations League side is a country, so `clubId` is null and the logo is its flag |
 | Player | `/players?playerIds=` | names, `birthDate`, `countryCode`, `height`, `weight`, `clubId`, `fieldPosition` | `ROSTER` unsupported (no squad endpoint); for the club competitions it comes from ESPN through the crosswalk, for the Nations League not at all |
 | Standings | `/standings` | one `StandingsGroup` per entry (`group.metaData.groupName`), `items[]` | `extra`: `coefficient`, `live`, `tied`. Label = the group name, prefixed with `group.league.metaData.leagueName` where there is one (`League A · Group A1`), else the round name |
-| Live | polling `/livescore` hash → `/matches/{id}` + events | | No push transport |
+| Live | polling `/livescore` hash → `/matches/{id}` + events | | No push transport. The hash is trusted only once the match document reports the same `status`/`phase`: the list leads it by 15-20 s at a transition, and during a break the entry stops changing, so a hash cached off a stale document would strand the old state |
 
 ## Changelog
 
 | Date | Change |
 |---|---|
 | 2026-09-13 | Initial mapping: 4 hosts, 10 endpoints, 36 samples (pre / final / extra time / shoot-out / own goal / two legs, all three competitions). Live states pending |
+| 2026-09-24 | **Live states, at last.** The Nations League MD1 matchday captured tick by tick (eight matches, ~5,400 polls, 0 errors): `LIVE` with `FIRST_HALF` / `HALF_TIME_BREAK` / `SECOND_HALF`, stoppage time, and the shape of `/livescore` while matches run. 9 new samples; [Game states](#game-states) rewritten from observation rather than from the community typings. Three behaviours found and recorded in [Quirks](#quirks--gotchas): `/livescore` leads `/matches/{id}` by 15-20 s at a phase change, `/events` withdraws rows (a corner replaced by its goal; a VAR-overturned goal), and a goal reaches `/events` a poll before `score.total` |
 | 2026-09-24 | Nations League (competition **2014**) added: 9 samples, 10 health checks, `NationsLeagueProvider`. Corrected the competition id in [Identifiers](#identifiers) - `2016`, which the first mapping named, is a girls' futsal tournament. Documented the biennial odd-year seasons, the four tiers / fourteen groups (`group.league`) and national sides |
+| 2026-09-25 | `standings.uefa.com` dropped `competitionId`, `phase` and `seasonYear` from the top level of each standings row; the values are still in the request, so nothing is lost and the DTOs never read them. `standings.uel.json` recaptured, which clears the shape warning api-health had reported on every UEFA run since. The UCL and previous-season samples had been captured after the change and never showed it |

@@ -58,14 +58,22 @@ public class SportomediaMapper(private val leagueId: String) {
         else -> null
     }
 
-    /** `status` is the flag; an ONGOING match with no period whose latest event closed a period is in a break. */
+    /**
+     * `status` is the flag; an `ONGOING` match whose newest event closed a period is in a break.
+     *
+     * The break was guessed at first as "`ONGOING` with no `period`", which never happens: at half
+     * time the feed keeps `period: "PERIOD_FIRST_HALF"` and only puts `"HT"` in
+     * `matchMinuteWithStoppageTime` (Hammarby-Brommapojkarna, 2026-09-13). The newest event being
+     * `PERIOD_RESULT` is the better signal of the two, because `"HT"` lingers for a poll after the
+     * restart while the events already show `START`.
+     */
     public fun gameState(m: SmMatch): GameState = when (m.status) {
         "UPCOMING" -> if (m.extendedStatus == "UPCOMING_STARTING") GameState.PRE_GAME else GameState.SCHEDULED
         "FINISHED" -> GameState.FINAL
         "POSTPONED" -> GameState.POSTPONED
         "INTERRUPTED" -> GameState.SUSPENDED
         "CANCELED", "CANCELLED" -> GameState.CANCELLED
-        "ONGOING" -> if (m.period == null && m.matchEvents.firstOrNull()?.type == "PERIOD_RESULT") GameState.INTERMISSION else GameState.LIVE
+        "ONGOING" -> if (m.matchEvents.firstOrNull()?.type == "PERIOD_RESULT") GameState.INTERMISSION else GameState.LIVE
         "" -> GameState.UNKNOWN
         else -> GameState.UNKNOWN
     }

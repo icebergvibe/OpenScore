@@ -1,0 +1,98 @@
+{
+  "data": {
+    "match": {
+      "match": {
+        "id": 6529991,
+        "startDate": "2026-09-13T12:00:00.000Z",
+        "homeTeamName": "Hammarby",
+        "visitingTeamName": "IF Brommapojkarna",
+        "homeTeamScore": 1,
+        "visitingTeamScore": 0,
+        "status": "ONGOING",
+        "extendedStatus": "ONGOING",
+        "period": "PERIOD_FIRST_HALF",
+        "round": 21,
+        "configLeagueName": "allsvenskan",
+        "homeTeamAbbrv": "HAM",
+        "visitingTeamAbbrv": "IFBP",
+        "leagueName": "Allsvenskan",
+        "matchMinute": 11,
+        "arenaName": "3Arena ",
+        "matchMinuteWithStoppageTime": "11'",
+        "homeTeamLogo": "https://staticcdn.svenskfotboll.se/img/teams/6412.png",
+        "visitingTeamLogo": "https://staticcdn.svenskfotboll.se/img/teams/9026.png",
+        "spectators": 0,
+        "referees": [
+          "Mohammed Al-Hakim",
+          "Mehmet Culum",
+          "Fredrik Klyver"
+        ],
+        "matchEvents": [
+          {
+            "type": "GOAL",
+            "typeString": "Mål",
+            "gameTime": 442,
+            "period": "PERIOD_FIRST_HALF",
+            "description": "1-0! Lind slår ett perfekt inspel längs marken som fångas upp av Abraham!",
+            "teamName": "Hammarby IF",
+            "homeTeamScore": 1,
+            "homeTeamPeriodScore": 1,
+            "visitingTeamScore": 0,
+            "visitingTeamPeriodScore": 0,
+            "byHomeTeam": true,
+            "source": "forzasys",
+            "key": "33cb1820b92dbdc804007822e98fc4b0",
+            "minuteWithStoppageTime": "8'",
+            "playerName": "Paulos Abraham",
+            "inPlayerName": null,
+            "outPlayerName": null,
+            "assistPlayerName": "Victor Stange Lind",
+            "assistPlayerId": 1320116
+          },
+          {
+            "type": "SHOT_ON_TARGET",
+            "typeString": "Skott",
+            "gameTime": 181,
+            "period": "PERIOD_FIRST_HALF",
+            "description": "Abraham möter bollen fint i straffområdet men avslutet räddas av Cavalius.",
+            "teamName": "Hammarby IF",
+            "homeTeamScore": 0,
+            "homeTeamPeriodScore": 0,
+            "visitingTeamScore": 0,
+            "visitingTeamPeriodScore": 0,
+            "byHomeTeam": true,
+            "source": "forzasys",
+            "key": "4f7ade83a9cf90dff683624335b4f65d",
+            "minuteWithStoppageTime": "4'",
+            "playerName": "Paulos Abraham",
+            "inPlayerName": null,
+            "outPlayerName": null,
+            "assistPlayerName": null,
+            "assistPlayerId": null
+          },
+          {
+            "type": "START",
+            "typeString": "",
+            "gameTime": 0,
+            "period": "PERIOD_FIRST_HALF",
+            "description": "Avspark första halvlek.",
+            "teamName": "IF Brommapojkarna",
+            "homeTeamScore": 0,
+            "homeTeamPeriodScore": 0,
+            "visitingTeamScore": 0,
+            "visitingTeamPeriodScore": 0,
+            "byHomeTeam": false,
+            "source": "forzasys",
+            "key": "ca9941ae72428ec5a10d8ecda029e682",
+            "minuteWithStoppageTime": null,
+            "playerName": null,
+            "inPlayerName": null,
+            "outPlayerName": null,
+            "assistPlayerName": null,
+            "assistPlayerId": null
+          }
+        ]
+      }
+    }
+  }
+}

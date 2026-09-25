@@ -13,7 +13,7 @@
 | **Conditional requests** | An `etag` (bare SHA-256 of the body) and `last-modified` (= `date`) are returned, but `If-None-Match` never yields `304` (GET or POST). No `Cache-Control`, no CDN |
 | **Schema** | Introspection is open — [`schema.graphql`](schema.graphql) is the SDL captured 2026-09-12 (117 types, 51 query roots, 3 subscriptions) |
 | **Last full verification** | 2026-09-12 |
-| **Status** | ✅ verified pre-match and full-time (league and cup); polled live on 2026-09-13 (AIK–Västerås SK) and **not used for games**: 29 of the first 100 ticks were 429s or timeouts and `matchMinute` froze (see Core model mapping). The core reads only tables, teams, squads and players from it; games come from [Fogis](../fogis-livescore/README.md). No live sample is kept |
+| **Status** | ✅ verified pre-match, live (first half, half time, second half) and full-time (league and cup); **not used for games**: 29 of the first 100 ticks were 429s or timeouts and `matchMinute` froze (see Core model mapping). The core reads only tables, teams, squads and players from it; games come from [Fogis](../fogis-livescore/README.md). Live samples kept since 2026-09-25 |
 
 ## Overview
 
@@ -369,19 +369,30 @@ maps abbrvs to logo URLs on `data-20ca4.kxcdn.com` (a KeyCDN front for the
 
 ## Game states
 
-Observed in the kept samples (the 2026-09-13 live poll saw `ONGOING` with a jumping
-`matchMinute`, but no live sample is kept — games are served from Fogis):
+Observed in the kept samples. The live rows come from a 375-poll recording of Hammarby
+3-1 IF Brommapojkarna (game `6529991`, 2026-09-13), curated 2026-09-25:
 
-| State | `status` / `extendedStatus` | `period` | `matchMinute` / `matchMinuteWithStoppageTime` | `matchEvents` | `lineups` | `matchStats` |
-|---|---|---|---|---|---|---|
-| Pre-match | `UPCOMING` / `UPCOMING` | `null` | `0` / `"-"` | `[]` (`spectators: 0`, `referees` already set) | `formation: "fallback"`, empty | **error** |
-| Just finished | `FINISHED` / `FINISHED_RECENTLY` | `null` | `0` / `"FT"` | full, newest first | full with stats | full |
-| Finished (older) | `FINISHED` / `FINISHED` | `null` | `0` / `"FT"` | as above | as above | as above |
+| State | `status` / `extendedStatus` | `period` | `matchMinute` / `matchMinuteWithStoppageTime` | Newest `matchEvents` entry |
+|---|---|---|---|---|
+| Pre-match | `UPCOMING` / `UPCOMING` | `null` | `0` / `"-"` | `[]` (`spectators: 0`, `referees` already set) |
+| About to start | `UPCOMING` / `UPCOMING_STARTING` | `null` | `0` / `"-"` | `START` |
+| First half | `ONGOING` / `ONGOING` | `PERIOD_FIRST_HALF` | `11` / `"11'"` | whatever last happened |
+| Stoppage time | `ONGOING` / `ONGOING` | `PERIOD_FIRST_HALF` | `45` / `"45+2"` | as above |
+| **Half time** | `ONGOING` / `ONGOING` | **`PERIOD_FIRST_HALF`**, not null | `45` / **`"HT"`** | **`PERIOD_RESULT`** (`description: "Paus."`) |
+| Second half | `ONGOING` / `ONGOING` | `PERIOD_SECOND_HALF` | `49` / `"49'"` | `START` |
+| Just finished | `FINISHED` / `FINISHED_RECENTLY` | `null` | `0` / `"FT"` | `PERIOD_RESULT`, list newest first |
+| Finished (older) | `FINISHED` / `FINISHED` | `null` | `0` / `"FT"` | as above |
 
-The schema promises `UPCOMING_STARTING_SOON` → `UPCOMING_STARTING` → `ONGOING`
-(`period` `PERIOD_FIRST_HALF`/`PERIOD_SECOND_HALF`, `matchMinute` counting) →
-`FINISHED_RECENTLY` → `FINISHED`, plus `INTERRUPTED`, `POSTPONED`, `CANCELED`. The
-score is on every list entry, so a schedule poll doubles as a scoreboard.
+**Half time does not clear `period`.** It stays `PERIOD_FIRST_HALF` for the whole break
+(13 minutes here) and only `matchMinuteWithStoppageTime` becomes `"HT"`, so a rule of the
+form "`ONGOING` with no period" never fires and a break reads as in play. The dependable
+marker is the **newest `matchEvents` entry being `PERIOD_RESULT`**, because `"HT"` outlives
+the restart by a poll: at 13:09:07Z the minute still read `"HT"` and `period` was still
+`PERIOD_FIRST_HALF` while the events already showed `START`.
+
+`INTERRUPTED`, `POSTPONED`, `CANCELED`, `UPCOMING_STARTING_SOON`, extra time and penalties
+remain unobserved. The score is on every list entry, so a schedule poll doubles as a
+scoreboard.
 
 ## Quirks & gotchas
 
@@ -482,3 +493,4 @@ lets the Swedish league wrappers key everything by Fogis id.
 |---|---|
 | 2026-09-12 | Initial mapping: schema, 33 samples (pre/final/cup + static), SSE handshake verified; live capture of AIK–Västerås SK in progress |
 | 2026-09-13 | Live poll of AIK–Västerås SK alongside Fogis: 429s and timeouts on 29 of the first 100 ticks, kick-off shown four minutes late, `matchMinute` frozen for minutes. Dropped for games, live state, events and lineups; kept for standings, teams, squads and players (and the `fogisId` bridge) |
+| 2026-09-25 | Live states curated from the 2026-09-13 recording of Hammarby 3-1 Brommapojkarna (375 polls). 5 new samples: first half, stoppage time into half time, the second half, `UPCOMING_STARTING`, and a stale in-play body served *during* the break. Found and fixed: half time keeps `period: "PERIOD_FIRST_HALF"` and only marks `"HT"` in the minute, so the core's break rule could never fire and 13 minutes of half time read as in play. Also measured here: 108 of 375 polls failed (62 `429` on `match`, 29 on `lineups`, 12 timeouts), and the Superettan game recorded the same day failed 149 of 375 - worse than the 29-in-100 that got this feed dropped for games |

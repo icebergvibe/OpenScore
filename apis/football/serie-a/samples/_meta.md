@@ -33,3 +33,41 @@ Arrays only, per CONTRIBUTING; objects are intact.
 | `stats-players.json` | `players[]` first 3 of 10 on page 1 of 41 |
 
 Everything else is complete as returned.
+
+## Live states
+
+The live bodies are polls lifted out of a `tools/live-capture` recording of
+`serie-a::Football_Match::b7ecdcd497b3445490aa0f0ba58468b5` (Lecce 3-2 Monza, MD 4,
+2026-09-13), 385 polls at 5 s from 05:17Z to 15:03Z.
+
+```
+./gradlew :tools:live-capture:run --args="--league serie-a --game serie-a::Football_Match::b7ecdcd497b3445490aa0f0ba58468b5 --max 10h"
+```
+
+| Sample | Poll | Feed state |
+|---|---|---|
+| `match-header.live.json` | 144 (13:24:08Z) | `LIVE`/`FIRST_HALF`, `time` 21, 3-1 |
+| `match-header.halftime.json` | 207 (14:00:52Z) | `LIVE`/`HALF_TIME_BREAK`, `time` 45, `additionalTime` 0 |
+| `match-summary.live.json` | 131 (13:14:24Z) | 2 goals, `time` 11 |
+| `match-summary.live-later.json` | 159 (13:36:08Z) | 4 goals, `time` 33 |
+| `match-teamstats.live.json` | 250 (14:15:48Z) | `LIVE`/`SECOND_HALF`, 50' |
+| `match-lineups.live.json` | 291 (14:29:31Z) | `LIVE`/`SECOND_HALF`, 64' |
+
+**What this capture lost, and why.** `header`, `summary`, `teamstats` and `lineups` all
+hang off the same season-and-match path prefix, and the capture tool truncated a long
+path to 90 characters before naming the file. All four therefore wrote to **one** file
+name per poll and only the last survived, so three of every four bodies are gone. The
+slug now keeps the endpoint name off the end of the path
+(`Capture.slugKeepsTheEndpointNameOffTheEndOfALongPath` guards it), but that does not
+recover these. What is missing as a result: the `header` at `SECOND_HALF` and at
+`FULL_TIME` (the 2026-09-11 `match-header.final.json` covers the finished shape), the
+`summary` at `HALF_TIME_BREAK` and `SECOND_HALF`, and every `summary` body from the
+poll a `header` won.
+
+Because of that, `match-header.live.json` (poll 144) and `match-summary.live.json`
+(poll 131) are **not the same poll** - the summary of poll 144 did not survive. The pair
+still shows the real failure mode (the header ahead of the summary), one goal deeper
+than the run actually showed.
+
+Pretty-printed with `jq .`; nothing truncated. The raw recording is under
+`build/capture/serie-a/` and is git-ignored.

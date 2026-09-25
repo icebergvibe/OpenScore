@@ -1,0 +1,48 @@
+# https://game-broadcaster.s8y.se/live/game?gameUuid=<gameUuid> recorded 2026-09-19 (FHC-VLH d0ucyo36vb; first frame from LHF-RBK rd7jw7eg65
+# in its pre-game window). One frame of each message kind, in the order they occur; ids are sequential per game. The stream
+# sends a blank line at connect and no event names. Lines starting with # are ours.
+
+# liveState heartbeat, pre-game window (16:00Z game at 14:19Z)
+id: 24
+data: {"liveState":{"gameUuid":"rd7jw7eg65","gameSourceId":"20260919-LHF-RBK","updated":false,"liveState":"unknown","source":"statnet-xml-parser"}}
+
+# liveState heartbeat, game on
+id: 16
+data: {"liveState":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","updated":false,"liveState":"ongoing","source":"statnet-xml-parser"}}
+
+# liveEvent: shot
+id: 28
+data: {"liveEvent":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","gameId":23002,"eventId":25,"eventUuid":"73945dfc-ce89-5353-91f5-370bae7bd39b","round":1,"gameType":"Elitserien","arena":"Scandinavium","attendance":0,"startDateAndTime":"2026-09-19T15:15:00","period":1,"time":"10:49","gameState":"Ongoing","revision":1,"type":"shot","realWorldTime":"2026-09-19T15:33:31.98","updatedTime":"2026-09-19T13:33:57.604858","homeTeam":{"teamId":"FHC","teamName":"Frölunda HC","teamCode":"FHC","score":1},"awayTeam":{"teamId":"VLH","teamName":"Växjö Lakers","teamCode":"VLH","score":0},"eventTeam":{"teamId":"VLH","place":"away","teamCode":"VLH","teamName":"Växjö Lakers"},"player":{"playerId":"4058","firstName":"Karl","familyName":"Henriksson","jerseyToday":"24"},"locationX":45,"locationY":14,"goalSection":0,"isPenaltyShot":false,"source":"statnet-xml-parser"}}
+
+# gameTime (sent with the event, not every second)
+id: 30
+data: {"gameTime":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","period":1,"periodTime":"10:49","source":"statnet-xml-parser"}}
+
+# liveEvent: goal (revisions re-send it)
+id: 34
+data: {"liveEvent":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","gameId":23002,"eventId":26,"eventUuid":"7c17f52f-17ee-5bba-bf8f-715ea16bc2b5","round":1,"gameType":"Elitserien","arena":"Scandinavium","attendance":0,"startDateAndTime":"2026-09-19T15:15:00","period":1,"time":"10:50","gameState":"Ongoing","revision":2,"type":"goal","realWorldTime":"2026-09-19T15:33:44.139872","updatedTime":"2026-09-19T13:34:09.376833","homeTeam":{"teamId":"FHC","teamName":"Frölunda HC","teamCode":"FHC","score":1},"awayTeam":{"teamId":"VLH","teamName":"Växjö Lakers","teamCode":"VLH","score":1},"eventTeam":{"teamId":"VLH","place":"away","teamCode":"VLH","teamName":"Växjö Lakers"},"player":{"playerId":"4058","firstName":"Karl","familyName":"Henriksson","jerseyToday":"24","statistics":[{"key":"G","value":"1"},{"key":"A","value":"0"}]},"locationX":38,"locationY":3,"homeGoals":1,"awayGoals":1,"goalSection":2,"isPenaltyShot":false,"isEmptyNetGoal":false,"pop":[],"nep":[],"assists":{},"goalStatus":"EQ","source":"statnet-xml-parser"}}
+
+# liveEvent: insight (editorial, same eventId as the goal)
+id: 40
+data: {"liveEvent":{"gameUuid":"d0ucyo36vb","gameId":"23002","gameSourceId":"20260919-FHC-VLH","eventTeam":{"teamId":"FHC","teamCode":"FHC","teamName":"Frölunda HC","place":"home"},"eventId":3,"period":1,"time":"00:53","title":"Clarke får SHL-drömstart","description":"Graeme Clarke smäller in sitt allra första SHL-mål redan efter 53 sekunder och ger Frölunda 1–0, med Patrik Puistola som framspelare.","timestamp":"2026-09-19 15:34:33","eventUuid":"0922ce83-2709-72d6-fc03-f2046dde9e67","revision":3,"type":"insight","deleted":false,"source":"statnet-xml-parser"}}
+
+# liveEvent: penalty
+id: 1177
+data: {"liveEvent":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","gameId":23002,"eventId":58,"eventUuid":"4b730b30-46a2-5e34-923c-9e142455b14e","round":1,"gameType":"Elitserien","arena":"Scandinavium","attendance":0,"startDateAndTime":"2026-09-19T15:15:00","period":2,"time":"10:08","gameState":"Ongoing","revision":1,"type":"penalty","realWorldTime":"2026-09-19T16:25:42.342643","updatedTime":"2026-09-19T14:25:54.888643","homeTeam":{"teamId":"FHC","teamName":"Frölunda HC","teamCode":"FHC","score":2},"awayTeam":{"teamId":"VLH","teamName":"Växjö Lakers","teamCode":"VLH","score":2},"eventTeam":{"teamId":"VLH","place":"away","teamCode":"VLH","teamName":"Växjö Lakers"},"player":{"playerId":"1862","firstName":"Sebastian","familyName":"Strandberg","jerseyToday":"29"},"variant":{"shortName":"Minor","minorTime":"2","doubleMinorTime":"0","benchTime":"0","majorTime":"0","misconductTime":"0","gMTime":"0","mPTime":"0","description":"2 min"},"offence":"DELAY","didRenderInPenaltyShot":false,"source":"statnet-xml-parser"}}
+
+# teamStatistics (one per team after each event)
+id: 29
+data: {"teamStatistics":{"gameUuid":"d0ucyo36vb","source":"statnet-xml-parser","gameId":23002,"teamId":"VLH","teamCode":"VLH","teamName":"Växjö Lakers","place":"away","statistics":[{"period":0,"parsedTotalStatistics":[{"caption":"G","value":0},{"caption":"PIM","value":2},{"caption":"FOW","value":2},{"caption":"SOG","value":1},{"caption":"SPG","value":4},{"caption":"PPSOG","value":0},{"caption":"Saves","value":9},{"caption":"GA","value":1},{"caption":"SavesPerShot","value":0},{"caption":"PP_perc","value":null},{"caption":"SH_perc","value":1},{"caption":"PPG","value":0},{"caption":"SHGA","value":0},{"caption":"SHG","value":0},{"caption":"PPGA","value":0},{"caption":"NumPP","value":0},{"caption":"NumSH","value":1},{"caption":"Hits","value":2},{"caption":"BkS","value":1},{"caption":"SiBk","value":2}]},{"period":1,"parsedTotalStatistics":[{"caption":"G","value":0},{"caption":"PIM","value":2},{"caption":"FOW","value":2},{"caption":"SOG","value":1},{"caption":"SPG","value":4},{"caption":"PPSOG","value":0},{"caption":"Saves","value":9},{"caption":"GA","value":1},{"caption":"SavesPerShot","value":0},{"caption":"PP_perc","value":null},{"caption":"SH_perc","value":1},{"caption":"PPG","value":0},{"caption":"SHGA","value":0},{"caption":"SHG","value":0},{"caption":"PPGA","value":0},{"caption":"NumPP","value":0},{"caption":"NumSH","value":1},{"caption":"Hits","value":2},{"caption":"BkS","value":1},{"caption":"SiBk","value":2}]}],"provider":"statnet"}}
+
+# playerStatistics (one per player after each event)
+id: 1
+data: {"playerStatistics":{"gameUuid":"d0ucyo36vb","gameId":23002,"gameSourceId":"20260919-FHC-VLH","playerId":4050,"source":"statnet-xml-parser","playerInfo":{"firstName":"Filip","familyName":"Cederqvist","jerseyToday":"92","dateOfBirth":"2000-08-23","lineup":{"jerseyNumber":92,"position":"LW","lineNumber":1,"starts":true,"extraPlayer":false}},"statistics":{"G":"0","A":"0","TP":"0","SHG":"0","PPG":"0","SW":"2","PIM":"0","SOG":"0","PPSOG":"0","NEP":"0","POP":"0","+/-":"0","TOI":"03:18","Hits":"0","FO_tot":"0","FOW":"0","FOL":"0","NumPen":"0","FOPerc":"NaN","MS":"2","BkS":"0"},"playerType":"player","team":"home"}}
+
+# liveEvent: period record at the end of the second period
+id: 1839
+data: {"liveEvent":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","gameId":23002,"period":2,"started":true,"startedAt":"2026-09-19T16:08:28.005Z","finished":true,"finishedAt":"2026-09-19T16:41:24.095Z","realWorldTime":"2026-09-19T16:41:24.956153","type":"period","source":"statnet-xml-parser"}}
+
+# liveState transition (updated: true)
+id: 1838
+data: {"liveState":{"gameUuid":"d0ucyo36vb","gameSourceId":"20260919-FHC-VLH","updated":true,"liveState":"intermission","previousLiveState":"ongoing","source":"statnet-xml-parser"}}
+

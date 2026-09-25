@@ -236,8 +236,9 @@
     },
     {
       "name": "statistics-v2/team-page/stats-header",
-      "path": "/statistics-v2/team-page/stats-header?teamUuid=50e6-50e6DYeWM",
-      "sample": "team-stats-header.json"
+      "path": "/statistics-v2/team-page/stats-header?teamUuid=2459-2459QTs1f",
+      "sample": "team-stats-header.json",
+      "note": "Djurgarden, deliberately not a CHL entrant: a club playing in the CHL answers this route with statisticsProvider alone and no stats array, so the previous pin (Skellefteaa, 50e6-50e6DYeWM) went empty when it entered. If this check ever reports the stats paths missing, check whether the pinned club has joined the CHL before suspecting drift"
     },
     {
       "name": "sports-v2/ssgt/{ssgt}/provider",

@@ -131,13 +131,16 @@ public class OpenScore(
             launch {
                 val result = runCatchingUnlessCancelled { if (fresh && p is CachedDayListingProvider) p.gamesOn(date, fresh = true) else p.gamesOn(date) }
                     .fold({ LeagueResult(p.league.id, it, null) }, { LeagueResult(p.league.id, emptyList(), it) })
-                val snap = lock.withLock {
+                // Sent under the lock, not after it. A snapshot built here and sent once the
+                // lock was released could be overtaken by a later, fuller one, and the reader
+                // would end on the thinner of the two - which for [gamesOn], the last emission,
+                // is a day missing every league that answered after it.
+                lock.withLock {
                     val readyBefore = ready().size
                     answered[p.league.id] = result
                     // Nothing to say while an umbrella waits on its dedicated leagues.
-                    if (ready().size > readyBefore) snapshot() else null
+                    if (ready().size > readyBefore) send(snapshot())
                 }
-                if (snap != null) send(snap)
             }
         }
     }
@@ -145,8 +148,12 @@ public class OpenScore(
     /** Drops an umbrella league's copy of every game a selected dedicated league also returned. */
     private fun deduplicate(games: List<Game>, overlap: Map<String, Set<String>>): List<Game> {
         if (overlap.isEmpty()) return games
-        val dedicatedIds = games.filter { g -> overlap.values.any { g.leagueId in it } }.map { it.id }.toSet()
-        return games.filterNot { it.leagueId in overlap && it.id in dedicatedIds }
+        // Per umbrella, not one flat set of ids: two umbrellas whose feeds happen to number a
+        // game the same way would otherwise cancel each other's games out.
+        val dedicatedIds = overlap.mapValues { (_, dedicated) ->
+            games.filter { it.leagueId in dedicated }.map { it.id }.toSet()
+        }
+        return games.filterNot { g -> dedicatedIds[g.leagueId]?.contains(g.id) == true }
     }
 
     private class LeagueResult(val leagueId: String, val games: List<Game>, val error: Throwable?)

@@ -146,7 +146,7 @@ public class SerieAProvider(
 
     /** `matchDateUtc` is an instant, or a bare `YYYY-MM-DDZ` while the kick-off time is unknown. */
     private fun localDate(iso: String): LocalDate =
-        if (iso.contains('T')) Instant.parse(iso).toLocalDateTime(ROME).date else LocalDate.parse(iso.removeSuffix("Z"))
+        if (iso.contains('T')) Instant.parse(iso).toLocalDateTime(league.zone).date else LocalDate.parse(iso.removeSuffix("Z"))
 
     private suspend fun <T> get(path: String, strategy: DeserializationStrategy<T>, maxAge: Duration): T =
         fetcher.getJson(baseUrl + path, strategy, maxAge, league.id)
@@ -154,8 +154,7 @@ public class SerieAProvider(
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://api-sdp.legaseriea.it/v1/serie-a/football"
         public const val SERIE_A: String = "serie-a::Football_Competition::ec93b94f74294dc98ab5bcfd67fc0d88"
-        public val LEAGUE: League = League("serie-a", Sport.FOOTBALL, "Serie A", "IT", "https://www.legaseriea.it")
-        private val ROME = TimeZone.of("Europe/Rome")
+        public val LEAGUE: League = League("serie-a", Sport.FOOTBALL, "Serie A", "IT", TimeZone.of("Europe/Rome"), "https://www.legaseriea.it")
         private val LIVE_MAX_AGE = 40.seconds
         private val SCHEDULE_MAX_AGE = 10.minutes
         private val STATIC_MAX_AGE = 1.hours

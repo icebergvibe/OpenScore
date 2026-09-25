@@ -179,6 +179,42 @@ class FogisProviderTest {
         assertEquals(all.filter { it.competition == "Allsvenskan 2026" }, allsvenskan)
     }
 
+    /**
+     * Hammarby 3-1 IF Brommapojkarna, 2026-09-13 at 13:15:51Z (poll 310 of the capture): the away
+     * side's second-half goal is in the score but has no `HALFENDED` marker yet, because the half
+     * is still running. The linescore used to list only the halves that had ended, so it read
+     * `1H 2-1` beside a 3-1 score for the remaining 85 polls of the match.
+     */
+    @Test
+    fun theHalfInProgressGetsALinescoreRow() {
+        val dir = SampleFetcher.samplesDir("football", "fogis-livescore")
+        val root = SimpleXml.parse(dir.resolve("game-info.live.second-half-goal.xml").readText())
+        val info = assertNotNull(root.child("game"))
+        val g = FogisMapper("allsvenskan").game(
+            info, events = root.child("events"), now = Instant.parse("2026-09-13T13:15:51Z"),
+            reportType = root["livescorereporttype"],
+        )
+        assertEquals(GameState.LIVE, g.state)
+        assertEquals("SECOND_HALF_IN_PROGRESS/report=1", g.rawState)
+        assertEquals(Score(3, 1), g.score)
+        assertEquals(listOf(2 to 1, 1 to 0), g.periodScores.map { it.home to it.away }, "the running half is listed too")
+        val score = assertNotNull(g.score)
+        assertEquals(score.home, g.periodScores.sumOf { it.home }, "the halves add up to the score")
+        assertEquals(score.away, g.periodScores.sumOf { it.away })
+    }
+
+    /** With no goal yet in the running half its row is `0-0`, not absent. */
+    @Test
+    fun aRunningHalfWithNoGoalsIsAZeroRow() {
+        val dir = SampleFetcher.samplesDir("football", "fogis-livescore")
+        val root = SimpleXml.parse(dir.resolve("game-info.live.second-half.xml").readText())
+        val g = FogisMapper("allsvenskan").game(
+            assertNotNull(root.child("game")), events = root.child("events"),
+            now = Instant.parse("2026-09-13T13:07:46Z"), reportType = root["livescorereporttype"],
+        )
+        assertEquals(listOf(2 to 1, 0 to 0), g.periodScores.map { it.home to it.away })
+    }
+
     @Test
     fun liveOverviewHasClockScoreAndPeriodScoresButNoTimeline() = runTest {
         val at = object : Clock {

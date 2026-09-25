@@ -38,13 +38,22 @@ public class MaltaMapper(private val leagueId: String) {
 
     public fun team(t: MtTeam): Team = Team(ref = teamRef(t), country = "MLT")
 
-    /** `12'`, `45+2'`, `HT`, `FT` → state + clock. */
+    /**
+     * `12'`, `45+2'`, `HT`, `FT` → state + clock.
+     *
+     * `status` and `isLive` disagree in both directions and neither alone carries a match, so a
+     * live state is taken from either. Observed in the 2026-09-13 capture of match 53142621:
+     * `isLive` was already true at kick-off while `status` still read `SCHEDULED`, and it went
+     * back to false for the last four minutes while `status` still read `RUNNING`. The second
+     * one mapped 12 polls of stoppage time to UNKNOWN, which is not live, so `wantsScorePoll`
+     * stopped asking and the score froze exactly where a reader is watching hardest.
+     */
     public fun gameState(status: String, isLive: Boolean, matchTime: String?): GameState = when {
         status == "PLAYED" -> GameState.FINAL
         status == "POSTPONED" -> GameState.POSTPONED
         status == "CANCELLED" || status == "CANCELED" -> GameState.CANCELLED
         status == "ABANDONED" -> GameState.SUSPENDED
-        isLive || status == "LIVE" -> if (matchTime?.uppercase() == "HT") GameState.INTERMISSION else GameState.LIVE
+        isLive || status == "LIVE" || status == "RUNNING" -> if (matchTime?.uppercase() == "HT") GameState.INTERMISSION else GameState.LIVE
         status == "SCHEDULED" -> GameState.SCHEDULED
         status.isEmpty() -> GameState.UNKNOWN
         else -> GameState.UNKNOWN

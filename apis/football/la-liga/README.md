@@ -12,7 +12,7 @@
 | **WAF / UA requirement** | None. Works with no `User-Agent` |
 | **Conditional requests** | No `ETag`. `Last-Modified` is the generation time and Azure Front Door answers `If-Modified-Since` from its own cache (a `304` says nothing about the data). `Cache-Control: public, max-age=N` per endpoint (30 s lists, 60 s match, 300 s line-ups) |
 | **Last full verification** | 2026-09-12 |
-| **Status** | ✅ verified pre-match, **first half** (RC Celta–Málaga CF, MD 5, 2026-09-13 at the 44th minute: `status: FirstHalf`, `match_time: 44`, `period_started.FirstHalf.start`) and full-time. Half-time, second-half, cup and postponed states not yet observed |
+| **Status** | ✅ verified pre-match, **the whole regulation arc** (RC Celta 1-1 Málaga CF, MD 5, 2026-09-13, 366 polls: `PreMatch` → `FirstHalf` → `HalfTime` → `SecondHalf` → `FullTime`) and full-time. Cup and postponed states not yet observed |
 
 ## Access
 
@@ -223,17 +223,35 @@ official`, `VAR`, `AVAR`), `channels` (TV, `null` when unknown), `season`,
 `is_brand_day`, `temperature`, `ball`, `opta_id`, `lde_id`. No events or line-ups.
 
 **`status` enum** (from the site's JS; observed values in bold): **`PreMatch`**,
-`FirstHalf`, `HalfTime`, `SecondHalf`, `ExtraFirstHalf`, `ExtraHalfTime`,
+**`FirstHalf`**, **`HalfTime`**, **`SecondHalf`**, `ExtraFirstHalf`, `ExtraHalfTime`,
 `ExtraSecondHalf`, `ShootOut`, **`FullTime`**, `Abandoned` (site shows "SUSP"),
 `Postponed` and `Canceled` (site shows "APLZ"). The site treats `Live` as an alias
 for the in-play group.
+
+The regulation sequence was watched end to end on 2026-09-13 (Celta 1-1 Málaga, 366 polls
+at 5 s). **`period_started` is the whole clock story** and the better of the two sources:
+
+| At | `status` | `match_time` | `period_started` |
+|---|---|---:|---|
+| 11:12:24Z | `PreMatch` | 0 | absent |
+| 12:03:23Z | `FirstHalf` | 0 | `FirstHalf.start` `12:02:33+00:00` |
+| 12:51:14Z | `HalfTime` | 48 | `FirstHalf` gains **`stop` `12:50:31+00:00`** |
+| 13:08:08Z | `SecondHalf` | 45 | `SecondHalf.start` `13:06:49+00:00` added |
+| 13:58:26Z | `FullTime` | 95 | both halves with `start` and `stop` |
+
+Two things follow. `match_time` is a whole minute that trails the wall clock by up to two
+minutes and **steps back from 48 to 45** at the restart, while the `start`/`stop`
+timestamps give a second-precise clock and `stop` is what says a period has ended. And
+`match_time` keeps counting into the break (48 at half time), so the minute to show during
+a break is `stop - start`, not `match_time`. A zeroed `match_time: 0` also appears while
+`status` is still `PreMatch`, about an hour before kick-off.
 
 #### `GET /api/v1/matches/{slug}` · **webview** `GET /api/web/matches/{slug}`
 
 | | |
 |---|---|
 | **Purpose** | Match header: status, score, running minute, formations, officials, attendance. The webview copy adds **`period_started`** |
-| **Sample** | [`samples/match.final.json`](samples/match.final.json) · [`samples/match.pre.json`](samples/match.pre.json) · [`samples/wv-match.final.json`](samples/wv-match.final.json) · [`samples/wv-match.pre.json`](samples/wv-match.pre.json) captured 2026-09-12 · [`samples/wv-match.live.json`](samples/wv-match.live.json) (Celta–Málaga at the 44th minute, 2026-09-13) |
+| **Sample** | [`samples/match.final.json`](samples/match.final.json) · [`samples/match.pre.json`](samples/match.pre.json) · [`samples/wv-match.final.json`](samples/wv-match.final.json) · [`samples/wv-match.pre.json`](samples/wv-match.pre.json) captured 2026-09-12 · [`samples/wv-match.live.json`](samples/wv-match.live.json) (Celta–Málaga at the 44th minute) · [`samples/wv-match.halftime.json`](samples/wv-match.halftime.json) · [`samples/wv-match.live-second-half.json`](samples/wv-match.live-second-half.json) (all three from 2026-09-13) |
 | **Last verified** | 2026-09-12 |
 
 `{ match: { …list fields…, match_time, attempt, attempt_official, subscription,
@@ -538,13 +556,22 @@ from the squad.
 
 ## TODO
 
-- [ ] **Capture a whole live match** (one first-half pair from 2026-09-13 is in `samples/`):
-      does `status` go `FirstHalf`→`HalfTime`→`SecondHalf`, how often does `match_time`
-      tick, how stale are events vs `date_source`, do standings move, when are line-ups
-      published.
+- [x] **A whole live match captured** 2026-09-13 and curated 2026-09-25: `status` does go
+      `FirstHalf`→`HalfTime`→`SecondHalf`→`FullTime`, `match_time` ticks in whole minutes and
+      steps back at the restart, and `period_started` gains a `stop` at each break. Still
+      open from that list: how stale events are against `date_source`, whether standings move
+      during a match, and when line-ups are published - the capture polled the match resource
+      59 times but `events` only 11 and `lineups` 3, so it cannot answer those.
 - [ ] Observe red card / second yellow / own goal / penalty / VAR event kinds.
 - [ ] Cup states (`ExtraFirstHalf`, `ShootOut`) and `period_started` keys in extra time
       — Copa del Rey starts 2026-09-26.
 - [x] Keys: the provider ships the documented pair and re-reads `runtimeConfig` only on a
       `401` (the page is 800 KB; reading it on every start cost a second before the first
       request). A `401` with unchanged page keys is passed through as the error it is.
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| 2026-09-25 | Live states curated from the 2026-09-13 capture of Celta 1-1 Málaga (366 polls): `HalfTime` and `SecondHalf` samples added to the existing first-half pair, so the whole regulation arc is now sampled. Recorded the `period_started` `start`/`stop` behaviour against `match_time`, including `match_time` counting into the break and stepping back at the restart. No mapper change was needed: the clock was already derived from `period_started` with second precision and `running` from the absence of `stop`. |
+| 2026-09-12 | Initial mapping: public service + webview endpoints, the page-embedded APIM keys, 58 samples. |

@@ -34,7 +34,7 @@ class DelLiveSmokeTest {
             println("game 4389t77: ${game.state} ${game.score} ${game.ending} events=${game.events?.size} stats=${game.stats} in ${ms(t)}")
             game.events!!.forEach { println("  ${it.period.label} ${it.time.elapsed} ${it.type} ${it.description}") }
             assertEquals(GameState.FINAL, game.state)
-            assertEquals(19, game.events!!.size)
+            assertEquals(19, game.events.size)
             assertTrue(game.stats.isNotEmpty())
 
             t = System.currentTimeMillis()

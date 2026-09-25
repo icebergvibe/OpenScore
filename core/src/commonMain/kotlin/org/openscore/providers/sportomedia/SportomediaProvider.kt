@@ -69,13 +69,13 @@ public open class SportomediaProvider(
         Capability.PERIOD_SCORES,
     )
 
-    public fun currentSeason(): Int = clock.todayIn(SWEDEN).year
+    public fun currentSeason(): Int = clock.todayIn(league.zone).year
 
     override suspend fun gamesOn(date: LocalDate): List<Game> {
         val q = Queries.matchesForLeague(configLeagueName, date.year, date, date.plus(1, DateTimeUnit.DAY))
         val data = query(q, SmMatchesForLeagueData.serializer(), LIVE_MAX_AGE)
         return data?.matchesForLeague?.matches.orEmpty()
-            .filter { Instant.parse(it.startDate).toLocalDateTime(SWEDEN).date == date }
+            .filter { Instant.parse(it.startDate).toLocalDateTime(league.zone).date == date }
             .map { mapper.game(it, withEvents = false) }.sortedBy { it.startTime }
     }
 
@@ -210,7 +210,6 @@ public open class SportomediaProvider(
 
     public companion object {
         public const val DEFAULT_BASE_URL: String = "https://gql.sportomedia.se/graphql"
-        private val SWEDEN = TimeZone.of("Europe/Stockholm")
         private val LIVE_MAX_AGE = 20.seconds
         private val LIVE_POLL_FLOOR = 20.seconds
         private val LINEUP_MAX_AGE = 1.minutes
@@ -225,7 +224,7 @@ public open class SportomediaProvider(
 public class AllsvenskanProvider(fetcher: Fetcher, baseUrl: String = SportomediaProvider.DEFAULT_BASE_URL, clock: Clock = Clock.System) :
     SportomediaProvider(LEAGUE, fetcher, "allsvenskan", baseUrl, clock) {
     public companion object {
-        public val LEAGUE: League = League("allsvenskan", Sport.FOOTBALL, "Allsvenskan", "SE", "https://allsvenskan.se")
+        public val LEAGUE: League = League("allsvenskan", Sport.FOOTBALL, "Allsvenskan", "SE", TimeZone.of("Europe/Stockholm"), "https://allsvenskan.se")
     }
 }
 
@@ -233,6 +232,6 @@ public class AllsvenskanProvider(fetcher: Fetcher, baseUrl: String = Sportomedia
 public class SuperettanProvider(fetcher: Fetcher, baseUrl: String = SportomediaProvider.DEFAULT_BASE_URL, clock: Clock = Clock.System) :
     SportomediaProvider(LEAGUE, fetcher, "superettan", baseUrl, clock) {
     public companion object {
-        public val LEAGUE: League = League("superettan", Sport.FOOTBALL, "Superettan", "SE", "https://allsvenskan.se")
+        public val LEAGUE: League = League("superettan", Sport.FOOTBALL, "Superettan", "SE", TimeZone.of("Europe/Stockholm"), "https://allsvenskan.se")
     }
 }

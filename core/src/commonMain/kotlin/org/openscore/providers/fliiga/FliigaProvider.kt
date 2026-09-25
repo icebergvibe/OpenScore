@@ -261,7 +261,7 @@ public class FliigaProvider(
 
     private fun FlWpMatch.startInstant(): Instant? = Dates.instantOrNull(meta.startTime)
 
-    private fun FlWpMatch.startDate(): LocalDate? = startInstant()?.toLocalDateTime(HELSINKI)?.date
+    private fun FlWpMatch.startDate(): LocalDate? = startInstant()?.toLocalDateTime(league.zone)?.date
 
     private fun FlWpMatch.startsOn(date: LocalDate): Boolean = startDate() == date
 
@@ -273,6 +273,7 @@ public class FliigaProvider(
             sport = Sport.FLOORBALL,
             name = "F-Liiga",
             country = "FI",
+            zone = TimeZone.of("Europe/Helsinki"),
             websiteUrl = "https://fliiga.com",
         )
 
@@ -293,7 +294,6 @@ public class FliigaProvider(
         /** Two pages hold a twelve-team season; the third is the guard against an unexpected order. */
         private const val MAX_PAGES = 4
 
-        private val HELSINKI = TimeZone.of("Europe/Helsinki")
         /** How long after its start a match is always asked about rather than read off the record. */
         private val RESULT_WINDOW = 3.hours
         /** How long a match whose record never got a result is still worth asking about. */

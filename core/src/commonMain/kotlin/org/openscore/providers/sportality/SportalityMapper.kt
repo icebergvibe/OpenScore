@@ -71,12 +71,55 @@ public class SportalityMapper(private val leagueId: String) {
         return GameTime(period, elapsed = elapsed, remaining = remaining)
     }
 
-    public fun overviewState(state: String?): GameState? = when (state) {
+    /**
+     * The overview's `state` is coarse (observed 2026-09-19): `Ongoing` from the moment the arena
+     * opens the game in the system, about two hours before the puck drops, with an empty `time`;
+     * intermissions are never reported as `PeriodBreak` - the clock simply sits at the period's
+     * full length (`20:00`, `05:00` in overtime) until the next period's first record. Both are
+     * read off `time`, which is the game time of the latest recorded event, not a running clock.
+     * `GameEnded` arrives three to four minutes after the end; a third period at its full
+     * length with a lead is already over (no play can follow), so it is final at once.
+     */
+    public fun overviewState(o: SptOverview): GameState? = when (o.state) {
         "NotStarted" -> GameState.SCHEDULED
-        "Ongoing" -> GameState.LIVE
+        "Ongoing" -> {
+            val t = o.time
+            val atFullLength = t != null && clockDuration(t.periodTime)?.let { it >= (periodLength(period(t.period)) ?: Duration.INFINITE) } == true
+            when {
+                t == null || t.period == 0 -> GameState.PRE_GAME
+                atFullLength && t.period == 3 && o.homeGoals != o.awayGoals -> GameState.FINAL
+                atFullLength -> GameState.INTERMISSION
+                else -> GameState.LIVE
+            }
+        }
         "PeriodBreak" -> GameState.INTERMISSION
         "GameEnded" -> GameState.FINAL
         else -> null
+    }
+
+    /** OT/SO from the furthest period actually seen, since the `overtime`/`shootout` flags fill in minutes after the end. */
+    private fun ending(overtime: Boolean, shootout: Boolean, lastPeriod: Int): GameEnding =
+        ending(overtime = overtime || lastPeriod >= 4, shootout = shootout || lastPeriod == 99)
+
+    /**
+     * What the play-by-play alone says, for the ticks on which the edge answers the overview with
+     * an empty body mid-game (seen 2026-09-19): every event carries `GameEnded` once the game is
+     * over, and the `period` records say which periods have started and finished.
+     */
+    public fun eventsState(events: List<SptEvent>): GameState? {
+        if (events.isEmpty()) return null
+        if (events.any { it.gameState == "GameEnded" }) return GameState.FINAL
+        val periods = events.filter { it.type == "period" }
+        val started = periods.filter { it.started == true }.maxOfOrNull { it.period } ?: return GameState.PRE_GAME
+        val finished = periods.filter { it.finished == true }.maxOfOrNull { it.period }
+        return if (finished != null && finished >= started) GameState.INTERMISSION else GameState.LIVE
+    }
+
+    /** The running score as the newest goal in game order reports it (revisions keep earlier goals current). */
+    public fun eventsScore(events: List<SptEvent>): Score {
+        val last = events.filter { it.type == "goal" && it.homeGoals != null && it.awayGoals != null }
+            .maxWithOrNull(compareBy({ it.period }, { clockDuration(it.time) ?: Duration.ZERO }, { it.eventId ?: 0 }))
+        return last?.let { Score(it.homeGoals!!, it.awayGoals!!) } ?: Score(0, 0)
     }
 
     public fun scheduleState(state: String?): GameState = when (state) {
@@ -133,9 +176,11 @@ public class SportalityMapper(private val leagueId: String) {
 
     /** Scoreboard entry from `gameheader`, optionally refined by a `game-overview` fetched for live games. */
     public fun game(h: SptHeaderGame, teamsByCode: Map<String, SptTeam>, overview: SptOverview?): Game {
-        val state = overview?.let { overviewState(it.state) } ?: if (h.played) GameState.FINAL else GameState.SCHEDULED
+        // `played` flips within two minutes of the end, minutes before the overview says `GameEnded`
+        // and before the header's own result and overtime flags fill in (they read 0-0 meanwhile).
+        val state = if (h.played) GameState.FINAL else overview?.let(::overviewState) ?: GameState.SCHEDULED
         val score = when {
-            overview != null && state != GameState.SCHEDULED -> Score(overview.homeGoals, overview.awayGoals)
+            overview != null && state.hasStarted -> Score(overview.homeGoals, overview.awayGoals)
             h.played && h.homeTeam.result != null && h.awayTeam.result != null -> Score(h.homeTeam.result, h.awayTeam.result)
             else -> null
         }
@@ -151,8 +196,8 @@ public class SportalityMapper(private val leagueId: String) {
             state = state,
             score = score,
             clock = overview?.let { clock(it, state) },
-            ending = if (state.isFinished) ending(h.overtime, h.shootout) else null,
-            rawState = overview?.state ?: "played=${h.played}",
+            ending = if (state.isFinished) ending(h.overtime, h.shootout, overview?.time?.period ?: 0) else null,
+            rawState = listOfNotNull("played=${h.played}", overview?.state).joinToString("/"),
         )
     }
 
@@ -177,21 +222,43 @@ public class SportalityMapper(private val leagueId: String) {
         )
     }
 
-    /** Full game: `game-info` header + `game-overview` (null before the game) + `play-by-play` (empty before). */
+    /**
+     * Full game: `game-info` header + `game-overview` (null before the game) + `play-by-play`
+     * (empty before). `game-info.state` stays `pre_game` for as long as the game is on, so it
+     * only decides anything when neither the overview nor the events say more. Every
+     * play-by-play row turns `GameEnded` within seconds of the end, minutes before the
+     * overview does, so the events' verdict on that comes first. An empty play-by-play for a
+     * game under way is the edge's glitch, not a game without events: the events are then
+     * unknown (`null`) rather than none, so a client keeps what it has.
+     */
     public fun game(info: SptGameInfoResponse, overview: SptOverview?, events: List<SptEvent>): Game {
         val gi = info.gameInfo
-        val state = overview?.let { overviewState(it.state) } ?: scheduleState(gi.state)
+        val fromEvents = eventsState(events)
+        val fromOverview = overview?.let(::overviewState)
+        val state = when {
+            fromEvents == GameState.FINAL -> fromEvents
+            fromOverview == null -> fromEvents ?: scheduleState(gi.state)
+            // Said outright: the stream's `intermission` (the REST overview never says PeriodBreak).
+            overview.state == "PeriodBreak" -> GameState.INTERMISSION
+            // Play or break: the period records know; the clock alone is fooled by a row entered
+            // after the period ended (DIF-IFB 2026-09-19: a 19:55 goal entered at 20:00 + 3 min).
+            fromOverview.isLive && fromEvents?.isLive == true -> fromEvents
+            else -> fromOverview
+        }
         val home = teamRef(info.homeTeam)
         val away = teamRef(info.awayTeam)
         val infoHome = (info.homeTeam.score as? JsonPrimitive)?.intOrNull
         val infoAway = (info.awayTeam.score as? JsonPrimitive)?.intOrNull
         val score = when {
-            overview != null && state != GameState.SCHEDULED -> Score(overview.homeGoals, overview.awayGoals)
-            state != GameState.SCHEDULED && infoHome != null && infoAway != null -> Score(infoHome, infoAway)
-            else -> null
+            !state.hasStarted -> null
+            overview != null -> Score(overview.homeGoals, overview.awayGoals)
+            infoHome != null && infoAway != null -> Score(infoHome, infoAway)
+            else -> eventsScore(events)
         }
+        val eventsKnown = events.isNotEmpty() || !state.hasStarted
         val mapped = events(events, home, away)
-        val ending = if (state.isFinished) ending(gi.overtime, gi.shootout) else null
+        val lastPeriod = maxOf(overview?.time?.period ?: 0, events.maxOfOrNull { it.period } ?: 0)
+        val ending = if (state.isFinished) ending(gi.overtime, gi.shootout, lastPeriod) else null
         return Game(
             leagueId = leagueId,
             id = gi.gameUuid,
@@ -204,9 +271,9 @@ public class SportalityMapper(private val leagueId: String) {
             state = state,
             score = score,
             clock = overview?.let { clock(it, state) },
-            periodScores = periodScores(mapped, overview?.time?.period ?: events.maxOfOrNull { it.period } ?: 0, score, ending),
+            periodScores = if (eventsKnown) periodScores(mapped, overview?.time?.period ?: events.maxOfOrNull { it.period } ?: 0, score, ending) else emptyList(),
             ending = ending,
-            events = mapped,
+            events = if (eventsKnown) mapped else null,
             rawState = listOfNotNull(gi.state, overview?.state).joinToString("/"),
         )
     }
@@ -236,6 +303,15 @@ public class SportalityMapper(private val leagueId: String) {
             val homeWon = score.home > score.away
             result += PeriodScore(current, if (homeWon) 1 else 0, if (homeWon) 0 else 1)
         }
+        // The overview's score runs a read or two ahead of the goal row (15 s on 2026-09-19):
+        // what the rows do not carry yet goes to the period under way, so the linescore never
+        // disagrees with the score. Not during a shootout, whose score the rows do not tally.
+        val missingHome = score.home - result.sumOf { it.home }
+        val missingAway = score.away - result.sumOf { it.away }
+        val at = result.indexOfLast { it.period.number == current.number }
+        if (current.type != PeriodType.SHOOTOUT && at >= 0 && (missingHome > 0 || missingAway > 0)) {
+            result[at] = result[at].copy(home = result[at].home + missingHome.coerceAtLeast(0), away = result[at].away + missingAway.coerceAtLeast(0))
+        }
         return result
     }
 
@@ -251,6 +327,8 @@ public class SportalityMapper(private val leagueId: String) {
     public fun events(raw: List<SptEvent>, home: TeamRef, away: TeamRef): List<GameEvent> {
         val out = ArrayList<GameEvent>()
         for (e in raw) {
+            // Editorial `insight` rows reuse the eventId of the goal they describe; deleted rows stay in the list.
+            if (e.type == "insight" || e.deleted) continue
             val team = when (e.eventTeam?.place) { "home" -> home; "away" -> away; else -> null }
             val coords = if (e.locationX != null && e.locationY != null) Coordinates(e.locationX, e.locationY) else null
             val player = e.player?.let(::playerRef)
@@ -337,6 +415,16 @@ public class SportalityMapper(private val leagueId: String) {
     }
 
     private fun SptEvent.id(): String = eventId?.toString() ?: "$type-$period-$time"
+
+    /** What tells one play-by-play row from another across REST and the stream: `eventUuid`, or the period for period records. */
+    public fun rowKey(e: SptEvent): String = e.eventUuid ?: if (e.type == "period") "period-${e.period}" else "${e.type}-${e.eventId ?: "${e.period}-${e.time}"}"
+
+    /** [row] as the stream sent it, replacing its earlier revision; a `deleted` row leaves. */
+    public fun merge(rows: List<SptEvent>, row: SptEvent): List<SptEvent> {
+        val key = rowKey(row)
+        val rest = rows.filter { rowKey(it) != key }
+        return if (row.deleted) rest else rest + row
+    }
 
     public fun strength(goalStatus: String?, penaltyShot: Boolean): Strength? = when {
         penaltyShot || goalStatus == "PS" -> Strength.PS

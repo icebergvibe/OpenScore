@@ -11,8 +11,8 @@
 | **CORS** | **Yes** — `Access-Control-Allow-Origin: *`; `OPTIONS` preflight `204` with `Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE` and the requested headers echoed back (`If-None-Match` verified) |
 | **WAF / UA requirement** | None. Works with no `User-Agent`, no `Accept`, none of the site's custom headers |
 | **Conditional requests** | Weak `ETag` on every response; `If-None-Match` → `304` verified. No `Cache-Control`, no `Last-Modified`, no CDN in front |
-| **Last full verification** | 2026-09-11 |
-| **Status** | ✅ verified in every regular-season state: pre-match, line-ups published, first half, half-time, second half, full time (Rennes 1–0 OM, 2026-09-11, polled every 20 s from 18:33Z to 20:42Z). Extra time / shoot-out / postponed states not yet observed |
+| **Last full verification** | 2026-09-11 (a VAR cancellation added 2026-09-25 from a 2026-09-13 capture) |
+| **Status** | ✅ verified in every regular-season state: pre-match, line-ups published, first half, half-time, second half, full time (Rennes 1–0 OM, 2026-09-11, polled every 20 s from 18:33Z to 20:42Z), plus a goal published and then cancelled by VAR (Auxerre–Lorient, 2026-09-13). Extra time / shoot-out / postponed states not yet observed |
 
 ## Overview
 
@@ -192,7 +192,7 @@ international[] }`, `poster`, `l1Plus { live { playId, state, startAt, liveAt } 
 | | |
 |---|---|
 | **Purpose** | **The match resource** — state, clock, score, events, line-ups, stats, officials, venue |
-| **Sample** | [`samples/championship-match.pre.json`](samples/championship-match.pre.json) (`preMatch`, no line-ups — Ligue 2 match) · [`samples/championship-match.pre-lineups.json`](samples/championship-match.pre-lineups.json) (`preMatchWithPlayers`, 12 min before kick-off) · [`samples/championship-match.live-kickoff.json`](samples/championship-match.live-kickoff.json) (`firstHalf`, 0-0, 25 s after kick-off) · [`samples/championship-match.live-halftime.json`](samples/championship-match.live-halftime.json) (`halfTime`, `"45' +1"`, 3 cards + 1 sub) · [`samples/championship-match.live.json`](samples/championship-match.live.json) (`secondHalf`, 1-0, 50 s after the goal) · [`samples/championship-match.final-fresh.json`](samples/championship-match.final-fresh.json) (`fullTime` 27 s after the whistle, before post-processing) · [`samples/championship-match.final.json`](samples/championship-match.final.json) (PSG–Monaco 1-2 a week later, post-processed) captured 2026-09-11 |
+| **Sample** | [`samples/championship-match.pre.json`](samples/championship-match.pre.json) (`preMatch`, no line-ups, a Ligue 2 match) · [`samples/championship-match.pre-lineups.json`](samples/championship-match.pre-lineups.json) (`preMatchWithPlayers`, 12 min before kick-off) · [`samples/championship-match.live-kickoff.json`](samples/championship-match.live-kickoff.json) (`firstHalf`, 0-0, 25 s after kick-off) · [`samples/championship-match.live-halftime.json`](samples/championship-match.live-halftime.json) (`halfTime`, `"45' +1"`, 3 cards + 1 sub) · [`samples/championship-match.live.json`](samples/championship-match.live.json) (`secondHalf`, 1-0, 50 s after the goal) · [`samples/championship-match.live-var-review.json`](samples/championship-match.live-var-review.json) (`firstHalf`, a goal flagged `varDecision: 1`) · [`samples/championship-match.live-goal-canceled.json`](samples/championship-match.live-goal-canceled.json) (the next poll: same goal in `canceledGoals`, score back to 0-0) · [`samples/championship-match.final-fresh.json`](samples/championship-match.final-fresh.json) (`fullTime` 27 s after the whistle, before post-processing) · [`samples/championship-match.final.json`](samples/championship-match.final.json) (PSG–Monaco 1-2 a week later, post-processed) captured 2026-09-11 |
 | **Last verified** | 2026-09-11 |
 
 **Response shape** (top level): `id`, `type`, `shortOptaId`, `championshipId`,
@@ -432,7 +432,25 @@ Observed: `regularGoal`, `yellowCard`, `tacticalSubstitution`. Timeline entries 
 in match order (oldest first); a half-time substitution is stamped `"45'"` with the
 real wall-clock `timestamp`. In the per-side arrays: `goals[].type` `goal` / `own` /
 `penalty`; `bookings[].type` `yellow` / `secondYellow` / `straightRed` (`red` also in
-one enum); `varDecision` 0 none / 1 accepted / 2 rejected. `position` 1 GK, 2 DF,
+one enum).
+
+**`varDecision` is 0 none / 1 VAR involved / 2 rejected, and `1` does not mean "allowed"
+while a match is running.** Watched live on 2026-09-13 (Auxerre–Lorient, 502 polls at ~20 s),
+a 2nd-minute goal went through all three states in four minutes:
+
+| At | Where the goal is | `varDecision` | Score |
+|---|---|---|---|
+| 13:03:39Z | `home.goals` | `0` | 1-0 |
+| 13:04:28Z | `home.goals` | **`1`** | 1-0 |
+| 13:05:10Z | **`home.canceledGoals`**, its time corrected from 2' to 3' | `2` | back to **0-0** |
+
+So a goal appears in `goals` before VAR has finished with it, `1` is set while the check is
+under way, and the goal then either stays (a finished document carries a `1` on a goal that
+stood) or moves to `canceledGoals`. Treating `1` as a confirmation tells a reader VAR allowed
+a goal one poll before it is disallowed; the core claims a confirmation only once the match is
+`fullTime`. The score field follows the same path, so **`home.score` can go up and back down**
+- a consumer that accumulates goals rather than replacing the list will keep one that never
+happened. `position` 1 GK, 2 DF, `position` 1 GK, 2 DF,
 3 MF, 4 FW; `realUltraPosition` 10 GK, 20 CB, 21 full-back, 30 DM, 31 AM, 40 ST;
 `realsPositions[]` strings (`goalkeeper`, `centralDefender`, `leftWingBack`, …,
 `striker`). Cup `round.type` / `roundType`: `qualifierRound`, `round`, `playOffs`,
@@ -530,4 +548,5 @@ one enum); `varDecision` 0 none / 1 accepted / 2 rejected. `position` 1 GK, 2 DF
 
 | Date | Change |
 |---|---|
+| 2026-09-25 | Curated the VAR sequence out of a 2026-09-13 capture of Auxerre 2-0 Lorient (502 polls): 2 new samples, a goal published at 1-0 and cancelled two polls later. Corrected the `varDecision` note - `1` marks a check in progress, not an accepted goal, and the core now claims a VAR confirmation only at `fullTime`. The rest of the regular-season arc was already sampled from 2026-09-11 and the capture agreed with it. |
 | 2026-09-11 | Initial mapping: 30 endpoints, 42 samples incl. a full live series (pre-match → line-ups → kick-off → half-time → second half with a goal → full time). API host and endpoint list extracted from the ligue1.com Next.js chunks (`L1_API_URL`, axios `apiClient.get(...)` templates). |
